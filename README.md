@@ -3,16 +3,17 @@
 A relational dataset of Tunisian parliamentarians from the 1956 Constituent
 Assembly to the sitting chamber, built for social science and network analysis.
 
-The dataset covers **nineteen chamber-terms across seventy years**, **682
-individual parliamentarians**, and **713 mandates**, with committee memberships,
+The dataset covers **nineteen chamber-terms across seventy years**, **856
+individual parliamentarians**, and **959 mandates**, with committee memberships,
 parliamentary blocs, constituencies, biographical attributes, extra-parliamentary
 careers, and behavioural indicators — assembled from the chamber's own database,
 both of Al Bawsala's observatories, and archival reconstruction, with cell-level
 provenance for every value.
 
-It is also, deliberately, honest about what it does not have. Eleven of the
-nineteen chambers — the whole single-party era — are present as institutions but
-not as people. See [Coverage](#coverage) before using it comparatively.
+It is also, deliberately, honest about what it does not have. Thirteen of the
+nineteen chambers — the whole single-party era plus both upper houses — are
+present as institutions but not as people. See [Coverage](#coverage) before using
+it comparatively.
 
 ## Why this exists
 
@@ -20,10 +21,11 @@ Tunisia is the central case in the comparative literature on democratisation and
 autocratisation in the Arab world, and its parliament is the institution that
 carried the transition and then registered its collapse. But no dataset lets you
 follow parliamentary elites across that span. The chamber's own database begins
-in 2011 and hides closed terms; the two civic observatories cover 2011-2014 and
-2019-2021 respectively; the single-party era is on paper. Anyone studying elite
-survival, recruitment, or the networks that structure legislative behaviour has
-had to rebuild the data from scratch each time.
+in 2011 and hides closed terms; the civic observatories that covered each
+democratic term were built separately and one of them has been taken offline; the
+single-party era is on paper. Anyone studying elite survival, recruitment, or the
+networks that structure legislative behaviour has had to rebuild the data from
+scratch each time.
 
 ## Quickstart
 
@@ -52,22 +54,22 @@ Seventeen tables in `data/processed`, all UTF-8 CSV with a header row.
 | Table | Rows | Unit |
 | --- | --- | --- |
 | `assemblies` | 19 | one chamber-term, 1956–present |
-| `persons` | 682 | one parliamentarian |
-| `mandates` | 713 | one person × one chamber × one spell of service |
-| `constituencies` | 231 | one constituency × one chamber |
+| `persons` | 856 | one parliamentarian |
+| `mandates` | 959 | one person × one chamber × one spell of service |
+| `constituencies` | 260 | one constituency × one chamber |
 | `governorates` | 25 | 24 governorates + out-of-country |
-| `parties` | 60 | political parties, with succession links |
+| `parties` | 70 | political parties, with succession links |
 | `party_affiliations` | 217 | dated party membership |
-| `blocs` | 24 | parliamentary bloc × chamber |
-| `bloc_memberships` | 638 | dated bloc membership |
+| `blocs` | 40 | parliamentary bloc × chamber |
+| `bloc_memberships` | 1,116 | dated bloc membership |
 | `committees` | 54 | committee × chamber |
 | `committee_memberships` | 1,129 | dated committee membership with role |
 | `offices` | 47 | speaker, vice-speaker, bureau tenures |
 | `careers` | 171 | extra-parliamentary roles |
 | `participation` | 583 | attendance, voting, written questions |
-| `person_xref` | 704 | crosswalk to every upstream identifier |
-| `sources` | 5 | source register with access conditions |
-| `provenance` | 3,616 | which source supplied which field of which record |
+| `person_xref` | 950 | crosswalk to every upstream identifier |
+| `sources` | 6 | source register with access conditions |
+| `provenance` | 5,039 | which source supplied which field of which record |
 
 Plus eight network files in `data/networks` — node attributes, two bipartite
 incidence lists, and five one-mode projections. See
@@ -102,7 +104,7 @@ a flagged fallback. Cross-source matching runs on a normalised Arabic key.
 
 ## Coverage
 
-Person-level data exists for four chambers. The rest are institutional frame
+Person-level data exists for five chambers. The rest are institutional frame
 only.
 
 | Chamber | Period | Seats | Mandates | Status |
@@ -111,24 +113,30 @@ only.
 | NA-1959 → COD-2009 (11 chambers) | 1959–2011 | 90–214 | 1–3 each | frame only |
 | ADV-2005 | 2005–2011 | 112 | 0 | frame only |
 | NCA-2011 | 2011–2014 | 217 | 217 | full |
-| ARP-2014 | 2014–2019 | 217 | **0** | frame only |
+| ARP-2014 | 2014–2019 | 217 | 246 | full |
 | ARP-2019 | 2019–2021 | 217 | 216 | full |
 | ARP-2023 | 2023– | 161 | 155 | full |
 | CNRD-2023 | 2024– | 77 | 0 | frame only |
 
+The democratic period is a **continuous panel** (NCA-2011 → ARP-2014 → ARP-2019
+→ ARP-2023): 84 people appear in more than one chamber and 16 in three or more.
+The 2014–2019 term was recovered from Internet Archive captures of an Al Bawsala
+observatory the live site no longer serves — see
+[docs/SOURCES.md](docs/SOURCES.md).
+
 Two consequences you cannot design around:
 
-- **There is no continuous 2011–2023 panel**, because ARP-2014 is missing. Al
-  Bawsala's first observatory stops in 2014, its second starts in 2019, and the
-  chamber's own database restricts closed mandates to internal users.
 - **`n_mandates` is biased downward** for anyone who served before 2011. Someone
   elected in 1994 and again in 2011 shows one mandate, because the 1994 chamber
   has no roster. The bias is systematic, not noise.
+- **ARP-2014 has no committee data**, so a committee-network panel still has a
+  hole in the middle even though the mandate panel does not. Its archived
+  committee pages are the cheapest remaining win.
 
-Closing these gaps is archival work, and
+Closing the remaining gaps is archival work, and
 [docs/RECONSTRUCTION_PROTOCOL.md](docs/RECONSTRUCTION_PROTOCOL.md) specifies how
 to do it so the rows merge cleanly: which JORT series to consult, how to code
-entry and exit modes, and the priority order (ARP-2014 first, by a wide margin).
+entry and exit modes, and the priority order.
 
 ## Sources
 
@@ -136,6 +144,7 @@ entry and exit modes, and the priority order (ARP-2014 first, by a wide margin).
 | --- | --- | --- |
 | `arp.tn` (chamber's own Odoo backend) | ARP-2023 | Public JSON-RPC, read-only |
 | `majles.marsad.tn` (Al Bawsala) | ARP-2019 | HTML |
+| `majles.marsad.tn/2014` via Internet Archive | ARP-2014 | Wayback CDX + raw captures |
 | `marsad.tn` (Al Bawsala) | NCA-2011 | HTML |
 | Arabic Wikipedia | ANC-1956 | MediaWiki API |
 | Curated in `reference.py` | all 19 chambers | hand-coded |
@@ -154,7 +163,7 @@ pipeline reports rather than papers over.
 ## Reproducing
 
 ```
-make collect     # run all four collectors -> data/raw/staging_*.json
+make collect     # run all five collectors -> data/raw/staging_*.json
 make build       # merge staging -> data/processed/*.csv
 make validate    # schema, referential integrity, date logic, substance
 make networks    # derive data/networks/*.csv
@@ -218,6 +227,11 @@ documentation cannot drift from the data.
   `data/processed/_match_review.csv` for audit. Matching never collapses two
   members of the same chamber on a name alone, because Tunisian homonyms are
   common.
+- **Bloc switching is measured for two chambers only.** ARP-2014 (108 of 246
+  members changed bloc, reconstructed by diffing monthly web captures, so
+  boundaries are bracketed not exact) and ARP-2023 (44 members, from dates the
+  chamber publishes). For NCA-2011 and ARP-2019 the sources give end-of-term
+  snapshots, so a zero there means "not measured", not "did not happen".
 - **Sex for the 2011–2014 chamber is inferred, not recorded.** Marsad publishes
   no sex field, which would have left a third of the dataset unusable for any
   gender analysis. It is inferred from French grammatical agreement in each
@@ -246,9 +260,10 @@ acting in public office.
 
 ## Contributing
 
-The most valuable contributions, in order: the ARP-2014 roster; a
-`marsad.tn/mercato` collector to recover bloc switching for 2011-2014; a
-roll-call votes table; hand-coded career histories to replace the rule-extracted
-rows. Add a source by writing a collector that emits the staging shape in
+The most valuable contributions, in order: ARP-2014 committee membership from
+the archived `/2014/` committee pages (the same Wayback method that recovered its
+roster should work); a `marsad.tn/mercato` collector to recover bloc switching
+for 2011-2014; a roll-call votes table; hand-coded career histories to replace
+the rule-extracted rows. Add a source by writing a collector that emits the staging shape in
 `src/parliamentarians_tn/collect/base.py` — entity resolution and provenance are
 handled centrally, so a new source is a self-contained job.

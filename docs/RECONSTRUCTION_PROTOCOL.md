@@ -1,9 +1,10 @@
 # Reconstruction protocol for the undocumented chambers
 
-Eleven of the nineteen chambers in this dataset have no roster: the National
-Assembly of 1959-1981, the Chamber of Deputies of 1981-2011, and the Chamber of
-Advisors of 2005-2011. Together they cover fifty-two years and roughly 1,700
-individual mandates. This document specifies how to fill them, because the gap is
+Twelve of the nineteen chambers in this dataset have no roster: the National
+Assembly of 1959-1981, the Chamber of Deputies of 1981-2011, the Chamber of
+Advisors of 2005-2011, and the National Council of Regions and Districts. The
+pre-2011 chambers alone cover fifty-two years and roughly 1,700 individual
+mandates. This document specifies how to fill them, because the gap is
 closable — it is an archival problem, not a data-availability problem — and
 because whoever attempts it should produce rows that merge cleanly into the
 existing tables rather than a parallel spreadsheet.
@@ -42,13 +43,20 @@ is searchable; the documents themselves are largely not online. This is the best
 source for **committee composition**, which the JORT does not systematically
 report.
 
-**3. Contemporary press.** *La Presse de Tunisie*, *L'Action* / *Le Renouveau*
+**3. The Internet Archive.** Worth trying *before* any archival trip for
+anything that was once on the web. The 2014-2019 chamber was recovered entirely
+this way after the live site stopped serving it: the Wayback CDX index enumerates
+captures and the `id_` modifier returns them unrewritten. This will not help for
+1959-2011, which predates the web, but it is the first thing to try for any
+later gap.
+
+**4. Contemporary press.** *La Presse de Tunisie*, *L'Action* / *Le Renouveau*
 (the party organ, under successive names) and *Al-Amal* published constituency
 result lists in the days after each election. Useful as a cross-check on the JORT
 and often easier to obtain. Turess (`turess.com`) aggregates Tunisian press but
 its archive does not reach the single-party era.
 
-**4. Secondary literature.** Useful for the frame and for elite biography, not
+**5. Secondary literature.** Useful for the frame and for elite biography, not
 for rosters. Camau and Geisser on the Bourguiba and Ben Ali regimes; Hibou on the
 RCD's organisation; Martin's *Histoire de la Tunisie contemporaine* for
 1881-1956, which is the ultimate source behind the 1956 roster used here.
@@ -128,9 +136,10 @@ used as evidence:
 
 If effort is limited, this is the order that buys the most:
 
-1. **ARP-2014.** One chamber, digital sources plausibly still recoverable (see
-   the leads in `SOURCES.md`), and it is the missing link that would make a
-   continuous 2011-2023 panel possible. Highest value per hour by a wide margin.
+1. **~~ARP-2014~~ — done.** Recovered from Internet Archive captures of Al
+   Bawsala's 2014 observatory; see `SOURCES.md`. Its committee pages were *not*
+   recovered and remain the cheapest remaining win: the same CDX-plus-raw-capture
+   method should work on the archived committee pages under `/2014/`.
 2. **COD-2009 and COD-2004.** The last two chambers of the Ben Ali period, with
    substantial documented opposition contingents, immediately adjacent to the
    2011 rupture. This is what makes elite continuity across the revolution

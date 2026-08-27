@@ -443,14 +443,15 @@ ASSEMBLY_ROWS: list[dict[str, object]] = [
         "termination_mode": "Normal expiry",
         "speaker_person_id": "",
         "legal_basis": "Constitution of 27 January 2014",
-        "coverage_status": "frame_only",
+        "coverage_status": "full",
         "notes": (
             "Elected 26 October 2014: Nidaa Tounes 86 seats, Ennahdha 69. Dates follow "
             "the chamber's own mandate record; its successor first sat on 13 November 2019. "
-            "This is the dataset's principal person-level GAP: Al Bawsala's first "
-            "observatory covers 2011-2014 and its second covers 2019 onward, while the "
-            "chamber's own database restricts closed mandates to internal users. See "
-            "docs/COVERAGE.md."
+            "Recovered from Internet Archive captures of Al Bawsala's 2014 observatory "
+            "(majles.marsad.tn/2014), which the live site no longer serves. Because ~29 "
+            "monthly captures survive, this is the ONE chamber for which bloc switching "
+            "is directly observable: 108 of 246 members changed bloc during the term, "
+            "tracking the split of Nidaa Tounes and the formation of Machrouu Tounes."
         ),
     },
     {

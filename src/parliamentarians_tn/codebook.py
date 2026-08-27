@@ -197,11 +197,11 @@ def coverage_markdown() -> str:
     )
     add("")
 
+    person_rows = list(persons.values())
     add("## Attribute completeness, persons table")
     add("")
-    add("| Attribute | Non-empty | of 682 persons |")
+    add(f"| Attribute | Non-empty | of {len(person_rows):,} persons |")
     add("| --- | --- | --- |")
-    person_rows = list(persons.values())
     for col in ("name_ar", "name_lat", "gender", "birth_date", "birth_place_ar",
                 "birth_governorate_id", "occupation_raw", "biography_ar",
                 "marital_status", "languages", "education_raw", "wikidata_qid"):
@@ -222,20 +222,22 @@ def coverage_markdown() -> str:
         "specifies how."
     )
     add(
-        "2. **ARP-2014 is missing entirely.** This is the most painful gap because it is "
-        "a democratic term sitting between two well-covered ones, and it breaks any "
-        "continuous 2011–2023 panel. Al Bawsala's first observatory stops at 2014 and "
-        "its second starts at 2019, while the chamber's own database restricts closed "
-        "mandates to internal users. The data almost certainly exists; see the leads in "
-        "`docs/SOURCES.md`."
+        "2. **ARP-2014 has no committee data.** The chamber itself was recovered from "
+        "Internet Archive captures of Al Bawsala's 2014 observatory, so the mandate "
+        "panel is now continuous across the democratic period — but only the roster "
+        "page was collected, not the committee pages. A committee-network panel "
+        "therefore still has a hole in the middle where the mandate panel does not. "
+        "The archived `/2014/` committee pages should yield to the same method and are "
+        "the cheapest remaining win."
     )
     add(
-        "3. **Bloc switching is only partly observable.** Blocs are recorded as spells, "
-        "but the sources publish end-of-term snapshots for 2011 and 2019, so "
-        "within-term defection — central to explaining the fragmentation of both "
-        "chambers — cannot be recovered from what is collected here. The 2023 chamber is "
-        "the exception: `arp.tn` publishes appointment and departure dates, so switching "
-        "*is* observable there."
+        "3. **Bloc switching is measured for two chambers of four.** It is observable "
+        "for ARP-2014, reconstructed by diffing ~29 monthly web captures (boundaries "
+        "are bracketed to the interval between captures, flagged "
+        "`dates_bracketed`), and for ARP-2023, where the chamber publishes appointment "
+        "and departure dates. For NCA-2011 and ARP-2019 the sources give a single "
+        "end-of-term snapshot, so a zero there means 'not measured', not 'did not "
+        "happen' — which matters, because the 2019 chamber fragmented heavily."
     )
     add(
         "4. **Biography depth is thin for the sitting chamber.** The 2011–14 Constituent "
