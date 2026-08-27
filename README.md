@@ -1,1 +1,254 @@
 # ParliamentariansTN
+
+A relational dataset of Tunisian parliamentarians from the 1956 Constituent
+Assembly to the sitting chamber, built for social science and network analysis.
+
+The dataset covers **nineteen chamber-terms across seventy years**, **682
+individual parliamentarians**, and **713 mandates**, with committee memberships,
+parliamentary blocs, constituencies, biographical attributes, extra-parliamentary
+careers, and behavioural indicators — assembled from the chamber's own database,
+both of Al Bawsala's observatories, and archival reconstruction, with cell-level
+provenance for every value.
+
+It is also, deliberately, honest about what it does not have. Eleven of the
+nineteen chambers — the whole single-party era — are present as institutions but
+not as people. See [Coverage](#coverage) before using it comparatively.
+
+## Why this exists
+
+Tunisia is the central case in the comparative literature on democratisation and
+autocratisation in the Arab world, and its parliament is the institution that
+carried the transition and then registered its collapse. But no dataset lets you
+follow parliamentary elites across that span. The chamber's own database begins
+in 2011 and hides closed terms; the two civic observatories cover 2011-2014 and
+2019-2021 respectively; the single-party era is on paper. Anyone studying elite
+survival, recruitment, or the networks that structure legislative behaviour has
+had to rebuild the data from scratch each time.
+
+## Quickstart
+
+```bash
+git clone https://github.com/MedDhia/ParliamentariansTN
+cd ParliamentariansTN
+pip install -r requirements.txt
+
+# The built dataset is committed, so you can use it immediately:
+python -c "import csv; print(len(list(csv.DictReader(open('data/processed/persons.csv')))))"
+
+# Or rebuild everything from cached staging data (no network required):
+make build validate networks codebook
+
+# Or re-collect from upstream (~15 minutes, rate-limited):
+make collect
+```
+
+Worked examples: `analysis/example_python.py` (networkx) and
+`analysis/example_r.R` (igraph).
+
+## What is in it
+
+Seventeen tables in `data/processed`, all UTF-8 CSV with a header row.
+
+| Table | Rows | Unit |
+| --- | --- | --- |
+| `assemblies` | 19 | one chamber-term, 1956–present |
+| `persons` | 682 | one parliamentarian |
+| `mandates` | 713 | one person × one chamber × one spell of service |
+| `constituencies` | 231 | one constituency × one chamber |
+| `governorates` | 25 | 24 governorates + out-of-country |
+| `parties` | 60 | political parties, with succession links |
+| `party_affiliations` | 217 | dated party membership |
+| `blocs` | 24 | parliamentary bloc × chamber |
+| `bloc_memberships` | 638 | dated bloc membership |
+| `committees` | 54 | committee × chamber |
+| `committee_memberships` | 1,129 | dated committee membership with role |
+| `offices` | 47 | speaker, vice-speaker, bureau tenures |
+| `careers` | 171 | extra-parliamentary roles |
+| `participation` | 583 | attendance, voting, written questions |
+| `person_xref` | 704 | crosswalk to every upstream identifier |
+| `sources` | 5 | source register with access conditions |
+| `provenance` | 3,616 | which source supplied which field of which record |
+
+Plus eight network files in `data/networks` — node attributes, two bipartite
+incidence lists, and five one-mode projections. See
+[docs/NETWORK_GUIDE.md](docs/NETWORK_GUIDE.md).
+
+Full variable definitions with fill rates: [docs/CODEBOOK.md](docs/CODEBOOK.md).
+
+## Four design decisions worth knowing
+
+**Persons and mandates are separate.** A deputy returned three times is one row
+in `persons` and three in `mandates`. Collapsing them is the most common error in
+legislator datasets and it silently destroys any analysis of re-election or
+elite persistence.
+
+**Affiliations are dated spells, not snapshots.** A deputy who leaves a bloc
+mid-term produces two rows, not one overwritten value. Where a *source* only
+publishes a snapshot, that is recorded as a limitation rather than presented as
+a spell — see the notes on bloc switching in
+[docs/COVERAGE.md](docs/COVERAGE.md).
+
+**Empty means "not recorded", always.** Never zero, never false, never "probably
+around then". Dates known only to the year are stored as 1 January with a
+companion `*_precision` column saying so. The Chamber of Advisors has an empty
+`start_date` because its first sitting could not be established, and inventing a
+plausible date would have been worse than leaving it blank.
+
+**Names are bilingual.** No romanisation of Tunisian Arabic names is
+authoritative — the chamber, Al Bawsala and the electoral commission spell the
+same name three ways. Every person carries an Arabic form and a Latin form, with
+source-supplied romanisations preferred and machine transliteration used only as
+a flagged fallback. Cross-source matching runs on a normalised Arabic key.
+
+## Coverage
+
+Person-level data exists for four chambers. The rest are institutional frame
+only.
+
+| Chamber | Period | Seats | Mandates | Status |
+| --- | --- | --- | --- | --- |
+| ANC-1956 | 1956–1959 | 98 | 108 | full |
+| NA-1959 → COD-2009 (11 chambers) | 1959–2011 | 90–214 | 1–3 each | frame only |
+| ADV-2005 | 2005–2011 | 112 | 0 | frame only |
+| NCA-2011 | 2011–2014 | 217 | 217 | full |
+| ARP-2014 | 2014–2019 | 217 | **0** | frame only |
+| ARP-2019 | 2019–2021 | 217 | 216 | full |
+| ARP-2023 | 2023– | 161 | 155 | full |
+| CNRD-2023 | 2024– | 77 | 0 | frame only |
+
+Two consequences you cannot design around:
+
+- **There is no continuous 2011–2023 panel**, because ARP-2014 is missing. Al
+  Bawsala's first observatory stops in 2014, its second starts in 2019, and the
+  chamber's own database restricts closed mandates to internal users.
+- **`n_mandates` is biased downward** for anyone who served before 2011. Someone
+  elected in 1994 and again in 2011 shows one mandate, because the 1994 chamber
+  has no roster. The bias is systematic, not noise.
+
+Closing these gaps is archival work, and
+[docs/RECONSTRUCTION_PROTOCOL.md](docs/RECONSTRUCTION_PROTOCOL.md) specifies how
+to do it so the rows merge cleanly: which JORT series to consult, how to code
+entry and exit modes, and the priority order (ARP-2014 first, by a wide margin).
+
+## Sources
+
+| Source | Covers | Access |
+| --- | --- | --- |
+| `arp.tn` (chamber's own Odoo backend) | ARP-2023 | Public JSON-RPC, read-only |
+| `majles.marsad.tn` (Al Bawsala) | ARP-2019 | HTML |
+| `marsad.tn` (Al Bawsala) | NCA-2011 | HTML |
+| Arabic Wikipedia | ANC-1956 | MediaWiki API |
+| Curated in `reference.py` | all 19 chambers | hand-coded |
+
+The chamber's website exposes the same JSON-RPC endpoint its own public pages
+use, which yields structured records rather than scraped markup — including a
+bilingual name for every sitting member. Only models the public site itself
+queries are read; Odoo's access-control layer is respected rather than probed,
+and personal contact details are not carried into the published tables even
+where the upstream field is readable.
+
+Each source's reliability, quirks and known errors are documented in
+[docs/SOURCES.md](docs/SOURCES.md), including the upstream contradictions the
+pipeline reports rather than papers over.
+
+## Reproducing
+
+```
+make collect     # run all four collectors -> data/raw/staging_*.json
+make build       # merge staging -> data/processed/*.csv
+make validate    # schema, referential integrity, date logic, substance
+make networks    # derive data/networks/*.csv
+make codebook    # regenerate docs/CODEBOOK.md and docs/COVERAGE.md
+make all         # build, validate, networks, codebook
+make test        # unit tests
+```
+
+Every upstream response is cached in `data/raw`, so a rebuild needs no network
+and upstream servers are hit once per object rather than once per run. Collection
+is rate-limited to roughly one request per second and identifies itself in the
+`User-Agent`. The cache is gitignored; the staging documents are committed, so
+`make build` works on a fresh clone.
+
+`make validate` exits non-zero on any error and is usable as a CI gate. It
+distinguishes errors (dangling keys, duplicate keys, values outside a declared
+vocabulary, end dates before start dates) from warnings — things that look wrong
+but may be true of the world, like a chamber having more mandates than seats
+because members were replaced mid-term.
+
+## Layout
+
+```
+data/
+  reference/    curated frame: assemblies, governorates, parties
+  raw/          cached upstream responses (gitignored) + staging documents
+  processed/    the 17 analysis-ready tables
+  networks/     node attributes, bipartite lists, projections
+docs/
+  CODEBOOK.md               generated: every variable, with fill rates
+  COVERAGE.md               generated: completeness by chamber and attribute
+  SOURCES.md                what each source is, and what it gets wrong
+  NETWORK_GUIDE.md          what each network layer means, and its traps
+  RECONSTRUCTION_PROTOCOL.md how to close the 1959-2011 gap
+src/parliamentarians_tn/
+  schema.py     single source of truth for all tables and vocabularies
+  ids.py        Arabic name normalisation, romanisation, ID minting
+  io.py         paths, CSV round-tripping, cached rate-limited HTTP
+  reference.py  the hand-curated institutional frame
+  collect/      one module per source
+  build.py      entity resolution and table assembly
+  validate.py   schema and substantive checks
+  networks.py   network derivation
+  codebook.py   documentation generation
+analysis/       worked examples in Python and R
+tests/          unit tests
+```
+
+`schema.py` is the single source of truth: the builder, the validator, the
+network derivation and the codebook all read the same column declarations, so
+documentation cannot drift from the data.
+
+## Caveats
+
+- **Career rows are rule-extracted from narrative prose**, carry
+  `extraction_method='rule'` and a confidence grade, and are a starting point for
+  hand-coding rather than a finished career history. The `shared_organisation`
+  network layer inherits that uncertainty.
+- **Cross-source person matches are recorded, not assumed.** Twenty-two people
+  were merged across sources; every merge is listed with its method in
+  `data/processed/_match_review.csv` for audit. Matching never collapses two
+  members of the same chamber on a name alone, because Tunisian homonyms are
+  common.
+- **Sex for the 2011–2014 chamber is inferred, not recorded.** Marsad publishes
+  no sex field, which would have left a third of the dataset unusable for any
+  gender analysis. It is inferred from French grammatical agreement in each
+  member's own biography (`Née`/`Né`, `Mariée`/`Marié`, `elle`/`il`) — never
+  from the name. This yields 66 women of 217, against the 65 independently
+  recorded for that chamber, which is a reassuring but not conclusive check.
+- **Behavioural rates are not comparable across chambers.** Denominators differ
+  by source and term and are often unpublished.
+- **The 1956 roster rests on a tertiary source** and needs JORT verification
+  before being used as evidence.
+- **Seat counts were checked** against reported election results: the 1964 and
+  1969 chambers had 101 seats, not the 90 frequently repeated from the 1959
+  figure.
+
+## Citation
+
+See [CITATION.cff](CITATION.cff). Please cite the dataset version and note which
+chambers your analysis actually covers.
+
+## Licence
+
+Code and curated reference data: MIT (see [LICENSE](LICENSE)). Collected data
+remains subject to its upstream terms, summarised per source in
+[docs/SOURCES.md](docs/SOURCES.md); it is public-record information about people
+acting in public office.
+
+## Contributing
+
+The most valuable contributions, in order: the ARP-2014 roster; a
+`marsad.tn/mercato` collector to recover bloc switching for 2011-2014; a
+roll-call votes table; hand-coded career histories to replace the rule-extracted
+rows. Add a source by writing a collector that emits the staging shape in
+`src/parliamentarians_tn/collect/base.py` — entity resolution and provenance are
+handled centrally, so a new source is a self-contained job.

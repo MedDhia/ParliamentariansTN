@@ -1,0 +1,683 @@
+person_id,name_ar,name_lat,gender,birth_year,birth_date_precision,birth_governorate_id,n_mandates,first_assembly_id,last_assembly_id,first_mandate_start,constituency_id,constituency_name_ar,governorate_id,governorate_name_lat,region,littoral,party_id_last,party_family_last,occupation_raw,career_sectors,vote_participation_rate,plenary_attendance_rate,n_written_questions
+TNP-00001,يوسف الطرشون,Youssef Tarchoun,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-59c699daa314,غار الملح - العالية - راس الجبل,TN-23,Bizerte,North East,true,,,,,,,5
+TNP-00002,يوسف التومي,Youssef Toumi,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-0555fdca61e3,الزاوية - القصيبة - الثريات,TN-51,Sousse,Centre East,true,,,,,,,141
+TNP-00003,يسري البواب,Yosri Baouab,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-966f30f38658,المنستير1,TN-52,Monastir,Centre East,true,,,,,,,8
+TNP-00004,ياسين مامي,yassine Mami,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-716878887869,الحمامات,TN-21,Nabeul,North East,true,,,,,,,17
+TNP-00005,ياسر قراري,Yasser Grari,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-024a4dd70a2c,الكاف الغربية - الكاف الشرقية,TN-33,Kef,North West,false,,,,,,,13
+TNP-00006,وليد حاجي,Walid Hajji,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-d23f1f4b3e69,العلا - حاجب العيون,TN-41,Kairouan,Centre West,false,,,,,,,87
+TNP-00007,هشام حسني,Hichem Hosni,male,,,,2,NCA-2011,ARP-2023,2011-11-22,TNC-55c7cb5e7244,حلق الوادي,TN-11,Tunis,Grand Tunis,true,,,,trade_union,,,8
+TNP-00008,هالة جاب الله,Hela Jaballa,female,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-4e958c0f924a,سوسة الرياض,TN-51,Sousse,Centre East,true,,,,,,,109
+TNP-00009,نورة الشبراك,Noura Chabrak,female,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-e7ffb2c52255,قربة,TN-21,Nabeul,North East,true,,,,,,,92
+TNP-00010,نور الهدى سبائطي,Nourelhouda Sbaiti,female,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-6ceb5472e074,غنوش - المطوية - وذرف - منزل الحبيب,TN-81,Gabes,South East,true,,,,,,,132
+TNP-00011,نزار الصديق,Nizar Seddik,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-8c743287ed19,نفطة - حزوة,TN-72,Tozeur,South West,false,,,,,,,49
+TNP-00012,نجيب عكرمي,Nejib Akremi,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-8d9e896a9822,قفصة الشمالية - سيدي عيش - القصر - زانوش,TN-71,Gafsa,South West,false,,,,,,,68
+TNP-00013,نجلاء اللحياني,Najla Lahiani,female,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-f08fdefa8442,أريانة المدينة,TN-12,Ariana,Grand Tunis,true,,,,,,,75
+TNP-00014,نبيه ثابت,Nabih Thabet,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-8a0c85ce0812,دقاش - حامة الجريد - تمغزة,TN-72,Tozeur,South West,false,,,,,,,9
+TNP-00015,نبيل حامدي,Nabil Hamdi,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-1e2144864623,السبيخة - الوسلاتية  -عين جلولة,TN-41,Kairouan,Centre West,false,,,,,,,26
+TNP-00016,مهى عامر,Maha Ameur,female,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-6e8c4521fdb8,المنيهلة,TN-12,Ariana,Grand Tunis,true,,,,,,,57
+TNP-00017,منير الكموني,Mounir Kammouni,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-eef1d5b64308,اولاد شامخ - هبيرة - شربان,TN-53,Mahdia,Centre East,true,,,,,,,20
+TNP-00018,منصف المعلول,Moncef Maaloul,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-77db83aca8a9,تطاوين الشمالية - بني مهيرة - الصمار,TN-83,Tataouine,South East,false,,,,,,,8
+TNP-00019,منال بديدة,Manel Bdida,female,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-e0f768103a48,بئر على بن خليفة,TN-61,Sfax,Centre East,true,,,,,,,88
+TNP-00020,مليك كمون,Melik Kammoun,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-38a2e4de653e,ساقية الزيت,TN-61,Sfax,Centre East,true,,,,,,,7
+TNP-00021,معز بن يوسف,Moez Ben Youssef,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-194c2f978000,القلعة الكبرى - سيدي بوعلي - كندار,TN-51,Sousse,Centre East,true,,,,,,,8
+TNP-00022,معز برك الله,Moez Barkallah,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-d55061cfbd6d,صفاقس المدينة,TN-61,Sfax,Centre East,true,,,,,,,3
+TNP-00023,معز الرياحي,Moez Riahi,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-bd258f20740f,مجاز الباب -قبلاط - تستور,TN-31,Beja,North West,true,,,,,,,22
+TNP-00024,مصطفى بوبكري,Mustapha Boubakri,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-ad0c3f3d6d4c,تطاوين الجنوبية - بئر الاحمر - غمراسن,TN-83,Tataouine,South East,false,,,,,,,44
+TNP-00025,مسعود قريرة,Messaoud Grira,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-5654d7843ced,جرجيس,TN-82,Medenine,South East,true,,,,,,,57
+TNP-00026,مريم الشريف,Mariem Cherif,female,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-68b73ad04616,وادي الليل,TN-14,Manouba,Grand Tunis,false,,,,,,,106
+TNP-00027,مراد الخزامي,Mourad khezami,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-7f66d79de45a,فوشانة,TN-13,Ben Arous,Grand Tunis,true,,,,,,,41
+TNP-00028,مختار عيفاوي,Mokhtar Ifaoui,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-97283f3f5a30,بوحجلة,TN-41,Kairouan,Centre West,false,,,,,,,51
+TNP-00029,محمود شلغاف,Mahmoud Chalghaf,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-b28eb5bac2c3,قرقنة,TN-61,Sfax,Centre East,true,,,,,,,42
+TNP-00030,محمود العامري,Mahmoud El Amri,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-ad8b17b74a07,سيدي الهاني - القلعة الصغرى,TN-51,Sousse,Centre East,true,,,,,,,199
+TNP-00031,محمد ماجدي,Mohamed Mejdi,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-05ac35562067,أم العرائس - سيدي بوبكر - الرديف - المتلوي,TN-71,Gafsa,South West,false,,,,,,,71
+TNP-00032,محمد علي فنيرة,Mohamed Ali Fennira,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-8379cffb063c,قرمبالية,TN-21,Nabeul,North East,true,,,,,,,201
+TNP-00033,محمد علي,Mohamed Ali,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-7f7812d38ee6,قفصة الجنوبية,TN-71,Gafsa,South West,false,,,,,,,29
+TNP-00034,محمد ضو,Mohamed Dhaw,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-e20cd1fd3ef6,مدنين الجنوبية - سيدي مخلوف,TN-82,Medenine,South East,true,,,,,,,15
+TNP-00035,محمد شعباني,Mohamed Chaabani,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-b64fb365aa08,ماجل بلعباس - فريانة,TN-42,Kasserine,Centre West,false,,,,,,,29
+TNP-00036,محمد زياد الماهر,Mohamed Zied El Maher,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-c233dbf56b62,جمال,TN-52,Monastir,Centre East,true,,,,,,,11
+TNP-00037,محمد بن سعيد,Mohamed Ben Said,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-b2fd9c292b6e,الهوارية - تاكلسة,TN-21,Nabeul,North East,true,,,,,,,14
+TNP-00038,محمد بن حسين,Mohamed Ben Hassine,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-cd938f96d548,الرجيش - قصور الساف - البرادعة,TN-53,Mahdia,Centre East,true,,,,,,,22
+TNP-00039,محمد أمين مباركي,Mohamed Amine Mbarki,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-4de2fe165838,سبيبة - جدليان - العيون,TN-42,Kasserine,Centre West,false,,,,,,,44
+TNP-00040,محمد امين الورغي,Mohamed Amine Ouerghi,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-d34d70f08aad,الوردية - جبل الجلود,TN-11,Tunis,Grand Tunis,true,,,,,,,68
+TNP-00041,محمد اليحياوي,Mohamed Yahyaoui,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-7c6d7dbc6a9b,طبرقة - عين دراهم,TN-32,Jendouba,North West,true,,,,,,,9
+TNP-00042,محمد الهادي العلاني,Mohamed Elhedi Allani,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-8141dbb00e1a,مكثر - الروحية - كسرى,TN-34,Siliana,North West,false,,,,,,,60
+TNP-00043,محمد أحمد,mohamed Ahmed,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-6dc00e736f7c,النفيضة - بوفيشة - هرقلة,TN-51,Sousse,Centre East,true,,,,,,,21
+TNP-00044,محسن هرمي,Mohsen Hermi,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-9ee9f6d7bd1d,جندوبة الشمالية - فرنانة,TN-32,Jendouba,North West,true,,,,,,,6
+TNP-00045,ماهر بوبكر الحضري,Maher Boubaker Hadhri,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-20b5e8134910,المروج - بئر القصعة,TN-13,Ben Arous,Grand Tunis,true,,,,,,,8
+TNP-00046,ماهر الكتاري,Maher Ketari,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-dfe4fa6603d1,قرطاج - المرسى,TN-11,Tunis,Grand Tunis,true,,,,,,,1
+TNP-00047,ماجدة الورغي,Majda Ouerghi,female,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-9acb0786de96,منزل بورقيبة - تينجة,TN-23,Bizerte,North East,true,,,,,,,12
+TNP-00048,لطفي الهمامي,Lotfi Hammami,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-518851453bca,العمران - العمران الأعلى,TN-11,Tunis,Grand Tunis,true,,,,,,,40
+TNP-00049,لطفي السعداوي,Lotfi Saadaoui,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-f699f9312353,الشبيكة - حفوز,TN-41,Kairouan,Centre West,false,,,,,,,13
+TNP-00050,كمال كرعاني,Kamel Keraani,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-7bbf718e4e8b,نصر الله - منزل مهيري - الشراردة,TN-41,Kairouan,Centre West,false,,,,,,,28
+TNP-00051,كمال فراح,Kamel Farrah,male,,,,1,ARP-2023,ARP-2023,2023-03-23,TNC-f5f308069583,بومهل البساتين - الزهراء,TN-13,Ben Arous,Grand Tunis,true,,,,,,,12
+TNP-00052,فيصل الصغير,Fayçal Sghaier,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-20d51e4bae5b,قلعة الأندلس- سيدي ثابت,TN-12,Ariana,Grand Tunis,true,,,,,,,146
+TNP-00053,فوزي دعاس,Faouzi Daas,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-79ba08e0dbb3,الحامة - الحامة الغربية,TN-81,Gabes,South East,true,,,,,,,18
+TNP-00054,فخري عبد الخالق,Fakhri Abdelkhalek,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-14ad6d65e418,المحمدية,TN-13,Ben Arous,Grand Tunis,true,,,,,,,13
+TNP-00055,فخر الدين فضلون,Fakhreddine Fadhloun,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-02f1a4d77309,قصر هلال - قصيبة المديوني,TN-52,Monastir,Centre East,true,,,,,,,37
+TNP-00056,فتحي رجب,Fethi Rjeb,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-fbde56c631a9,الجم,TN-53,Mahdia,Centre East,true,,,,,,,12
+TNP-00057,فتحي المشرقي,Fethi Mechrgui,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-d2660afac4df,بنزرت الجنوبية,TN-23,Bizerte,North East,true,,,,,,,32
+TNP-00058,فاطمة المسدي,Msedi Fatma,female,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-a4e5396dad26,صفاقس الجنوبية,TN-61,Sfax,Centre East,true,,,Assistante contractuelle à l’université,,,,84
+TNP-00059,فاتن النصيبي,Faten Ncibi,female,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-93c97f9de2b6,دائرة سكرة 2,TN-12,Ariana,Grand Tunis,true,,,,,,,5
+TNP-00060,غسان يامون,Ghassen Yamoun,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-a5bf3742892c,جربة حومة السوق,TN-82,Medenine,South East,true,,,,,,,107
+TNP-00061,عواطف الشنيتي,Awatef Cheniti,female,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-3532c3d2627d,باجة الجنوبية - تيبار - تبرسق,TN-31,Beja,North West,true,,,,,,,54
+TNP-00062,عمر بن عمر,Amor Ben Amor,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-e3874327c558,زرمدين - بني حسان,TN-52,Monastir,Centre East,true,,,,,,,48
+TNP-00063,عمر برهومي,Amor Barhoumi,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-f7ca812f36b8,فرنسا 2,TN-99,Abroad,abroad,false,,,,,,,4
+TNP-00064,عمار عيدودي,Ammar Idoudi,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-537aae7f6fb8,تالة - حيدرة - فوسانة,TN-42,Kasserine,Centre West,false,,,,,,,58
+TNP-00065,عماد أولاد جبريل,Ouled jebril Imed,male,,,,2,ARP-2019,ARP-2023,2019-11-13,TNC-d06f4b4a5ffb,بومرداس - السواسي,TN-53,Mahdia,Centre East,true,,,Professeur de théâtre,,,,38
+TNP-00066,عماد الدين سديري,Imededdine Sdiri,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-e974df701f88,نبر - الطويرف -  ساقية سيدي يوسف - تاجروين,TN-33,Kef,North West,false,,,,,,,34
+TNP-00067,علي زغدود,Ali Zaghdoud,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-ff761d317cf3,بن قردان,TN-82,Medenine,South East,true,,,,,,,24
+TNP-00068,علي بوزوزية,Ali Bouzouzia,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-29554f9e6c50,دوار هيشر,TN-14,Manouba,Grand Tunis,false,,,,,,,11
+TNP-00069,عصام شوشان,Issam Chouchen,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-f6f83e60ab39,الحنشة,TN-61,Sfax,Centre East,true,,,,,,,20
+TNP-00070,عصام البحري الجابري,Issam Bahri Jebri,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-61225d8ed449,قابس المدينة - قابس الغربية,TN-81,Gabes,South East,true,,,,,,,77
+TNP-00071,عزيز بن الاخضر,Aziz Ben Lakhdher,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-7e23f213e78a,مرناق,TN-13,Ben Arous,Grand Tunis,true,,,,,,,47
+TNP-00072,عزالدين التايب,Ezzeddine Tayeb,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-e391d8d14901,الحرائرية,TN-11,Tunis,Grand Tunis,true,,,,,,,6
+TNP-00073,عدنان العلوش,Adnen Allouche,male,1972,day,,1,ARP-2023,ARP-2023,2025-10-07,TNC-107b743b8617,بنزرت الشمالية,TN-23,Bizerte,North East,true,,,,,,,10
+TNP-00074,عبد القادر عمار,Abdelkader Ammar,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-519c5d80c21e,سوسة المدينة - سيدي عبد الحميد,TN-51,Sousse,Centre East,true,,,,,,,34
+TNP-00075,عبد القادر بن زينب,Abdelkader Ben Zineb,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-7c5e40f75e31,سليمان,TN-21,Nabeul,North East,true,,,,,,,1
+TNP-00076,عبد العزيز شعباني,Abdelaziz Chaabani,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-5e968e03f073,القصرين الجنوبية - حاسي الفريد,TN-42,Kasserine,Centre West,false,,,,,,,140
+TNP-00077,عبد السلام الدحماني,Abdessalem Dahmani,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-2a6258192a34,مارث - دخيلة توجان - مطماطة - مطماطة الجديدة,TN-81,Gabes,South East,true,,,,,,,138
+TNP-00078,عبد السلام الحمروني,Abdessalem Hamrouni,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-7850681ddbef,بني خداش,TN-82,Medenine,South East,true,,,,,,,16
+TNP-00079,عبد الستار الزارعي,Abdessattar Zarai,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-d8a6f449dff6,سيدي بوزيد الشرقية - سوق الجديد,TN-43,Sidi Bouzid,Centre West,false,,,,,,,17
+TNP-00080,عبد الرزاق عويدات,Abderrazek Aouidet,male,,,,2,ARP-2019,ARP-2023,2019-11-13,TNC-1e4f122360f8,الجديدة - طبربة - البطان,TN-14,Manouba,Grand Tunis,false,,,,,,,12
+TNP-00081,عبد الحليم بوسمة,Abdelhalim  Boussema,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-1b36e55999ff,دائرة رواد 2,TN-12,Ariana,Grand Tunis,true,,,,,,,44
+TNP-00082,عبد الحافظ الوحيشي,Abdelhafedh Louhichi,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-dbc65d43affb,جبنيانة - العامرة,TN-61,Sfax,Centre East,true,,,,,,,4
+TNP-00083,عبد الجليل الهاني,Abdel jalil El Heni,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-8e374d1b2ae3,بوعرقوب - بني خلاد,TN-21,Nabeul,North East,true,,,,,,,35
+TNP-00084,عادل ضياف,Adel Dhief,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-2b093f4e4715,سيدي حسين,TN-11,Tunis,Grand Tunis,true,,,,,,,95
+TNP-00085,عادل البوسالمي,Adel Bousselmi,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-a54f5818e72a,باب البحر - سيدي البشير,TN-11,Tunis,Grand Tunis,true,,,,,,,1
+TNP-00086,ظافر الصغيري,dhafer Sghiri,male,,,,1,ARP-2023,ARP-2023,2023-07-13,TNC-41972b1be093,التحرير - باردو,TN-11,Tunis,Grand Tunis,true,,,,,,,14
+TNP-00087,طارق مهدي,Tarek Mehdi,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-6bf63763361c,ساقية الدائر,TN-61,Sfax,Centre East,true,,,,,,,13
+TNP-00088,طارق الربعي,Tarek Rebai,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-52a1deccb887,حي التضامن,TN-12,Ariana,Grand Tunis,true,,,,,,,15
+TNP-00089,ضحى السالمي,Dhouha Selmi,female,,,,1,ARP-2023,ARP-2023,2023-03-23,TNC-e6c9118e3483,حمام الأنف - حمام الشط,TN-13,Ben Arous,Grand Tunis,true,,,,,,,130
+TNP-00090,صلاح الفرشيشي,Slah ferchichi,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-c261209cd82f,بوسالم - بلطة بوعوان,TN-32,Jendouba,North West,true,,,,,,,11
+TNP-00091,صالح مباركي,Salah Mbarki,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-e55e8cef9377,الكبارية,TN-11,Tunis,Grand Tunis,true,,,,,,,3
+TNP-00092,صالح الصيادي,Salah Sayadi,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-966f30f38658,المنستير1,TN-52,Monastir,Centre East,true,,,,,,,12
+TNP-00093,صالح السالمي,Salah Selmi,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-cd7d609486fc,جلمة - سبالة أولاد عسكر,TN-43,Sidi Bouzid,Centre West,false,,,,,,,11
+TNP-00094,صابر المصمودي,Sabeur Masmoudi,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-ab9d6e4f9747,صفاقس الغربية,TN-61,Sfax,Centre East,true,,,,,,,81
+TNP-00095,صابر الجلاصي,Sabeur Jelassi,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-32fcc7830e12,المرناقية - برج العامري,TN-14,Manouba,Grand Tunis,false,,,,,,,12
+TNP-00096,شكري بن البحري,Chokri Ben Bahri,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-e0f63059733d,عقارب,TN-61,Sfax,Centre East,true,,,,,,,46
+TNP-00097,شفيق عزالدين الزعفوري,Ezzedine Zaafouri,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-76c3228b9da4,سيدي بوزيد الغربية - الهيشرية,TN-43,Sidi Bouzid,Centre West,false,,,,,,,22
+TNP-00098,سيرين بوصندل,Cyrine Boussandel,female,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-deefa564487c,منزل جميل - جرزونة,TN-23,Bizerte,North East,true,,,,,,,54
+TNP-00099,سيرين المرابط,Sirine Mrabet,female,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-5bcfc580e7a1,السيجومي - الزهور,TN-11,Tunis,Grand Tunis,true,,,,,,,32
+TNP-00100,سوسن مبروك,Sawsen Mabrouk,female,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-a40d80ca7130,مدنين الشمالية,TN-82,Medenine,South East,true,,,,,,,10
+TNP-00101,سنية بن مبروك,Sonia Ben Mabrouk,female,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-3a595c736753,الكرم,TN-11,Tunis,Grand Tunis,true,,,,,,,58
+TNP-00102,سفيان بن حليمة,Sofien Ben hlima,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-20511104b3f0,حمام سوسة - أكودة,TN-51,Sousse,Centre East,true,,,,,,,52
+TNP-00103,سامي طوجاني,Sami Toujani,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-8e92959ea7f9,سجنان - جومين - غزالة,TN-23,Bizerte,North East,true,,,,,,,6
+TNP-00104,سامي رايس,Sami Rais,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-8352ded641bc,دار شعبان الفهري - بني خيار,TN-21,Nabeul,North East,true,,,,,,,31
+TNP-00105,سامي بن عبد العالي,Sami Ben Abdelaali,male,,,,2,ARP-2019,ARP-2023,2019-11-13,TNC-c0afc39a258b,ايطاليا,TN-99,Abroad,abroad,false,,,,,,,1
+TNP-00106,سامي السيد,Sami Essaied,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-107b743b8617,بنزرت الشمالية,TN-23,Bizerte,North East,true,,,,,,,19
+TNP-00107,سامي الحاج عمر,Sami Hadj Amor,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-4fdaa5ec49fe,الساحلين - الوردانين - بنبلة,TN-52,Monastir,Centre East,true,,,,,,,13
+TNP-00108,زينة جيب الله,Zina Jiballah,female,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-ed3f99ff775f,زغوان - الزريبة,TN-22,Zaghouan,North East,false,,,,,,,39
+TNP-00109,ريم المعشاوي,Rim Maachaoui,female,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-90e025dc7d34,القلعة الخصبة- الجريصة - القصور - الدهماني- السرس,TN-33,Kef,North West,false,,,,,,,41
+TNP-00110,ريم الصغير,Rym Sghaier,female,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-847779cba41c,منزل بوزلفة - الميدة,TN-21,Nabeul,North East,true,,,,,,,104
+TNP-00111,رياض جعيدان,Jaidane Riadh,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-f7ca812f36b8,فرنسا 2,TN-99,Abroad,abroad,false,,,"Maître de conférences en droit public à la Faculté de droit et des sciences politiques de Nice Avocat au Barreau de Nice après avoir obtenu en 2005 le Certificat d’Aptitude à la Profession d’Avocat (CAPA) à l’Ecole de formation des avocats du Sud-Est à Marseille. Il est l’auteur de plusieurs publications juridiques dans des revues internationales spécialisées. Diplômé du Centre International de Formation Européenne (CIFE), de l’Institut International des Droits de l’Homme (IIDH). Il a effectué plusieurs stages et voyages d’études dans des organisations européennes et Internationales telles que l’ONU, la Commission européenne, le Conseil de l’Europe, la Cour européenne des droits de l’homme…",,,,1
+TNP-00112,رياض بلال,Riadh Blel,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-61a3fd1e65c0,طبلبة - البقالطة - صيادة - لمطة - بوحجر,TN-52,Monastir,Centre East,true,,,,,,,15
+TNP-00113,رؤوف الفقيري,Raouf Fekiri,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-0c1fba807e92,غار الدماء - وادي مليز,TN-32,Jendouba,North West,true,,,,,,,46
+TNP-00114,رمزي الشتوي,Ramzi Chetoui,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-7163483ce094,توزر,TN-72,Tozeur,South West,false,,,,,,,57
+TNP-00115,رضا الدلاعي,Dellai Ridha,male,,,,2,ARP-2019,ARP-2023,2019-11-13,TNC-73ed5f340cee,عمدون - نفزة,TN-31,Beja,North West,true,,,Professeur d’enseignement secondaire,,,,1
+TNP-00116,رشدي الرويسي,Rochdi Rouissi,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-ad996070fccb,بوعرادة - قعفور - الكريب - بورويس - العروسة,TN-34,Siliana,North West,false,,,,,,,23
+TNP-00117,خالد حكيم مبروكي,khaled Hakim Mabrouki,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-6efb48d8d57c,الرقاب - السعيدة - أولاد حفوز,TN-43,Sidi Bouzid,Centre West,false,,,,,,,25
+TNP-00118,حمزة بضيافي,Hamza Bidhiafi,male,1986,day,,1,ARP-2023,ARP-2023,2025-10-07,TNC-8a0c85ce0812,دقاش - حامة الجريد - تمغزة,TN-72,Tozeur,South West,false,,,,,,,10
+TNP-00119,حمدي بن عبد العالي,Hamdi Ben Abdelali,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-28c68beb64f3,المكنين,TN-52,Monastir,Centre East,true,,,,,,,22
+TNP-00120,حمدي بن صالح,Hamdi Ben Salah,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-1a35847d974d,سوسة جوهرة,TN-51,Sousse,Centre East,true,,,,,,,4
+TNP-00121,حمادي غيلاني,Hammadi Ghilani,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-3e86a0fa344f,سبيطلة,TN-42,Kasserine,Centre West,false,,,,,,,5
+TNP-00122,حسن جربوعي,Hassen Jarboui,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-c76f0a8ad7e3,منزل شاكر,TN-61,Sfax,Centre East,true,,,,,,,144
+TNP-00123,حسن بوسامة,Hassen Boussama,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-3ed81f8d3303,منزل تميم,TN-21,Nabeul,North East,true,,,,,,,5
+TNP-00124,حسن بن علي,Hassen Ben Ali,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-478aeb7d40fd,الناظور - صواف,TN-22,Zaghouan,North East,false,,,,,,,17
+TNP-00125,حسام محجوب,Houssem Mahjoub,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-0ac047003f52,مساكن,TN-51,Sousse,Centre East,true,,,,,,,60
+TNP-00126,حاتم لباوي,Hatem Labbaoui,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-3528df809f53,القصرين الشمالية - الزهور,TN-42,Kasserine,Centre West,false,,,,,,,105
+TNP-00127,حاتم الهواوي,Hatem Houaoui,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-f60beb62e239,جندوبة,TN-32,Jendouba,North West,true,,,,,,,28
+TNP-00128,جلال خدمي,Jalel khedmi,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-09c0f9c6b2f1,بئر الحفي - سيدي علي بوعون,TN-43,Sidi Bouzid,Centre West,false,,,,,,,63
+TNP-00129,ثامر المزهود,Thameur Mazhoud,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-21983ef8e27b,قابس الجنوبية,TN-81,Gabes,South East,true,,,,,,,19
+TNP-00130,ثابت العابد,Thabet Abed,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-63acb0bb3053,حي الخضراء - المنزه,TN-11,Tunis,Grand Tunis,true,,,,,,,28
+TNP-00131,بوبكر بن يحي,Boubaker Ben Yahya,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-01615e6dbca5,دوز,TN-73,Kebili,South West,false,,,,,,,20
+TNP-00132,بلال ابن المشري,Bilel Ibn El Mechri,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-84dd3ebcdbf6,الشابة - ملولش - سيدي علوان,TN-53,Mahdia,Centre East,true,,,,,,,11
+TNP-00133,بسمة الهمامي,Basma Hammami,female,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-9acfc76b0b35,سليانة - برقو,TN-34,Siliana,North West,false,,,,,,,151
+TNP-00134,بدر الدين القمودي,badreddine gammoudi,male,,,,2,ARP-2019,ARP-2023,2019-11-13,TNC-2373a9652098,منزل بوزيان - المكناسي - المزونة,TN-43,Sidi Bouzid,Centre West,false,,,,,,,19
+TNP-00135,بثينة الغانمي,Boutheina Ghanmi,female,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-d3cd8b8081b3,باجة الشمالية,TN-31,Beja,North West,true,,,,,,,40
+TNP-00136,باديس بالحاج علي,Bedis Belhadj Ali,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-66cccba05ec0,جربة ميدون - جربة أجيم,TN-82,Medenine,South East,true,,,,,,,72
+TNP-00137,أيمن نقرة,Aymen Negra,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-ecee49591291,القيروان الشمالية,TN-41,Kairouan,Centre West,false,,,,,,,17
+TNP-00138,أيمن بن صالح,Aymen Ben Salah,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-93c97f9de2b6,دائرة سكرة 2,TN-12,Ariana,Grand Tunis,true,,,,,,,48
+TNP-00139,أيمن المرعوي,Aymen Maraoui,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-be84a0f495c6,طينة,TN-61,Sfax,Centre East,true,,,,,,,24
+TNP-00140,أيمن البوغديري,Aymen Boughdiri,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-b767c0a4d52d,رواد 1,TN-12,Ariana,Grand Tunis,true,,,,,,,30
+TNP-00141,أنور المرزوقي,Anouar Marzouki,male,,,,2,NCA-2011,ARP-2023,2011-11-22,TNC-0d35a1a046c5,نابل,TN-21,Nabeul,North East,true,,,,,,,9
+TNP-00142,آمال المؤدب,Amel Meddeb,female,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-23a38760ce82,المدينة - باب سويقة,TN-11,Tunis,Grand Tunis,true,,,,,,,45
+TNP-00143,الياس بوكوشة,Ilyes Boukoucha,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-99c5526d1ffb,فوار - رجيم معتوق,TN-73,Kebili,South West,false,,,,,,,31
+TNP-00144,النوري جريدي,Nouri Jridi,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-919739b0ad73,القطار - بلخير - السند,TN-71,Gafsa,South West,false,,,,,,,169
+TNP-00145,الناصر الشنوفي,Channoufi Naceur,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-f6eaa43de824,بئر مشارقة - الفحص,TN-22,Zaghouan,North East,false,,,Directeur d’école primaire,,,,20
+TNP-00146,المختار عبد المولى,Mokhtar Abdelmoula,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-d620f8caf1ac,ذهيبة - رمادة,TN-83,Tataouine,South East,false,,,,,,,59
+TNP-00147,ألفة المرواني,Olfa Marouani,female,,,,1,ARP-2023,ARP-2023,2023-03-23,TNC-dc5c5c61a04e,بن عروس - المدينة الجديدة,TN-13,Ben Arous,Grand Tunis,true,,,,,,,26
+TNP-00148,الفاضل بن تركية,Fadhel Ben Torkia,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-11a166c637b2,قليبة - حمام الأغزاز,TN-21,Nabeul,North East,true,,,,,,,6
+TNP-00149,الطيب الطالبي,Taïeb Talbi,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-27859ebb865b,القيروان الجنوبية,TN-41,Kairouan,Centre West,false,,,,,,,30
+TNP-00150,الطاهر بن منصور,Tahar Ben Mansour,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-f6def5a507a9,قبلي - سوق الأحد,TN-73,Kebili,South West,false,,,,,,,84
+TNP-00151,أسماء الدرويش,Asma Derouiche,female,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-eef40150274b,منوبة,TN-14,Manouba,Grand Tunis,false,,,,,,,81
+TNP-00152,أحمد سعيداني,Ahmed Saidani,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-45ced317f073,ماطر - أوتيك,TN-23,Bizerte,North East,true,,,,,,,199
+TNP-00153,أحمد بنور,Ahmed Bannour,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-b077e389d95f,المهدية,TN-53,Mahdia,Centre East,true,,,,,,,149
+TNP-00154,إبراهيم حسين,Brahim Ben hsine,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-6376c63610b6,الصخيرة - الغريبة - المحرس,TN-61,Sfax,Centre East,true,,,,,,,27
+TNP-00155,إبراهيم بودربالة,Brahim Bouderbela,male,,,,1,ARP-2023,ARP-2023,2023-03-13,TNC-3882ab474f91,رادس - مقرين,TN-13,Ben Arous,Grand Tunis,true,,,,,,,
+TNP-00156,عبد الله حريزي,Abdallah Hrizi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-c14e9c41e9ce,قابس,TN-81,Gabes,South East,true,,,,,0.8060,0.6726,
+TNP-00157,عبد الحميد المرزوقي,Abdelhamid Marzouki,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-505fecc15922,جندوبة,TN-32,Jendouba,North West,true,,,,,0.9224,0.8661,
+TNP-00158,عبد اللطيف علوي,Abdellatif Aloui,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-bf84273551e0,أريانة,TN-12,Ariana,Grand Tunis,true,,,معلّم تعليم أساسي,,0.5672,0.8407,
+TNP-00159,عبد المجيد عمار,Abdelmajid Ammar,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-4e2903aee80f,زغوان,TN-22,Zaghouan,North East,false,,,,,0.9522,0.8496,
+TNP-00160,عبد الرزاق الحسني,Abderrazek Hosni,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-7c20f132677c,سليانة,TN-34,Siliana,North West,false,,,,,0.7522,0.6903,
+TNP-00161,عبد السلام بن عمارة,Abdesslam Ben Amara,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-990caafd3fb3,صفاقس 1,TN-61,Sfax,Centre East,true,,,,,0.7701,0.8304,
+TNP-00162,عبير موسي,Abir Moussi,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-cd1ca9244e55,تونس 2,TN-11,Tunis,Grand Tunis,true,,,,,0.7493,0.8053,
+TNP-00163,عدنان حاجي,Adnane Hajji,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-5531b77d50b4,قفصة,TN-71,Gafsa,South West,false,,,معلّم تعليم أساسي,,0.7254,0.8496,
+TNP-00164,عدنان بن ابراهيم,Adnene Ben Brahim,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-a65c89ca4d13,المنستير,TN-52,Monastir,Centre East,true,,,,,0.3224,0.5893,
+TNP-00165,أحمد بلقاسم,Ahmed Belgacem,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-5531b77d50b4,قفصة,TN-71,Gafsa,South West,false,,,,,0.5015,0.6339,
+TNP-00166,أحمد بن عياد,Ahmed Ben Ayed,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-bf84273551e0,أريانة,TN-12,Ariana,Grand Tunis,true,,,,,0.6567,0.8929,
+TNP-00167,أحمد موحه,Ahmed Mouha,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-34bb04969aea,بنزرت,TN-23,Bizerte,North East,true,,,,,0.6448,0.7589,
+TNP-00168,أحمد الصغير,Ahmed Sghaier,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-4e2903aee80f,زغوان,TN-22,Zaghouan,North East,false,,,,,0.6239,0.7522,
+TNP-00169,علي بنعون,Ali Ben Aoun,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-990caafd3fb3,صفاقس 1,TN-61,Sfax,Centre East,true,,,,,0.3552,0.5044,
+TNP-00170,علي الهرماسي,Ali Hermassi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-86fce3cae9b0,القصرين,TN-42,Kasserine,Centre West,false,,,,,0.5493,0.6339,
+TNP-00171,علي الطياشي,Ali Tayachi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-34bb04969aea,بنزرت,TN-23,Bizerte,North East,true,,,,,0.7433,0.7522,
+TNP-00172,أمل السعيدي,Amal Saidi,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-c891423153f5,الكاف,TN-33,Kef,North West,false,,,,,0.6299,0.8125,
+TNP-00173,آمال الورتتاني,Amel Ouertatani,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-65af9ff64cdc,بن عروس,TN-13,Ben Arous,Grand Tunis,true,,,,,0.6119,0.8393,
+TNP-00174,عامر العريض,Ameur Laraiedh,male,1965,day,,2,NCA-2011,ARP-2019,2011-11-22,TNC-6480cc2b0175,مدنين,TN-82,Medenine,South East,true,,,أستاذ جامعي,,0.4507,0.7168,
+TNP-00175,أمين الميساوي,Amine Missaoui,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-dd0a034cca93,سيدي بوزيد,TN-43,Sidi Bouzid,Centre West,false,,,,,0.6955,0.7965,
+TNP-00176,أميرة شرف الدين,Amira Charfedine,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-91c675998d9c,المهدية,TN-53,Mahdia,Centre East,true,,,,,0.6358,0.6991,
+TNP-00177,أنور بن الشاهد,Anouar Ben Chahed,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-94e024e97a0b,فرنسا 2,TN-99,Abroad,abroad,false,,,,,0.6746,0.5752,
+TNP-00178,أروى بن عباس,Aroua Ben Abbas,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-cd1ca9244e55,تونس 2,TN-11,Tunis,Grand Tunis,true,,,مهندس معماري,,0.9254,0.7946,
+TNP-00179,عواطف فتيريش,Awatef Ftirich,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-990caafd3fb3,صفاقس 1,TN-61,Sfax,Centre East,true,,,,,0.6955,0.6964,
+TNP-00180,عواطف قريش عبيد,Awatef Griche Abid,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-bf84273551e0,أريانة,TN-12,Ariana,Grand Tunis,true,,,,,0.7655,0.7757,
+TNP-00181,العياشي زمال,Ayachi Zammal,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-7c20f132677c,سليانة,TN-34,Siliana,North West,false,,,,,0.7940,0.9204,
+TNP-00182,آية الله هيشري,Ayatallah Hichri,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-86fce3cae9b0,القصرين,TN-42,Kasserine,Centre West,false,,,,,0.6030,0.7679,
+TNP-00183,البشير الخليفي,Bechir Khelifi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-c3a024df701d,تطاوين,TN-83,Tataouine,South East,false,,,محامي,,0.6448,0.6339,
+TNP-00184,بشر الشابي,Bechr Chebbi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-fb9b69aef92c,توزر,TN-72,Tozeur,South West,false,,,,,0.6746,0.8304,
+TNP-00185,بلقاسم الدراجي,Belgacem Darraji,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-7c20f132677c,سليانة,TN-34,Siliana,North West,false,,,,,0.9254,0.9204,
+TNP-00186,بلقاسم حسن,Belgacem Hssan,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-fce75049ff09,قبلي,TN-73,Kebili,South West,false,,,,,0.9612,0.9646,
+TNP-00187,شادية الحفصوني,Chadia Hafsouni,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-505fecc15922,جندوبة,TN-32,Jendouba,North West,true,,,,,0.8597,0.8036,
+TNP-00188,شيراز الشابي,Chiraz Chebbi,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-bf84273551e0,أريانة,TN-12,Ariana,Grand Tunis,true,,,,,0.5313,0.8761,
+TNP-00189,شكري بلحاج عمارة,Chokri Belhaj Amara,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-4e2903aee80f,زغوان,TN-22,Zaghouan,North East,false,,,,,0.7970,0.7946,
+TNP-00190,شكري الذويبي,Chokri Dhouibi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-fb9b69aef92c,توزر,TN-72,Tozeur,South West,false,,,,,0.3254,0.7589,
+TNP-00191,آمنة بن حميد,Emna Ben Hmayed,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-34bb04969aea,بنزرت,TN-23,Bizerte,North East,true,,,أستاذ تعليم ثانوي,,0.8925,0.8482,
+TNP-00192,عزالدين الفرجاني,Ezzedine Ferjani,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-91c675998d9c,المهدية,TN-53,Mahdia,Centre East,true,,,,,0.5463,0.6696,
+TNP-00193,الفاضل الوج,Fadhel Ouej,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-91c675998d9c,المهدية,TN-53,Mahdia,Centre East,true,,,,,0.7224,0.6991,
+TNP-00194,فائزة بوهلال,Faiza Bouhlel,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-990caafd3fb3,صفاقس 1,TN-61,Sfax,Centre East,true,,,,,0.9104,0.9018,
+TNP-00195,فاكر الشويخي,Faker Chouikhi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-6480cc2b0175,مدنين,TN-82,Medenine,South East,true,,,,,0.4388,0.6786,
+TNP-00196,فخر الدين شبشوب,Fakhereedine Chabchoub,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-4e2903aee80f,زغوان,TN-22,Zaghouan,North East,false,,,,,0.7313,0.6786,
+TNP-00197,فارس بلال,Fares Blel,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-94e024e97a0b,فرنسا 2,TN-99,Abroad,abroad,false,,,,,0.7731,0.7411,
+TNP-00198,فرحات الراجحي,Farhat Rajhi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-34bb04969aea,بنزرت,TN-23,Bizerte,North East,true,,,,,0.2955,0.5133,
+TNP-00199,فتحي العيادي,Fathi Ayadi,male,1964,day,,2,NCA-2011,ARP-2019,2011-11-22,TNC-990caafd3fb3,صفاقس 1,TN-61,Sfax,Centre East,true,,,أستاذ تعليم ثانوي,other,0.8090,0.8214,
+TNP-00200,فتحي بلقاسم,Fathi Belgacem,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-91c675998d9c,المهدية,TN-53,Mahdia,Centre East,true,,,,,0.9254,0.8407,
+TNP-00201,فيصل دربال,Faycel Derbel,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-990caafd3fb3,صفاقس 1,TN-61,Sfax,Centre East,true,,,,,0.7791,0.8761,
+TNP-00202,فيصل الطاهري,Faycel Tahri,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-dd0a034cca93,سيدي بوزيد,TN-43,Sidi Bouzid,Centre West,false,,,,,0.8657,0.8761,
+TNP-00203,فيصل تبيني,Faycel Tebini,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-505fecc15922,جندوبة,TN-32,Jendouba,North West,true,,,موظف بالقطاع الخاص,,0.3791,0.8214,
+TNP-00204,فريدة عبيدي,Ferida Laabidi,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-4c5b0de0b4df,القيروان,TN-41,Kairouan,Centre West,false,,,محامي,,0.6716,0.7257,
+TNP-00205,فؤاد ثامر,Foued Thameur,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-c14e9c41e9ce,قابس,TN-81,Gabes,South East,true,,,,,0.7343,0.9018,
+TNP-00206,غازي القروي,Ghazi Karoui,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-34bb04969aea,بنزرت,TN-23,Bizerte,North East,true,,,,,0.6597,0.6607,
+TNP-00207,حبيب بن سيدهم,Habib Ben Sid’hom,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-fce75049ff09,قبلي,TN-73,Kebili,South West,false,,,,,0.4657,0.7589,
+TNP-00208,حافظ الزواري,Hafedh Zouari,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-d7e470a6f1cf,سوسة,TN-51,Sousse,Centre East,true,,,مدير مؤسسة,,0.5552,0.7411,
+TNP-00209,هاجر النيفر,Hajer Naifer,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-990caafd3fb3,صفاقس 1,TN-61,Sfax,Centre East,true,,,,,0.6119,0.6991,
+TNP-00210,حليمة همامي,Halima Hammami,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-65af9ff64cdc,بن عروس,TN-13,Ben Arous,Grand Tunis,true,,,,,0.6657,0.7965,
+TNP-00211,حسان بن الحاج إبراهيم,Hassen Ben Hadj Ibrahim,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-e4ad8a676ffb,منوبة,TN-14,Manouba,Grand Tunis,false,,,,,0.6507,0.6161,
+TNP-00212,حسونه ناصفي,Hassouna Nasfi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-c14e9c41e9ce,قابس,TN-81,Gabes,South East,true,,,إطار سامي بالوظيفة العمومية,,0.8119,0.9735,
+TNP-00213,حاتم البوبكري,Hatem Boubakri,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-c891423153f5,الكاف,TN-33,Kef,North West,false,,,,,0.4388,0.6161,
+TNP-00214,حاتم القروي,Hatem Karoui,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-20803e341482,نابل 2,TN-21,Nabeul,North East,true,,,,,0.8448,0.7321,
+TNP-00215,حاتم المانسي,Hatem Mansi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-7c20f132677c,سليانة,TN-34,Siliana,North West,false,,,,,0.6955,0.8839,
+TNP-00216,حاتم المليكي,Hatem Mliki,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-c891423153f5,الكاف,TN-33,Kef,North West,false,,,,,0.4716,0.7143,
+TNP-00217,حياة عمري,Hayet Omri,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-dd0a034cca93,سيدي بوزيد,TN-43,Sidi Bouzid,Centre West,false,,,باحث جامعي,,0.7791,0.8230,
+TNP-00218,هيكل مكي,Haykel Mekki,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-5531b77d50b4,قفصة,TN-71,Gafsa,South West,false,,,,,0.4030,0.7699,
+TNP-00219,هيثم براهم,Haythem Brahem,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-91c675998d9c,المهدية,TN-53,Mahdia,Centre East,true,,,,,0.7970,0.8125,
+TNP-00220,الهادي الماكني,Hedi Makni,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-7f9ed563bc4e,باجة,TN-31,Beja,North West,true,,,,,0.2478,0.5804,
+TNP-00221,هاجر بوزمي,Heger Bouzemmi,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-6480cc2b0175,مدنين,TN-82,Medenine,South East,true,,,طالب,,0.9821,0.7679,
+TNP-00222,هاجر البوهلالي,Hejer Bouhleli,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-86fce3cae9b0,القصرين,TN-42,Kasserine,Centre West,false,,,,,0.9070,0.7317,
+TNP-00223,هشام عجبوني,Hichem Ajbouni,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-cd1ca9244e55,تونس 2,TN-11,Tunis,Grand Tunis,true,,,,,0.7403,0.8142,
+TNP-00224,هشام بن أحمد,Hichem Ben Ahmed,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-cd1ca9244e55,تونس 2,TN-11,Tunis,Grand Tunis,true,,,,,0.7910,0.7411,
+TNP-00225,حسام موسى,Houssem Moussa,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-a65c89ca4d13,المنستير,TN-52,Monastir,Centre East,true,,,,,0.4090,0.6071,
+TNP-00226,حسين جنيح,Hussein Jenayah,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-d7e470a6f1cf,سوسة,TN-51,Sousse,Centre East,true,,,,,0.6239,0.6991,
+TNP-00227,ابتهاج بن هلال,Ibtihej Ben Helal,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-34bb04969aea,بنزرت,TN-23,Bizerte,North East,true,,,موظف عمومي,,0.5582,0.7946,
+TNP-00228,عماد الخميري,Imed Khemiri,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-e4ad8a676ffb,منوبة,TN-14,Manouba,Grand Tunis,false,,,إطار سامي بالقطاع الخاص,,0.8328,0.9735,
+TNP-00229,إيمان بالطيب,Imen Bettaieb,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-20803e341482,نابل 2,TN-21,Nabeul,North East,true,,,,,0.8239,0.8036,
+TNP-00230,عصام برقوقي,Issam Bargougui,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-dd0a034cca93,سيدي بوزيد,TN-43,Sidi Bouzid,Centre West,false,,,,,0.6687,0.8125,
+TNP-00231,عياض علاق,Iyadh Allag,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-a65c89ca4d13,المنستير,TN-52,Monastir,Centre East,true,,,,,0.7463,0.7080,
+TNP-00232,عياض اللومي,Iyadh Elloumi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-bf84273551e0,أريانة,TN-12,Ariana,Grand Tunis,true,,,,,0.8000,0.8036,
+TNP-00233,جلال الزياتي,Jalal Zayati,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-a65c89ca4d13,المنستير,TN-52,Monastir,Centre East,true,,,,,0.7881,0.8304,
+TNP-00234,جمالي بوضوافي,Jamali Boudhouafi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-65af9ff64cdc,بن عروس,TN-13,Ben Arous,Grand Tunis,true,,,,,0.8299,0.8496,
+TNP-00235,جميلة دبش,Jamila Debbech,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-bf84273551e0,أريانة,TN-12,Ariana,Grand Tunis,true,,,إطار بالوظيفة العمومية,,0.4119,0.7589,
+TNP-00236,جميلة الجويني,Jamila Jouini,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-c3a024df701d,تطاوين,TN-83,Tataouine,South East,false,,,أستاذ تعليم ثانوي,,0.8507,0.8839,
+TNP-00237,جوهر المغيربي,Jawher Mghirbi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-20803e341482,نابل 2,TN-21,Nabeul,North East,true,,,,,0.7493,0.8214,
+TNP-00238,الجديدي السبوعي,Jedidi Sboui,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-4e2903aee80f,زغوان,TN-22,Zaghouan,North East,false,,,,,0.6716,0.7522,
+TNP-00239,كمال العوادي,Kamel Aouadi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-505fecc15922,جندوبة,TN-32,Jendouba,North West,true,,,,,0.5373,0.5625,
+TNP-00240,كمال الحبيب فراج,Kamel Habib Faraj,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-c14e9c41e9ce,قابس,TN-81,Gabes,South East,true,,,,,0.6478,0.6964,
+TNP-00241,كنزة عجالة,Kenza Ajela,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-c14e9c41e9ce,قابس,TN-81,Gabes,South East,true,,,,,0.8418,0.8036,
+TNP-00242,خالد الكريشي,Khaled Krichi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-4c5b0de0b4df,القيروان,TN-41,Kairouan,Centre West,false,,,,,0.6299,0.7257,
+TNP-00243,خالد قسومة,Khaled Qsouma,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-65af9ff64cdc,بن عروس,TN-13,Ben Arous,Grand Tunis,true,,,,,0.1284,0.4107,
+TNP-00244,خير الدين الزاهي,Kheireddine Zahi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-7c20f132677c,سليانة,TN-34,Siliana,North West,false,,,,,0.6806,0.8319,
+TNP-00245,لمياء جعيدان,Lamia Jaidane,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-a65c89ca4d13,المنستير,TN-52,Monastir,Centre East,true,,,,,0.5313,0.6991,
+TNP-00246,لسعد حجلاوي,Lassaad Hajlaoui,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-dd0a034cca93,سيدي بوزيد,TN-43,Sidi Bouzid,Centre West,false,,,,,0.7522,0.8230,
+TNP-00247,لطيفة الحباشي,Latifa Habachi,female,1972,day,TN-11,2,NCA-2011,ARP-2019,2011-11-22,TNC-e4ad8a676ffb,منوبة,TN-14,Manouba,Grand Tunis,false,,,محامي,judiciary,0.7552,0.8407,
+TNP-00248,لزهر الشملي,Lazher Chamli,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-a65c89ca4d13,المنستير,TN-52,Monastir,Centre East,true,,,,,0.7940,0.6429,
+TNP-00249,ليلى حداد,Leila Haddad,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-6480cc2b0175,مدنين,TN-82,Medenine,South East,true,,,,,0.5672,0.9115,
+TNP-00250,ليليا بالليل,Lilia Bellil,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-94e024e97a0b,فرنسا 2,TN-99,Abroad,abroad,false,,,,,0.8000,0.8214,
+TNP-00251,لطفي علي,Lotfi Ali,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-5531b77d50b4,قفصة,TN-71,Gafsa,South West,false,,,مدير مؤسسة,,0.2925,0.3661,
+TNP-00252,لطفي العيادي,Lotfi Ayadi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-505fecc15922,جندوبة,TN-32,Jendouba,North West,true,,,,,0.6836,0.7788,
+TNP-00253,المبروك كرشيد,Mabrouk Korchid,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-6480cc2b0175,مدنين,TN-82,Medenine,South East,true,,,,,0.6299,0.9204,
+TNP-00254,محبوبة بن ضيف الله,Mahbouba Ben Dhifallah,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-fce75049ff09,قبلي,TN-73,Kebili,South West,false,,,إطار سامي بالوظيفة العمومية,,0.7045,0.8750,
+TNP-00255,ماهر المذيوب,Maher Madhioub,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-8e9eb8d0053a,العالم العربي وبقية دول العالم,,,,,,,صحافي,,0.1881,0.6518,
+TNP-00256,ماهر زيد,Maher Zid,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-4c5b0de0b4df,القيروان,TN-41,Kairouan,Centre West,false,,,,,0.3373,0.5536,
+TNP-00257,مجدي بوذينة,Majdi Boudhina,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-20803e341482,نابل 2,TN-21,Nabeul,North East,true,,,,,0.7940,0.7788,
+TNP-00258,مجدي الكرباعي,Majdi Kerbai,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-dbb6ed731f07,إيطاليا,TN-99,Abroad,abroad,false,,,,,0.3373,0.4107,
+TNP-00259,مريم بن بلقاسم,Mariem Ben Belgacem,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-990caafd3fb3,صفاقس 1,TN-61,Sfax,Centre East,true,,,,,0.8000,0.8750,
+TNP-00260,مريم اللغماني,Mariem Laghmani,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-c891423153f5,الكاف,TN-33,Kef,North West,false,,,,,0.6209,0.6786,
+TNP-00261,مريم السعيدي,Mariem Saidi,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-cd1ca9244e55,تونس 2,TN-11,Tunis,Grand Tunis,true,,,,,0.7672,0.8407,
+TNP-00262,مروان فلفال,Marouan Falfel,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-20803e341482,نابل 2,TN-21,Nabeul,North East,true,,,,,0.5493,0.7589,
+TNP-00263,مروى بن تمروت,Marwa Ben Tamrout,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-6480cc2b0175,مدنين,TN-82,Medenine,South East,true,,,,,0.9403,0.8393,
+TNP-00264,مهدي بن غربية,Mehdi Ben Gharbia,male,1973,day,,2,NCA-2011,ARP-2019,2011-11-22,TNC-34bb04969aea,بنزرت,TN-23,Bizerte,North East,true,,,مدير مؤسسة,,0.4119,0.4643,
+TNP-00265,مكي زغدود,Mekki Zaghdoud,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-fce75049ff09,قبلي,TN-73,Kebili,South West,false,,,,,0.4716,0.5089,
+TNP-00266,ميلاد بن الدالي,Miled Ben Dali,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-d7e470a6f1cf,سوسة,TN-51,Sousse,Centre East,true,,,,,0.4836,0.6786,
+TNP-00267,معز بلحاج رحومة,Moez Belhaj Rhouma,male,1966,day,TN-21,2,NCA-2011,ARP-2019,2011-11-22,TNC-20803e341482,نابل 2,TN-21,Nabeul,North East,true,,,,,0.8000,0.7946,
+TNP-00268,محمد العفاس,Mohamed Affas,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-990caafd3fb3,صفاقس 1,TN-61,Sfax,Centre East,true,,,,,0.6657,0.8850,
+TNP-00269,محمد أحمد الدلهومي,Mohamed Ahmed Dalhoumi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-86fce3cae9b0,القصرين,TN-42,Kasserine,Centre West,false,,,,,0.6090,0.5804,
+TNP-00270,محمد عمار,Mohamed Ammar,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-8e9eb8d0053a,العالم العربي وبقية دول العالم,,,,,,,,,0.7164,0.9018,
+TNP-00271,محمد بونني,Mohamed Bouneni,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-20803e341482,نابل 2,TN-21,Nabeul,North East,true,,,,,0.7701,0.7345,
+TNP-00272,محمد ضياء الدين بن عمر,Mohamed Dhiaa Ben Omar,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-c14e9c41e9ce,قابس,TN-81,Gabes,South East,true,,,,,0.7612,0.6250,
+TNP-00273,محمد الفاتح الخليفي,Mohamed Fateh Khlifi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-c3a024df701d,تطاوين,TN-83,Tataouine,South East,false,,,,,0.4328,0.6071,
+TNP-00274,محمد القوماني,Mohamed Goumani,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-7f9ed563bc4e,باجة,TN-31,Beja,North West,true,,,,,0.8179,0.8839,
+TNP-00275,محمد الحصايري,Mohamed Hsairi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-990caafd3fb3,صفاقس 1,TN-61,Sfax,Centre East,true,,,,,0.3493,0.5714,
+TNP-00276,محمد كمال حمزاوي,Mohamed Kamel Hamzaoui,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-86fce3cae9b0,القصرين,TN-42,Kasserine,Centre West,false,,,مدير مؤسسة,,0.1552,0.1339,
+TNP-00277,محمد كريم كريفة,Mohamed Karim Krifa,male,1973,day,,2,NCA-2011,ARP-2019,2011-11-22,TNC-d7e470a6f1cf,سوسة,TN-51,Sousse,Centre East,true,,,,judiciary,0.6687,0.6814,
+TNP-00278,محمد لزهر الرمة,Mohamed Lazher Rama,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-6480cc2b0175,مدنين,TN-82,Medenine,South East,true,,,,,0.9194,0.7411,
+TNP-00279,محمد مراد الحمزاوي,Mohamed Mourad Hamzaoui,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-7c20f132677c,سليانة,TN-34,Siliana,North West,false,,,,,0.6478,0.9027,
+TNP-00280,محمد الناصر بوسن,Mohamed Naceur Bousen,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-20803e341482,نابل 2,TN-21,Nabeul,North East,true,,,,,0.4418,0.6875,
+TNP-00281,محمد الصادق قحبيش,Mohamed Sadok Kahbich,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-d7e470a6f1cf,سوسة,TN-51,Sousse,Centre East,true,,,,,0.4985,0.8393,
+TNP-00282,محمد صالح اللطيفي,Mohamed Saleh Ltifi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-86fce3cae9b0,القصرين,TN-42,Kasserine,Centre West,false,,,,,0.6627,0.8661,
+TNP-00283,محمد السخيري,Mohamed Skhiri,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-a65c89ca4d13,المنستير,TN-52,Monastir,Centre East,true,,,,,0.6448,0.8571,
+TNP-00284,محمد الزعبي,Mohamed Zaabi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-86fce3cae9b0,القصرين,TN-42,Kasserine,Centre West,false,,,,,0.6060,0.5982,
+TNP-00285,محمد زريق,Mohamed Zrig,male,,,,2,NCA-2011,ARP-2019,2011-11-22,TNC-c14e9c41e9ce,قابس,TN-81,Gabes,South East,true,,,إطار بالقطاع الخاص,academia;party;trade_union,0.8687,0.8304,
+TNP-00286,محسن العرفاوي,Mohsen Arfaoui,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-fb9b69aef92c,توزر,TN-72,Tozeur,South West,false,,,,,0.7731,0.8673,
+TNP-00287,منصف بوغطاس,Moncef Boughattas,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-a65c89ca4d13,المنستير,TN-52,Monastir,Centre East,true,,,,,0.9493,0.7965,
+TNP-00288,منذر بن عطية,Mondher Ben Attia,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-20803e341482,نابل 2,TN-21,Nabeul,North East,true,,,,,0.7045,0.8393,
+TNP-00289,منجي الرحوي,Mongi Rahoui,male,1982,year,,2,NCA-2011,ARP-2019,2011-11-22,TNC-505fecc15922,جندوبة,TN-32,Jendouba,North West,true,,,إطار سامي بالقطاع البنكي,,0.4209,0.7611,
+TNP-00290,منجيّة البوغانمي,Monjia Boughanmi,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-ec2eafe2f404,غير متوفر,,,,,,,,,1.0000,0.9167,
+TNP-00291,معاذ بن ضياف,Mouadh Ben Dhiaf,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-e4ad8a676ffb,منوبة,TN-14,Manouba,Grand Tunis,false,,,,,0.4358,0.7321,
+TNP-00292,منير بلطي حمدي,Mounir Balti Hamdi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-cd1ca9244e55,تونس 2,TN-11,Tunis,Grand Tunis,true,,,,,0.2060,0.4911,
+TNP-00293,منيرة العياري,Mounira Ayari,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-83d48176add4,القارة الأمريكية وبقية الدول الأوروبية,,,,,,,,,0.3463,0.8304,
+TNP-00294,موسى بن أحمد,Moussa Ben Ahmed,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-4096900d34d2,ألمانيا,TN-99,Abroad,abroad,false,,,,,0.7910,0.7589,
+TNP-00295,مصطفى بن أحمد,Mustapha Ben Ahmed,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-cd1ca9244e55,تونس 2,TN-11,Tunis,Grand Tunis,true,,,موظف عمومي,,0.7493,0.9115,
+TNP-00296,مصطفى الغربي,Mustapha Gharbi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-7f9ed563bc4e,باجة,TN-31,Beja,North West,true,,,,,0.5791,0.4690,
+TNP-00297,نبيل حجي,Nabil Hajji,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-bf84273551e0,أريانة,TN-12,Ariana,Grand Tunis,true,,,مهندس,,0.5493,0.9375,
+TNP-00298,نعيمة المنصوري,Naima Mansouri,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-6480cc2b0175,مدنين,TN-82,Medenine,South East,true,,,,,0.6507,0.8036,
+TNP-00299,نوفل الجمالي,Naoufel Jammali,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-dd0a034cca93,سيدي بوزيد,TN-43,Sidi Bouzid,Centre West,false,,,أستاذ جامعي,,0.7672,0.7946,
+TNP-00300,ناجي الجراحي,Neji Jarahi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-cd1ca9244e55,تونس 2,TN-11,Tunis,Grand Tunis,true,,,,,0.4806,0.6637,
+TNP-00301,ناجي الجمل,Neji Jmal,male,1966,day,,2,NCA-2011,ARP-2019,2011-11-22,TNC-94e024e97a0b,فرنسا 2,TN-99,Abroad,abroad,false,,,موظف بالقطاع الخاص,,0.7821,0.8661,
+TNP-00302,نجم الدين بن سالم,Nejmeddine Ben Salem,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-91c675998d9c,المهدية,TN-53,Mahdia,Centre East,true,,,,,0.8567,0.8407,
+TNP-00303,نسرين العماري,Nesrine Laamari,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-c891423153f5,الكاف,TN-33,Kef,North West,false,,,,,0.8239,0.8142,
+TNP-00304,نضال سعودي,Nidhal Saoudi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-505fecc15922,جندوبة,TN-32,Jendouba,North West,true,,,,,0.5403,0.7589,
+TNP-00305,نعمان العش,Noomane El Euch,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-990caafd3fb3,صفاقس 1,TN-61,Sfax,Centre East,true,,,مدير مؤسسة,,0.7731,0.8142,
+TNP-00306,نهى عيساوي,Nouha Aissaoui,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-dd0a034cca93,سيدي بوزيد,TN-43,Sidi Bouzid,Centre West,false,,,,,0.3821,0.5000,
+TNP-00307,نهى الجلابي,Nouha Jallabi,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-fb9b69aef92c,توزر,TN-72,Tozeur,South West,false,,,,,0.7186,0.5638,
+TNP-00308,نور الدين العرباوي,Noureddine Arbaoui,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-86fce3cae9b0,القصرين,TN-42,Kasserine,Centre West,false,,,,,0.8537,0.6786,
+TNP-00309,نور الدين البحيري,Noureddine Bhiri,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-65af9ff64cdc,بن عروس,TN-13,Ben Arous,Grand Tunis,true,,,محامي,,0.6836,0.8761,
+TNP-00310,نسيبة بن علي,Noussaiba Ben Ali,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-65af9ff64cdc,بن عروس,TN-13,Ben Arous,Grand Tunis,true,,,,,0.5910,0.8214,
+TNP-00311,ألفة التراس,Olfa Terras,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-34bb04969aea,بنزرت,TN-23,Bizerte,North East,true,,,,,0.4149,0.5000,
+TNP-00312,عمر الغريبي,Omar Ghribi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-94e024e97a0b,فرنسا 2,TN-99,Abroad,abroad,false,,,,,0.6448,0.6460,
+TNP-00313,أسامة الخليفي,Oussama Khlifi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-cd1ca9244e55,تونس 2,TN-11,Tunis,Grand Tunis,true,,,,,0.7194,0.9027,
+TNP-00314,أسامة علية الصغير,Oussama Sghaier,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-dbb6ed731f07,إيطاليا,TN-99,Abroad,abroad,false,,,ممثل جمعياتي,,0.8358,0.8482,
+TNP-00315,رباب بن لطيف,Rabeb Ben Letaief,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-83d48176add4,القارة الأمريكية وبقية الدول الأوروبية,,,,,,,,,0.8657,0.8482,
+TNP-00316,راشد الغنوشي,Rached Ghannouchi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-cd1ca9244e55,تونس 2,TN-11,Tunis,Grand Tunis,true,,,,,0.3731,0.9381,
+TNP-00317,راشد الخياري,Rached Khiari,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-e4ad8a676ffb,منوبة,TN-14,Manouba,Grand Tunis,false,,,,,0.2030,0.3929,
+TNP-00318,رفيق عمارة,Rafik Amara,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-7f9ed563bc4e,باجة,TN-31,Beja,North West,true,,,,,0.8448,0.8929,
+TNP-00319,رضا شرف الدين,Ridha Charfeddine,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-d7e470a6f1cf,سوسة,TN-51,Sousse,Centre East,true,,,مدير مؤسسة,,0.4239,0.5625,
+TNP-00320,رضا الجوادي,Ridha Jaouadi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-990caafd3fb3,صفاقس 1,TN-61,Sfax,Centre East,true,,,,,0.9343,0.8304,
+TNP-00321,رضا الزغمي,Ridha Zaghmi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-d7e470a6f1cf,سوسة,TN-51,Sousse,Centre East,true,,,,,0.8388,0.8571,
+TNP-00322,صفاء الغريبي,Safa Ghribi,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-990caafd3fb3,صفاقس 1,TN-61,Sfax,Centre East,true,,,,,0.6448,0.7699,
+TNP-00323,الصافي سعيد,Safi Said,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-cd1ca9244e55,تونس 2,TN-11,Tunis,Grand Tunis,true,,,,,0.0597,0.3125,
+TNP-00324,الصحبي عتيق,Sahbi Atig,male,,,,2,NCA-2011,ARP-2019,2011-11-22,TNC-bf84273551e0,أريانة,TN-12,Ariana,Grand Tunis,true,,,باحث جامعي,,0.8060,0.9286,
+TNP-00325,الصحبي صمارة,Sahbi Smara,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-4c5b0de0b4df,القيروان,TN-41,Kairouan,Centre West,false,,,,,0.2776,0.5268,
+TNP-00326,سعيد الجزيري,Said Jaziri,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-65af9ff64cdc,بن عروس,TN-13,Ben Arous,Grand Tunis,true,,,,,0.1701,0.4779,
+TNP-00327,سالم قطاطة,Salem Ketata,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-990caafd3fb3,صفاقس 1,TN-61,Sfax,Centre East,true,,,,,0.7970,0.8850,
+TNP-00328,سالم لبيض,Salem Labiadh,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-6480cc2b0175,مدنين,TN-82,Medenine,South East,true,,,أستاذ جامعي,,0.4030,0.5446,
+TNP-00329,سلمى معالج,Salma Maalej,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-65af9ff64cdc,بن عروس,TN-13,Ben Arous,Grand Tunis,true,,,,,0.7605,0.8085,
+TNP-00330,سلوى بن عيشة,Salwa Ben Aicha,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-cd1ca9244e55,تونس 2,TN-11,Tunis,Grand Tunis,true,,,,,0.3433,0.6071,
+TNP-00331,سماح دمق,Sameh Dammak,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-990caafd3fb3,صفاقس 1,TN-61,Sfax,Centre East,true,,,مدير مؤسسة,,0.7403,0.7788,
+TNP-00332,سامية عبو,Samia Abbou,female,1965,day,,2,NCA-2011,ARP-2019,2011-11-22,TNC-cd1ca9244e55,تونس 2,TN-11,Tunis,Grand Tunis,true,,,محامي,,0.6090,0.9469,
+TNP-00333,سمير ديلو,Samir Dilou,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-34bb04969aea,بنزرت,TN-23,Bizerte,North East,true,,,محامي,,0.9343,0.8850,
+TNP-00334,سميرة بعيزيق,Samira Bizig,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-d7e470a6f1cf,سوسة,TN-51,Sousse,Centre East,true,,,,,0.5910,0.7768,
+TNP-00335,سميرة الشواشي,Samira Chaouachi,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-cd1ca9244e55,تونس 2,TN-11,Tunis,Grand Tunis,true,,,,,0.6985,0.9115,
+TNP-00336,سميرة حميدة,Samira Hmida,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-91c675998d9c,المهدية,TN-53,Mahdia,Centre East,true,,,,,0.9761,0.8393,
+TNP-00337,سميرة السايحي,Samira Sayhi,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-65af9ff64cdc,بن عروس,TN-13,Ben Arous,Grand Tunis,true,,,,,0.7701,0.7699,
+TNP-00338,سميرة سميعي,Samira Smii,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-a65c89ca4d13,المنستير,TN-52,Monastir,Centre East,true,,,,,0.9403,0.8750,
+TNP-00339,السيد فرجاني,Sayed Ferjani,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-4c5b0de0b4df,القيروان,TN-41,Kairouan,Centre West,false,,,,,0.7642,0.8929,
+TNP-00340,السيدة الونيسي,Sayida Ounissi,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-94e024e97a0b,فرنسا 2,TN-99,Abroad,abroad,false,,,باحث جامعي,,0.6030,0.8214,
+TNP-00341,سيف الدين المرغني,Seifeddine Mergheni,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-4c5b0de0b4df,القيروان,TN-41,Kairouan,Centre West,false,,,,,0.2478,0.6071,
+TNP-00342,سيف الدين مخلوف,Seifedine Makhlouf,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-cd1ca9244e55,تونس 2,TN-11,Tunis,Grand Tunis,true,,,محامي,,0.4776,0.9115,
+TNP-00343,سهام الشريقي,Sihem Chrigui,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-4c5b0de0b4df,القيروان,TN-41,Kairouan,Centre West,false,,,,,0.3612,0.7768,
+TNP-00344,سفيان المخلوفي,Sofien Makhloufi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-e4ad8a676ffb,منوبة,TN-14,Manouba,Grand Tunis,false,,,,,0.4090,0.6250,
+TNP-00345,سفيان طوبال,Sofien Toubel,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-5531b77d50b4,قفصة,TN-71,Gafsa,South West,false,,,أستاذ تعليم ثانوي,,0.6328,0.7500,
+TNP-00346,سنية الخشين,Sonia Lekhchine,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-65af9ff64cdc,بن عروس,TN-13,Ben Arous,Grand Tunis,true,,,,,0.5612,0.5179,
+TNP-00347,صهيب الوذان,Souhaib Ouadhan,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-c3a024df701d,تطاوين,TN-83,Tataouine,South East,false,,,,,0.4269,0.6518,
+TNP-00348,سهير العسكري,Souhir Askri,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-7f9ed563bc4e,باجة,TN-31,Beja,North West,true,,,,,0.6955,0.8053,
+TNP-00349,طارق براهمي,Tarek Brahmi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-5531b77d50b4,قفصة,TN-71,Gafsa,South West,false,,,,,0.7164,0.8496,
+TNP-00350,طارق فتيتي,Tarek Fetiti,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-4c5b0de0b4df,القيروان,TN-41,Kairouan,Centre West,false,,,إطار سامي بالوظيفة العمومية,,0.6866,0.9196,
+TNP-00351,توفيق الزايري,Tawfik Zairi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-505fecc15922,جندوبة,TN-32,Jendouba,North West,true,,,,,0.8239,0.8496,
+TNP-00352,ثامر سعد,Thameur Saad,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-20803e341482,نابل 2,TN-21,Nabeul,North East,true,,,,,0.6896,0.7257,
+TNP-00353,التومي الحمروني,Toumi Hamrouni,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-20803e341482,نابل 2,TN-21,Nabeul,North East,true,,,,,0.6563,0.8500,
+TNP-00354,وفاء عطية,Wafa Attia,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-d7e470a6f1cf,سوسة,TN-51,Sousse,Centre East,true,,,,,0.8567,0.8214,
+TNP-00355,وليد الجلاد,Walid Jalled,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-20803e341482,نابل 2,TN-21,Nabeul,North East,true,,,موظف بالقطاع الخاص,,0.5104,0.5982,
+TNP-00356,وسام الشعري,Wissem Chaari,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-990caafd3fb3,صفاقس 1,TN-61,Sfax,Centre East,true,,,,,0.4657,0.7257,
+TNP-00357,يمينة الزغلامي,Yamina Zoghlami,female,1970,day,TN-11,2,NCA-2011,ARP-2019,2011-11-22,TNC-cd1ca9244e55,تونس 2,TN-11,Tunis,Grand Tunis,true,,,أستاذ تعليم ثانوي,,0.8806,0.9107,
+TNP-00358,ياسين العياري,Yassine Ayari,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-94e024e97a0b,فرنسا 2,TN-99,Abroad,abroad,false,,,,,0.4687,0.7500,
+TNP-00359,يسري الدالي,Yosri Dali,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-cd1ca9244e55,تونس 2,TN-11,Tunis,Grand Tunis,true,,,,,0.4328,0.8393,
+TNP-00360,زينب السفاري,Zaineb Safari,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-94e024e97a0b,فرنسا 2,TN-99,Abroad,abroad,false,,,,,0.5403,0.6071,
+TNP-00361,زينب براهمي,Zeineb Brahmi,female,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-5531b77d50b4,قفصة,TN-71,Gafsa,South West,false,,,محامي,,0.8507,0.8319,
+TNP-00362,زياد الغناي,Zied Ghanney,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-94e024e97a0b,فرنسا 2,TN-99,Abroad,abroad,false,,,,,0.6030,0.5893,
+TNP-00363,زياد الهاشمي,Zied Hechmi,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-94e024e97a0b,فرنسا 2,TN-99,Abroad,abroad,false,,,,,0.2955,0.6964,
+TNP-00364,زياد العذاري,Zied Laadhari,male,1975,day,TN-51,2,NCA-2011,ARP-2019,2011-11-22,TNC-d7e470a6f1cf,سوسة,TN-51,Sousse,Centre East,true,,,محامي,judiciary,0.5284,0.7768,
+TNP-00365,زهير المغزاوي,Zouhair Maghzaoui,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-fce75049ff09,قبلي,TN-73,Kebili,South West,false,,,أستاذ تعليم ثانوي,,0.6478,0.7857,
+TNP-00366,زهير مخلوف,Zouhair Makhlouf,male,,,,1,ARP-2019,ARP-2019,2019-11-13,TNC-20803e341482,نابل 2,TN-21,Nabeul,North East,true,,,,,0.8119,0.9027,
+TNP-00367,إبراهيم الحامدي,Ibrahim Hamdi,male,1975,day,TN-43,1,NCA-2011,NCA-2011,2011-11-22,TNC-583f49488ae9,المنستير,TN-52,Monastir,Centre East,true,PTY-bbfe9bb6d793,unknown,,civil_society;trade_union,0.4488,,
+TNP-00368,إبراهيم قصاص,Ibrahim Kassas,male,1965,year,,1,NCA-2011,NCA-2011,2011-11-22,TNC-6c9ddf89d1b4,قبلي,TN-73,Kebili,South West,false,PTY-INDEPENDENT,independent,,,0.2720,,
+TNP-00369,أحمد المشرقي,Ahmed Mechergui,male,1969,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-d5c817850493,جندوبة,TN-32,Jendouba,North West,true,PTY-ENNAHDHA,islamist,,,0.5490,,
+TNP-00370,أحمد السافي,Ahmed Essefi,male,1969,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-190ffea8a951,صفاقس الأولى,,,,,PTY-bb9202bb86da,unknown,,,0.5551,,
+TNP-00371,أحمد السميعي,Ahmed Smiai,male,1943,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-c7d1a327d9a1,القيروان,TN-41,Kairouan,Centre West,false,PTY-ENNAHDHA,islamist,,education,0.8238,,
+TNP-00372,أحمد إبراهيم,Ahmed Brahim,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-88c5476e5a9d,تونس الثانية,,,,,PTY-ac4a3d2a8128,unknown,,academia;education;party;state_executive;trade_union,0.4498,,
+TNP-00373,أحمد نجيب الشابي,Ahmed Nejib Chebbi,male,1944,day,TN-11,1,NCA-2011,NCA-2011,2011-11-22,TNC-88c5476e5a9d,تونس الثانية,,,,,PTY-JOMHOURI,liberal,,judiciary;party;state_executive,0.2551,,
+TNP-00374,أزاد بادي,Azed Badi,male,1971,day,TN-72,1,NCA-2011,NCA-2011,2011-11-22,TNC-5bb4dbd5171c,توزر,TN-72,Tozeur,South West,false,PTY-a8c344e9039d,unknown,,,0.6725,,
+TNP-00375,أسامة الصغير,Oussama Al Saghir,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-a0138f8884af,إيطاليا,TN-99,Abroad,abroad,false,PTY-ENNAHDHA,islamist,,,0.8422,,
+TNP-00376,اسكندر بوعلاقي,Iskander Bouallagui,male,1982,day,TN-51,1,NCA-2011,NCA-2011,2011-11-22,TNC-79b664be1960,سوسة,TN-51,Sousse,Centre East,true,PTY-7ad4295a0093,unknown,,,0.4671,,
+TNP-00377,آسيا النفاتي,Essia Naffati,female,1984,day,TN-23,1,NCA-2011,NCA-2011,2011-11-22,TNC-0827ceafe35d,بنزرت,TN-23,Bizerte,North East,true,PTY-ENNAHDHA,islamist,,,0.8370,,
+TNP-00378,إقبال المصدع,Ikbel Msadaa,female,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-4ce2bd7346e7,الدول العربية و بقية دول العالم,,,,,PTY-CPR,social_democratic,,education;other,0.8157,,
+TNP-00379,الأزهر الشملي,Lazhar Chamli,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-583f49488ae9,المنستير,TN-52,Monastir,Centre East,true,PTY-efb0809dca6b,unknown,,academia;health,0.7224,,
+TNP-00380,البشير شمام,Bechir Chammem,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-6c9ddf89d1b4,قبلي,TN-73,Kebili,South West,false,PTY-ENNAHDHA,islamist,,education;judiciary;religious,0.7409,,
+TNP-00381,الجديدي السبوعي,Jdidi Essbouîi,male,1974,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-7b8892e8182c,زغوان,TN-22,Zaghouan,North East,false,PTY-7ad4295a0093,unknown,,,0.3300,,
+TNP-00382,الحبيب اللوز,Habib Ellouz,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-9ea7b64efa1b,صفاقس الثانية,,,,,PTY-ENNAHDHA,islamist,,business;party,0.5856,,
+TNP-00383,الحبيب خضر,Habib Khedher,male,1971,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-cc34ff2fce92,قابس,TN-81,Gabes,South East,true,PTY-ENNAHDHA,islamist,,education;judiciary,0.9285,,
+TNP-00384,الحسني بدري,Hasni Badri,male,1963,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-721491227627,سيدي بوزيد,TN-43,Sidi Bouzid,Centre West,false,PTY-6be99d2e724f,unknown,,education,0.5103,,
+TNP-00385,زهرة صميدة,Zohra Smida,female,1963,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-ec5da2631a7d,قفصة,TN-71,Gafsa,South West,false,PTY-ENNAHDHA,islamist,,education,0.8660,,
+TNP-00386,الصادق شورو,Sadok Chourou,male,1952,year,,1,NCA-2011,NCA-2011,2011-11-22,TNC-cfa36e6ce43c,بن عروس,TN-13,Ben Arous,Grand Tunis,true,PTY-ENNAHDHA,islamist,,academia;military;trade_union,0.4785,,
+TNP-00387,الطاهر هميلة,Tahar Hmila,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-79b664be1960,سوسة,TN-51,Sousse,Centre East,true,PTY-52e09019f2f2,unknown,,education,0.6895,,
+TNP-00388,العربي عبيد,Arbi Abid,male,1953,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-88c5476e5a9d,تونس الثانية,,,,,PTY-ETTAKATOL,social_democratic,,judiciary,,,
+TNP-00389,الفرجاني الدغمان,Ferjani Doghmane,male,1955,day,TN-11,1,NCA-2011,NCA-2011,2011-11-22,TNC-318f5c8e7cc7,أريانة,TN-12,Ariana,Grand Tunis,true,PTY-ENNAHDHA,islamist,,,0.7383,,
+TNP-00390,المنصف شارني,Moncef Cherni,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-e4d451ace536,نابل الثانية,,,,,PTY-6be99d2e724f,unknown,,academia;trade_union,0.7733,,
+TNP-00391,المولدي الرياحي,Mouldi Riahi,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-318f5c8e7cc7,أريانة,TN-12,Ariana,Grand Tunis,true,PTY-ETTAKATOL,social_democratic,,party,0.7914,,
+TNP-00392,الناصر إبراهمي,Naceur Brahmi,male,1953,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-7b8892e8182c,زغوان,TN-22,Zaghouan,North East,false,PTY-INDEPENDENT,independent,,,0.4935,,
+TNP-00393,النفطي المحظي,Nafti Mahdhi,male,1980,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-e469034aebf1,مدنين,TN-82,Medenine,South East,true,PTY-e5c16bf2604d,unknown,,,0.8730,,
+TNP-00394,الهادي بن ابراهم,Hedi Ben Braham,male,1951,day,TN-53,1,NCA-2011,NCA-2011,2011-11-22,TNC-9ebaea8423e4,المهدية,TN-53,Mahdia,Centre East,true,PTY-ENNAHDHA,islamist,,,0.9411,,
+TNP-00395,الهادي الشاوش,Hedi Chaouech,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-583f49488ae9,المنستير,TN-52,Monastir,Centre East,true,PTY-509dbc650cec,unknown,,,0.8394,,
+TNP-00396,الوليد بناني,Walid Bennani,male,1956,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-052adc16e166,القصرين,TN-42,Kasserine,Centre West,false,PTY-ENNAHDHA,islamist,,,0.7430,,
+TNP-00397,آمال عزوز,Amel Azzouz,female,1963,day,TN-81,1,NCA-2011,NCA-2011,2011-11-22,TNC-cc34ff2fce92,قابس,TN-81,Gabes,South East,true,PTY-ENNAHDHA,islamist,,academia,0.8586,,
+TNP-00398,آمال غويل,Amel Ghouil,female,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-318f5c8e7cc7,أريانة,TN-12,Ariana,Grand Tunis,true,PTY-ENNAHDHA,islamist,,education;judiciary,0.7774,,
+TNP-00399,أميرة مرزوق,Amira Marzouk,female,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-583f49488ae9,المنستير,TN-52,Monastir,Centre East,true,PTY-509dbc650cec,unknown,,,0.6252,,
+TNP-00400,إياد الدهماني,Iyed Dahmani,unknown,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-24281c72f60a,سليانة,TN-34,Siliana,North West,false,PTY-JOMHOURI,liberal,,,0.6680,,
+TNP-00401,إيمان بن محمد,Imen Ben Mhamed,female,1984,day,TN-73,1,NCA-2011,NCA-2011,2011-11-22,TNC-a0138f8884af,إيطاليا,TN-99,Abroad,abroad,false,PTY-ENNAHDHA,islamist,,,0.9055,,
+TNP-00402,أيمن الزواغي,Aymen Zouaghi,male,1983,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-dc712e9ce3b4,باجـة,TN-31,Beja,North West,true,PTY-7ad4295a0093,unknown,,,0.3141,,
+TNP-00403,بدر الدين عبد الكافي,Badreddine Abdelkafi,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-9ea7b64efa1b,صفاقس الثانية,,,,,PTY-ENNAHDHA,islamist,,,0.9686,,
+TNP-00404,بسمة الجبالي,Basma Jebali,female,1975,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-e469034aebf1,مدنين,TN-82,Medenine,South East,true,PTY-ENNAHDHA,islamist,,,0.7969,,
+TNP-00405,بشير اللزام,Bechir Lazzem,male,1959,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-0827ceafe35d,بنزرت,TN-23,Bizerte,North East,true,PTY-ENNAHDHA,islamist,,,0.9803,,
+TNP-00406,بية جوادي,Baya Jaouadi,female,1969,day,TN-32,1,NCA-2011,NCA-2011,2011-11-22,TNC-721491227627,سيدي بوزيد,TN-43,Sidi Bouzid,Centre West,false,PTY-ENNAHDHA,islamist,,education,0.7911,,
+TNP-00407,جلال فرحات,Jalel Farhat,male,1957,day,TN-53,1,NCA-2011,NCA-2011,2011-11-22,TNC-9ebaea8423e4,المهدية,TN-53,Mahdia,Centre East,true,PTY-bbfe9bb6d793,unknown,,,0.3044,,
+TNP-00408,جلال بوزيد,Jalel Bouzid,male,1959,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-9ea7b64efa1b,صفاقس الثانية,,,,,PTY-ETTAKATOL,social_democratic,,education,0.7401,,
+TNP-00409,جمال القرقوري,Jamel Gargouri,male,1976,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-190ffea8a951,صفاقس الأولى,,,,,PTY-20b849ddfcb3,unknown,,health,0.4974,,
+TNP-00410,جمال طوير,Jamel Touir,male,1959,day,TN-52,1,NCA-2011,NCA-2011,2011-11-22,TNC-583f49488ae9,المنستير,TN-52,Monastir,Centre East,true,PTY-ETTAKATOL,social_democratic,,academia,0.4824,,
+TNP-00411,جوهرة التيس,Jawhara Tiss,female,1985,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-b5260965cfa3,تطاوين,TN-83,Tataouine,South East,false,PTY-ENNAHDHA,islamist,,academia;education,0.7628,,
+TNP-00412,حاتم الكلاعي,Hatem Klaii,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-803cdcb9d5a2,الكاف,TN-33,Kef,North West,false,PTY-INDEPENDENT,independent,,education,0.3353,,
+TNP-00413,حافظ إبراهيم الأسود,Hafedh Ibrahim Lassoued,male,1951,day,TN-72,1,NCA-2011,NCA-2011,2011-11-22,TNC-5bb4dbd5171c,توزر,TN-72,Tozeur,South West,false,PTY-ENNAHDHA,islamist,,,0.9229,,
+TNP-00414,حبيبة التريكي,Habiba Triki,female,1975,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-9ea7b64efa1b,صفاقس الثانية,,,,,PTY-ENNAHDHA,islamist,,,0.7887,,
+TNP-00415,حسن رضواني,Hassan Radhouani,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-ec5da2631a7d,قفصة,TN-71,Gafsa,South West,false,PTY-bbfe9bb6d793,unknown,,,0.4692,,
+TNP-00416,حسناء مرسيط,Hasna Mersit,female,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-6c9ddf89d1b4,قبلي,TN-73,Kebili,South West,false,PTY-INDEPENDENT,independent,,education,0.6598,,
+TNP-00417,حطاب بركاتي,Hattab Barakati,male,1966,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-24281c72f60a,سليانة,TN-34,Siliana,North West,false,PTY-bb9202bb86da,unknown,,military;trade_union,0.4170,,
+TNP-00418,حليمة القني,Halima Guenni,female,1964,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-88c5476e5a9d,تونس الثانية,,,,,PTY-ENNAHDHA,islamist,,academia,0.8904,,
+TNP-00419,حنان ساسي,Hanène Sassi,female,1980,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-190ffea8a951,صفاقس الأولى,,,,,PTY-9b0efa626777,unknown,,judiciary,0.6402,,
+TNP-00420,خميس قسيلة,Khmais Ksila,male,1956,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-cfa36e6ce43c,بن عروس,TN-13,Ben Arous,Grand Tunis,true,PTY-NIDAA,national_conservative,,,0.3486,,
+TNP-00421,خيرة صغيري,Khira Sghairi,female,1955,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-052adc16e166,القصرين,TN-42,Kasserine,Centre West,false,PTY-ENNAHDHA,islamist,,education,0.8707,,
+TNP-00422,دليلة الببة,Dalila Babba,female,1966,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-ab2cc30717b4,فرنسا الثانية,TN-99,Abroad,abroad,false,PTY-ENNAHDHA,islamist,,,0.7836,,
+TNP-00423,دليلة بوعين,Dalila Bouain,female,1967,day,TN-11,1,NCA-2011,NCA-2011,2011-11-22,TNC-cc34ff2fce92,قابس,TN-81,Gabes,South East,true,PTY-ENNAHDHA,islamist,,education,0.8046,,
+TNP-00424,رابح الخرايفي,Rabeh Khraifi,male,1969,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-d5c817850493,جندوبة,TN-32,Jendouba,North West,true,PTY-20b849ddfcb3,unknown,,judiciary;party,0.6243,,
+TNP-00425,ربيع العابدي,Rabiî Abdi,male,1976,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-dc712e9ce3b4,باجـة,TN-31,Beja,North West,true,PTY-a8c344e9039d,unknown,,,0.3656,,
+TNP-00426,ربيعة نجلاوي,Rabiaa Najlaoui,female,1988,day,TN-11,1,NCA-2011,NCA-2011,2011-11-22,TNC-052adc16e166,القصرين,TN-42,Kasserine,Centre West,false,PTY-NIDAA,national_conservative,,,0.3813,,
+TNP-00427,رفيق التليلي,Rafik Tlili,male,1986,year,,1,NCA-2011,NCA-2011,2011-11-22,TNC-9ebaea8423e4,المهدية,TN-53,Mahdia,Centre East,true,PTY-a8c344e9039d,unknown,,,0.5677,,
+TNP-00428,رمضان دغماني,Romdhane Doghmani,male,1952,day,TN-41,1,NCA-2011,NCA-2011,2011-11-22,TNC-c7d1a327d9a1,القيروان,TN-41,Kairouan,Centre West,false,PTY-bbfe9bb6d793,unknown,,,0.7639,,
+TNP-00429,ريم ثايري,Rim Thairi,female,1981,day,TN-41,1,NCA-2011,NCA-2011,2011-11-22,TNC-c7d1a327d9a1,القيروان,TN-41,Kairouan,Centre West,false,PTY-7ad4295a0093,unknown,,,0.4611,,
+TNP-00430,ريم محجوب,Rim Mahjoub,female,1966,day,TN-11,1,NCA-2011,NCA-2011,2011-11-22,TNC-9ebaea8423e4,المهدية,TN-53,Mahdia,Centre East,true,PTY-b0109a4f5966,unknown,,health,0.6451,,
+TNP-00431,زياد الدولاتي,Zied Doulatli,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-88c5476e5a9d,تونس الثانية,,,,,PTY-ENNAHDHA,islamist,,military,0.5849,,
+TNP-00432,سامية الفرشيشي,Samia Ferchichi,female,1964,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-24281c72f60a,سليانة,TN-34,Siliana,North West,false,PTY-ENNAHDHA,islamist,,,0.8939,,
+TNP-00433,سعاد عبد الرحيم,Souad Abderrahim,female,1964,day,TN-61,1,NCA-2011,NCA-2011,2011-11-22,TNC-88c5476e5a9d,تونس الثانية,,,,,PTY-INDEPENDENT,independent,,,0.8419,,
+TNP-00434,سعد بوعيش,Saâd Bouaïche,male,1971,day,TN-83,1,NCA-2011,NCA-2011,2011-11-22,TNC-b5260965cfa3,تطاوين,TN-83,Tataouine,South East,false,PTY-52f9f25821ab,unknown,,,0.3775,,
+TNP-00435,سعيد خرشوفي,Said Kharchoufi,male,1977,day,TN-82,1,NCA-2011,NCA-2011,2011-11-22,TNC-e469034aebf1,مدنين,TN-82,Medenine,South East,true,PTY-7ad4295a0093,unknown,,,0.5026,,
+TNP-00436,سلمى بكار,Salma Baccar,female,1945,day,TN-11,1,NCA-2011,NCA-2011,2011-11-22,TNC-cfa36e6ce43c,بن عروس,TN-13,Ben Arous,Grand Tunis,true,PTY-ac4a3d2a8128,unknown,,,0.6639,,
+TNP-00437,سلمى صرصوط,Salma Sarsout,female,1964,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-cfa36e6ce43c,بن عروس,TN-13,Ben Arous,Grand Tunis,true,PTY-ENNAHDHA,islamist,,,0.7831,,
+TNP-00438,سلمى هادية مبروك,Salma Hedia Mabrouk,female,1964,day,TN-11,1,NCA-2011,NCA-2011,2011-11-22,TNC-cfa36e6ce43c,بن عروس,TN-13,Ben Arous,Grand Tunis,true,PTY-ac4a3d2a8128,unknown,,,0.5868,,
+TNP-00439,سليم بن حميدان,Slim Ben Hmidane,male,1969,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-e469034aebf1,مدنين,TN-82,Medenine,South East,true,PTY-CPR,social_democratic,,judiciary;state_executive,0.4151,,
+TNP-00440,سليم بن عبد السلام,Selim Ben Abdessalam,unknown,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-ad284920bd07,فرنسا الأولى,TN-99,Abroad,abroad,false,PTY-NIDAA,national_conservative,,judiciary;religious,0.7797,,
+TNP-00441,سليمان هلال,Slimane Hlal,male,1957,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-ec5da2631a7d,قفصة,TN-71,Gafsa,South West,false,PTY-ENNAHDHA,islamist,,,0.8817,,
+TNP-00442,سمير بن عمر,Samir Ben Amor,male,1968,day,TN-11,1,NCA-2011,NCA-2011,2011-11-22,TNC-2febbe9c7d52,تونس الأولى,,,,,PTY-CPR,social_democratic,,judiciary,0.8480,,
+TNP-00443,سمير بالطيب,Samir Bettaieb,male,1957,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-2febbe9c7d52,تونس الأولى,,,,,PTY-ac4a3d2a8128,unknown,,academia,0.4677,,
+TNP-00444,سميرة مرعي,Samira Merai,female,1963,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-e469034aebf1,مدنين,TN-82,Medenine,South East,true,PTY-b0109a4f5966,unknown,,academia;education;health,0.5575,,
+TNP-00445,سناء مرسني,Sana Mersni,female,1984,day,TN-32,1,NCA-2011,NCA-2011,2011-11-22,TNC-d5c817850493,جندوبة,TN-32,Jendouba,North West,true,PTY-ENNAHDHA,islamist,,judiciary,0.9171,,
+TNP-00446,سناء الحداد,Sana Haddad,female,1976,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-017562922a2d,نابل الأولى,,,,,PTY-ENNAHDHA,islamist,,judiciary,0.9478,,
+TNP-00447,سنية تومية,Sonia Toumia,female,1976,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-583f49488ae9,المنستير,TN-52,Monastir,Centre East,true,PTY-ENNAHDHA,islamist,,,0.9548,,
+TNP-00448,شكري يعيش,Chokri Yaich,unknown,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-9ea7b64efa1b,صفاقس الثانية,,,,,PTY-20b849ddfcb3,unknown,,education,0.5600,,
+TNP-00449,شكري القسطلّي,Chokri Kastalli,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-dc712e9ce3b4,باجـة,TN-31,Beja,North West,true,PTY-20b849ddfcb3,unknown,,education,0.7528,,
+TNP-00450,شكري العرفاوي,Chokri Arfaoui,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-24281c72f60a,سليانة,TN-34,Siliana,North West,false,PTY-6be99d2e724f,unknown,,education,0.4646,,
+TNP-00451,صالح شعيب,Salah Chouaib,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-79b664be1960,سوسة,TN-51,Sousse,Centre East,true,PTY-3bb19b9567e1,unknown,,academia;education;party,0.5882,,
+TNP-00452,صالحة بن عائشة,Salha Ben Aicha,female,1973,day,TN-11,1,NCA-2011,NCA-2011,2011-11-22,TNC-e4d451ace536,نابل الثانية,,,,,PTY-ENNAHDHA,islamist,,judiciary,0.8870,,
+TNP-00453,صلاح الدين الزحاف,Slaheddine Zahaf,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-9ea7b64efa1b,صفاقس الثانية,,,,,PTY-JOMHOURI,liberal,,business,0.3814,,
+TNP-00454,صلاح الدين لهيبة,Slaheddine Elhiba,male,1955,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-e469034aebf1,مدنين,TN-82,Medenine,South East,true,PTY-ENNAHDHA,islamist,,,0.9304,,
+TNP-00455,ضمير المناعي,Dhamir Mannai,male,1963,day,TN-32,1,NCA-2011,NCA-2011,2011-11-22,TNC-d5c817850493,جندوبة,TN-32,Jendouba,North West,true,PTY-INDEPENDENT,independent,,academia;education,0.3967,,
+TNP-00456,طارق العبيدي,Tarek Labidi,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-803cdcb9d5a2,الكاف,TN-33,Kef,North West,false,PTY-ETTAKATOL,social_democratic,,judiciary;party,0.4651,,
+TNP-00457,طارق بوعزيز,Tarek Bouaziz,male,1982,day,TN-34,1,NCA-2011,NCA-2011,2011-11-22,TNC-017562922a2d,نابل الأولى,,,,,PTY-6be99d2e724f,unknown,,,0.6007,,
+TNP-00458,عادل بن عطية,Adel Ben Attia,male,1970,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-24281c72f60a,سليانة,TN-34,Siliana,North West,false,PTY-ENNAHDHA,islamist,,,0.9733,,
+TNP-00459,عائشة الذوادي,Aicha Dhaouadi,female,1961,day,TN-23,1,NCA-2011,NCA-2011,2011-11-22,TNC-0827ceafe35d,بنزرت,TN-23,Bizerte,North East,true,PTY-ENNAHDHA,islamist,,judiciary,0.8951,,
+TNP-00460,عبد الباسط بن الشيخ,Abdelbasset Becheikh,male,1941,day,TN-11,1,NCA-2011,NCA-2011,2011-11-22,TNC-4e045f7b3148,منوبة,TN-14,Manouba,Grand Tunis,false,PTY-ENNAHDHA,islamist,,,0.8137,,
+TNP-00461,عبد الحليم زواري,Abdelhalim Zouari,male,1963,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-ec5da2631a7d,قفصة,TN-71,Gafsa,South West,false,PTY-ENNAHDHA,islamist,,health,0.9722,,
+TNP-00462,عبد الرحمان الأدغم,Abderrahmane Ladgham,male,1977,year,,1,NCA-2011,NCA-2011,2011-11-22,TNC-4e045f7b3148,منوبة,TN-14,Manouba,Grand Tunis,false,PTY-ETTAKATOL,social_democratic,,academia;education;state_executive,0.3862,,
+TNP-00463,عبد الرزاق خلولي,Abderrazak Khallouli,male,1970,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-4e045f7b3148,منوبة,TN-14,Manouba,Grand Tunis,false,PTY-52f9f25821ab,unknown,,judiciary,0.7638,,
+TNP-00464,عبد الرؤوف العيادي,Abderraouf Ayadi,male,1950,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-4e045f7b3148,منوبة,TN-14,Manouba,Grand Tunis,false,PTY-a8c344e9039d,unknown,,judiciary,0.1674,,
+TNP-00465,عبد الستار الضيفي,Abdessattar Dhifi,male,1981,day,TN-11,1,NCA-2011,NCA-2011,2011-11-22,TNC-a0138f8884af,إيطاليا,TN-99,Abroad,abroad,false,PTY-bbfe9bb6d793,unknown,,,0.4027,,
+TNP-00466,عبد السلام شعبان,Abdessalem Chaabane,male,1966,day,TN-71,1,NCA-2011,NCA-2011,2011-11-22,TNC-ec5da2631a7d,قفصة,TN-71,Gafsa,South West,false,PTY-CPR,social_democratic,,education,0.6676,,
+TNP-00467,عبد العزيز شعبان,Abdelaziz Chaabane,male,1974,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-9ebaea8423e4,المهدية,TN-53,Mahdia,Centre East,true,PTY-ENNAHDHA,islamist,,judiciary,0.8186,,
+TNP-00468,عبد العزيز القطي,Abdelaziz Kotti,male,1970,day,TN-61,1,NCA-2011,NCA-2011,2011-11-22,TNC-318f5c8e7cc7,أريانة,TN-12,Ariana,Grand Tunis,true,PTY-NIDAA,national_conservative,,,0.3699,,
+TNP-00469,عبد القادر بن خميس,Abdelkader Ben Khmis,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-803cdcb9d5a2,الكاف,TN-33,Kef,North West,false,PTY-ac4a3d2a8128,unknown,,academia;education;trade_union,0.4862,,
+TNP-00470,عبد القادر القادري,Abdelkader Kadri,male,1959,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-cc34ff2fce92,قابس,TN-81,Gabes,South East,true,PTY-ENNAHDHA,islamist,,academia,0.9483,,
+TNP-00471,عبد المجيد النجار,Abdelmajid Najar,male,1945,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-e469034aebf1,مدنين,TN-82,Medenine,South East,true,PTY-ENNAHDHA,islamist,,education,0.6479,,
+TNP-00472,عبد الوهاب معطر,Abdelwahab Maatar,male,1952,day,TN-61,1,NCA-2011,NCA-2011,2011-11-22,TNC-9ea7b64efa1b,صفاقس الثانية,,,,,PTY-CPR,social_democratic,,education;judiciary;party;state_executive,0.3543,,
+TNP-00473,عصام الشابي,Issam Chebbi,male,1957,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-318f5c8e7cc7,أريانة,TN-12,Ariana,Grand Tunis,true,PTY-JOMHOURI,liberal,,party,0.5624,,
+TNP-00474,علي بالشريفة,Ali Bechrifa,male,1960,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-dc712e9ce3b4,باجـة,TN-31,Beja,North West,true,PTY-ac4a3d2a8128,unknown,,education,0.6597,,
+TNP-00475,علي فارس,Ali Fares,male,1973,year,,1,NCA-2011,NCA-2011,2011-11-22,TNC-b5260965cfa3,تطاوين,TN-83,Tataouine,South East,false,PTY-ENNAHDHA,islamist,,,0.5907,,
+TNP-00476,علي حويجي,Ali Houiji,male,1981,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-4e045f7b3148,منوبة,TN-14,Manouba,Grand Tunis,false,PTY-a8c344e9039d,unknown,,,0.5137,,
+TNP-00477,عماد الحمامي,Imed Hammami,male,1964,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-e4d451ace536,نابل الثانية,,,,,PTY-ENNAHDHA,islamist,,,0.7877,,
+TNP-00478,عمر الشتوي,Omar Chetoui,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-6c9ddf89d1b4,قبلي,TN-73,Kebili,South West,false,PTY-CPR,social_democratic,,education;judiciary,0.7135,,
+TNP-00479,فاضل الوج,Fadhel Elouej,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-9ebaea8423e4,المهدية,TN-53,Mahdia,Centre East,true,PTY-509dbc650cec,unknown,,business,0.3706,,
+TNP-00480,فاطمة الغربي,Fatma Gharbi,female,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-e4d451ace536,نابل الثانية,,,,,PTY-NIDAA,national_conservative,,,0.7377,,
+TNP-00481,فايزة كدوسي,Faiza Kadoussi,female,1988,day,TN-43,1,NCA-2011,NCA-2011,2011-11-22,TNC-721491227627,سيدي بوزيد,TN-43,Sidi Bouzid,Centre West,false,PTY-7ad4295a0093,unknown,,,0.4152,,
+TNP-00482,فتحي اللطيف,Fathi Eltaif,male,1956,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-c7d1a327d9a1,القيروان,TN-41,Kairouan,Centre West,false,PTY-bb9202bb86da,unknown,,trade_union,0.6872,,
+TNP-00483,فرح النصيبي,Farah Nsibi,male,1965,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-052adc16e166,القصرين,TN-42,Kasserine,Centre West,false,PTY-e5c16bf2604d,unknown,,health,0.5827,,
+TNP-00484,فريدة عبيدي,Farida Labidi,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-c7d1a327d9a1,القيروان,TN-41,Kairouan,Centre West,false,PTY-ENNAHDHA,islamist,,,0.7955,,
+TNP-00485,فطوم الأسود,Fattoum Lassoued,female,1976,day,TN-11,1,NCA-2011,NCA-2011,2011-11-22,TNC-190ffea8a951,صفاقس الأولى,,,,,PTY-ENNAHDHA,islamist,,academia;judiciary,0.6924,,
+TNP-00486,فطومة عطية,Fattouma Attia,female,1947,year,,1,NCA-2011,NCA-2011,2011-11-22,TNC-79b664be1960,سوسة,TN-51,Sousse,Centre East,true,PTY-ENNAHDHA,islamist,,,0.4563,,
+TNP-00487,فؤاد ثامر,Foued Thamer,male,1986,day,TN-81,1,NCA-2011,NCA-2011,2011-11-22,TNC-cc34ff2fce92,قابس,TN-81,Gabes,South East,true,PTY-a49b95b8bbb3,unknown,,academia,0.5240,,
+TNP-00488,فيصل جدلاوي,Faiçal Jadlaoui,male,1960,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-ec5da2631a7d,قفصة,TN-71,Gafsa,South West,false,PTY-INDEPENDENT,independent,,judiciary;other,0.5514,,
+TNP-00489,قيس مختار,Kais Mokhtar,male,1978,day,TN-11,1,NCA-2011,NCA-2011,2011-11-22,TNC-7b8892e8182c,زغوان,TN-22,Zaghouan,North East,false,PTY-JOMHOURI,liberal,,,0.3536,,
+TNP-00490,كريم بوعبدلي,Karim Bouabdelli,male,1975,day,TN-11,1,NCA-2011,NCA-2011,2011-11-22,TNC-318f5c8e7cc7,أريانة,TN-12,Ariana,Grand Tunis,true,PTY-5a1bda8022f4,unknown,,,0.4534,,
+TNP-00491,كريمة سويد,Karima Souid,female,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-ab2cc30717b4,فرنسا الثانية,TN-99,Abroad,abroad,false,PTY-ac4a3d2a8128,unknown,,judiciary;state_executive,0.8371,,
+TNP-00492,كلثوم بدر الدين,Kalthoum Badreddine,female,1963,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-9ea7b64efa1b,صفاقس الثانية,,,,,PTY-ENNAHDHA,islamist,,judiciary,0.8241,,
+TNP-00493,كمال السعداوي,Kamel Saadaoui,male,1965,day,TN-42,1,NCA-2011,NCA-2011,2011-11-22,TNC-052adc16e166,القصرين,TN-42,Kasserine,Centre West,false,PTY-INDEPENDENT,independent,,education,0.6430,,
+TNP-00494,كمال عمّار,Kamel Ammar,male,1956,day,TN-61,1,NCA-2011,NCA-2011,2011-11-22,TNC-190ffea8a951,صفاقس الأولى,,,,,PTY-ENNAHDHA,islamist,,,0.7548,,
+TNP-00495,كمال بن عمارة,Kamel Ben Amara,male,1959,day,TN-23,1,NCA-2011,NCA-2011,2011-11-22,TNC-4ce2bd7346e7,الدول العربية و بقية دول العالم,,,,,PTY-ENNAHDHA,islamist,,other,0.6642,,
+TNP-00496,كوثر الأدغم,Kaouther Ladgham,female,1968,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-5bb4dbd5171c,توزر,TN-72,Tozeur,South West,false,PTY-ENNAHDHA,islamist,,,0.7610,,
+TNP-00497,لبنى الجريبي,Lobna Jeribi,female,1973,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-88c5476e5a9d,تونس الثانية,,,,,PTY-ETTAKATOL,social_democratic,,academia;education,0.7294,,
+TNP-00498,مبروك الحريزي,Mabrouk Hrizi,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-052adc16e166,القصرين,TN-42,Kasserine,Centre West,false,PTY-CPR,social_democratic,,,0.4071,,
+TNP-00499,مبروكة مبارك,Mabrouka Mbarek,female,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-5b704a46b450,القارة الأمريكية وبقية الدول الأوروبية,,,,,PTY-CPR,social_democratic,,,0.6510,,
+TNP-00500,محرزية العبيدي,Meherzia Labidi,female,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-ad284920bd07,فرنسا الأولى,TN-99,Abroad,abroad,false,PTY-ENNAHDHA,islamist,,,,,
+TNP-00501,محسن الكعبي,Mohsen Kaabi,male,1971,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-4e045f7b3148,منوبة,TN-14,Manouba,Grand Tunis,false,PTY-ENNAHDHA,islamist,,,0.8550,,
+TNP-00502,محمد الحبيب هرقام,Mohamed Habib Harguem,male,1946,day,TN-41,1,NCA-2011,NCA-2011,2011-11-22,TNC-c7d1a327d9a1,القيروان,TN-41,Kairouan,Centre West,false,PTY-ETTAKATOL,social_democratic,,education,0.7088,,
+TNP-00503,محمد الصالح شعيرات,Mohamed Salah Chairat,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-0827ceafe35d,بنزرت,TN-23,Bizerte,North East,true,PTY-52f9f25821ab,unknown,,,0.5926,,
+TNP-00504,محمد الطاهر إيلاهي,Mohamed Tahar Ilahi,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-721491227627,سيدي بوزيد,TN-43,Sidi Bouzid,Centre West,false,PTY-e34601720a98,unknown,,academia;education;other,0.2955,,
+TNP-00505,محمد الطاهر تليلي,Mohamed Tahar Tlili,male,1959,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-721491227627,سيدي بوزيد,TN-43,Sidi Bouzid,Centre West,false,PTY-ENNAHDHA,islamist,,,0.9130,,
+TNP-00506,محمد العربي فاضل موسى,Mohamed Elarbi Fadhel Moussa,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-318f5c8e7cc7,أريانة,TN-12,Ariana,Grand Tunis,true,PTY-ac4a3d2a8128,unknown,,education;judiciary,0.5396,,
+TNP-00507,محمد الكراي الجربي,Mohamed Karray Jerbi,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-190ffea8a951,صفاقس الأولى,,,,,PTY-a8c344e9039d,unknown,,trade_union,0.4509,,
+TNP-00508,المنصف شيخ روحه,Moncef Cheikhrouhou,male,1945,year,,1,NCA-2011,NCA-2011,2011-11-22,TNC-2febbe9c7d52,تونس الأولى,,,,,PTY-20b849ddfcb3,unknown,,education,0.5492,,
+TNP-00509,محمد الناجي غرسلي,Mohamed Neji Gharsalli,male,1955,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-052adc16e166,القصرين,TN-42,Kasserine,Centre West,false,PTY-61a3f228649f,unknown,,judiciary,0.4086,,
+TNP-00510,محمد سعيدي,Mohamed Saidi,male,1945,day,TN-31,1,NCA-2011,NCA-2011,2011-11-22,TNC-dc712e9ce3b4,باجـة,TN-31,Beja,North West,true,PTY-ENNAHDHA,islamist,,education;trade_union,0.9524,,
+TNP-00511,محمد بن المبروك الحامدي,Mohamed Ben Mabrouk Hamdi,male,1971,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-e469034aebf1,مدنين,TN-82,Medenine,South East,true,PTY-20b849ddfcb3,unknown,,education,0.4466,,
+TNP-00512,محمود الماي,Mahmoud El May,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-ab2cc30717b4,فرنسا الثانية,TN-99,Abroad,abroad,false,PTY-JOMHOURI,liberal,,other,0.4385,,
+TNP-00513,محمد الصغير,Mohamed Essghaier,male,1947,day,TN-83,1,NCA-2011,NCA-2011,2011-11-22,TNC-b5260965cfa3,تطاوين,TN-83,Tataouine,South East,false,PTY-ENNAHDHA,islamist,,education;trade_union,0.8081,,
+TNP-00514,محمد قحبيش,Mohamed Gahbich,male,1956,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-79b664be1960,سوسة,TN-51,Sousse,Centre East,true,PTY-20b849ddfcb3,unknown,,judiciary,0.8603,,
+TNP-00515,محمد كحيلة,Mohamed Nejib Khila,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-ec5da2631a7d,قفصة,TN-71,Gafsa,South West,false,PTY-INDEPENDENT,independent,,,0.8200,,
+TNP-00516,محمد بن يوسف الحامدي,Mohamed Ben Youssef Hamdi,male,1954,day,TN-43,1,NCA-2011,NCA-2011,2011-11-22,TNC-721491227627,سيدي بوزيد,TN-43,Sidi Bouzid,Centre West,false,PTY-7ad4295a0093,unknown,,,0.5779,,
+TNP-00517,محمد شفيق زرقين,Mohamed Chafik Zorkin,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-5bb4dbd5171c,توزر,TN-72,Tozeur,South West,false,PTY-20b849ddfcb3,unknown,,,0.2645,,
+TNP-00518,محمد عبد المنعم كرير,Mohamed Abdelmonem Krir,unknown,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-583f49488ae9,المنستير,TN-52,Monastir,Centre East,true,PTY-NIDAA,national_conservative,,,0.6156,,
+TNP-00519,محمد علي نصري,Mohamed Ali Nasri,male,1964,day,TN-42,1,NCA-2011,NCA-2011,2011-11-22,TNC-052adc16e166,القصرين,TN-42,Kasserine,Centre West,false,PTY-INDEPENDENT,independent,,academia,0.4840,,
+TNP-00520,محمد لطفي بن مصباح,Mohamed Lotfi Ben Mesbah,male,1948,day,TN-11,1,NCA-2011,NCA-2011,2011-11-22,TNC-9ebaea8423e4,المهدية,TN-53,Mahdia,Centre East,true,PTY-INDEPENDENT,independent,,,0.0553,,
+TNP-00521,محمد نجيب الحسني,Mohamed Nejib Hosni,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-803cdcb9d5a2,الكاف,TN-33,Kef,North West,false,PTY-INDEPENDENT,independent,,,0.8600,,
+TNP-00522,محمد نزار قاسم,Mohamed Nizar Kacem,male,1953,day,TN-51,1,NCA-2011,NCA-2011,2011-11-22,TNC-cfa36e6ce43c,بن عروس,TN-13,Ben Arous,Grand Tunis,true,PTY-INDEPENDENT,independent,,judiciary,0.7301,,
+TNP-00523,محمود قويعة,Mahmoud Gouiaa,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-c7d1a327d9a1,القيروان,TN-41,Kairouan,Centre West,false,PTY-ENNAHDHA,islamist,,,0.9883,,
+TNP-00524,محمود البارودي,Mahmoud Baroudi,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-e4d451ace536,نابل الثانية,,,,,PTY-20b849ddfcb3,unknown,,,0.5075,,
+TNP-00525,مراد العمدوني,Mourad Amdouni,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-0827ceafe35d,بنزرت,TN-23,Bizerte,North East,true,PTY-cb447bb1247c,unknown,,education;trade_union,0.5272,,
+TNP-00526,مصطفى بن جعفر,Mustapha Ben Jaafar,male,1940,day,TN-11,1,NCA-2011,NCA-2011,2011-11-22,TNC-2febbe9c7d52,تونس الأولى,,,,,PTY-ETTAKATOL,social_democratic,,education;health;state_executive,,,
+TNP-00527,معز كمون,Moez Kammoun,male,1972,day,TN-61,1,NCA-2011,NCA-2011,2011-11-22,TNC-9ea7b64efa1b,صفاقس الثانية,,,,,PTY-52f9f25821ab,unknown,,other,0.5291,,
+TNP-00528,مفيدة مرزوقي,Moufida Marzouki,female,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-c7d1a327d9a1,القيروان,TN-41,Kairouan,Centre West,false,PTY-ENNAHDHA,islamist,,,0.9252,,
+TNP-00529,منى بن نصر,Mouna Ben Nasr,female,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-79b664be1960,سوسة,TN-51,Sousse,Centre East,true,PTY-INDEPENDENT,independent,,state_administration,0.6756,,
+TNP-00530,منية إبراهيم,Monia Ibrahim,female,1966,year,TN-51,1,NCA-2011,NCA-2011,2011-11-22,TNC-79b664be1960,سوسة,TN-51,Sousse,Centre East,true,PTY-ENNAHDHA,islamist,,,0.7570,,
+TNP-00531,منية القصري,Monia Gasri,female,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-6c9ddf89d1b4,قبلي,TN-73,Kebili,South West,false,PTY-ENNAHDHA,islamist,,,0.8126,,
+TNP-00532,منير بن هنية,Mounir Ben Hnia,male,1968,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-583f49488ae9,المنستير,TN-52,Monastir,Centre East,true,PTY-ENNAHDHA,islamist,,,0.9814,,
+TNP-00533,منيرة عمري,Mounira Omri,female,1973,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-803cdcb9d5a2,الكاف,TN-33,Kef,North West,false,PTY-ENNAHDHA,islamist,,media,0.7936,,
+TNP-00534,مولدي الزيدي,Mouldi Zidi,male,1979,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-cc34ff2fce92,قابس,TN-81,Gabes,South East,true,PTY-INDEPENDENT,independent,,,0.2200,,
+TNP-00535,مية الجريبي,Maya Jeribi,female,1960,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-cfa36e6ce43c,بن عروس,TN-13,Ben Arous,Grand Tunis,true,PTY-JOMHOURI,liberal,,judiciary;party,0.5501,,
+TNP-00536,نادية شعبان,Nadia Chaabane,female,1965,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-ad284920bd07,فرنسا الأولى,TN-99,Abroad,abroad,false,PTY-ac4a3d2a8128,unknown,,,0.6698,,
+TNP-00537,نبيلة العسكري السنوسي,Nabila Askri Snoussi,female,1967,day,TN-11,1,NCA-2011,NCA-2011,2011-11-22,TNC-dc712e9ce3b4,باجـة,TN-31,Beja,North West,true,PTY-ENNAHDHA,islamist,,,0.9511,,
+TNP-00538,نبيهة ترجمان,Nabiha Torjmane,female,1964,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-7b8892e8182c,زغوان,TN-22,Zaghouan,North East,false,PTY-ENNAHDHA,islamist,,,0.8493,,
+TNP-00539,نجلاء بوريال,Najla Bourial,female,1970,day,TN-11,1,NCA-2011,NCA-2011,2011-11-22,TNC-017562922a2d,نابل الأولى,,,,,PTY-20b849ddfcb3,unknown,,,0.9073,,
+TNP-00540,نجيب مراد,Nejib Mrad,male,1958,day,TN-52,1,NCA-2011,NCA-2011,2011-11-22,TNC-583f49488ae9,المنستير,TN-52,Monastir,Centre East,true,PTY-ENNAHDHA,islamist,,media,0.7678,,
+TNP-00541,نجيبة بريول,Nejiba Beryoul,female,1966,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-9ebaea8423e4,المهدية,TN-53,Mahdia,Centre East,true,PTY-ENNAHDHA,islamist,,,0.8676,,
+TNP-00542,نزار مخلوفي,Nizar Makhloufi,male,1981,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-c7d1a327d9a1,القيروان,TN-41,Kairouan,Centre West,false,PTY-efb0809dca6b,unknown,,,0.3698,,
+TNP-00543,نعمان الفهري,Noômane Fehri,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-017562922a2d,نابل الأولى,,,,,PTY-b0109a4f5966,unknown,,other,0.4430,,
+TNP-00544,نور الدين المرابطي,Noureddine Mrabti,male,1974,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-24281c72f60a,سليانة,TN-34,Siliana,North West,false,PTY-9b0efa626777,unknown,,,0.6245,,
+TNP-00545,نوفل الغريبي,Naoufel Ghribi,male,1971,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-cc34ff2fce92,قابس,TN-81,Gabes,South East,true,PTY-CPR,social_democratic,,,0.2265,,
+TNP-00546,هاجر منيفي,Hajer Mnifi,female,1986,day,TN-82,1,NCA-2011,NCA-2011,2011-11-22,TNC-e469034aebf1,مدنين,TN-82,Medenine,South East,true,PTY-ENNAHDHA,islamist,,,0.5403,,
+TNP-00547,هاجر عزيز,Hajer Azaiez,female,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-2febbe9c7d52,تونس الأولى,,,,,PTY-ENNAHDHA,islamist,,judiciary,0.8020,,
+TNP-00548,هالة الحامي,Hela Hammi,female,1964,day,TN-11,1,NCA-2011,NCA-2011,2011-11-22,TNC-cfa36e6ce43c,بن عروس,TN-13,Ben Arous,Grand Tunis,true,PTY-ENNAHDHA,islamist,,,0.7755,,
+TNP-00549,هشام بن جامع,Hichem Ben Jemaa,male,1976,day,TN-23,1,NCA-2011,NCA-2011,2011-11-22,TNC-0827ceafe35d,بنزرت,TN-23,Bizerte,North East,true,PTY-efb0809dca6b,unknown,,judiciary,0.8232,,
+TNP-00550,هيثم بلقاسم,Haythem Belgacem,male,1974,day,TN-11,1,NCA-2011,NCA-2011,2011-11-22,TNC-cfa36e6ce43c,بن عروس,TN-13,Ben Arous,Grand Tunis,true,PTY-CPR,social_democratic,,academia;party,0.8465,,
+TNP-00551,وسام ياسين,Wissem Yassine,male,1974,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-d5c817850493,جندوبة,TN-32,Jendouba,North West,true,PTY-bbfe9bb6d793,unknown,,education,0.6372,,
+TNP-00552,كمال بن رمضان,Kamel Ben Romdhane,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-79b664be1960,سوسة,TN-51,Sousse,Centre East,true,PTY-ENNAHDHA,islamist,,other,0.8986,,
+TNP-00553,سلاف القسنطيني,Soulef Ksantini,female,1969,day,TN-61,1,NCA-2011,NCA-2011,2011-11-22,TNC-190ffea8a951,صفاقس الأولى,,,,,PTY-ENNAHDHA,islamist,,,0.8852,,
+TNP-00554,سهير الدردوري,Souhir Dardouri,female,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-017562922a2d,نابل الأولى,,,,,PTY-INDEPENDENT,independent,,,0.7446,,
+TNP-00555,مختار لموشي,Mokhtar Lamouchi,male,1962,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-803cdcb9d5a2,الكاف,TN-33,Kef,North West,false,PTY-ENNAHDHA,islamist,,,0.8533,,
+TNP-00556,حبيب بريبش,Habib Bribech,male,1965,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-2febbe9c7d52,تونس الأولى,,,,,PTY-ENNAHDHA,islamist,,party,0.9047,,
+TNP-00557,بشير النفزي,Bechir Nefzi,male,1981,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-ad284920bd07,فرنسا الأولى,TN-99,Abroad,abroad,false,PTY-CPR,social_democratic,,party,0.7255,,
+TNP-00558,نورة بن حسن,Noura Ben Hassen,female,1980,day,TN-51,1,NCA-2011,NCA-2011,2011-11-22,TNC-ab2cc30717b4,فرنسا الثانية,TN-99,Abroad,abroad,false,PTY-CPR,social_democratic,,education,0.8404,,
+TNP-00559,جمال بوعجاجة,Jamal Bouajaja,male,1969,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-0827ceafe35d,بنزرت,TN-23,Bizerte,North East,true,PTY-ENNAHDHA,islamist,,education,0.8661,,
+TNP-00560,فرج بن عمر,Frej Ben Amor,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-cfa36e6ce43c,بن عروس,TN-13,Ben Arous,Grand Tunis,true,PTY-ENNAHDHA,islamist,,,0.9107,,
+TNP-00561,خليد بلحاج,Khalid Belhaj,male,1970,day,TN-22,1,NCA-2011,NCA-2011,2011-11-22,TNC-7b8892e8182c,زغوان,TN-22,Zaghouan,North East,false,PTY-e5c16bf2604d,unknown,,,0.8375,,
+TNP-00562,نفيسة المرزوقي,Nafissa Marzouki,female,1955,day,TN-32,1,NCA-2011,NCA-2011,2011-11-22,TNC-d5c817850493,جندوبة,TN-32,Jendouba,North West,true,PTY-ETTAKATOL,social_democratic,,education,0.8346,,
+TNP-00563,وردة التركي,Warda Turki,female,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-2febbe9c7d52,تونس الأولى,,,,,PTY-ENNAHDHA,islamist,,,0.9632,,
+TNP-00564,محمد منذر بن رحال,Mohamed Mondher Ben Rahal,male,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-88c5476e5a9d,تونس الثانية,,,,,PTY-ETTAKATOL,social_democratic,,party;state_executive,0.8371,,
+TNP-00565,منال القادري,Manel Kadri,female,1987,day,TN-41,1,NCA-2011,NCA-2011,2011-11-22,TNC-721491227627,سيدي بوزيد,TN-43,Sidi Bouzid,Centre West,false,PTY-ac4a3d2a8128,unknown,,,0.7657,,
+TNP-00566,فاضل الصغراوي,Fadhel Saghraoui,male,1982,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-721491227627,سيدي بوزيد,TN-43,Sidi Bouzid,Centre West,false,PTY-cb447bb1247c,unknown,,education,,,
+TNP-00567,منية بن نصر العيادي,Monia Ben Nasr Ayadi,female,1960,day,,1,NCA-2011,NCA-2011,2011-11-22,TNC-0827ceafe35d,بنزرت,TN-23,Bizerte,North East,true,PTY-INDEPENDENT,independent,,education;state_administration,0.7378,,
+TNP-00568,سلمى نزيه الزنايدي,Salma Nazih Znaidi,female,,,,1,NCA-2011,NCA-2011,2011-11-22,TNC-017562922a2d,نابل الأولى,,,,,PTY-ETTAKATOL,social_democratic,,academia;party,0.6540,,
+TNP-00569,المنجي سليم,Almnjy Slym,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-54511a128e73,ضواحي تونس,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00570,ألبير بسيس,أlbyr Bsys,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-54511a128e73,ضواحي تونس,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00571,أحمد المستيري,أhmd Almstyry,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-54511a128e73,ضواحي تونس,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00572,الطاهر بن عمار,Altahr Bn Amar,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-54511a128e73,ضواحي تونس,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00573,العزيز الجلولي,Alazyz Aljlwly,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-54511a128e73,ضواحي تونس,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00574,محمود بن عز الدين,Mhmwd Bn Az Aldyn,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-54511a128e73,ضواحي تونس,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00575,الهادي نويرة,Alhady Nwyra,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-c6aa33a8a03e,بنزرت-ماطر,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00576,مصطفى الوالي,Mstfa Alwaly,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-c6aa33a8a03e,بنزرت-ماطر,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00577,حمزة ستا,Hmza Sta,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-c6aa33a8a03e,بنزرت-ماطر,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00578,محمد الحبيب,Mhmd Alhbyb,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-c6aa33a8a03e,بنزرت-ماطر,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00579,حبيب تليبة,Hbyb Tlyba,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-c6aa33a8a03e,بنزرت-ماطر,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00580,أحمد بن حميدة,أhmd Bn Hmyda,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-c6aa33a8a03e,بنزرت-ماطر,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00581,الجلولي فارس,Jallouli Fares,,,,,2,ANC-1956,NA-1959,1956-04-08,,,,,,,PTY-PSD,destourian,,,,,
+TNP-00582,عبد الرحمان مجول,Abd Alrhman Mjwl,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-6b5b44e762cb,قابس-جربة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00583,أحمد بن عبد الكريم,أhmd Bn Abd Alkrym,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-6b5b44e762cb,قابس-جربة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00584,عبد العزيز نوري,Abd Alazyz Nwry,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-6b5b44e762cb,قابس-جربة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00585,طاهر دباية,Tahr Dbaya,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-6b5b44e762cb,قابس-جربة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00586,مصطفى الفيلالي,Mstfa Alfylaly,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-0e432e6af759,القيروان-جلاص,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00587,محمد شكرون,Mhmd Shkrwn,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-0e432e6af759,القيروان-جلاص,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00588,صلاح كشريد,Slah Kshryd,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-0e432e6af759,القيروان-جلاص,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00589,عبد السلام عاشور,Abd Alslam Ashwr,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-0e432e6af759,القيروان-جلاص,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00590,محمد فالح جهيناوي,Mhmd Falh Jhynawy,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-0e432e6af759,القيروان-جلاص,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00591,حسن ساسي,Hsn Sasy,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-0e432e6af759,القيروان-جلاص,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00592,عز الدين عباسي,Az Aldyn Abasy,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-255578e873cd,الكاف-تبرسق,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00593,الشيخ علي بنعيسى بوحجر,Alshykh Aly Bnaysa Bwhjr,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-255578e873cd,الكاف-تبرسق,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00594,العربي عبروق,Alarby Abrwq,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-255578e873cd,الكاف-تبرسق,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00595,محمد كرمة,Mhmd Krma,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-255578e873cd,الكاف-تبرسق,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00596,صالح بالعيش,Salh Balaysh,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-255578e873cd,الكاف-تبرسق,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00597,محمد المصمودي,Mhmd Almsmwdy,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-59fc1f46fd37,المهدية-السواسي,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00598,محمد قاسم,Mhmd Qasm,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-59fc1f46fd37,المهدية-السواسي,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00599,محمد صفر,Mhmd Sfr,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-59fc1f46fd37,المهدية-السواسي,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00600,فرج جمعة,Frj Jma,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-59fc1f46fd37,المهدية-السواسي,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00601,محمد الجدي,Mhmd Aljdy,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-5438f058c2e9,مكثر-سليانة-تاجروين,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00602,صادق بن يحمد,Sadq Bn Yhmd,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-5438f058c2e9,مكثر-سليانة-تاجروين,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00603,عبد الحميد برغاوي,Abd Alhmyd Brghawy,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-5438f058c2e9,مكثر-سليانة-تاجروين,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00604,محمد حمزة,Mhmd Hmza,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-5438f058c2e9,مكثر-سليانة-تاجروين,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00605,محمد شنيق,Mhmd Shnyq,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-74d40c23d232,مجردة-زغوان,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00606,عبد الرحمان عبد النبي,Abd Alrhman Abd Alnby,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-74d40c23d232,مجردة-زغوان,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00607,أحمد الغرياني,أhmd Alghryany,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-74d40c23d232,مجردة-زغوان,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00608,سليمان الزواري,Slyman Alzwary,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-74d40c23d232,مجردة-زغوان,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00609,الحبيب بورقيبة,Alhbyb Bwrqyba,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-01cd7f255fc6,منستير-جمال,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00610,الهادي بوسلامة,Alhady Bwslama,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-01cd7f255fc6,منستير-جمال,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00611,العجمي سليم,Alajmy Slym,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-01cd7f255fc6,منستير-جمال,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00612,الطيب المهيري,Altyb Almhyry,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-4c046e8a6b5a,نابل-سليمان,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00613,الهادي الغلوصي,Alhady Alghlwsy,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-4c046e8a6b5a,نابل-سليمان,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00614,مختار عزيز,Mkhtar Azyz,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-4c046e8a6b5a,نابل-سليمان,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00615,الصادق بوصفارة,Alsadq Bwsfara,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-4c046e8a6b5a,نابل-سليمان,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00616,بشير بلاغة,Bshyr Blagha,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-4c046e8a6b5a,نابل-سليمان,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00617,محمد زهوية,Mhmd Zhwya,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-4c046e8a6b5a,نابل-سليمان,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00618,محمد بدرة,Mhmd Bdra,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-4c046e8a6b5a,نابل-سليمان,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00619,أحمد بن صالح,أhmd Bn Salh,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-e59d5fa14f77,ورغمة-تطاوين-مطماطة-نفزاوة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00620,عبد الرحمان بوعجاجة,Abd Alrhman Bwajaja,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-e59d5fa14f77,ورغمة-تطاوين-مطماطة-نفزاوة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00621,محمود الخياري,Mhmwd Alkhyary,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-e59d5fa14f77,ورغمة-تطاوين-مطماطة-نفزاوة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00622,نصر مرزوقي,Nsr Mrzwqy,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-e59d5fa14f77,ورغمة-تطاوين-مطماطة-نفزاوة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00623,محمد الراي,Mhmd Alray,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-e59d5fa14f77,ورغمة-تطاوين-مطماطة-نفزاوة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00624,يوسف لبوز,Ywsf Lbwz,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-e59d5fa14f77,ورغمة-تطاوين-مطماطة-نفزاوة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00625,نصر بن جعفر,Nsr Bn Jafr,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-e59d5fa14f77,ورغمة-تطاوين-مطماطة-نفزاوة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00626,الفرجاني بالحاج عمار,Alfrjany Balhaj Amar,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-d8dd896cec22,صفاقس-الصخيرة-جبنيانة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00627,أحمد علولو,أhmd Alwlw,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-d8dd896cec22,صفاقس-الصخيرة-جبنيانة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00628,الحبيب عاشور,Alhbyb Ashwr,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-d8dd896cec22,صفاقس-الصخيرة-جبنيانة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00629,حسن شفرود,Hsn Shfrwd,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-d8dd896cec22,صفاقس-الصخيرة-جبنيانة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00630,محمد مكني,Mhmd Mkny,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-d8dd896cec22,صفاقس-الصخيرة-جبنيانة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00631,مفتاح سميري,Mftah Smyry,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-d8dd896cec22,صفاقس-الصخيرة-جبنيانة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00632,أحمد دريرة,أhmd Dryra,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-d8dd896cec22,صفاقس-الصخيرة-جبنيانة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00633,محمود الغول,Mhmwd Alghwl,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-d8dd896cec22,صفاقس-الصخيرة-جبنيانة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00634,طاهر عبد الكافي,Tahr Abd Alkafy,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-d8dd896cec22,صفاقس-الصخيرة-جبنيانة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00635,أحمد التليلي,أhmd Altlyly,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-16c302122fcd,سيدي بوزيد-قفصة-توزر,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00636,حسين بن صالح,Hsyn Bn Salh,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-16c302122fcd,سيدي بوزيد-قفصة-توزر,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00637,حسين بوزيان,Hsyn Bwzyan,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-16c302122fcd,سيدي بوزيد-قفصة-توزر,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00638,محمد الأمين الشابي,Mhmd Alأmyn Alshaby,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-16c302122fcd,سيدي بوزيد-قفصة-توزر,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00639,حسونة بن طاهر,Hswna Bn Tahr,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-16c302122fcd,سيدي بوزيد-قفصة-توزر,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00640,قلعي رشدي,Qlay Rshdy,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-16c302122fcd,سيدي بوزيد-قفصة-توزر,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00641,الشادلي باش تبجي,Alshadly Bash Tbjy,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-16c302122fcd,سيدي بوزيد-قفصة-توزر,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00642,فتحي زهير,Fthy Zhyr,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-3e4ef26a2a12,سوق الإربعاء-عين دراهم,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00643,محمد كباني,Mhmd Kbany,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-3e4ef26a2a12,سوق الإربعاء-عين دراهم,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00644,طاهر بوريال,Tahr Bwryal,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-3e4ef26a2a12,سوق الإربعاء-عين دراهم,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00645,صالح قلعاوي,Salh Qlawy,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-3e4ef26a2a12,سوق الإربعاء-عين دراهم,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00646,الصادق المقدم,Sadok Mokaddem,,,,,5,ANC-1956,NA-1979,1956-04-08,,,,,,,PTY-PSD,destourian,,,,,
+TNP-00647,علي الزلاوي,Aly Alzlawy,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-48f7f1dfa45e,سوق الخميس-باجة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00648,شريف مراد,Shryf Mrad,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-48f7f1dfa45e,سوق الخميس-باجة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00649,شادلي رحيم,Shadly Rhym,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-48f7f1dfa45e,سوق الخميس-باجة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00650,عبد الله فرحات,Abd Alh Frhat,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-5d710bb182f3,سوسة,TN-51,Sousse,Centre East,true,PTY-NEODESTOUR,destourian,,,,,
+TNP-00651,جلول بن شريفة,Jlwl Bn Shryfa,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-5d710bb182f3,سوسة,TN-51,Sousse,Centre East,true,PTY-NEODESTOUR,destourian,,,,,
+TNP-00652,محمد رمضان,Mhmd Rmdan,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-5d710bb182f3,سوسة,TN-51,Sousse,Centre East,true,PTY-NEODESTOUR,destourian,,,,,
+TNP-00653,محمد بن للونة,Mhmd Bn Lwna,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-5d710bb182f3,سوسة,TN-51,Sousse,Centre East,true,PTY-NEODESTOUR,destourian,,,,,
+TNP-00654,علي البلهوان,Aly Alblhwan,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-cb128a00242f,تالة-سبيطلة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00655,الحبيب الشطي,Alhbyb Alshty,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-cb128a00242f,تالة-سبيطلة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00656,عمار بالحاج عثمان,Amar Balhaj Athman,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-cb128a00242f,تالة-سبيطلة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00657,أحمد بالأمين,أhmd Balأmyn,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-cb128a00242f,تالة-سبيطلة,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00658,الباهي الأدغم,Albahy Alأdghm,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-fe1ab7e04f8a,تونس,TN-11,Tunis,Grand Tunis,true,PTY-NEODESTOUR,destourian,,,,,
+TNP-00659,محمد الشاذلي النيفر,Mhmd Alshadhly Alnyfr,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-fe1ab7e04f8a,تونس,TN-11,Tunis,Grand Tunis,true,PTY-NEODESTOUR,destourian,,,,,
+TNP-00660,محمود الماطري,Mhmwd Almatry,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-fe1ab7e04f8a,تونس,TN-11,Tunis,Grand Tunis,true,PTY-NEODESTOUR,destourian,,,,,
+TNP-00661,عمر الرياحي,Amr Alryahy,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-fe1ab7e04f8a,تونس,TN-11,Tunis,Grand Tunis,true,PTY-NEODESTOUR,destourian,,,,,
+TNP-00662,أندريه بروش,أndryh Brwsh,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-fe1ab7e04f8a,تونس,TN-11,Tunis,Grand Tunis,true,PTY-NEODESTOUR,destourian,,,,,
+TNP-00663,الطيب السحباني,Altyb Alshbany,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-fe1ab7e04f8a,تونس,TN-11,Tunis,Grand Tunis,true,PTY-NEODESTOUR,destourian,,,,,
+TNP-00664,محمد لصفر جراد,Mhmd Lsfr Jrad,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-fe1ab7e04f8a,تونس,TN-11,Tunis,Grand Tunis,true,PTY-NEODESTOUR,destourian,,,,,
+TNP-00665,عزوز الرباعي,Azwz Alrbay,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-fe1ab7e04f8a,تونس,TN-11,Tunis,Grand Tunis,true,PTY-NEODESTOUR,destourian,,,,,
+TNP-00666,محمود زرزاري,Mhmwd Zrzary,,,,,1,ANC-1956,ANC-1956,1956-04-08,TNC-fe1ab7e04f8a,تونس,TN-11,Tunis,Grand Tunis,true,PTY-NEODESTOUR,destourian,,,,,
+TNP-00667,الطيب الميلادي,Altyb Almylady,,,,,1,ANC-1956,ANC-1956,1956-08-26,,,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00668,توفيق بن براهيم,Twfyq Bn Brahym,,,,,1,ANC-1956,ANC-1956,1956-08-26,,,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00669,الرشيد إدريس,Alrshyd إdrys,,,,,1,ANC-1956,ANC-1956,1956-08-26,,,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00670,أحمد عمارة,أhmd Amara,,,,,1,ANC-1956,ANC-1956,1956-08-26,,,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00671,محمد النفطي,Mhmd Alnfty,,,,,1,ANC-1956,ANC-1956,1956-08-26,,,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00672,البحري بربوش,Albhry Brbwsh,,,,,1,ANC-1956,ANC-1956,1956-08-26,,,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00673,صادق غرمازي,Sadq Ghrmazy,,,,,1,ANC-1956,ANC-1956,1956-08-26,,,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00674,صادق خلف الله,Sadq Khlf Alh,,,,,1,ANC-1956,ANC-1956,1956-08-26,,,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00675,أحمد السنوسي,أhmd Alsnwsy,,,,,1,ANC-1956,ANC-1956,1956-08-26,,,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00676,محمد عجيلي,Mhmd Ajyly,,,,,1,ANC-1956,ANC-1956,1956-08-26,,,,,,,PTY-NEODESTOUR,destourian,,,,,
+TNP-00677,محمود المسعدي,Mahmoud Messadi,,,,,2,COD-1981,COD-1986,1981-11-01,,,,,,,PTY-PSD,destourian,,,,,
+TNP-00678,رشيد صفر,Rachid Sfar,,,,,1,COD-1986,COD-1986,1986-11-02,,,,,,,PTY-PSD,destourian,,,,,
+TNP-00679,صلاح الدين بالي,Salah Eddine Baly,,,,,2,COD-1986,COD-1989,1986-11-02,,,,,,,PTY-RCD,destourian,,,,,
+TNP-00680,الباجي قائد السبسي,Beji Caid Essebsi,,,,,1,COD-1989,COD-1989,1989-04-02,,,,,,,PTY-RCD,destourian,,,,,
+TNP-00681,الحبيب بولعراس,Habib Boularès,,,,,2,COD-1989,COD-1994,1989-04-02,,,,,,,PTY-RCD,destourian,,,,,
+TNP-00682,فؤاد المبزع,Fouad Mebazaa,,,,,4,COD-1994,COD-2009,1994-03-20,,,,,,,PTY-RCD,destourian,,,,,

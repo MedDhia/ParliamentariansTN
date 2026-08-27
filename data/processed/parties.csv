@@ -1,0 +1,61 @@
+party_id,name_ar,name_fr,name_en,abbrev,family,founded_date,dissolved_date,predecessor_party_id,wikidata_qid,notes
+PTY-079b16e9b74d,الكتلة الديمقراطية (2019),,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-0e2de5f37252,الإنتقال الديمقراطي,Transition Démocratique,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-20b849ddfcb3,التحالف الديمقراطي,Alliance Démocratique,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-2b6219e30267,الحزب الشعبي التقدمي,Parti Populaire Progressiste,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-2e6681d42a4b,كتلة الحزب الدستوري الحر (2019),,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-38284180d037,حركة الوطنيين الديمقراطيين,Mouvement des Patriotes Démocrates,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-3bb19b9567e1,الخيار الثالث,Troisième Alternative,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-4559a54ac238,كتلة حركة النهضة (2019),,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-4784a167446a,غير المنتمين إلى كتل,,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-47b910b57713,كتلة لينتصر الشعب,,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-4c282d241960,الكتلة الوطنية (2020),,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-509dbc650cec,حزب المبادرة,Parti l'initiative,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-52e09019f2f2,حركة الإقلاع إلى المستقبل,Mouvement de Décollage vers l'Avenir,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-52f9f25821ab,حزب الأمان,Parti El Amen,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-53e95bd9b3b4,كتلة الوطنية المستقلة,,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-5a1bda8022f4,الحزب الجمهوري المغاربي,Parti Républicain Maghrébin,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-61a3f228649f,حزب الإصلاح والتنمية,Parti de la réforme et du développement,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-6be99d2e724f,حركة الجمهورية,Mouvement de la République,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-740db9d180c9,كتلة ائتلاف الكرامة (2019),,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-7ad4295a0093,تيار المحبة,Courant de l'amour,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-8c13e5152d0f,كتلة الاصلاح (2019),,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-9b0efa626777,الإتحاد الوطني الحر,Union Patriotique Libre,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-ARIDHA,العريضة الشعبية,Pétition populaire,Popular Petition,Aridha Chaabia,other,2011-01-01,,,,
+PTY-CPR,المؤتمر من أجل الجمهورية,Congrès pour la République,Congress for the Republic,CPR,social_democratic,2001-07-25,,,,
+PTY-CPT,الحزب الشيوعي التونسي,Parti communiste tunisien,Tunisian Communist Party,PCT,left,1920-01-01,1993-04-23,,,
+PTY-ECHAAB,حركة الشعب,Mouvement du peuple,People's Movement,Echaab,arab_nationalist,2011-01-01,,,,
+PTY-ENNAHDHA,حركة النهضة,Mouvement Ennahdha,Ennahdha Movement,Ennahdha,islamist,1981-06-06,,,,
+PTY-ETTAJDID,حركة التجديد,Mouvement Ettajdid,Ettajdid Movement,Ettajdid,left,1993-04-23,2012-04-01,PTY-CPT,,
+PTY-ETTAKATOL,التكتل الديمقراطي من أجل العمل والحريات,Forum démocratique pour le travail et les libertés,Democratic Forum for Labour and Liberties,Ettakatol,social_democratic,1994-04-09,,,,
+PTY-INDEPENDENT,مستقل,Indépendant,Independent,Ind.,independent,,,,,
+PTY-JOMHOURI,الحزب الجمهوري,Parti républicain,Republican Party,Al Joumhouri,liberal,2012-04-09,,,,
+PTY-KARAMA,ائتلاف الكرامة,Coalition Al Karama,Al Karama Coalition,Al Karama,islamist,2019-01-01,,,,
+PTY-MACHROU,حركة مشروع تونس,Machrouû Tounes,Machrouu Tounes,Machrouu,social_democratic,2016-03-20,,PTY-NIDAA,,
+PTY-MDS,حركة الديمقراطيين الاشتراكيين,Mouvement des démocrates socialistes,Movement of Socialist Democrats,MDS,social_democratic,1978-06-10,,,,
+PTY-NEODESTOUR,الحزب الحر الدستوري الجديد,Néo-Destour,Neo-Destour Party,Neo-Destour,destourian,1934-03-02,1964-10-22,,,
+PTY-NIDAA,نداء تونس,Nidaa Tounes,Nidaa Tounes,Nidaa,national_conservative,2012-06-16,,,,
+PTY-PDL,الحزب الدستوري الحر,Parti destourien libre,Free Destourian Party,PDL,destourian,2013-01-01,,,,
+PTY-PSD,الحزب الاشتراكي الدستوري,Parti socialiste destourien,Socialist Destourian Party,PSD,destourian,1964-10-22,1988-02-27,PTY-NEODESTOUR,,
+PTY-PUP,حزب الوحدة الشعبية,Parti de l'unité populaire,Popular Unity Party,PUP,left,1981-01-01,,,,
+PTY-QALB,قلب تونس,Qalb Tounes,Heart of Tunisia,Qalb Tounes,liberal,2019-06-01,,,,
+PTY-RCD,التجمع الدستوري الديمقراطي,Rassemblement constitutionnel démocratique,Democratic Constitutional Rally,RCD,destourian,1988-02-27,2011-03-09,PTY-PSD,,
+PTY-TAHYA,تحيا تونس,Tahya Tounes,Tahya Tounes,Tahya,liberal,2019-01-27,,,,
+PTY-UDU,الاتحاد الديمقراطي الوحدوي,Union démocratique unioniste,Unionist Democratic Union,UDU,arab_nationalist,1988-01-01,,,,
+PTY-a49b95b8bbb3,الجبهة الوطنية التونسية,Front National Tunisien,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-a8c344e9039d,حركة وفاء,Mouvement Wafa,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-ac4a3d2a8128,المسار الديمقراطي الاجتماعي,Al Massar,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-afb20824a9f9,كتلة الخط الوطني السيادي,,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-b0109a4f5966,آفاق تونس,Afek Tounes,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-b4cc6c38811d,كتلة حزب قلب تونس (2019),,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-bb9202bb86da,حزب العمال,Parti des travailleurs,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-bbfe9bb6d793,صوت شعب تونس,La Voix du peuple de Tunisie,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-cb447bb1247c,التيار الشعبي,Courant Populaire,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-d1e65beb3791,كتلة الأمانة والعمل,,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-e2dde8867b6c,كتلة تحيا تونس (2019),,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-e34601720a98,حركة التونسي للحرية والكرامة,Mouvement Tunisien pour la Liberté et la Dignité,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-e5c16bf2604d,حزب البناء الوطني,Parti de la Construction Patriotique,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-e65de6155d31,كتلة الأحرار,,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-e75657052675,كتلة صوت الجمهورية,,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-efb0809dca6b,التيار الديمقراطي,Courant Démocratique,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-fe5731549756,كتلة الوفاء للثورة,Fidélité à La Révolution,,,unknown,,,,,Minted from source data; not in the curated party register.

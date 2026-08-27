@@ -1,0 +1,363 @@
+"""Unit tests for the parts of the pipeline where a silent bug would be costly.
+
+The emphasis is on the logic that is easy to get wrong and hard to notice:
+Arabic name normalisation, biography parsing, temporal overlap in network
+projection, and the guards that stopped real bugs during development. Each test
+that corresponds to a bug found in the data names it.
+"""
+
+from __future__ import annotations
+
+import sys
+from pathlib import Path
+
+import pytest
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+
+from parliamentarians_tn import schema  # noqa: E402
+from parliamentarians_tn.collect import marsad_anc, marsad_majles  # noqa: E402
+from parliamentarians_tn.ids import (  # noqa: E402
+    IdRegistry,
+    arabic_match_key,
+    deterministic_id,
+    latin_match_key,
+    normalize_arabic,
+    normalize_latin,
+    romanize_arabic,
+)
+from parliamentarians_tn.networks import _overlaps, _project  # noqa: E402
+
+
+# ---------------------------------------------------------------------------
+# Arabic normalisation
+# ---------------------------------------------------------------------------
+
+class TestArabicNormalisation:
+    def test_folds_alif_variants(self):
+        assert normalize_arabic("أحمد") == normalize_arabic("احمد")
+        assert normalize_arabic("إبراهيم") == normalize_arabic("ابراهيم")
+
+    def test_drops_definite_article(self):
+        # The ARP writes الحامدي, other sources write حامدي.
+        assert normalize_arabic("الحامدي") == normalize_arabic("حامدي")
+
+    def test_folds_ta_marbuta_and_alif_maqsura(self):
+        assert normalize_arabic("فاطمة") == normalize_arabic("فاطمه")
+        assert normalize_arabic("مصطفى") == normalize_arabic("مصطفي")
+
+    def test_strips_diacritics(self):
+        assert normalize_arabic("مُحَمَّد") == normalize_arabic("محمد")
+
+    def test_match_key_is_word_order_invariant(self):
+        # Sources disagree on family-name-first vs given-name-first.
+        assert arabic_match_key("إبراهيم بودربالة") == arabic_match_key("بودربالة إبراهيم")
+
+    def test_match_key_ignores_nasab_particles(self):
+        assert arabic_match_key("محمد بن علي") == arabic_match_key("محمد علي")
+
+    def test_empty_input_is_empty_not_error(self):
+        assert normalize_arabic(None) == ""
+        assert arabic_match_key("") == ""
+
+    def test_distinct_names_do_not_collide(self):
+        assert arabic_match_key("محمد الغنوشي") != arabic_match_key("راشد الغنوشي")
+
+
+class TestLatinNormalisation:
+    def test_folds_common_romanisation_variants(self):
+        # Bouderbela / Buderbela: the ou/u alternation is the commonest split.
+        assert normalize_latin("Bouderbela") == normalize_latin("Buderbela")
+
+    def test_folds_accents_and_punctuation(self):
+        assert normalize_latin("Béji Caïd-Essebsi") == normalize_latin("Beji Caid Essebsi")
+
+    def test_match_key_is_word_order_invariant(self):
+        assert latin_match_key("Brahim Bouderbela") == latin_match_key("Bouderbela Brahim")
+
+    def test_distinct_names_do_not_collide(self):
+        assert latin_match_key("Rached Ghannouchi") != latin_match_key("Mohamed Ghannouchi")
+
+
+class TestRomanisation:
+    def test_produces_latin_output(self):
+        out = romanize_arabic("محمد")
+        assert out and out.isascii()
+
+    def test_empty_input(self):
+        assert romanize_arabic("") == ""
+
+
+# ---------------------------------------------------------------------------
+# ID minting
+# ---------------------------------------------------------------------------
+
+class TestIdRegistry:
+    def test_same_upstream_key_returns_same_id(self):
+        reg = IdRegistry("TNP")
+        first = reg.mint("ARP_ODOO", "742")
+        assert reg.mint("ARP_ODOO", "742") == first
+
+    def test_different_keys_get_different_ids(self):
+        reg = IdRegistry("TNP")
+        assert reg.mint("ARP_ODOO", "742") != reg.mint("ARP_ODOO", "743")
+
+    def test_same_key_in_different_sources_is_distinct(self):
+        reg = IdRegistry("TNP")
+        assert reg.mint("ARP_ODOO", "1") != reg.mint("MARSAD_ANC", "1")
+
+    def test_alias_maps_upstream_key_onto_existing_person(self):
+        reg = IdRegistry("TNP")
+        pid = reg.mint("MARSAD_ANC", "abc")
+        reg.alias("MARSAD_MAJLES", "xyz", pid)
+        assert reg.get("MARSAD_MAJLES", "xyz") == pid
+
+    def test_counter_resumes_from_existing_ids(self):
+        reg = IdRegistry("TNP", existing={"S::1": "TNP-00007"})
+        assert reg.mint("S", "2") == "TNP-00008"
+
+    def test_deterministic_id_is_stable_and_distinct(self):
+        a = deterministic_id("CMT", "ARP-2019", "finance")
+        assert a == deterministic_id("CMT", "ARP-2019", "finance")
+        assert a != deterministic_id("CMT", "ARP-2023", "finance")
+
+
+# ---------------------------------------------------------------------------
+# Biography parsing (marsad ANC)
+# ---------------------------------------------------------------------------
+
+class TestBirthParsing:
+    def test_full_date_with_place_and_governorate(self):
+        out = marsad_anc.parse_birth(
+            "Né le 02 Novembre 1975, à Sidi Khlif dans le gouvernorat de Sidi Bouzid, "
+            "c'est là qu'il entame sa scolarité."
+        )
+        assert out["birth_date"] == "1975-11-02"
+        assert out["birth_date_precision"] == "day"
+        assert out["birth_place_ar"] == "Sidi Khlif"
+        assert out["birth_governorate_name"] == "Sidi Bouzid"
+
+    def test_footnote_glued_to_year_is_handled(self):
+        # Regression: profiles pasted from Wikipedia read "né le 1er mai 19561".
+        # The original pattern failed to match and fell through to an unrelated
+        # later date, giving one member a birth year of 1998 and an apparent age
+        # of 13 at election.
+        out = marsad_anc.parse_birth(
+            "Khemaïs Ksila, né le 1er mai 19561, est un homme politique tunisien. "
+            "Il est emprisonné ... le 22 février 1998 ..."
+        )
+        assert out["birth_date"] == "1956-05-01"
+
+    def test_year_only_gets_year_precision(self):
+        out = marsad_anc.parse_birth("Né en 1965 à Kébili.")
+        assert out["birth_date"] == "1965-01-01"
+        assert out["birth_date_precision"] == "year"
+
+    def test_implausible_year_is_rejected_not_published(self):
+        assert marsad_anc.parse_birth("Né le 3 mars 2005 à Tunis.") == {}
+        assert marsad_anc.parse_birth("Né en 1830 à Tunis.") == {}
+
+    def test_no_birth_information(self):
+        assert marsad_anc.parse_birth("Avocat au barreau de Tunis.") == {}
+
+
+class TestGenderInference:
+    def test_feminine_participle(self):
+        assert marsad_anc.parse_gender("Née le 3 mars 1970 à Sfax.") == "female"
+
+    def test_masculine_participle(self):
+        assert marsad_anc.parse_gender("Né le 3 mars 1970 à Sfax.") == "male"
+
+    def test_marital_participle_fallback(self):
+        assert marsad_anc.parse_gender("Mariée et mère de deux enfants.") == "female"
+        assert marsad_anc.parse_gender("Marié et père de deux enfants.") == "male"
+
+    def test_pronoun_fallback(self):
+        assert marsad_anc.parse_gender("Elle enseigne le droit. Elle milite.") == "female"
+
+    def test_unknown_when_no_signal(self):
+        assert marsad_anc.parse_gender("Avocat.") == "unknown"
+
+    def test_never_infers_from_name_alone(self):
+        # A bare name must not produce a sex: inference is from grammatical
+        # agreement in the source's prose only.
+        assert marsad_anc.parse_gender("Fatma Ben Ali") == "unknown"
+
+
+class TestPersonalParsing:
+    def test_marital_children_and_languages(self):
+        out = marsad_anc.parse_personal(
+            "Marié et père de deux enfants, il maîtrise la langue arabe et française."
+        )
+        assert out["marital_status"] == "marié"
+        assert out["n_children"] == "2"
+        assert "ar" in out["languages"] and "fr" in out["languages"]
+
+    def test_no_personal_details(self):
+        assert marsad_anc.parse_personal("Ingénieur agronome.") == {}
+
+
+class TestCommitteeParsing:
+    def test_parses_name_type_and_role_triples(self):
+        markup = (
+            "<div>لجنة الحقوق والحريات</div><div>لجنة تأسيسية</div>"
+            "<div>المقرر المساعد الأول</div>"
+        )
+        rows = marsad_anc.parse_committees(markup)
+        assert len(rows) == 1
+        assert rows[0]["type"] == "constituent"
+        assert rows[0]["role"] == "assistant_rapporteur"
+
+    def test_legislative_and_special_types(self):
+        markup = (
+            "<div>لجنة المالية</div><div>لجنة تشريعية</div><div>عضو</div>"
+            "<div>لجنة التوافقات</div><div>لجنة خاصة</div><div>رئيس</div>"
+        )
+        rows = marsad_anc.parse_committees(markup)
+        assert [r["type"] for r in rows] == ["legislative", "special"]
+        assert [r["role"] for r in rows] == ["member", "chair"]
+
+    def test_empty_page_yields_nothing(self):
+        assert marsad_anc.parse_committees("<div></div>") == []
+
+
+# ---------------------------------------------------------------------------
+# Arabic date parsing (marsad majles)
+# ---------------------------------------------------------------------------
+
+class TestArabicDates:
+    @pytest.mark.parametrize("text,expected", [
+        ("19 ديسمبر 2019", "2019-12-19"),
+        ("1 جانفي 2020", "2020-01-01"),
+        ("5 جويلية 2021", "2021-07-05"),
+        ("3 أوت 2020", "2020-08-03"),
+        ("7 فيفري 2020", "2020-02-07"),
+    ])
+    def test_tunisian_and_standard_month_names(self, text, expected):
+        assert marsad_majles.parse_arabic_date(text) == expected
+
+    def test_unparseable_returns_empty(self):
+        assert marsad_majles.parse_arabic_date("اليوم") == ""
+        assert marsad_majles.parse_arabic_date("") == ""
+
+
+# ---------------------------------------------------------------------------
+# Network projection
+# ---------------------------------------------------------------------------
+
+class TestOverlap:
+    def test_disjoint_spells_do_not_overlap(self):
+        ok, _, _ = _overlaps("2019-01-01", "2020-01-01", "2020-06-01", "2021-01-01")
+        assert not ok
+
+    def test_intersecting_spells_overlap(self):
+        ok, start, _ = _overlaps("2019-01-01", "2021-01-01", "2020-01-01", "2022-01-01")
+        assert ok and start == "2020-01-01"
+
+    def test_open_ended_spells_overlap(self):
+        ok, _, _ = _overlaps("2019-01-01", "", "2023-01-01", "")
+        assert ok
+
+
+class TestProjection:
+    def _rows(self):
+        return [
+            {"person_id": "P1", "assembly_id": "A", "g": "G1",
+             "start_date": "2020-01-01", "end_date": ""},
+            {"person_id": "P2", "assembly_id": "A", "g": "G1",
+             "start_date": "2020-01-01", "end_date": ""},
+            {"person_id": "P3", "assembly_id": "A", "g": "G1",
+             "start_date": "2019-01-01", "end_date": "2019-06-01"},
+            # same group name, different chamber
+            {"person_id": "P4", "assembly_id": "B", "g": "G1",
+             "start_date": "2020-01-01", "end_date": ""},
+        ]
+
+    def test_edges_never_cross_assemblies(self):
+        edges = _project("test", self._rows(), "g", {})
+        pairs = {(e["source"], e["target"]) for e in edges}
+        assert ("P1", "P4") not in pairs
+        assert ("P2", "P4") not in pairs
+
+    def test_non_overlapping_spells_produce_no_edge(self):
+        edges = _project("test", self._rows(), "g", {})
+        pairs = {(e["source"], e["target"]) for e in edges}
+        assert ("P1", "P3") not in pairs
+        assert ("P1", "P2") in pairs
+
+    def test_newman_weight_discounts_large_groups(self):
+        small = [
+            {"person_id": f"S{i}", "assembly_id": "A", "g": "G",
+             "start_date": "2020-01-01", "end_date": ""} for i in range(2)
+        ]
+        big = [
+            {"person_id": f"B{i}", "assembly_id": "A", "g": "G",
+             "start_date": "2020-01-01", "end_date": ""} for i in range(11)
+        ]
+        s_edge = _project("t", small, "g", {})[0]
+        b_edge = _project("t", big, "g", {})[0]
+        assert s_edge["weight_newman"] == pytest.approx(1.0)
+        assert b_edge["weight_newman"] == pytest.approx(0.1)
+        assert s_edge["weight"] == b_edge["weight"] == 1
+
+    def test_shared_groups_accumulate_weight(self):
+        rows = []
+        for g in ("G1", "G2", "G3"):
+            for p in ("P1", "P2"):
+                rows.append({"person_id": p, "assembly_id": "A", "g": g,
+                             "start_date": "2020-01-01", "end_date": ""})
+        edges = _project("t", rows, "g", {})
+        assert len(edges) == 1
+        assert edges[0]["weight"] == 3
+        assert edges[0]["shared_count"] == 3
+
+    def test_singleton_group_produces_no_edge(self):
+        rows = [{"person_id": "P1", "assembly_id": "A", "g": "G",
+                 "start_date": "", "end_date": ""}]
+        assert _project("t", rows, "g", {}) == []
+
+    def test_missing_dates_are_flagged_assumed(self):
+        rows = [
+            {"person_id": "P1", "assembly_id": "A", "g": "G", "start_date": "", "end_date": ""},
+            {"person_id": "P2", "assembly_id": "A", "g": "G", "start_date": "", "end_date": ""},
+        ]
+        assert _project("t", rows, "g", {})[0]["dates_assumed"] == "true"
+
+
+# ---------------------------------------------------------------------------
+# Schema integrity
+# ---------------------------------------------------------------------------
+
+class TestSchema:
+    def test_table_names_unique(self):
+        names = [t.name for t in schema.TABLES]
+        assert len(names) == len(set(names))
+
+    def test_column_names_unique_within_table(self):
+        for tbl in schema.TABLES:
+            assert len(tbl.column_names) == len(set(tbl.column_names)), tbl.name
+
+    def test_primary_keys_exist_as_columns(self):
+        for tbl in schema.TABLES:
+            for key in tbl.primary_key:
+                assert key in tbl.column_names, f"{tbl.name}.{key}"
+
+    def test_references_point_at_real_tables_and_columns(self):
+        for tbl in schema.TABLES:
+            for col in tbl.columns:
+                if not col.references:
+                    continue
+                target_table, target_col = col.references.split(".")
+                assert target_table in schema.BY_NAME, col.references
+                assert target_col in schema.BY_NAME[target_table].column_names, col.references
+
+    def test_enum_columns_declare_a_vocabulary(self):
+        for tbl in schema.TABLES:
+            for col in tbl.columns:
+                if col.dtype == "enum":
+                    assert col.enum, f"{tbl.name}.{col.name} is enum with no vocabulary"
+
+    def test_every_column_documented(self):
+        for tbl in schema.TABLES:
+            for col in tbl.columns:
+                assert col.description.strip(), f"{tbl.name}.{col.name}"
