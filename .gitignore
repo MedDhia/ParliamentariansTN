@@ -1,0 +1,16 @@
+# Cached upstream pages and RPC responses (~19 MB). Regenerate with `make collect`.
+# The staging documents are kept: they are the intermediate dataset, they carry
+# no personal contact details, and networks.py reads the co-signature record
+# from one of them.
+data/raw/*
+!data/raw/staging_*.json
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+.DS_Store
+*.egg-info/
+.pytest_cache/

@@ -1,0 +1,23 @@
+person_id,matched_source,matched_source_key,matched_name_ar,matched_name_lat,assembly_id,method,confidence,action_required
+TNP-00080,MARSAD_MAJLES,abderrazek-aouidet,عبد الرزاق عويدات,Abderrazek Aouidet,ARP-2019,normalised_name_ar+lat,high,confirm this is the same person
+TNP-00134,MARSAD_MAJLES,badredine-gammoudi,بدرالدين قمودي,Badredine Gammoudi,ARP-2019,normalised_name_lat,medium,confirm this is the same person
+TNP-00065,MARSAD_MAJLES,imed-ouled-jebril,عماد أولاد جبريل,Imed Ouled Jebril,ARP-2019,normalised_name_ar+lat,high,confirm this is the same person
+TNP-00115,MARSAD_MAJLES,ridha-dellai,رضا دلاعي,Ridha Dellai,ARP-2019,normalised_name_ar+lat,high,confirm this is the same person
+TNP-00105,MARSAD_MAJLES,sami-ben-abdelali,سامي بن عبد العالي,Sami Ben Abdelali,ARP-2019,normalised_name_ar+lat,high,confirm this is the same person
+TNP-00324,MARSAD_ANC,4f4fbcf3bd8cb56157000015,الصحبي عتيق,Sahbi Atig,NCA-2011,normalised_name_ar+lat,high,confirm this is the same person
+TNP-00267,MARSAD_ANC,4f4fbcf3bd8cb56157000019,معز بالحاج رحومة,Moez Belhaj Rhouma,NCA-2011,normalised_name_lat,medium,confirm this is the same person
+TNP-00264,MARSAD_ANC,4f4fbcf3bd8cb5615700001c,مهدي بن غربية,Mehdi Ben Gharbia,NCA-2011,normalised_name_ar+lat,high,confirm this is the same person
+TNP-00141,MARSAD_ANC,4f4fbcf3bd8cb56157000027,أنور مرزوقي,Anouar Marzouki,NCA-2011,normalised_name_ar+lat,high,confirm this is the same person
+TNP-00364,MARSAD_ANC,4f4fbcf3bd8cb5615700004a,زياد العذاري,Zied Ladhari,NCA-2011,normalised_name_ar+lat,high,confirm this is the same person
+TNP-00174,MARSAD_ANC,4f4fbcf3bd8cb56157000069,عامر العريض,Ameur Laraiedh,NCA-2011,normalised_name_ar+lat,high,confirm this is the same person
+TNP-00199,MARSAD_ANC,4f4fbcf3bd8cb56157000085,فتحي العيادي,Fathi Ayadi,NCA-2011,normalised_name_ar+lat,high,confirm this is the same person
+TNP-00247,MARSAD_ANC,4f4fbcf3bd8cb56157000097,لطيفة حباشي,Latifa Habachi,NCA-2011,normalised_name_ar+lat,high,confirm this is the same person
+TNP-00277,MARSAD_ANC,4f4fbcf3bd8cb561570000b4,محمد كريم كريفة,Mohamed Karim Krifa,NCA-2011,normalised_name_ar+lat,high,confirm this is the same person
+TNP-00289,MARSAD_ANC,4f4fbcf3bd8cb561570000be,منجي الرحوي,Mongi Rahoui,NCA-2011,normalised_name_ar+lat,high,confirm this is the same person
+TNP-00301,MARSAD_ANC,4f4fbcf3bd8cb561570000c6,ناجي الجمل,Neji Jmal,NCA-2011,normalised_name_ar+lat,high,confirm this is the same person
+TNP-00007,MARSAD_ANC,4f4fbcf3bd8cb561570000d5,هشام حسني,Hichem Hosni,NCA-2011,normalised_name_ar+lat,high,confirm this is the same person
+TNP-00357,MARSAD_ANC,4f4fbcf3bd8cb561570000d9,يمينة الزغلامي,Yamina Zoghlami,NCA-2011,normalised_name_ar+lat,high,confirm this is the same person
+TNP-00332,MARSAD_ANC,4f798b24b197de7f0c000000,سامية عبو,Samia Abbou,NCA-2011,normalised_name_ar+lat,high,confirm this is the same person
+TNP-00285,MARSAD_ANC,52bdd52412bdaa7f9b90f157,محمد زريڨ,Mohamed Zrig,NCA-2011,normalised_name_lat,medium,confirm this is the same person
+TNP-00581,REFERENCE,speaker-Jallouli Fares,الجلولي فارس,Jallouli Fares,NA-1959,normalised_name_ar,medium,confirm this is the same person
+TNP-00646,REFERENCE,speaker-Sadok Mokaddem,الصادق المقدم,Sadok Mokaddem,NA-1964,normalised_name_ar,medium,confirm this is the same person

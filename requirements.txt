@@ -1,0 +1,11 @@
+# The pipeline deliberately depends on almost nothing: the standard library's
+# csv module writes the tables, so the dataset can be rebuilt on any Python 3.10+
+# without a scientific stack.
+requests>=2.28
+
+# Only for `make test`.
+pytest>=7.0
+
+# Not required by the pipeline. Needed by analysis/example_python.py:
+#   networkx>=3.0
+# The R example needs igraph, installed from CRAN.

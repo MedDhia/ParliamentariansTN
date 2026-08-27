@@ -1,0 +1,714 @@
+mandate_id,person_id,assembly_id,start_date,end_date,entry_mode,exit_mode,constituency_id,governorate_id,electoral_list_ar,electoral_list_lat,party_id_at_election,seat_number,is_diaspora_seat,election_date,source_ids
+TNM-37a56ea0d859,TNP-00569,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-54511a128e73,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-f6954b5fadd9,TNP-00570,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-54511a128e73,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-60b0fa475ab7,TNP-00571,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-54511a128e73,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-b2208e70f70c,TNP-00572,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-54511a128e73,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-f4cc93bf25ec,TNP-00573,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-54511a128e73,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-ee8bacc85bad,TNP-00574,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-54511a128e73,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-d5878ba67949,TNP-00575,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-c6aa33a8a03e,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-05a67a3bcb90,TNP-00576,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-c6aa33a8a03e,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-920b488fb513,TNP-00577,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-c6aa33a8a03e,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-cd4b9818cad3,TNP-00578,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-c6aa33a8a03e,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-26a83f919d01,TNP-00579,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-c6aa33a8a03e,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-ad4b970333cb,TNP-00580,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-c6aa33a8a03e,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-f9abd3b4b403,TNP-00581,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-6b5b44e762cb,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-32d8c11827f8,TNP-00582,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-6b5b44e762cb,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-fbddfa91e047,TNP-00583,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-6b5b44e762cb,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-8484344e2f40,TNP-00584,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-6b5b44e762cb,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-f1dc097dc328,TNP-00585,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-6b5b44e762cb,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-3cb3e6dd3a77,TNP-00586,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-0e432e6af759,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-fd0efde66137,TNP-00587,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-0e432e6af759,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-5c27b8f0b0e1,TNP-00588,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-0e432e6af759,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-15eeea3de950,TNP-00589,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-0e432e6af759,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-0dd6c78f68e8,TNP-00590,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-0e432e6af759,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-116f31ed67aa,TNP-00591,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-0e432e6af759,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-0e72ba3520c4,TNP-00592,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-255578e873cd,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-68974cf0e0a5,TNP-00593,ANC-1956,1956-04-08,1956-08-26,elected,unknown,TNC-255578e873cd,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-78b097f012b1,TNP-00594,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-255578e873cd,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-53d44c296001,TNP-00595,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-255578e873cd,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-7e81d749cc2d,TNP-00596,ANC-1956,1956-04-08,1956-08-26,elected,unknown,TNC-255578e873cd,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-a8fbb3c60b8d,TNP-00597,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-59fc1f46fd37,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-91119a200433,TNP-00598,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-59fc1f46fd37,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-f6a9f088a588,TNP-00599,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-59fc1f46fd37,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-82c6d0768ba9,TNP-00600,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-59fc1f46fd37,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-9520d3ac1b1f,TNP-00601,ANC-1956,1956-04-08,1956-08-26,elected,unknown,TNC-5438f058c2e9,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-ce7d374125e2,TNP-00602,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-5438f058c2e9,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-019033d0cb2a,TNP-00603,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-5438f058c2e9,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-c0714d483219,TNP-00604,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-5438f058c2e9,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-5ea28ae54f98,TNP-00605,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-74d40c23d232,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-13517ce5db42,TNP-00606,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-74d40c23d232,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-0d11b702480d,TNP-00607,ANC-1956,1956-04-08,1956-08-26,elected,unknown,TNC-74d40c23d232,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-34665c715d18,TNP-00608,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-74d40c23d232,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-9c06806e6f1a,TNP-00609,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-01cd7f255fc6,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-509bd40e7ca9,TNP-00610,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-01cd7f255fc6,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-a098207d9057,TNP-00611,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-01cd7f255fc6,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-b2fc808e4d34,TNP-00612,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-4c046e8a6b5a,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-c98ed2387f90,TNP-00613,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-4c046e8a6b5a,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-cf0e4ab39a24,TNP-00614,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-4c046e8a6b5a,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-80c88213ef89,TNP-00615,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-4c046e8a6b5a,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-448dd20c4ae4,TNP-00616,ANC-1956,1956-04-08,1956-08-26,elected,unknown,TNC-4c046e8a6b5a,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-7f4ab2488cd8,TNP-00617,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-4c046e8a6b5a,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-eddb5211f189,TNP-00618,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-4c046e8a6b5a,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-ae538bb403ff,TNP-00619,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-e59d5fa14f77,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-ba129243fcf1,TNP-00620,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-e59d5fa14f77,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-e24ac88b4320,TNP-00621,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-e59d5fa14f77,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-d2e957ff812a,TNP-00622,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-e59d5fa14f77,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-1514afc473b0,TNP-00623,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-e59d5fa14f77,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-77dbcadf0086,TNP-00624,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-e59d5fa14f77,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-ad8ae5f76979,TNP-00625,ANC-1956,1956-04-08,1956-08-26,elected,unknown,TNC-e59d5fa14f77,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-0daa03c265f6,TNP-00626,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-d8dd896cec22,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-5abb68198d2c,TNP-00627,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-d8dd896cec22,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-049d264e195c,TNP-00628,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-d8dd896cec22,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-539d31274120,TNP-00629,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-d8dd896cec22,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-b2e3c906dd87,TNP-00630,ANC-1956,1956-04-08,1956-08-26,elected,unknown,TNC-d8dd896cec22,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-b17278871982,TNP-00631,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-d8dd896cec22,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-186a8b9450ae,TNP-00632,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-d8dd896cec22,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-33e212f7b30f,TNP-00633,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-d8dd896cec22,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-a6798714708e,TNP-00634,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-d8dd896cec22,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-4f351644825d,TNP-00635,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-16c302122fcd,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-99433b83971e,TNP-00636,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-16c302122fcd,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-2fc6dce0427f,TNP-00637,ANC-1956,1956-04-08,1956-08-26,elected,unknown,TNC-16c302122fcd,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-98ad2b9b4f17,TNP-00638,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-16c302122fcd,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-6c9218b1ac93,TNP-00639,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-16c302122fcd,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-be9b07e45aa7,TNP-00640,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-16c302122fcd,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-f29dd65a571c,TNP-00641,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-16c302122fcd,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-f53d63edde74,TNP-00642,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-3e4ef26a2a12,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-0f1819b68608,TNP-00643,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-3e4ef26a2a12,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-7678224c8eeb,TNP-00644,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-3e4ef26a2a12,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-584806d0d978,TNP-00645,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-3e4ef26a2a12,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-24754d5f6f93,TNP-00646,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-48f7f1dfa45e,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-36d02bc27b8e,TNP-00647,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-48f7f1dfa45e,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-769e61fff60e,TNP-00648,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-48f7f1dfa45e,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-cd3a3558a789,TNP-00649,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-48f7f1dfa45e,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-414cc0a6bf47,TNP-00650,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-5d710bb182f3,TN-51,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-284e2f8f879c,TNP-00651,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-5d710bb182f3,TN-51,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-137a08d5c343,TNP-00652,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-5d710bb182f3,TN-51,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-2ff6c73a0813,TNP-00653,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-5d710bb182f3,TN-51,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-b3b0c7e8b087,TNP-00654,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-cb128a00242f,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-510c20928e7c,TNP-00655,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-cb128a00242f,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-c9004b7ba958,TNP-00656,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-cb128a00242f,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-a689d4db32d5,TNP-00657,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-cb128a00242f,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-014f85246a9b,TNP-00658,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-fe1ab7e04f8a,TN-11,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-2c5530c78433,TNP-00659,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-fe1ab7e04f8a,TN-11,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-99e107cd85ed,TNP-00660,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-fe1ab7e04f8a,TN-11,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-9130b0e8678d,TNP-00661,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-fe1ab7e04f8a,TN-11,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-5f74dbd4c77d,TNP-00662,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-fe1ab7e04f8a,TN-11,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-28e86db98a40,TNP-00663,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-fe1ab7e04f8a,TN-11,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-4585e2f1b356,TNP-00664,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-fe1ab7e04f8a,TN-11,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-bfb9c90ce6c7,TNP-00665,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-fe1ab7e04f8a,TN-11,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-6867e71caf85,TNP-00666,ANC-1956,1956-04-08,1959-06-01,elected,end_of_term,TNC-fe1ab7e04f8a,TN-11,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-03-25,WIKI_AR_ANC1956
+TNM-b09074b215c7,TNP-00667,ANC-1956,1956-08-26,1959-06-01,elected_byelection,end_of_term,,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-08-26,WIKI_AR_ANC1956
+TNM-059f0f97b02c,TNP-00668,ANC-1956,1956-08-26,1959-06-01,elected_byelection,end_of_term,,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-08-26,WIKI_AR_ANC1956
+TNM-7f2bcaa46399,TNP-00669,ANC-1956,1956-08-26,1959-06-01,elected_byelection,end_of_term,,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-08-26,WIKI_AR_ANC1956
+TNM-423bb40bc764,TNP-00670,ANC-1956,1956-08-26,1959-06-01,elected_byelection,end_of_term,,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-08-26,WIKI_AR_ANC1956
+TNM-dfa2a55db568,TNP-00671,ANC-1956,1956-08-26,1959-06-01,elected_byelection,end_of_term,,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-08-26,WIKI_AR_ANC1956
+TNM-46dd30cd9dbc,TNP-00672,ANC-1956,1956-08-26,1959-06-01,elected_byelection,end_of_term,,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-08-26,WIKI_AR_ANC1956
+TNM-629a64799beb,TNP-00673,ANC-1956,1956-08-26,1959-06-01,elected_byelection,end_of_term,,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-08-26,WIKI_AR_ANC1956
+TNM-260951c135ef,TNP-00674,ANC-1956,1956-08-26,1959-06-01,elected_byelection,end_of_term,,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-08-26,WIKI_AR_ANC1956
+TNM-166521b84454,TNP-00675,ANC-1956,1956-08-26,1959-06-01,elected_byelection,end_of_term,,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-08-26,WIKI_AR_ANC1956
+TNM-482ee9d2bbff,TNP-00676,ANC-1956,1956-08-26,1959-06-01,elected_byelection,end_of_term,,,الجبهة الوطنية,Front National,PTY-NEODESTOUR,,false,1956-08-26,WIKI_AR_ANC1956
+TNM-fad30a100e48,TNP-00065,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-91c675998d9c,TN-53,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-2c4a7d871554,TNP-00080,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-e4ad8a676ffb,TN-14,حركة الشعب,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-e11691a2ceeb,TNP-00105,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-dbb6ed731f07,TN-99,القائمة المستقلة كلنا توانسة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-eff2a06525e6,TNP-00115,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-7f9ed563bc4e,TN-31,حركة الشعب,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-9ca86ec32f6a,TNP-00134,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-dd0a034cca93,TN-43,حركة الشعب,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-59df358ca27e,TNP-00156,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-c14e9c41e9ce,TN-81,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-ac565ad02011,TNP-00157,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-505fecc15922,TN-32,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-132ad3dd2600,TNP-00158,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-bf84273551e0,TN-12,إئتلاف الكرامة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-332cfc28525f,TNP-00159,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-4e2903aee80f,TN-22,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-b227f82a92e1,TNP-00160,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-7c20f132677c,TN-34,الحزب الدستوري الحر,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-b1fb32bf8393,TNP-00161,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-990caafd3fb3,TN-61,حركة الشعب,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-1fef3b1965bb,TNP-00162,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-cd1ca9244e55,TN-11,الحزب الدستوري الحر,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-a2fcd736d057,TNP-00163,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-5531b77d50b4,TN-71,الإتحاد الديمقراطي الإجتماعي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-d3550eee2395,TNP-00164,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-a65c89ca4d13,TN-52,حزب الاتحاد الشعبي الجمهوري,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-2d6d6ba810e5,TNP-00165,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-5531b77d50b4,TN-71,القائمة المستقلة الشباب المستقل,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-f37246567e1a,TNP-00166,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-bf84273551e0,TN-12,حزب الرحمة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-5a9e22e54c41,TNP-00167,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-34bb04969aea,TN-23,إئتلاف الكرامة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-48e91cdfcb1c,TNP-00168,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-4e2903aee80f,TN-22,الحزب الدستوري الحر,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-0006a6b532c8,TNP-00169,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-990caafd3fb3,TN-61,حركة الشعب,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-3a0bd652357b,TNP-00170,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-86fce3cae9b0,TN-42,حزب نداء تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-7bbb6bc19b98,TNP-00171,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-34bb04969aea,TN-23,الحزب الدستوري الحر,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-a95a98701fe8,TNP-00172,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-c891423153f5,TN-33,حزب التيار الديمقراطي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-752a06eb89f1,TNP-00173,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-65af9ff64cdc,TN-13,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-8642a2e428ae,TNP-00174,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-6480cc2b0175,TN-82,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-cbb18f640cc4,TNP-00175,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-dd0a034cca93,TN-43,إئتلاف الكرامة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-00fcd6179975,TNP-00176,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-91c675998d9c,TN-53,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-cc67d9e674bb,TNP-00177,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-94e024e97a0b,TN-99,حزب التيار الديمقراطي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-32827b26df5c,TNP-00178,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-cd1ca9244e55,TN-11,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-70403882f865,TNP-00179,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-990caafd3fb3,TN-61,إئتلاف الكرامة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-69bab895d902,TNP-00180,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-bf84273551e0,TN-12,الحزب الدستوري الحر,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-806c46249130,TNP-00181,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-7c20f132677c,TN-34,حركة تحيا تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-df54090be20f,TNP-00182,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-86fce3cae9b0,TN-42,حزب الاتحاد الشعبي الجمهوري,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-a0a61b4a43bb,TNP-00183,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-c3a024df701d,TN-83,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-53deffb17fb7,TNP-00184,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-fb9b69aef92c,TN-72,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-85eb0ec361fe,TNP-00185,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-7c20f132677c,TN-34,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-d3827169e9fe,TNP-00186,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-fce75049ff09,TN-73,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-2d1e57494191,TNP-00187,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-505fecc15922,TN-32,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-65627c480f63,TNP-00188,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-bf84273551e0,TN-12,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-54b83758f324,TNP-00189,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-4e2903aee80f,TN-22,القائمة المستقلة الخير,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-2247e3df277c,TNP-00190,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-fb9b69aef92c,TN-72,القائمة المستقلة المواطنة والتنمية,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-214b770514cf,TNP-00191,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-34bb04969aea,TN-23,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-93ef7463fe49,TNP-00192,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-91c675998d9c,TN-53,إئتلاف الكرامة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-a5271b400a00,TNP-00193,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-91c675998d9c,TN-53,الحزب الدستوري الحر,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-8d01cdfc63fe,TNP-00194,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-990caafd3fb3,TN-61,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-a2a313d883e7,TNP-00195,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-6480cc2b0175,TN-82,إئتلاف الكرامة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-a28e4958990a,TNP-00196,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-4e2903aee80f,TN-22,حزب نداء تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-a472ae43fa36,TNP-00197,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-94e024e97a0b,TN-99,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-8e8978ace272,TNP-00198,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-34bb04969aea,TN-23,حزب التيار الديمقراطي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-a396b5b8da2b,TNP-00199,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-990caafd3fb3,TN-61,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-256b26325b9f,TNP-00200,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-91c675998d9c,TN-53,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-bc93e1a37b62,TNP-00201,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-990caafd3fb3,TN-61,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-a8d4ce5d7723,TNP-00202,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-dd0a034cca93,TN-43,حزب البديل التونسي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-8ab9609ba520,TNP-00203,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-505fecc15922,TN-32,صوت الفلاحين,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-06cc8ac66353,TNP-00204,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-4c5b0de0b4df,TN-41,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-c51321759af3,TNP-00205,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-c14e9c41e9ce,TN-81,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-2bff075c26dd,TNP-00206,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-34bb04969aea,TN-23,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-789a4f1e9d37,TNP-00207,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-fce75049ff09,TN-73,إئتلاف الكرامة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-afc9fa362b2b,TNP-00208,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-d7e470a6f1cf,TN-51,حزب البديل التونسي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-0c527a2d728e,TNP-00209,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-990caafd3fb3,TN-61,الحزب الدستوري الحر,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-4ba2841abf47,TNP-00210,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-65af9ff64cdc,TN-13,إئتلاف الكرامة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-cb4a420b356d,TNP-00211,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-e4ad8a676ffb,TN-14,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-172b9d170bdd,TNP-00212,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-c14e9c41e9ce,TN-81,حركة مشروع تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-2031321a7897,TNP-00213,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-c891423153f5,TN-33,حركة الشعب,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-b65e0b2a004f,TNP-00214,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-20803e341482,TN-21,حزب التيار الديمقراطي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-92f61cf52e51,TNP-00215,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-7c20f132677c,TN-34,القائمة المستقلة سليانة في عينينا,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-3e2561dedd96,TNP-00216,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-c891423153f5,TN-33,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-9f5e18866d99,TNP-00217,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-dd0a034cca93,TN-43,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-43dce7bb2c13,TNP-00218,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-5531b77d50b4,TN-71,حركة الشعب,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-6ef3d6291500,TNP-00219,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-91c675998d9c,TN-53,حزب آفاق تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-dbcb15077041,TNP-00220,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-7f9ed563bc4e,TN-31,حركة تحيا تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-c1381739daf4,TNP-00221,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-6480cc2b0175,TN-82,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-996444861a5f,TNP-00222,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-86fce3cae9b0,TN-42,القائمة المستقلة الوفاء بالعهد,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-2cd68c88501d,TNP-00223,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-cd1ca9244e55,TN-11,حزب التيار الديمقراطي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-54f2974245c1,TNP-00224,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-cd1ca9244e55,TN-11,حركة تحيا تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-116e520d5259,TNP-00225,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-a65c89ca4d13,TN-52,حركة الشعب,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-fa2fae454243,TNP-00226,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-d7e470a6f1cf,TN-51,حركة تحيا تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-dfa21480d9aa,TNP-00227,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-34bb04969aea,TN-23,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-b4877df8daf4,TNP-00228,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-e4ad8a676ffb,TN-14,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-1c340ea3c75e,TNP-00229,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-20803e341482,TN-21,قائمة أمل وعمل المستقلة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-b279a39370c8,TNP-00230,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-dd0a034cca93,TN-43,تيار المحبة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-04a7277935b2,TNP-00231,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-a65c89ca4d13,TN-52,الحزب الدستوري الحر,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-731901a01dec,TNP-00232,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-bf84273551e0,TN-12,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-52a48ea38e7c,TNP-00233,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-a65c89ca4d13,TN-52,حزب البديل التونسي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-12b0c5105834,TNP-00234,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-65af9ff64cdc,TN-13,حزب الاتحاد الشعبي الجمهوري,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-9d57c9a0987f,TNP-00235,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-bf84273551e0,TN-12,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-4c157a8bd3f3,TNP-00236,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-c3a024df701d,TN-83,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-363eececf935,TNP-00237,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-20803e341482,TN-21,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-66437ce49eb2,TNP-00238,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-4e2903aee80f,TN-22,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-f9138da3c323,TNP-00239,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-505fecc15922,TN-32,حركة تحيا تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-3a2809905e7b,TNP-00240,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-c14e9c41e9ce,TN-81,حركة الشعب,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-3299a4543c0e,TNP-00241,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-c14e9c41e9ce,TN-81,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-022ffcae449e,TNP-00242,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-4c5b0de0b4df,TN-41,حركة الشعب,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-736e38f0c75e,TNP-00243,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-65af9ff64cdc,TN-13,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-b67c879c0016,TNP-00244,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-7c20f132677c,TN-34,القائمة المستقلة بذل وعطاء,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-c6eae7df704a,TNP-00245,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-a65c89ca4d13,TN-52,الحزب الدستوري الحر,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-3fcdbf4e1017,TNP-00246,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-dd0a034cca93,TN-43,حزب التيار الديمقراطي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-981151435d63,TNP-00247,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-e4ad8a676ffb,TN-14,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-95950345c588,TNP-00248,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-a65c89ca4d13,TN-52,حزب التيار الديمقراطي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-e3dcc515bab9,TNP-00249,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-6480cc2b0175,TN-82,حركة الشعب,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-7811e1d86e0a,TNP-00250,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-94e024e97a0b,TN-99,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-72bb81b6cf4e,TNP-00251,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-5531b77d50b4,TN-71,حركة تحيا تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-32e5e2093960,TNP-00252,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-505fecc15922,TN-32,حركة الشعب,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-295aa462d78e,TNP-00253,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-6480cc2b0175,TN-82,حركة تحيا تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-22925efab71b,TNP-00254,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-fce75049ff09,TN-73,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-97974f9e7e05,TNP-00255,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-8e9eb8d0053a,,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-9dd7501b14f6,TNP-00256,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-4c5b0de0b4df,TN-41,إئتلاف الكرامة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-53fd11fb475b,TNP-00257,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-20803e341482,TN-21,الحزب الدستوري الحر,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-67f15ee979e4,TNP-00258,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-dbb6ed731f07,TN-99,حزب التيار الديمقراطي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-ad1dbddec326,TNP-00259,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-990caafd3fb3,TN-61,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-0b8c160f026e,TNP-00260,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-c891423153f5,TN-33,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-d535fc880369,TNP-00261,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-cd1ca9244e55,TN-11,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-9e0a314c865f,TNP-00262,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-20803e341482,TN-21,حركة تحيا تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-47d56564b89b,TNP-00263,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-6480cc2b0175,TN-82,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-378a72c91418,TNP-00264,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-34bb04969aea,TN-23,حركة تحيا تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-7b1e2914e662,TNP-00265,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-fce75049ff09,TN-73,حركة تحيا تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-8a2a035edc89,TNP-00266,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-d7e470a6f1cf,TN-51,إئتلاف الكرامة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-16de0888af9b,TNP-00267,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-20803e341482,TN-21,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-6968d5b13df4,TNP-00268,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-990caafd3fb3,TN-61,إئتلاف الكرامة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-749ce90614d4,TNP-00269,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-86fce3cae9b0,TN-42,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-c37cda700e4d,TNP-00270,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-8e9eb8d0053a,,حزب التيار الديمقراطي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-41e63a282d91,TNP-00271,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-20803e341482,TN-21,حزب التيار الديمقراطي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-850deab74927,TNP-00272,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-c14e9c41e9ce,TN-81,حزب التيار الديمقراطي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-6eeadbb09767,TNP-00273,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-c3a024df701d,TN-83,إئتلاف الكرامة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-8ba71802856b,TNP-00274,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-7f9ed563bc4e,TN-31,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-df074656a3b5,TNP-00275,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-990caafd3fb3,TN-61,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-f68f663b1941,TNP-00276,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-86fce3cae9b0,TN-42,حركة تحيا تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-e27cea0e0c3c,TNP-00277,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-d7e470a6f1cf,TN-51,الحزب الدستوري الحر,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-4ffe6698ea10,TNP-00278,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-6480cc2b0175,TN-82,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-aa78180a33c0,TNP-00279,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-7c20f132677c,TN-34,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-6021819cb9f1,TNP-00280,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-20803e341482,TN-21,إئتلاف الكرامة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-a7a684ef4632,TNP-00281,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-d7e470a6f1cf,TN-51,حزب آفاق تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-6c6ec99047e6,TNP-00282,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-86fce3cae9b0,TN-42,الحزب الإشتراكي الدستوري,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-52d9cb5ff45b,TNP-00283,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-a65c89ca4d13,TN-52,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-9990387ec358,TNP-00284,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-86fce3cae9b0,TN-42,القائمة المستقلة الامتياز,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-ec6e9df11475,TNP-00285,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-c14e9c41e9ce,TN-81,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-e0987040afe3,TNP-00286,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-fb9b69aef92c,TN-72,حركة الشعب,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-e922c93ac3d1,TNP-00287,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-a65c89ca4d13,TN-52,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-bf32eba89297,TNP-00288,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-20803e341482,TN-21,إئتلاف الكرامة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-c4f61cada46f,TNP-00289,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-505fecc15922,TN-32,حزب الجبهة الشعبية,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-1d8c43dbdfb9,TNP-00290,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-ec2eafe2f404,,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-ce3758eab384,TNP-00291,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-e4ad8a676ffb,TN-14,حزب الرحمة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-c2c4b7648d7b,TNP-00292,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-cd1ca9244e55,TN-11,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-1b7e1a1b0513,TNP-00293,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-83d48176add4,,حزب التيار الديمقراطي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-809b653e443e,TNP-00294,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-4096900d34d2,TN-99,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-315801437bb7,TNP-00295,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-cd1ca9244e55,TN-11,حركة تحيا تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-cc1fd1b74088,TNP-00296,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-7f9ed563bc4e,TN-31,الحزب الدستوري الحر,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-454f5fab6a00,TNP-00297,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-bf84273551e0,TN-12,حزب التيار الديمقراطي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-a5e5c8414568,TNP-00298,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-6480cc2b0175,TN-82,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-2f6901f4aa63,TNP-00299,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-dd0a034cca93,TN-43,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-569d9db8048c,TNP-00300,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-cd1ca9244e55,TN-11,الحزب الدستوري الحر,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-2060931773a0,TNP-00301,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-94e024e97a0b,TN-99,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-590cca1b2636,TNP-00302,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-91c675998d9c,TN-53,حزب التيار الديمقراطي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-e500a89cb584,TNP-00303,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-c891423153f5,TN-33,حركة مشروع تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-f8c6f6147247,TNP-00304,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-505fecc15922,TN-32,إئتلاف الكرامة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-d99671469a57,TNP-00305,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-990caafd3fb3,TN-61,حزب التيار الديمقراطي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-19770110d56b,TNP-00306,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-dd0a034cca93,TN-43,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-4765ce76d736,TNP-00307,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-fb9b69aef92c,TN-72,حزب نداء تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-6cd080e2cbb0,TNP-00308,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-86fce3cae9b0,TN-42,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-3d30f729e1b1,TNP-00309,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-65af9ff64cdc,TN-13,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-89479f00f4ae,TNP-00310,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-65af9ff64cdc,TN-13,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-0612fd3f1505,TNP-00311,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-34bb04969aea,TN-23,عيش تونسي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-5ed31f9990f0,TNP-00312,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-94e024e97a0b,TN-99,إئتلاف الكرامة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-7f65350c9edc,TNP-00313,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-cd1ca9244e55,TN-11,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-33a4d16639f0,TNP-00314,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-dbb6ed731f07,TN-99,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-ff2a508fac3d,TNP-00315,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-83d48176add4,,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-764ab959afd9,TNP-00316,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-cd1ca9244e55,TN-11,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-6728d1efbb52,TNP-00317,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-e4ad8a676ffb,TN-14,إئتلاف الكرامة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-b1727cd2ef18,TNP-00318,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-7f9ed563bc4e,TN-31,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-5a85400daf15,TNP-00319,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-d7e470a6f1cf,TN-51,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-ce523595b315,TNP-00320,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-990caafd3fb3,TN-61,إئتلاف الكرامة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-80cb6c0280f4,TNP-00321,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-d7e470a6f1cf,TN-51,حزب التيار الديمقراطي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-d591fa64dc13,TNP-00322,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-990caafd3fb3,TN-61,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-2a7aa0c0fde5,TNP-00323,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-cd1ca9244e55,TN-11,القائمة المستقلة نحن هنا,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-00c76f1c39c3,TNP-00324,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-bf84273551e0,TN-12,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-9995c86609ed,TNP-00325,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-4c5b0de0b4df,TN-41,القائمة المستقلة الرابطة الخضراء,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-7faca4b2cd7c,TNP-00326,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-65af9ff64cdc,TN-13,حزب الرحمة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-21eb9a12ff5c,TNP-00327,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-990caafd3fb3,TN-61,حزب التيار الديمقراطي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-67dd911a9ea3,TNP-00328,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-6480cc2b0175,TN-82,حركة الشعب,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-20a92d2a8480,TNP-00329,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-65af9ff64cdc,TN-13,حزب التيار الديمقراطي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-fd637ab0fab0,TNP-00330,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-cd1ca9244e55,TN-11,حزب الرحمة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-dabb1f311af9,TNP-00331,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-990caafd3fb3,TN-61,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-b0f8437bed17,TNP-00332,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-cd1ca9244e55,TN-11,حزب التيار الديمقراطي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-9d7a1c702d7b,TNP-00333,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-34bb04969aea,TN-23,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-33095fc6475e,TNP-00334,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-d7e470a6f1cf,TN-51,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-0da5c9a9c4d9,TNP-00335,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-cd1ca9244e55,TN-11,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-56e1f86d04e7,TNP-00336,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-91c675998d9c,TN-53,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-00db6edf3d63,TNP-00337,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-65af9ff64cdc,TN-13,الحزب الدستوري الحر,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-90636b4da4dd,TNP-00338,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-a65c89ca4d13,TN-52,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-efcbd80df7c6,TNP-00339,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-4c5b0de0b4df,TN-41,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-e5ef274b620f,TNP-00340,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-94e024e97a0b,TN-99,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-fe13689e6237,TNP-00341,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-4c5b0de0b4df,TN-41,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-9718f22dd1da,TNP-00342,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-cd1ca9244e55,TN-11,إئتلاف الكرامة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-9e4a38a7da8f,TNP-00343,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-4c5b0de0b4df,TN-41,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-1ab47299046f,TNP-00344,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-e4ad8a676ffb,TN-14,حزب التيار الديمقراطي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-5f4672a0d3c2,TNP-00345,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-5531b77d50b4,TN-71,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-6d81ca161a5b,TNP-00346,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-65af9ff64cdc,TN-13,حركة تحيا تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-d987a4e0faf6,TNP-00347,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-c3a024df701d,TN-83,حركة مشروع تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-26884a4538e1,TNP-00348,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-7f9ed563bc4e,TN-31,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-9f33e0bcb6f2,TNP-00349,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-5531b77d50b4,TN-71,حركة مشروع تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-e227748a253e,TNP-00350,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-4c5b0de0b4df,TN-41,القائمة المستقلة الرجوع الي الأصل,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-275f9964ec74,TNP-00351,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-505fecc15922,TN-32,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-5028a8065315,TNP-00352,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-20803e341482,TN-21,الحزب الدستوري الحر,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-282383ad7d05,TNP-00353,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-20803e341482,TN-21,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-6561035969ff,TNP-00354,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-d7e470a6f1cf,TN-51,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-df512599f65c,TNP-00355,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-20803e341482,TN-21,حركة تحيا تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-46e503ccc5c2,TNP-00356,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-990caafd3fb3,TN-61,الحزب الدستوري الحر,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-f3345f712787,TNP-00357,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-cd1ca9244e55,TN-11,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-d2292ae86859,TNP-00358,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-94e024e97a0b,TN-99,قائمة أمل وعمل المستقلة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-a0ca860ef4a2,TNP-00359,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-cd1ca9244e55,TN-11,إئتلاف الكرامة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-17b006ad83c6,TNP-00360,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-94e024e97a0b,TN-99,الحزب الدستوري الحر,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-6b5cb15cb65e,TNP-00361,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-5531b77d50b4,TN-71,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-9ae92a5bc00c,TNP-00362,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-94e024e97a0b,TN-99,حزب التيار الديمقراطي,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-7daab07fd70d,TNP-00363,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-94e024e97a0b,TN-99,إئتلاف الكرامة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-def9fc98ab3b,TNP-00364,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-d7e470a6f1cf,TN-51,حركة النهضة,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-e15dd8591ff2,TNP-00365,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-fce75049ff09,TN-73,حركة الشعب,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-abaa7294de02,TNP-00366,ARP-2019,2019-11-13,2021-07-25,elected,dissolution,TNC-20803e341482,TN-21,حزب قلب تونس,,,,false,2019-10-06,MARSAD_MAJLES
+TNM-107d78f3ddfb,TNP-00001,ARP-2023,2023-03-13,,elected,still_serving,TNC-59c699daa314,TN-23,,,,14,false,2023-03-13,ARP_ODOO
+TNM-6d24dd68bd6f,TNP-00002,ARP-2023,2023-03-13,,elected,still_serving,TNC-0555fdca61e3,TN-51,,,,12,false,2023-03-13,ARP_ODOO
+TNM-b76a429cb25e,TNP-00003,ARP-2023,2023-03-13,,elected,still_serving,TNC-966f30f38658,TN-52,,,,247,false,2023-03-13,ARP_ODOO
+TNM-160b48cb1234,TNP-00004,ARP-2023,2023-03-13,,elected,still_serving,TNC-716878887869,TN-21,,,,187,false,2023-03-13,ARP_ODOO
+TNM-b19c8b390a2f,TNP-00005,ARP-2023,2023-03-13,,elected,still_serving,TNC-024a4dd70a2c,TN-33,,,,208,false,2023-03-13,ARP_ODOO
+TNM-adad15a9a785,TNP-00006,ARP-2023,2023-03-13,,elected,still_serving,TNC-d23f1f4b3e69,TN-41,,,,195,false,2023-03-13,ARP_ODOO
+TNM-006cf1e9967a,TNP-00007,ARP-2023,2023-03-13,,elected,still_serving,TNC-55c7cb5e7244,TN-11,,,,216,false,2023-03-13,ARP_ODOO
+TNM-d96cfdde7333,TNP-00008,ARP-2023,2023-03-13,,elected,still_serving,TNC-4e958c0f924a,TN-51,,,,150,false,2023-03-13,ARP_ODOO
+TNM-8df1f6c50330,TNP-00009,ARP-2023,2023-03-13,,elected,still_serving,TNC-e7ffb2c52255,TN-21,,,,184,false,2023-03-13,ARP_ODOO
+TNM-8e2a900ff9d6,TNP-00010,ARP-2023,2023-03-13,,elected,still_serving,TNC-6ceb5472e074,TN-81,,,,10,false,2023-03-13,ARP_ODOO
+TNM-ec87e1fb39a2,TNP-00011,ARP-2023,2023-03-13,,elected,still_serving,TNC-8c743287ed19,TN-72,,,,181,false,2023-03-13,ARP_ODOO
+TNM-12443373ab4c,TNP-00012,ARP-2023,2023-03-13,,elected,still_serving,TNC-8d9e896a9822,TN-71,,,,109,false,2023-03-13,ARP_ODOO
+TNM-e7961122ccdc,TNP-00013,ARP-2023,2023-03-13,,elected,still_serving,TNC-f08fdefa8442,TN-12,,,,149,false,2023-03-13,ARP_ODOO
+TNM-819543c513f3,TNP-00014,ARP-2023,2023-03-13,2025-05-09,elected,death,TNC-8a0c85ce0812,TN-72,,,,182,false,2023-03-13,ARP_ODOO
+TNM-e4840fe3aa15,TNP-00015,ARP-2023,2023-03-13,,elected,still_serving,TNC-1e2144864623,TN-41,,,,91,false,2023-03-13,ARP_ODOO
+TNM-59b7ac89b604,TNP-00016,ARP-2023,2023-03-13,,elected,still_serving,TNC-6e8c4521fdb8,TN-12,,,,148,false,2023-03-13,ARP_ODOO
+TNM-1482b1a73bda,TNP-00017,ARP-2023,2023-03-13,,elected,still_serving,TNC-eef1d5b64308,TN-53,,,,215,false,2023-03-13,ARP_ODOO
+TNM-48ee161a377b,TNP-00018,ARP-2023,2023-03-13,,elected,still_serving,TNC-77db83aca8a9,TN-83,,,,35,false,2023-03-13,ARP_ODOO
+TNM-db0f0e90812c,TNP-00019,ARP-2023,2023-03-13,,elected,still_serving,TNC-e0f768103a48,TN-61,,,,214,false,2023-03-13,ARP_ODOO
+TNM-8e0203fdcf2b,TNP-00020,ARP-2023,2023-03-13,,elected,still_serving,TNC-38a2e4de653e,TN-61,,,,31,false,2023-03-13,ARP_ODOO
+TNM-c154d37e1b5e,TNP-00021,ARP-2023,2023-03-13,,elected,still_serving,TNC-194c2f978000,TN-51,,,,34,false,2023-03-13,ARP_ODOO
+TNM-ee7e4be96026,TNP-00022,ARP-2023,2023-03-13,,elected,still_serving,TNC-d55061cfbd6d,TN-61,,,,197,false,2023-03-13,ARP_ODOO
+TNM-e5ad3505781f,TNP-00023,ARP-2023,2023-03-13,,elected,still_serving,TNC-bd258f20740f,TN-31,,,,186,false,2023-03-13,ARP_ODOO
+TNM-d412e4d4a0ba,TNP-00024,ARP-2023,2023-03-13,,elected,still_serving,TNC-ad0c3f3d6d4c,TN-83,,,,185,false,2023-03-13,ARP_ODOO
+TNM-8d983ea965ef,TNP-00025,ARP-2023,2023-03-13,,elected,still_serving,TNC-5654d7843ced,TN-82,,,,157,false,2023-03-13,ARP_ODOO
+TNM-3923e74ec10f,TNP-00026,ARP-2023,2023-03-13,,elected,still_serving,TNC-68b73ad04616,TN-14,,,,30,false,2023-03-13,ARP_ODOO
+TNM-17622c7c88fd,TNP-00027,ARP-2023,2023-03-13,,elected,still_serving,TNC-7f66d79de45a,TN-13,,,,194,false,2023-03-13,ARP_ODOO
+TNM-7408f11e46a2,TNP-00028,ARP-2023,2023-03-13,,elected,still_serving,TNC-97283f3f5a30,TN-41,,,,213,false,2023-03-13,ARP_ODOO
+TNM-8d0d57591d83,TNP-00029,ARP-2023,2023-03-13,,elected,still_serving,TNC-b28eb5bac2c3,TN-61,,,,212,false,2023-03-13,ARP_ODOO
+TNM-a599d6fcfcde,TNP-00030,ARP-2023,2023-03-13,,elected,still_serving,TNC-ad8b17b74a07,TN-51,,,,211,false,2023-03-13,ARP_ODOO
+TNM-2ac75a6dd096,TNP-00031,ARP-2023,2023-03-13,,elected,still_serving,TNC-05ac35562067,TN-71,,,,72,false,2023-03-13,ARP_ODOO
+TNM-4c8440ea51b2,TNP-00032,ARP-2023,2023-03-13,,elected,still_serving,TNC-8379cffb063c,TN-21,,,,141,false,2023-03-13,ARP_ODOO
+TNM-837d27550c2e,TNP-00033,ARP-2023,2023-03-13,,elected,still_serving,TNC-7f7812d38ee6,TN-71,,,,156,false,2023-03-13,ARP_ODOO
+TNM-9ae5f462b971,TNP-00034,ARP-2023,2023-03-13,,elected,still_serving,TNC-e20cd1fd3ef6,TN-82,,,,202,false,2023-03-13,ARP_ODOO
+TNM-31155ec943a5,TNP-00035,ARP-2023,2023-03-13,,elected,still_serving,TNC-b64fb365aa08,TN-42,,,,107,false,2023-03-13,ARP_ODOO
+TNM-34d691d129ad,TNP-00036,ARP-2023,2023-03-13,,elected,still_serving,TNC-c233dbf56b62,TN-52,,,,210,false,2023-03-13,ARP_ODOO
+TNM-85d138e8f830,TNP-00037,ARP-2023,2023-03-13,,elected,still_serving,TNC-b2fd9c292b6e,TN-21,,,,140,false,2023-03-13,ARP_ODOO
+TNM-ec7f4498a14c,TNP-00038,ARP-2023,2023-03-13,,elected,still_serving,TNC-cd938f96d548,TN-53,,,,166,false,2023-03-13,ARP_ODOO
+TNM-93bc19ecba0f,TNP-00039,ARP-2023,2023-03-13,,elected,still_serving,TNC-4de2fe165838,TN-42,,,,179,false,2023-03-13,ARP_ODOO
+TNM-6ab2269427d7,TNP-00040,ARP-2023,2023-03-13,,elected,still_serving,TNC-d34d70f08aad,TN-11,,,,135,false,2023-03-13,ARP_ODOO
+TNM-7dbc7c42ee2d,TNP-00041,ARP-2023,2023-03-13,,elected,still_serving,TNC-7c6d7dbc6a9b,TN-32,,,,240,false,2023-03-13,ARP_ODOO
+TNM-65808a1b36af,TNP-00042,ARP-2023,2023-03-13,,elected,still_serving,TNC-8141dbb00e1a,TN-34,,,,201,false,2023-03-13,ARP_ODOO
+TNM-57edd49ae249,TNP-00043,ARP-2023,2023-03-13,,elected,still_serving,TNC-6dc00e736f7c,TN-51,,,,59,false,2023-03-13,ARP_ODOO
+TNM-8fd0cf19ab0d,TNP-00044,ARP-2023,2023-03-13,,elected,still_serving,TNC-9ee9f6d7bd1d,TN-32,,,,92,false,2023-03-13,ARP_ODOO
+TNM-f1fbdf7b20c4,TNP-00045,ARP-2023,2023-03-13,,elected,still_serving,TNC-20b5e8134910,TN-13,,,,164,false,2023-03-13,ARP_ODOO
+TNM-996ab91b15a7,TNP-00046,ARP-2023,2023-03-13,,elected,still_serving,TNC-dfe4fa6603d1,TN-11,,,,146,false,2023-03-13,ARP_ODOO
+TNM-37793cb9d654,TNP-00047,ARP-2023,2023-03-13,,elected,still_serving,TNC-9acb0786de96,TN-23,,,,163,false,2023-03-13,ARP_ODOO
+TNM-973e3426f688,TNP-00048,ARP-2023,2023-03-13,,elected,still_serving,TNC-518851453bca,TN-11,,,,193,false,2023-03-13,ARP_ODOO
+TNM-6c7941a5d73b,TNP-00049,ARP-2023,2023-03-13,,elected,still_serving,TNC-f699f9312353,TN-41,,,,39,false,2023-03-13,ARP_ODOO
+TNM-fbf250bb2696,TNP-00050,ARP-2023,2023-03-13,,elected,still_serving,TNC-7bbf718e4e8b,TN-41,,,,106,false,2023-03-13,ARP_ODOO
+TNM-ffdf5d755f76,TNP-00051,ARP-2023,2023-03-23,,elected,still_serving,TNC-f5f308069583,TN-13,,,,192,false,2023-03-23,ARP_ODOO
+TNM-415ebf17bcc1,TNP-00052,ARP-2023,2023-03-13,,elected,still_serving,TNC-20d51e4bae5b,TN-12,,,,139,false,2023-03-13,ARP_ODOO
+TNM-392a0fce19b2,TNP-00053,ARP-2023,2023-03-13,,elected,still_serving,TNC-79ba08e0dbb3,TN-81,,,,162,false,2023-03-13,ARP_ODOO
+TNM-5793add504c8,TNP-00054,ARP-2023,2023-03-13,,elected,still_serving,TNC-14ad6d65e418,TN-13,,,,9,false,2023-03-13,ARP_ODOO
+TNM-f2655f17b98a,TNP-00055,ARP-2023,2023-03-13,,elected,still_serving,TNC-02f1a4d77309,TN-52,,,,138,false,2023-03-13,ARP_ODOO
+TNM-67817656f140,TNP-00056,ARP-2023,2023-03-13,,elected,still_serving,TNC-fbde56c631a9,TN-53,,,,137,false,2023-03-13,ARP_ODOO
+TNM-d125c23eeea8,TNP-00057,ARP-2023,2023-03-13,,elected,still_serving,TNC-d2660afac4df,TN-23,,,,161,false,2023-03-13,ARP_ODOO
+TNM-cc67a5204520,TNP-00058,ARP-2023,2023-03-13,,elected,still_serving,TNC-a4e5396dad26,TN-61,,,,160,false,2023-03-13,ARP_ODOO
+TNM-5209ae3b7b51,TNP-00059,ARP-2023,2023-03-13,,elected,still_serving,TNC-93c97f9de2b6,TN-12,,,,60,false,2023-03-13,ARP_ODOO
+TNM-833d11c247b2,TNP-00060,ARP-2023,2023-03-13,,elected,still_serving,TNC-a5bf3742892c,TN-82,,,,200,false,2023-03-13,ARP_ODOO
+TNM-32e625e44d24,TNP-00061,ARP-2023,2023-03-13,,elected,still_serving,TNC-3532c3d2627d,TN-31,,,,158,false,2023-03-13,ARP_ODOO
+TNM-96ddcef9aabf,TNP-00062,ARP-2023,2023-03-13,,elected,still_serving,TNC-e3874327c558,TN-52,,,,105,false,2023-03-13,ARP_ODOO
+TNM-319f6a660088,TNP-00063,ARP-2023,2023-03-13,,elected,still_serving,TNC-f7ca812f36b8,TN-99,,,,120,false,2023-03-13,ARP_ODOO
+TNM-5f47f1c82816,TNP-00064,ARP-2023,2023-03-13,,elected,still_serving,TNC-537aae7f6fb8,TN-42,,,,108,false,2023-03-13,ARP_ODOO
+TNM-7582b2b4b0a7,TNP-00065,ARP-2023,2023-03-13,,elected,still_serving,TNC-d06f4b4a5ffb,TN-53,,,,7,false,2023-03-13,ARP_ODOO
+TNM-8d1b503379d8,TNP-00066,ARP-2023,2023-03-13,,elected,still_serving,TNC-e974df701f88,TN-33,,,,94,false,2023-03-13,ARP_ODOO
+TNM-7df74ee7a962,TNP-00067,ARP-2023,2023-03-13,,elected,still_serving,TNC-ff761d317cf3,TN-82,,,,13,false,2023-03-13,ARP_ODOO
+TNM-0d5f2588296e,TNP-00068,ARP-2023,2023-03-13,,elected,still_serving,TNC-29554f9e6c50,TN-14,,,,74,false,2023-03-13,ARP_ODOO
+TNM-1807cdfd19ea,TNP-00069,ARP-2023,2023-03-13,,elected,still_serving,TNC-f6f83e60ab39,TN-61,,,,104,false,2023-03-13,ARP_ODOO
+TNM-08b8514b11af,TNP-00070,ARP-2023,2023-03-13,,elected,still_serving,TNC-61225d8ed449,TN-81,,,,191,false,2023-03-13,ARP_ODOO
+TNM-40afec8de4c2,TNP-00071,ARP-2023,2023-03-13,,elected,still_serving,TNC-7e23f213e78a,TN-13,,,,190,false,2023-03-13,ARP_ODOO
+TNM-8d1efc98d8f9,TNP-00072,ARP-2023,2023-03-13,,elected,still_serving,TNC-e391d8d14901,TN-11,,,,136,false,2023-03-13,ARP_ODOO
+TNM-6f10f6926ecc,TNP-00073,ARP-2023,2025-10-07,,elected,still_serving,TNC-107b743b8617,TN-23,,,,265,false,2025-10-07,ARP_ODOO
+TNM-aa0a3f76bf2c,TNP-00074,ARP-2023,2023-03-13,,elected,still_serving,TNC-519c5d80c21e,TN-51,,,,145,false,2023-03-13,ARP_ODOO
+TNM-99056af4406a,TNP-00075,ARP-2023,2023-03-13,,elected,still_serving,TNC-7c5e40f75e31,TN-21,,,,198,false,2023-03-13,ARP_ODOO
+TNM-4a817c605e32,TNP-00076,ARP-2023,2023-03-13,,elected,still_serving,TNC-5e968e03f073,TN-42,,,,178,false,2023-03-13,ARP_ODOO
+TNM-1268c9dfa9b5,TNP-00077,ARP-2023,2023-03-13,,elected,still_serving,TNC-2a6258192a34,TN-81,,,,110,false,2023-03-13,ARP_ODOO
+TNM-4bfcd7776b63,TNP-00078,ARP-2023,2023-03-13,,elected,still_serving,TNC-7850681ddbef,TN-82,,,,42,false,2023-03-13,ARP_ODOO
+TNM-a4e985ad2f5e,TNP-00079,ARP-2023,2023-03-13,,elected,still_serving,TNC-d8a6f449dff6,TN-43,,,,144,false,2023-03-13,ARP_ODOO
+TNM-9b11666304b2,TNP-00080,ARP-2023,2023-03-13,,elected,still_serving,TNC-1e4f122360f8,TN-14,,,,41,false,2023-03-13,ARP_ODOO
+TNM-a0c5bff9f314,TNP-00081,ARP-2023,2023-03-13,,elected,still_serving,TNC-1b36e55999ff,TN-12,,,,118,false,2023-03-13,ARP_ODOO
+TNM-61a3469f0416,TNP-00082,ARP-2023,2023-03-13,,elected,still_serving,TNC-dbc65d43affb,TN-61,,,,131,false,2023-03-13,ARP_ODOO
+TNM-85195747b588,TNP-00083,ARP-2023,2023-03-13,,elected,still_serving,TNC-8e374d1b2ae3,TN-21,,,,99,false,2023-03-13,ARP_ODOO
+TNM-ca8597e14038,TNP-00084,ARP-2023,2023-03-13,,elected,still_serving,TNC-2b093f4e4715,TN-11,,,,134,false,2023-03-13,ARP_ODOO
+TNM-1ea0f1395819,TNP-00085,ARP-2023,2023-03-13,,elected,still_serving,TNC-a54f5818e72a,TN-11,,,,152,false,2023-03-13,ARP_ODOO
+TNM-14d4564e3244,TNP-00086,ARP-2023,2023-07-13,,elected,still_serving,TNC-41972b1be093,TN-11,,,,98,false,2023-07-13,ARP_ODOO
+TNM-eee294903267,TNP-00087,ARP-2023,2023-03-13,,elected,still_serving,TNC-6bf63763361c,TN-61,,,,69,false,2023-03-13,ARP_ODOO
+TNM-52e7954f2242,TNP-00088,ARP-2023,2023-03-13,,elected,still_serving,TNC-52a1deccb887,TN-12,,,,97,false,2023-03-13,ARP_ODOO
+TNM-107573d2ebc2,TNP-00089,ARP-2023,2023-03-23,,elected,still_serving,TNC-e6c9118e3483,TN-13,,,,155,false,2023-03-23,ARP_ODOO
+TNM-29493cd22e4a,TNP-00090,ARP-2023,2023-03-13,,elected,still_serving,TNC-c261209cd82f,TN-32,,,,143,false,2023-03-13,ARP_ODOO
+TNM-320a5a3b4861,TNP-00091,ARP-2023,2023-03-13,2026-03-09,elected,death,TNC-e55e8cef9377,TN-11,,,,142,false,2023-03-13,ARP_ODOO
+TNM-223ceef54dcc,TNP-00092,ARP-2023,2023-03-13,,elected,still_serving,TNC-966f30f38658,TN-52,,,,117,false,2023-03-13,ARP_ODOO
+TNM-648071246912,TNP-00093,ARP-2023,2023-03-13,,elected,still_serving,TNC-cd7d609486fc,TN-43,,,,132,false,2023-03-13,ARP_ODOO
+TNM-35d352586a9a,TNP-00094,ARP-2023,2023-03-13,,elected,still_serving,TNC-ab9d6e4f9747,TN-61,,,,11,false,2023-03-13,ARP_ODOO
+TNM-b82ceeefd585,TNP-00095,ARP-2023,2023-03-13,,elected,still_serving,TNC-32fcc7830e12,TN-14,,,,103,false,2023-03-13,ARP_ODOO
+TNM-678516308ab1,TNP-00096,ARP-2023,2023-03-13,,elected,still_serving,TNC-e0f63059733d,TN-61,,,,116,false,2023-03-13,ARP_ODOO
+TNM-5e484a12c728,TNP-00097,ARP-2023,2023-03-13,,elected,still_serving,TNC-76c3228b9da4,TN-43,,,,71,false,2023-03-13,ARP_ODOO
+TNM-bd7b6895dc45,TNP-00098,ARP-2023,2023-03-13,,elected,still_serving,TNC-deefa564487c,TN-23,,,,115,false,2023-03-13,ARP_ODOO
+TNM-785ef24b6917,TNP-00099,ARP-2023,2023-03-13,,elected,still_serving,TNC-5bcfc580e7a1,TN-11,,,,68,false,2023-03-13,ARP_ODOO
+TNM-2a622a71c1fc,TNP-00100,ARP-2023,2023-03-13,,elected,still_serving,TNC-a40d80ca7130,TN-82,,,,1,false,2023-03-13,ARP_ODOO
+TNM-33702c4405c1,TNP-00101,ARP-2023,2023-03-13,,elected,still_serving,TNC-3a595c736753,TN-11,,,,102,false,2023-03-13,ARP_ODOO
+TNM-793502d9d484,TNP-00102,ARP-2023,2023-03-13,,elected,still_serving,TNC-20511104b3f0,TN-51,,,,101,false,2023-03-13,ARP_ODOO
+TNM-659fd88c08b0,TNP-00103,ARP-2023,2023-03-13,,elected,still_serving,TNC-8e92959ea7f9,TN-23,,,,100,false,2023-03-13,ARP_ODOO
+TNM-c36711dbd969,TNP-00104,ARP-2023,2023-03-13,,elected,still_serving,TNC-8352ded641bc,TN-21,,,,96,false,2023-03-13,ARP_ODOO
+TNM-e4e803dd3d35,TNP-00105,ARP-2023,2023-03-13,,elected,still_serving,TNC-c0afc39a258b,TN-99,,,,63,false,2023-03-13,ARP_ODOO
+TNM-07d0b6f17182,TNP-00106,ARP-2023,2023-03-13,2025-03-13,elected,death,TNC-107b743b8617,TN-23,,,,114,false,2023-03-13,ARP_ODOO
+TNM-223bdb3a0949,TNP-00107,ARP-2023,2023-03-13,,elected,still_serving,TNC-4fdaa5ec49fe,TN-52,,,,80,false,2023-03-13,ARP_ODOO
+TNM-f9d4730e378d,TNP-00108,ARP-2023,2023-03-13,,elected,still_serving,TNC-ed3f99ff775f,TN-22,,,,79,false,2023-03-13,ARP_ODOO
+TNM-4413064003dd,TNP-00109,ARP-2023,2023-03-13,,elected,still_serving,TNC-90e025dc7d34,TN-33,,,,95,false,2023-03-13,ARP_ODOO
+TNM-824a32b77410,TNP-00110,ARP-2023,2023-03-13,,elected,still_serving,TNC-847779cba41c,TN-21,,,,78,false,2023-03-13,ARP_ODOO
+TNM-c90c3caa268d,TNP-00111,ARP-2023,2023-03-13,,elected,still_serving,TNC-f7ca812f36b8,TN-99,,,,77,false,2023-03-13,ARP_ODOO
+TNM-653f7c7086a3,TNP-00112,ARP-2023,2023-03-13,,elected,still_serving,TNC-61a3fd1e65c0,TN-52,,,,67,false,2023-03-13,ARP_ODOO
+TNM-967f743772b5,TNP-00113,ARP-2023,2023-03-13,,elected,still_serving,TNC-0c1fba807e92,TN-32,,,,70,false,2023-03-13,ARP_ODOO
+TNM-36e4baa7f3db,TNP-00114,ARP-2023,2023-03-13,,elected,still_serving,TNC-7163483ce094,TN-72,,,,66,false,2023-03-13,ARP_ODOO
+TNM-c95ebb6b260b,TNP-00115,ARP-2023,2023-03-13,,elected,still_serving,TNC-73ed5f340cee,TN-31,,,,205,false,2023-03-13,ARP_ODOO
+TNM-b9cbe706edfd,TNP-00116,ARP-2023,2023-03-13,,elected,still_serving,TNC-ad996070fccb,TN-34,,,,76,false,2023-03-13,ARP_ODOO
+TNM-4d55755eeb0b,TNP-00117,ARP-2023,2023-03-13,,elected,still_serving,TNC-6efb48d8d57c,TN-43,,,,65,false,2023-03-13,ARP_ODOO
+TNM-0f92af684dd1,TNP-00118,ARP-2023,2025-10-07,,elected,still_serving,TNC-8a0c85ce0812,TN-72,,,,266,false,2025-10-07,ARP_ODOO
+TNM-8215c5b2e898,TNP-00119,ARP-2023,2023-03-13,,elected,still_serving,TNC-28c68beb64f3,TN-52,,,,62,false,2023-03-13,ARP_ODOO
+TNM-e34a92f2ff2a,TNP-00120,ARP-2023,2023-03-13,,elected,still_serving,TNC-1a35847d974d,TN-51,,,,75,false,2023-03-13,ARP_ODOO
+TNM-db23d01ebcac,TNP-00121,ARP-2023,2023-03-13,,elected,still_serving,TNC-3e86a0fa344f,TN-42,,,,46,false,2023-03-13,ARP_ODOO
+TNM-a7bc03b31079,TNP-00122,ARP-2023,2023-03-13,,elected,still_serving,TNC-c76f0a8ad7e3,TN-61,,,,38,false,2023-03-13,ARP_ODOO
+TNM-df10c85e4dec,TNP-00123,ARP-2023,2023-03-13,,elected,still_serving,TNC-3ed81f8d3303,TN-21,,,,196,false,2023-03-13,ARP_ODOO
+TNM-44d00791a27e,TNP-00124,ARP-2023,2023-03-13,,elected,still_serving,TNC-478aeb7d40fd,TN-22,,,,58,false,2023-03-13,ARP_ODOO
+TNM-8b92a0435fd9,TNP-00125,ARP-2023,2023-03-13,,elected,still_serving,TNC-0ac047003f52,TN-51,,,,64,false,2023-03-13,ARP_ODOO
+TNM-a7f97a409f16,TNP-00126,ARP-2023,2023-03-13,,elected,still_serving,TNC-3528df809f53,TN-42,,,,180,false,2023-03-13,ARP_ODOO
+TNM-45d224ed2a6e,TNP-00127,ARP-2023,2023-03-13,,elected,still_serving,TNC-f60beb62e239,TN-32,,,,93,false,2023-03-13,ARP_ODOO
+TNM-ab8c443187de,TNP-00128,ARP-2023,2023-03-13,,elected,still_serving,TNC-09c0f9c6b2f1,TN-43,,,,133,false,2023-03-13,ARP_ODOO
+TNM-a0543a252cc0,TNP-00129,ARP-2023,2023-03-13,,elected,still_serving,TNC-21983ef8e27b,TN-81,,,,207,false,2023-03-13,ARP_ODOO
+TNM-74b809bcef2e,TNP-00130,ARP-2023,2023-03-13,,elected,still_serving,TNC-63acb0bb3053,TN-11,,,,61,false,2023-03-13,ARP_ODOO
+TNM-25f57fcb2a7f,TNP-00131,ARP-2023,2023-03-13,,elected,still_serving,TNC-01615e6dbca5,TN-73,,,,113,false,2023-03-13,ARP_ODOO
+TNM-20998baa0784,TNP-00132,ARP-2023,2023-03-13,,elected,still_serving,TNC-84dd3ebcdbf6,TN-53,,,,45,false,2023-03-13,ARP_ODOO
+TNM-e65b69f35242,TNP-00133,ARP-2023,2023-03-13,,elected,still_serving,TNC-9acfc76b0b35,TN-34,,,,44,false,2023-03-13,ARP_ODOO
+TNM-4df97f50a782,TNP-00134,ARP-2023,2023-03-13,,elected,still_serving,TNC-2373a9652098,TN-43,,,,111,false,2023-03-13,ARP_ODOO
+TNM-aab3f1621454,TNP-00135,ARP-2023,2023-03-13,,elected,still_serving,TNC-d3cd8b8081b3,TN-31,,,,112,false,2023-03-13,ARP_ODOO
+TNM-9d07d3ff608c,TNP-00136,ARP-2023,2023-03-13,,elected,still_serving,TNC-66cccba05ec0,TN-82,,,,199,false,2023-03-13,ARP_ODOO
+TNM-43cf7c02c77e,TNP-00137,ARP-2023,2023-03-13,,elected,still_serving,TNC-ecee49591291,TN-41,,,,29,false,2023-03-13,ARP_ODOO
+TNM-199950776303,TNP-00138,ARP-2023,2023-03-13,,elected,still_serving,TNC-93c97f9de2b6,TN-12,,,,8,false,2023-03-13,ARP_ODOO
+TNM-279ff07661fc,TNP-00139,ARP-2023,2023-03-13,,elected,still_serving,TNC-be84a0f495c6,TN-61,,,,17,false,2023-03-13,ARP_ODOO
+TNM-855376554688,TNP-00140,ARP-2023,2023-03-13,,elected,still_serving,TNC-b767c0a4d52d,TN-12,,,,40,false,2023-03-13,ARP_ODOO
+TNM-40b96b824577,TNP-00141,ARP-2023,2023-03-13,,elected,still_serving,TNC-0d35a1a046c5,TN-21,,,,3,false,2023-03-13,ARP_ODOO
+TNM-54917b83c351,TNP-00142,ARP-2023,2023-03-13,,elected,still_serving,TNC-23a38760ce82,TN-11,,,,5,false,2023-03-13,ARP_ODOO
+TNM-00c1587bac62,TNP-00143,ARP-2023,2023-03-13,,elected,still_serving,TNC-99c5526d1ffb,TN-73,,,,37,false,2023-03-13,ARP_ODOO
+TNM-c63f1d916c5d,TNP-00144,ARP-2023,2023-03-13,,elected,still_serving,TNC-919739b0ad73,TN-71,,,,153,false,2023-03-13,ARP_ODOO
+TNM-e8b5dec3ab3c,TNP-00145,ARP-2023,2023-03-13,,elected,still_serving,TNC-f6eaa43de824,TN-22,,,,57,false,2023-03-13,ARP_ODOO
+TNM-78997b37c892,TNP-00146,ARP-2023,2023-03-13,,elected,still_serving,TNC-d620f8caf1ac,TN-83,,,,151,false,2023-03-13,ARP_ODOO
+TNM-c6aeb90e7af3,TNP-00147,ARP-2023,2023-03-23,,elected,still_serving,TNC-dc5c5c61a04e,TN-13,,,,43,false,2023-03-23,ARP_ODOO
+TNM-3fac663eda5f,TNP-00148,ARP-2023,2023-03-13,,elected,still_serving,TNC-11a166c637b2,TN-21,,,,33,false,2023-03-13,ARP_ODOO
+TNM-ba818b3202cf,TNP-00149,ARP-2023,2023-03-13,,elected,still_serving,TNC-27859ebb865b,TN-41,,,,15,false,2023-03-13,ARP_ODOO
+TNM-f3e9cc45bf00,TNP-00150,ARP-2023,2023-03-13,,elected,still_serving,TNC-f6def5a507a9,TN-73,,,,206,false,2023-03-13,ARP_ODOO
+TNM-4384dec63e6a,TNP-00151,ARP-2023,2023-03-13,,elected,still_serving,TNC-eef40150274b,TN-14,,,,18,false,2023-03-13,ARP_ODOO
+TNM-f4cbd0e16311,TNP-00152,ARP-2023,2023-03-13,,elected,still_serving,TNC-45ced317f073,TN-23,,,,73,false,2023-03-13,ARP_ODOO
+TNM-e83fd0f9b663,TNP-00153,ARP-2023,2023-03-13,,elected,still_serving,TNC-b077e389d95f,TN-53,,,,36,false,2023-03-13,ARP_ODOO
+TNM-dcdb983377c2,TNP-00154,ARP-2023,2023-03-13,,elected,still_serving,TNC-6376c63610b6,TN-61,,,,16,false,2023-03-13,ARP_ODOO
+TNM-7b57894a9002,TNP-00155,ARP-2023,2023-03-13,,elected,still_serving,TNC-3882ab474f91,TN-13,,,,2,false,2023-03-13,ARP_ODOO
+TNM-93feecd12590,TNP-00677,COD-1981,1981-11-01,1986-11-02,unknown,unknown,,,,,PTY-PSD,,false,,REFERENCE
+TNM-5394eb5caa4d,TNP-00677,COD-1986,1986-11-02,1989-04-02,unknown,unknown,,,,,PTY-PSD,,false,,REFERENCE
+TNM-876565daaad0,TNP-00678,COD-1986,1986-11-02,1989-04-02,unknown,unknown,,,,,PTY-PSD,,false,,REFERENCE
+TNM-dea332974750,TNP-00679,COD-1986,1986-11-02,1989-04-02,unknown,unknown,,,,,PTY-PSD,,false,,REFERENCE
+TNM-64590e2cfe11,TNP-00679,COD-1989,1989-04-02,1994-03-20,unknown,unknown,,,,,PTY-RCD,,false,,REFERENCE
+TNM-aa1985d770ba,TNP-00680,COD-1989,1989-04-02,1994-03-20,unknown,unknown,,,,,PTY-RCD,,false,,REFERENCE
+TNM-9b652b732a97,TNP-00681,COD-1989,1989-04-02,1994-03-20,unknown,unknown,,,,,PTY-RCD,,false,,REFERENCE
+TNM-926e97a83d54,TNP-00681,COD-1994,1994-03-20,1999-10-24,unknown,unknown,,,,,PTY-RCD,,false,,REFERENCE
+TNM-895a55b7b291,TNP-00682,COD-1994,1994-03-20,1999-10-24,unknown,unknown,,,,,PTY-RCD,,false,,REFERENCE
+TNM-3999938a4e00,TNP-00682,COD-1999,1999-10-24,2004-10-24,unknown,unknown,,,,,PTY-RCD,,false,,REFERENCE
+TNM-e59bc4320ddb,TNP-00682,COD-2004,2004-10-24,2009-10-25,unknown,unknown,,,,,PTY-RCD,,false,,REFERENCE
+TNM-1a34b51c4ed6,TNP-00682,COD-2009,2009-10-25,2011-03-23,unknown,unknown,,,,,PTY-RCD,,false,,REFERENCE
+TNM-bf68de7b8ccd,TNP-00581,NA-1959,1959-11-08,1964-11-08,unknown,unknown,,,,,PTY-PSD,,false,,REFERENCE
+TNM-800dff5366df,TNP-00646,NA-1964,1964-11-08,1969-11-02,unknown,unknown,,,,,PTY-PSD,,false,,REFERENCE
+TNM-fa85f3722dfc,TNP-00646,NA-1969,1969-11-02,1974-11-03,unknown,unknown,,,,,PTY-PSD,,false,,REFERENCE
+TNM-016da52668ba,TNP-00646,NA-1974,1974-11-03,1979-11-04,unknown,unknown,,,,,PTY-PSD,,false,,REFERENCE
+TNM-87b32997b4bf,TNP-00646,NA-1979,1979-11-04,1981-11-01,unknown,unknown,,,,,PTY-PSD,,false,,REFERENCE
+TNM-28d3ce8f5617,TNP-00007,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-2febbe9c7d52,,حزب النضال التقدمي,Parti de la lutte progressiste,PTY-2b6219e30267,,false,2011-10-23,MARSAD_ANC
+TNM-eadde92f3b43,TNP-00141,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-d5c817850493,TN-32,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-52f9f25821ab,,false,2011-10-23,MARSAD_ANC
+TNM-85405e2c18e2,TNP-00174,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-ad284920bd07,TN-99,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-66f93c226c15,TNP-00199,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-23515f953572,TN-99,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-0dc85788473c,TNP-00247,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-4e045f7b3148,TN-14,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-c00220e9e06f,TNP-00264,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-0827ceafe35d,TN-23,الحزب الديمقراطي التقدمي,Parti démocratique progressiste,PTY-20b849ddfcb3,,false,2011-10-23,MARSAD_ANC
+TNM-979f520a0113,TNP-00267,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-017562922a2d,,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-e253d49f9890,TNP-00277,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-79b664be1960,TN-51,حزب المبادرة,L'Initiative,PTY-509dbc650cec,,false,2011-10-23,MARSAD_ANC
+TNM-70c2a35040be,TNP-00285,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-5b704a46b450,,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-89f062f15c9f,TNP-00289,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-d5c817850493,TN-32,حركة الوطنيون الديمقراطيون,Mouvement des patriotes démocrates,PTY-38284180d037,,false,2011-10-23,MARSAD_ANC
+TNM-eec3e92d929a,TNP-00301,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-ab2cc30717b4,TN-99,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-dabc636d9d08,TNP-00324,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-318f5c8e7cc7,TN-12,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-a8a6836d09dd,TNP-00332,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-e4d451ace536,,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-efb0809dca6b,,false,2011-10-23,MARSAD_ANC
+TNM-f6b970508f81,TNP-00357,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-2febbe9c7d52,,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-7d9ae0e73a42,TNP-00364,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-79b664be1960,TN-51,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-61b7bc8e1c93,TNP-00367,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-583f49488ae9,TN-52,حزب الأمة الثقافي الوحدوي,Parti de la nation culturel et unioniste,PTY-bbfe9bb6d793,,false,2011-10-23,MARSAD_ANC
+TNM-50c0a8efba50,TNP-00368,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-6c9ddf89d1b4,TN-73,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-INDEPENDENT,,false,2011-10-23,MARSAD_ANC
+TNM-6e9b4e5e420b,TNP-00369,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-d5c817850493,TN-32,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-78261655a977,TNP-00370,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-190ffea8a951,,حزب العمال الشيوعي التونسي,Parti communiste des ouvriers de Tunisie,PTY-bb9202bb86da,,false,2011-10-23,MARSAD_ANC
+TNM-27c6a0deb7b3,TNP-00371,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-c7d1a327d9a1,TN-41,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-1c3c592d8f3b,TNP-00372,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-88c5476e5a9d,,القطب الديمقراطي الحداثي,Pôle démocratique moderniste,PTY-ac4a3d2a8128,,false,2011-10-23,MARSAD_ANC
+TNM-77735c134051,TNP-00373,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-88c5476e5a9d,,الحزب الديمقراطي التقدمي,Parti démocratique progressiste,PTY-JOMHOURI,,false,2011-10-23,MARSAD_ANC
+TNM-8715e74dbcd2,TNP-00374,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-5bb4dbd5171c,TN-72,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-a8c344e9039d,,false,2011-10-23,MARSAD_ANC
+TNM-d4ba694ab964,TNP-00375,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-a0138f8884af,TN-99,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-79ccc900fa83,TNP-00376,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-79b664be1960,TN-51,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-7ad4295a0093,,false,2011-10-23,MARSAD_ANC
+TNM-a7d34be7cb05,TNP-00377,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-0827ceafe35d,TN-23,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-9dbb4b4b49df,TNP-00378,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-4ce2bd7346e7,,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-CPR,,false,2011-10-23,MARSAD_ANC
+TNM-3e4f48fc184f,TNP-00379,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-583f49488ae9,TN-52,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-efb0809dca6b,,false,2011-10-23,MARSAD_ANC
+TNM-c30c0b064f80,TNP-00380,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-6c9ddf89d1b4,TN-73,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-63134c54aadc,TNP-00381,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-7b8892e8182c,TN-22,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-7ad4295a0093,,false,2011-10-23,MARSAD_ANC
+TNM-f53f21d136ca,TNP-00382,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-9ea7b64efa1b,,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-9ef21f932c1d,TNP-00383,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-cc34ff2fce92,TN-81,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-15745d3587f1,TNP-00384,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-721491227627,TN-43,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-6be99d2e724f,,false,2011-10-23,MARSAD_ANC
+TNM-6fd30e9795d4,TNP-00385,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-ec5da2631a7d,TN-71,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-c48b9e10ba47,TNP-00386,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-cfa36e6ce43c,TN-13,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-2a521a0890c2,TNP-00387,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-79b664be1960,TN-51,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-52e09019f2f2,,false,2011-10-23,MARSAD_ANC
+TNM-9ca793789f9a,TNP-00388,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-88c5476e5a9d,,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-ETTAKATOL,,false,2011-10-23,MARSAD_ANC
+TNM-3cd6ec8d6a45,TNP-00389,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-318f5c8e7cc7,TN-12,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-effbcf16c7c6,TNP-00390,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-e4d451ace536,,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-6be99d2e724f,,false,2011-10-23,MARSAD_ANC
+TNM-d5b3f7b51f3d,TNP-00391,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-318f5c8e7cc7,TN-12,التكتل الديمقراطي من أجل العمل والحريات,Forum démocratique pour le travail et les libertés,PTY-ETTAKATOL,,false,2011-10-23,MARSAD_ANC
+TNM-a690ce143ed2,TNP-00392,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-7b8892e8182c,TN-22,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-INDEPENDENT,,false,2011-10-23,MARSAD_ANC
+TNM-fa03e9a51964,TNP-00393,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-e469034aebf1,TN-82,حركة النهضة,Mouvement Nahdha,PTY-e5c16bf2604d,,false,2011-10-23,MARSAD_ANC
+TNM-1a844658157e,TNP-00394,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-9ebaea8423e4,TN-53,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-2c645d548bb8,TNP-00395,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-583f49488ae9,TN-52,حزب المبادرة,L'Initiative,PTY-509dbc650cec,,false,2011-10-23,MARSAD_ANC
+TNM-2a86213f3987,TNP-00396,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-052adc16e166,TN-42,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-ad1bba09b581,TNP-00397,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-cc34ff2fce92,TN-81,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-01aa422e9b81,TNP-00398,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-318f5c8e7cc7,TN-12,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-4545e5007160,TNP-00399,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-583f49488ae9,TN-52,حزب المبادرة,L'Initiative,PTY-509dbc650cec,,false,2011-10-23,MARSAD_ANC
+TNM-cc03dee32eee,TNP-00400,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-24281c72f60a,TN-34,الحزب الديمقراطي التقدمي,Parti démocratique progressiste,PTY-JOMHOURI,,false,2011-10-23,MARSAD_ANC
+TNM-0f06520bff77,TNP-00401,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-a0138f8884af,TN-99,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-c144d2da162b,TNP-00402,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-dc712e9ce3b4,TN-31,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-7ad4295a0093,,false,2011-10-23,MARSAD_ANC
+TNM-e97c0cfc50c4,TNP-00403,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-9ea7b64efa1b,,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-3acecb591b59,TNP-00404,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-e469034aebf1,TN-82,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-34933e9c9394,TNP-00405,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-0827ceafe35d,TN-23,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-f67e3f3759af,TNP-00406,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-721491227627,TN-43,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-0612c64f8c3a,TNP-00407,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-9ebaea8423e4,TN-53,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-bbfe9bb6d793,,false,2011-10-23,MARSAD_ANC
+TNM-cfb81394cf6d,TNP-00408,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-9ea7b64efa1b,,التكتل الديمقراطي من أجل العمل والحريات,Forum démocratique pour le travail et les libertés,PTY-ETTAKATOL,,false,2011-10-23,MARSAD_ANC
+TNM-4f69cb79ca23,TNP-00409,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-190ffea8a951,,التكتل الديمقراطي من أجل العمل والحريات,Forum démocratique pour le travail et les libertés,PTY-20b849ddfcb3,,false,2011-10-23,MARSAD_ANC
+TNM-ec0c480452cc,TNP-00410,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-583f49488ae9,TN-52,التكتل الديمقراطي من أجل العمل والحريات,Forum démocratique pour le travail et les libertés,PTY-ETTAKATOL,,false,2011-10-23,MARSAD_ANC
+TNM-9c83cb47b6e7,TNP-00411,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-b5260965cfa3,TN-83,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-ad351b74feaf,TNP-00412,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-803cdcb9d5a2,TN-33,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-INDEPENDENT,,false,2011-10-23,MARSAD_ANC
+TNM-e8b88922cc47,TNP-00413,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-5bb4dbd5171c,TN-72,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-a53081438199,TNP-00414,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-9ea7b64efa1b,,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-63a815537312,TNP-00415,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-ec5da2631a7d,TN-71,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-bbfe9bb6d793,,false,2011-10-23,MARSAD_ANC
+TNM-dbad3bceda7a,TNP-00416,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-6c9ddf89d1b4,TN-73,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-INDEPENDENT,,false,2011-10-23,MARSAD_ANC
+TNM-e6999d472906,TNP-00417,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-24281c72f60a,TN-34,حزب العمال الشيوعي التونسي,Parti communiste des ouvriers de Tunisie,PTY-bb9202bb86da,,false,2011-10-23,MARSAD_ANC
+TNM-44378e428497,TNP-00418,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-88c5476e5a9d,,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-b3012ba2e221,TNP-00419,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-190ffea8a951,,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-9b0efa626777,,false,2011-10-23,MARSAD_ANC
+TNM-d8c984dfe435,TNP-00420,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-cfa36e6ce43c,TN-13,التكتل الديمقراطي من أجل العمل والحريات,Forum démocratique pour le travail et les libertés,PTY-NIDAA,,false,2011-10-23,MARSAD_ANC
+TNM-16c9db134354,TNP-00421,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-052adc16e166,TN-42,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-c83071dacc12,TNP-00422,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-ab2cc30717b4,TN-99,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-db51960b6585,TNP-00423,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-cc34ff2fce92,TN-81,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-5da3c57eb619,TNP-00424,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-d5c817850493,TN-32,الحزب الديمقراطي التقدمي,Parti démocratique progressiste,PTY-20b849ddfcb3,,false,2011-10-23,MARSAD_ANC
+TNM-b7b7ceb056d9,TNP-00425,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-dc712e9ce3b4,TN-31,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-a8c344e9039d,,false,2011-10-23,MARSAD_ANC
+TNM-7969001d550d,TNP-00426,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-052adc16e166,TN-42,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-NIDAA,,false,2011-10-23,MARSAD_ANC
+TNM-3279a41b3a35,TNP-00427,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-9ebaea8423e4,TN-53,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-a8c344e9039d,,false,2011-10-23,MARSAD_ANC
+TNM-978123f2d122,TNP-00428,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-c7d1a327d9a1,TN-41,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-bbfe9bb6d793,,false,2011-10-23,MARSAD_ANC
+TNM-e86437f1fbe5,TNP-00429,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-c7d1a327d9a1,TN-41,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-7ad4295a0093,,false,2011-10-23,MARSAD_ANC
+TNM-2c4469af5871,TNP-00430,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-9ebaea8423e4,TN-53,آفاق تونس,Afek Tounes,PTY-b0109a4f5966,,false,2011-10-23,MARSAD_ANC
+TNM-47f3f62cd990,TNP-00431,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-88c5476e5a9d,,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-9401b0ae2ade,TNP-00432,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-24281c72f60a,TN-34,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-84afbe061728,TNP-00433,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-88c5476e5a9d,,حركة النهضة,Mouvement Nahdha,PTY-INDEPENDENT,,false,2011-10-23,MARSAD_ANC
+TNM-76fe1475d7b2,TNP-00434,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-b5260965cfa3,TN-83,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-52f9f25821ab,,false,2011-10-23,MARSAD_ANC
+TNM-395120a83625,TNP-00435,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-e469034aebf1,TN-82,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-7ad4295a0093,,false,2011-10-23,MARSAD_ANC
+TNM-393f8f4f1401,TNP-00436,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-cfa36e6ce43c,TN-13,القطب الديمقراطي الحداثي,Pôle démocratique moderniste,PTY-ac4a3d2a8128,,false,2011-10-23,MARSAD_ANC
+TNM-3fa54b9de05b,TNP-00437,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-cfa36e6ce43c,TN-13,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-78d1ed812f54,TNP-00438,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-cfa36e6ce43c,TN-13,التكتل الديمقراطي من أجل العمل والحريات,Forum démocratique pour le travail et les libertés,PTY-ac4a3d2a8128,,false,2011-10-23,MARSAD_ANC
+TNM-31f47d0dcf25,TNP-00439,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-e469034aebf1,TN-82,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-CPR,,false,2011-10-23,MARSAD_ANC
+TNM-cf6f8901010f,TNP-00440,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-ad284920bd07,TN-99,التكتل الديمقراطي من أجل العمل والحريات,Forum démocratique pour le travail et les libertés,PTY-NIDAA,,false,2011-10-23,MARSAD_ANC
+TNM-7f5db27ec88e,TNP-00441,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-ec5da2631a7d,TN-71,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-9475f9fe56e7,TNP-00442,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-2febbe9c7d52,,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-CPR,,false,2011-10-23,MARSAD_ANC
+TNM-149850b8eb86,TNP-00443,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-2febbe9c7d52,,القطب الديمقراطي الحداثي,Pôle démocratique moderniste,PTY-ac4a3d2a8128,,false,2011-10-23,MARSAD_ANC
+TNM-1cb2d3f0c688,TNP-00444,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-e469034aebf1,TN-82,آفاق تونس,Afek Tounes,PTY-b0109a4f5966,,false,2011-10-23,MARSAD_ANC
+TNM-5303da2b09e6,TNP-00445,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-d5c817850493,TN-32,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-04b27ca6fd66,TNP-00446,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-017562922a2d,,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-1829dbae9076,TNP-00447,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-583f49488ae9,TN-52,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-4c69bd0aa8f5,TNP-00448,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-9ea7b64efa1b,,آفاق تونس,Afek Tounes,PTY-20b849ddfcb3,,false,2011-10-23,MARSAD_ANC
+TNM-f80402216964,TNP-00449,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-dc712e9ce3b4,TN-31,الحزب الديمقراطي التقدمي,Parti démocratique progressiste,PTY-20b849ddfcb3,,false,2011-10-23,MARSAD_ANC
+TNM-fc427a46d5a0,TNP-00450,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-24281c72f60a,TN-34,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-6be99d2e724f,,false,2011-10-23,MARSAD_ANC
+TNM-316fd5b4cc08,TNP-00451,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-79b664be1960,TN-51,التكتل الديمقراطي من أجل العمل والحريات,Forum démocratique pour le travail et les libertés,PTY-3bb19b9567e1,,false,2011-10-23,MARSAD_ANC
+TNM-0b46762f687c,TNP-00452,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-e4d451ace536,,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-26e132f79535,TNP-00453,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-9ea7b64efa1b,,القائمة المستقلة صوت المستقل,Voix de l'indépendant,PTY-JOMHOURI,,false,2011-10-23,MARSAD_ANC
+TNM-ee7d74e6edc4,TNP-00454,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-e469034aebf1,TN-82,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-ba753620c291,TNP-00455,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-d5c817850493,TN-32,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-INDEPENDENT,,false,2011-10-23,MARSAD_ANC
+TNM-ffbeb4ed3265,TNP-00456,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-803cdcb9d5a2,TN-33,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-ETTAKATOL,,false,2011-10-23,MARSAD_ANC
+TNM-c355a91fabac,TNP-00457,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-017562922a2d,,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-6be99d2e724f,,false,2011-10-23,MARSAD_ANC
+TNM-fe8811890a1d,TNP-00458,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-24281c72f60a,TN-34,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-5aac745e7d6f,TNP-00459,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-0827ceafe35d,TN-23,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-8f585beb9023,TNP-00460,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-4e045f7b3148,TN-14,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-a3a2f6e518e5,TNP-00461,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-ec5da2631a7d,TN-71,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-c2728580a9a9,TNP-00462,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-4e045f7b3148,TN-14,التكتل الديمقراطي من أجل العمل والحريات,Forum démocratique pour le travail et les libertés,PTY-ETTAKATOL,,false,2011-10-23,MARSAD_ANC
+TNM-f1182a7c040b,TNP-00463,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-4e045f7b3148,TN-14,الحزب الدستوري الجديد,Parti néo-destour,PTY-52f9f25821ab,,false,2011-10-23,MARSAD_ANC
+TNM-062fd6aedff3,TNP-00464,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-4e045f7b3148,TN-14,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-a8c344e9039d,,false,2011-10-23,MARSAD_ANC
+TNM-bdc962695daf,TNP-00465,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-a0138f8884af,TN-99,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-bbfe9bb6d793,,false,2011-10-23,MARSAD_ANC
+TNM-c4ea04524b4c,TNP-00466,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-ec5da2631a7d,TN-71,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-CPR,,false,2011-10-23,MARSAD_ANC
+TNM-ef2bb40761f7,TNP-00467,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-9ebaea8423e4,TN-53,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-37824e3cadcc,TNP-00468,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-318f5c8e7cc7,TN-12,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-NIDAA,,false,2011-10-23,MARSAD_ANC
+TNM-f9e1e823c030,TNP-00469,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-803cdcb9d5a2,TN-33,التكتل الديمقراطي من أجل العمل والحريات,Forum démocratique pour le travail et les libertés,PTY-ac4a3d2a8128,,false,2011-10-23,MARSAD_ANC
+TNM-351d4cb196de,TNP-00470,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-cc34ff2fce92,TN-81,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-83e1d2910a00,TNP-00471,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-e469034aebf1,TN-82,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-3ccdf2827083,TNP-00472,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-9ea7b64efa1b,,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-CPR,,false,2011-10-23,MARSAD_ANC
+TNM-47eccc598869,TNP-00473,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-318f5c8e7cc7,TN-12,الحزب الديمقراطي التقدمي,Parti démocratique progressiste,PTY-JOMHOURI,,false,2011-10-23,MARSAD_ANC
+TNM-0ab7152127e8,TNP-00474,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-dc712e9ce3b4,TN-31,التكتل الديمقراطي من أجل العمل والحريات,Forum démocratique pour le travail et les libertés,PTY-ac4a3d2a8128,,false,2011-10-23,MARSAD_ANC
+TNM-4ab7233fcfbc,TNP-00475,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-b5260965cfa3,TN-83,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-49c941ad8ccb,TNP-00476,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-4e045f7b3148,TN-14,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-a8c344e9039d,,false,2011-10-23,MARSAD_ANC
+TNM-a103c6c4e705,TNP-00477,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-e4d451ace536,,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-807048a41767,TNP-00478,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-6c9ddf89d1b4,TN-73,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-CPR,,false,2011-10-23,MARSAD_ANC
+TNM-05c4e0348ce4,TNP-00479,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-9ebaea8423e4,TN-53,حزب المبادرة,L'Initiative,PTY-509dbc650cec,,false,2011-10-23,MARSAD_ANC
+TNM-beb904d32f29,TNP-00480,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-e4d451ace536,,التكتل الديمقراطي من أجل العمل والحريات,Forum démocratique pour le travail et les libertés,PTY-NIDAA,,false,2011-10-23,MARSAD_ANC
+TNM-f7ee22485de1,TNP-00481,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-721491227627,TN-43,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-7ad4295a0093,,false,2011-10-23,MARSAD_ANC
+TNM-df1a00a407d1,TNP-00482,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-c7d1a327d9a1,TN-41,حزب العمال الشيوعي التونسي,Parti communiste des ouvriers de Tunisie,PTY-bb9202bb86da,,false,2011-10-23,MARSAD_ANC
+TNM-ff664e43af9b,TNP-00483,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-052adc16e166,TN-42,حركة النهضة,Mouvement Nahdha,PTY-e5c16bf2604d,,false,2011-10-23,MARSAD_ANC
+TNM-c1b07f927f9e,TNP-00484,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-c7d1a327d9a1,TN-41,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-b79100a4b0d5,TNP-00485,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-190ffea8a951,,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-1d2cd389e888,TNP-00486,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-79b664be1960,TN-51,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-00491c9539af,TNP-00487,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-cc34ff2fce92,TN-81,القائمة المستقلة من أجل جبهة وطنية تونسية,Pour un front national Tunisien,PTY-a49b95b8bbb3,,false,2011-10-23,MARSAD_ANC
+TNM-f904a6af3552,TNP-00488,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-ec5da2631a7d,TN-71,القائمة المستقلة العدالة,La justice,PTY-INDEPENDENT,,false,2011-10-23,MARSAD_ANC
+TNM-ce733f3bbe59,TNP-00489,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-7b8892e8182c,TN-22,الحزب الديمقراطي التقدمي,Parti démocratique progressiste,PTY-JOMHOURI,,false,2011-10-23,MARSAD_ANC
+TNM-f9432f8228a9,TNP-00490,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-318f5c8e7cc7,TN-12,الحزب الليبرالي المغاربي,Parti libéral maghrébin,PTY-5a1bda8022f4,,false,2011-10-23,MARSAD_ANC
+TNM-a61f8d9df783,TNP-00491,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-ab2cc30717b4,TN-99,التكتل الديمقراطي من أجل العمل والحريات,Forum démocratique pour le travail et les libertés,PTY-ac4a3d2a8128,,false,2011-10-23,MARSAD_ANC
+TNM-15dc7cd90763,TNP-00492,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-9ea7b64efa1b,,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-dbc9123630d7,TNP-00493,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-052adc16e166,TN-42,حركة الديمقراطيين الاشتراكيين,Mouvement des démocrates socialistes,PTY-INDEPENDENT,,false,2011-10-23,MARSAD_ANC
+TNM-e3d0e49f048b,TNP-00494,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-190ffea8a951,,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-d5dce87d0c8e,TNP-00495,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-4ce2bd7346e7,,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-45503ed960dd,TNP-00496,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-5bb4dbd5171c,TN-72,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-ae4138f6c4b7,TNP-00497,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-88c5476e5a9d,,التكتل الديمقراطي من أجل العمل والحريات,Forum démocratique pour le travail et les libertés,PTY-ETTAKATOL,,false,2011-10-23,MARSAD_ANC
+TNM-a726246580e0,TNP-00498,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-052adc16e166,TN-42,القائمة المستقلة الوفاء,La fidélité,PTY-CPR,,false,2011-10-23,MARSAD_ANC
+TNM-da4b646c51f2,TNP-00499,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-5b704a46b450,,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-CPR,,false,2011-10-23,MARSAD_ANC
+TNM-42be69b66130,TNP-00500,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-ad284920bd07,TN-99,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-3b6db582d7fc,TNP-00501,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-4e045f7b3148,TN-14,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-da9b194ebb6a,TNP-00502,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-c7d1a327d9a1,TN-41,التكتل الديمقراطي من أجل العمل والحريات,Forum démocratique pour le travail et les libertés,PTY-ETTAKATOL,,false,2011-10-23,MARSAD_ANC
+TNM-f1b772f0d937,TNP-00503,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-0827ceafe35d,TN-23,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-52f9f25821ab,,false,2011-10-23,MARSAD_ANC
+TNM-1d18b3270ab4,TNP-00504,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-721491227627,TN-43,القائمة المستقلة المستقل,L'indépendant,PTY-e34601720a98,,false,2011-10-23,MARSAD_ANC
+TNM-dde99046381c,TNP-00505,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-721491227627,TN-43,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-101e50562f31,TNP-00506,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-318f5c8e7cc7,TN-12,القطب الديمقراطي الحداثي,Pôle démocratique moderniste,PTY-ac4a3d2a8128,,false,2011-10-23,MARSAD_ANC
+TNM-f2eb8c5a6798,TNP-00507,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-190ffea8a951,,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-a8c344e9039d,,false,2011-10-23,MARSAD_ANC
+TNM-956f25cf71f0,TNP-00508,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-2febbe9c7d52,,الحزب الديمقراطي التقدمي,Parti démocratique progressiste,PTY-20b849ddfcb3,,false,2011-10-23,MARSAD_ANC
+TNM-feace3ff63a4,TNP-00509,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-052adc16e166,TN-42,الحزب الديمقراطي التقدمي,Parti démocratique progressiste,PTY-61a3f228649f,,false,2011-10-23,MARSAD_ANC
+TNM-2fe878fadcf0,TNP-00510,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-dc712e9ce3b4,TN-31,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-35480c6842f8,TNP-00511,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-e469034aebf1,TN-82,الحزب الديمقراطي التقدمي,Parti démocratique progressiste,PTY-20b849ddfcb3,,false,2011-10-23,MARSAD_ANC
+TNM-7b517b4a0318,TNP-00512,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-ab2cc30717b4,TN-99,الحزب الديمقراطي التقدمي,Parti démocratique progressiste,PTY-JOMHOURI,,false,2011-10-23,MARSAD_ANC
+TNM-9e33e22ae7b4,TNP-00513,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-b5260965cfa3,TN-83,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-714b6d73aee5,TNP-00514,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-79b664be1960,TN-51,الحزب الديمقراطي التقدمي,Parti démocratique progressiste,PTY-20b849ddfcb3,,false,2011-10-23,MARSAD_ANC
+TNM-dc3574778ed1,TNP-00515,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-ec5da2631a7d,TN-71,الحزب الديمقراطي التقدمي,Parti démocratique progressiste,PTY-INDEPENDENT,,false,2011-10-23,MARSAD_ANC
+TNM-b5da33d54bde,TNP-00516,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-721491227627,TN-43,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-7ad4295a0093,,false,2011-10-23,MARSAD_ANC
+TNM-7b042cdc55fe,TNP-00517,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-5bb4dbd5171c,TN-72,القائمة المستقلة الوفاء للشهداء,La fidélité aux martyrs,PTY-20b849ddfcb3,,false,2011-10-23,MARSAD_ANC
+TNM-47f8544025cc,TNP-00518,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-583f49488ae9,TN-52,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-NIDAA,,false,2011-10-23,MARSAD_ANC
+TNM-b41d13cda2d3,TNP-00519,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-052adc16e166,TN-42,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-INDEPENDENT,,false,2011-10-23,MARSAD_ANC
+TNM-fb2dcd0566b9,TNP-00520,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-9ebaea8423e4,TN-53,حزب العدالة والمساواة,Parti de la justice et l'égalité,PTY-INDEPENDENT,,false,2011-10-23,MARSAD_ANC
+TNM-e983b1909519,TNP-00521,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-803cdcb9d5a2,TN-33,القائمة المستقلة الأمل,L'espoir,PTY-INDEPENDENT,,false,2011-10-23,MARSAD_ANC
+TNM-6fa9f6c209f5,TNP-00522,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-cfa36e6ce43c,TN-13,حزب الأمة الديمقراطي الاجتماعي,Parti républicain pour la liberté et la justice,PTY-INDEPENDENT,,false,2011-10-23,MARSAD_ANC
+TNM-0f821e6f4cf0,TNP-00523,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-c7d1a327d9a1,TN-41,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-b9012fb64885,TNP-00524,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-e4d451ace536,,الحزب الديمقراطي التقدمي,Parti démocratique progressiste,PTY-20b849ddfcb3,,false,2011-10-23,MARSAD_ANC
+TNM-4edf88386401,TNP-00525,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-0827ceafe35d,TN-23,حركة الشعب,Mouvement du peuple,PTY-cb447bb1247c,,false,2011-10-23,MARSAD_ANC
+TNM-de3e7d424f1d,TNP-00526,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-2febbe9c7d52,,التكتل الديمقراطي من أجل العمل والحريات,Forum démocratique pour le travail et les libertés,PTY-ETTAKATOL,,false,2011-10-23,MARSAD_ANC
+TNM-3d3f35995760,TNP-00527,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-9ea7b64efa1b,,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-52f9f25821ab,,false,2011-10-23,MARSAD_ANC
+TNM-2cea1fc6959a,TNP-00528,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-c7d1a327d9a1,TN-41,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-d24b45194d97,TNP-00529,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-79b664be1960,TN-51,حزب المبادرة,L'Initiative,PTY-INDEPENDENT,,false,2011-10-23,MARSAD_ANC
+TNM-6ab947f4c8a9,TNP-00530,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-79b664be1960,TN-51,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-a62c33d4cc61,TNP-00531,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-6c9ddf89d1b4,TN-73,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-c16facc292e2,TNP-00532,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-583f49488ae9,TN-52,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-f36e678633ec,TNP-00533,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-803cdcb9d5a2,TN-33,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-0e7c0a0cee25,TNP-00534,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-cc34ff2fce92,TN-81,القائمة المستقلة العريضة الشعبية للحرية والعدالة والتنمية,"Pétition populaire pour la liberté, la justice et le développement",PTY-INDEPENDENT,,false,2011-10-23,MARSAD_ANC
+TNM-6792b27b9083,TNP-00535,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-cfa36e6ce43c,TN-13,الحزب الديمقراطي التقدمي,Parti démocratique progressiste,PTY-JOMHOURI,,false,2011-10-23,MARSAD_ANC
+TNM-bd2018d8053a,TNP-00536,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-ad284920bd07,TN-99,القطب الديمقراطي الحداثي,Pôle démocratique moderniste,PTY-ac4a3d2a8128,,false,2011-10-23,MARSAD_ANC
+TNM-3435019c7a66,TNP-00537,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-dc712e9ce3b4,TN-31,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-d1422ba2e3ec,TNP-00538,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-7b8892e8182c,TN-22,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-5ae0e0d0c0b6,TNP-00539,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-017562922a2d,,الحزب الديمقراطي التقدمي,Parti démocratique progressiste,PTY-20b849ddfcb3,,false,2011-10-23,MARSAD_ANC
+TNM-bf52b10a2041,TNP-00540,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-583f49488ae9,TN-52,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-0fdbdcedb4d6,TNP-00541,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-9ebaea8423e4,TN-53,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-caedc72e994d,TNP-00542,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-c7d1a327d9a1,TN-41,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-efb0809dca6b,,false,2011-10-23,MARSAD_ANC
+TNM-bbae021ac26d,TNP-00543,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-017562922a2d,,آفاق تونس,Afek Tounes,PTY-b0109a4f5966,,false,2011-10-23,MARSAD_ANC
+TNM-dc6c6edc6040,TNP-00544,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-24281c72f60a,TN-34,الاتحاد الوطني الحر,l'Union Patriotique Libre,PTY-9b0efa626777,,false,2011-10-23,MARSAD_ANC
+TNM-a7addc7bbe68,TNP-00545,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-cc34ff2fce92,TN-81,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-CPR,,false,2011-10-23,MARSAD_ANC
+TNM-f35da0842214,TNP-00546,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-e469034aebf1,TN-82,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-68a29dcf29c9,TNP-00547,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-2febbe9c7d52,,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-a1ac5f2abd03,TNP-00548,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-cfa36e6ce43c,TN-13,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-f5bfbab00af8,TNP-00549,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-0827ceafe35d,TN-23,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-efb0809dca6b,,false,2011-10-23,MARSAD_ANC
+TNM-fbb51e764fc9,TNP-00550,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-cfa36e6ce43c,TN-13,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-CPR,,false,2011-10-23,MARSAD_ANC
+TNM-9d51f550c9ed,TNP-00551,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-d5c817850493,TN-32,القائمة المستقلة النضال الاجتماعي,La lutte socialiste,PTY-bbfe9bb6d793,,false,2011-10-23,MARSAD_ANC
+TNM-28dd8d1b29b0,TNP-00552,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-79b664be1960,TN-51,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-2ca3da448edf,TNP-00553,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-190ffea8a951,,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-c4d96b367e14,TNP-00554,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-017562922a2d,,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-INDEPENDENT,,false,2011-10-23,MARSAD_ANC
+TNM-f074ecff1b73,TNP-00555,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-803cdcb9d5a2,TN-33,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-ab36085aa191,TNP-00556,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-2febbe9c7d52,,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-9f0cca6885e0,TNP-00557,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-ad284920bd07,TN-99,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-CPR,,false,2011-10-23,MARSAD_ANC
+TNM-7920e09adea8,TNP-00558,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-ab2cc30717b4,TN-99,المؤتمر من أجل الجمهورية,Congrès pour la république,PTY-CPR,,false,2011-10-23,MARSAD_ANC
+TNM-21c6cf6059e5,TNP-00559,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-0827ceafe35d,TN-23,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-4ff77012bc2d,TNP-00560,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-cfa36e6ce43c,TN-13,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-943afe5cb43f,TNP-00561,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-7b8892e8182c,TN-22,حركة النهضة,Mouvement Nahdha,PTY-e5c16bf2604d,,false,2011-10-23,MARSAD_ANC
+TNM-c64179db15b6,TNP-00562,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-d5c817850493,TN-32,التكتل الديمقراطي من أجل العمل والحريات,Forum démocratique pour le travail et les libertés,PTY-ETTAKATOL,,false,2011-10-23,MARSAD_ANC
+TNM-2aa057ea3202,TNP-00563,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-2febbe9c7d52,,حركة النهضة,Mouvement Nahdha,PTY-ENNAHDHA,,false,2011-10-23,MARSAD_ANC
+TNM-4574ad232006,TNP-00564,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-88c5476e5a9d,,التكتل الديمقراطي من أجل العمل والحريات,Forum démocratique pour le travail et les libertés,PTY-ETTAKATOL,,false,2011-10-23,MARSAD_ANC
+TNM-3c35b65a17c4,TNP-00565,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-721491227627,TN-43,حركة الديمقراطيين الاشتراكيين,Mouvement des démocrates socialistes,PTY-ac4a3d2a8128,,false,2011-10-23,MARSAD_ANC
+TNM-704df2c31c89,TNP-00566,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-721491227627,TN-43,حركة الشعب,Mouvement du peuple,PTY-cb447bb1247c,,false,2011-10-23,MARSAD_ANC
+TNM-bff189358bad,TNP-00567,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-0827ceafe35d,TN-23,التكتل الديمقراطي من أجل العمل والحريات,Forum démocratique pour le travail et les libertés,PTY-INDEPENDENT,,false,2011-10-23,MARSAD_ANC
+TNM-090617245b1e,TNP-00568,NCA-2011,2011-11-22,2014-12-01,elected,end_of_term,TNC-017562922a2d,,التكتل الديمقراطي من أجل العمل والحريات,Forum démocratique pour le travail et les libertés,PTY-ETTAKATOL,,false,2011-10-23,MARSAD_ANC
