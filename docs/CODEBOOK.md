@@ -332,7 +332,7 @@ Parliamentary blocs (kutla) are the operative unit of legislative behaviour afte
 | `party_id` | string → `parties.party_id` | 40 (100%) | Dominant party, where the bloc is a party bloc. |
 | `formed_date` | date | 40 (100%) | Date the bloc was constituted. |
 | `dissolved_date` | date | 0 (0%) | Date the bloc ceased to exist. |
-| `notes` | string | 10 (25%) | Analyst notes. |
+| `notes` | string | 16 (40%) | Analyst notes. |
 
 ## `bloc_memberships`
 
@@ -354,8 +354,8 @@ Dated bloc membership. Consecutive rows for one person within one assembly are t
 | `end_date` | date | 748 (67%) | End of membership. |
 | `role` | enum | 1,116 (100%) | Role in the bloc. One of: `speaker`, `first_vice_speaker`, `vice_speaker`, `bureau_member`, `bloc_chair`, `unknown`. |
 | `is_founding_member` | boolean | 0 (0%) | Member at the bloc's constitution. |
-| `dates_bracketed` | boolean | 240 (22%) | True where the spell's boundaries were derived by comparing dated observations rather than read from a published date. The change occurred somewhere in the interval ending at start_date, not necessarily on it. Applies to the 2014-2019 chamber, whose bloc history is reconstructed from monthly web captures. |
-| `notes` | string | 240 (22%) | Analyst notes, including the bracketing interval where relevant. |
+| `dates_bracketed` | boolean | 478 (43%) | True where the spell's boundaries were derived by comparing dated observations rather than read from a published date. The change occurred somewhere in the interval ending at start_date, not necessarily on it. Applies to the 2014-2019 chamber, whose bloc history is reconstructed from monthly web captures. |
+| `notes` | string | 478 (43%) | Analyst notes, including the bracketing interval where relevant. |
 | `source_ids` | string → `sources.source_id` | 1,116 (100%) | Provenance. |
 
 <details><summary>Distribution of <code>role</code></summary>

@@ -1,0 +1,153 @@
+person_id,name_lat,bloc,degree_full_graph,degree_backbone,weighted_degree_newman
+TNP-00110,Rym Sghaier,No bloc,37,0,1.2792
+TNP-00064,Ammar Idoudi,Li-Yantasir al-Shaab,32,1,1.2125
+TNP-00146,Mokhtar Abdelmoula,Li-Yantasir al-Shaab,32,0,1.2337
+TNP-00026,Mariem Cherif,No bloc,32,0,1.1437
+TNP-00109,Rim Maachaoui,Voice of the Republic,32,0,1.3125
+TNP-00066,Imededdine Sdiri,Voice of the Republic,32,0,1.2767
+TNP-00086,dhafer Sghiri,No bloc,31,11,1.3708
+TNP-00004,yassine Mami,Independent National,30,2,1.1587
+TNP-00083,Abdel jalil El Heni,Independent National,29,9,1.4597
+TNP-00078,Abdessalem Hamrouni,Sovereignist National Line,29,3,1.159
+TNP-00068,Ali Bouzouzia,Sovereignist National Line,28,8,1.7007
+TNP-00058,Msedi Fatma,No bloc,28,2,1.1042
+TNP-00126,Hatem Labbaoui,Voice of the Republic,28,4,1.2201
+TNP-00131,Boubaker Ben Yahya,Sovereignist National Line,28,0,1.2096
+TNP-00098,Cyrine Boussandel,Voice of the Republic,27,6,1.4
+TNP-00070,Issam Bahri Jebri,No bloc,27,3,1.1333
+TNP-00145,Channoufi Naceur,Voice of the Republic,27,2,1.1188
+TNP-00057,Fethi Mechrgui,Al Amana wal Amal,27,1,0.9399
+TNP-00071,Aziz Ben Lakhdher,Al Amana wal Amal,27,0,1.1712
+TNP-00149,Taïeb Talbi,Li-Yantasir al-Shaab,27,0,1.125
+TNP-00019,Manel Bdida,Al Amana wal Amal,27,0,1.24
+TNP-00002,Youssef Toumi,Al Ahrar,26,6,1.0312
+TNP-00020,Melik Kammoun,Voice of the Republic,26,10,1.3125
+TNP-00005,Yasser Grari,Sovereignist National Line,26,6,1.0312
+TNP-00023,Moez Riahi,Independent National,26,5,1.0
+TNP-00048,Lotfi Hammami,Al Amana wal Amal,26,5,1.0
+TNP-00053,Faouzi Daas,No bloc,26,6,1.0312
+TNP-00091,Salah Mbarki,Al Amana wal Amal,26,6,1.0312
+TNP-00124,Hassen Ben Ali,Voice of the Republic,26,3,1.0897
+TNP-00077,Abdessalem Dahmani,Li-Yantasir al-Shaab,26,2,1.0438
+TNP-00133,Basma Hammami,Li-Yantasir al-Shaab,26,2,1.0438
+TNP-00021,Moez Ben Youssef,Al Amana wal Amal,26,5,1.1083
+TNP-00108,Zina Jiballah,Al Amana wal Amal,26,11,1.3833
+TNP-00060,Ghassen Yamoun,Al Ahrar,26,6,1.1298
+TNP-00103,Sami Toujani,Al Amana wal Amal,26,1,1.0812
+TNP-00123,Hassen Boussama,Al Ahrar,26,1,1.1562
+TNP-00049,Lotfi Saadaoui,Li-Yantasir al-Shaab,25,1,1.1433
+TNP-00138,Aymen Ben Salah,Independent National,25,1,1.2333
+TNP-00135,Boutheina Ghanmi,Sovereignist National Line,24,3,1.1413
+TNP-00142,Amel Meddeb,Voice of the Republic,24,4,1.2444
+TNP-00104,Sami Rais,Independent National,24,3,1.2462
+TNP-00115,Dellai Ridha,Sovereignist National Line,24,3,1.2462
+TNP-00034,Mohamed Dhaw,Li-Yantasir al-Shaab,24,3,1.1423
+TNP-00052,Fayçal Sghaier,Independent National,24,3,1.0523
+TNP-00016,Maha Ameur,Al Ahrar,23,4,1.1413
+TNP-00062,Amor Ben Amor,Al Ahrar,23,13,1.47
+TNP-00041,Mohamed Yahyaoui,Al Amana wal Amal,23,4,1.1237
+TNP-00088,Tarek Rebai,Independent National,23,4,1.25
+TNP-00116,Rochdi Rouissi,Li-Yantasir al-Shaab,23,1,1.1
+TNP-00009,Noura Chabrak,Independent National,23,0,0.9375
+TNP-00144,Nouri Jridi,Li-Yantasir al-Shaab,23,0,0.8417
+TNP-00148,Fadhel Ben Torkia,Independent National,23,0,0.8417
+TNP-00029,Mahmoud Chalghaf,Sovereignist National Line,23,0,1.0462
+TNP-00013,Najla Lahiani,Al Ahrar,22,4,1.1576
+TNP-00080,Abderrazek Aouidet,Sovereignist National Line,22,4,1.1576
+TNP-00024,Mustapha Boubakri,Independent National,22,6,1.0
+TNP-00038,Mohamed Ben Hassine,No bloc,22,13,1.4
+TNP-00069,Issam Chouchen,Al Ahrar,22,13,1.4
+TNP-00025,Messaoud Grira,Sovereignist National Line,22,6,1.0
+TNP-00036,Mohamed Zied El Maher,Al Amana wal Amal,22,6,1.0
+TNP-00046,Maher Ketari,Al Ahrar,22,12,1.2
+TNP-00067,Ali Zaghdoud,Li-Yantasir al-Shaab,22,6,1.0
+TNP-00154,Brahim Ben hsine,No bloc,22,6,1.0
+TNP-00047,Majda Ouerghi,Voice of the Republic,22,4,1.1802
+TNP-00153,Ahmed Bannour,Al Ahrar,22,5,1.2186
+TNP-00059,Faten Ncibi,Voice of the Republic,22,1,1.125
+TNP-00120,Hamdi Ben Salah,No bloc,22,4,1.275
+TNP-00099,Sirine Mrabet,Al Ahrar,22,1,0.8125
+TNP-00006,Walid Hajji,Al Ahrar,22,1,0.8288
+TNP-00035,Mohamed Chaabani,Li-Yantasir al-Shaab,22,4,1.0683
+TNP-00127,Hatem Houaoui,Voice of the Republic,22,4,1.1583
+TNP-00096,Chokri Ben Bahri,No bloc,22,4,1.0833
+TNP-00017,Mounir Kammouni,No bloc,22,5,1.2326
+TNP-00015,Nabil Hamdi,Voice of the Republic,22,1,0.8417
+TNP-00092,Salah Sayadi,Al Amana wal Amal,22,5,1.0385
+TNP-00039,Mohamed Amine Mbarki,Voice of the Republic,22,5,1.095
+TNP-00044,Mohsen Hermi,Voice of the Republic,21,2,1.1737
+TNP-00090,Slah ferchichi,Al Amana wal Amal,21,2,1.06
+TNP-00117,khaled Hakim Mabrouki,Al Amana wal Amal,21,7,1.0923
+TNP-00056,Fethi Rjeb,Independent National,20,2,1.0304
+TNP-00130,Thabet Abed,No bloc,20,6,1.0256
+TNP-00107,Sami Hadj Amor,No bloc,20,2,1.0972
+TNP-00008,Hela Jaballa,Al Ahrar,19,6,1.0833
+TNP-00033,Mohamed Ali,Sovereignist National Line,19,6,1.0833
+TNP-00037,Mohamed Ben Said,Independent National,19,6,1.12
+TNP-00079,Abdessattar Zarai,Al Amana wal Amal,19,5,1.0
+TNP-00122,Hassen Jarboui,Al Ahrar,19,6,1.04
+TNP-00150,Tahar Ben Mansour,Sovereignist National Line,19,5,1.0
+TNP-00050,Kamel Keraani,Al Ahrar,19,5,1.0417
+TNP-00151,Asma Derouiche,Al Amana wal Amal,19,5,1.125
+TNP-00082,Abdelhafedh Louhichi,Voice of the Republic,19,4,1.0
+TNP-00137,Aymen Negra,Voice of the Republic,19,4,1.0
+TNP-00119,Hamdi Ben Abdelali,Independent National,19,4,1.1691
+TNP-00132,Bilel Ibn El Mechri,No bloc,19,7,1.0533
+TNP-00085,Adel Bousselmi,Li-Yantasir al-Shaab,19,3,0.7333
+TNP-00140,Aymen Boughdiri,Li-Yantasir al-Shaab,19,0,0.7596
+TNP-00031,Mohamed Mejdi,Li-Yantasir al-Shaab,18,6,1.0417
+TNP-00032,Mohamed Ali Fennira,Independent National,18,7,1.0833
+TNP-00042,Mohamed Elhedi Allani,Li-Yantasir al-Shaab,18,7,1.0769
+TNP-00121,Hammadi Ghilani,No bloc,18,7,1.0769
+TNP-00136,Bedis Belhadj Ali,Al Ahrar,18,7,1.0769
+TNP-00010,Nourelhouda Sbaiti,Al Amana wal Amal,18,6,1.0
+TNP-00011,Nizar Seddik,Voice of the Republic,18,1,0.7759
+TNP-00028,Mokhtar Ifaoui,No bloc,18,1,0.5938
+TNP-00075,Abdelkader Ben Zineb,Al Ahrar,18,0,0.825
+TNP-00111,Jaidane Riadh,No bloc,18,0,0.825
+TNP-00147,Olfa Marouani,No bloc,18,0,0.8413
+TNP-00128,Jalel khedmi,Voice of the Republic,18,0,0.75
+TNP-00152,Ahmed Saidani,Sovereignist National Line,18,0,0.7212
+TNP-00076,Abdelaziz Chaabani,Voice of the Republic,18,0,0.825
+TNP-00081,Abdelhalim  Boussema,No bloc,18,0,0.7212
+TNP-00106,Sami Essaied,Al Amana wal Amal,18,0,0.7212
+TNP-00030,Mahmoud El Amri,No bloc,17,8,1.0385
+TNP-00084,Adel Dhief,Voice of the Republic,17,8,1.0385
+TNP-00143,Ilyes Boukoucha,Al Ahrar,17,7,1.0
+TNP-00001,Youssef Tarchoun,Sovereignist National Line,17,7,1.2
+TNP-00003,Yosri Baouab,Al Ahrar,17,3,1.0
+TNP-00007,Hichem Hosni,No bloc,17,7,1.2
+TNP-00043,mohamed Ahmed,Voice of the Republic,17,3,1.0
+TNP-00089,Dhouha Selmi,Sovereignist National Line,17,1,0.7212
+TNP-00027,Mourad khezami,Al Amana wal Amal,17,3,1.0
+TNP-00040,Mohamed Amine Ouerghi,Voice of the Republic,17,5,0.7333
+TNP-00094,Sabeur Masmoudi,Al Ahrar,17,3,1.0
+TNP-00012,Nejib Akremi,Li-Yantasir al-Shaab,16,6,1.0
+TNP-00051,Kamel Farrah,Al Amana wal Amal,16,9,1.1739
+TNP-00055,Fakhreddine Fadhloun,Independent National,16,7,1.0435
+TNP-00114,Ramzi Chetoui,No bloc,15,4,0.7308
+TNP-00018,Moncef Maaloul,Al Amana wal Amal,14,9,1.4737
+TNP-00074,Abdelkader Ammar,Al Amana wal Amal,14,7,1.2105
+TNP-00112,Riadh Blel,Al Ahrar,14,4,1.0
+TNP-00113,Raouf Fekiri,Li-Yantasir al-Shaab,14,4,1.0
+TNP-00139,Aymen Maraoui,No bloc,14,4,1.0
+TNP-00101,Sonia Ben Mabrouk,Al Amana wal Amal,14,4,0.9
+TNP-00054,Fakhri Abdelkhalek,Al Amana wal Amal,14,2,0.6667
+TNP-00065,Ouled jebril Imed,Independent National,14,2,0.6667
+TNP-00063,Amor Barhoumi,No bloc,14,4,0.75
+TNP-00134,badreddine gammoudi,No bloc,14,1,0.75
+TNP-00125,Houssem Mahjoub,Al Amana wal Amal,14,0,0.4375
+TNP-00045,Maher Boubaker Hadhri,No bloc,14,0,0.7
+TNP-00022,Moez Barkallah,Al Ahrar,12,8,1.2222
+TNP-00087,Tarek Mehdi,Al Ahrar,12,7,1.2778
+TNP-00129,Thameur Mazhoud,Sovereignist National Line,12,9,1.5
+TNP-00095,Sabeur Jelassi,Al Amana wal Amal,12,8,1.2222
+TNP-00097,Ezzedine Zaafouri,Li-Yantasir al-Shaab,12,8,1.2222
+TNP-00093,Salah Selmi,Voice of the Republic,12,5,1.0
+TNP-00102,Sofien Ben hlima,Al Amana wal Amal,12,5,1.0
+TNP-00105,Sami Ben Abdelaali,Independent National,12,2,0.7
+TNP-00061,Awatef Cheniti,No bloc,12,3,0.7895
+TNP-00072,Ezzeddine Tayeb,Voice of the Republic,12,7,1.0
+TNP-00014,Nabih Thabet,Voice of the Republic,11,2,0.6842
+TNP-00118,Hamza Bidhiafi,Voice of the Republic,9,1,0.4
+TNP-00073,Adnen Allouche,Al Amana wal Amal,9,0,0.375

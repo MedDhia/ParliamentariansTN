@@ -2,7 +2,7 @@ PY ?= python3
 export PYTHONPATH := src
 
 .PHONY: help all collect build validate networks codebook test clean-cache reference \
-        collect-arp collect-anc collect-arp2014 collect-majles collect-wiki
+        figures collect-arp collect-anc collect-arp2014 collect-majles collect-wiki
 
 help:
 	@echo "ParliamentariansTN"
@@ -14,6 +14,7 @@ help:
 	@echo "  make networks   derive data/networks"
 	@echo "  make codebook   regenerate docs/CODEBOOK.md and docs/COVERAGE.md"
 	@echo "  make test       run unit tests"
+	@echo "  make figures    render figures/ (needs requirements-figures.txt)"
 	@echo "  make reference  rewrite data/reference from reference.py"
 	@echo ""
 	@echo "  Individual collectors: collect-arp collect-anc collect-arp2014 collect-majles collect-wiki"
@@ -57,6 +58,11 @@ codebook:
 
 test:
 	$(PY) -m pytest tests -q
+
+# Reads data/processed and data/networks; never touches the network. Add
+# FIGURES_PDF=1 for LaTeX-ready vector output, FIGURES_DARK=1 for dark surfaces.
+figures:
+	$(PY) figures/make_all.py
 
 # Drops cached upstream pages but keeps the staging documents, so `make build`
 # still works offline afterwards.

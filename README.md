@@ -47,6 +47,14 @@ make collect
 Worked examples: `analysis/example_python.py` (networkx) and
 `analysis/example_r.R` (igraph).
 
+Twenty descriptive and exploratory figures, each with its numbers as a companion
+CSV, are in [`figures/`](figures/README.md):
+
+```bash
+pip install -r requirements-figures.txt
+make figures        # -> figures/output/figNN_name.png + .csv
+```
+
 ## What is in it
 
 Seventeen tables in `data/processed`, all UTF-8 CSV with a header row.
@@ -170,6 +178,7 @@ make networks    # derive data/networks/*.csv
 make codebook    # regenerate docs/CODEBOOK.md and docs/COVERAGE.md
 make all         # build, validate, networks, codebook
 make test        # unit tests
+make figures     # render figures/ (needs requirements-figures.txt)
 ```
 
 Every upstream response is cached in `data/raw`, so a rebuild needs no network
@@ -209,12 +218,37 @@ src/parliamentarians_tn/
   networks.py   network derivation
   codebook.py   documentation generation
 analysis/       worked examples in Python and R
+figures/        20 figure scripts + shared style, palette and label glosses
+  output/       figNN_name.png beside figNN_name.csv (the table view)
 tests/          unit tests
 ```
 
 `schema.py` is the single source of truth: the builder, the validator, the
 network derivation and the codebook all read the same column declarations, so
 documentation cannot drift from the data.
+
+## Figures
+
+[`figures/`](figures/README.md) holds twenty figures over the dataset —
+institutional timeline, composition, coverage, elite circulation, bloc dynamics,
+four network views, and behavioural distributions. Each script writes one PNG and
+one CSV, so every figure states its own numbers.
+
+Three conventions worth knowing: **no figure renders Arabic** (matplotlib has no
+shaping or bidi, so `_style.label()` raises and `_labels.py` supplies short
+English glosses — the Arabic in the data stays authoritative); **node colour in
+the network figures is capped at three classes**, because that is what the
+validated palette clears for a form where any two marks can end up adjacent; and
+**every subtitle carries n and the relevant caveat**, because a figure travels
+without its caption.
+
+Drawing the data also found two bugs in it. The 2014–2019 collector dated every
+member's opening bloc spell to the chamber's first sitting, including
+replacements who first appear in a 2017 capture, and closed departed members'
+spells at the end of term — together these pushed the reconstructed chamber to
+238 members against 217 seats. Both are fixed; the monthly panel now sits at
+212–220, and that residual spread is the reconstruction's error rather than
+something smoothed away.
 
 ## Caveats
 

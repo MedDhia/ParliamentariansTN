@@ -1,0 +1,195 @@
+person_id,name_lat,bloc,degree_full_graph,degree_backbone,weighted_degree_newman
+TNP-00247,Latifa Habachi,Ennahdha,83,25,6.0
+TNP-00477,Imed Hammami,Ennahdha,77,16,5.0
+TNP-00332,Samia Abbou,CPR,73,29,5.0
+TNP-00430,Rim Mahjoub,Democratic Bloc,72,11,4.0
+TNP-00468,Abdelaziz Kotti,No bloc,72,4,4.0
+TNP-00400,Iyed Dahmani,No bloc,71,20,5.0
+TNP-00504,Mohamed Tahar Ilahi,No bloc,70,11,4.0
+TNP-00438,Salma Hedia Mabrouk,Democratic Bloc,68,13,4.0
+TNP-00457,Tarek Bouaziz,Democratic Transition,68,12,4.0
+TNP-00289,Mongi Rahoui,Democratic Bloc,68,15,4.0
+TNP-00452,Salha Ben Aicha,Ennahdha,67,8,4.0
+TNP-00402,Aymen Zouaghi,No bloc,63,18,4.0
+TNP-00425,Rabiî Abdi,Loyalty to the Revolution,63,11,4.0
+TNP-00523,Mahmoud Gouiaa,Ennahdha,62,16,4.0
+TNP-00488,Faiçal Jadlaoui,No bloc,62,12,4.0
+TNP-00370,Ahmed Essefi,No bloc,62,10,4.0
+TNP-00552,Kamel Ben Romdhane,Ennahdha,62,7,4.0
+TNP-00475,Ali Fares,Ennahdha,61,17,4.0
+TNP-00397,Amel Azzouz,Ennahdha,61,3,3.0
+TNP-00551,Wissem Yassine,No bloc,61,1,3.0
+TNP-00484,Farida Labidi,Ennahdha,60,14,4.0
+TNP-00450,Chokri Arfaoui,Democratic Transition,60,3,3.0
+TNP-00385,Zohra Smida,Ennahdha,58,4,3.0
+TNP-00542,Nizar Makhloufi,Loyalty to the Revolution,58,6,3.0
+TNP-00416,Hasna Mersit,No bloc,57,4,3.0
+TNP-00526,Mustapha Ben Jaafar,Ettakatol,57,11,4.0
+TNP-00394,Hedi Ben Braham,Ennahdha,57,4,3.0
+TNP-00391,Mouldi Riahi,Ettakatol,57,6,3.0
+TNP-00434,Saâd Bouaïche,Democratic Transition,57,4,3.0
+TNP-00427,Rafik Tlili,Loyalty to the Revolution,57,3,3.0
+TNP-00408,Jalel Bouzid,Ettakatol,57,4,3.0
+TNP-00463,Abderrazak Khallouli,Democratic Transition,56,6,3.0
+TNP-00497,Lobna Jeribi,Ettakatol,56,6,3.0
+TNP-00514,Mohamed Gahbich,Democratic Alliance,56,6,3.0
+TNP-00474,Ali Bechrifa,Democratic Bloc,56,8,3.0
+TNP-00378,Ikbel Msadaa,CPR,56,6,3.0
+TNP-00531,Monia Gasri,Ennahdha,56,4,3.0
+TNP-00376,Iskander Bouallagui,No bloc,55,6,3.0
+TNP-00485,Fattoum Lassoued,Ennahdha,55,4,3.0
+TNP-00536,Nadia Chaabane,Democratic Bloc,55,6,3.0
+TNP-00460,Abdelbasset Becheikh,Ennahdha,55,7,3.0
+TNP-00556,Habib Bribech,Ennahdha,55,7,3.0
+TNP-00519,Mohamed Ali Nasri,No bloc,55,6,3.0
+TNP-00532,Mounir Ben Hnia,Ennahdha,55,6,3.0
+TNP-00540,Nejib Mrad,Ennahdha,55,6,3.0
+TNP-00547,Hajer Azaiez,Ennahdha,54,7,3.0
+TNP-00384,Hasni Badri,Democratic Transition,54,8,3.0
+TNP-00395,Hedi Chaouech,No bloc,54,8,3.0
+TNP-00539,Najla Bourial,Democratic Alliance,54,7,3.0
+TNP-00496,Kaouther Ladgham,Ennahdha,54,8,3.0
+TNP-00499,Mabrouka Mbarek,CPR,54,7,3.0
+TNP-00436,Salma Baccar,Democratic Bloc,54,9,3.0
+TNP-00543,Noômane Fehri,Democratic Bloc,54,4,3.0
+TNP-00364,Zied Laadhari,Ennahdha,53,10,3.0
+TNP-00398,Amel Ghouil,Ennahdha,53,7,3.0
+TNP-00264,Mehdi Ben Gharbia,Democratic Alliance,53,5,3.0
+TNP-00390,Moncef Cherni,Democratic Transition,53,8,3.0
+TNP-00396,Walid Bennani,Ennahdha,53,8,3.0
+TNP-00530,Monia Ibrahim,Ennahdha,53,8,3.0
+TNP-00415,Hassan Radhouani,No bloc,53,3,3.0
+TNP-00419,Hanène Sassi,Democratic Transition,53,7,3.0
+TNP-00513,Mohamed Essghaier,Ennahdha,52,6,3.0
+TNP-00410,Jamel Touir,Ettakatol,52,6,3.0
+TNP-00465,Abdessattar Dhifi,Loyalty to the Revolution,51,8,3.0
+TNP-00414,Habiba Triki,Ennahdha,51,5,3.0
+TNP-00458,Adel Ben Attia,Ennahdha,51,5,3.0
+TNP-00502,Mohamed Habib Harguem,Ettakatol,51,8,3.0
+TNP-00471,Abdelmajid Najar,Ennahdha,51,5,3.0
+TNP-00445,Sana Mersni,Ennahdha,51,10,3.0
+TNP-00510,Mohamed Saidi,Ennahdha,51,9,3.0
+TNP-00277,Mohamed Karim Krifa,No bloc,51,0,3.0
+TNP-00558,Noura Ben Hassen,CPR,49,2,3.0
+TNP-00374,Azed Badi,Loyalty to the Revolution,48,5,3.0
+TNP-00324,Sahbi Atig,Ennahdha,48,10,3.0
+TNP-00478,Omar Chetoui,CPR,48,9,3.0
+TNP-00424,Rabeh Khraifi,No bloc,48,1,3.0
+TNP-00493,Kamel Saadaoui,No bloc,46,4,3.0
+TNP-00375,Oussama Al Saghir,Ennahdha,43,9,3.0
+TNP-00454,Slaheddine Elhiba,Ennahdha,41,2,2.0
+TNP-00467,Abdelaziz Chaabane,Ennahdha,41,0,2.0
+TNP-00511,Mohamed Ben Mabrouk Hamdi,Democratic Alliance,41,0,2.0
+TNP-00379,Lazhar Chamli,CPR,40,1,2.0
+TNP-00411,Jawhara Tiss,Ennahdha,40,1,2.0
+TNP-00407,Jalel Farhat,Democratic Transition,40,2,2.0
+TNP-00525,Mourad Amdouni,No bloc,40,2,2.0
+TNP-00518,Mohamed Abdelmonem Krir,No bloc,40,1,2.0
+TNP-00381,Jdidi Essbouîi,No bloc,40,0,2.0
+TNP-00521,Mohamed Nejib Hosni,No bloc,39,2,2.0
+TNP-00413,Hafedh Ibrahim Lassoued,Ennahdha,39,2,2.0
+TNP-00480,Fatma Gharbi,No bloc,39,1,2.0
+TNP-00377,Essia Naffati,Ennahdha,39,1,2.0
+TNP-00481,Faiza Kadoussi,No bloc,39,1,2.0
+TNP-00487,Foued Thamer,Democratic Bloc,39,1,2.0
+TNP-00476,Ali Houiji,Loyalty to the Revolution,39,2,2.0
+TNP-00404,Basma Jebali,Ennahdha,39,2,2.0
+TNP-00541,Nejiba Beryoul,Ennahdha,39,2,2.0
+TNP-00406,Baya Jaouadi,Ennahdha,39,1,2.0
+TNP-00482,Fathi Eltaif,No bloc,39,1,2.0
+TNP-00470,Abdelkader Kadri,Ennahdha,39,1,2.0
+TNP-00507,Mohamed Karray Jerbi,Loyalty to the Revolution,39,1,2.0
+TNP-00528,Moufida Marzouki,Ennahdha,39,1,2.0
+TNP-00437,Salma Sarsout,Ennahdha,39,0,2.0
+TNP-00550,Haythem Belgacem,CPR,39,0,2.0
+TNP-00357,Yamina Zoghlami,Ennahdha,39,0,2.0
+TNP-00267,Moez Belhaj Rhouma,Ennahdha,38,2,2.0
+TNP-00369,Ahmed Mechergui,Ennahdha,38,1,2.0
+TNP-00446,Sana Haddad,Ennahdha,38,1,2.0
+TNP-00380,Bechir Chammem,Ennahdha,38,5,2.0
+TNP-00392,Naceur Brahmi,No bloc,38,5,2.0
+TNP-00423,Dalila Bouain,Ennahdha,38,5,2.0
+TNP-00466,Abdessalem Chaabane,CPR,38,5,2.0
+TNP-00389,Ferjani Doghmane,Ennahdha,38,2,2.0
+TNP-00486,Fattouma Attia,Ennahdha,38,2,2.0
+TNP-00443,Samir Bettaieb,Democratic Bloc,38,3,2.0
+TNP-00418,Halima Guenni,Ennahdha,38,2,2.0
+TNP-00448,Chokri Yaich,Democratic Alliance,38,2,2.0
+TNP-00440,Selim Ben Abdessalam,No bloc,38,2,2.0
+TNP-00464,Abderraouf Ayadi,Loyalty to the Revolution,38,2,2.0
+TNP-00422,Dalila Babba,Ennahdha,38,1,2.0
+TNP-00512,Mahmoud El May,No bloc,38,1,2.0
+TNP-00529,Mouna Ben Nasr,No bloc,38,1,2.0
+TNP-00559,Jamal Bouajaja,Ennahdha,38,1,2.0
+TNP-00560,Frej Ben Amor,Ennahdha,38,0,2.0
+TNP-00453,Slaheddine Zahaf,Democratic Bloc,38,0,2.0
+TNP-00459,Aicha Dhaouadi,Ennahdha,37,2,2.0
+TNP-00538,Nabiha Torjmane,Ennahdha,37,3,2.0
+TNP-00544,Noureddine Mrabti,Democratic Transition,37,2,2.0
+TNP-00447,Sonia Toumia,Ennahdha,37,1,2.0
+TNP-00557,Bechir Nefzi,CPR,37,1,2.0
+TNP-00520,Mohamed Lotfi Ben Mesbah,Democratic Bloc,37,2,2.0
+TNP-00421,Khira Sghairi,Ennahdha,36,3,2.0
+TNP-00546,Hajer Mnifi,Ennahdha,36,2,2.0
+TNP-00426,Rabiaa Najlaoui,No bloc,36,3,2.0
+TNP-00524,Mahmoud Baroudi,Democratic Alliance,36,1,2.0
+TNP-00456,Tarek Labidi,Ettakatol,36,5,2.0
+TNP-00301,Neji Jmal,Ennahdha,36,6,2.0
+TNP-00373,Ahmed Nejib Chebbi,No bloc,36,5,2.0
+TNP-00386,Sadok Chourou,Ennahdha,36,1,2.0
+TNP-00554,Souhir Dardouri,Democratic Transition,36,5,2.0
+TNP-00451,Salah Chouaib,No bloc,36,2,2.0
+TNP-00509,Mohamed Neji Gharsalli,No bloc,36,1,2.0
+TNP-00517,Mohamed Chafik Zorkin,Democratic Alliance,36,1,2.0
+TNP-00368,Ibrahim Kassas,No bloc,35,3,2.0
+TNP-00533,Mounira Omri,Ennahdha,35,3,2.0
+TNP-00501,Mohsen Kaabi,Ennahdha,35,5,2.0
+TNP-00441,Slimane Hlal,Ennahdha,34,3,2.0
+TNP-00506,Mohamed Elarbi Fadhel Moussa,Democratic Bloc,33,2,2.0
+TNP-00449,Chokri Kastalli,Democratic Alliance,32,0,2.0
+TNP-00383,Habib Khedher,Ennahdha,31,6,2.0
+TNP-00498,Mabrouk Hrizi,Loyalty to the Revolution,30,3,2.0
+TNP-00367,Ibrahim Hamdi,Loyalty to the Revolution,30,0,2.0
+TNP-00141,Anouar Marzouki,Democratic Transition,22,0,1.0
+TNP-00429,Rim Thairi,No bloc,22,0,1.0
+TNP-00432,Samia Ferchichi,Ennahdha,22,0,1.0
+TNP-00515,Mohamed Nejib Khila,No bloc,22,0,1.0
+TNP-00537,Nabila Askri Snoussi,Ennahdha,22,0,1.0
+TNP-00420,Khmais Ksila,No bloc,21,0,1.0
+TNP-00494,Kamel Ammar,Ennahdha,21,0,1.0
+TNP-00387,Tahar Hmila,No bloc,21,0,1.0
+TNP-00399,Amira Marzouk,No bloc,21,0,1.0
+TNP-00473,Issam Chebbi,No bloc,21,0,1.0
+TNP-00535,Maya Jeribi,No bloc,21,0,1.0
+TNP-00007,Hichem Hosni,No bloc,20,0,1.0
+TNP-00490,Karim Bouabdelli,Democratic Bloc,20,0,1.0
+TNP-00508,Moncef Cheikhrouhou,Democratic Alliance,20,0,1.0
+TNP-00534,Mouldi Zidi,No bloc,20,0,1.0
+TNP-00555,Mokhtar Lamouchi,Ennahdha,20,0,1.0
+TNP-00401,Imen Ben Mhamed,Ennahdha,20,0,1.0
+TNP-00442,Samir Ben Amor,CPR,20,0,1.0
+TNP-00492,Kalthoum Badreddine,Ennahdha,20,0,1.0
+TNP-00549,Hichem Ben Jemaa,CPR,20,0,1.0
+TNP-00561,Khalid Belhaj,No bloc,20,0,1.0
+TNP-00371,Ahmed Smiai,Ennahdha,20,0,1.0
+TNP-00372,Ahmed Brahim,Democratic Bloc,20,0,1.0
+TNP-00405,Bechir Lazzem,Ennahdha,20,0,1.0
+TNP-00409,Jamel Gargouri,Democratic Alliance,20,0,1.0
+TNP-00428,Romdhane Doghmani,Democratic Transition,20,0,1.0
+TNP-00461,Abdelhalim Zouari,Ennahdha,20,0,1.0
+TNP-00483,Farah Nsibi,No bloc,20,0,1.0
+TNP-00522,Mohamed Nizar Kacem,No bloc,20,0,1.0
+TNP-00174,Ameur Laraiedh,Ennahdha,19,0,1.0
+TNP-00285,Mohamed Zrig,Ennahdha,19,0,1.0
+TNP-00382,Habib Ellouz,Ennahdha,19,0,1.0
+TNP-00433,Souad Abderrahim,Ennahdha,19,0,1.0
+TNP-00479,Fadhel Elouej,No bloc,18,0,1.0
+TNP-00393,Nafti Mahdhi,Ennahdha,16,0,1.0
+TNP-00417,Hattab Barakati,No bloc,16,0,1.0
+TNP-00435,Said Kharchoufi,No bloc,16,0,1.0
+TNP-00469,Abdelkader Ben Khmis,Democratic Bloc,16,0,1.0
+TNP-00489,Kais Mokhtar,No bloc,16,0,1.0
+TNP-00495,Kamel Ben Amara,Ennahdha,16,0,1.0
+TNP-00505,Mohamed Tahar Tlili,Ennahdha,16,0,1.0
+TNP-00553,Soulef Ksantini,Ennahdha,16,0,1.0
+TNP-00562,Nafissa Marzouki,Ettakatol,10,0,1.0

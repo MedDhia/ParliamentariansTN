@@ -1,0 +1,5 @@
+# Only needed to render figures/ — the dataset pipeline itself has no plotting
+# dependency (see requirements.txt).
+matplotlib>=3.7
+networkx>=3.0
+numpy>=1.24

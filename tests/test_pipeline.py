@@ -301,13 +301,54 @@ class TestArp2014BlocSpells:
             self._obs(("2015-01-12", "A"), ("2016-01-08", "A"), ("2016-02-08", "B"))
         )["X"]
         assert [s["name_ar"] for s in spells] == ["A", "B"]
-        # the old spell ends at the last date it was actually observed
-        assert spells[0]["end_date"] == "2016-01-08"
-        # the new spell starts when first observed, and records how far back
-        # the change could really go
+        # The spells tile without a gap: the outgoing one is closed where the
+        # incoming one starts. Ending it at the last observation instead would
+        # leave the member in no bloc for the length of the capture gap, which is
+        # a false claim rather than a cautious one — with real captures nine
+        # months wide it removed a quarter of the chamber from the panel.
+        assert spells[0]["end_date"] == "2016-02-08"
         assert spells[1]["start_date"] == "2016-02-08"
+        # The genuine uncertainty — the change happened somewhere in the interval
+        # between the two observations — is carried by the bracketing fields.
+        assert spells[0]["end_date_earliest"] == "2016-01-08"
         assert spells[1]["start_date_earliest"] == "2016-01-08"
+        assert spells[0]["dates_bracketed"] is True
         assert spells[1]["dates_bracketed"] is True
+
+    def test_spells_tile_without_gaps(self):
+        """No month may fall between one spell ending and the next beginning."""
+        spells = marsad_arp2014.build_bloc_spells(
+            self._obs(("2015-01-12", "A"), ("2017-12-30", "A"), ("2018-10-12", "B"))
+        )["X"]
+        assert spells[0]["end_date"] == spells[1]["start_date"]
+
+    def test_a_replacement_is_not_dated_to_the_first_sitting(self):
+        """A member first seen mid-term joined mid-term.
+
+        Dating their opening spell to the chamber's first sitting would credit
+        them with years they did not serve, and would push the reconstructed
+        chamber above its seat count in the opening month.
+        """
+        obs = [
+            ("2015-01-12", {"A": {"bloc": "P", "groupe_id": "P"}}),
+            ("2017-05-04", {"A": {"bloc": "P", "groupe_id": "P"},
+                            "B": {"bloc": "P", "groupe_id": "P"}}),
+        ]
+        spells = marsad_arp2014.build_bloc_spells(obs)
+        assert spells["A"][0]["start_date"] == marsad_arp2014.FIRST_SITTING
+        assert spells["A"][0]["dates_bracketed"] is False
+        assert spells["B"][0]["start_date"] == "2017-05-04"
+        assert spells["B"][0]["dates_bracketed"] is True
+
+    def test_a_member_who_stops_appearing_is_not_kept_to_the_end_of_term(self):
+        obs = [
+            ("2015-01-12", {"A": {"bloc": "P", "groupe_id": "P"},
+                            "B": {"bloc": "P", "groupe_id": "P"}}),
+            ("2017-05-04", {"A": {"bloc": "P", "groupe_id": "P"}}),
+        ]
+        spells = marsad_arp2014.build_bloc_spells(obs)
+        assert spells["A"][-1]["end_date"] == marsad_arp2014.TERM_END
+        assert spells["B"][-1]["end_date"] == "2015-01-12"
 
     def test_returning_to_a_previous_bloc_is_a_third_spell(self):
         spells = marsad_arp2014.build_bloc_spells(

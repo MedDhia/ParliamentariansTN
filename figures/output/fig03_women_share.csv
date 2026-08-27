@@ -1,0 +1,5 @@
+assembly_id,members_with_sex_recorded,women,men,women_share_pct,sex_source
+NCA-2011,213,66,147,31.0,inferred from French grammatical agreement
+ARP-2014,246,86,160,35.0,recorded by source
+ARP-2019,216,58,158,26.9,recorded by source
+ARP-2023,155,24,131,15.5,recorded by source

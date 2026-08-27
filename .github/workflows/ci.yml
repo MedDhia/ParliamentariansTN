@@ -77,3 +77,38 @@ jobs:
 
       - name: Run the worked example
         run: python analysis/example_python.py
+
+  figures:
+    # Separate job because plotting needs matplotlib/networkx, which the dataset
+    # pipeline deliberately does not depend on. Rendering the set is also the
+    # only check that the Arabic-label guard still has a gloss for every value
+    # in the data: a new bloc or committee name with no gloss fails here.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt -r requirements-figures.txt
+
+      - name: Render all figures
+        run: make figures
+
+      - name: Every figure must ship its table view
+        run: |
+          missing=0
+          for png in figures/output/fig*.png; do
+            case "$png" in *_dark.png) continue;; esac
+            csv="${png%.png}.csv"
+            if [ ! -s "$csv" ]; then
+              echo "::error::$png has no companion table ($csv)"
+              missing=1
+            fi
+          done
+          [ "$missing" = "0" ] || exit 1
+          echo "All figures have a companion CSV."

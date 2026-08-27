@@ -55,7 +55,7 @@
   "baseline_capture": "2015-01-12"
  },
  "constituencies": [],
- "notes": "246 members from 29 Internet Archive captures; 108 members changed bloc during the term. Fetch: 29 fetched, 5 from cache.",
+ "notes": "246 members from 29 Internet Archive captures; 108 members changed bloc during the term. Fetch: 0 fetched, 34 from cache.",
  "retrieved_at": "2026-08-27",
  "records": [
   {
@@ -102,10 +102,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -113,7 +113,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -123,7 +123,7 @@
      "name_lat": "Bloc Al Horra du Mouvement Machrouu Tounes",
      "role": "unknown",
      "start_date": "2016-12-13",
-     "end_date": "2019-10-05",
+     "end_date": "2017-12-30",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-11-19 and 2016-12-13; snapshot-derived, exact date unknown"
     }
@@ -184,10 +184,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-11-19",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-12-13",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Aucun_bloc",
@@ -195,7 +195,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2016-12-13",
-     "end_date": "2018-10-12",
+     "end_date": "2019-05-08",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-11-19 and 2016-12-13; snapshot-derived, exact date unknown"
     },
@@ -266,10 +266,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -328,10 +328,10 @@
      "name_ar": "الإتحاد الوطني الحر",
      "name_lat": "Union Patriotique Libre",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-12-30",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2018-10-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Alliance_nationale",
@@ -339,7 +339,7 @@
      "name_lat": "Alliance nationale",
      "role": "unknown",
      "start_date": "2018-10-12",
-     "end_date": "2018-10-12",
+     "end_date": "2019-05-08",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-12-30 and 2018-10-12; snapshot-derived, exact date unknown"
     },
@@ -410,10 +410,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -472,10 +472,10 @@
      "name_ar": "الجبهة الشعبية",
      "name_lat": "Front Populaire",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -534,10 +534,10 @@
      "name_ar": "غير المنتمين",
      "name_lat": "Aucun bloc",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-12-30",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2017-05-29",
+     "end_date": "2018-10-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2017-05-29 and 2017-05-29; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Allégeance_à_la_Patrie",
@@ -606,10 +606,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-06-02",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2017-07-05",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Aucun_bloc",
@@ -617,7 +617,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2017-07-05",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-06-02 and 2017-07-05; snapshot-derived, exact date unknown"
     },
@@ -688,10 +688,10 @@
      "name_ar": "الإتحاد الوطني الحر",
      "name_lat": "Union Patriotique Libre",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-12-30",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2018-10-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Alliance_nationale",
@@ -699,7 +699,7 @@
      "name_lat": "Alliance nationale",
      "role": "unknown",
      "start_date": "2018-10-12",
-     "end_date": "2018-10-12",
+     "end_date": "2019-05-08",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-12-30 and 2018-10-12; snapshot-derived, exact date unknown"
     },
@@ -770,10 +770,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -781,7 +781,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -791,7 +791,7 @@
      "name_lat": "Bloc Al Horra du Mouvement Machrouu Tounes",
      "role": "unknown",
      "start_date": "2016-12-13",
-     "end_date": "2019-10-05",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-11-19 and 2016-12-13; snapshot-derived, exact date unknown"
     }
@@ -852,10 +852,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -863,7 +863,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -873,7 +873,7 @@
      "name_lat": "Bloc Al Horra du Mouvement Machrouu Tounes",
      "role": "unknown",
      "start_date": "2016-12-13",
-     "end_date": "2017-07-05",
+     "end_date": "2017-12-30",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-11-19 and 2016-12-13; snapshot-derived, exact date unknown"
     },
@@ -883,7 +883,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2017-12-30",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-07-05 and 2017-12-30; snapshot-derived, exact date unknown"
     },
@@ -954,10 +954,10 @@
      "name_ar": "غير المنتمين",
      "name_lat": "Aucun bloc",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -1016,10 +1016,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-12-30",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2018-10-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Alliance_nationale",
@@ -1088,10 +1088,10 @@
      "name_ar": "الكتلة الإجتماعية الديمقراطية",
      "name_lat": "Bloc Social-Démocrate",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-10-17",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-11-19",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Démocrate",
@@ -1099,7 +1099,7 @@
      "name_lat": "Bloc Démocrate",
      "role": "unknown",
      "start_date": "2016-11-19",
-     "end_date": "2017-07-05",
+     "end_date": "2017-12-30",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-10-17 and 2016-11-19; snapshot-derived, exact date unknown"
     },
@@ -1109,7 +1109,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2017-12-30",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-07-05 and 2017-12-30; snapshot-derived, exact date unknown"
     },
@@ -1180,10 +1180,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -1242,10 +1242,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -1304,10 +1304,10 @@
      "name_ar": "الكتلة الإجتماعية الديمقراطية",
      "name_lat": "Bloc Social-Démocrate",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-06-14",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-07-15",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Aucun_bloc",
@@ -1315,7 +1315,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2016-07-15",
-     "end_date": "2016-07-15",
+     "end_date": "2016-08-15",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-06-14 and 2016-07-15; snapshot-derived, exact date unknown"
     },
@@ -1325,7 +1325,7 @@
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
      "start_date": "2016-08-15",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-07-15 and 2016-08-15; snapshot-derived, exact date unknown"
     },
@@ -1396,10 +1396,10 @@
      "name_ar": "الجبهة الشعبية",
      "name_lat": "Front Populaire",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -1458,10 +1458,10 @@
      "name_ar": "الإتحاد الوطني الحر",
      "name_lat": "Union Patriotique Libre",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-04-12",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-05-14",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Aucun_bloc",
@@ -1469,7 +1469,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2016-05-14",
-     "end_date": "2016-06-14",
+     "end_date": "2016-07-15",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-04-12 and 2016-05-14; snapshot-derived, exact date unknown"
     },
@@ -1479,7 +1479,7 @@
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
      "start_date": "2016-07-15",
-     "end_date": "2016-12-13",
+     "end_date": "2017-04-28",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-06-14 and 2016-07-15; snapshot-derived, exact date unknown"
     },
@@ -1489,7 +1489,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2017-04-28",
-     "end_date": "2017-07-05",
+     "end_date": "2017-12-30",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-12-13 and 2017-04-28; snapshot-derived, exact date unknown"
     },
@@ -1499,7 +1499,7 @@
      "name_lat": "Union Patriotique Libre",
      "role": "unknown",
      "start_date": "2017-12-30",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-07-05 and 2017-12-30; snapshot-derived, exact date unknown"
     },
@@ -1509,7 +1509,7 @@
      "name_lat": "Alliance nationale",
      "role": "unknown",
      "start_date": "2018-10-12",
-     "end_date": "2018-10-12",
+     "end_date": "2019-05-08",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-12-30 and 2018-10-12; snapshot-derived, exact date unknown"
     },
@@ -1580,10 +1580,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -1642,10 +1642,10 @@
      "name_ar": "آفاق تونس",
      "name_lat": "Afek Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Afek_Tounes_le_mouvement_national_et_lappel_des_tunisiens_à_létranger",
@@ -1653,7 +1653,7 @@
      "name_lat": "Afek Tounes le mouvement national et lappel des tunisiens à létranger",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-12-13",
+     "end_date": "2017-04-28",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -1663,7 +1663,7 @@
      "name_lat": "Afek Tounes et lappel des tunisiens à létranger",
      "role": "unknown",
      "start_date": "2017-04-28",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-12-13 and 2017-04-28; snapshot-derived, exact date unknown"
     },
@@ -1734,10 +1734,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -1796,10 +1796,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -1858,10 +1858,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -1920,10 +1920,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2017-12-30",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2017-12-30 and 2017-12-30; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -1982,10 +1982,10 @@
      "name_ar": "الجبهة الشعبية",
      "name_lat": "Front Populaire",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -2044,10 +2044,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -2106,10 +2106,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -2168,10 +2168,10 @@
      "name_ar": "الجبهة الشعبية",
      "name_lat": "Front Populaire",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -2230,10 +2230,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -2292,10 +2292,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2018-10-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -2354,10 +2354,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2018-10-12",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2019-05-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Coalition_nationale",
@@ -2426,10 +2426,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -2488,10 +2488,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -2550,10 +2550,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2018-10-12",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2019-05-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra_du_Mouvement_Machrouu_Tounes",
@@ -2622,10 +2622,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-03-10",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-04-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -2633,7 +2633,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-04-12",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-03-10 and 2016-04-12; snapshot-derived, exact date unknown"
     },
@@ -2643,7 +2643,7 @@
      "name_lat": "Bloc Al Horra du Mouvement Machrouu Tounes",
      "role": "unknown",
      "start_date": "2016-12-13",
-     "end_date": "2016-12-13",
+     "end_date": "2017-04-28",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-11-19 and 2016-12-13; snapshot-derived, exact date unknown"
     },
@@ -2653,7 +2653,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2017-04-28",
-     "end_date": "2017-04-28",
+     "end_date": "2017-05-29",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-12-13 and 2017-04-28; snapshot-derived, exact date unknown"
     },
@@ -2663,7 +2663,7 @@
      "name_lat": "Bloc National",
      "role": "unknown",
      "start_date": "2017-05-29",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-04-28 and 2017-05-29; snapshot-derived, exact date unknown"
     },
@@ -2785,10 +2785,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-03-10",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-04-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -2796,7 +2796,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-04-12",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-03-10 and 2016-04-12; snapshot-derived, exact date unknown"
     },
@@ -2867,10 +2867,10 @@
      "name_ar": "الجبهة الشعبية",
      "name_lat": "Front Populaire",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -2929,10 +2929,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -2991,10 +2991,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -3053,10 +3053,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -3115,10 +3115,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -3177,10 +3177,10 @@
      "name_ar": "الإتحاد الوطني الحر",
      "name_lat": "Union Patriotique Libre",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-12-30",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2018-10-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Alliance_nationale",
@@ -3188,7 +3188,7 @@
      "name_lat": "Alliance nationale",
      "role": "unknown",
      "start_date": "2018-10-12",
-     "end_date": "2018-10-12",
+     "end_date": "2019-05-08",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-12-30 and 2018-10-12; snapshot-derived, exact date unknown"
     },
@@ -3259,10 +3259,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -3321,10 +3321,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -3383,10 +3383,10 @@
      "name_ar": "الإتحاد الوطني الحر",
      "name_lat": "Union Patriotique Libre",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-12-30",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2018-10-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Alliance_nationale",
@@ -3394,7 +3394,7 @@
      "name_lat": "Alliance nationale",
      "role": "unknown",
      "start_date": "2018-10-12",
-     "end_date": "2018-10-12",
+     "end_date": "2019-05-08",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-12-30 and 2018-10-12; snapshot-derived, exact date unknown"
     },
@@ -3465,10 +3465,10 @@
      "name_ar": "غير المنتمين",
      "name_lat": "Aucun bloc",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2016-10-17",
+     "end_date": "2017-07-05",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2016-10-17 and 2016-10-17; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -3527,10 +3527,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -3589,10 +3589,10 @@
      "name_ar": "الجبهة الشعبية",
      "name_lat": "Front Populaire",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -3651,10 +3651,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -3662,7 +3662,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-04-12",
+     "end_date": "2016-05-14",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -3672,7 +3672,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2016-05-14",
-     "end_date": "2016-07-15",
+     "end_date": "2016-08-15",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-04-12 and 2016-05-14; snapshot-derived, exact date unknown"
     },
@@ -3743,10 +3743,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -3805,10 +3805,10 @@
      "name_ar": "الكتلة الإجتماعية الديمقراطية",
      "name_lat": "Bloc Social-Démocrate",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-10-17",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-11-19",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Aucun_bloc",
@@ -3877,10 +3877,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -3939,10 +3939,10 @@
      "name_ar": "غير المنتمين",
      "name_lat": "Aucun bloc",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-10-17",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-11-19",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Démocrate",
@@ -4011,10 +4011,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -4073,10 +4073,10 @@
      "name_ar": "آفاق تونس",
      "name_lat": "Afek Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Afek_Tounes_le_mouvement_national_et_lappel_des_tunisiens_à_létranger",
@@ -4084,7 +4084,7 @@
      "name_lat": "Afek Tounes le mouvement national et lappel des tunisiens à létranger",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-12-13",
+     "end_date": "2017-04-28",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -4094,7 +4094,7 @@
      "name_lat": "Afek Tounes et lappel des tunisiens à létranger",
      "role": "unknown",
      "start_date": "2017-04-28",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-12-13 and 2017-04-28; snapshot-derived, exact date unknown"
     },
@@ -4165,10 +4165,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2019-05-08",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2019-05-08 and 2019-05-08; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -4227,10 +4227,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2015-07-21",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -4289,10 +4289,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-03-10",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-04-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -4300,7 +4300,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-04-12",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-03-10 and 2016-04-12; snapshot-derived, exact date unknown"
     },
@@ -4371,10 +4371,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2017-07-05",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -4433,10 +4433,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2015-12-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-09-16",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Aucun_bloc",
@@ -4444,7 +4444,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2016-09-16",
-     "end_date": "2019-10-05",
+     "end_date": "2016-09-16",
      "dates_bracketed": true,
      "notes": "bloc change located between 2015-12-08 and 2016-09-16; snapshot-derived, exact date unknown"
     }
@@ -4505,10 +4505,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -4567,10 +4567,10 @@
      "name_ar": "الجبهة الشعبية",
      "name_lat": "Front Populaire",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -4629,10 +4629,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -4691,10 +4691,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -4753,10 +4753,10 @@
      "name_ar": "آفاق تونس والحركة الوطنية ونداء التونسيين بالخارج",
      "name_lat": "Afek Tounes le mouvement national et lappel des tunisiens à létranger",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-12-13",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2016-10-17",
+     "end_date": "2017-04-28",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2016-10-17 and 2016-10-17; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Afek_Tounes_et_lappel_des_tunisiens_à_létranger",
@@ -4764,7 +4764,7 @@
      "name_lat": "Afek Tounes et lappel des tunisiens à létranger",
      "role": "unknown",
      "start_date": "2017-04-28",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-12-13 and 2017-04-28; snapshot-derived, exact date unknown"
     },
@@ -4835,10 +4835,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -4897,10 +4897,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -4908,7 +4908,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -4979,10 +4979,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -5041,10 +5041,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2018-10-12",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2019-05-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Coalition_nationale",
@@ -5113,10 +5113,10 @@
      "name_ar": "الكتلة الإجتماعية الديمقراطية",
      "name_lat": "Bloc Social-Démocrate",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-10-17",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-11-19",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Démocrate",
@@ -5124,7 +5124,7 @@
      "name_lat": "Bloc Démocrate",
      "role": "unknown",
      "start_date": "2016-11-19",
-     "end_date": "2017-07-05",
+     "end_date": "2017-12-30",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-10-17 and 2016-11-19; snapshot-derived, exact date unknown"
     },
@@ -5134,7 +5134,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2017-12-30",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-07-05 and 2017-12-30; snapshot-derived, exact date unknown"
     },
@@ -5205,10 +5205,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -5267,10 +5267,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -5278,7 +5278,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -5288,7 +5288,7 @@
      "name_lat": "Bloc Al Horra du Mouvement Machrouu Tounes",
      "role": "unknown",
      "start_date": "2016-12-13",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-11-19 and 2016-12-13; snapshot-derived, exact date unknown"
     },
@@ -5359,10 +5359,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -5421,10 +5421,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -5483,10 +5483,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -5545,10 +5545,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -5607,10 +5607,10 @@
      "name_ar": "غير المنتمين",
      "name_lat": "Aucun bloc",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-10-17",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-11-19",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Démocrate",
@@ -5679,10 +5679,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -5741,10 +5741,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2018-10-12",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2019-05-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Coalition_nationale",
@@ -5813,10 +5813,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2018-10-12",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2019-05-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Coalition_nationale",
@@ -5885,10 +5885,10 @@
      "name_ar": "غير المنتمين",
      "name_lat": "Aucun bloc",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-10-17",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-11-19",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Démocrate",
@@ -5957,10 +5957,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -6019,10 +6019,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -6081,10 +6081,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -6143,10 +6143,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-12-30",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2018-10-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Alliance_nationale",
@@ -6215,10 +6215,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-06-02",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2017-07-05",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Aucun_bloc",
@@ -6226,7 +6226,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2017-07-05",
-     "end_date": "2017-07-05",
+     "end_date": "2017-12-30",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-06-02 and 2017-07-05; snapshot-derived, exact date unknown"
     },
@@ -6236,7 +6236,7 @@
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
      "start_date": "2017-12-30",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-07-05 and 2017-12-30; snapshot-derived, exact date unknown"
     },
@@ -6307,10 +6307,10 @@
      "name_ar": "الكتلة الإجتماعية الديمقراطية",
      "name_lat": "Bloc Social-Démocrate",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-09-16",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-10-17",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Aucun_bloc",
@@ -6318,7 +6318,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2016-10-17",
-     "end_date": "2019-10-05",
+     "end_date": "2016-10-17",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-09-16 and 2016-10-17; snapshot-derived, exact date unknown"
     }
@@ -6379,10 +6379,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -6441,10 +6441,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -6503,10 +6503,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2018-10-12",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2019-05-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Coalition_nationale",
@@ -6575,10 +6575,10 @@
      "name_ar": "كتلة الحرّة لحركة مشروع تونس",
      "name_lat": "Bloc Al Horra du Mouvement Machrouu Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2019-05-08",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2019-05-08 and 2019-05-08; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -6637,10 +6637,10 @@
      "name_ar": "الجبهة الشعبية",
      "name_lat": "Front Populaire",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -6699,10 +6699,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -6761,10 +6761,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -6823,10 +6823,10 @@
      "name_ar": "الإتحاد الوطني الحر",
      "name_lat": "Union Patriotique Libre",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-12-30",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2018-10-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Alliance_nationale",
@@ -6834,7 +6834,7 @@
      "name_lat": "Alliance nationale",
      "role": "unknown",
      "start_date": "2018-10-12",
-     "end_date": "2018-10-12",
+     "end_date": "2019-05-08",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-12-30 and 2018-10-12; snapshot-derived, exact date unknown"
     },
@@ -6905,10 +6905,10 @@
      "name_ar": "آفاق تونس",
      "name_lat": "Afek Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Afek_Tounes_le_mouvement_national_et_lappel_des_tunisiens_à_létranger",
@@ -6916,7 +6916,7 @@
      "name_lat": "Afek Tounes le mouvement national et lappel des tunisiens à létranger",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-12-13",
+     "end_date": "2017-04-28",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -6926,7 +6926,7 @@
      "name_lat": "Afek Tounes et lappel des tunisiens à létranger",
      "role": "unknown",
      "start_date": "2017-04-28",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-12-13 and 2017-04-28; snapshot-derived, exact date unknown"
     },
@@ -6997,10 +6997,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2016-10-17",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2016-10-17 and 2016-10-17; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -7059,10 +7059,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-02-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-09-16",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Aucun_bloc",
@@ -7070,7 +7070,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2016-09-16",
-     "end_date": "2019-10-05",
+     "end_date": "2016-09-16",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-02-08 and 2016-09-16; snapshot-derived, exact date unknown"
     }
@@ -7131,10 +7131,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -7142,7 +7142,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -7213,10 +7213,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-06-02",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2017-07-05",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Aucun_bloc",
@@ -7224,7 +7224,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2017-07-05",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-06-02 and 2017-07-05; snapshot-derived, exact date unknown"
     },
@@ -7295,10 +7295,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -7357,10 +7357,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -7419,10 +7419,10 @@
      "name_ar": "غير المنتمين",
      "name_lat": "Aucun bloc",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-10-17",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2016-10-17",
+     "end_date": "2016-11-19",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2016-10-17 and 2016-10-17; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Mouvement_Nidaa_Tounes",
@@ -7430,7 +7430,7 @@
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
      "start_date": "2016-11-19",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-10-17 and 2016-11-19; snapshot-derived, exact date unknown"
     },
@@ -7501,10 +7501,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -7563,10 +7563,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -7625,10 +7625,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -7687,10 +7687,10 @@
      "name_ar": "كتلة الحرّة لحركة مشروع تونس",
      "name_lat": "Bloc Al Horra du Mouvement Machrouu Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-12-30",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2017-12-30",
+     "end_date": "2018-10-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2017-12-30 and 2017-12-30; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Alliance_nationale",
@@ -7759,10 +7759,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-04-28",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2017-05-29",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Aucun_bloc",
@@ -7770,7 +7770,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2017-05-29",
-     "end_date": "2017-06-02",
+     "end_date": "2017-07-05",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-04-28 and 2017-05-29; snapshot-derived, exact date unknown"
     },
@@ -7780,7 +7780,7 @@
      "name_lat": "Bloc Al Horra du Mouvement Machrouu Tounes",
      "role": "unknown",
      "start_date": "2017-07-05",
-     "end_date": "2019-10-05",
+     "end_date": "2017-07-05",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-06-02 and 2017-07-05; snapshot-derived, exact date unknown"
     }
@@ -7841,10 +7841,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-03-10",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-04-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -7852,7 +7852,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-04-12",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-03-10 and 2016-04-12; snapshot-derived, exact date unknown"
     },
@@ -7862,7 +7862,7 @@
      "name_lat": "Bloc Al Horra du Mouvement Machrouu Tounes",
      "role": "unknown",
      "start_date": "2016-12-13",
-     "end_date": "2016-12-13",
+     "end_date": "2017-04-28",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-11-19 and 2016-12-13; snapshot-derived, exact date unknown"
     },
@@ -7872,7 +7872,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2017-04-28",
-     "end_date": "2017-04-28",
+     "end_date": "2017-05-29",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-12-13 and 2017-04-28; snapshot-derived, exact date unknown"
     },
@@ -7882,7 +7882,7 @@
      "name_lat": "Bloc National",
      "role": "unknown",
      "start_date": "2017-05-29",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-04-28 and 2017-05-29; snapshot-derived, exact date unknown"
     },
@@ -7953,10 +7953,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -8015,10 +8015,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-12-13",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2017-04-28",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Aucun_bloc",
@@ -8026,7 +8026,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2017-04-28",
-     "end_date": "2017-04-28",
+     "end_date": "2017-05-29",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-12-13 and 2017-04-28; snapshot-derived, exact date unknown"
     },
@@ -8036,7 +8036,7 @@
      "name_lat": "Bloc National",
      "role": "unknown",
      "start_date": "2017-05-29",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-04-28 and 2017-05-29; snapshot-derived, exact date unknown"
     },
@@ -8107,10 +8107,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -8118,7 +8118,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -8189,10 +8189,10 @@
      "name_ar": "آفاق تونس",
      "name_lat": "Afek Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Afek_Tounes_le_mouvement_national_et_lappel_des_tunisiens_à_létranger",
@@ -8200,7 +8200,7 @@
      "name_lat": "Afek Tounes le mouvement national et lappel des tunisiens à létranger",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-12-13",
+     "end_date": "2017-04-28",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -8210,7 +8210,7 @@
      "name_lat": "Afek Tounes et lappel des tunisiens à létranger",
      "role": "unknown",
      "start_date": "2017-04-28",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-12-13 and 2017-04-28; snapshot-derived, exact date unknown"
     },
@@ -8281,10 +8281,10 @@
      "name_ar": "الكتلة الإجتماعية الديمقراطية",
      "name_lat": "Bloc Social-Démocrate",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-06-14",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-07-15",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Aucun_bloc",
@@ -8292,7 +8292,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2016-07-15",
-     "end_date": "2016-07-15",
+     "end_date": "2016-08-15",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-06-14 and 2016-07-15; snapshot-derived, exact date unknown"
     },
@@ -8302,7 +8302,7 @@
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
      "start_date": "2016-08-15",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-07-15 and 2016-08-15; snapshot-derived, exact date unknown"
     },
@@ -8373,10 +8373,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2018-10-12",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2019-05-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Coalition_nationale",
@@ -8445,10 +8445,10 @@
      "name_ar": "غير المنتمين",
      "name_lat": "Aucun bloc",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-10-17",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-11-19",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Démocrate",
@@ -8517,10 +8517,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -8579,10 +8579,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -8641,10 +8641,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -8703,10 +8703,10 @@
      "name_ar": "الإتحاد الوطني الحر",
      "name_lat": "Union Patriotique Libre",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-12-30",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2018-10-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Alliance_nationale",
@@ -8714,7 +8714,7 @@
      "name_lat": "Alliance nationale",
      "role": "unknown",
      "start_date": "2018-10-12",
-     "end_date": "2018-10-12",
+     "end_date": "2019-05-08",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-12-30 and 2018-10-12; snapshot-derived, exact date unknown"
     },
@@ -8785,10 +8785,10 @@
      "name_ar": "الائتلاف الوطني",
      "name_lat": "Alliance nationale",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2018-10-12",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2018-10-12 and 2018-10-12; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -8847,10 +8847,10 @@
      "name_ar": "كتلة الحرّة لحركة مشروع تونس",
      "name_lat": "Bloc Al Horra du Mouvement Machrouu Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-12-30",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2017-12-30",
+     "end_date": "2018-10-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2017-12-30 and 2017-12-30; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Alliance_nationale",
@@ -8919,10 +8919,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-03-10",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2016-03-10",
+     "end_date": "2016-04-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2016-03-10 and 2016-03-10; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -8930,7 +8930,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-04-12",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-03-10 and 2016-04-12; snapshot-derived, exact date unknown"
     },
@@ -8940,7 +8940,7 @@
      "name_lat": "Bloc Al Horra du Mouvement Machrouu Tounes",
      "role": "unknown",
      "start_date": "2016-12-13",
-     "end_date": "2019-10-05",
+     "end_date": "2017-07-05",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-11-19 and 2016-12-13; snapshot-derived, exact date unknown"
     }
@@ -9001,10 +9001,10 @@
      "name_ar": "الجبهة الشعبية",
      "name_lat": "Front Populaire",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -9063,10 +9063,10 @@
      "name_ar": "الكتلة الإجتماعية الديمقراطية",
      "name_lat": "Bloc Social-Démocrate",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-09-16",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -9125,10 +9125,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -9187,10 +9187,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -9198,7 +9198,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -9269,10 +9269,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -9331,10 +9331,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2017-04-28",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2017-04-28 and 2017-04-28; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -9393,10 +9393,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -9455,10 +9455,10 @@
      "name_ar": "الإتحاد الوطني الحر",
      "name_lat": "Union Patriotique Libre",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-12-30",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2018-10-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Alliance_nationale",
@@ -9466,7 +9466,7 @@
      "name_lat": "Alliance nationale",
      "role": "unknown",
      "start_date": "2018-10-12",
-     "end_date": "2018-10-12",
+     "end_date": "2019-05-08",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-12-30 and 2018-10-12; snapshot-derived, exact date unknown"
     },
@@ -9537,10 +9537,10 @@
      "name_ar": "آفاق تونس",
      "name_lat": "Afek Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Afek_Tounes_le_mouvement_national_et_lappel_des_tunisiens_à_létranger",
@@ -9548,7 +9548,7 @@
      "name_lat": "Afek Tounes le mouvement national et lappel des tunisiens à létranger",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-12-13",
+     "end_date": "2017-04-28",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -9558,7 +9558,7 @@
      "name_lat": "Afek Tounes et lappel des tunisiens à létranger",
      "role": "unknown",
      "start_date": "2017-04-28",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-12-13 and 2017-04-28; snapshot-derived, exact date unknown"
     },
@@ -9629,10 +9629,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -9691,10 +9691,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -9753,10 +9753,10 @@
      "name_ar": "غير المنتمين",
      "name_lat": "Aucun bloc",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Social-Démocrate",
@@ -9764,7 +9764,7 @@
      "name_lat": "Bloc Social-Démocrate",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-10-17",
+     "end_date": "2016-11-19",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -9774,7 +9774,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2016-11-19",
-     "end_date": "2017-07-05",
+     "end_date": "2017-12-30",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-10-17 and 2016-11-19; snapshot-derived, exact date unknown"
     },
@@ -9845,10 +9845,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -9907,10 +9907,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -9918,7 +9918,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-06-14",
+     "end_date": "2016-07-15",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -9928,7 +9928,7 @@
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
      "start_date": "2016-07-15",
-     "end_date": "2018-10-12",
+     "end_date": "2019-05-08",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-06-14 and 2016-07-15; snapshot-derived, exact date unknown"
     },
@@ -9999,10 +9999,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -10061,10 +10061,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -10123,10 +10123,10 @@
      "name_ar": "آفاق تونس",
      "name_lat": "Afek Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Afek_Tounes_le_mouvement_national_et_lappel_des_tunisiens_à_létranger",
@@ -10134,7 +10134,7 @@
      "name_lat": "Afek Tounes le mouvement national et lappel des tunisiens à létranger",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-12-13",
+     "end_date": "2017-04-28",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -10144,7 +10144,7 @@
      "name_lat": "Afek Tounes et lappel des tunisiens à létranger",
      "role": "unknown",
      "start_date": "2017-04-28",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-12-13 and 2017-04-28; snapshot-derived, exact date unknown"
     },
@@ -10154,7 +10154,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2018-10-12",
-     "end_date": "2018-10-12",
+     "end_date": "2019-05-08",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-12-30 and 2018-10-12; snapshot-derived, exact date unknown"
     },
@@ -10225,10 +10225,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-12-30",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2018-10-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Allégeance_à_la_Patrie",
@@ -10236,7 +10236,7 @@
      "name_lat": "Allégeance à la Patrie",
      "role": "unknown",
      "start_date": "2018-10-12",
-     "end_date": "2018-10-12",
+     "end_date": "2019-05-08",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-12-30 and 2018-10-12; snapshot-derived, exact date unknown"
     },
@@ -10307,10 +10307,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-12-30",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2018-10-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Alliance_nationale",
@@ -10379,10 +10379,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -10441,10 +10441,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2017-12-30",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -10503,10 +10503,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -10616,10 +10616,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -10678,10 +10678,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -10740,10 +10740,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -10751,7 +10751,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -10822,10 +10822,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2016-11-19",
+     "end_date": "2016-12-13",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2016-11-19 and 2016-11-19; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -10884,10 +10884,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -10895,7 +10895,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-06-14",
+     "end_date": "2016-07-15",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -10905,7 +10905,7 @@
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
      "start_date": "2016-07-15",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-06-14 and 2016-07-15; snapshot-derived, exact date unknown"
     },
@@ -10976,10 +10976,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -11038,10 +11038,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2018-10-12",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2019-05-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Coalition_nationale",
@@ -11110,10 +11110,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -11172,10 +11172,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-03-10",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-04-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -11183,7 +11183,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-04-12",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-03-10 and 2016-04-12; snapshot-derived, exact date unknown"
     },
@@ -11254,10 +11254,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -11316,10 +11316,10 @@
      "name_ar": "الإتحاد الوطني الحر",
      "name_lat": "Union Patriotique Libre",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-02-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-09-16",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Aucun_bloc",
@@ -11327,7 +11327,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2016-09-16",
-     "end_date": "2019-10-05",
+     "end_date": "2016-09-16",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-02-08 and 2016-09-16; snapshot-derived, exact date unknown"
     }
@@ -11388,10 +11388,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-12-30",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2018-10-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Alliance_nationale",
@@ -11460,10 +11460,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -11471,7 +11471,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -11481,7 +11481,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2016-12-13",
-     "end_date": "2017-04-28",
+     "end_date": "2017-05-29",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-11-19 and 2016-12-13; snapshot-derived, exact date unknown"
     },
@@ -11491,7 +11491,7 @@
      "name_lat": "Bloc National",
      "role": "unknown",
      "start_date": "2017-05-29",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-04-28 and 2017-05-29; snapshot-derived, exact date unknown"
     },
@@ -11562,10 +11562,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -11624,10 +11624,10 @@
      "name_ar": "الجبهة الشعبية",
      "name_lat": "Front Populaire",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -11686,10 +11686,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -11748,10 +11748,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -11810,10 +11810,10 @@
      "name_ar": "الجبهة الشعبية",
      "name_lat": "Front Populaire",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -11872,10 +11872,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -11883,7 +11883,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -11893,7 +11893,7 @@
      "name_lat": "Bloc Al Horra du Mouvement Machrouu Tounes",
      "role": "unknown",
      "start_date": "2016-12-13",
-     "end_date": "2016-12-13",
+     "end_date": "2017-04-28",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-11-19 and 2016-12-13; snapshot-derived, exact date unknown"
     },
@@ -11903,7 +11903,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2017-04-28",
-     "end_date": "2017-04-28",
+     "end_date": "2017-05-29",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-12-13 and 2017-04-28; snapshot-derived, exact date unknown"
     },
@@ -11913,7 +11913,7 @@
      "name_lat": "Bloc National",
      "role": "unknown",
      "start_date": "2017-05-29",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-04-28 and 2017-05-29; snapshot-derived, exact date unknown"
     },
@@ -11984,10 +11984,10 @@
      "name_ar": "الكتلة الإجتماعية الديمقراطية",
      "name_lat": "Bloc Social-Démocrate",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-06-14",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-07-15",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Aucun_bloc",
@@ -11995,7 +11995,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2016-07-15",
-     "end_date": "2016-07-15",
+     "end_date": "2016-08-15",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-06-14 and 2016-07-15; snapshot-derived, exact date unknown"
     },
@@ -12005,7 +12005,7 @@
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
      "start_date": "2016-08-15",
-     "end_date": "2016-12-13",
+     "end_date": "2017-04-28",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-07-15 and 2016-08-15; snapshot-derived, exact date unknown"
     },
@@ -12015,7 +12015,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2017-04-28",
-     "end_date": "2017-06-02",
+     "end_date": "2017-07-05",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-12-13 and 2017-04-28; snapshot-derived, exact date unknown"
     },
@@ -12025,7 +12025,7 @@
      "name_lat": "Bloc Al Horra du Mouvement Machrouu Tounes",
      "role": "unknown",
      "start_date": "2017-07-05",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-06-02 and 2017-07-05; snapshot-derived, exact date unknown"
     },
@@ -12096,10 +12096,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-07-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2017-12-30",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Aucun_bloc",
@@ -12107,7 +12107,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2017-12-30",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-07-05 and 2017-12-30; snapshot-derived, exact date unknown"
     },
@@ -12178,10 +12178,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -12189,7 +12189,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -12260,10 +12260,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-12-13",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2017-04-28",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Aucun_bloc",
@@ -12271,7 +12271,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2017-04-28",
-     "end_date": "2017-04-28",
+     "end_date": "2017-05-29",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-12-13 and 2017-04-28; snapshot-derived, exact date unknown"
     },
@@ -12281,7 +12281,7 @@
      "name_lat": "Bloc National",
      "role": "unknown",
      "start_date": "2017-05-29",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-04-28 and 2017-05-29; snapshot-derived, exact date unknown"
     },
@@ -12352,10 +12352,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -12414,10 +12414,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -12476,10 +12476,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -12538,10 +12538,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -12600,10 +12600,10 @@
      "name_ar": "كتلة الحرّة لحركة مشروع تونس",
      "name_lat": "Bloc Al Horra du Mouvement Machrouu Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2018-10-12",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2018-10-12 and 2018-10-12; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -12662,10 +12662,10 @@
      "name_ar": "الجبهة الشعبية",
      "name_lat": "Front Populaire",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -12724,10 +12724,10 @@
      "name_ar": "غير المنتمين",
      "name_lat": "Aucun bloc",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-10-17",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-11-19",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Démocrate",
@@ -12847,10 +12847,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-08-01",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-08-01 and 2015-08-01; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -12909,10 +12909,10 @@
      "name_ar": "الإتحاد الوطني الحر",
      "name_lat": "Union Patriotique Libre",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-03-10",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-04-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Aucun_bloc",
@@ -12920,7 +12920,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2016-04-12",
-     "end_date": "2016-04-12",
+     "end_date": "2016-05-14",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-03-10 and 2016-04-12; snapshot-derived, exact date unknown"
     },
@@ -12930,7 +12930,7 @@
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
      "start_date": "2016-05-14",
-     "end_date": "2016-10-17",
+     "end_date": "2016-11-19",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-04-12 and 2016-05-14; snapshot-derived, exact date unknown"
     },
@@ -12940,7 +12940,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2016-11-19",
-     "end_date": "2016-12-13",
+     "end_date": "2017-04-28",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-10-17 and 2016-11-19; snapshot-derived, exact date unknown"
     },
@@ -12950,7 +12950,7 @@
      "name_lat": "Bloc Al Horra du Mouvement Machrouu Tounes",
      "role": "unknown",
      "start_date": "2017-04-28",
-     "end_date": "2017-07-05",
+     "end_date": "2017-12-30",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-12-13 and 2017-04-28; snapshot-derived, exact date unknown"
     },
@@ -12960,7 +12960,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2017-12-30",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-07-05 and 2017-12-30; snapshot-derived, exact date unknown"
     },
@@ -13031,10 +13031,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -13093,10 +13093,10 @@
      "name_ar": "الإتحاد الوطني الحر",
      "name_lat": "Union Patriotique Libre",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-12-30",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2018-10-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Alliance_nationale",
@@ -13104,7 +13104,7 @@
      "name_lat": "Alliance nationale",
      "role": "unknown",
      "start_date": "2018-10-12",
-     "end_date": "2018-10-12",
+     "end_date": "2019-05-08",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-12-30 and 2018-10-12; snapshot-derived, exact date unknown"
     },
@@ -13175,10 +13175,10 @@
      "name_ar": "غير المنتمين",
      "name_lat": "Aucun bloc",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Afek_Tounes_le_mouvement_national_et_lappel_des_tunisiens_à_létranger",
@@ -13186,7 +13186,7 @@
      "name_lat": "Afek Tounes le mouvement national et lappel des tunisiens à létranger",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-12-13",
+     "end_date": "2017-04-28",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -13196,7 +13196,7 @@
      "name_lat": "Afek Tounes et lappel des tunisiens à létranger",
      "role": "unknown",
      "start_date": "2017-04-28",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-12-13 and 2017-04-28; snapshot-derived, exact date unknown"
     },
@@ -13267,10 +13267,10 @@
      "name_ar": "الإتحاد الوطني الحر",
      "name_lat": "Union Patriotique Libre",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-12-30",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2016-03-10",
+     "end_date": "2018-10-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2016-03-10 and 2016-03-10; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Alliance_nationale",
@@ -13278,7 +13278,7 @@
      "name_lat": "Alliance nationale",
      "role": "unknown",
      "start_date": "2018-10-12",
-     "end_date": "2018-10-12",
+     "end_date": "2019-05-08",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-12-30 and 2018-10-12; snapshot-derived, exact date unknown"
     },
@@ -13349,10 +13349,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-03-10",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-04-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Aucun_bloc",
@@ -13421,10 +13421,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -13483,10 +13483,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2017-07-05",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -13545,10 +13545,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2017-12-30",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2017-12-30 and 2017-12-30; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -13607,10 +13607,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -13618,7 +13618,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -13689,10 +13689,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -13751,10 +13751,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -13813,10 +13813,10 @@
      "name_ar": "غير المنتمين",
      "name_lat": "Aucun bloc",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Afek_Tounes_le_mouvement_national_et_lappel_des_tunisiens_à_létranger",
@@ -13824,7 +13824,7 @@
      "name_lat": "Afek Tounes le mouvement national et lappel des tunisiens à létranger",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-12-13",
+     "end_date": "2017-04-28",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -13834,7 +13834,7 @@
      "name_lat": "Afek Tounes et lappel des tunisiens à létranger",
      "role": "unknown",
      "start_date": "2017-04-28",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-12-13 and 2017-04-28; snapshot-derived, exact date unknown"
     },
@@ -13905,10 +13905,10 @@
      "name_ar": "آفاق تونس",
      "name_lat": "Afek Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Afek_Tounes_le_mouvement_national_et_lappel_des_tunisiens_à_létranger",
@@ -13916,7 +13916,7 @@
      "name_lat": "Afek Tounes le mouvement national et lappel des tunisiens à létranger",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-08-15",
+     "end_date": "2016-09-16",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -13926,7 +13926,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2016-09-16",
-     "end_date": "2019-10-05",
+     "end_date": "2016-09-16",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-08-15 and 2016-09-16; snapshot-derived, exact date unknown"
     }
@@ -13987,10 +13987,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -14049,10 +14049,10 @@
      "name_ar": "غير المنتمين",
      "name_lat": "Aucun bloc",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-10-17",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-11-19",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Démocrate",
@@ -14121,10 +14121,10 @@
      "name_ar": "الإتحاد الوطني الحر",
      "name_lat": "Union Patriotique Libre",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-04-12",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-05-14",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Mouvement_Nidaa_Tounes",
@@ -14132,7 +14132,7 @@
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
      "start_date": "2016-05-14",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-04-12 and 2016-05-14; snapshot-derived, exact date unknown"
     },
@@ -14142,7 +14142,7 @@
      "name_lat": "Alliance nationale",
      "role": "unknown",
      "start_date": "2018-10-12",
-     "end_date": "2018-10-12",
+     "end_date": "2019-05-08",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-12-30 and 2018-10-12; snapshot-derived, exact date unknown"
     },
@@ -14213,10 +14213,10 @@
      "name_ar": "آفاق تونس",
      "name_lat": "Afek Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Afek_Tounes_le_mouvement_national_et_lappel_des_tunisiens_à_létranger",
@@ -14224,7 +14224,7 @@
      "name_lat": "Afek Tounes le mouvement national et lappel des tunisiens à létranger",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-12-13",
+     "end_date": "2017-04-28",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -14234,7 +14234,7 @@
      "name_lat": "Afek Tounes et lappel des tunisiens à létranger",
      "role": "unknown",
      "start_date": "2017-04-28",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-12-13 and 2017-04-28; snapshot-derived, exact date unknown"
     },
@@ -14244,7 +14244,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2018-10-12",
-     "end_date": "2018-10-12",
+     "end_date": "2019-05-08",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-12-30 and 2018-10-12; snapshot-derived, exact date unknown"
     },
@@ -14315,10 +14315,10 @@
      "name_ar": "غير المنتمين",
      "name_lat": "Aucun bloc",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Social-Démocrate",
@@ -14326,7 +14326,7 @@
      "name_lat": "Bloc Social-Démocrate",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-10-17",
+     "end_date": "2016-11-19",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -14336,7 +14336,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2016-11-19",
-     "end_date": "2017-07-05",
+     "end_date": "2017-12-30",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-10-17 and 2016-11-19; snapshot-derived, exact date unknown"
     },
@@ -14407,10 +14407,10 @@
      "name_ar": "غير المنتمين",
      "name_lat": "Aucun bloc",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-10-17",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-11-19",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Démocrate",
@@ -14479,10 +14479,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-03-10",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-04-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Aucun_bloc",
@@ -14490,7 +14490,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2016-04-12",
-     "end_date": "2016-06-14",
+     "end_date": "2016-07-15",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-03-10 and 2016-04-12; snapshot-derived, exact date unknown"
     },
@@ -14500,7 +14500,7 @@
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
      "start_date": "2016-07-15",
-     "end_date": "2017-06-02",
+     "end_date": "2017-07-05",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-06-14 and 2016-07-15; snapshot-derived, exact date unknown"
     },
@@ -14510,7 +14510,7 @@
      "name_lat": "Bloc National",
      "role": "unknown",
      "start_date": "2017-07-05",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-06-02 and 2017-07-05; snapshot-derived, exact date unknown"
     },
@@ -14581,10 +14581,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -14643,10 +14643,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -14705,10 +14705,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -14716,7 +14716,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -14726,7 +14726,7 @@
      "name_lat": "Bloc Al Horra du Mouvement Machrouu Tounes",
      "role": "unknown",
      "start_date": "2016-12-13",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-11-19 and 2016-12-13; snapshot-derived, exact date unknown"
     },
@@ -14848,10 +14848,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -14859,7 +14859,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -14930,10 +14930,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-12-13",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2017-04-28",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Aucun_bloc",
@@ -14941,7 +14941,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2017-04-28",
-     "end_date": "2019-10-05",
+     "end_date": "2017-04-28",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-12-13 and 2017-04-28; snapshot-derived, exact date unknown"
     }
@@ -15002,10 +15002,10 @@
      "name_ar": "غير المنتمين",
      "name_lat": "Aucun bloc",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-10-17",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-11-19",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Démocrate",
@@ -15125,10 +15125,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -15136,7 +15136,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -15146,7 +15146,7 @@
      "name_lat": "Bloc Al Horra du Mouvement Machrouu Tounes",
      "role": "unknown",
      "start_date": "2016-12-13",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-11-19 and 2016-12-13; snapshot-derived, exact date unknown"
     },
@@ -15217,10 +15217,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -15279,10 +15279,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -15341,10 +15341,10 @@
      "name_ar": "غير المنتمين",
      "name_lat": "Aucun bloc",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-10-17",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-11-19",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Démocrate",
@@ -15413,10 +15413,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -15475,10 +15475,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -15537,10 +15537,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-12-30",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2018-10-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Alliance_nationale",
@@ -15609,10 +15609,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-09-16",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -15671,10 +15671,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -15733,10 +15733,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -15795,10 +15795,10 @@
      "name_ar": "الجبهة الشعبية",
      "name_lat": "Front Populaire",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -15857,10 +15857,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-07-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2017-12-30",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_National",
@@ -15868,7 +15868,7 @@
      "name_lat": "Bloc National",
      "role": "unknown",
      "start_date": "2017-12-30",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-07-05 and 2017-12-30; snapshot-derived, exact date unknown"
     },
@@ -15939,10 +15939,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -15950,7 +15950,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -15960,7 +15960,7 @@
      "name_lat": "Bloc Al Horra du Mouvement Machrouu Tounes",
      "role": "unknown",
      "start_date": "2016-12-13",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-11-19 and 2016-12-13; snapshot-derived, exact date unknown"
     },
@@ -16031,10 +16031,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -16093,10 +16093,10 @@
      "name_ar": "الإتحاد الوطني الحر",
      "name_lat": "Union Patriotique Libre",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-10-17",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-11-19",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Mouvement_Nidaa_Tounes",
@@ -16104,7 +16104,7 @@
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
      "start_date": "2016-11-19",
-     "end_date": "2018-10-12",
+     "end_date": "2019-05-08",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-10-17 and 2016-11-19; snapshot-derived, exact date unknown"
     },
@@ -16175,10 +16175,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2017-07-05",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -16237,10 +16237,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -16299,10 +16299,10 @@
      "name_ar": "الإتحاد الوطني الحر",
      "name_lat": "Union Patriotique Libre",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-12-30",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2018-10-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Allégeance_à_la_Patrie",
@@ -16371,10 +16371,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2016-01-08",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2016-01-08 and 2016-01-08; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -16382,7 +16382,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -16453,10 +16453,10 @@
      "name_ar": "الجبهة الشعبية",
      "name_lat": "Front Populaire",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -16515,10 +16515,10 @@
      "name_ar": "الإتحاد الوطني الحر",
      "name_lat": "Union Patriotique Libre",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-12-30",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2018-10-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Alliance_nationale",
@@ -16526,7 +16526,7 @@
      "name_lat": "Alliance nationale",
      "role": "unknown",
      "start_date": "2018-10-12",
-     "end_date": "2018-10-12",
+     "end_date": "2019-05-08",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-12-30 and 2018-10-12; snapshot-derived, exact date unknown"
     },
@@ -16648,10 +16648,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -16710,10 +16710,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -16772,10 +16772,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -16834,10 +16834,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-01-08",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-02-08",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Al_Horra",
@@ -16845,7 +16845,7 @@
      "name_lat": "Bloc Al Horra",
      "role": "unknown",
      "start_date": "2016-02-08",
-     "end_date": "2016-11-19",
+     "end_date": "2016-12-13",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-01-08 and 2016-02-08; snapshot-derived, exact date unknown"
     },
@@ -16855,7 +16855,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2016-12-13",
-     "end_date": "2017-04-28",
+     "end_date": "2017-05-29",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-11-19 and 2016-12-13; snapshot-derived, exact date unknown"
     },
@@ -16865,7 +16865,7 @@
      "name_lat": "Bloc National",
      "role": "unknown",
      "start_date": "2017-05-29",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-04-28 and 2017-05-29; snapshot-derived, exact date unknown"
     },
@@ -16936,10 +16936,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -16998,10 +16998,10 @@
      "name_ar": "غير المنتمين",
      "name_lat": "Aucun bloc",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2018-10-12",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2018-10-12 and 2018-10-12; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -17111,10 +17111,10 @@
      "name_ar": "الإتحاد الوطني الحر",
      "name_lat": "Union Patriotique Libre",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-03-10",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-04-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Aucun_bloc",
@@ -17122,7 +17122,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2016-04-12",
-     "end_date": "2016-04-12",
+     "end_date": "2016-05-14",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-03-10 and 2016-04-12; snapshot-derived, exact date unknown"
     },
@@ -17132,7 +17132,7 @@
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
      "start_date": "2016-05-14",
-     "end_date": "2017-07-05",
+     "end_date": "2017-12-30",
      "dates_bracketed": true,
      "notes": "bloc change located between 2016-04-12 and 2016-05-14; snapshot-derived, exact date unknown"
     },
@@ -17142,7 +17142,7 @@
      "name_lat": "Aucun bloc",
      "role": "unknown",
      "start_date": "2017-12-30",
-     "end_date": "2017-12-30",
+     "end_date": "2018-10-12",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-07-05 and 2017-12-30; snapshot-derived, exact date unknown"
     },
@@ -17152,7 +17152,7 @@
      "name_lat": "Alliance nationale",
      "role": "unknown",
      "start_date": "2018-10-12",
-     "end_date": "2018-10-12",
+     "end_date": "2019-05-08",
      "dates_bracketed": true,
      "notes": "bloc change located between 2017-12-30 and 2018-10-12; snapshot-derived, exact date unknown"
     },
@@ -17223,10 +17223,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -17336,10 +17336,10 @@
      "name_ar": "الجبهة الشعبية",
      "name_lat": "Front Populaire",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2015-03-06",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -17398,10 +17398,10 @@
      "name_ar": "حركة نداء تونس",
      "name_lat": "Mouvement Nidaa Tounes",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2017-12-30",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2018-10-12",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Alliance_nationale",
@@ -17470,10 +17470,10 @@
      "name_ar": "غير المنتمين",
      "name_lat": "Aucun bloc",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2016-10-17",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-11-19",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     },
     {
      "source_key": "Bloc_Démocrate",
@@ -17542,10 +17542,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
+     "start_date": "2016-11-19",
      "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2016-11-19 and 2016-11-19; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],
@@ -17604,10 +17604,10 @@
      "name_ar": "حركة النهضة",
      "name_lat": "Mouvement Ennahdha",
      "role": "unknown",
-     "start_date": "2014-12-02",
-     "end_date": "2019-10-05",
-     "dates_bracketed": false,
-     "notes": ""
+     "start_date": "2015-03-06",
+     "end_date": "2016-10-17",
+     "dates_bracketed": true,
+     "notes": "bloc change located between 2015-03-06 and 2015-03-06; snapshot-derived, exact date unknown"
     }
    ],
    "committees": [],

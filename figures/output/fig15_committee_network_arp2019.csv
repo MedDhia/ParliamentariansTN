@@ -1,0 +1,185 @@
+person_id,name_lat,bloc,degree_full_graph,degree_backbone,weighted_degree_newman
+TNP-00320,Ridha Jaouadi,Independent,54,4,3.0
+TNP-00327,Salem Ketata,Democratic Bloc,54,4,3.0
+TNP-00186,Belgacem Hssan,Ennahdha,52,8,3.0
+TNP-00322,Safa Ghribi,National Bloc,52,7,3.0
+TNP-00209,Hajer Naifer,PDL,51,5,3.0
+TNP-00230,Issam Bargougui,Independent,51,5,3.0
+TNP-00249,Leila Haddad,Democratic Bloc,50,9,3.0
+TNP-00268,Mohamed Affas,Al Karama,50,9,3.0
+TNP-00259,Mariem Ben Belgacem,Ennahdha,50,6,3.0
+TNP-00315,Rabeb Ben Letaief,Ennahdha,50,6,3.0
+TNP-00349,Tarek Brahmi,Reform Bloc,50,4,3.0
+TNP-00331,Sameh Dammak,Qalb Tounes,50,10,3.0
+TNP-00205,Foued Thameur,Qalb Tounes,50,8,3.0
+TNP-00295,Mustapha Ben Ahmed,Tahya Tounes,49,5,3.0
+TNP-00194,Faiza Bouhlel,Ennahdha,48,5,3.0
+TNP-00293,Mounira Ayari,Democratic Bloc,48,11,3.0
+TNP-00300,Neji Jarahi,PDL,44,3,3.0
+TNP-00195,Faker Chouikhi,National Bloc,42,5,3.0
+TNP-00188,Chiraz Chebbi,Qalb Tounes,40,2,3.0
+TNP-00357,Yamina Zoghlami,Ennahdha,40,2,3.0
+TNP-00254,Mahbouba Ben Dhifallah,Ennahdha,40,1,3.0
+TNP-00309,Noureddine Bhiri,Ennahdha,40,1,2.0
+TNP-00200,Fathi Belgacem,Ennahdha,40,1,2.0
+TNP-00157,Abdelhamid Marzouki,Qalb Tounes,39,1,2.0
+TNP-00294,Moussa Ben Ahmed,Ennahdha,39,1,2.0
+TNP-00180,Awatef Griche Abid,PDL,39,1,2.0
+TNP-00297,Nabil Hajji,Democratic Bloc,39,1,2.0
+TNP-00226,Hussein Jenayah,Tahya Tounes,39,1,2.0
+TNP-00215,Hatem Mansi,Reform Bloc,39,2,2.0
+TNP-00220,Hedi Makni,Tahya Tounes,39,2,2.0
+TNP-00285,Mohamed Zrig,Ennahdha,39,2,2.0
+TNP-00245,Lamia Jaidane,Independent,39,2,2.0
+TNP-00271,Mohamed Bouneni,Democratic Bloc,39,2,2.0
+TNP-00310,Noussaiba Ben Ali,Ennahdha,39,2,2.0
+TNP-00217,Hayet Omri,Ennahdha,39,0,2.0
+TNP-00165,Ahmed Belgacem,Ennahdha,39,0,2.0
+TNP-00164,Adnene Ben Brahim,Independent,38,1,2.0
+TNP-00248,Lazher Chamli,Democratic Bloc,38,1,2.0
+TNP-00166,Ahmed Ben Ayed,Al Karama,38,1,2.0
+TNP-00288,Mondher Ben Attia,Al Karama,38,1,2.0
+TNP-00169,Ali Ben Aoun,Democratic Bloc,38,2,3.0
+TNP-00172,Amal Saidi,Democratic Bloc,38,2,2.0
+TNP-00185,Belgacem Darraji,Ennahdha,38,2,2.0
+TNP-00307,Nouha Jallabi,Reform Bloc,38,2,2.0
+TNP-00196,Fakhereedine Chabchoub,Reform Bloc,38,2,2.0
+TNP-00282,Mohamed Saleh Ltifi,Qalb Tounes,38,2,2.0
+TNP-00348,Souhir Askri,Independent,38,2,2.0
+TNP-00202,Faycel Tahri,Reform Bloc,38,2,2.0
+TNP-00321,Ridha Zaghmi,Democratic Bloc,38,2,2.0
+TNP-00337,Samira Sayhi,PDL,38,2,2.0
+TNP-00263,Marwa Ben Tamrout,Ennahdha,38,1,2.0
+TNP-00340,Sayida Ounissi,Ennahdha,38,1,2.0
+TNP-00275,Mohamed Hsairi,Qalb Tounes,38,1,2.0
+TNP-00287,Moncef Boughattas,Ennahdha,38,1,2.0
+TNP-00065,Ouled jebril Imed,National Bloc,38,0,2.0
+TNP-00238,Jedidi Sboui,Qalb Tounes,38,0,2.0
+TNP-00298,Naima Mansouri,Qalb Tounes,38,0,2.0
+TNP-00161,Abdesslam Ben Amara,Democratic Bloc,38,0,2.0
+TNP-00270,Mohamed Ammar,Democratic Bloc,38,0,2.0
+TNP-00204,Ferida Laabidi,Ennahdha,37,3,2.0
+TNP-00303,Nesrine Laamari,Reform Bloc,37,3,2.0
+TNP-00236,Jamila Jouini,Ennahdha,37,1,2.0
+TNP-00333,Samir Dilou,Ennahdha,37,1,2.0
+TNP-00237,Jawher Mghirbi,Qalb Tounes,37,1,2.0
+TNP-00305,Noomane El Euch,Democratic Bloc,37,1,2.0
+TNP-00250,Lilia Bellil,Reform Bloc,37,2,2.0
+TNP-00360,Zaineb Safari,PDL,37,2,2.0
+TNP-00301,Neji Jmal,Ennahdha,37,1,2.0
+TNP-00308,Noureddine Arbaoui,Ennahdha,37,1,2.0
+TNP-00304,Nidhal Saoudi,Al Karama,37,2,2.0
+TNP-00356,Wissem Chaari,PDL,37,3,2.0
+TNP-00159,Abdelmajid Ammar,Ennahdha,37,0,2.0
+TNP-00176,Amira Charfedine,National Bloc,36,4,2.0
+TNP-00260,Mariem Laghmani,Independent,36,4,2.0
+TNP-00353,Toumi Hamrouni,Ennahdha,36,4,2.0
+TNP-00362,Zied Ghanney,Democratic Bloc,36,4,2.0
+TNP-00179,Awatef Ftirich,Al Karama,36,3,2.0
+TNP-00181,Ayachi Zammal,National Bloc,36,3,2.0
+TNP-00231,Iyadh Allag,PDL,36,3,2.0
+TNP-00281,Mohamed Sadok Kahbich,Reform Bloc,36,3,2.0
+TNP-00187,Chadia Hafsouni,Qalb Tounes,36,2,2.0
+TNP-00276,Mohamed Kamel Hamzaoui,Tahya Tounes,36,2,2.0
+TNP-00338,Samira Smii,Ennahdha,36,2,2.0
+TNP-00206,Ghazi Karoui,Qalb Tounes,36,3,2.0
+TNP-00233,Jalal Zayati,Reform Bloc,36,3,2.0
+TNP-00257,Majdi Boudhina,PDL,36,3,2.0
+TNP-00334,Samira Bizig,National Bloc,36,3,2.0
+TNP-00213,Hatem Boubakri,Democratic Bloc,36,1,2.0
+TNP-00214,Hatem Karoui,Democratic Bloc,36,1,2.0
+TNP-00277,Mohamed Karim Krifa,PDL,36,0,2.0
+TNP-00170,Ali Hermassi,Reform Bloc,35,3,2.0
+TNP-00240,Kamel Habib Faraj,Democratic Bloc,35,3,2.0
+TNP-00274,Mohamed Goumani,Ennahdha,35,3,2.0
+TNP-00352,Thameur Saad,PDL,35,3,2.0
+TNP-00175,Amine Missaoui,Al Karama,35,2,2.0
+TNP-00252,Lotfi Ayadi,Democratic Bloc,35,2,2.0
+TNP-00336,Samira Hmida,Ennahdha,35,2,2.0
+TNP-00189,Chokri Belhaj Amara,Ennahdha,35,4,2.0
+TNP-00201,Faycel Derbel,Ennahdha,35,4,2.0
+TNP-00223,Hichem Ajbouni,Democratic Bloc,35,4,2.0
+TNP-00262,Marouan Falfel,Tahya Tounes,35,4,2.0
+TNP-00289,Mongi Rahoui,Independent,35,4,2.0
+TNP-00197,Fares Blel,Qalb Tounes,35,4,2.0
+TNP-00199,Fathi Ayadi,Ennahdha,35,1,2.0
+TNP-00311,Olfa Terras,Reform Bloc,35,1,2.0
+TNP-00207,Habib Ben Sid’hom,Al Karama,35,3,2.0
+TNP-00232,Iyadh Elloumi,Independent,35,3,2.0
+TNP-00246,Lassaad Hajlaoui,Democratic Bloc,35,3,2.0
+TNP-00302,Nejmeddine Ben Salem,Democratic Bloc,35,3,2.0
+TNP-00247,Latifa Habachi,Ennahdha,35,0,2.0
+TNP-00080,Abderrazek Aouidet,Democratic Bloc,34,1,2.0
+TNP-00134,badreddine gammoudi,Democratic Bloc,34,3,2.0
+TNP-00273,Mohamed Fateh Khlifi,Al Karama,34,3,2.0
+TNP-00177,Anouar Ben Chahed,Democratic Bloc,34,3,2.0
+TNP-00193,Fadhel Ouej,PDL,34,3,2.0
+TNP-00314,Oussama Sghaier,Ennahdha,34,3,2.0
+TNP-00358,Yassine Ayari,Independent,34,3,2.0
+TNP-00221,Heger Bouzemmi,Ennahdha,34,0,2.0
+TNP-00168,Ahmed Sghaier,PDL,33,3,2.0
+TNP-00210,Halima Hammami,Al Karama,33,3,2.0
+TNP-00286,Mohsen Arfaoui,Democratic Bloc,33,3,2.0
+TNP-00343,Sihem Chrigui,Qalb Tounes,33,3,2.0
+TNP-00173,Amel Ouertatani,Qalb Tounes,33,1,2.0
+TNP-00339,Sayed Ferjani,Ennahdha,33,1,2.0
+TNP-00354,Wafa Attia,Ennahdha,33,0,2.0
+TNP-00227,Ibtihej Ben Helal,Qalb Tounes,33,0,2.0
+TNP-00178,Aroua Ben Abbas,Ennahdha,32,2,2.0
+TNP-00344,Sofien Makhloufi,Democratic Bloc,32,2,2.0
+TNP-00228,Imed Khemiri,Ennahdha,32,0,2.0
+TNP-00191,Emna Ben Hmayed,Ennahdha,31,3,2.0
+TNP-00225,Houssem Moussa,Democratic Bloc,31,3,2.0
+TNP-00256,Maher Zid,Al Karama,31,3,2.0
+TNP-00359,Yosri Dali,Al Karama,31,3,2.0
+TNP-00318,Rafik Amara,Qalb Tounes,31,0,2.0
+TNP-00156,Abdallah Hrizi,Ennahdha,30,3,2.0
+TNP-00182,Ayatallah Hichri,Independent,30,3,2.0
+TNP-00192,Ezzedine Ferjani,Al Karama,30,3,2.0
+TNP-00351,Tawfik Zairi,Ennahdha,30,3,2.0
+TNP-00160,Abderrazek Hosni,PDL,30,3,2.0
+TNP-00184,Bechr Chebbi,Ennahdha,30,3,2.0
+TNP-00219,Haythem Brahem,Reform Bloc,30,3,2.0
+TNP-00224,Hichem Ben Ahmed,Tahya Tounes,30,3,2.0
+TNP-00241,Kenza Ajela,Ennahdha,30,2,2.0
+TNP-00272,Mohamed Dhiaa Ben Omar,Democratic Bloc,30,2,2.0
+TNP-00280,Mohamed Naceur Bousen,Al Karama,30,2,2.0
+TNP-00251,Lotfi Ali,Tahya Tounes,30,0,2.0
+TNP-00198,Farhat Rajhi,Democratic Bloc,29,2,2.0
+TNP-00342,Seifedine Makhlouf,Al Karama,29,2,2.0
+TNP-00366,Zouhair Makhlouf,Independent,29,2,2.0
+TNP-00183,Bechir Khelifi,Ennahdha,27,0,2.0
+TNP-00329,Salma Maalej,Democratic Bloc,25,2,2.0
+TNP-00190,Chokri Dhouibi,Democratic Bloc,21,0,1.0
+TNP-00267,Moez Belhaj Rhouma,Ennahdha,21,0,1.0
+TNP-00222,Hejer Bouhleli,Qalb Tounes,20,0,1.0
+TNP-00290,Monjia Boughanmi,Ennahdha,20,0,1.0
+TNP-00306,Nouha Aissaoui,Qalb Tounes,20,0,1.0
+TNP-00355,Walid Jalled,Tahya Tounes,20,0,1.0
+TNP-00261,Mariem Saidi,Qalb Tounes,20,0,1.0
+TNP-00283,Mohamed Skhiri,Qalb Tounes,20,0,1.0
+TNP-00363,Zied Hechmi,Al Karama,20,0,1.0
+TNP-00235,Jamila Debbech,Ennahdha,20,0,1.0
+TNP-00229,Imen Bettaieb,Independent,20,0,1.0
+TNP-00115,Dellai Ridha,Democratic Bloc,19,0,1.0
+TNP-00244,Kheireddine Zahi,Reform Bloc,19,0,1.0
+TNP-00279,Mohamed Mourad Hamzaoui,Independent,19,0,1.0
+TNP-00330,Salwa Ben Aicha,Independent,19,0,1.0
+TNP-00341,Seifeddine Mergheni,Qalb Tounes,19,0,1.0
+TNP-00312,Omar Ghribi,Al Karama,19,0,1.0
+TNP-00313,Oussama Khlifi,Qalb Tounes,19,0,1.0
+TNP-00218,Haykel Mekki,Democratic Bloc,19,0,1.0
+TNP-00292,Mounir Balti Hamdi,Qalb Tounes,19,0,1.0
+TNP-00324,Sahbi Atig,Ennahdha,18,0,1.0
+TNP-00167,Ahmed Mouha,Al Karama,18,0,1.0
+TNP-00212,Hassouna Nasfi,Reform Bloc,18,0,1.0
+TNP-00264,Mehdi Ben Gharbia,Tahya Tounes,18,0,1.0
+TNP-00296,Mustapha Gharbi,PDL,18,0,1.0
+TNP-00317,Rached Khiari,Independent,18,0,1.0
+TNP-00211,Hassen Ben Hadj Ibrahim,Qalb Tounes,17,0,1.0
+TNP-00278,Mohamed Lazher Rama,Ennahdha,17,0,1.0
+TNP-00361,Zeineb Brahmi,Ennahdha,17,0,1.0
+TNP-00234,Jamali Boudhouafi,Independent,15,0,1.0
+TNP-00243,Khaled Qsouma,Independent,14,0,1.0
+TNP-00269,Mohamed Ahmed Dalhoumi,Qalb Tounes,13,0,1.0
+TNP-00284,Mohamed Zaabi,Qalb Tounes,13,0,1.0

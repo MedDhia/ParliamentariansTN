@@ -1,0 +1,5 @@
+assembly_id,members,previous_chamber,returning_from_previous,returning_share_pct,new_to_this_chamber
+NCA-2011,217,,0,0.0,217
+ARP-2014,246,NCA-2011,31,12.6,215
+ARP-2019,216,ARP-2014,50,23.1,166
+ARP-2023,155,ARP-2019,5,3.2,150

@@ -1,0 +1,217 @@
+person_id,name_lat,bloc,plenary_attendance_rate,vote_participation_rate,gap_attendance_minus_voting
+TNP-00316,Rached Ghannouchi,Ennahdha,0.9381,0.3731,0.565
+TNP-00293,Mounira Ayari,Democratic Bloc,0.8304,0.3463,0.4841
+TNP-00255,Maher Madhioub,Ennahdha,0.6518,0.1881,0.4637
+TNP-00065,Ouled jebril Imed,National Bloc,0.9107,0.4478,0.4629
+TNP-00203,Faycel Tebini,Independent,0.8214,0.3791,0.4423
+TNP-00342,Seifedine Makhlouf,Al Karama,0.9115,0.4776,0.4339
+TNP-00190,Chokri Dhouibi,Democratic Bloc,0.7589,0.3254,0.4335
+TNP-00134,badreddine gammoudi,Democratic Bloc,0.6814,0.2567,0.4247
+TNP-00343,Sihem Chrigui,Qalb Tounes,0.7768,0.3612,0.4156
+TNP-00359,Yosri Dali,Al Karama,0.8393,0.4328,0.4065
+TNP-00363,Zied Hechmi,Al Karama,0.6964,0.2955,0.4009
+TNP-00297,Nabil Hajji,Democratic Bloc,0.9375,0.5493,0.3882
+TNP-00218,Haykel Mekki,Democratic Bloc,0.7699,0.403,0.3669
+TNP-00341,Seifeddine Mergheni,Qalb Tounes,0.6071,0.2478,0.3593
+TNP-00235,Jamila Debbech,Ennahdha,0.7589,0.4119,0.347
+TNP-00188,Chiraz Chebbi,Qalb Tounes,0.8761,0.5313,0.3448
+TNP-00249,Leila Haddad,Democratic Bloc,0.9115,0.5672,0.3443
+TNP-00281,Mohamed Sadok Kahbich,Reform Bloc,0.8393,0.4985,0.3408
+TNP-00289,Mongi Rahoui,Independent,0.7611,0.4209,0.3402
+TNP-00332,Samia Abbou,Democratic Bloc,0.9469,0.609,0.3379
+TNP-00220,Hedi Makni,Tahya Tounes,0.5804,0.2478,0.3326
+TNP-00326,Said Jaziri,Independent,0.4779,0.1701,0.3078
+TNP-00291,Mouadh Ben Dhiaf,Independent,0.7321,0.4358,0.2963
+TNP-00207,Habib Ben Sid’hom,Al Karama,0.7589,0.4657,0.2932
+TNP-00253,Mabrouk Korchid,National Bloc,0.9204,0.6299,0.2905
+TNP-00292,Mounir Balti Hamdi,Qalb Tounes,0.4911,0.206,0.2851
+TNP-00243,Khaled Qsouma,Independent,0.4107,0.1284,0.2823
+TNP-00358,Yassine Ayari,Independent,0.75,0.4687,0.2813
+TNP-00158,Abdellatif Aloui,Al Karama,0.8407,0.5672,0.2735
+TNP-00115,Dellai Ridha,Democratic Bloc,0.75,0.4806,0.2694
+TNP-00164,Adnene Ben Brahim,Independent,0.5893,0.3224,0.2669
+TNP-00174,Ameur Laraiedh,Ennahdha,0.7168,0.4507,0.2661
+TNP-00330,Salwa Ben Aicha,Independent,0.6071,0.3433,0.2638
+TNP-00356,Wissem Chaari,PDL,0.7257,0.4657,0.26
+TNP-00279,Mohamed Mourad Hamzaoui,Independent,0.9027,0.6478,0.2549
+TNP-00323,Safi Said,Independent,0.3125,0.0597,0.2528
+TNP-00325,Sahbi Smara,Independent,0.5268,0.2776,0.2492
+TNP-00364,Zied Laadhari,Independent,0.7768,0.5284,0.2484
+TNP-00280,Mohamed Naceur Bousen,Al Karama,0.6875,0.4418,0.2457
+TNP-00216,Hatem Mliki,Independent,0.7143,0.4716,0.2427
+TNP-00195,Faker Chouikhi,National Bloc,0.6786,0.4388,0.2398
+TNP-00227,Ibtihej Ben Helal,Qalb Tounes,0.7946,0.5582,0.2364
+TNP-00166,Ahmed Ben Ayed,Al Karama,0.8929,0.6567,0.2362
+TNP-00350,Tarek Fetiti,Reform Bloc,0.9196,0.6866,0.233
+TNP-00310,Noussaiba Ben Ali,Ennahdha,0.8214,0.591,0.2304
+TNP-00173,Amel Ouertatani,Qalb Tounes,0.8393,0.6119,0.2274
+TNP-00347,Souhaib Ouadhan,Reform Bloc,0.6518,0.4269,0.2249
+TNP-00275,Mohamed Hsairi,Qalb Tounes,0.5714,0.3493,0.2221
+TNP-00268,Mohamed Affas,Al Karama,0.885,0.6657,0.2193
+TNP-00304,Nidhal Saoudi,Al Karama,0.7589,0.5403,0.2186
+TNP-00340,Sayida Ounissi,Ennahdha,0.8214,0.603,0.2184
+TNP-00198,Farhat Rajhi,Democratic Bloc,0.5133,0.2955,0.2178
+TNP-00256,Maher Zid,Al Karama,0.5536,0.3373,0.2163
+TNP-00344,Sofien Makhloufi,Democratic Bloc,0.625,0.409,0.216
+TNP-00335,Samira Chaouachi,Qalb Tounes,0.9115,0.6985,0.213
+TNP-00283,Mohamed Skhiri,Qalb Tounes,0.8571,0.6448,0.2123
+TNP-00262,Marouan Falfel,Tahya Tounes,0.7589,0.5493,0.2096
+TNP-00282,Mohamed Saleh Ltifi,Qalb Tounes,0.8661,0.6627,0.2034
+TNP-00225,Houssem Moussa,Democratic Bloc,0.6071,0.409,0.1981
+TNP-00266,Miled Ben Dali,Independent,0.6786,0.4836,0.195
+TNP-00353,Toumi Hamrouni,Ennahdha,0.85,0.6563,0.1937
+TNP-00309,Noureddine Bhiri,Ennahdha,0.8761,0.6836,0.1925
+TNP-00317,Rached Khiari,Independent,0.3929,0.203,0.1899
+TNP-00215,Hatem Mansi,Reform Bloc,0.8839,0.6955,0.1884
+TNP-00208,Hafedh Zouari,Reform Bloc,0.7411,0.5552,0.1859
+TNP-00334,Samira Bizig,National Bloc,0.7768,0.591,0.1858
+TNP-00270,Mohamed Ammar,Democratic Bloc,0.9018,0.7164,0.1854
+TNP-00313,Oussama Khlifi,Qalb Tounes,0.9027,0.7194,0.1833
+TNP-00300,Neji Jarahi,PDL,0.6637,0.4806,0.1831
+TNP-00172,Amal Saidi,Democratic Bloc,0.8125,0.6299,0.1826
+TNP-00213,Hatem Boubakri,Democratic Bloc,0.6161,0.4388,0.1773
+TNP-00273,Mohamed Fateh Khlifi,Al Karama,0.6071,0.4328,0.1743
+TNP-00254,Mahbouba Ben Dhifallah,Ennahdha,0.875,0.7045,0.1705
+TNP-00245,Lamia Jaidane,Independent,0.6991,0.5313,0.1678
+TNP-00205,Foued Thameur,Qalb Tounes,0.9018,0.7343,0.1675
+TNP-00182,Ayatallah Hichri,Independent,0.7679,0.603,0.1649
+TNP-00295,Mustapha Ben Ahmed,Tahya Tounes,0.9115,0.7493,0.1622
+TNP-00212,Hassouna Nasfi,Reform Bloc,0.9735,0.8119,0.1616
+TNP-00184,Bechr Chebbi,Ennahdha,0.8304,0.6746,0.1558
+TNP-00298,Naima Mansouri,Qalb Tounes,0.8036,0.6507,0.1529
+TNP-00244,Kheireddine Zahi,Reform Bloc,0.8319,0.6806,0.1513
+TNP-00169,Ali Ben Aoun,Democratic Bloc,0.5044,0.3552,0.1492
+TNP-00230,Issam Bargougui,Independent,0.8125,0.6687,0.1438
+TNP-00328,Salem Labiadh,Democratic Bloc,0.5446,0.403,0.1416
+TNP-00228,Imed Khemiri,Ennahdha,0.9735,0.8328,0.1407
+TNP-00319,Ridha Charfeddine,National Bloc,0.5625,0.4239,0.1386
+TNP-00365,Zouhair Maghzaoui,Democratic Bloc,0.7857,0.6478,0.1379
+TNP-00288,Mondher Ben Attia,Al Karama,0.8393,0.7045,0.1348
+TNP-00349,Tarek Brahmi,Reform Bloc,0.8496,0.7164,0.1332
+TNP-00165,Ahmed Belgacem,Ennahdha,0.6339,0.5015,0.1324
+TNP-00210,Halima Hammami,Al Karama,0.7965,0.6657,0.1308
+TNP-00339,Sayed Ferjani,Ennahdha,0.8929,0.7642,0.1287
+TNP-00168,Ahmed Sghaier,PDL,0.7522,0.6239,0.1283
+TNP-00181,Ayachi Zammal,National Bloc,0.9204,0.794,0.1264
+TNP-00322,Safa Ghribi,National Bloc,0.7699,0.6448,0.1251
+TNP-00163,Adnane Hajji,Independent,0.8496,0.7254,0.1242
+TNP-00192,Ezzedine Ferjani,Al Karama,0.6696,0.5463,0.1233
+TNP-00324,Sahbi Atig,Ennahdha,0.9286,0.806,0.1226
+TNP-00306,Nouha Aissaoui,Qalb Tounes,0.5,0.3821,0.1179
+TNP-00345,Sofien Toubel,Qalb Tounes,0.75,0.6328,0.1172
+TNP-00167,Ahmed Mouha,Al Karama,0.7589,0.6448,0.1141
+TNP-00348,Souhir Askri,Independent,0.8053,0.6955,0.1098
+TNP-00175,Amine Missaoui,Al Karama,0.7965,0.6955,0.101
+TNP-00201,Faycel Derbel,Ennahdha,0.8761,0.7791,0.097
+TNP-00242,Khaled Krichi,Democratic Bloc,0.7257,0.6299,0.0958
+TNP-00252,Lotfi Ayadi,Democratic Bloc,0.7788,0.6836,0.0952
+TNP-00286,Mohsen Arfaoui,Democratic Bloc,0.8673,0.7731,0.0942
+TNP-00366,Zouhair Makhlouf,Independent,0.9027,0.8119,0.0908
+TNP-00327,Salem Ketata,Democratic Bloc,0.885,0.797,0.088
+TNP-00355,Walid Jalled,Tahya Tounes,0.5982,0.5104,0.0878
+TNP-00209,Hajer Naifer,PDL,0.6991,0.6119,0.0872
+TNP-00247,Latifa Habachi,Ennahdha,0.8407,0.7552,0.0855
+TNP-00311,Olfa Terras,Reform Bloc,0.5,0.4149,0.0851
+TNP-00170,Ali Hermassi,Reform Bloc,0.6339,0.5493,0.0846
+TNP-00301,Neji Jmal,Ennahdha,0.8661,0.7821,0.084
+TNP-00238,Jedidi Sboui,Qalb Tounes,0.7522,0.6716,0.0806
+TNP-00105,Sami Ben Abdelaali,Reform Bloc,0.6429,0.5642,0.0787
+TNP-00226,Hussein Jenayah,Tahya Tounes,0.6991,0.6239,0.0752
+TNP-00080,Abderrazek Aouidet,Democratic Bloc,0.9735,0.8985,0.075
+TNP-00259,Mariem Ben Belgacem,Ennahdha,0.875,0.8,0.075
+TNP-00223,Hichem Ajbouni,Democratic Bloc,0.8142,0.7403,0.0739
+TNP-00251,Lotfi Ali,Tahya Tounes,0.3661,0.2925,0.0736
+TNP-00261,Mariem Saidi,Qalb Tounes,0.8407,0.7672,0.0735
+TNP-00258,Majdi Kerbai,Democratic Bloc,0.4107,0.3373,0.0734
+TNP-00237,Jawher Mghirbi,Qalb Tounes,0.8214,0.7493,0.0721
+TNP-00246,Lassaad Hajlaoui,Democratic Bloc,0.823,0.7522,0.0708
+TNP-00360,Zaineb Safari,PDL,0.6071,0.5403,0.0668
+TNP-00274,Mohamed Goumani,Ennahdha,0.8839,0.8179,0.066
+TNP-00176,Amira Charfedine,National Bloc,0.6991,0.6358,0.0633
+TNP-00161,Abdesslam Ben Amara,Democratic Bloc,0.8304,0.7701,0.0603
+TNP-00260,Mariem Laghmani,Independent,0.6786,0.6209,0.0577
+TNP-00162,Abir Moussi,PDL,0.8053,0.7493,0.056
+TNP-00204,Ferida Laabidi,Ennahdha,0.7257,0.6716,0.0541
+TNP-00264,Mehdi Ben Gharbia,Tahya Tounes,0.4643,0.4119,0.0524
+TNP-00240,Kamel Habib Faraj,Democratic Bloc,0.6964,0.6478,0.0486
+TNP-00318,Rafik Amara,Qalb Tounes,0.8929,0.8448,0.0481
+TNP-00329,Salma Maalej,Democratic Bloc,0.8085,0.7605,0.048
+TNP-00217,Hayet Omri,Ennahdha,0.823,0.7791,0.0439
+TNP-00233,Jalal Zayati,Reform Bloc,0.8304,0.7881,0.0423
+TNP-00305,Noomane El Euch,Democratic Bloc,0.8142,0.7731,0.0411
+TNP-00331,Sameh Dammak,Qalb Tounes,0.7788,0.7403,0.0385
+TNP-00265,Mekki Zaghdoud,Independent,0.5089,0.4716,0.0373
+TNP-00352,Thameur Saad,PDL,0.7257,0.6896,0.0361
+TNP-00236,Jamila Jouini,Ennahdha,0.8839,0.8507,0.0332
+TNP-00357,Yamina Zoghlami,Ennahdha,0.9107,0.8806,0.0301
+TNP-00299,Naoufel Jammali,Ennahdha,0.7946,0.7672,0.0274
+TNP-00351,Tawfik Zairi,Ennahdha,0.8496,0.8239,0.0257
+TNP-00239,Kamel Aouadi,National Bloc,0.5625,0.5373,0.0252
+TNP-00250,Lilia Bellil,Reform Bloc,0.8214,0.8,0.0214
+TNP-00234,Jamali Boudhouafi,Independent,0.8496,0.8299,0.0197
+TNP-00321,Ridha Zaghmi,Democratic Bloc,0.8571,0.8388,0.0183
+TNP-00219,Haythem Brahem,Reform Bloc,0.8125,0.797,0.0155
+TNP-00277,Mohamed Karim Krifa,PDL,0.6814,0.6687,0.0127
+TNP-00199,Fathi Ayadi,Ennahdha,0.8214,0.809,0.0124
+TNP-00314,Oussama Sghaier,Ennahdha,0.8482,0.8358,0.0124
+TNP-00202,Faycel Tahri,Reform Bloc,0.8761,0.8657,0.0104
+TNP-00180,Awatef Griche Abid,PDL,0.7757,0.7655,0.0102
+TNP-00171,Ali Tayachi,PDL,0.7522,0.7433,0.0089
+TNP-00232,Iyadh Elloumi,Independent,0.8036,0.8,0.0036
+TNP-00186,Belgacem Hssan,Ennahdha,0.9646,0.9612,0.0034
+TNP-00312,Omar Ghribi,Al Karama,0.646,0.6448,0.0012
+TNP-00206,Ghazi Karoui,Qalb Tounes,0.6607,0.6597,0.001
+TNP-00179,Awatef Ftirich,Al Karama,0.6964,0.6955,0.0009
+TNP-00337,Samira Sayhi,PDL,0.7699,0.7701,-0.0002
+TNP-00189,Chokri Belhaj Amara,Ennahdha,0.7946,0.797,-0.0024
+TNP-00185,Belgacem Darraji,Ennahdha,0.9204,0.9254,-0.005
+TNP-00267,Moez Belhaj Rhouma,Ennahdha,0.7946,0.8,-0.0054
+TNP-00284,Mohamed Zaabi,Qalb Tounes,0.5982,0.606,-0.0078
+TNP-00194,Faiza Bouhlel,Ennahdha,0.9018,0.9104,-0.0086
+TNP-00303,Nesrine Laamari,Reform Bloc,0.8142,0.8239,-0.0097
+TNP-00183,Bechir Khelifi,Ennahdha,0.6339,0.6448,-0.0109
+TNP-00362,Zied Ghanney,Democratic Bloc,0.5893,0.603,-0.0137
+TNP-00257,Majdi Boudhina,PDL,0.7788,0.794,-0.0152
+TNP-00302,Nejmeddine Ben Salem,Democratic Bloc,0.8407,0.8567,-0.016
+TNP-00315,Rabeb Ben Letaief,Ennahdha,0.8482,0.8657,-0.0175
+TNP-00361,Zeineb Brahmi,Ennahdha,0.8319,0.8507,-0.0188
+TNP-00229,Imen Bettaieb,Independent,0.8036,0.8239,-0.0203
+TNP-00276,Mohamed Kamel Hamzaoui,Tahya Tounes,0.1339,0.1552,-0.0213
+TNP-00193,Fadhel Ouej,PDL,0.6991,0.7224,-0.0233
+TNP-00269,Mohamed Ahmed Dalhoumi,Qalb Tounes,0.5804,0.609,-0.0286
+TNP-00197,Fares Blel,Qalb Tounes,0.7411,0.7731,-0.032
+TNP-00294,Moussa Ben Ahmed,Ennahdha,0.7589,0.791,-0.0321
+TNP-00211,Hassen Ben Hadj Ibrahim,Qalb Tounes,0.6161,0.6507,-0.0346
+TNP-00354,Wafa Attia,Ennahdha,0.8214,0.8567,-0.0353
+TNP-00271,Mohamed Bouneni,Democratic Bloc,0.7345,0.7701,-0.0356
+TNP-00241,Kenza Ajela,Ennahdha,0.8036,0.8418,-0.0382
+TNP-00231,Iyadh Allag,PDL,0.708,0.7463,-0.0383
+TNP-00285,Mohamed Zrig,Ennahdha,0.8304,0.8687,-0.0383
+TNP-00346,Sonia Lekhchine,Tahya Tounes,0.5179,0.5612,-0.0433
+TNP-00191,Emna Ben Hmayed,Ennahdha,0.8482,0.8925,-0.0443
+TNP-00333,Samir Dilou,Ennahdha,0.885,0.9343,-0.0493
+TNP-00224,Hichem Ben Ahmed,Tahya Tounes,0.7411,0.791,-0.0499
+TNP-00196,Fakhereedine Chabchoub,Reform Bloc,0.6786,0.7313,-0.0527
+TNP-00187,Chadia Hafsouni,Qalb Tounes,0.8036,0.8597,-0.0561
+TNP-00157,Abdelhamid Marzouki,Qalb Tounes,0.8661,0.9224,-0.0563
+TNP-00160,Abderrazek Hosni,PDL,0.6903,0.7522,-0.0619
+TNP-00338,Samira Smii,Ennahdha,0.875,0.9403,-0.0653
+TNP-00290,Monjia Boughanmi,Ennahdha,0.9167,1.0,-0.0833
+TNP-00200,Fathi Belgacem,Ennahdha,0.8407,0.9254,-0.0847
+TNP-00177,Anouar Ben Chahed,Democratic Bloc,0.5752,0.6746,-0.0994
+TNP-00263,Marwa Ben Tamrout,Ennahdha,0.8393,0.9403,-0.101
+TNP-00159,Abdelmajid Ammar,Ennahdha,0.8496,0.9522,-0.1026
+TNP-00320,Ridha Jaouadi,Independent,0.8304,0.9343,-0.1039
+TNP-00296,Mustapha Gharbi,PDL,0.469,0.5791,-0.1101
+TNP-00214,Hatem Karoui,Democratic Bloc,0.7321,0.8448,-0.1127
+TNP-00178,Aroua Ben Abbas,Ennahdha,0.7946,0.9254,-0.1308
+TNP-00156,Abdallah Hrizi,Ennahdha,0.6726,0.806,-0.1334
+TNP-00272,Mohamed Dhiaa Ben Omar,Democratic Bloc,0.625,0.7612,-0.1362
+TNP-00336,Samira Hmida,Ennahdha,0.8393,0.9761,-0.1368
+TNP-00248,Lazher Chamli,Democratic Bloc,0.6429,0.794,-0.1511
+TNP-00287,Moncef Boughattas,Ennahdha,0.7965,0.9493,-0.1528
+TNP-00307,Nouha Jallabi,Reform Bloc,0.5638,0.7186,-0.1548
+TNP-00308,Noureddine Arbaoui,Ennahdha,0.6786,0.8537,-0.1751
+TNP-00222,Hejer Bouhleli,Qalb Tounes,0.7317,0.907,-0.1753
+TNP-00278,Mohamed Lazher Rama,Ennahdha,0.7411,0.9194,-0.1783
+TNP-00221,Heger Bouzemmi,Ennahdha,0.7679,0.9821,-0.2142

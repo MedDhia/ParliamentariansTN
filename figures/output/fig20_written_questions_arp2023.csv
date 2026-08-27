@@ -1,0 +1,155 @@
+rank,person_id,name_lat,written_questions
+1,TNP-00032,Mohamed Ali Fennira,201
+2,TNP-00030,Mahmoud El Amri,199
+3,TNP-00152,Ahmed Saidani,199
+4,TNP-00144,Nouri Jridi,169
+5,TNP-00133,Basma Hammami,151
+6,TNP-00153,Ahmed Bannour,149
+7,TNP-00052,Fayçal Sghaier,146
+8,TNP-00122,Hassen Jarboui,144
+9,TNP-00002,Youssef Toumi,141
+10,TNP-00076,Abdelaziz Chaabani,140
+11,TNP-00077,Abdessalem Dahmani,138
+12,TNP-00010,Nourelhouda Sbaiti,132
+13,TNP-00089,Dhouha Selmi,130
+14,TNP-00008,Hela Jaballa,109
+15,TNP-00060,Ghassen Yamoun,107
+16,TNP-00026,Mariem Cherif,106
+17,TNP-00126,Hatem Labbaoui,105
+18,TNP-00110,Rym Sghaier,104
+19,TNP-00084,Adel Dhief,95
+20,TNP-00009,Noura Chabrak,92
+21,TNP-00019,Manel Bdida,88
+22,TNP-00006,Walid Hajji,87
+23,TNP-00058,Msedi Fatma,84
+24,TNP-00150,Tahar Ben Mansour,84
+25,TNP-00094,Sabeur Masmoudi,81
+26,TNP-00151,Asma Derouiche,81
+27,TNP-00070,Issam Bahri Jebri,77
+28,TNP-00013,Najla Lahiani,75
+29,TNP-00136,Bedis Belhadj Ali,72
+30,TNP-00031,Mohamed Mejdi,71
+31,TNP-00012,Nejib Akremi,68
+32,TNP-00040,Mohamed Amine Ouerghi,68
+33,TNP-00128,Jalel khedmi,63
+34,TNP-00042,Mohamed Elhedi Allani,60
+35,TNP-00125,Houssem Mahjoub,60
+36,TNP-00146,Mokhtar Abdelmoula,59
+37,TNP-00064,Ammar Idoudi,58
+38,TNP-00101,Sonia Ben Mabrouk,58
+39,TNP-00016,Maha Ameur,57
+40,TNP-00025,Messaoud Grira,57
+41,TNP-00114,Ramzi Chetoui,57
+42,TNP-00061,Awatef Cheniti,54
+43,TNP-00098,Cyrine Boussandel,54
+44,TNP-00102,Sofien Ben hlima,52
+45,TNP-00028,Mokhtar Ifaoui,51
+46,TNP-00011,Nizar Seddik,49
+47,TNP-00062,Amor Ben Amor,48
+48,TNP-00138,Aymen Ben Salah,48
+49,TNP-00071,Aziz Ben Lakhdher,47
+50,TNP-00096,Chokri Ben Bahri,46
+51,TNP-00113,Raouf Fekiri,46
+52,TNP-00142,Amel Meddeb,45
+53,TNP-00024,Mustapha Boubakri,44
+54,TNP-00039,Mohamed Amine Mbarki,44
+55,TNP-00081,Abdelhalim  Boussema,44
+56,TNP-00029,Mahmoud Chalghaf,42
+57,TNP-00027,Mourad khezami,41
+58,TNP-00109,Rim Maachaoui,41
+59,TNP-00048,Lotfi Hammami,40
+60,TNP-00135,Boutheina Ghanmi,40
+61,TNP-00108,Zina Jiballah,39
+62,TNP-00065,Ouled jebril Imed,38
+63,TNP-00055,Fakhreddine Fadhloun,37
+64,TNP-00083,Abdel jalil El Heni,35
+65,TNP-00066,Imededdine Sdiri,34
+66,TNP-00074,Abdelkader Ammar,34
+67,TNP-00057,Fethi Mechrgui,32
+68,TNP-00099,Sirine Mrabet,32
+69,TNP-00104,Sami Rais,31
+70,TNP-00143,Ilyes Boukoucha,31
+71,TNP-00140,Aymen Boughdiri,30
+72,TNP-00149,Taïeb Talbi,30
+73,TNP-00033,Mohamed Ali,29
+74,TNP-00035,Mohamed Chaabani,29
+75,TNP-00050,Kamel Keraani,28
+76,TNP-00127,Hatem Houaoui,28
+77,TNP-00130,Thabet Abed,28
+78,TNP-00154,Brahim Ben hsine,27
+79,TNP-00015,Nabil Hamdi,26
+80,TNP-00147,Olfa Marouani,26
+81,TNP-00117,khaled Hakim Mabrouki,25
+82,TNP-00067,Ali Zaghdoud,24
+83,TNP-00139,Aymen Maraoui,24
+84,TNP-00116,Rochdi Rouissi,23
+85,TNP-00023,Moez Riahi,22
+86,TNP-00038,Mohamed Ben Hassine,22
+87,TNP-00097,Ezzedine Zaafouri,22
+88,TNP-00119,Hamdi Ben Abdelali,22
+89,TNP-00043,mohamed Ahmed,21
+90,TNP-00017,Mounir Kammouni,20
+91,TNP-00069,Issam Chouchen,20
+92,TNP-00131,Boubaker Ben Yahya,20
+93,TNP-00145,Channoufi Naceur,20
+94,TNP-00106,Sami Essaied,19
+95,TNP-00129,Thameur Mazhoud,19
+96,TNP-00134,badreddine gammoudi,19
+97,TNP-00053,Faouzi Daas,18
+98,TNP-00004,yassine Mami,17
+99,TNP-00079,Abdessattar Zarai,17
+100,TNP-00124,Hassen Ben Ali,17
+101,TNP-00137,Aymen Negra,17
+102,TNP-00078,Abdessalem Hamrouni,16
+103,TNP-00034,Mohamed Dhaw,15
+104,TNP-00088,Tarek Rebai,15
+105,TNP-00112,Riadh Blel,15
+106,TNP-00037,Mohamed Ben Said,14
+107,TNP-00086,dhafer Sghiri,14
+108,TNP-00005,Yasser Grari,13
+109,TNP-00049,Lotfi Saadaoui,13
+110,TNP-00054,Fakhri Abdelkhalek,13
+111,TNP-00087,Tarek Mehdi,13
+112,TNP-00107,Sami Hadj Amor,13
+113,TNP-00047,Majda Ouerghi,12
+114,TNP-00051,Kamel Farrah,12
+115,TNP-00056,Fethi Rjeb,12
+116,TNP-00080,Abderrazek Aouidet,12
+117,TNP-00092,Salah Sayadi,12
+118,TNP-00095,Sabeur Jelassi,12
+119,TNP-00036,Mohamed Zied El Maher,11
+120,TNP-00068,Ali Bouzouzia,11
+121,TNP-00090,Slah ferchichi,11
+122,TNP-00093,Salah Selmi,11
+123,TNP-00132,Bilel Ibn El Mechri,11
+124,TNP-00073,Adnen Allouche,10
+125,TNP-00100,Sawsen Mabrouk,10
+126,TNP-00118,Hamza Bidhiafi,10
+127,TNP-00014,Nabih Thabet,9
+128,TNP-00041,Mohamed Yahyaoui,9
+129,TNP-00141,Anouar Marzouki,9
+130,TNP-00003,Yosri Baouab,8
+131,TNP-00007,Hichem Hosni,8
+132,TNP-00018,Moncef Maaloul,8
+133,TNP-00021,Moez Ben Youssef,8
+134,TNP-00045,Maher Boubaker Hadhri,8
+135,TNP-00020,Melik Kammoun,7
+136,TNP-00044,Mohsen Hermi,6
+137,TNP-00072,Ezzeddine Tayeb,6
+138,TNP-00103,Sami Toujani,6
+139,TNP-00148,Fadhel Ben Torkia,6
+140,TNP-00001,Youssef Tarchoun,5
+141,TNP-00059,Faten Ncibi,5
+142,TNP-00121,Hammadi Ghilani,5
+143,TNP-00123,Hassen Boussama,5
+144,TNP-00063,Amor Barhoumi,4
+145,TNP-00082,Abdelhafedh Louhichi,4
+146,TNP-00120,Hamdi Ben Salah,4
+147,TNP-00022,Moez Barkallah,3
+148,TNP-00091,Salah Mbarki,3
+149,TNP-00046,Maher Ketari,1
+150,TNP-00075,Abdelkader Ben Zineb,1
+151,TNP-00085,Adel Bousselmi,1
+152,TNP-00105,Sami Ben Abdelaali,1
+153,TNP-00111,Jaidane Riadh,1
+154,TNP-00115,Dellai Ridha,1

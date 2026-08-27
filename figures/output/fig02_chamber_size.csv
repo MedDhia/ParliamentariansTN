@@ -1,0 +1,18 @@
+assembly_id,name_en,start_date,end_date,seats_nominal,electoral_system
+ANC-1956,National Constituent Assembly,1956-04-08,1959-06-01,98,Closed-list plurality (bloc vote) in multi-member constituencies; the Front National list won all seats
+NA-1959,National Assembly,1959-11-08,1964-11-08,90,Closed-list plurality (bloc vote); Neo-Destour won all 90 seats
+NA-1964,National Assembly,1964-11-08,1969-11-02,101,Closed-list plurality (bloc vote); the Socialist Destourian Party won all 101 seats
+NA-1969,National Assembly,1969-11-02,1974-11-03,101,Closed-list plurality (bloc vote); single-party return
+NA-1974,National Assembly,1974-11-03,1979-11-04,112,Closed-list plurality (bloc vote); single-party return
+NA-1979,National Assembly,1979-11-04,1981-11-01,121,Closed-list plurality (bloc vote); single-party return
+COD-1981,Chamber of Deputies,1981-11-01,1986-11-02,136,Closed-list plurality (bloc vote); the PSD-led National Front took all 136 seats
+COD-1986,Chamber of Deputies,1986-11-02,1989-04-02,125,Closed-list plurality (bloc vote); opposition boycott left all 125 seats to the PSD
+COD-1989,Chamber of Deputies,1989-04-02,1994-03-20,141,Closed-list plurality (bloc vote); the RCD took all 141 seats
+COD-1994,Chamber of Deputies,1994-03-20,1999-10-24,163,144 seats by bloc vote plus 19 seats distributed nationally to losing opposition lists
+COD-1999,Chamber of Deputies,1999-10-24,2004-10-24,182,148 seats by bloc vote plus 34 compensatory seats for opposition lists
+COD-2004,Chamber of Deputies,2004-10-24,2009-10-25,189,152 seats by bloc vote plus 37 compensatory seats for opposition lists
+COD-2009,Chamber of Deputies,2009-10-25,2011-03-23,214,161 seats by bloc vote plus 53 compensatory seats for opposition lists
+NCA-2011,National Constituent Assembly,2011-11-22,2014-12-01,217,"Closed-list proportional representation with largest remainder (Hare quota) in 33 constituencies, six of them out-of-country; vertical parity required on lists"
+ARP-2014,Assembly of the Representatives of the People,2014-12-02,2019-10-05,217,"Closed-list proportional representation with largest remainder in 33 constituencies, six out-of-country; vertical parity required"
+ARP-2019,Assembly of the Representatives of the People,2019-11-13,2021-07-25,217,"Closed-list proportional representation with largest remainder in 33 constituencies, six out-of-country"
+ARP-2023,Assembly of the Representatives of the People,2023-03-13,,161,"Two-round majoritarian in 161 single-member constituencies; candidates stand as individuals, not on party lists"

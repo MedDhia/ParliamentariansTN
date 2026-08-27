@@ -151,6 +151,7 @@ def build_bloc_spells(
     """
     spells: dict[str, list[dict[str, Any]]] = defaultdict(list)
     last_seen_date: dict[str, str] = {}
+    baseline_date = observations[0][0] if observations else ""
 
     for capture_date, roster in observations:
         for slug, attrs in roster.items():
@@ -159,23 +160,41 @@ def build_bloc_spells(
                 continue
             current = spells[slug][-1] if spells.get(slug) else None
             if current is None:
+                # A member present in the FIRST capture was seated at the start of
+                # the term, so their opening bloc is dated to the first sitting —
+                # blocs were constituted then. A member who first appears in a
+                # later capture is a mid-term replacement, and dating their bloc
+                # membership to the first sitting would credit them with up to
+                # four years they did not serve (and would push the chamber's
+                # reconstructed size above its seat count in the opening month).
+                joined_at_start = capture_date == baseline_date
                 spells[slug].append({
                     "name_ar": bloc,
                     "groupe_id": attrs.get("groupe_id", ""),
-                    # The first capture postdates the chamber's first sitting;
-                    # a member's opening bloc is attributed to the sitting date
-                    # because blocs were constituted at the term's start.
-                    "start_date": FIRST_SITTING,
-                    "start_date_earliest": FIRST_SITTING,
+                    "start_date": FIRST_SITTING if joined_at_start else capture_date,
+                    "start_date_earliest": FIRST_SITTING if joined_at_start
+                    else last_seen_date.get(slug, capture_date),
                     "first_observed": capture_date,
                     "last_observed": capture_date,
                     "end_date": "",
-                    "dates_bracketed": False,
+                    # A replacement's true arrival lies somewhere between the
+                    # previous capture and this one, so the boundary is bracketed.
+                    "dates_bracketed": not joined_at_start,
                 })
             elif current["name_ar"] != bloc:
                 previous_observation = last_seen_date.get(slug, current["last_observed"])
-                current["end_date"] = previous_observation
-                current["end_date_latest"] = capture_date
+                # Close the outgoing spell where the incoming one starts, so a
+                # member's spells tile their service without gaps. Ending it at
+                # the last *observation* instead would leave the member in no
+                # bloc at all for the length of the capture gap — up to nine
+                # months here — which is a false claim, not a cautious one. The
+                # genuine uncertainty is that the change happened somewhere in
+                # (previous_observation, capture_date]; that interval is recorded
+                # in end_date_earliest / start_date_earliest and flagged
+                # dates_bracketed.
+                current["end_date"] = capture_date
+                current["end_date_earliest"] = previous_observation
+                current["dates_bracketed"] = True
                 spells[slug].append({
                     "name_ar": bloc,
                     "groupe_id": attrs.get("groupe_id", ""),
@@ -190,10 +209,20 @@ def build_bloc_spells(
                 current["last_observed"] = capture_date
             last_seen_date[slug] = capture_date
 
-    # close the final spell of every member at the end of the term
+    # Close each member's final spell. Only a member still present in the LAST
+    # capture served to the end of the term; one who stops appearing was
+    # replaced, and closing their spell at the term's end would keep them in the
+    # chamber for years after they left (and push the reconstructed chamber above
+    # its seat count in the closing months).
+    final_date = observations[-1][0] if observations else ""
     for slug, member_spells in spells.items():
-        if member_spells and not member_spells[-1]["end_date"]:
-            member_spells[-1]["end_date"] = TERM_END
+        if not member_spells or member_spells[-1]["end_date"]:
+            continue
+        last_spell = member_spells[-1]
+        served_to_end = last_seen_date.get(slug) == final_date
+        last_spell["end_date"] = TERM_END if served_to_end else last_spell["last_observed"]
+        if not served_to_end:
+            last_spell["dates_bracketed"] = True
     return spells
 
 
