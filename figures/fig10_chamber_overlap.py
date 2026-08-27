@@ -1,9 +1,12 @@
 """Figure 10 — Shared members between every pair of chambers.
 
-Figure 9 counts only consecutive chambers. This one gives all pairs, which is
-where the non-obvious cases live: members who sat in 2011 and again in 2019 while
-skipping 2014, for instance, are invisible in a consecutive-pairs view but are
-exactly the pattern an elite-return argument cares about.
+Figure 9 counts only consecutive chambers. This one gives all pairs, so the
+non-consecutive overlaps are visible at all.
+
+A caution the matrix itself cannot carry: a pairwise cell is not a skip count. The
+2011 × 2019 cell reads 13, but 12 of those 13 also sat in 2014 — only one member
+actually left and returned. Read pairwise cells as "sat in both", and compute
+skip-a-chamber patterns from `mandates.csv` if that is the argument.
 
 Form: a symmetric matrix as a heatmap, one hue light-to-dark, with the count in
 every cell so nothing is encoded by colour alone. The diagonal carries each
@@ -65,8 +68,10 @@ def main() -> None:
                                    color=S.CHROME["deemph"], linewidth=0, zorder=2))
 
     ax.set_xticks(range(n))
-    ax.set_xticklabels([S.label(LBL.assembly_wrapped(c)) for c in chambers],
-                       fontsize=7.4, linespacing=1.25)
+    # Rotated rather than wrapped: "Constituent 1956" is wider than its column,
+    # so a horizontal label — wrapped or not — runs into its neighbours.
+    ax.set_xticklabels([S.label(LBL.assembly(c)) for c in chambers],
+                       fontsize=7.4, rotation=38, ha="right")
     ax.set_yticks(range(n))
     ax.set_yticklabels([S.label(LBL.assembly(c)) for c in chambers], fontsize=7.6)
 
@@ -100,9 +105,11 @@ def main() -> None:
         "Members shared between chambers",
         "Every pair, not just consecutive ones. Grey diagonal = the chamber's own recorded "
         "size.\n“·” means no member in common. Chambers with fewer than two recorded members "
-        "are omitted.",
+        "are omitted.\nA cell counts members who sat in both, not members who skipped what "
+        "lies between: 12 of the 13\nin 2011 × 2019 also sat in 2014.",
     )
-    S.source_note(fig, "ParliamentariansTN · data/processed/mandates.csv")
+    # Clear of the rotated tick labels.
+    S.source_note(fig, "ParliamentariansTN · data/processed/mandates.csv", y=-0.10)
 
     table = []
     for i, a in enumerate(chambers):

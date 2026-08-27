@@ -51,13 +51,19 @@ def main() -> None:
 
     lo, hi = min(years), max(years)
     bins = range(lo - lo % 5, hi + 6, 5)
-    ax.hist(years, bins=list(bins), color=blue, linewidth=0)
+    # A hairline of surface between bins: adjacency is meaningful here, so the
+    # bars stay contiguous, but the boundaries should still be visible.
+    ax.hist(years, bins=list(bins), color=blue,
+            edgecolor=S.CHROME["surface"], linewidth=1.0)
 
     ax.axvline(median_year, color=S.CHROME["muted"], linewidth=1.0, zorder=3)
+    # Headroom, then the callout above the bars. Placed at the top of the axes it
+    # landed inside the two tallest bins, as grey text on a blue fill.
+    ax.set_ylim(0, ax.get_ylim()[1] * 1.30)
     ax.annotate(
         f"median birth year {median_year:.0f}\n"
         f"({FIRST_SITTING_YEAR - median_year:.0f} years old at the first sitting)",
-        xy=(median_year, ax.get_ylim()[1]), xytext=(7, -8),
+        xy=(median_year, ax.get_ylim()[1]), xytext=(7, -6),
         textcoords="offset points", ha="left", va="top", fontsize=7.8,
         color=S.CHROME["text_secondary"], linespacing=1.35,
     )

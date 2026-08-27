@@ -1,7 +1,9 @@
 """Figure 13 — Who moved where: bloc-to-bloc transitions, 2014–2019 chamber.
 
-108 of the chamber's 246 members changed bloc at least once. This is where they
-went: rows are the bloc left, columns the bloc joined, cells the number of moves.
+108 of the 238 members whose bloc history is recorded changed bloc at least once.
+This is where they went: rows are the bloc left, columns the bloc joined, cells
+the number of moves. The denominator is 238 rather than the chamber's 246
+mandates because eight members appear in no capture's bloc list at all.
 
 Form: a matrix heatmap with counts in every cell. A chord or Sankey diagram is
 the tempting choice for flows, but with 15 blocs and a long tail of one-off moves
@@ -102,7 +104,10 @@ def main() -> None:
         f"({n_hidden_moves} moves). Timing is bracketed to the interval between web "
         "captures; the counts are not.",
     )
-    S.source_note(fig, "ParliamentariansTN · bloc_memberships.csv × blocs.csv")
+    # Below the rotated tick labels and the x-axis label, both of which hang well
+    # past the axes here; at the default y the note lands on top of them.
+    S.source_note(fig, "ParliamentariansTN · bloc_memberships.csv × blocs.csv",
+                  y=-0.16)
 
     S.save(fig, "fig13_bloc_switching_arp2014", [
         {"bloc_left": src, "bloc_joined": dst, "moves": count}

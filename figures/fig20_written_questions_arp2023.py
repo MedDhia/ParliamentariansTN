@@ -1,8 +1,15 @@
 """Figure 20 — Written questions filed, chamber elected in 2023.
 
-Oversight activity, and the most unequal distribution in the dataset: 6,332
-written questions filed by 154 deputies, but the busiest few account for a large
-share of them while others file almost none.
+Oversight activity, and the most unequal distribution in the dataset: the busiest
+few deputies account for a large share of it while others file almost none.
+
+A counting note, because two totals in this repository look contradictory and are
+not. The chamber's database holds 6,332 distinct written questions, and that is
+the number figure 18 builds its co-signature network from. Summing this figure's
+per-deputy counts gives 6,603, because 78 of those questions carry more than one
+signatory and each signer is credited with filing it. The bars here are per-deputy
+filings — signatures, not distinct questions — which is the right unit for
+comparing how actively individual members use the instrument.
 
 Form: a ranked horizontal bar of the twenty most active, plus a note carrying the
 rest. One hue — these are nominal categories and shading by value would
@@ -49,7 +56,8 @@ def main() -> None:
     fig, ax = plt.subplots(figsize=S.figsize(7.4, 6.0))
     blue = S.categorical(1)[0]
 
-    labels = [S.label(persons.get(pid, {}).get("name_lat") or pid) for pid, _ in top]
+    labels = [S.label(LBL.person_name(persons.get(pid, {}).get("name_lat", "")) or pid)
+              for pid, _ in top]
     values = [n for _, n in top]
     bars = ax.barh(list(reversed(labels)), list(reversed(values)),
                    height=0.68, color=blue, linewidth=0)
@@ -68,9 +76,11 @@ def main() -> None:
     S.titles(
         ax,
         "Written questions filed: the twenty most active deputies",
-        f"{total:,} questions filed by {len(rows)} deputies in the chamber elected in 2023. "
+        f"{total:,} filings by {len(rows)} deputies in the chamber elected in 2023. "
         f"These twenty account for {top_share:.0f}% of them;\nthe median deputy filed "
-        f"{median:.0f}. The full distribution is in the companion CSV.",
+        f"{median:.0f}. Counted per signer, so the 78 jointly signed questions are "
+        "credited to each\nsignatory — hence more filings than the 6,332 distinct "
+        "questions behind figure 18.",
         xlabel="Written questions",
     )
     S.source_note(fig, "ParliamentariansTN · participation.csv (from arp.tn)")

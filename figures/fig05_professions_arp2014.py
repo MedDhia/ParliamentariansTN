@@ -80,10 +80,16 @@ def main() -> None:
     )
     S.source_note(fig, "ParliamentariansTN · data/processed/persons.csv (occupation_raw)")
 
+    # The table carries the *unfolded* distribution. Folding is a drawing
+    # decision — writing the folded rows would make the tail unrecoverable from
+    # the companion table, which is exactly what the table exists to prevent.
+    # `drawn_as` records where each category ended up on the chart.
+    kept = {name for name, _ in folded}
     S.save(fig, "fig05_professions_arp2014", [
         {"profession_en": name, "members": value,
-         "share_of_coded_pct": round(100.0 * value / total, 1)}
-        for name, value in folded
+         "share_of_coded_pct": round(100.0 * value / total, 1),
+         "drawn_as": name if name in kept else "All other categories"}
+        for name, value in raw.most_common()
     ])
 
 

@@ -63,8 +63,10 @@ def main() -> None:
                 alpha=0.9, zorder=3)
 
     ax.plot([0, 1], [0, 1], color=S.CHROME["muted"], linewidth=1.0, zorder=2)
-    ax.annotate("votes as often as present", xy=(0.97, 0.97), xytext=(-4, 4),
-                textcoords="offset points", ha="right", va="bottom", fontsize=7.4,
+    # Low on the diagonal, where the cloud is empty. At the top-right corner the
+    # label sits in the densest part of the scatter and runs off the frame.
+    ax.annotate("votes as often as present", xy=(0.20, 0.20), xytext=(-3, 5),
+                textcoords="offset points", ha="left", va="bottom", fontsize=7.4,
                 color=S.CHROME["muted"], rotation=45, rotation_mode="anchor")
 
     ax.set_xlim(0, 1.02)

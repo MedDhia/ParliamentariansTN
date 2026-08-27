@@ -57,8 +57,6 @@ def main() -> None:
         graph.add_node(cid, kind="committee")
         graph.add_node(pid, kind="person")
         graph.add_edge(pid, cid)
-        seats[cid] += 1
-        memberships[pid] += 1
         rows.append({
             "person_id": pid,
             "name_lat": persons.get(pid, {}).get("name_lat", ""),
@@ -74,6 +72,17 @@ def main() -> None:
 
     people = [n for n, d in graph.nodes(data=True) if d["kind"] == "person"]
     comms = [n for n, d in graph.nodes(data=True) if d["kind"] == "committee"]
+
+    # Count distinct committees per deputy, and distinct deputies per committee,
+    # from the graph rather than from the input rows. The bipartite table carries
+    # one row per *role* and per dated spell, so a deputy who chairs a committee
+    # appears on it twice (once as member, once as chair) and one who leaves and
+    # rejoins appears twice again. Counting rows put 117 deputies on more than one
+    # committee out of 152 — arithmetically impossible against 247 memberships.
+    for n in people:
+        memberships[n] = graph.degree(n)
+    for c in comms:
+        seats[c] = graph.degree(c)
 
     pos = nx.spring_layout(graph, seed=SEED, k=0.42, iterations=300)
 
@@ -95,12 +104,21 @@ def main() -> None:
         node_color=orange, linewidths=1.0, edgecolors=S.CHROME["surface"],
     )
 
-    for cid in comms:
+    # Label above the square by default, below when that would land on a label
+    # already placed. Two committees whose squares sit close together otherwise
+    # print one name over the other.
+    placed: list[tuple[float, float]] = []
+    for cid in sorted(comms, key=lambda c: -seats[c]):
         name = LBL.committee(committees[cid]["name_ar"], committees[cid]["name_lat"],
                              committees[cid]["name_en"], limit=26)
+        x, y = pos[cid]
+        above = not any(abs(x - px) < 0.28 and abs((y + 0.035) - py) < 0.05
+                        for px, py in placed)
+        dy, va = (10, "bottom") if above else (-11, "top")
+        placed.append((x, y + (0.035 if above else -0.035)))
         ax.annotate(
-            S.label(name), xy=pos[cid], xytext=(0, 10), textcoords="offset points",
-            ha="center", fontsize=6.6, color=S.CHROME["text_primary"], zorder=6,
+            S.label(name), xy=(x, y), xytext=(0, dy), textcoords="offset points",
+            ha="center", va=va, fontsize=6.6, color=S.CHROME["text_primary"], zorder=6,
             bbox=dict(boxstyle="round,pad=0.18", facecolor=S.CHROME["surface"],
                       edgecolor="none", alpha=0.85),
         )

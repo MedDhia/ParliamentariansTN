@@ -133,7 +133,7 @@ def draw(assembly_id: str, slug: str, title: str, note: str = "") -> None:
         if any((x - px) ** 2 + (y - py) ** 2 < 0.10 for px, py in placed):
             continue
         placed.append((x, y))
-        name = persons.get(n, {}).get("name_lat") or n
+        name = LBL.person_name(persons.get(n, {}).get("name_lat", "")) or n
         ax.annotate(
             S.label(name), xy=(x, y), xytext=(0, 11), textcoords="offset points",
             ha="center", fontsize=7.2, color=S.CHROME["text_primary"], zorder=6,
@@ -146,9 +146,9 @@ def draw(assembly_id: str, slug: str, title: str, note: str = "") -> None:
     S.titles(
         ax,
         title,
-        f"{full.number_of_nodes()} deputies, {full.number_of_edges()} ties, density "
+        f"{full.number_of_nodes()} deputies, {full.number_of_edges():,} ties, density "
         f"{density:.2f}. Every tie is drawn; edge weight (shared committees) sets width and\n"
-        f"opacity, so the {backbone.number_of_edges()} ties of weight ≥ {MIN_WEIGHT} stand "
+        f"opacity, so the {backbone.number_of_edges():,} ties of weight ≥ {MIN_WEIGHT} stand "
         "out against the wash of single-committee ties. Node size is degree.\n"
         f"The {len(sizes) - len(top)} smaller blocs share one colour — node colour is an "
         "all-pairs form, capped at three classes. " + note,

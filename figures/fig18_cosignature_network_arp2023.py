@@ -98,7 +98,7 @@ def main() -> None:
     max_degree = max(degree.values()) or 1
     nx.draw_networkx_nodes(
         graph, pos, ax=ax, nodelist=connected,
-        node_size=[24 + 260 * (degree[n] / max_degree) for n in connected],
+        node_size=[18 + 150 * (degree[n] / max_degree) for n in connected],
         node_color=blue, linewidths=1.0, edgecolors=S.CHROME["surface"],
     )
     nx.draw_networkx_nodes(
@@ -115,7 +115,7 @@ def main() -> None:
             continue
         placed.append((x, y))
         ax.annotate(
-            S.label(persons.get(n, {}).get("name_lat") or n), xy=(x, y),
+            S.label(LBL.person_name(persons.get(n, {}).get("name_lat", "")) or n), xy=(x, y),
             xytext=(0, 11), textcoords="offset points", ha="center", fontsize=7.2,
             color=S.CHROME["text_primary"], zorder=6,
             bbox=dict(boxstyle="round,pad=0.18", facecolor=S.CHROME["surface"],
@@ -124,7 +124,8 @@ def main() -> None:
 
     if small:
         ax.annotate(
-            f"{sum(len(c) for c in small)} deputies in {len(small)} small separate groups",
+            f"{sum(len(c) for c in small)} deputies in {len(small)} small separate "
+            f"group{'s' if len(small) != 1 else ''}",
             xy=(0.02, -0.085), ha="left", va="bottom", fontsize=7.4,
             color=S.CHROME["text_secondary"],
         )
@@ -140,7 +141,7 @@ def main() -> None:
         ax,
         "Written-question co-signature, chamber elected in 2023",
         f"{len(connected)} of {graph.number_of_nodes()} deputies co-signed at least one "
-        f"question with another; {graph.number_of_edges()} ties.\nFrom 6,332 written "
+        f"question with another; {graph.number_of_edges():,} ties.\nFrom 6,332 written "
         "questions, of which only 78 carry more than one signatory — joint filing is rare. "
         "Edge weight is\nthe number of shared questions; use the Newman-corrected weight in "
         "the CSV for centrality, since one mass filing\ncan manufacture hundreds of dyads.",

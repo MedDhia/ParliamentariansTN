@@ -10,8 +10,10 @@ only one flow to show, so the bands added geometry without adding information �
 and they crowded the labels. Where the *non*-consecutive overlaps matter,
 figure 10 gives all pairs at once.
 
-Colour does one job — returning against new — so it is two classes, and both
-segments are wide enough to carry their own label inside.
+Colour does one job — returning against new — so it is two classes. The returning
+segment carries only its count and share, not the word "returning": the word is
+wider than the bar and wider than the gap between bars, so it would sit on a
+neighbour either way, and the legend already supplies it.
 
 The headline is how little is recycled. Tunisia's democratic parliaments were not
 staffed by a stable political class: no chamber draws even a quarter of its
@@ -63,17 +65,23 @@ def main() -> None:
         ax.annotate(f"{new} new", xy=(i, returning + GAP + new / 2), ha="center",
                     va="center", fontsize=8.2, color="#ffffff", zorder=4)
         if prev:
-            # The returning segment is short for 2023 (5 members), so its label
-            # goes outside the bar rather than being clipped inside it.
+            # The word "returning" does not fit anywhere: it is wider than the
+            # 0.52-unit bar, and the 0.48-unit gap between bars is narrower
+            # still, so an outside label lands on the next chamber's bar. The
+            # legend already carries the word, so the mark carries only the
+            # numbers — stacked on two lines, which is narrow enough to sit
+            # inside the segment it describes.
             share = 100.0 * returning / n
-            text = f"{returning} returning ({share:.0f}%)"
-            if returning >= 25:
-                ax.annotate(text, xy=(i, returning / 2), ha="center", va="center",
-                            fontsize=8.2, color="#ffffff", zorder=4)
+            if returning >= 20:
+                ax.annotate(f"{returning}\n{share:.0f}%", xy=(i, returning / 2),
+                            ha="center", va="center", fontsize=8.2, color="#ffffff",
+                            linespacing=1.25, zorder=4)
             else:
-                ax.annotate(text, xy=(i + 0.30, returning), xytext=(6, 0),
-                            textcoords="offset points", ha="left", va="center",
-                            fontsize=8.2, color=S.CHROME["text_secondary"], zorder=4)
+                # Too short to hold two lines; one compact line beside it.
+                ax.annotate(f"{returning} ({share:.0f}%)", xy=(i + 0.26, 7),
+                            xytext=(5, 0), textcoords="offset points",
+                            ha="left", va="center", fontsize=8.2,
+                            color=S.CHROME["text_secondary"], zorder=4)
 
         table.append({
             "assembly_id": c,
@@ -86,7 +94,8 @@ def main() -> None:
 
     ax.set_xticks(range(len(CHAMBERS)))
     ax.set_xticklabels([S.label(LBL.assembly(c)) for c in CHAMBERS], fontsize=9)
-    ax.set_xlim(-0.6, len(CHAMBERS) - 0.25)
+    # Right edge leaves room for the last bar's compact outside label.
+    ax.set_xlim(-0.6, len(CHAMBERS) - 0.05)
     ax.set_ylim(0, 285)
     S.frame(ax)
     ax.legend(

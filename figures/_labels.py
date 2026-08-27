@@ -221,10 +221,30 @@ def committee(name_ar: str, name_lat: str = "", name_en: str = "",
               limit: int = 40) -> str:
     for candidate in (name_en, name_lat):
         if candidate:
-            return _shorten(_strip_stray_arabic(candidate), limit)
+            text = _shorten(_strip_stray_arabic(candidate), limit)
+            # Some of the chamber's French labels were typed lowercase and some
+            # capitalised; on one chart the mixture reads as an error. Leading
+            # character only, as for person_name.
+            return text[0].upper() + text[1:] if text else text
     raise KeyError(
         f"no Latin name for committee {name_ar!r}; add a gloss in figures/_labels.py"
     )
+
+
+def person_name(name_lat: str) -> str:
+    """Display form of a Latin-script personal name.
+
+    Only the leading character is touched, and only when it is a lowercase
+    letter: a few upstream records were typed as "dhafer Sghiri", which reads as
+    a rendering bug when it lands on a chart. Nothing else is normalised —
+    title-casing the whole string would mangle the nasab particles ("Ben Ali",
+    "Bel Aiech") that carry meaning. The value in ``data/processed`` is untouched;
+    this is display cleanup, not a correction.
+    """
+    text = str(name_lat).strip()
+    if text and text[0].islower():
+        return text[0].upper() + text[1:]
+    return text
 
 
 def assembly(assembly_id: str) -> str:

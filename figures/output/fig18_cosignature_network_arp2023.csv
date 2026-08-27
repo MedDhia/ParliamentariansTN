@@ -1,11 +1,11 @@
 person_id,name_lat,cosignature_degree,cosigned_questions_total,weighted_degree_newman
 TNP-00088,Tarek Rebai,68,96,6.0
 TNP-00008,Hela Jaballa,65,97,8.0
-TNP-00001,Youssef Tarchoun,64,95,4.0
 TNP-00025,Messaoud Grira,64,97,5.0
-TNP-00092,Salah Sayadi,59,61,2.0
+TNP-00001,Youssef Tarchoun,64,95,4.0
 TNP-00091,Salah Mbarki,59,61,2.0
 TNP-00019,Manel Bdida,59,61,2.0
+TNP-00092,Salah Sayadi,59,61,2.0
 TNP-00096,Chokri Ben Bahri,58,76,3.0
 TNP-00151,Asma Derouiche,58,68,5.0
 TNP-00135,Boutheina Ghanmi,54,87,8.0
@@ -13,144 +13,144 @@ TNP-00029,Mahmoud Chalghaf,51,59,3.0
 TNP-00030,Mahmoud El Amri,51,76,6.0
 TNP-00116,Rochdi Rouissi,50,61,5.0
 TNP-00067,Ali Zaghdoud,49,64,5.0
-TNP-00129,Thameur Mazhoud,48,54,2.0
-TNP-00131,Boubaker Ben Yahya,48,58,4.0
 TNP-00154,Brahim Ben hsine,48,56,2.0
-TNP-00132,Bilel Ibn El Mechri,48,54,2.0
+TNP-00129,Thameur Mazhoud,48,54,2.0
 TNP-00017,Mounir Kammouni,48,56,2.0
-TNP-00139,Aymen Maraoui,48,56,2.0
 TNP-00038,Mohamed Ben Hassine,48,56,2.0
-TNP-00089,Dhouha Selmi,47,68,7.0
+TNP-00131,Boubaker Ben Yahya,48,58,4.0
+TNP-00132,Bilel Ibn El Mechri,48,54,2.0
+TNP-00139,Aymen Maraoui,48,56,2.0
 TNP-00152,Ahmed Saidani,47,55,2.0
 TNP-00080,Abderrazek Aouidet,47,60,3.0
 TNP-00086,dhafer Sghiri,47,55,2.0
-TNP-00062,Amor Ben Amor,45,65,3.0
+TNP-00089,Dhouha Selmi,47,68,7.0
 TNP-00120,Hamdi Ben Salah,45,66,4.0
+TNP-00062,Amor Ben Amor,45,65,3.0
 TNP-00065,Ouled jebril Imed,45,65,3.0
 TNP-00070,Issam Bahri Jebri,43,51,6.0
-TNP-00079,Abdessattar Zarai,42,47,2.0
 TNP-00027,Mourad khezami,42,47,2.0
-TNP-00114,Ramzi Chetoui,42,47,2.0
 TNP-00108,Zina Jiballah,42,47,2.0
+TNP-00114,Ramzi Chetoui,42,47,2.0
+TNP-00079,Abdessattar Zarai,42,47,2.0
 TNP-00021,Moez Ben Youssef,40,65,4.0
 TNP-00102,Sofien Ben hlima,40,65,4.0
 TNP-00078,Abdessalem Hamrouni,39,44,4.0
 TNP-00113,Raouf Fekiri,38,45,4.0
-TNP-00053,Faouzi Daas,35,35,1.0
-TNP-00059,Faten Ncibi,35,35,1.0
-TNP-00101,Sonia Ben Mabrouk,35,56,3.0
-TNP-00051,Kamel Farrah,35,56,3.0
-TNP-00026,Mariem Cherif,35,35,1.0
-TNP-00028,Mokhtar Ifaoui,35,35,1.0
-TNP-00031,Mohamed Mejdi,35,66,18.0
-TNP-00054,Fakhri Abdelkhalek,35,56,3.0
-TNP-00033,Mohamed Ali,35,62,12.0
-TNP-00112,Riadh Blel,35,35,1.0
 TNP-00115,Dellai Ridha,35,35,1.0
-TNP-00072,Ezzeddine Tayeb,35,35,1.0
-TNP-00084,Adel Dhief,35,35,1.0
-TNP-00071,Aziz Ben Lakhdher,35,56,3.0
 TNP-00125,Houssem Mahjoub,35,57,4.0
+TNP-00059,Faten Ncibi,35,35,1.0
+TNP-00028,Mokhtar Ifaoui,35,35,1.0
+TNP-00033,Mohamed Ali,35,62,12.0
+TNP-00026,Mariem Cherif,35,35,1.0
+TNP-00031,Mohamed Mejdi,35,66,18.0
+TNP-00084,Adel Dhief,35,35,1.0
+TNP-00051,Kamel Farrah,35,56,3.0
+TNP-00101,Sonia Ben Mabrouk,35,56,3.0
+TNP-00054,Fakhri Abdelkhalek,35,56,3.0
+TNP-00112,Riadh Blel,35,35,1.0
+TNP-00053,Faouzi Daas,35,35,1.0
+TNP-00072,Ezzeddine Tayeb,35,35,1.0
 TNP-00024,Mustapha Boubakri,35,35,1.0
-TNP-00144,Nouri Jridi,34,61,15.0
+TNP-00071,Aziz Ben Lakhdher,35,56,3.0
 TNP-00150,Tahar Ben Mansour,34,59,11.0
+TNP-00144,Nouri Jridi,34,61,15.0
 TNP-00074,Abdelkader Ammar,33,37,4.0
-TNP-00095,Sabeur Jelassi,31,31,2.0
 TNP-00005,Yasser Grari,31,40,3.0
+TNP-00095,Sabeur Jelassi,31,31,2.0
 TNP-00020,Melik Kammoun,27,30,3.0
-TNP-00010,Nourelhouda Sbaiti,26,26,1.0
-TNP-00048,Lotfi Hammami,26,26,1.0
-TNP-00041,Mohamed Yahyaoui,26,26,1.0
-TNP-00090,Slah ferchichi,26,26,1.0
-TNP-00117,khaled Hakim Mabrouki,26,26,1.0
-TNP-00012,Nejib Akremi,26,33,5.0
-TNP-00018,Moncef Maaloul,26,26,1.0
-TNP-00103,Sami Toujani,26,26,1.0
-TNP-00126,Hatem Labbaoui,26,28,4.0
-TNP-00036,Mohamed Zied El Maher,26,26,1.0
 TNP-00057,Fethi Mechrgui,26,26,1.0
+TNP-00090,Slah ferchichi,26,26,1.0
+TNP-00036,Mohamed Zied El Maher,26,26,1.0
+TNP-00126,Hatem Labbaoui,26,28,4.0
+TNP-00041,Mohamed Yahyaoui,26,26,1.0
+TNP-00018,Moncef Maaloul,26,26,1.0
+TNP-00117,khaled Hakim Mabrouki,26,26,1.0
+TNP-00010,Nourelhouda Sbaiti,26,26,1.0
+TNP-00103,Sami Toujani,26,26,1.0
+TNP-00012,Nejib Akremi,26,33,5.0
+TNP-00048,Lotfi Hammami,26,26,1.0
 TNP-00064,Ammar Idoudi,25,28,5.0
 TNP-00032,Mohamed Ali Fennira,24,24,2.0
 TNP-00035,Mohamed Chaabani,24,25,2.0
+TNP-00082,Abdelhafedh Louhichi,22,24,2.0
 TNP-00130,Thabet Abed,22,25,2.0
 TNP-00069,Issam Chouchen,22,24,2.0
-TNP-00082,Abdelhafedh Louhichi,22,24,2.0
-TNP-00140,Aymen Boughdiri,21,21,1.0
 TNP-00110,Rym Sghaier,21,23,3.0
+TNP-00140,Aymen Boughdiri,21,21,1.0
 TNP-00016,Maha Ameur,21,21,1.0
 TNP-00137,Aymen Negra,21,21,2.0
 TNP-00004,yassine Mami,20,20,1.0
 TNP-00066,Imededdine Sdiri,19,20,2.0
 TNP-00023,Moez Riahi,19,19,1.0
+TNP-00138,Aymen Ben Salah,15,30,2.0
 TNP-00119,Hamdi Ben Abdelali,15,30,2.0
 TNP-00055,Fakhreddine Fadhloun,15,30,2.0
-TNP-00138,Aymen Ben Salah,15,30,2.0
 TNP-00002,Youssef Toumi,10,13,5.0
-TNP-00015,Nabil Hamdi,9,9,1.0
 TNP-00043,mohamed Ahmed,9,9,1.0
 TNP-00124,Hassen Ben Ali,9,9,1.0
-TNP-00145,Channoufi Naceur,9,9,1.0
+TNP-00015,Nabil Hamdi,9,9,1.0
 TNP-00009,Noura Chabrak,9,9,4.0
+TNP-00145,Channoufi Naceur,9,9,1.0
 TNP-00122,Hassen Jarboui,8,8,4.0
 TNP-00136,Bedis Belhadj Ali,7,13,9.0
 TNP-00133,Basma Hammami,6,13,5.0
-TNP-00068,Ali Bouzouzia,5,5,1.0
 TNP-00076,Abdelaziz Chaabani,5,5,1.0
-TNP-00039,Mohamed Amine Mbarki,5,5,1.0
-TNP-00058,Msedi Fatma,5,5,1.0
 TNP-00063,Amor Barhoumi,5,5,1.0
+TNP-00068,Ali Bouzouzia,5,5,1.0
+TNP-00039,Mohamed Amine Mbarki,5,5,1.0
 TNP-00121,Hammadi Ghilani,5,5,1.0
+TNP-00058,Msedi Fatma,5,5,1.0
 TNP-00077,Abdessalem Dahmani,3,8,6.0
 TNP-00049,Lotfi Saadaoui,2,2,1.0
-TNP-00100,Sawsen Mabrouk,2,2,1.0
-TNP-00149,Taïeb Talbi,2,2,1.0
-TNP-00094,Sabeur Masmoudi,2,2,2.0
 TNP-00034,Mohamed Dhaw,2,2,1.0
 TNP-00153,Ahmed Bannour,2,2,2.0
 TNP-00042,Mohamed Elhedi Allani,2,4,2.0
-TNP-00141,Anouar Marzouki,1,1,1.0
+TNP-00094,Sabeur Masmoudi,2,2,2.0
+TNP-00100,Sawsen Mabrouk,2,2,1.0
+TNP-00149,Taïeb Talbi,2,2,1.0
 TNP-00060,Ghassen Yamoun,1,7,7.0
-TNP-00011,Nizar Seddik,1,5,5.0
 TNP-00013,Najla Lahiani,1,1,1.0
 TNP-00118,Hamza Bidhiafi,1,5,5.0
-TNP-00097,Ezzedine Zaafouri,0,0,0
-TNP-00075,Abdelkader Ben Zineb,0,0,0
-TNP-00044,Mohsen Hermi,0,0,0
-TNP-00085,Adel Bousselmi,0,0,0
-TNP-00007,Hichem Hosni,0,0,0
-TNP-00146,Mokhtar Abdelmoula,0,0,0
-TNP-00099,Sirine Mrabet,0,0,0
-TNP-00083,Abdel jalil El Heni,0,0,0
-TNP-00105,Sami Ben Abdelaali,0,0,0
-TNP-00104,Sami Rais,0,0,0
+TNP-00011,Nizar Seddik,1,5,5.0
+TNP-00141,Anouar Marzouki,1,1,1.0
 TNP-00022,Moez Barkallah,0,0,0
-TNP-00087,Tarek Mehdi,0,0,0
-TNP-00037,Mohamed Ben Said,0,0,0
-TNP-00109,Rim Maachaoui,0,0,0
-TNP-00134,badreddine gammoudi,0,0,0
 TNP-00056,Fethi Rjeb,0,0,0
-TNP-00107,Sami Hadj Amor,0,0,0
-TNP-00093,Salah Selmi,0,0,0
-TNP-00098,Cyrine Boussandel,0,0,0
 TNP-00046,Maher Ketari,0,0,0
-TNP-00148,Fadhel Ben Torkia,0,0,0
-TNP-00128,Jalel khedmi,0,0,0
-TNP-00106,Sami Essaied,0,0,0
-TNP-00006,Walid Hajji,0,0,0
-TNP-00003,Yosri Baouab,0,0,0
-TNP-00081,Abdelhalim  Boussema,0,0,0
-TNP-00073,Adnen Allouche,0,0,0
-TNP-00147,Olfa Marouani,0,0,0
-TNP-00123,Hassen Boussama,0,0,0
-TNP-00155,Brahim Bouderbela,0,0,0
-TNP-00142,Amel Meddeb,0,0,0
-TNP-00052,Fayçal Sghaier,0,0,0
-TNP-00111,Jaidane Riadh,0,0,0
-TNP-00047,Majda Ouerghi,0,0,0
-TNP-00143,Ilyes Boukoucha,0,0,0
 TNP-00050,Kamel Keraani,0,0,0
-TNP-00040,Mohamed Amine Ouerghi,0,0,0
+TNP-00087,Tarek Mehdi,0,0,0
+TNP-00104,Sami Rais,0,0,0
+TNP-00142,Amel Meddeb,0,0,0
+TNP-00044,Mohsen Hermi,0,0,0
+TNP-00106,Sami Essaied,0,0,0
+TNP-00073,Adnen Allouche,0,0,0
+TNP-00085,Adel Bousselmi,0,0,0
+TNP-00093,Salah Selmi,0,0,0
+TNP-00006,Walid Hajji,0,0,0
+TNP-00148,Fadhel Ben Torkia,0,0,0
+TNP-00003,Yosri Baouab,0,0,0
+TNP-00105,Sami Ben Abdelaali,0,0,0
+TNP-00134,badreddine gammoudi,0,0,0
 TNP-00045,Maher Boubaker Hadhri,0,0,0
+TNP-00007,Hichem Hosni,0,0,0
+TNP-00098,Cyrine Boussandel,0,0,0
+TNP-00052,Fayçal Sghaier,0,0,0
+TNP-00083,Abdel jalil El Heni,0,0,0
+TNP-00147,Olfa Marouani,0,0,0
 TNP-00014,Nabih Thabet,0,0,0
+TNP-00037,Mohamed Ben Said,0,0,0
 TNP-00127,Hatem Houaoui,0,0,0
 TNP-00061,Awatef Cheniti,0,0,0
+TNP-00047,Majda Ouerghi,0,0,0
+TNP-00155,Brahim Bouderbela,0,0,0
+TNP-00040,Mohamed Amine Ouerghi,0,0,0
+TNP-00111,Jaidane Riadh,0,0,0
+TNP-00075,Abdelkader Ben Zineb,0,0,0
+TNP-00109,Rim Maachaoui,0,0,0
+TNP-00099,Sirine Mrabet,0,0,0
+TNP-00107,Sami Hadj Amor,0,0,0
+TNP-00123,Hassen Boussama,0,0,0
+TNP-00081,Abdelhalim  Boussema,0,0,0
+TNP-00143,Ilyes Boukoucha,0,0,0
+TNP-00128,Jalel khedmi,0,0,0
+TNP-00097,Ezzedine Zaafouri,0,0,0
+TNP-00146,Mokhtar Abdelmoula,0,0,0

@@ -45,7 +45,7 @@ regenerates the dataset — figures read `data/processed` and `data/networks`.
 | | Figure | What to look at |
 | --- | --- | --- |
 | 9 | Continuity across chambers | No chamber draws even a quarter of its members from its predecessor; 2023 draws 3%. |
-| 10 | Shared members, all pairs | Catches the non-consecutive returns — 13 members sat in 2011 and 2019 but skipped 2014. |
+| 10 | Shared members, all pairs | Every pair, so the non-consecutive overlaps are visible. Read a cell as "sat in both", not as a skip count: 13 sat in 2011 and 2019, but 12 of them also sat in 2014. |
 
 **Bloc dynamics, 2014–2019**
 
@@ -55,8 +55,8 @@ Archive captures, which turn bloc membership into dated spells.
 | | Figure | What to look at |
 | --- | --- | --- |
 | 11 | Bloc composition, month by month | Nidaa Tounes enters with 86 seats and bleeds out; the winning party is not the largest bloc by the end. |
-| 12 | Effective number of blocs | Fragmentation rises from ~4.5 past 6. |
-| 13 | Bloc-to-bloc moves | 108 of 246 members moved. Nidaa's members disperse rather than relocating together. |
+| 12 | Effective number of blocs | Fragmentation rises from 3.6 to 5.3, all of it from Nidaa Tounes splitting. |
+| 13 | Bloc-to-bloc moves | 108 of the 238 members with a recorded bloc history moved. Nidaa's members disperse rather than relocating together. |
 
 **Networks**
 
@@ -97,7 +97,10 @@ Never solve "too many series" by generating another hue.
 **Every figure ships a table.** `figNN_name.csv` beside the PNG. This is the
 accessible twin of the chart (three light-mode palette slots sit below 3:1
 contrast, and a table view is the documented relief), and for a research
-repository it is how a reader checks a number without re-deriving it.
+repository it is how a reader checks a number without re-deriving it. Where the
+chart folds a tail into "Other", the table carries the *unfolded* distribution
+and a column saying where each category was drawn — folding is a drawing
+decision, and a table that folds too puts the tail out of reach.
 
 **No dual axes, ever.** Two measures of different scale get two figures. That is
 why fragmentation (fig 12) is separate from composition (fig 11).
@@ -135,6 +138,13 @@ dropped, and 9 why the ribbons were.
 eleven have only their presiding officer. Any figure aggregating "Tunisian
 parliamentarians" is describing 1956, 2011–14, 2014–19, 2019–21 and 2023–.
 See `docs/COVERAGE.md`.
+
+**Two totals for written questions, both correct.** The chamber's database holds
+**6,332 distinct questions** (figure 18's co-signature network), but per-deputy
+filings sum to **6,603** (figure 20), because 78 questions carry more than one
+signatory and each signer is credited. Likewise, `bipartite_person_committee`
+carries one row per *role* and per dated spell, so counting its rows overstates
+how many committees a deputy sits on — count distinct committees.
 
 **The 2014–2019 bloc figures rest on bracketed dates.** Spell boundaries are
 located to the interval between two web captures, not to the day, and the monthly

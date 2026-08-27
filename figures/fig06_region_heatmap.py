@@ -117,6 +117,9 @@ def main() -> None:
     bar = fig.colorbar(im, ax=ax, pad=0.015, fraction=0.028)
     bar.outline.set_visible(False)
     bar.ax.tick_params(labelsize=7.4, length=0, colors=S.CHROME["text_secondary"])
+    # Percent on the bar too: the cells are labelled "15%", so a bare "15" on the
+    # scale beside them invites reading the two as different quantities.
+    bar.ax.yaxis.set_major_formatter(lambda v, _pos: f"{v:.0f}%")
     bar.set_label("Share of the row's mapped members", fontsize=7.6,
                   color=S.CHROME["text_secondary"])
 

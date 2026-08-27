@@ -49,13 +49,17 @@ def main() -> None:
     a = [all_counts.get(k, 0) for k in ks]
     b = [dem_counts.get(k, 0) for k in ks]
 
-    ax.bar([x - width / 2 for x in xs], a, width=width, color=blue,
+    # Offset by half a bar plus half the gap, so the pair is separated by a
+    # sliver of surface rather than sharing an edge: two fills that touch read as
+    # one shape with a colour change in it.
+    gap = 0.03
+    ax.bar([x - (width + gap) / 2 for x in xs], a, width=width, color=blue,
            label="All chambers in the dataset", linewidth=0)
-    ax.bar([x + width / 2 for x in xs], b, width=width, color=orange,
+    ax.bar([x + (width + gap) / 2 for x in xs], b, width=width, color=orange,
            label="Counting only the four democratic chambers", linewidth=0)
 
     for x, (va, vb) in zip(xs, zip(a, b)):
-        for offset, value in ((-width / 2, va), (width / 2, vb)):
+        for offset, value in ((-(width + gap) / 2, va), ((width + gap) / 2, vb)):
             if value:
                 ax.annotate(f"{value}", xy=(x + offset, value), xytext=(0, 3),
                             textcoords="offset points", ha="center", fontsize=7.6,
