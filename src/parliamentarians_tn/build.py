@@ -492,8 +492,14 @@ class Builder:
                     "n_oral_questions": "",
                     "source_ids": source_id,
                 })
-                for field in ("plenary_attendance_rate", "committee_attendance_rate",
-                              "vote_participation_rate", "vote_discipline_rate",
+                # The denominators belong here too. They were omitted from this
+                # list while no source published them; leaving them out once one
+                # does would silently discard the only figures that make a rate
+                # checkable.
+                for field in ("plenary_attendance_rate", "plenary_denominator",
+                              "committee_attendance_rate", "committee_denominator",
+                              "vote_participation_rate", "vote_denominator",
+                              "vote_discipline_rate",
                               "n_written_questions", "n_oral_questions"):
                     if part.get(field) not in (None, ""):
                         row[field] = part[field]
@@ -677,11 +683,19 @@ class Builder:
             person_id = person_for(move["deputy_source_key"])
             if not person_id or move["party_from"] == move["party_to"]:
                 continue  # equal means the member kept their party
+            # Look up, never mint. Minting from a French-only diagram label
+            # would create a second record for parties the register already
+            # holds under another spelling ("Mouvement Nahdha" for Ennahdha),
+            # and fuzzy-matching to avoid that would merge parties that merely
+            # read alike — the communist POCT and PCT are not the same party.
+            # An unresolved name leaves the id empty and keeps the name.
             self.party_switches.append({
                 "person_id": person_id,
                 "assembly_id": assembly_id,
-                "party_from_id": self.resolve_party("", move["party_from"]),
-                "party_to_id": self.resolve_party("", move["party_to"]),
+                "party_from_id": self.party_by_name.get(
+                    self._norm_place(move["party_from"]), ""),
+                "party_to_id": self.party_by_name.get(
+                    self._norm_place(move["party_to"]), ""),
                 "party_from_name": move["party_from"],
                 "party_to_name": move["party_to"],
                 "source_ids": source_id,

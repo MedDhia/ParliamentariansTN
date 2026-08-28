@@ -672,22 +672,34 @@ VOTE_POSITIONS = Table(
 PARTY_SWITCHES = Table(
     name="party_switches",
     unit="One row per member per recorded change of party within a term.",
-    primary_key=("person_id", "assembly_id", "party_from_id", "party_to_id"),
+    primary_key=("person_id", "assembly_id", "party_from_name", "party_to_name"),
     description=(
         "The party a member was elected on against the party they ended the term "
         "in. Undated by construction: the source publishes the pair, not the "
         "moment, so a row establishes that a move happened and not when. Members "
         "who kept their party have no row, which is why the absence of a row "
         "here means 'did not move', unlike missingness elsewhere in the dataset."
+        "\n\n"
+        "The two id columns are empty where the published party name does not "
+        "resolve to the curated register. That is deliberate. The source names "
+        "parties in French only, and the near-misses are treacherous: 'Parti "
+        "communiste des ouvriers de Tunisie' and 'Parti communiste tunisien' "
+        "are different parties, so a fuzzy match would silently merge two "
+        "organisations. The verbatim names are always present, and crosswalking "
+        "them is left to a human who can tell those two apart."
     ),
     columns=[
         Column("person_id", "string", "Member.", required=True,
                references="persons.person_id"),
         Column("assembly_id", "string", "Chamber.", required=True,
                references="assemblies.assembly_id"),
-        Column("party_from_id", "string", "Party of election.", required=True,
+        Column("party_from_id", "string",
+               "Party of election; empty where the published name does not "
+               "resolve to the curated register.",
                references="parties.party_id"),
-        Column("party_to_id", "string", "Party at end of term.", required=True,
+        Column("party_to_id", "string",
+               "Party at end of term; empty where the published name does not "
+               "resolve to the curated register.",
                references="parties.party_id"),
         Column("party_from_name", "string", "Party of election, as published."),
         Column("party_to_name", "string", "Party at end of term, as published."),

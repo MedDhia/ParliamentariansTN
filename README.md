@@ -6,9 +6,10 @@ Assembly to the sitting chamber, built for social science and network analysis.
 The dataset covers **nineteen chamber-terms across seventy years**, **856
 individual parliamentarians**, and **959 mandates**, with committee memberships,
 parliamentary blocs, constituencies, biographical attributes, extra-parliamentary
-careers, and behavioural indicators — assembled from the chamber's own database,
-both of Al Bawsala's observatories, and archival reconstruction, with cell-level
-provenance for every value.
+careers, behavioural indicators, and the 2011-2014 chamber's complete roll-call
+record — assembled from the chamber's own database, both of Al Bawsala's
+observatories, and archival reconstruction, with cell-level provenance for every
+value.
 
 It is also, deliberately, honest about what it does not have. Fourteen of the
 nineteen chambers — the whole single-party era plus both upper houses — are
@@ -27,7 +28,7 @@ show.
 | **Use the network layer** | [docs/NETWORK_GUIDE.md](docs/NETWORK_GUIDE.md), then [examples/](examples/) |
 | **Judge a source** | [docs/SOURCES.md](docs/SOURCES.md) — what each one is, and what it gets wrong |
 | **Rebuild or extend it** | [Reproducing](#reproducing) below, then [docs/RECONSTRUCTION_PROTOCOL.md](docs/RECONSTRUCTION_PROTOCOL.md) |
-| **Just load the tables** | `data/processed/*.csv` — 17 UTF-8 CSVs, committed and ready |
+| **Just load the tables** | `data/processed/*.csv` — 22 UTF-8 CSVs, committed and ready |
 
 Everything under `docs/` is indexed in [docs/README.md](docs/README.md).
 
@@ -77,7 +78,7 @@ there if you want the substance before the method.
 
 ## What is in it
 
-Seventeen tables in `data/processed`, all UTF-8 CSV with a header row.
+Twenty-two tables in `data/processed`, all UTF-8 CSV with a header row.
 
 | Table | Rows | Unit |
 | --- | --- | --- |
@@ -95,12 +96,17 @@ Seventeen tables in `data/processed`, all UTF-8 CSV with a header row.
 | `offices` | 47 | speaker, vice-speaker, bureau tenures |
 | `careers` | 171 | extra-parliamentary roles |
 | `participation` | 583 | attendance, voting, written questions |
+| `votes` | 1,724 | one recorded division (NCA-2011) |
+| `vote_positions` | 370,922 | one member × one division, pour/contre/abstenu/absent |
+| `party_switches` | 105 | party of election vs party at end of term |
+| `amendments` | 251 | constitutional amendment tabled in 2011–2014 |
+| `amendment_sponsorships` | 3,646 | one member × one amendment they tabled |
 | `person_xref` | 950 | crosswalk to every upstream identifier |
 | `sources` | 6 | source register with access conditions |
 | `provenance` | 5,039 | which source supplied which field of which record |
 
-Plus eight network files in `data/networks` — node attributes, two bipartite
-incidence lists, and five one-mode projections. See
+Plus nine network files in `data/networks` — node attributes, two bipartite
+incidence lists, and six one-mode projections. See
 [docs/NETWORK_GUIDE.md](docs/NETWORK_GUIDE.md).
 
 Full variable definitions with fill rates: [docs/CODEBOOK.md](docs/CODEBOOK.md).
@@ -299,6 +305,13 @@ away.
   than one spell, but 15 of those return to a bloc they had already sat in). For
   NCA-2011 and ARP-2019 the sources give end-of-term snapshots, so a zero there
   means "not measured", not "did not happen".
+- **Party switching is a different measure from bloc switching, and NCA-2011 has
+  it.** `party_switches` records 105 of the 217 members of the constituent
+  assembly as ending the term in a party other than the one they were elected
+  on. The rows are **undated** — the source publishes the from/to pair, not the
+  moment — and cannot be chained, so a member who moved twice appears once. A
+  member who kept their party has no row, which makes absence here mean "did not
+  move" rather than "not recorded": the one place in this dataset where it does.
 - **Sex for the 2011–2014 chamber is inferred, not recorded.** Marsad publishes
   no sex field, which would have left a third of the dataset unusable for any
   gender analysis. It is inferred from French grammatical agreement in each
@@ -306,7 +319,10 @@ away.
   from the name. This yields 66 women of 217, against the 65 independently
   recorded for that chamber, which is a reassuring but not conclusive check.
 - **Behavioural rates are not comparable across chambers.** Denominators differ
-  by source and term and are often unpublished.
+  by source and term. For ARP-2019 they *are* published and now recorded
+  (`plenary_denominator`, `committee_denominator`, `vote_denominator`), so those
+  rates can be checked and recomputed; elsewhere they are absent. Comparing a
+  rate across chambers still compares two different denominators.
 - **The 1956 roster rests on a tertiary source** and needs JORT verification
   before being used as evidence.
 - **Seat counts were checked** against reported election results: the 1964 and

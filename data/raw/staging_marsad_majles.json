@@ -9,8 +9,8 @@
   "coverage": "ARP-2019: 216 members with sex, profession, district, electoral list, bloc; dated bloc memberships (bloc switching observable); dated committee memberships with roles; vote-participation and plenary-attendance rates; asset-declaration compliance",
   "language": "ar; fr",
   "licence": "Not stated. Civic-monitoring data on public office-holders.",
-  "first_retrieved": "2026-08-27",
-  "last_retrieved": "2026-08-27",
+  "first_retrieved": "2026-08-28",
+  "last_retrieved": "2026-08-28",
   "reliability_notes": "Frozen archive: the site has not been updated since 2021, so it reflects the chamber as of its suspension and is stable to cite. Bloc pages render a per-bloc attendance table rather than a dated membership history, so bloc membership is an end-of-term snapshot and switching within the term is NOT recoverable here. Age is published as a value on the roster card with no reference date and is therefore NOT converted to a birth date. Attendance and participation denominators differ between the roster cards and the individual profile pages; the roster figures are used here and the denominators are not published alongside them, so these rates should be compared within this term only."
  },
  "assembly_id": "ARP-2019",
@@ -245,8 +245,8 @@
   ]
  },
  "constituencies": [],
- "notes": "216 members; 8 bloc-years; 28 committees. Fetch: 0 fetched, 40 from cache.",
- "retrieved_at": "2026-08-27",
+ "notes": "216 members; 8 bloc-years; 28 committees. Fetch: 216 fetched, 40 from cache.",
+ "retrieved_at": "2026-08-28",
  "records": [
   {
    "source_key": "abdallah-hrizi",
@@ -322,7 +322,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8060",
-    "plenary_attendance_rate": "0.6726"
+    "plenary_attendance_rate": "0.6726",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.3333",
+    "committee_denominator": "51",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7612"
    },
    "authoritative_fields": [
     "name_ar",
@@ -405,7 +410,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.9224",
-    "plenary_attendance_rate": "0.8661"
+    "plenary_attendance_rate": "0.8661",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.5690",
+    "committee_denominator": "58",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.8060"
    },
    "authoritative_fields": [
     "name_ar",
@@ -467,7 +477,10 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.5672",
-    "plenary_attendance_rate": "0.8407"
+    "plenary_attendance_rate": "0.8407",
+    "plenary_denominator": "113",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3821"
    },
    "authoritative_fields": [
     "name_ar",
@@ -550,7 +563,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.9522",
-    "plenary_attendance_rate": "0.8496"
+    "plenary_attendance_rate": "0.8496",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.8197",
+    "committee_denominator": "61",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.8388"
    },
    "authoritative_fields": [
     "name_ar",
@@ -633,7 +651,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8985",
-    "plenary_attendance_rate": "0.9735"
+    "plenary_attendance_rate": "0.9735",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.9804",
+    "committee_denominator": "51",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.8119"
    },
    "authoritative_fields": [
     "name_ar",
@@ -716,7 +739,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7522",
-    "plenary_attendance_rate": "0.6903"
+    "plenary_attendance_rate": "0.6903",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.4286",
+    "committee_denominator": "63",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7164"
    },
    "authoritative_fields": [
     "name_ar",
@@ -799,7 +827,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7701",
-    "plenary_attendance_rate": "0.8304"
+    "plenary_attendance_rate": "0.8304",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.6000",
+    "committee_denominator": "65",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6985"
    },
    "authoritative_fields": [
     "name_ar",
@@ -861,7 +894,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7493",
-    "plenary_attendance_rate": "0.8053"
+    "plenary_attendance_rate": "0.8053",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "1.0000",
+    "committee_denominator": "17",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7075"
    },
    "authoritative_fields": [
     "name_ar",
@@ -921,7 +959,10 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7254",
-    "plenary_attendance_rate": "0.8496"
+    "plenary_attendance_rate": "0.8496",
+    "plenary_denominator": "113",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.1791"
    },
    "authoritative_fields": [
     "name_ar",
@@ -1002,7 +1043,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.3224",
-    "plenary_attendance_rate": "0.5893"
+    "plenary_attendance_rate": "0.5893",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.6000",
+    "committee_denominator": "65",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.2358"
    },
    "authoritative_fields": [
     "name_ar",
@@ -1085,7 +1131,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.5015",
-    "plenary_attendance_rate": "0.6339"
+    "plenary_attendance_rate": "0.6339",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.1786",
+    "committee_denominator": "56",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4299"
    },
    "authoritative_fields": [
     "name_ar",
@@ -1168,7 +1219,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6567",
-    "plenary_attendance_rate": "0.8929"
+    "plenary_attendance_rate": "0.8929",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.5875",
+    "committee_denominator": "80",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.2060"
    },
    "authoritative_fields": [
     "name_ar",
@@ -1241,7 +1297,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6448",
-    "plenary_attendance_rate": "0.7589"
+    "plenary_attendance_rate": "0.7589",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.9062",
+    "committee_denominator": "64",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4597"
    },
    "authoritative_fields": [
     "name_ar",
@@ -1324,7 +1385,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6239",
-    "plenary_attendance_rate": "0.7522"
+    "plenary_attendance_rate": "0.7522",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.2241",
+    "committee_denominator": "58",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6030"
    },
    "authoritative_fields": [
     "name_ar",
@@ -1417,7 +1483,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.3552",
-    "plenary_attendance_rate": "0.5044"
+    "plenary_attendance_rate": "0.5044",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.4769",
+    "committee_denominator": "65",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3254"
    },
    "authoritative_fields": [
     "name_ar",
@@ -1500,7 +1571,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.5493",
-    "plenary_attendance_rate": "0.6339"
+    "plenary_attendance_rate": "0.6339",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.2658",
+    "committee_denominator": "79",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4687"
    },
    "authoritative_fields": [
     "name_ar",
@@ -1562,7 +1638,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7433",
-    "plenary_attendance_rate": "0.7522"
+    "plenary_attendance_rate": "0.7522",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.7742",
+    "committee_denominator": "31",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7045"
    },
    "authoritative_fields": [
     "name_ar",
@@ -1645,7 +1726,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6299",
-    "plenary_attendance_rate": "0.8125"
+    "plenary_attendance_rate": "0.8125",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.7059",
+    "committee_denominator": "51",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5493"
    },
    "authoritative_fields": [
     "name_ar",
@@ -1728,7 +1814,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6119",
-    "plenary_attendance_rate": "0.8393"
+    "plenary_attendance_rate": "0.8393",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.6471",
+    "committee_denominator": "68",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5194"
    },
    "authoritative_fields": [
     "name_ar",
@@ -1790,7 +1881,10 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4507",
-    "plenary_attendance_rate": "0.7168"
+    "plenary_attendance_rate": "0.7168",
+    "plenary_denominator": "113",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3701"
    },
    "authoritative_fields": [
     "name_ar",
@@ -1873,7 +1967,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6955",
-    "plenary_attendance_rate": "0.7965"
+    "plenary_attendance_rate": "0.7965",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.5156",
+    "committee_denominator": "64",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5254"
    },
    "authoritative_fields": [
     "name_ar",
@@ -1956,7 +2055,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6358",
-    "plenary_attendance_rate": "0.6991"
+    "plenary_attendance_rate": "0.6991",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.2778",
+    "committee_denominator": "54",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5224"
    },
    "authoritative_fields": [
     "name_ar",
@@ -2039,7 +2143,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6746",
-    "plenary_attendance_rate": "0.5752"
+    "plenary_attendance_rate": "0.5752",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.6167",
+    "committee_denominator": "60",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6000"
    },
    "authoritative_fields": [
     "name_ar",
@@ -2122,7 +2231,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.9254",
-    "plenary_attendance_rate": "0.7946"
+    "plenary_attendance_rate": "0.7946",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.7222",
+    "committee_denominator": "54",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.8149"
    },
    "authoritative_fields": [
     "name_ar",
@@ -2205,7 +2319,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6955",
-    "plenary_attendance_rate": "0.6964"
+    "plenary_attendance_rate": "0.6964",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.3488",
+    "committee_denominator": "43",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4836"
    },
    "authoritative_fields": [
     "name_ar",
@@ -2288,7 +2407,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7655",
-    "plenary_attendance_rate": "0.7757"
+    "plenary_attendance_rate": "0.7757",
+    "plenary_denominator": "107",
+    "committee_attendance_rate": "0.6667",
+    "committee_denominator": "57",
+    "vote_denominator": "226",
+    "vote_discipline_rate": "0.6991"
    },
    "authoritative_fields": [
     "name_ar",
@@ -2371,7 +2495,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7940",
-    "plenary_attendance_rate": "0.9204"
+    "plenary_attendance_rate": "0.9204",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.9583",
+    "committee_denominator": "48",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6657"
    },
    "authoritative_fields": [
     "name_ar",
@@ -2452,7 +2581,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6030",
-    "plenary_attendance_rate": "0.7679"
+    "plenary_attendance_rate": "0.7679",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.4706",
+    "committee_denominator": "51",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4806"
    },
    "authoritative_fields": [
     "name_ar",
@@ -2535,7 +2669,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.2567",
-    "plenary_attendance_rate": "0.6814"
+    "plenary_attendance_rate": "0.6814",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.0417",
+    "committee_denominator": "24",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.2209"
    },
    "authoritative_fields": [
     "name_ar",
@@ -2618,7 +2757,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6448",
-    "plenary_attendance_rate": "0.6339"
+    "plenary_attendance_rate": "0.6339",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.2321",
+    "committee_denominator": "56",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5373"
    },
    "authoritative_fields": [
     "name_ar",
@@ -2701,7 +2845,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6746",
-    "plenary_attendance_rate": "0.8304"
+    "plenary_attendance_rate": "0.8304",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.2759",
+    "committee_denominator": "58",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5642"
    },
    "authoritative_fields": [
     "name_ar",
@@ -2784,7 +2933,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.9254",
-    "plenary_attendance_rate": "0.9204"
+    "plenary_attendance_rate": "0.9204",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.7059",
+    "committee_denominator": "51",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.8090"
    },
    "authoritative_fields": [
     "name_ar",
@@ -2877,7 +3031,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.9612",
-    "plenary_attendance_rate": "0.9646"
+    "plenary_attendance_rate": "0.9646",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.7727",
+    "committee_denominator": "44",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.8448"
    },
    "authoritative_fields": [
     "name_ar",
@@ -2960,7 +3119,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8597",
-    "plenary_attendance_rate": "0.8036"
+    "plenary_attendance_rate": "0.8036",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.6462",
+    "committee_denominator": "65",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7642"
    },
    "authoritative_fields": [
     "name_ar",
@@ -3053,7 +3217,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.5313",
-    "plenary_attendance_rate": "0.8761"
+    "plenary_attendance_rate": "0.8761",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.5641",
+    "committee_denominator": "39",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4209"
    },
    "authoritative_fields": [
     "name_ar",
@@ -3136,7 +3305,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7970",
-    "plenary_attendance_rate": "0.7946"
+    "plenary_attendance_rate": "0.7946",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.6203",
+    "committee_denominator": "79",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6985"
    },
    "authoritative_fields": [
     "name_ar",
@@ -3209,7 +3383,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.3254",
-    "plenary_attendance_rate": "0.7589"
+    "plenary_attendance_rate": "0.7589",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.6897",
+    "committee_denominator": "58",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.2507"
    },
    "authoritative_fields": [
     "name_ar",
@@ -3292,7 +3471,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8925",
-    "plenary_attendance_rate": "0.8482"
+    "plenary_attendance_rate": "0.8482",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.8615",
+    "committee_denominator": "65",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7851"
    },
    "authoritative_fields": [
     "name_ar",
@@ -3375,7 +3559,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.5463",
-    "plenary_attendance_rate": "0.6696"
+    "plenary_attendance_rate": "0.6696",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.1765",
+    "committee_denominator": "51",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4269"
    },
    "authoritative_fields": [
     "name_ar",
@@ -3458,7 +3647,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7224",
-    "plenary_attendance_rate": "0.6991"
+    "plenary_attendance_rate": "0.6991",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.5490",
+    "committee_denominator": "51",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6746"
    },
    "authoritative_fields": [
     "name_ar",
@@ -3551,7 +3745,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.9104",
-    "plenary_attendance_rate": "0.9018"
+    "plenary_attendance_rate": "0.9018",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.8182",
+    "committee_denominator": "44",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.8299"
    },
    "authoritative_fields": [
     "name_ar",
@@ -3644,7 +3843,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4388",
-    "plenary_attendance_rate": "0.6786"
+    "plenary_attendance_rate": "0.6786",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.3750",
+    "committee_denominator": "40",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.1642"
    },
    "authoritative_fields": [
     "name_ar",
@@ -3727,7 +3931,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7313",
-    "plenary_attendance_rate": "0.6786"
+    "plenary_attendance_rate": "0.6786",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.7241",
+    "committee_denominator": "58",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6328"
    },
    "authoritative_fields": [
     "name_ar",
@@ -3810,7 +4019,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7731",
-    "plenary_attendance_rate": "0.7411"
+    "plenary_attendance_rate": "0.7411",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.7778",
+    "committee_denominator": "45",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6627"
    },
    "authoritative_fields": [
     "name_ar",
@@ -3893,7 +4107,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.2955",
-    "plenary_attendance_rate": "0.5133"
+    "plenary_attendance_rate": "0.5133",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.6721",
+    "committee_denominator": "61",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.2507"
    },
    "authoritative_fields": [
     "name_ar",
@@ -3976,7 +4195,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8090",
-    "plenary_attendance_rate": "0.8214"
+    "plenary_attendance_rate": "0.8214",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.9375",
+    "committee_denominator": "16",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7015"
    },
    "authoritative_fields": [
     "name_ar",
@@ -4059,7 +4283,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.9254",
-    "plenary_attendance_rate": "0.8407"
+    "plenary_attendance_rate": "0.8407",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.7463",
+    "committee_denominator": "67",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.8179"
    },
    "authoritative_fields": [
     "name_ar",
@@ -4142,7 +4371,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7791",
-    "plenary_attendance_rate": "0.8761"
+    "plenary_attendance_rate": "0.8761",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.9494",
+    "committee_denominator": "79",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6746"
    },
    "authoritative_fields": [
     "name_ar",
@@ -4225,7 +4459,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8657",
-    "plenary_attendance_rate": "0.8761"
+    "plenary_attendance_rate": "0.8761",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.7778",
+    "committee_denominator": "63",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7433"
    },
    "authoritative_fields": [
     "name_ar",
@@ -4285,7 +4524,10 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.3791",
-    "plenary_attendance_rate": "0.8214"
+    "plenary_attendance_rate": "0.8214",
+    "plenary_denominator": "112",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.0716"
    },
    "authoritative_fields": [
     "name_ar",
@@ -4368,7 +4610,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6716",
-    "plenary_attendance_rate": "0.7257"
+    "plenary_attendance_rate": "0.7257",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.7857",
+    "committee_denominator": "56",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5910"
    },
    "authoritative_fields": [
     "name_ar",
@@ -4461,7 +4708,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7343",
-    "plenary_attendance_rate": "0.9018"
+    "plenary_attendance_rate": "0.9018",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.5862",
+    "committee_denominator": "58",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6149"
    },
    "authoritative_fields": [
     "name_ar",
@@ -4544,7 +4796,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6597",
-    "plenary_attendance_rate": "0.6607"
+    "plenary_attendance_rate": "0.6607",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.4051",
+    "committee_denominator": "79",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5642"
    },
    "authoritative_fields": [
     "name_ar",
@@ -4627,7 +4884,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4657",
-    "plenary_attendance_rate": "0.7589"
+    "plenary_attendance_rate": "0.7589",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.5652",
+    "committee_denominator": "46",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.2567"
    },
    "authoritative_fields": [
     "name_ar",
@@ -4689,7 +4951,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.5552",
-    "plenary_attendance_rate": "0.7411"
+    "plenary_attendance_rate": "0.7411",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.1081",
+    "committee_denominator": "37",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4806"
    },
    "authoritative_fields": [
     "name_ar",
@@ -4782,7 +5049,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6119",
-    "plenary_attendance_rate": "0.6991"
+    "plenary_attendance_rate": "0.6991",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.7273",
+    "committee_denominator": "33",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5761"
    },
    "authoritative_fields": [
     "name_ar",
@@ -4865,7 +5137,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6657",
-    "plenary_attendance_rate": "0.7965"
+    "plenary_attendance_rate": "0.7965",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.7414",
+    "committee_denominator": "58",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4537"
    },
    "authoritative_fields": [
     "name_ar",
@@ -4938,7 +5215,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6507",
-    "plenary_attendance_rate": "0.6161"
+    "plenary_attendance_rate": "0.6161",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.2121",
+    "committee_denominator": "33",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5373"
    },
    "authoritative_fields": [
     "name_ar",
@@ -5011,7 +5293,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8119",
-    "plenary_attendance_rate": "0.9735"
+    "plenary_attendance_rate": "0.9735",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.9455",
+    "committee_denominator": "55",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7075"
    },
    "authoritative_fields": [
     "name_ar",
@@ -5094,7 +5381,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4388",
-    "plenary_attendance_rate": "0.6161"
+    "plenary_attendance_rate": "0.6161",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.3143",
+    "committee_denominator": "35",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4149"
    },
    "authoritative_fields": [
     "name_ar",
@@ -5177,7 +5469,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8448",
-    "plenary_attendance_rate": "0.7321"
+    "plenary_attendance_rate": "0.7321",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.7273",
+    "committee_denominator": "33",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7731"
    },
    "authoritative_fields": [
     "name_ar",
@@ -5260,7 +5557,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6955",
-    "plenary_attendance_rate": "0.8839"
+    "plenary_attendance_rate": "0.8839",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.8448",
+    "committee_denominator": "58",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5791"
    },
    "authoritative_fields": [
     "name_ar",
@@ -5320,7 +5622,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4716",
-    "plenary_attendance_rate": "0.7143"
+    "plenary_attendance_rate": "0.7143",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.1739",
+    "committee_denominator": "23",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3582"
    },
    "authoritative_fields": [
     "name_ar",
@@ -5403,7 +5710,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7791",
-    "plenary_attendance_rate": "0.8230"
+    "plenary_attendance_rate": "0.8230",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.8154",
+    "committee_denominator": "65",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6687"
    },
    "authoritative_fields": [
     "name_ar",
@@ -5476,7 +5788,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4030",
-    "plenary_attendance_rate": "0.7699"
+    "plenary_attendance_rate": "0.7699",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.6835",
+    "committee_denominator": "79",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3731"
    },
    "authoritative_fields": [
     "name_ar",
@@ -5559,7 +5876,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7970",
-    "plenary_attendance_rate": "0.8125"
+    "plenary_attendance_rate": "0.8125",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.8226",
+    "committee_denominator": "62",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5791"
    },
    "authoritative_fields": [
     "name_ar",
@@ -5642,7 +5964,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.2478",
-    "plenary_attendance_rate": "0.5804"
+    "plenary_attendance_rate": "0.5804",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.2895",
+    "committee_denominator": "76",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.2269"
    },
    "authoritative_fields": [
     "name_ar",
@@ -5725,7 +6052,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.9821",
-    "plenary_attendance_rate": "0.7679"
+    "plenary_attendance_rate": "0.7679",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.9077",
+    "committee_denominator": "65",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.8657"
    },
    "authoritative_fields": [
     "name_ar",
@@ -5798,7 +6130,11 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.9070",
-    "plenary_attendance_rate": "0.7317"
+    "plenary_attendance_rate": "0.7317",
+    "plenary_denominator": "41",
+    "committee_attendance_rate": "0.2381",
+    "committee_denominator": "21",
+    "vote_denominator": "43"
    },
    "authoritative_fields": [
     "name_ar",
@@ -5881,7 +6217,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7403",
-    "plenary_attendance_rate": "0.8142"
+    "plenary_attendance_rate": "0.8142",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.7975",
+    "committee_denominator": "79",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6776"
    },
    "authoritative_fields": [
     "name_ar",
@@ -5964,7 +6305,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7910",
-    "plenary_attendance_rate": "0.7411"
+    "plenary_attendance_rate": "0.7411",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.1429",
+    "committee_denominator": "49",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6925"
    },
    "authoritative_fields": [
     "name_ar",
@@ -6047,7 +6393,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4090",
-    "plenary_attendance_rate": "0.6071"
+    "plenary_attendance_rate": "0.6071",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.2899",
+    "committee_denominator": "69",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3493"
    },
    "authoritative_fields": [
     "name_ar",
@@ -6130,7 +6481,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6239",
-    "plenary_attendance_rate": "0.6991"
+    "plenary_attendance_rate": "0.6991",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.5102",
+    "committee_denominator": "49",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5493"
    },
    "authoritative_fields": [
     "name_ar",
@@ -6213,7 +6569,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.5582",
-    "plenary_attendance_rate": "0.7946"
+    "plenary_attendance_rate": "0.7946",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.5091",
+    "committee_denominator": "55",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4507"
    },
    "authoritative_fields": [
     "name_ar",
@@ -6296,7 +6657,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8328",
-    "plenary_attendance_rate": "0.9735"
+    "plenary_attendance_rate": "0.9735",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.5077",
+    "committee_denominator": "65",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7254"
    },
    "authoritative_fields": [
     "name_ar",
@@ -6379,7 +6745,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4478",
-    "plenary_attendance_rate": "0.9107"
+    "plenary_attendance_rate": "0.9107",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.4889",
+    "committee_denominator": "45",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.2925"
    },
    "authoritative_fields": [
     "name_ar",
@@ -6450,7 +6821,11 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8239",
-    "plenary_attendance_rate": "0.8036"
+    "plenary_attendance_rate": "0.8036",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.5882",
+    "committee_denominator": "51",
+    "vote_denominator": "335"
    },
    "authoritative_fields": [
     "name_ar",
@@ -6541,7 +6916,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6687",
-    "plenary_attendance_rate": "0.8125"
+    "plenary_attendance_rate": "0.8125",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.4545",
+    "committee_denominator": "33",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4746"
    },
    "authoritative_fields": [
     "name_ar",
@@ -6624,7 +7004,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7463",
-    "plenary_attendance_rate": "0.7080"
+    "plenary_attendance_rate": "0.7080",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.2969",
+    "committee_denominator": "64",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6985"
    },
    "authoritative_fields": [
     "name_ar",
@@ -6705,7 +7090,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8000",
-    "plenary_attendance_rate": "0.8036"
+    "plenary_attendance_rate": "0.8036",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.7606",
+    "committee_denominator": "71",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6866"
    },
    "authoritative_fields": [
     "name_ar",
@@ -6788,7 +7178,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7881",
-    "plenary_attendance_rate": "0.8304"
+    "plenary_attendance_rate": "0.8304",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.4237",
+    "committee_denominator": "59",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7075"
    },
    "authoritative_fields": [
     "name_ar",
@@ -6859,7 +7254,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8299",
-    "plenary_attendance_rate": "0.8496"
+    "plenary_attendance_rate": "0.8496",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.8906",
+    "committee_denominator": "64",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7194"
    },
    "authoritative_fields": [
     "name_ar",
@@ -6932,7 +7332,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4119",
-    "plenary_attendance_rate": "0.7589"
+    "plenary_attendance_rate": "0.7589",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.4375",
+    "committee_denominator": "32",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3224"
    },
    "authoritative_fields": [
     "name_ar",
@@ -7015,7 +7420,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8507",
-    "plenary_attendance_rate": "0.8839"
+    "plenary_attendance_rate": "0.8839",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.6250",
+    "committee_denominator": "56",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7433"
    },
    "authoritative_fields": [
     "name_ar",
@@ -7098,7 +7508,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7493",
-    "plenary_attendance_rate": "0.8214"
+    "plenary_attendance_rate": "0.8214",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.2537",
+    "committee_denominator": "67",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6657"
    },
    "authoritative_fields": [
     "name_ar",
@@ -7181,7 +7596,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6716",
-    "plenary_attendance_rate": "0.7522"
+    "plenary_attendance_rate": "0.7522",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.5745",
+    "committee_denominator": "47",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5552"
    },
    "authoritative_fields": [
     "name_ar",
@@ -7243,7 +7663,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.5373",
-    "plenary_attendance_rate": "0.5625"
+    "plenary_attendance_rate": "0.5625",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.0000",
+    "committee_denominator": "45",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4478"
    },
    "authoritative_fields": [
     "name_ar",
@@ -7326,7 +7751,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6478",
-    "plenary_attendance_rate": "0.6964"
+    "plenary_attendance_rate": "0.6964",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.5479",
+    "committee_denominator": "73",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6030"
    },
    "authoritative_fields": [
     "name_ar",
@@ -7409,7 +7839,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8418",
-    "plenary_attendance_rate": "0.8036"
+    "plenary_attendance_rate": "0.8036",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.7576",
+    "committee_denominator": "33",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7343"
    },
    "authoritative_fields": [
     "name_ar",
@@ -7471,7 +7906,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6299",
-    "plenary_attendance_rate": "0.7257"
+    "plenary_attendance_rate": "0.7257",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.9697",
+    "committee_denominator": "33",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5881"
    },
    "authoritative_fields": [
     "name_ar",
@@ -7542,7 +7982,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.1284",
-    "plenary_attendance_rate": "0.4107"
+    "plenary_attendance_rate": "0.4107",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.0806",
+    "committee_denominator": "62",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.1224"
    },
    "authoritative_fields": [
     "name_ar",
@@ -7615,7 +8060,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6806",
-    "plenary_attendance_rate": "0.8319"
+    "plenary_attendance_rate": "0.8319",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.9286",
+    "committee_denominator": "56",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3642"
    },
    "authoritative_fields": [
     "name_ar",
@@ -7696,7 +8146,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.5313",
-    "plenary_attendance_rate": "0.6991"
+    "plenary_attendance_rate": "0.6991",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.1406",
+    "committee_denominator": "64",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3552"
    },
    "authoritative_fields": [
     "name_ar",
@@ -7779,7 +8234,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7522",
-    "plenary_attendance_rate": "0.8230"
+    "plenary_attendance_rate": "0.8230",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.5000",
+    "committee_denominator": "54",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6239"
    },
    "authoritative_fields": [
     "name_ar",
@@ -7862,7 +8322,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7552",
-    "plenary_attendance_rate": "0.8407"
+    "plenary_attendance_rate": "0.8407",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.6327",
+    "committee_denominator": "49",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6507"
    },
    "authoritative_fields": [
     "name_ar",
@@ -7945,7 +8410,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7940",
-    "plenary_attendance_rate": "0.6429"
+    "plenary_attendance_rate": "0.6429",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.6462",
+    "committee_denominator": "65",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5403"
    },
    "authoritative_fields": [
     "name_ar",
@@ -8038,7 +8508,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.5672",
-    "plenary_attendance_rate": "0.9115"
+    "plenary_attendance_rate": "0.9115",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.7143",
+    "committee_denominator": "49",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5104"
    },
    "authoritative_fields": [
     "name_ar",
@@ -8121,7 +8596,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8000",
-    "plenary_attendance_rate": "0.8214"
+    "plenary_attendance_rate": "0.8214",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.7885",
+    "committee_denominator": "52",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6507"
    },
    "authoritative_fields": [
     "name_ar",
@@ -8204,7 +8684,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.2925",
-    "plenary_attendance_rate": "0.3661"
+    "plenary_attendance_rate": "0.3661",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.0606",
+    "committee_denominator": "33",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.2746"
    },
    "authoritative_fields": [
     "name_ar",
@@ -8287,7 +8772,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6836",
-    "plenary_attendance_rate": "0.7788"
+    "plenary_attendance_rate": "0.7788",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.4464",
+    "committee_denominator": "56",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6000"
    },
    "authoritative_fields": [
     "name_ar",
@@ -8349,7 +8839,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6299",
-    "plenary_attendance_rate": "0.9204"
+    "plenary_attendance_rate": "0.9204",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.8696",
+    "committee_denominator": "23",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5075"
    },
    "authoritative_fields": [
     "name_ar",
@@ -8442,7 +8937,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7045",
-    "plenary_attendance_rate": "0.8750"
+    "plenary_attendance_rate": "0.8750",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.5294",
+    "committee_denominator": "51",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6000"
    },
    "authoritative_fields": [
     "name_ar",
@@ -8504,7 +9004,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.1881",
-    "plenary_attendance_rate": "0.6518"
+    "plenary_attendance_rate": "0.6518",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.0526",
+    "committee_denominator": "19",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.1254"
    },
    "authoritative_fields": [
     "name_ar",
@@ -8587,7 +9092,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.3373",
-    "plenary_attendance_rate": "0.5536"
+    "plenary_attendance_rate": "0.5536",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.6769",
+    "committee_denominator": "65",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.2597"
    },
    "authoritative_fields": [
     "name_ar",
@@ -8670,7 +9180,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7940",
-    "plenary_attendance_rate": "0.7788"
+    "plenary_attendance_rate": "0.7788",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.6329",
+    "committee_denominator": "79",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7493"
    },
    "authoritative_fields": [
     "name_ar",
@@ -8732,7 +9247,10 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.3373",
-    "plenary_attendance_rate": "0.4107"
+    "plenary_attendance_rate": "0.4107",
+    "plenary_denominator": "112",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3015"
    },
    "authoritative_fields": [
     "name_ar",
@@ -8825,7 +9343,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8000",
-    "plenary_attendance_rate": "0.8750"
+    "plenary_attendance_rate": "0.8750",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.8361",
+    "committee_denominator": "61",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7373"
    },
    "authoritative_fields": [
     "name_ar",
@@ -8906,7 +9429,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6209",
-    "plenary_attendance_rate": "0.6786"
+    "plenary_attendance_rate": "0.6786",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.3939",
+    "committee_denominator": "33",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5104"
    },
    "authoritative_fields": [
     "name_ar",
@@ -8979,7 +9507,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7672",
-    "plenary_attendance_rate": "0.8407"
+    "plenary_attendance_rate": "0.8407",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.3860",
+    "committee_denominator": "57",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6657"
    },
    "authoritative_fields": [
     "name_ar",
@@ -9062,7 +9595,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.5493",
-    "plenary_attendance_rate": "0.7589"
+    "plenary_attendance_rate": "0.7589",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.5246",
+    "committee_denominator": "61",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4448"
    },
    "authoritative_fields": [
     "name_ar",
@@ -9145,7 +9683,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.9403",
-    "plenary_attendance_rate": "0.8393"
+    "plenary_attendance_rate": "0.8393",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.8354",
+    "committee_denominator": "79",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.8239"
    },
    "authoritative_fields": [
     "name_ar",
@@ -9218,7 +9761,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4119",
-    "plenary_attendance_rate": "0.4643"
+    "plenary_attendance_rate": "0.4643",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.0312",
+    "committee_denominator": "32",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3910"
    },
    "authoritative_fields": [
     "name_ar",
@@ -9278,7 +9826,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4716",
-    "plenary_attendance_rate": "0.5089"
+    "plenary_attendance_rate": "0.5089",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.2812",
+    "committee_denominator": "32",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3642"
    },
    "authoritative_fields": [
     "name_ar",
@@ -9338,7 +9891,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4836",
-    "plenary_attendance_rate": "0.6786"
+    "plenary_attendance_rate": "0.6786",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.0000",
+    "committee_denominator": "1",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.0209"
    },
    "authoritative_fields": [
     "name_ar",
@@ -9411,7 +9969,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8000",
-    "plenary_attendance_rate": "0.7946"
+    "plenary_attendance_rate": "0.7946",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "1.0000",
+    "committee_denominator": "58",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6985"
    },
    "authoritative_fields": [
     "name_ar",
@@ -9504,7 +10067,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6657",
-    "plenary_attendance_rate": "0.8850"
+    "plenary_attendance_rate": "0.8850",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.5690",
+    "committee_denominator": "58",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3791"
    },
    "authoritative_fields": [
     "name_ar",
@@ -9577,7 +10145,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6090",
-    "plenary_attendance_rate": "0.5804"
+    "plenary_attendance_rate": "0.5804",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.2857",
+    "committee_denominator": "35",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5403"
    },
    "authoritative_fields": [
     "name_ar",
@@ -9660,7 +10233,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7164",
-    "plenary_attendance_rate": "0.9018"
+    "plenary_attendance_rate": "0.9018",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.6203",
+    "committee_denominator": "79",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6269"
    },
    "authoritative_fields": [
     "name_ar",
@@ -9743,7 +10321,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7701",
-    "plenary_attendance_rate": "0.7345"
+    "plenary_attendance_rate": "0.7345",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.8276",
+    "committee_denominator": "58",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7104"
    },
    "authoritative_fields": [
     "name_ar",
@@ -9826,7 +10409,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7612",
-    "plenary_attendance_rate": "0.6250"
+    "plenary_attendance_rate": "0.6250",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.7273",
+    "committee_denominator": "33",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7134"
    },
    "authoritative_fields": [
     "name_ar",
@@ -9909,7 +10497,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4328",
-    "plenary_attendance_rate": "0.6071"
+    "plenary_attendance_rate": "0.6071",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.1429",
+    "committee_denominator": "63",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.2955"
    },
    "authoritative_fields": [
     "name_ar",
@@ -9992,7 +10585,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8179",
-    "plenary_attendance_rate": "0.8839"
+    "plenary_attendance_rate": "0.8839",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.8101",
+    "committee_denominator": "79",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7164"
    },
    "authoritative_fields": [
     "name_ar",
@@ -10075,7 +10673,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.3493",
-    "plenary_attendance_rate": "0.5714"
+    "plenary_attendance_rate": "0.5714",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.3846",
+    "committee_denominator": "65",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.2657"
    },
    "authoritative_fields": [
     "name_ar",
@@ -10158,7 +10761,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.1552",
-    "plenary_attendance_rate": "0.1339"
+    "plenary_attendance_rate": "0.1339",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.0000",
+    "committee_denominator": "65",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.1343"
    },
    "authoritative_fields": [
     "name_ar",
@@ -10241,7 +10849,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6687",
-    "plenary_attendance_rate": "0.6814"
+    "plenary_attendance_rate": "0.6814",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.6750",
+    "committee_denominator": "40",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6269"
    },
    "authoritative_fields": [
     "name_ar",
@@ -10314,7 +10927,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.9194",
-    "plenary_attendance_rate": "0.7411"
+    "plenary_attendance_rate": "0.7411",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.7273",
+    "committee_denominator": "33",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.8030"
    },
    "authoritative_fields": [
     "name_ar",
@@ -10385,7 +11003,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6478",
-    "plenary_attendance_rate": "0.9027"
+    "plenary_attendance_rate": "0.9027",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.9077",
+    "committee_denominator": "65",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4955"
    },
    "authoritative_fields": [
     "name_ar",
@@ -10468,7 +11091,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4418",
-    "plenary_attendance_rate": "0.6875"
+    "plenary_attendance_rate": "0.6875",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.4242",
+    "committee_denominator": "33",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3075"
    },
    "authoritative_fields": [
     "name_ar",
@@ -10551,7 +11179,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4985",
-    "plenary_attendance_rate": "0.8393"
+    "plenary_attendance_rate": "0.8393",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.6786",
+    "committee_denominator": "56",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4119"
    },
    "authoritative_fields": [
     "name_ar",
@@ -10634,7 +11267,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6627",
-    "plenary_attendance_rate": "0.8661"
+    "plenary_attendance_rate": "0.8661",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.6207",
+    "committee_denominator": "58",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5731"
    },
    "authoritative_fields": [
     "name_ar",
@@ -10707,7 +11345,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6448",
-    "plenary_attendance_rate": "0.8571"
+    "plenary_attendance_rate": "0.8571",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.5682",
+    "committee_denominator": "44",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5612"
    },
    "authoritative_fields": [
     "name_ar",
@@ -10780,7 +11423,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6060",
-    "plenary_attendance_rate": "0.5982"
+    "plenary_attendance_rate": "0.5982",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.0625",
+    "committee_denominator": "32",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5373"
    },
    "authoritative_fields": [
     "name_ar",
@@ -10863,7 +11511,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8687",
-    "plenary_attendance_rate": "0.8304"
+    "plenary_attendance_rate": "0.8304",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.8929",
+    "committee_denominator": "56",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7970"
    },
    "authoritative_fields": [
     "name_ar",
@@ -10946,7 +11599,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7731",
-    "plenary_attendance_rate": "0.8673"
+    "plenary_attendance_rate": "0.8673",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.8448",
+    "committee_denominator": "58",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6537"
    },
    "authoritative_fields": [
     "name_ar",
@@ -11029,7 +11687,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.9493",
-    "plenary_attendance_rate": "0.7965"
+    "plenary_attendance_rate": "0.7965",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.8308",
+    "committee_denominator": "65",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7881"
    },
    "authoritative_fields": [
     "name_ar",
@@ -11112,7 +11775,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7045",
-    "plenary_attendance_rate": "0.8393"
+    "plenary_attendance_rate": "0.8393",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.8354",
+    "committee_denominator": "79",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4985"
    },
    "authoritative_fields": [
     "name_ar",
@@ -11193,7 +11861,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4209",
-    "plenary_attendance_rate": "0.7611"
+    "plenary_attendance_rate": "0.7611",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.6066",
+    "committee_denominator": "61",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.1373"
    },
    "authoritative_fields": [
     "name_ar",
@@ -11266,7 +11939,11 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "1.0000",
-    "plenary_attendance_rate": "0.9167"
+    "plenary_attendance_rate": "0.9167",
+    "plenary_denominator": "12",
+    "committee_attendance_rate": "1.0000",
+    "committee_denominator": "5",
+    "vote_denominator": "7"
    },
    "authoritative_fields": [
     "name_ar",
@@ -11326,7 +12003,11 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4358",
-    "plenary_attendance_rate": "0.7321"
+    "plenary_attendance_rate": "0.7321",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.6923",
+    "committee_denominator": "13",
+    "vote_denominator": "335"
    },
    "authoritative_fields": [
     "name_ar",
@@ -11399,7 +12080,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.2060",
-    "plenary_attendance_rate": "0.4911"
+    "plenary_attendance_rate": "0.4911",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.2857",
+    "committee_denominator": "84",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.1672"
    },
    "authoritative_fields": [
     "name_ar",
@@ -11492,7 +12178,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.3463",
-    "plenary_attendance_rate": "0.8304"
+    "plenary_attendance_rate": "0.8304",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.8205",
+    "committee_denominator": "39",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.2896"
    },
    "authoritative_fields": [
     "name_ar",
@@ -11575,7 +12266,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7910",
-    "plenary_attendance_rate": "0.7589"
+    "plenary_attendance_rate": "0.7589",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.3881",
+    "committee_denominator": "67",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6896"
    },
    "authoritative_fields": [
     "name_ar",
@@ -11668,7 +12364,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7493",
-    "plenary_attendance_rate": "0.9115"
+    "plenary_attendance_rate": "0.9115",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.4412",
+    "committee_denominator": "68",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6657"
    },
    "authoritative_fields": [
     "name_ar",
@@ -11741,7 +12442,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.5791",
-    "plenary_attendance_rate": "0.4690"
+    "plenary_attendance_rate": "0.4690",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.3667",
+    "committee_denominator": "60",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5433"
    },
    "authoritative_fields": [
     "name_ar",
@@ -11824,7 +12530,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.5493",
-    "plenary_attendance_rate": "0.9375"
+    "plenary_attendance_rate": "0.9375",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.9200",
+    "committee_denominator": "25",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4478"
    },
    "authoritative_fields": [
     "name_ar",
@@ -11907,7 +12618,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6507",
-    "plenary_attendance_rate": "0.8036"
+    "plenary_attendance_rate": "0.8036",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.5410",
+    "committee_denominator": "61",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5672"
    },
    "authoritative_fields": [
     "name_ar",
@@ -11969,7 +12685,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7672",
-    "plenary_attendance_rate": "0.7946"
+    "plenary_attendance_rate": "0.7946",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.5714",
+    "committee_denominator": "28",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6716"
    },
    "authoritative_fields": [
     "name_ar",
@@ -12062,7 +12783,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4806",
-    "plenary_attendance_rate": "0.6637"
+    "plenary_attendance_rate": "0.6637",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.3582",
+    "committee_denominator": "67",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4388"
    },
    "authoritative_fields": [
     "name_ar",
@@ -12145,7 +12871,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7821",
-    "plenary_attendance_rate": "0.8661"
+    "plenary_attendance_rate": "0.8661",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.9688",
+    "committee_denominator": "64",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6627"
    },
    "authoritative_fields": [
     "name_ar",
@@ -12228,7 +12959,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8567",
-    "plenary_attendance_rate": "0.8407"
+    "plenary_attendance_rate": "0.8407",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.8525",
+    "committee_denominator": "61",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6657"
    },
    "authoritative_fields": [
     "name_ar",
@@ -12311,7 +13047,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8239",
-    "plenary_attendance_rate": "0.8142"
+    "plenary_attendance_rate": "0.8142",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.4400",
+    "committee_denominator": "25",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7552"
    },
    "authoritative_fields": [
     "name_ar",
@@ -12394,7 +13135,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.5403",
-    "plenary_attendance_rate": "0.7589"
+    "plenary_attendance_rate": "0.7589",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.4510",
+    "committee_denominator": "51",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.2567"
    },
    "authoritative_fields": [
     "name_ar",
@@ -12477,7 +13223,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7731",
-    "plenary_attendance_rate": "0.8142"
+    "plenary_attendance_rate": "0.8142",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.7500",
+    "committee_denominator": "64",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7164"
    },
    "authoritative_fields": [
     "name_ar",
@@ -12550,7 +13301,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.3821",
-    "plenary_attendance_rate": "0.5000"
+    "plenary_attendance_rate": "0.5000",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.0385",
+    "committee_denominator": "52",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3045"
    },
    "authoritative_fields": [
     "name_ar",
@@ -12633,7 +13389,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7186",
-    "plenary_attendance_rate": "0.5638"
+    "plenary_attendance_rate": "0.5638",
+    "plenary_denominator": "94",
+    "committee_attendance_rate": "0.2812",
+    "committee_denominator": "32",
+    "vote_denominator": "167",
+    "vote_discipline_rate": "0.6407"
    },
    "authoritative_fields": [
     "name_ar",
@@ -12716,7 +13477,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8537",
-    "plenary_attendance_rate": "0.6786"
+    "plenary_attendance_rate": "0.6786",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.5156",
+    "committee_denominator": "64",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7522"
    },
    "authoritative_fields": [
     "name_ar",
@@ -12799,7 +13565,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6836",
-    "plenary_attendance_rate": "0.8761"
+    "plenary_attendance_rate": "0.8761",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.3571",
+    "committee_denominator": "70",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5821"
    },
    "authoritative_fields": [
     "name_ar",
@@ -12882,7 +13653,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.5910",
-    "plenary_attendance_rate": "0.8214"
+    "plenary_attendance_rate": "0.8214",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.8571",
+    "committee_denominator": "56",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4985"
    },
    "authoritative_fields": [
     "name_ar",
@@ -12965,7 +13741,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4149",
-    "plenary_attendance_rate": "0.5000"
+    "plenary_attendance_rate": "0.5000",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.2750",
+    "committee_denominator": "40",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3701"
    },
    "authoritative_fields": [
     "name_ar",
@@ -13038,7 +13819,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6448",
-    "plenary_attendance_rate": "0.6460"
+    "plenary_attendance_rate": "0.6460",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.6842",
+    "committee_denominator": "19",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4328"
    },
    "authoritative_fields": [
     "name_ar",
@@ -13111,7 +13897,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7194",
-    "plenary_attendance_rate": "0.9027"
+    "plenary_attendance_rate": "0.9027",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.1304",
+    "committee_denominator": "46",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4657"
    },
    "authoritative_fields": [
     "name_ar",
@@ -13194,7 +13985,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8358",
-    "plenary_attendance_rate": "0.8482"
+    "plenary_attendance_rate": "0.8482",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.6250",
+    "committee_denominator": "32",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7224"
    },
    "authoritative_fields": [
     "name_ar",
@@ -13287,7 +14083,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8657",
-    "plenary_attendance_rate": "0.8482"
+    "plenary_attendance_rate": "0.8482",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.7407",
+    "committee_denominator": "54",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7940"
    },
    "authoritative_fields": [
     "name_ar",
@@ -13349,7 +14150,10 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.3731",
-    "plenary_attendance_rate": "0.9381"
+    "plenary_attendance_rate": "0.9381",
+    "plenary_denominator": "113",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.2955"
    },
    "authoritative_fields": [
     "name_ar",
@@ -13420,7 +14224,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.2030",
-    "plenary_attendance_rate": "0.3929"
+    "plenary_attendance_rate": "0.3929",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.0189",
+    "committee_denominator": "53",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.0657"
    },
    "authoritative_fields": [
     "name_ar",
@@ -13503,7 +14312,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8448",
-    "plenary_attendance_rate": "0.8929"
+    "plenary_attendance_rate": "0.8929",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.7188",
+    "committee_denominator": "64",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7313"
    },
    "authoritative_fields": [
     "name_ar",
@@ -13565,7 +14379,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4239",
-    "plenary_attendance_rate": "0.5625"
+    "plenary_attendance_rate": "0.5625",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.0000",
+    "committee_denominator": "13",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3731"
    },
    "authoritative_fields": [
     "name_ar",
@@ -13638,7 +14457,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4806",
-    "plenary_attendance_rate": "0.7500"
+    "plenary_attendance_rate": "0.7500",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.2500",
+    "committee_denominator": "32",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3791"
    },
    "authoritative_fields": [
     "name_ar",
@@ -13729,7 +14553,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.9343",
-    "plenary_attendance_rate": "0.8304"
+    "plenary_attendance_rate": "0.8304",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.7800",
+    "committee_denominator": "50",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.2149"
    },
    "authoritative_fields": [
     "name_ar",
@@ -13812,7 +14641,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8388",
-    "plenary_attendance_rate": "0.8571"
+    "plenary_attendance_rate": "0.8571",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.7843",
+    "committee_denominator": "51",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7522"
    },
    "authoritative_fields": [
     "name_ar",
@@ -13905,7 +14739,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6448",
-    "plenary_attendance_rate": "0.7699"
+    "plenary_attendance_rate": "0.7699",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.6087",
+    "committee_denominator": "46",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5254"
    },
    "authoritative_fields": [
     "name_ar",
@@ -13965,7 +14804,9 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.0597",
-    "plenary_attendance_rate": "0.3125"
+    "plenary_attendance_rate": "0.3125",
+    "plenary_denominator": "112",
+    "vote_denominator": "335"
    },
    "authoritative_fields": [
     "name_ar",
@@ -14038,7 +14879,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8060",
-    "plenary_attendance_rate": "0.9286"
+    "plenary_attendance_rate": "0.9286",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.7581",
+    "committee_denominator": "62",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6985"
    },
    "authoritative_fields": [
     "name_ar",
@@ -14098,7 +14944,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.2776",
-    "plenary_attendance_rate": "0.5268"
+    "plenary_attendance_rate": "0.5268",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.2353",
+    "committee_denominator": "17",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.1373"
    },
    "authoritative_fields": [
     "name_ar",
@@ -14158,7 +15009,9 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.1701",
-    "plenary_attendance_rate": "0.4779"
+    "plenary_attendance_rate": "0.4779",
+    "plenary_denominator": "113",
+    "vote_denominator": "335"
    },
    "authoritative_fields": [
     "name_ar",
@@ -14251,7 +15104,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7970",
-    "plenary_attendance_rate": "0.8850"
+    "plenary_attendance_rate": "0.8850",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.7551",
+    "committee_denominator": "49",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7343"
    },
    "authoritative_fields": [
     "name_ar",
@@ -14313,7 +15171,10 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4030",
-    "plenary_attendance_rate": "0.5446"
+    "plenary_attendance_rate": "0.5446",
+    "plenary_denominator": "112",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3522"
    },
    "authoritative_fields": [
     "name_ar",
@@ -14396,7 +15257,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7605",
-    "plenary_attendance_rate": "0.8085"
+    "plenary_attendance_rate": "0.8085",
+    "plenary_denominator": "94",
+    "committee_attendance_rate": "0.7200",
+    "committee_denominator": "50",
+    "vote_denominator": "167",
+    "vote_discipline_rate": "0.6647"
    },
    "authoritative_fields": [
     "name_ar",
@@ -14467,7 +15333,11 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.3433",
-    "plenary_attendance_rate": "0.6071"
+    "plenary_attendance_rate": "0.6071",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.8308",
+    "committee_denominator": "65",
+    "vote_denominator": "335"
    },
    "authoritative_fields": [
     "name_ar",
@@ -14560,7 +15430,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7403",
-    "plenary_attendance_rate": "0.7788"
+    "plenary_attendance_rate": "0.7788",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.9796",
+    "committee_denominator": "49",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6627"
    },
    "authoritative_fields": [
     "name_ar",
@@ -14622,7 +15497,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.5642",
-    "plenary_attendance_rate": "0.6429"
+    "plenary_attendance_rate": "0.6429",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.3750",
+    "committee_denominator": "24",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4806"
    },
    "authoritative_fields": [
     "name_ar",
@@ -14684,7 +15564,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6090",
-    "plenary_attendance_rate": "0.9469"
+    "plenary_attendance_rate": "0.9469",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "1.0000",
+    "committee_denominator": "31",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5612"
    },
    "authoritative_fields": [
     "name_ar",
@@ -14767,7 +15652,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.9343",
-    "plenary_attendance_rate": "0.8850"
+    "plenary_attendance_rate": "0.8850",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.5397",
+    "committee_denominator": "63",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.8269"
    },
    "authoritative_fields": [
     "name_ar",
@@ -14850,7 +15740,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.5910",
-    "plenary_attendance_rate": "0.7768"
+    "plenary_attendance_rate": "0.7768",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.6471",
+    "committee_denominator": "51",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4776"
    },
    "authoritative_fields": [
     "name_ar",
@@ -14912,7 +15807,10 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6985",
-    "plenary_attendance_rate": "0.9115"
+    "plenary_attendance_rate": "0.9115",
+    "plenary_denominator": "113",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5821"
    },
    "authoritative_fields": [
     "name_ar",
@@ -14995,7 +15893,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.9761",
-    "plenary_attendance_rate": "0.8393"
+    "plenary_attendance_rate": "0.8393",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.8627",
+    "committee_denominator": "51",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.8657"
    },
    "authoritative_fields": [
     "name_ar",
@@ -15078,7 +15981,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7701",
-    "plenary_attendance_rate": "0.7699"
+    "plenary_attendance_rate": "0.7699",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.7812",
+    "committee_denominator": "32",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7284"
    },
    "authoritative_fields": [
     "name_ar",
@@ -15161,7 +16069,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.9403",
-    "plenary_attendance_rate": "0.8750"
+    "plenary_attendance_rate": "0.8750",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.8615",
+    "committee_denominator": "65",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.8239"
    },
    "authoritative_fields": [
     "name_ar",
@@ -15244,7 +16157,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7642",
-    "plenary_attendance_rate": "0.8929"
+    "plenary_attendance_rate": "0.8929",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.5574",
+    "committee_denominator": "61",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6657"
    },
    "authoritative_fields": [
     "name_ar",
@@ -15327,7 +16245,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6030",
-    "plenary_attendance_rate": "0.8214"
+    "plenary_attendance_rate": "0.8214",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.6582",
+    "committee_denominator": "79",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4925"
    },
    "authoritative_fields": [
     "name_ar",
@@ -15400,7 +16323,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.2478",
-    "plenary_attendance_rate": "0.6071"
+    "plenary_attendance_rate": "0.6071",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.4923",
+    "committee_denominator": "65",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.1791"
    },
    "authoritative_fields": [
     "name_ar",
@@ -15483,7 +16411,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4776",
-    "plenary_attendance_rate": "0.9115"
+    "plenary_attendance_rate": "0.9115",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.5902",
+    "committee_denominator": "61",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3343"
    },
    "authoritative_fields": [
     "name_ar",
@@ -15566,7 +16499,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.3612",
-    "plenary_attendance_rate": "0.7768"
+    "plenary_attendance_rate": "0.7768",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.4625",
+    "committee_denominator": "80",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.2806"
    },
    "authoritative_fields": [
     "name_ar",
@@ -15649,7 +16587,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4090",
-    "plenary_attendance_rate": "0.6250"
+    "plenary_attendance_rate": "0.6250",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.8108",
+    "committee_denominator": "37",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3313"
    },
    "authoritative_fields": [
     "name_ar",
@@ -15711,7 +16654,10 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6328",
-    "plenary_attendance_rate": "0.7500"
+    "plenary_attendance_rate": "0.7500",
+    "plenary_denominator": "112",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4985"
    },
    "authoritative_fields": [
     "name_ar",
@@ -15773,7 +16719,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.5612",
-    "plenary_attendance_rate": "0.5179"
+    "plenary_attendance_rate": "0.5179",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.2500",
+    "committee_denominator": "24",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4627"
    },
    "authoritative_fields": [
     "name_ar",
@@ -15835,7 +16786,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4269",
-    "plenary_attendance_rate": "0.6518"
+    "plenary_attendance_rate": "0.6518",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.5882",
+    "committee_denominator": "17",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3194"
    },
    "authoritative_fields": [
     "name_ar",
@@ -15916,7 +16872,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6955",
-    "plenary_attendance_rate": "0.8053"
+    "plenary_attendance_rate": "0.8053",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.5614",
+    "committee_denominator": "57",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5552"
    },
    "authoritative_fields": [
     "name_ar",
@@ -16009,7 +16970,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.7164",
-    "plenary_attendance_rate": "0.8496"
+    "plenary_attendance_rate": "0.8496",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.7846",
+    "committee_denominator": "65",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5970"
    },
    "authoritative_fields": [
     "name_ar",
@@ -16071,7 +17037,10 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6866",
-    "plenary_attendance_rate": "0.9196"
+    "plenary_attendance_rate": "0.9196",
+    "plenary_denominator": "112",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6269"
    },
    "authoritative_fields": [
     "name_ar",
@@ -16154,7 +17123,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8239",
-    "plenary_attendance_rate": "0.8496"
+    "plenary_attendance_rate": "0.8496",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.7826",
+    "committee_denominator": "69",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7104"
    },
    "authoritative_fields": [
     "name_ar",
@@ -16237,7 +17211,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6896",
-    "plenary_attendance_rate": "0.7257"
+    "plenary_attendance_rate": "0.7257",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.5949",
+    "committee_denominator": "79",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6507"
    },
    "authoritative_fields": [
     "name_ar",
@@ -16319,8 +17298,12 @@
    "careers": [],
    "party_affiliations": [],
    "participation": {
-    "vote_participation_rate": "0.6563",
-    "plenary_attendance_rate": "0.8500"
+    "vote_participation_rate": "0.6562",
+    "plenary_attendance_rate": "0.8500",
+    "plenary_denominator": "40",
+    "committee_attendance_rate": "0.5000",
+    "committee_denominator": "18",
+    "vote_denominator": "32"
    },
    "authoritative_fields": [
     "name_ar",
@@ -16403,7 +17386,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8567",
-    "plenary_attendance_rate": "0.8214"
+    "plenary_attendance_rate": "0.8214",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.5714",
+    "committee_denominator": "56",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7522"
    },
    "authoritative_fields": [
     "name_ar",
@@ -16476,7 +17464,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.5104",
-    "plenary_attendance_rate": "0.5982"
+    "plenary_attendance_rate": "0.5982",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.1500",
+    "committee_denominator": "60",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4567"
    },
    "authoritative_fields": [
     "name_ar",
@@ -16559,7 +17552,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4657",
-    "plenary_attendance_rate": "0.7257"
+    "plenary_attendance_rate": "0.7257",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.2603",
+    "committee_denominator": "73",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4328"
    },
    "authoritative_fields": [
     "name_ar",
@@ -16652,7 +17650,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8806",
-    "plenary_attendance_rate": "0.9107"
+    "plenary_attendance_rate": "0.9107",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.8542",
+    "committee_denominator": "48",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7672"
    },
    "authoritative_fields": [
     "name_ar",
@@ -16733,7 +17736,11 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4687",
-    "plenary_attendance_rate": "0.7500"
+    "plenary_attendance_rate": "0.7500",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.5472",
+    "committee_denominator": "53",
+    "vote_denominator": "335"
    },
    "authoritative_fields": [
     "name_ar",
@@ -16816,7 +17823,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.4328",
-    "plenary_attendance_rate": "0.8393"
+    "plenary_attendance_rate": "0.8393",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.9692",
+    "committee_denominator": "65",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.3045"
    },
    "authoritative_fields": [
     "name_ar",
@@ -16899,7 +17911,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.5403",
-    "plenary_attendance_rate": "0.6071"
+    "plenary_attendance_rate": "0.6071",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.2500",
+    "committee_denominator": "56",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4955"
    },
    "authoritative_fields": [
     "name_ar",
@@ -16972,7 +17989,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8507",
-    "plenary_attendance_rate": "0.8319"
+    "plenary_attendance_rate": "0.8319",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.8750",
+    "committee_denominator": "16",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.7403"
    },
    "authoritative_fields": [
     "name_ar",
@@ -17055,7 +18077,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6030",
-    "plenary_attendance_rate": "0.5893"
+    "plenary_attendance_rate": "0.5893",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.5102",
+    "committee_denominator": "49",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5582"
    },
    "authoritative_fields": [
     "name_ar",
@@ -17128,7 +18155,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.2955",
-    "plenary_attendance_rate": "0.6964"
+    "plenary_attendance_rate": "0.6964",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.5510",
+    "committee_denominator": "49",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.2090"
    },
    "authoritative_fields": [
     "name_ar",
@@ -17188,7 +18220,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.5284",
-    "plenary_attendance_rate": "0.7768"
+    "plenary_attendance_rate": "0.7768",
+    "plenary_denominator": "112",
+    "committee_attendance_rate": "0.5250",
+    "committee_denominator": "40",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.4687"
    },
    "authoritative_fields": [
     "name_ar",
@@ -17250,7 +18287,10 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.6478",
-    "plenary_attendance_rate": "0.7857"
+    "plenary_attendance_rate": "0.7857",
+    "plenary_denominator": "112",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.6119"
    },
    "authoritative_fields": [
     "name_ar",
@@ -17331,7 +18371,12 @@
    "party_affiliations": [],
    "participation": {
     "vote_participation_rate": "0.8119",
-    "plenary_attendance_rate": "0.9027"
+    "plenary_attendance_rate": "0.9027",
+    "plenary_denominator": "113",
+    "committee_attendance_rate": "0.7273",
+    "committee_denominator": "55",
+    "vote_denominator": "335",
+    "vote_discipline_rate": "0.5522"
    },
    "authoritative_fields": [
     "name_ar",
