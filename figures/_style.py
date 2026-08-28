@@ -85,6 +85,24 @@ _SEQ_BLUE = (
 _ORDINAL_LIGHT_FLOOR = 3   # index of step 250
 _ORDINAL_DARK_CEIL = 10    # index of step 600
 
+# Diverging: two hues either side of a neutral midpoint, never a hue at the
+# middle and never a rainbow. The poles are the blue and orange of categorical
+# slots 1 and 2, so a reader who has seen the categorical set recognises them;
+# the ramps run dark at the extremes and toward the surface at the centre, which
+# is what makes "no departure from the reference" read as absence rather than as
+# a third category. Listed rather than interpolated: interpolating in sRGB puts a
+# muddy low-chroma band a third of the way out on the orange side.
+_DIV_LIGHT = (
+    "#a8481c", "#c95a24", "#e0763c", "#eda179", "#f6ccb3",
+    "#ece9df",
+    "#c6dcf6", "#94bdee", "#5f9be6", "#3179cf", "#1c5cab",
+)
+_DIV_DARK = (
+    "#f0a077", "#e6844f", "#d95926", "#b04a20", "#7d3819",
+    "#3a3a37",
+    "#1c4d80", "#2465ab", "#2f80d4", "#6ba6e8", "#a3c8f2",
+)
+
 CHROME = {
     "surface": "#1a1a19" if DARK else "#fcfcfb",
     "text_primary": "#ffffff" if DARK else "#0b0b0b",
@@ -119,6 +137,29 @@ def categorical(n: int, all_pairs: bool = False) -> list[str]:
             "hue x shape — never generate another hue."
         )
     return list(CATEGORICAL[:n])
+
+
+DIVERGING = _DIV_DARK if DARK else _DIV_LIGHT
+# Steps whose fill is dark enough that a value printed on it needs light ink.
+# The ink is chosen against the *fill*, not against the surface, so it does not
+# follow the mode: a pale blue cell takes dark ink in either.
+_DIV_NEEDS_LIGHT_INK = {2, 3, 4, 5, 6, 7, 8} if DARK else {0, 1, 9, 10}
+
+
+def diverging(value: float, limit: float) -> tuple[str, str]:
+    """Fill and readable ink for a signed departure from a reference.
+
+    ``value`` is the departure (a log ratio, a difference); ``limit`` is the
+    symmetric extent of the scale, so the two poles always sit the same distance
+    from the neutral centre. An asymmetric diverging scale makes one direction
+    look larger than the other at equal magnitude, which is the whole failure
+    mode this form exists to avoid.
+    """
+    if limit <= 0:
+        raise ValueError("a diverging scale needs a positive limit")
+    half = (len(DIVERGING) - 1) // 2
+    step = round(half + half * max(-1.0, min(1.0, value / limit)))
+    return DIVERGING[step], "#ffffff" if step in _DIV_NEEDS_LIGHT_INK else "#0b0b0b"
 
 
 def sequential(n: int, ordinal: bool = False) -> list[str]:

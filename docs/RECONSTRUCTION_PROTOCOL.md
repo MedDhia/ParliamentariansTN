@@ -171,7 +171,13 @@ If effort is limited, this is the order that buys the most:
 1. **~~ARP-2014~~ — done.** Recovered from Internet Archive captures of Al
    Bawsala's 2014 observatory; see `SOURCES.md`. Its committee pages were *not*
    recovered and remain the cheapest remaining win: the same CDX-plus-raw-capture
-   method should work on the archived committee pages under `/2014/`.
+   method should work on the archived committee pages under `/2014/`. The
+   archived roster links `/2014/assemblee/commissions`, `/2014/assemblee/bureau`,
+   `/2014/votes` and `/2014/lois`, so the captures are known to exist; the
+   attempt is open because `web.archive.org` was unreachable from the
+   environment it was last tried in (connection reset on every request, while
+   `archive.org` itself answered), not because the pages were checked and found
+   missing. Anyone with working Archive access should be able to close it.
 2. **COD-2009 and COD-2004.** The last two chambers of the Ben Ali period, with
    substantial documented opposition contingents, immediately adjacent to the
    2011 rupture. This is what makes elite continuity across the revolution
