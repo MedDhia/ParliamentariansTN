@@ -1,7 +1,11 @@
 # Figures
 
 Twenty descriptive and exploratory figures over the dataset. Each is a
-standalone script that writes one image and one CSV:
+standalone script that writes one image and one CSV.
+
+**Looking for the results rather than the method?**
+[`docs/FINDINGS.md`](../docs/FINDINGS.md) collects what these figures show, with
+the number and the file to check it in. This file is about how they are built.
 
 ```
 figures/figNN_name.py  →  figures/output/figNN_name.png

@@ -10,10 +10,11 @@ careers, and behavioural indicators — assembled from the chamber's own databas
 both of Al Bawsala's observatories, and archival reconstruction, with cell-level
 provenance for every value.
 
-It is also, deliberately, honest about what it does not have. Thirteen of the
+It is also, deliberately, honest about what it does not have. Fourteen of the
 nineteen chambers — the whole single-party era plus both upper houses — are
 present as institutions but not as people. See [Coverage](#coverage) before using
-it comparatively.
+it comparatively, and [Findings](docs/FINDINGS.md) for what the covered chambers
+show.
 
 ## Why this exists
 
@@ -54,6 +55,10 @@ CSV, are in [`figures/`](figures/README.md):
 pip install -r requirements-figures.txt
 make figures        # -> figures/output/figNN_name.png + .csv
 ```
+
+**[docs/FINDINGS.md](docs/FINDINGS.md) collects what the figures show** — the
+results in one place, each with the number and the file to verify it in. Start
+there if you want the substance before the method.
 
 ## What is in it
 
@@ -118,7 +123,7 @@ only.
 | Chamber | Period | Seats | Mandates | Status |
 | --- | --- | --- | --- | --- |
 | ANC-1956 | 1956–1959 | 98 | 108 | full |
-| NA-1959 → COD-2009 (11 chambers) | 1959–2011 | 90–214 | 1–3 each | frame only |
+| NA-1959 → COD-2009 (12 chambers) | 1959–2011 | 90–214 | 1–3 each | frame only |
 | ADV-2005 | 2005–2011 | 112 | 0 | frame only |
 | NCA-2011 | 2011–2014 | 217 | 217 | full |
 | ARP-2014 | 2014–2019 | 217 | 246 | full |
@@ -202,6 +207,7 @@ data/
   processed/    the 17 analysis-ready tables
   networks/     node attributes, bipartite lists, projections
 docs/
+  FINDINGS.md               what the data shows, with the file to check each number in
   CODEBOOK.md               generated: every variable, with fill rates
   COVERAGE.md               generated: completeness by chamber and attribute
   SOURCES.md                what each source is, and what it gets wrong
