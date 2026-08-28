@@ -266,6 +266,58 @@ def build_cosignature_edges() -> list[dict[str, Any]]:
     return rows
 
 
+def build_amendment_edges() -> list[dict[str, Any]]:
+    """Co-sponsorship ties from constitutional amendments (NCA-2011).
+
+    The constituent assembly's counterpart to the 2023 chamber's written-question
+    co-signatures, and the more consequential of the two: these are the ties
+    formed while drafting the constitution itself. Built from the processed
+    tables rather than staging, because amendments *do* have a home in the
+    schema.
+
+    Newman-corrected as elsewhere: an amendment tabled by nineteen members
+    manufactures 171 dyads, and counting those equally with a two-member
+    amendment would let a handful of mass filings dominate every centrality.
+    """
+    sponsorships = list(read_table("amendment_sponsorships"))
+    if not sponsorships:
+        return []
+    by_amendment: dict[str, list[str]] = defaultdict(list)
+    assembly_of: dict[str, str] = {}
+    for row in sponsorships:
+        by_amendment[row["amendment_id"]].append(row["person_id"])
+        assembly_of[row["amendment_id"]] = row["assembly_id"]
+
+    acc: dict[tuple[str, str], dict[str, Any]] = {}
+    for amendment_id, people in by_amendment.items():
+        people = sorted(set(people))
+        if len(people) < 2:
+            continue
+        for a, b in combinations(people, 2):
+            entry = acc.setdefault((a, b), {
+                "source": a, "target": b, "layer": "amendment_cosponsorship",
+                "assembly_id": assembly_of[amendment_id], "weight": 0,
+                "weight_newman": 0.0, "group_ids": [], "group_names": "",
+                "group_size": [], "shared_count": 0, "overlap_start": "",
+                "overlap_end": "", "dates_assumed": "false",
+            })
+            entry["weight"] += 1
+            entry["shared_count"] += 1
+            entry["group_ids"].append(amendment_id)
+            entry["group_size"].append(len(people))
+            entry["weight_newman"] += 1.0 / (len(people) - 1)
+
+    out = []
+    for entry in acc.values():
+        out.append({
+            **entry,
+            "group_ids": ";".join(entry["group_ids"][:20]),
+            "group_size": ";".join(str(s) for s in entry["group_size"][:20]),
+            "weight_newman": round(entry["weight_newman"], 6),
+        })
+    return sorted(out, key=lambda r: (r["source"], r["target"]))
+
+
 def build_shared_constituency_edges() -> list[dict[str, Any]]:
     """Ties between members returned by the same constituency in the same chamber.
 
@@ -390,6 +442,10 @@ def write_all() -> dict[str, int]:
     cosig = build_cosignature_edges()
     write_rows(NETWORKS / "edges_question_cosignature.csv", EDGE_FIELDS, cosig)
     counts["edges_question_cosignature"] = len(cosig)
+
+    amend = build_amendment_edges()
+    write_rows(NETWORKS / "edges_amendment_cosponsorship.csv", EDGE_FIELDS, amend)
+    counts["edges_amendment_cosponsorship"] = len(amend)
 
     return counts
 

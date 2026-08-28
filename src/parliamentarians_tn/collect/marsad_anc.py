@@ -393,6 +393,176 @@ def parse_committees(markup: str) -> list[dict[str, Any]]:
 # Collection
 # ---------------------------------------------------------------------------
 
+# ---------------------------------------------------------------------------
+# Activity pages
+# ---------------------------------------------------------------------------
+# Every member profile links five sub-pages. An earlier version of this
+# collector followed only /commissions, which left the chamber's entire
+# behavioural record on the table: 1,724 recorded divisions per member, the
+# constitutional amendments they co-sponsored, and the party-switching series.
+
+MERCATO_URL = f"{SITE}/fr/mercato"
+
+# "25 sept. 2014" — the abbreviated forms Marsad renders, which differ from the
+# full month names used in the biographies.
+FRENCH_MONTHS_ABBR = {
+    "janv": 1, "févr": 2, "fevr": 2, "mars": 3, "avr": 4, "mai": 5, "juin": 6,
+    "juil": 7, "août": 8, "aout": 8, "sept": 9, "oct": 10, "nov": 11, "déc": 12,
+    "dec": 12,
+}
+
+# Compact position codes. The staging document stores one character per member
+# per division rather than a row per pair: 217 members x 1,724 divisions is
+# 374,000 rows, which as JSON objects would bloat the committed staging file by
+# tens of megabytes for no gain. The build expands this back to one row per
+# pair. "-" means the division is not listed on that member's page at all,
+# which happens for members who joined late or left early.
+POSITION_CODES = {"pour": "P", "contre": "C", "abstenu": "A", "absent": "X"}
+CODE_POSITIONS = {v: k for k, v in POSITION_CODES.items()}
+
+_VOTE_ROW_RE = re.compile(
+    r'<div class="vote-date[^"]*">\s*([^<]+?)\s*</div>.*?'
+    r'<a href="/fr/vote/([0-9a-f]{24})"[^>]*class="vote-article">\s*'
+    r'<span class="[^"]*\bvoted-([a-z]+)\b[^"]*">\s*</span>\s*(.*?)</a>',
+    re.S,
+)
+
+
+def parse_french_date(text: str) -> str:
+    """'25 sept. 2014' -> '2014-09-25'; empty string when unparseable."""
+    m = re.match(r"(\d{1,2})\s+([^\s.]+)\.?\s+(\d{4})", text.strip())
+    if not m:
+        return ""
+    month = FRENCH_MONTHS_ABBR.get(m.group(2).lower().rstrip("."))
+    if not month:
+        return ""
+    return f"{int(m.group(3)):04d}-{month:02d}-{int(m.group(1)):02d}"
+
+
+def parse_votes(markup: str) -> list[dict[str, str]]:
+    """Roll-call rows from a member's /votes page.
+
+    Each row carries the division's own id, so divisions are identified
+    consistently across the 217 member pages and can be deduplicated into a
+    chamber-level vote register. The member's own position is encoded in a CSS
+    class (``voted-pour``, ``voted-contre``, ``voted-abstenu``, ``voted-absent``)
+    rather than in text, which is why a text-node walk misses it entirely.
+    """
+    out = []
+    for date_raw, vote_key, position, title_html in _VOTE_ROW_RE.findall(markup):
+        title = html.unescape(re.sub(r"<[^>]+>", " ", title_html))
+        out.append({
+            "vote_source_key": vote_key,
+            "date": parse_french_date(date_raw),
+            "date_raw": date_raw.strip(),
+            "title": re.sub(r"\s+", " ", title).strip(),
+            "position": position,
+        })
+    return out
+
+
+def parse_amendments(markup: str) -> list[dict[str, Any]]:
+    """Constitutional amendments and their co-sponsors from /amendements.
+
+    Co-sponsors are published as links carrying deputy ids, so this yields a
+    sponsorship network keyed to the same identifiers as the roster — no name
+    matching required, which for Arabic names would be the weakest link.
+    """
+    out = []
+    for block in re.split(r'(?=<p class="grey">)', markup):
+        if "Soumis par" not in block:
+            continue
+        target = re.search(r'<a href="(/fr/constitution/[^"]*)">\s*([^<]+?)\s*</a>', block)
+        group = re.search(r'<a href="#" class="show-deps" data-id="([0-9a-f]{24})"', block)
+        sponsors = re.findall(r'<a href="/fr/deputes/([0-9a-f]{24})">', block)
+        if not sponsors:
+            continue
+        # The amendment's own wording is in the paragraphs *after* the sponsor
+        # list. Taking the first <p> that follows the header picks up the list
+        # of sponsor names instead, which is why the class filter matters.
+        body = " ".join(
+            para for attrs, para in re.findall(r'<p([^>]*)>(.*?)</p>', block, re.S)
+            if "deps" not in attrs and "grey" not in attrs
+        )
+        out.append({
+            "amendment_source_key": group.group(1) if group else "",
+            "target_url": target.group(1) if target else "",
+            "target_label": target.group(2).strip() if target else "",
+            "text": re.sub(r"\s+", " ", html.unescape(
+                re.sub(r"<[^>]+>", " ", body))).strip(),
+            "sponsor_source_keys": sponsors,
+        })
+    return out
+
+
+def _balanced_json(markup: str, marker: str) -> Any:
+    """Read a brace-balanced JSON literal that follows ``marker`` in a script."""
+    start = markup.find(marker)
+    if start < 0:
+        return None
+    start = markup.find("{", start)
+    if start < 0:
+        return None
+    depth, in_str, escape = 0, False, False
+    for i in range(start, len(markup)):
+        ch = markup[i]
+        if in_str:
+            if escape:
+                escape = False
+            elif ch == "\\":
+                escape = True
+            elif ch == '"':
+                in_str = False
+            continue
+        if ch == '"':
+            in_str = True
+        elif ch == "{":
+            depth += 1
+        elif ch == "}":
+            depth -= 1
+            if depth == 0:
+                import json as _json
+                try:
+                    return _json.loads(markup[start:i + 1])
+                except ValueError:
+                    return None
+    return None
+
+
+def parse_mercato(markup: str) -> list[dict[str, str]]:
+    """Party switching from the /mercato page's inline JSON.
+
+    The page renders a d3 diagram from a literal assigned to ``mercato_map``:
+    for each party of election, how many members it had ``then`` and has ``now``,
+    and for each destination party the ids of the members who moved there.
+
+    This is the source the collector previously declared switching
+    "not recoverable" from — wrongly. It is an aggregate of moves rather than
+    dated spells, so each move is a from/to pair without a date; that is stated
+    on the rows rather than smoothed into an invented date.
+    """
+    data = _balanced_json(markup, "mercato_map")
+    if not isinstance(data, dict):
+        return []
+    moves = []
+    for origin, info in data.items():
+        for destination, deputies in (info.get("partis") or {}).items():
+            for deputy in deputies:
+                moves.append({
+                    "deputy_source_key": deputy,
+                    "party_from": origin,
+                    "party_to": destination,
+                })
+    return moves
+
+
+def _is_empty_page(markup: str) -> bool:
+    """True for Marsad's 'nothing here' placeholders on questions/transparence."""
+    text = " ".join(text_nodes(markup)).lower()
+    return ("aucune question" in text or "aucune publication" in text
+            or len(text.strip()) < 40)
+
+
 def _roster_ids(fetcher: Fetcher) -> list[str]:
     markup = fetcher.get_text(ROSTER_URL, slug="roster_assemblee")
     ids = sorted(set(re.findall(r"/deputes/([0-9a-f]{24})", markup)))
@@ -410,6 +580,13 @@ def collect(refresh: bool = False, limit: int | None = None) -> StagingDoc:
 
     records: list[PersonRecord] = []
     n_bio_fr = n_birth = n_committees = n_gender = 0
+    # Activity, accumulated across members. The vote register is the union of
+    # every member's page keyed on the division's own id; each member then
+    # contributes one position per division.
+    vote_register: dict[str, dict[str, str]] = {}
+    member_positions: dict[str, dict[str, str]] = {}
+    amendments: dict[str, dict[str, Any]] = {}
+    n_empty_questions = n_empty_transparence = 0
 
     for idx, oid in enumerate(ids, start=1):
         if idx % 25 == 0:
@@ -417,6 +594,33 @@ def collect(refresh: bool = False, limit: int | None = None) -> StagingDoc:
         ar = fetcher.get_text(f"{SITE}/deputes/{oid}", slug=f"{oid}_ar")
         fr = fetcher.get_text(f"{SITE}/fr/deputes/{oid}", slug=f"{oid}_fr")
         com = fetcher.get_text(f"{SITE}/deputes/{oid}/commissions", slug=f"{oid}_com")
+
+        # The four activity pages the earlier version of this collector never
+        # followed. /votes is the large one — roughly 1,700 divisions each.
+        votes_page = fetcher.get_text(f"{SITE}/fr/deputes/{oid}/votes", slug=f"{oid}_votes")
+        amend_page = fetcher.get_text(f"{SITE}/fr/deputes/{oid}/amendements",
+                                      slug=f"{oid}_amend")
+        quest_page = fetcher.get_text(f"{SITE}/fr/deputes/{oid}/questions",
+                                      slug=f"{oid}_quest")
+        transp_page = fetcher.get_text(f"{SITE}/fr/deputes/{oid}/transparence",
+                                       slug=f"{oid}_transp")
+
+        positions: dict[str, str] = {}
+        for row in parse_votes(votes_page):
+            key = row["vote_source_key"]
+            vote_register.setdefault(key, {
+                "source_key": key, "date": row["date"], "title": row["title"],
+            })
+            positions[key] = POSITION_CODES.get(row["position"], "?")
+        if positions:
+            member_positions[oid] = positions
+
+        for amendment in parse_amendments(amend_page):
+            key = amendment["amendment_source_key"] or amendment["text"][:80]
+            amendments.setdefault(key, amendment)
+
+        n_empty_questions += _is_empty_page(quest_page)
+        n_empty_transparence += _is_empty_page(transp_page)
 
         ar_nodes = text_nodes(ar)
         fr_nodes = text_nodes(fr)
@@ -533,9 +737,38 @@ def collect(refresh: bool = False, limit: int | None = None) -> StagingDoc:
         rec.education_raw = bio_fr
         records.append(rec)
 
+    # Party switching, from the site-level diagram rather than a member page.
+    mercato = parse_mercato(fetcher.get_text(MERCATO_URL, slug="mercato"))
+
+    # Order the register by date then id so the position strings are stable
+    # across runs, then encode each member's record as one character per
+    # division. "-" marks a division absent from that member's page entirely,
+    # which is how members who joined late or left early appear.
+    ordered = sorted(vote_register.values(), key=lambda v: (v["date"], v["source_key"]))
+    order_keys = [v["source_key"] for v in ordered]
+    position_strings = {
+        oid: "".join(pos.get(key, "-") for key in order_keys)
+        for oid, pos in member_positions.items()
+    }
+    n_positions = sum(sum(1 for c in s if c != "-") for s in position_strings.values())
+    log(f"  activity: {len(ordered)} divisions, {n_positions} recorded positions, "
+        f"{len(amendments)} amendments, {len(mercato)} party rows")
+
     doc = StagingDoc(
         source_id=SOURCE_ID,
         assembly_id=ASSEMBLY_ID,
+        assembly_updates={
+            "votes": ordered,
+            # person -> one position code per division, aligned to `votes`.
+            # P pour, C contre, A abstenu, X absent, - not listed for them.
+            "vote_position_codes": position_strings,
+            "amendments": sorted(amendments.values(),
+                                 key=lambda a: a["amendment_source_key"]),
+            # from/to party pairs; where they are equal the member kept the
+            # party they were elected on. Aggregate, so the moves carry no date.
+            "party_switching": sorted(
+                mercato, key=lambda m: (m["deputy_source_key"], m["party_to"])),
+        },
         source={
             "source_id": SOURCE_ID,
             "name": "Marsad (Al Bawsala) — National Constituent Assembly observatory",
@@ -546,7 +779,10 @@ def collect(refresh: bool = False, limit: int | None = None) -> StagingDoc:
                 "NCA-2011: 217 members with narrative biographies in Arabic and "
                 "French, birth date and place, marital status, languages, "
                 "parliamentary bloc, electoral list, party, constituency, "
-                "committee memberships with roles, vote-participation rate and rank"
+                "committee memberships with roles, vote-participation rate and rank, "
+                "the full roll-call record (every recorded division with each "
+                "member's position), constitutional amendments with their "
+                "co-sponsors, and party of election against party at end of term"
             ),
             "language": "ar; fr",
             "licence": "Not stated. Civic-monitoring data on public office-holders.",
@@ -561,8 +797,16 @@ def collect(refresh: bool = False, limit: int | None = None) -> StagingDoc:
                 "declarations, so biographies are partly self-reported: "
                 "occupations and civic roles are the member's own account. "
                 "Bloc affiliation is a single end-of-term snapshot rather than a "
-                "spell, so bloc switching within 2011-2014 is NOT recoverable "
-                "from this source and must not be inferred from its absence. "
+                "spell, so *bloc* switching within 2011-2014 is not recoverable "
+                "and must not be inferred from its absence. *Party* switching "
+                "is: the site's mercato diagram publishes each member's party of "
+                "election against their party at the end of the term, which is "
+                "how 105 of the 217 are recorded here as having changed party. "
+                "Those are from/to pairs without dates, so they establish that a "
+                "move happened, not when. "
+                "Roll-call positions are published per member as pour / contre / "
+                "abstenu / absent. 'Absent' conflates being away with being "
+                "present and not voting; the source does not distinguish them. "
                 "The site has not been updated since 2021 and is effectively an "
                 "archive, which makes it stable to cite."
             ),

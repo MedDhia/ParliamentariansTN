@@ -23,7 +23,7 @@ assembly with the same name are two people until a human says otherwise.
 from __future__ import annotations
 
 import argparse
-from collections import defaultdict
+from collections import Counter, defaultdict
 from typing import Any, Iterable
 
 from . import schema
@@ -39,6 +39,11 @@ from .ids import (
 )
 from .io import PROCESSED, REFERENCE, log, read_table, write_rows, write_table
 from .reference import PRESIDING_OFFICERS_PRE2011
+
+# The compact per-division encoding the Marsad NCA collector writes into its
+# staging document. "-" is deliberately absent: it marks a division that was
+# not listed on that member's page at all, which is not a position.
+MARSAD_VOTE_CODES = {"P": "pour", "C": "contre", "A": "abstenu", "X": "absent"}
 
 # Which source wins when two disagree about the same field. The chamber's own
 # register outranks civic monitors, which outrank an encyclopaedia.
@@ -98,6 +103,11 @@ class Builder:
         self.careers: list[dict[str, Any]] = []
         self.party_affiliations: list[dict[str, Any]] = []
         self.participation: dict[tuple[str, str], dict[str, Any]] = {}
+        self.votes: list[dict[str, Any]] = []
+        self.vote_positions: list[dict[str, Any]] = []
+        self.party_switches: list[dict[str, Any]] = []
+        self.amendments: list[dict[str, Any]] = []
+        self.amendment_sponsorships: list[dict[str, Any]] = []
         self.sources: dict[str, dict[str, Any]] = {}
 
     # -- helpers ----------------------------------------------------------
@@ -607,6 +617,99 @@ class Builder:
             rows.append(row)
         return rows
 
+    def ingest_activity(self, doc: dict[str, Any]) -> None:
+        """Roll-call, amendment and party-switch rows from ``assembly_updates``.
+
+        Separate from :meth:`ingest` because these are chamber-level relations
+        keyed on source keys, not person attributes, and because they can only
+        be resolved once every collector's roster has been through the first
+        pass.
+        """
+        updates = doc.get("assembly_updates") or {}
+        source_id = doc["source_id"]
+        assembly_id = doc["assembly_id"]
+
+        def person_for(source_key: str) -> str | None:
+            return self.persons.get(source_id, source_key)
+
+        # --- recorded divisions ------------------------------------------
+        votes = updates.get("votes") or []
+        codes = updates.get("vote_position_codes") or {}
+        vote_ids: list[str] = []
+        for vote in votes:
+            vid = deterministic_id("VOT", assembly_id, vote["source_key"])
+            vote_ids.append(vid)
+            self.votes.append({
+                "vote_id": vid,
+                "assembly_id": assembly_id,
+                "vote_date": vote.get("date", ""),
+                "title": vote.get("title", ""),
+                "source_url": vote.get("source_url", ""),
+                "n_recorded": 0,
+                "source_ids": source_id,
+            })
+        recorded: Counter = Counter()
+        for source_key, string in sorted(codes.items()):
+            person_id = person_for(source_key)
+            if not person_id:
+                continue
+            # The staging string is one character per division, aligned to the
+            # `votes` order; "-" means the division was not on that member's
+            # page, which is a different claim from "absent" and gets no row.
+            for vid, code in zip(vote_ids, string):
+                position = MARSAD_VOTE_CODES.get(code)
+                if not position:
+                    continue
+                self.vote_positions.append({
+                    "vote_id": vid,
+                    "person_id": person_id,
+                    "assembly_id": assembly_id,
+                    "position": position,
+                    "source_ids": source_id,
+                })
+                recorded[vid] += 1
+        for row in self.votes:
+            if row["assembly_id"] == assembly_id and not row["n_recorded"]:
+                row["n_recorded"] = recorded.get(row["vote_id"], 0)
+
+        # --- party switching ---------------------------------------------
+        for move in updates.get("party_switching") or []:
+            person_id = person_for(move["deputy_source_key"])
+            if not person_id or move["party_from"] == move["party_to"]:
+                continue  # equal means the member kept their party
+            self.party_switches.append({
+                "person_id": person_id,
+                "assembly_id": assembly_id,
+                "party_from_id": self.resolve_party("", move["party_from"]),
+                "party_to_id": self.resolve_party("", move["party_to"]),
+                "party_from_name": move["party_from"],
+                "party_to_name": move["party_to"],
+                "source_ids": source_id,
+            })
+
+        # --- amendments ---------------------------------------------------
+        for amendment in updates.get("amendments") or []:
+            key = amendment.get("amendment_source_key") or amendment.get("text", "")[:80]
+            aid = deterministic_id("AMD", assembly_id, key)
+            sponsors = [person_for(s) for s in amendment.get("sponsor_source_keys", [])]
+            sponsors = [s for s in sponsors if s]
+            self.amendments.append({
+                "amendment_id": aid,
+                "assembly_id": assembly_id,
+                "target_label": amendment.get("target_label", ""),
+                "target_url": amendment.get("target_url", ""),
+                "text": amendment.get("text", ""),
+                "n_sponsors": len(sponsors),
+                "source_ids": source_id,
+            })
+            for person_id in sorted(set(sponsors)):
+                self.amendment_sponsorships.append({
+                    "amendment_id": aid,
+                    "person_id": person_id,
+                    "assembly_id": assembly_id,
+                    "source_ids": source_id,
+                })
+
     def write_all(self) -> None:
         write_table(schema.ASSEMBLIES, list(self.assemblies.values()))
         write_table(schema.GOVERNORATES, self.governorates)
@@ -625,6 +728,11 @@ class Builder:
         write_table(schema.OFFICES, self.offices)
         write_table(schema.CAREERS, self.careers)
         write_table(schema.PARTICIPATION, list(self.participation.values()))
+        write_table(schema.VOTES, self.votes)
+        write_table(schema.VOTE_POSITIONS, self.vote_positions)
+        write_table(schema.PARTY_SWITCHES, self.party_switches)
+        write_table(schema.AMENDMENTS, self.amendments)
+        write_table(schema.AMENDMENT_SPONSORSHIPS, self.amendment_sponsorships)
         write_table(schema.PERSON_XREF, sorted(
             self.xref, key=lambda r: (r["person_id"], r["source_id"])))
         write_table(schema.SOURCES, [self.sources[k] for k in sorted(self.sources)])
@@ -653,6 +761,10 @@ def build() -> Builder:
     for doc in docs:
         b.ingest(doc)
     b.add_presiding_officers()
+    # Activity is ingested in a second pass: it is keyed on source keys that
+    # only resolve to person_ids once every roster has been through the first.
+    for doc in docs:
+        b.ingest_activity(doc)
     b.write_all()
     return b
 

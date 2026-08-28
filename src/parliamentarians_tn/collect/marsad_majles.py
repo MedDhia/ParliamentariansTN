@@ -159,6 +159,43 @@ def parse_roster(markup: str) -> dict[str, dict[str, Any]]:
     return out
 
 
+# The member page's statistics block. Each measure is rendered as a donut whose
+# anchor title carries the counts behind the percentage — "Présence en
+# plénières : 87 / 112" — which is the only place the denominators appear.
+_STAT_TITLES = {
+    "Présence en plénières": ("plenary_attendance_rate", "plenary_denominator"),
+    "Présence en commissions permanentes": (
+        "committee_attendance_rate", "committee_denominator"),
+    "Participation aux votes": ("vote_participation_rate", "vote_denominator"),
+}
+_TITLE_RE = re.compile(r'title="([^"]+?)\s*:\s*(\d+)\s*/\s*(\d+)"')
+_DISCIPLINE_RE = re.compile(
+    r"Discipline de vote\s*<b[^>]*>\s*([\d.]+)%", re.S)
+
+
+def parse_member_statistics(markup: str) -> dict[str, str]:
+    """Attendance, vote participation and discipline from a member page.
+
+    Rates are stored as proportions to match the rest of the dataset, and are
+    recomputed from the counts rather than read from the rendered percentage,
+    so a rounding artefact upstream cannot propagate. The denominator is the
+    number of sittings or divisions there were to attend, which is what makes
+    these figures comparable within the chamber.
+    """
+    out: dict[str, str] = {}
+    for label, numerator, denominator in _TITLE_RE.findall(markup):
+        fields = _STAT_TITLES.get(label.strip())
+        if not fields or not int(denominator):
+            continue
+        rate_field, denom_field = fields
+        out[rate_field] = f"{int(numerator) / int(denominator):.4f}"
+        out[denom_field] = denominator
+    discipline = _DISCIPLINE_RE.search(markup)
+    if discipline:
+        out["vote_discipline_rate"] = f"{float(discipline.group(1)) / 100:.4f}"
+    return out
+
+
 def parse_roster_fr(markup: str) -> dict[str, str]:
     """Parse the French roster into slug -> Latin-script name."""
     out: dict[str, str] = {}
@@ -332,6 +369,23 @@ def collect(refresh: bool = False) -> StagingDoc:
     log(f"  committees: {len(com_meta)} committees, "
         f"{sum(len(v) for v in committees_by_slug.values())} memberships")
 
+    # -- member pages ------------------------------------------------------
+    # The roster card carries two rounded percentages. The member's own page
+    # carries five measures *with their denominators* — how many sittings there
+    # were to attend, not just the share attended — plus the justified and
+    # unjustified split and the vote-discipline rate. An earlier version of this
+    # collector never opened these pages, which is why the dataset recorded
+    # attendance for this chamber as a bare rate with an empty denominator.
+    stats_by_slug: dict[str, dict[str, str]] = {}
+    for idx, slug in enumerate(sorted(roster), start=1):
+        if idx % 50 == 0:
+            log(f"  ... member pages {idx}/{len(roster)}")
+        page = fetcher.get_text(f"{SITE}/fr/person/{slug}", slug=f"person_{slug}")
+        stats = parse_member_statistics(page)
+        if stats:
+            stats_by_slug[slug] = stats
+    log(f"  member pages: {len(stats_by_slug)}/{len(roster)} with a statistics block")
+
     # -- records -----------------------------------------------------------
     records: list[PersonRecord] = []
     for slug, card in sorted(roster.items()):
@@ -340,11 +394,15 @@ def collect(refresh: bool = False) -> StagingDoc:
         # precision, so it is carried as a note and left out of birth_date.
         age_note = f"age reported as {card['age']} on the roster page" if card["age"] else ""
 
+        # The member page wins over the roster card where both report a rate:
+        # same publisher, but the page states the denominator, so its figure can
+        # be checked and the card's cannot.
         participation: dict[str, Any] = {}
         if card["vote_participation_rate"]:
             participation["vote_participation_rate"] = card["vote_participation_rate"]
         if card["attendance_rate"]:
             participation["plenary_attendance_rate"] = card["attendance_rate"]
+        participation.update(stats_by_slug.get(slug, {}))
 
         records.append(PersonRecord(
             source_key=slug,

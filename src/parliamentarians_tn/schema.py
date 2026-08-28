@@ -617,6 +617,130 @@ PROVENANCE = Table(
 )
 
 
+# ---------------------------------------------------------------------------
+# Recorded divisions
+# ---------------------------------------------------------------------------
+
+VOTE_POSITION = ("pour", "contre", "abstenu", "absent")
+
+VOTES = Table(
+    name="votes",
+    unit="One row per recorded division.",
+    primary_key=("vote_id",),
+    description=(
+        "Divisions on which a chamber's members are individually recorded. The "
+        "title is the source's own description of what was voted on and is not "
+        "normalised into bill identifiers, because the same instrument appears "
+        "under several descriptions across procedural stages."
+    ),
+    columns=[
+        Column("vote_id", "string", "Identifier.", required=True, unique=True),
+        Column("assembly_id", "string", "Chamber.", required=True,
+               references="assemblies.assembly_id"),
+        Column("vote_date", "date", "Date of the division."),
+        Column("title", "string", "The source's description of the division."),
+        Column("source_url", "string", "Page the division was read from."),
+        Column("n_recorded", "integer", "Members with a recorded position."),
+        Column("source_ids", "string", "Provenance.", references="sources.source_id"),
+    ],
+)
+
+VOTE_POSITIONS = Table(
+    name="vote_positions",
+    unit="One row per member per division.",
+    primary_key=("vote_id", "person_id"),
+    description=(
+        "How each member is recorded on each division. A member missing from a "
+        "division has no row rather than a row reading 'absent': members who "
+        "joined late or left early are simply not listed, and inventing an "
+        "absence for them would be a different claim from the one the source "
+        "makes. Note that 'absent' as published conflates being away with being "
+        "present and not voting; the source does not separate them."
+    ),
+    columns=[
+        Column("vote_id", "string", "Division.", required=True, references="votes.vote_id"),
+        Column("person_id", "string", "Member.", required=True,
+               references="persons.person_id"),
+        Column("assembly_id", "string", "Chamber.", required=True,
+               references="assemblies.assembly_id"),
+        Column("position", "enum", "Recorded position.", required=True,
+               enum=VOTE_POSITION),
+        Column("source_ids", "string", "Provenance.", references="sources.source_id"),
+    ],
+)
+
+PARTY_SWITCHES = Table(
+    name="party_switches",
+    unit="One row per member per recorded change of party within a term.",
+    primary_key=("person_id", "assembly_id", "party_from_id", "party_to_id"),
+    description=(
+        "The party a member was elected on against the party they ended the term "
+        "in. Undated by construction: the source publishes the pair, not the "
+        "moment, so a row establishes that a move happened and not when. Members "
+        "who kept their party have no row, which is why the absence of a row "
+        "here means 'did not move', unlike missingness elsewhere in the dataset."
+    ),
+    columns=[
+        Column("person_id", "string", "Member.", required=True,
+               references="persons.person_id"),
+        Column("assembly_id", "string", "Chamber.", required=True,
+               references="assemblies.assembly_id"),
+        Column("party_from_id", "string", "Party of election.", required=True,
+               references="parties.party_id"),
+        Column("party_to_id", "string", "Party at end of term.", required=True,
+               references="parties.party_id"),
+        Column("party_from_name", "string", "Party of election, as published."),
+        Column("party_to_name", "string", "Party at end of term, as published."),
+        Column("source_ids", "string", "Provenance.", references="sources.source_id"),
+    ],
+)
+
+# ---------------------------------------------------------------------------
+# Constitutional amendments
+# ---------------------------------------------------------------------------
+
+AMENDMENTS = Table(
+    name="amendments",
+    unit="One row per tabled amendment.",
+    primary_key=("amendment_id",),
+    description=(
+        "Amendments tabled to the text of the constitution during the 2011-2014 "
+        "drafting. Sponsorship is collective, so the sponsors are a separate "
+        "table rather than a column."
+    ),
+    columns=[
+        Column("amendment_id", "string", "Identifier.", required=True, unique=True),
+        Column("assembly_id", "string", "Chamber.", required=True,
+               references="assemblies.assembly_id"),
+        Column("target_label", "string", "Article or section amended, as published."),
+        Column("target_url", "string", "Source link to the article amended."),
+        Column("text", "string", "The amendment's wording, as published."),
+        Column("n_sponsors", "integer", "Number of members who tabled it."),
+        Column("source_ids", "string", "Provenance.", references="sources.source_id"),
+    ],
+)
+
+AMENDMENT_SPONSORSHIPS = Table(
+    name="amendment_sponsorships",
+    unit="One row per member per amendment they tabled.",
+    primary_key=("amendment_id", "person_id"),
+    description=(
+        "Who tabled which amendment. This is a chosen tie rather than an "
+        "assigned one, which makes it the constituent assembly's counterpart to "
+        "the written-question co-signatures recorded for the 2023 chamber."
+    ),
+    columns=[
+        Column("amendment_id", "string", "Amendment.", required=True,
+               references="amendments.amendment_id"),
+        Column("person_id", "string", "Sponsor.", required=True,
+               references="persons.person_id"),
+        Column("assembly_id", "string", "Chamber.", required=True,
+               references="assemblies.assembly_id"),
+        Column("source_ids", "string", "Provenance.", references="sources.source_id"),
+    ],
+)
+
+
 TABLES: tuple[Table, ...] = (
     ASSEMBLIES,
     GOVERNORATES,
@@ -632,6 +756,11 @@ TABLES: tuple[Table, ...] = (
     OFFICES,
     CAREERS,
     PARTICIPATION,
+    VOTES,
+    VOTE_POSITIONS,
+    PARTY_SWITCHES,
+    AMENDMENTS,
+    AMENDMENT_SPONSORSHIPS,
     PERSON_XREF,
     SOURCES,
     PROVENANCE,
