@@ -1,9 +1,11 @@
 party_id,name_ar,name_fr,name_en,abbrev,family,founded_date,dissolved_date,predecessor_party_id,wikidata_qid,notes
 PTY-079b16e9b74d,الكتلة الديمقراطية (2019),,,,unknown,,,,,Minted from source data; not in the curated party register.
 PTY-0e2de5f37252,الإنتقال الديمقراطي,Transition Démocratique,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-12c364be2b2b,حركة نداء تونس,Mouvement Nidaa Tounes,,,unknown,,,,,Minted from source data; not in the curated party register.
 PTY-20b849ddfcb3,التحالف الديمقراطي,Alliance Démocratique,,,unknown,,,,,Minted from source data; not in the curated party register.
 PTY-2b6219e30267,الحزب الشعبي التقدمي,Parti Populaire Progressiste,,,unknown,,,,,Minted from source data; not in the curated party register.
 PTY-2e6681d42a4b,كتلة الحزب الدستوري الحر (2019),,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-30d752133dab,كتلة الحرّة لحركة مشروع تونس,Bloc Al Horra du Mouvement Machrouu Tounes,,,unknown,,,,,Minted from source data; not in the curated party register.
 PTY-38284180d037,حركة الوطنيين الديمقراطيين,Mouvement des Patriotes Démocrates,,,unknown,,,,,Minted from source data; not in the curated party register.
 PTY-3bb19b9567e1,الخيار الثالث,Troisième Alternative,,,unknown,,,,,Minted from source data; not in the curated party register.
 PTY-4559a54ac238,كتلة حركة النهضة (2019),,,,unknown,,,,,Minted from source data; not in the curated party register.
@@ -17,8 +19,13 @@ PTY-53e95bd9b3b4,كتلة الوطنية المستقلة,,,,unknown,,,,,Minted 
 PTY-5a1bda8022f4,الحزب الجمهوري المغاربي,Parti Républicain Maghrébin,,,unknown,,,,,Minted from source data; not in the curated party register.
 PTY-61a3f228649f,حزب الإصلاح والتنمية,Parti de la réforme et du développement,,,unknown,,,,,Minted from source data; not in the curated party register.
 PTY-6be99d2e724f,حركة الجمهورية,Mouvement de la République,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-7233741e1ec0,الائتلاف الوطني,Alliance nationale,,,unknown,,,,,Minted from source data; not in the curated party register.
 PTY-740db9d180c9,كتلة ائتلاف الكرامة (2019),,,,unknown,,,,,Minted from source data; not in the curated party register.
 PTY-7ad4295a0093,تيار المحبة,Courant de l'amour,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-7c008889761b,آفاق تونس والحركة الوطنية ونداء التونسيين بالخارج,Afek Tounes le mouvement national et lappel des tunisiens à létranger,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-7e358197af47,كتلة الولاء للوطن,Allégeance à la Patrie,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-820f1119d5ed,غير المنتمين,Aucun bloc,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-899a51f36f9d,آفاق تونس ونداء التونسيين بالخارج,Afek Tounes et lappel des tunisiens à létranger,,,unknown,,,,,Minted from source data; not in the curated party register.
 PTY-8c13e5152d0f,كتلة الاصلاح (2019),,,,unknown,,,,,Minted from source data; not in the curated party register.
 PTY-9b0efa626777,الإتحاد الوطني الحر,Union Patriotique Libre,,,unknown,,,,,Minted from source data; not in the curated party register.
 PTY-ARIDHA,العريضة الشعبية,Pétition populaire,Popular Petition,Aridha Chaabia,other,2011-01-01,,,,
@@ -51,7 +58,10 @@ PTY-b4cc6c38811d,كتلة حزب قلب تونس (2019),,,,unknown,,,,,Minted fr
 PTY-bb9202bb86da,حزب العمال,Parti des travailleurs,,,unknown,,,,,Minted from source data; not in the curated party register.
 PTY-bbfe9bb6d793,صوت شعب تونس,La Voix du peuple de Tunisie,,,unknown,,,,,Minted from source data; not in the curated party register.
 PTY-cb447bb1247c,التيار الشعبي,Courant Populaire,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-cc0dd367425f,الكتلة الحرّة,Bloc Al Horra,,,unknown,,,,,Minted from source data; not in the curated party register.
 PTY-d1e65beb3791,كتلة الأمانة والعمل,,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-dc4ed2228330,الكتلة الإجتماعية الديمقراطية,Bloc Social-Démocrate,,,unknown,,,,,Minted from source data; not in the curated party register.
+PTY-df2e2fbfa81f,الجبهة الشعبية,Front Populaire,,,unknown,,,,,Minted from source data; not in the curated party register.
 PTY-e2dde8867b6c,كتلة تحيا تونس (2019),,,,unknown,,,,,Minted from source data; not in the curated party register.
 PTY-e34601720a98,حركة التونسي للحرية والكرامة,Mouvement Tunisien pour la Liberté et la Dignité,,,unknown,,,,,Minted from source data; not in the curated party register.
 PTY-e5c16bf2604d,حزب البناء الوطني,Parti de la Construction Patriotique,,,unknown,,,,,Minted from source data; not in the curated party register.

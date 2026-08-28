@@ -1,0 +1,20 @@
+assembly_id,name_en,type,start_date,end_date,nominal_end_date,seats_nominal,regime_period,coverage_status
+CNRD-2023,National Council of Regions and Districts,regional,2024-04-19,,,77,third_republic,frame_only
+ARP-2023,Assembly of the Representatives of the People,ordinary_lower,2023-03-13,,2027-03-12,161,third_republic,full
+ARP-2019,Assembly of the Representatives of the People,ordinary_lower,2019-11-13,2021-07-25,2024-11-13,217,second_republic,full
+ARP-2014,Assembly of the Representatives of the People,ordinary_lower,2014-12-02,2019-10-05,,217,second_republic,full
+NCA-2011,National Constituent Assembly,constituent,2011-11-22,2014-12-01,,217,transition,full
+ADV-2005,Chamber of Advisors,ordinary_upper,,2011-03-23,,112,ben_ali,frame_only
+COD-2009,Chamber of Deputies,ordinary_lower,2009-10-25,2011-03-23,2014-10-25,214,ben_ali,frame_only
+COD-2004,Chamber of Deputies,ordinary_lower,2004-10-24,2009-10-25,,189,ben_ali,frame_only
+COD-1999,Chamber of Deputies,ordinary_lower,1999-10-24,2004-10-24,,182,ben_ali,frame_only
+COD-1994,Chamber of Deputies,ordinary_lower,1994-03-20,1999-10-24,,163,ben_ali,frame_only
+COD-1989,Chamber of Deputies,ordinary_lower,1989-04-02,1994-03-20,,141,ben_ali,frame_only
+COD-1986,Chamber of Deputies,ordinary_lower,1986-11-02,1989-04-02,1991-11-02,125,bourguiba,frame_only
+COD-1981,Chamber of Deputies,ordinary_lower,1981-11-01,1986-11-02,,136,bourguiba,frame_only
+NA-1979,National Assembly,ordinary_lower,1979-11-04,1981-11-01,1984-11-04,121,bourguiba,frame_only
+NA-1974,National Assembly,ordinary_lower,1974-11-03,1979-11-04,,112,bourguiba,frame_only
+NA-1969,National Assembly,ordinary_lower,1969-11-02,1974-11-03,,101,bourguiba,frame_only
+NA-1964,National Assembly,ordinary_lower,1964-11-08,1969-11-02,,101,bourguiba,frame_only
+NA-1959,National Assembly,ordinary_lower,1959-11-08,1964-11-08,,90,bourguiba,frame_only
+ANC-1956,National Constituent Assembly,constituent,1956-04-08,1959-06-01,,98,protectorate_transition,full

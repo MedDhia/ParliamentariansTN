@@ -16,21 +16,21 @@ Rates are proportions in [0, 1], not percentages. Denominators differ across sou
 | --- | --- | --- |
 | [`assemblies`](#assemblies) | One row per parliamentary chamber-term (a legislature). | 19 |
 | [`governorates`](#governorates) | One row per governorate. | 25 |
-| [`constituencies`](#constituencies) | One row per constituency per assembly. | 231 |
-| [`parties`](#parties) | One row per political party. | 60 |
-| [`persons`](#persons) | One row per natural person who has held a parliamentary mandate. | 682 |
-| [`mandates`](#mandates) | One row per person per assembly per continuous spell of service. | 713 |
+| [`constituencies`](#constituencies) | One row per constituency per assembly. | 260 |
+| [`parties`](#parties) | One row per political party. | 70 |
+| [`persons`](#persons) | One row per natural person who has held a parliamentary mandate. | 856 |
+| [`mandates`](#mandates) | One row per person per assembly per continuous spell of service. | 959 |
 | [`party_affiliations`](#party_affiliations) | One row per person per party per spell. | 217 |
-| [`blocs`](#blocs) | One row per parliamentary bloc per assembly. | 24 |
-| [`bloc_memberships`](#bloc_memberships) | One row per person per bloc per spell. | 638 |
+| [`blocs`](#blocs) | One row per parliamentary bloc per assembly. | 40 |
+| [`bloc_memberships`](#bloc_memberships) | One row per person per bloc per spell. | 1,116 |
 | [`committees`](#committees) | One row per committee per assembly. | 54 |
 | [`committee_memberships`](#committee_memberships) | One row per person per committee per spell. | 1,129 |
 | [`offices`](#offices) | One row per person per parliamentary office per spell. | 47 |
 | [`careers`](#careers) | One row per person per extra-parliamentary role. | 171 |
 | [`participation`](#participation) | One row per person per assembly. | 583 |
-| [`person_xref`](#person_xref) | One row per person per external identifier. | 704 |
-| [`sources`](#sources) | One row per data source. | 5 |
-| [`provenance`](#provenance) | One row per (table, record, field) that a source supplied. | 3,832 |
+| [`person_xref`](#person_xref) | One row per person per external identifier. | 950 |
+| [`sources`](#sources) | One row per data source. | 6 |
+| [`provenance`](#provenance) | One row per (table, record, field) that a source supplied. | 5,039 |
 
 ## `assemblies`
 
@@ -120,16 +120,16 @@ Constituency boundaries and magnitudes change between elections, so constituenci
 
 **Primary key.** `constituency_id`
 
-**Rows.** 231
+**Rows.** 260
 
 | Variable | Type | Non-empty | Description |
 | --- | --- | --- | --- |
-| `constituency_id` | string | 231 (100%) | *(required, unique)* Identifier. |
-| `assembly_id` | string → `assemblies.assembly_id` | 231 (100%) | *(required)* Assembly this delimitation applies to. |
-| `name_ar` | string | 231 (100%) | *(required)* Name, Arabic. |
-| `name_lat` | string | 33 (14%) | Name, Latin script. |
-| `governorate_id` | string → `governorates.governorate_id` | 204 (88%) | Containing governorate, empty for out-of-country seats. |
-| `is_abroad` | boolean | 231 (100%) | Out-of-country constituency. |
+| `constituency_id` | string | 260 (100%) | *(required, unique)* Identifier. |
+| `assembly_id` | string → `assemblies.assembly_id` | 260 (100%) | *(required)* Assembly this delimitation applies to. |
+| `name_ar` | string | 260 (100%) | *(required)* Name, Arabic. |
+| `name_lat` | string | 33 (13%) | Name, Latin script. |
+| `governorate_id` | string → `governorates.governorate_id` | 231 (89%) | Containing governorate, empty for out-of-country seats. |
+| `is_abroad` | boolean | 260 (100%) | Out-of-country constituency. |
 | `magnitude` | integer | 0 (0%) | Number of seats returned. |
 
 ## `parties`
@@ -140,27 +140,27 @@ Party register spanning the single-party era and the post-2011 multiparty period
 
 **Primary key.** `party_id`
 
-**Rows.** 60
+**Rows.** 70
 
 | Variable | Type | Non-empty | Description |
 | --- | --- | --- | --- |
-| `party_id` | string | 60 (100%) | *(required, unique)* Identifier. Example: `PTY-RCD`. |
-| `name_ar` | string | 60 (100%) | *(required)* Name, Arabic. |
-| `name_fr` | string | 45 (75%) | Name, French. |
-| `name_en` | string | 21 (35%) | Name, English. |
-| `abbrev` | string | 21 (35%) | Common abbreviation. Example: `RCD`. |
-| `family` | enum | 60 (100%) | Ideological family. One of: `destourian`, `islamist`, `left`, `social_democratic`, `liberal`, `arab_nationalist`, `national_conservative`, `independent`, `other`, `unknown`. |
-| `founded_date` | date | 20 (33%) | Foundation date. |
-| `dissolved_date` | date | 5 (8%) | Dissolution date. |
-| `predecessor_party_id` | string → `parties.party_id` | 4 (7%) | Organisational predecessor. |
+| `party_id` | string | 70 (100%) | *(required, unique)* Identifier. Example: `PTY-RCD`. |
+| `name_ar` | string | 70 (100%) | *(required)* Name, Arabic. |
+| `name_fr` | string | 55 (79%) | Name, French. |
+| `name_en` | string | 21 (30%) | Name, English. |
+| `abbrev` | string | 21 (30%) | Common abbreviation. Example: `RCD`. |
+| `family` | enum | 70 (100%) | Ideological family. One of: `destourian`, `islamist`, `left`, `social_democratic`, `liberal`, `arab_nationalist`, `national_conservative`, `independent`, `other`, `unknown`. |
+| `founded_date` | date | 20 (29%) | Foundation date. |
+| `dissolved_date` | date | 5 (7%) | Dissolution date. |
+| `predecessor_party_id` | string → `parties.party_id` | 4 (6%) | Organisational predecessor. |
 | `wikidata_qid` | string | 0 (0%) | Wikidata item. |
-| `notes` | string | 39 (65%) | Analyst notes. |
+| `notes` | string | 49 (70%) | Analyst notes. |
 
 <details><summary>Distribution of <code>family</code></summary>
 
 | Value | n |
 | --- | --- |
-| `unknown` | 39 |
+| `unknown` | 49 |
 | `social_democratic` | 4 |
 | `destourian` | 4 |
 | `left` | 3 |
@@ -183,43 +183,43 @@ The person registry. Identity is deliberately thin: names, sex, vital dates, ori
 
 **Notes.** Names are stored in both Arabic script and Latin script because no single romanisation is authoritative in Tunisian practice: the ARP, Al Bawsala and the electoral commission romanise the same name differently. Matching across sources uses the normalised Arabic form (see ids.normalize_arabic) with the Latin form as a fallback.
 
-**Rows.** 682
+**Rows.** 856
 
 | Variable | Type | Non-empty | Description |
 | --- | --- | --- | --- |
-| `person_id` | string | 682 (100%) | *(required, unique)* Stable dataset identifier, format TNP-00000. Example: `TNP-00042`. |
-| `name_ar` | string | 682 (100%) | Full name in Arabic script as given by the most authoritative source. Example: `إبراهيم بودربالة`. |
-| `name_lat` | string | 682 (100%) | Full name in Latin script. Example: `Brahim Bouderbela`. |
-| `given_name_ar` | string | 155 (23%) | Given name, Arabic script. |
-| `family_name_ar` | string | 154 (23%) | Family name, Arabic script. |
-| `given_name_lat` | string | 155 (23%) | Given name, Latin script. |
-| `family_name_lat` | string | 155 (23%) | Family name, Latin script. |
-| `name_normalised` | string | 682 (100%) | Diacritic- and orthography-normalised Arabic key used for cross-source matching. Example: `ابراهيم بودربالة`. |
-| `gender` | enum | 568 (83%) | Sex as recorded by the source. Sources record a binary; 'unknown' where absent. One of: `female`, `male`, `other`, `unknown`. |
-| `birth_date` | date | 158 (23%) | Date of birth, ISO 8601. Partial dates are padded and flagged in birth_date_precision. |
-| `birth_date_precision` | enum | 158 (23%) | Granularity actually known for birth_date. One of: `day`, `month`, `year`, `decade`, `unknown`. |
-| `birth_place_ar` | string | 114 (17%) | Locality of birth as written by the source, Arabic script. |
-| `birth_governorate_id` | string → `governorates.governorate_id` | 68 (10%) | Governorate of birth. |
+| `person_id` | string | 856 (100%) | *(required, unique)* Stable dataset identifier, format TNP-00000. Example: `TNP-00042`. |
+| `name_ar` | string | 856 (100%) | Full name in Arabic script as given by the most authoritative source. Example: `إبراهيم بودربالة`. |
+| `name_lat` | string | 856 (100%) | Full name in Latin script. Example: `Brahim Bouderbela`. |
+| `given_name_ar` | string | 155 (18%) | Given name, Arabic script. |
+| `family_name_ar` | string | 154 (18%) | Family name, Arabic script. |
+| `given_name_lat` | string | 155 (18%) | Given name, Latin script. |
+| `family_name_lat` | string | 155 (18%) | Family name, Latin script. |
+| `name_normalised` | string | 856 (100%) | Diacritic- and orthography-normalised Arabic key used for cross-source matching. Example: `ابراهيم بودربالة`. |
+| `gender` | enum | 742 (87%) | Sex as recorded by the source. Sources record a binary; 'unknown' where absent. One of: `female`, `male`, `other`, `unknown`. |
+| `birth_date` | date | 158 (18%) | Date of birth, ISO 8601. Partial dates are padded and flagged in birth_date_precision. |
+| `birth_date_precision` | enum | 158 (18%) | Granularity actually known for birth_date. One of: `day`, `month`, `year`, `decade`, `unknown`. |
+| `birth_place_ar` | string | 114 (13%) | Locality of birth as written by the source, Arabic script. |
+| `birth_governorate_id` | string → `governorates.governorate_id` | 68 (8%) | Governorate of birth. |
 | `death_date` | date | 3 (0%) | Date of death where applicable. |
 | `death_date_precision` | enum | 3 (0%) | Granularity of death_date. One of: `day`, `month`, `year`, `decade`, `unknown`. |
-| `marital_status` | string | 62 (9%) | Marital status as reported (free text, source wording preserved). |
-| `n_children` | integer | 37 (5%) | Number of children where reported. |
-| `languages` | string | 47 (7%) | Semicolon-separated languages claimed in the official biography. Example: `ar;fr;en`. |
-| `education_raw` | string | 217 (32%) | Education as written by the source, untranslated. |
+| `marital_status` | string | 62 (7%) | Marital status as reported (free text, source wording preserved). |
+| `n_children` | integer | 37 (4%) | Number of children where reported. |
+| `languages` | string | 47 (5%) | Semicolon-separated languages claimed in the official biography. Example: `ar;fr;en`. |
+| `education_raw` | string | 217 (25%) | Education as written by the source, untranslated. |
 | `education_level` | string | 0 (0%) | Coded highest attainment; see docs/CODEBOOK.md. |
-| `occupation_raw` | string | 52 (8%) | Pre-parliamentary occupation as written by the source. |
+| `occupation_raw` | string | 227 (27%) | Pre-parliamentary occupation as written by the source. |
 | `occupation_sector` | enum | 0 (0%) | Coded sector of the principal pre-parliamentary occupation. One of: `state_executive`, `state_administration`, `party`, `trade_union`, `business`, `professional_association`, `civil_society`, `military`, `security`, `judiciary`, `academia`, `education`, `health`, `media`, `religious`, `local_government`, `international_organisation`, `diaspora_association`, `other`, `unknown`. |
-| `biography_ar` | string | 222 (33%) | Official biographical text, Arabic, verbatim. Long free text. |
+| `biography_ar` | string | 222 (26%) | Official biographical text, Arabic, verbatim. Long free text. |
 | `wikidata_qid` | string | 0 (0%) | Wikidata item, where a match was verified. Example: `Q3576068`. |
-| `first_mandate_start` | date | 682 (100%) | Derived: start of earliest mandate. |
-| `n_mandates` | integer | 682 (100%) | Derived: number of distinct mandates held. |
+| `first_mandate_start` | date | 856 (100%) | Derived: start of earliest mandate. |
+| `n_mandates` | integer | 856 (100%) | Derived: number of distinct mandates held. |
 
 <details><summary>Distribution of <code>gender</code></summary>
 
 | Value | n |
 | --- | --- |
-| `male` | 419 |
-| `female` | 145 |
+| `male` | 535 |
+| `female` | 203 |
 | `unknown` | 4 |
 
 </details>
@@ -249,32 +249,33 @@ The core event table. A person returned in three legislatures has three rows; a 
 
 **Primary key.** `mandate_id`
 
-**Rows.** 713
+**Rows.** 959
 
 | Variable | Type | Non-empty | Description |
 | --- | --- | --- | --- |
-| `mandate_id` | string | 713 (100%) | *(required, unique)* Stable identifier. Example: `TNM-00713`. |
-| `person_id` | string → `persons.person_id` | 713 (100%) | *(required)* Holder of the mandate. |
-| `assembly_id` | string → `assemblies.assembly_id` | 713 (100%) | *(required)* Chamber-term served in. |
-| `start_date` | date | 713 (100%) | Start of this spell of service. |
-| `end_date` | date | 561 (79%) | End of this spell. Empty where still serving. |
-| `entry_mode` | enum | 713 (100%) | How the seat was obtained. One of: `elected`, `elected_byelection`, `replacement_list`, `appointed`, `ex_officio`, `unknown`. |
-| `exit_mode` | enum | 713 (100%) | How the mandate ended. One of: `end_of_term`, `death`, `resignation`, `revocation`, `dissolution`, `became_minister`, `elected_president`, `still_serving`, `unknown`. |
-| `constituency_id` | string → `constituencies.constituency_id` | 686 (96%) | Seat's constituency. |
-| `governorate_id` | string → `governorates.governorate_id` | 546 (77%) | Governorate of the constituency (denormalised for convenience). |
-| `electoral_list_ar` | string | 541 (76%) | Name of the list on which the person was returned, Arabic. |
-| `electoral_list_lat` | string | 325 (46%) | Name of the list, Latin script. |
-| `party_id_at_election` | string → `parties.party_id` | 342 (48%) | Party sponsoring the list, where applicable. |
-| `seat_number` | string | 155 (22%) | Seat or file number used by the chamber. |
-| `is_diaspora_seat` | boolean | 713 (100%) | True where the constituency is an out-of-country constituency. |
-| `election_date` | date | 696 (98%) | Date of the election returning this mandate. |
-| `source_ids` | string → `sources.source_id` | 713 (100%) | Semicolon-separated source_id list. |
+| `mandate_id` | string | 959 (100%) | *(required, unique)* Stable identifier. Example: `TNM-00713`. |
+| `person_id` | string → `persons.person_id` | 959 (100%) | *(required)* Holder of the mandate. |
+| `assembly_id` | string → `assemblies.assembly_id` | 959 (100%) | *(required)* Chamber-term served in. |
+| `start_date` | date | 959 (100%) | Start of this spell of service. |
+| `end_date` | date | 807 (84%) | End of this spell. Empty where still serving. |
+| `entry_mode` | enum | 959 (100%) | How the seat was obtained. One of: `elected`, `elected_byelection`, `replacement_list`, `appointed`, `ex_officio`, `unknown`. |
+| `exit_mode` | enum | 959 (100%) | How the mandate ended. One of: `end_of_term`, `death`, `resignation`, `revocation`, `dissolution`, `became_minister`, `elected_president`, `still_serving`, `unknown`. |
+| `constituency_id` | string → `constituencies.constituency_id` | 932 (97%) | Seat's constituency. |
+| `governorate_id` | string → `governorates.governorate_id` | 788 (82%) | Governorate of the constituency (denormalised for convenience). |
+| `electoral_list_ar` | string | 787 (82%) | Name of the list on which the person was returned, Arabic. |
+| `electoral_list_lat` | string | 325 (34%) | Name of the list, Latin script. |
+| `party_id_at_election` | string → `parties.party_id` | 342 (36%) | Party sponsoring the list, where applicable. |
+| `seat_number` | string | 401 (42%) | Seat or file number used by the chamber. |
+| `is_diaspora_seat` | boolean | 959 (100%) | True where the constituency is an out-of-country constituency. |
+| `election_date` | date | 942 (98%) | Date of the election returning this mandate. |
+| `source_ids` | string → `sources.source_id` | 959 (100%) | Semicolon-separated source_id list. |
 
 <details><summary>Distribution of <code>entry_mode</code></summary>
 
 | Value | n |
 | --- | --- |
-| `elected` | 686 |
+| `elected` | 903 |
+| `replacement_list` | 29 |
 | `unknown` | 17 |
 | `elected_byelection` | 10 |
 
@@ -284,10 +285,10 @@ The core event table. A person returned in three legislatures has three rows; a 
 
 | Value | n |
 | --- | --- |
-| `end_of_term` | 317 |
+| `end_of_term` | 534 |
 | `dissolution` | 216 |
 | `still_serving` | 152 |
-| `unknown` | 25 |
+| `unknown` | 54 |
 | `death` | 3 |
 
 </details>
@@ -320,18 +321,18 @@ Parliamentary blocs (kutla) are the operative unit of legislative behaviour afte
 
 **Primary key.** `bloc_id`
 
-**Rows.** 24
+**Rows.** 40
 
 | Variable | Type | Non-empty | Description |
 | --- | --- | --- | --- |
-| `bloc_id` | string | 24 (100%) | *(required, unique)* Identifier. |
-| `assembly_id` | string → `assemblies.assembly_id` | 24 (100%) | *(required)* Assembly in which the bloc existed. |
-| `name_ar` | string | 24 (100%) | *(required)* Name, Arabic. |
-| `name_lat` | string | 8 (33%) | Name, Latin script. |
-| `party_id` | string → `parties.party_id` | 24 (100%) | Dominant party, where the bloc is a party bloc. |
-| `formed_date` | date | 24 (100%) | Date the bloc was constituted. |
+| `bloc_id` | string | 40 (100%) | *(required, unique)* Identifier. |
+| `assembly_id` | string → `assemblies.assembly_id` | 40 (100%) | *(required)* Assembly in which the bloc existed. |
+| `name_ar` | string | 40 (100%) | *(required)* Name, Arabic. |
+| `name_lat` | string | 24 (60%) | Name, Latin script. |
+| `party_id` | string → `parties.party_id` | 40 (100%) | Dominant party, where the bloc is a party bloc. |
+| `formed_date` | date | 40 (100%) | Date the bloc was constituted. |
 | `dissolved_date` | date | 0 (0%) | Date the bloc ceased to exist. |
-| `notes` | string | 0 (0%) | Analyst notes. |
+| `notes` | string | 16 (40%) | Analyst notes. |
 
 ## `bloc_memberships`
 
@@ -341,25 +342,27 @@ Dated bloc membership. Consecutive rows for one person within one assembly are t
 
 **Primary key.** `bloc_membership_id`
 
-**Rows.** 638
+**Rows.** 1,116
 
 | Variable | Type | Non-empty | Description |
 | --- | --- | --- | --- |
-| `bloc_membership_id` | string | 638 (100%) | *(required, unique)* Identifier. |
-| `person_id` | string → `persons.person_id` | 638 (100%) | *(required)* Member. |
-| `bloc_id` | string → `blocs.bloc_id` | 638 (100%) | *(required)* Bloc. |
-| `assembly_id` | string → `assemblies.assembly_id` | 638 (100%) | *(required)* Assembly. |
-| `start_date` | date | 638 (100%) | Start of membership. |
-| `end_date` | date | 270 (42%) | End of membership. |
-| `role` | enum | 638 (100%) | Role in the bloc. One of: `speaker`, `first_vice_speaker`, `vice_speaker`, `bureau_member`, `bloc_chair`, `unknown`. |
+| `bloc_membership_id` | string | 1,116 (100%) | *(required, unique)* Identifier. |
+| `person_id` | string → `persons.person_id` | 1,116 (100%) | *(required)* Member. |
+| `bloc_id` | string → `blocs.bloc_id` | 1,116 (100%) | *(required)* Bloc. |
+| `assembly_id` | string → `assemblies.assembly_id` | 1,116 (100%) | *(required)* Assembly. |
+| `start_date` | date | 1,116 (100%) | Start of membership. |
+| `end_date` | date | 748 (67%) | End of membership. |
+| `role` | enum | 1,116 (100%) | Role in the bloc. One of: `speaker`, `first_vice_speaker`, `vice_speaker`, `bureau_member`, `bloc_chair`, `unknown`. |
 | `is_founding_member` | boolean | 0 (0%) | Member at the bloc's constitution. |
-| `source_ids` | string → `sources.source_id` | 638 (100%) | Provenance. |
+| `dates_bracketed` | boolean | 478 (43%) | True where the spell's boundaries were derived by comparing dated observations rather than read from a published date. The change occurred somewhere in the interval ending at start_date, not necessarily on it. Applies to the 2014-2019 chamber, whose bloc history is reconstructed from monthly web captures. |
+| `notes` | string | 478 (43%) | Analyst notes, including the bracketing interval where relevant. |
+| `source_ids` | string → `sources.source_id` | 1,116 (100%) | Provenance. |
 
 <details><summary>Distribution of <code>role</code></summary>
 
 | Value | n |
 | --- | --- |
-| `unknown` | 615 |
+| `unknown` | 1,093 |
 | `vice_speaker` | 12 |
 | `speaker` | 11 |
 
@@ -567,23 +570,23 @@ Crosswalk from dataset person_id to every upstream identifier. This is what make
 
 **Primary key.** `person_id, source_id, source_key`
 
-**Rows.** 704
+**Rows.** 950
 
 | Variable | Type | Non-empty | Description |
 | --- | --- | --- | --- |
-| `person_id` | string → `persons.person_id` | 704 (100%) | *(required)* Dataset person. |
-| `source_id` | string → `sources.source_id` | 704 (100%) | *(required)* Source system. |
-| `source_key` | string | 704 (100%) | *(required)* Primary key within that source. Example: `742`. |
-| `source_url` | string | 696 (99%) | Resolvable URL for the upstream record. |
-| `match_method` | string | 704 (100%) | How the link was made: source_id, exact_name, normalised_name, manual. |
-| `match_confidence` | enum | 704 (100%) | Confidence in the linkage. One of: `high`, `medium`, `low`. |
+| `person_id` | string → `persons.person_id` | 950 (100%) | *(required)* Dataset person. |
+| `source_id` | string → `sources.source_id` | 950 (100%) | *(required)* Source system. |
+| `source_key` | string | 950 (100%) | *(required)* Primary key within that source. Example: `742`. |
+| `source_url` | string | 942 (99%) | Resolvable URL for the upstream record. |
+| `match_method` | string | 950 (100%) | How the link was made: source_id, exact_name, normalised_name, manual. |
+| `match_confidence` | enum | 950 (100%) | Confidence in the linkage. One of: `high`, `medium`, `low`. |
 
 <details><summary>Distribution of <code>match_confidence</code></summary>
 
 | Value | n |
 | --- | --- |
-| `high` | 699 |
-| `medium` | 5 |
+| `high` | 942 |
+| `medium` | 8 |
 
 </details>
 
@@ -595,21 +598,21 @@ Source register, with access conditions and coverage.
 
 **Primary key.** `source_id`
 
-**Rows.** 5
+**Rows.** 6
 
 | Variable | Type | Non-empty | Description |
 | --- | --- | --- | --- |
-| `source_id` | string | 5 (100%) | *(required, unique)* Identifier. Example: `ARP_ODOO`. |
-| `name` | string | 5 (100%) | *(required)* Human-readable name. |
-| `publisher` | string | 5 (100%) | Publishing body. |
-| `url` | string | 4 (80%) | Entry-point URL. |
-| `access_method` | string | 5 (100%) | How the data is obtained. |
-| `coverage` | string | 5 (100%) | Assemblies and variables covered. |
-| `language` | string | 5 (100%) | Language(s) of the source. |
-| `licence` | string | 5 (100%) | Licence or terms, where stated. |
-| `first_retrieved` | date | 4 (80%) | First retrieval date. |
-| `last_retrieved` | date | 4 (80%) | Most recent retrieval date. |
-| `reliability_notes` | string | 5 (100%) | Known errors and cautions. |
+| `source_id` | string | 6 (100%) | *(required, unique)* Identifier. Example: `ARP_ODOO`. |
+| `name` | string | 6 (100%) | *(required)* Human-readable name. |
+| `publisher` | string | 6 (100%) | Publishing body. |
+| `url` | string | 5 (83%) | Entry-point URL. |
+| `access_method` | string | 6 (100%) | How the data is obtained. |
+| `coverage` | string | 6 (100%) | Assemblies and variables covered. |
+| `language` | string | 6 (100%) | Language(s) of the source. |
+| `licence` | string | 6 (100%) | Licence or terms, where stated. |
+| `first_retrieved` | date | 5 (83%) | First retrieval date. |
+| `last_retrieved` | date | 5 (83%) | Most recent retrieval date. |
+| `reliability_notes` | string | 6 (100%) | Known errors and cautions. |
 
 ## `provenance`
 
@@ -619,23 +622,23 @@ Cell-level provenance. Kept as a long table so that a single field can carry sev
 
 **Primary key.** `table_name, record_id, field_name, source_id`
 
-**Rows.** 3,832
+**Rows.** 5,039
 
 | Variable | Type | Non-empty | Description |
 | --- | --- | --- | --- |
-| `table_name` | string | 3,832 (100%) | *(required)* Target table. |
-| `record_id` | string | 3,832 (100%) | *(required)* Primary key of the target record. |
-| `field_name` | string | 3,832 (100%) | *(required)* Target column. |
-| `source_id` | string → `sources.source_id` | 3,832 (100%) | *(required)* Supplying source. |
-| `value_hash` | string | 3,832 (100%) | Short hash of the supplied value, to detect upstream revision. |
-| `retrieved_at` | date | 3,832 (100%) | Retrieval date. |
-| `confidence` | enum | 3,832 (100%) | Confidence in this value. One of: `high`, `medium`, `low`. |
+| `table_name` | string | 5,039 (100%) | *(required)* Target table. |
+| `record_id` | string | 5,039 (100%) | *(required)* Primary key of the target record. |
+| `field_name` | string | 5,039 (100%) | *(required)* Target column. |
+| `source_id` | string → `sources.source_id` | 5,039 (100%) | *(required)* Supplying source. |
+| `value_hash` | string | 5,039 (100%) | Short hash of the supplied value, to detect upstream revision. |
+| `retrieved_at` | date | 5,039 (100%) | Retrieval date. |
+| `confidence` | enum | 5,039 (100%) | Confidence in this value. One of: `high`, `medium`, `low`. |
 
 <details><summary>Distribution of <code>confidence</code></summary>
 
 | Value | n |
 | --- | --- |
-| `medium` | 2,593 |
+| `medium` | 3,800 |
 | `high` | 1,239 |
 
 </details>

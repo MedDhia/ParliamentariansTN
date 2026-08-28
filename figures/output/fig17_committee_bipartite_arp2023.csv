@@ -1,0 +1,248 @@
+person_id,name_lat,committee_id,committee,committee_label,roles
+TNP-00001,Youssef Tarchoun,CMT-5267b383ff24,"La commission du règlement intérieur, des lois électorales, des lois…","Règlement intérieur, de…",member rapporteur
+TNP-00002,Youssef Toumi,CMT-56efc6c780f9,Commission de la legislation,Legislation,member vice_chair
+TNP-00003,Yosri Baouab,CMT-5267b383ff24,"La commission du règlement intérieur, des lois électorales, des lois…","Règlement intérieur, de…",member
+TNP-00004,yassine Mami,CMT-56efc6c780f9,Commission de la legislation,Legislation,member
+TNP-00004,yassine Mami,CMT-7c0357a9f3f7,"Commission du tourisme, la culture, des services et des industries ar…","Tourisme, la culture, d…",chair
+TNP-00004,yassine Mami,CMT-d74c07127db9,"Commission des Relations Extérieures, de la Coopération international…",Relations Extérieures…,member
+TNP-00005,Yasser Grari,CMT-56efc6c780f9,Commission de la legislation,Legislation,chair rapporteur
+TNP-00006,Walid Hajji,CMT-56efc6c780f9,Commission de la legislation,Legislation,member
+TNP-00006,Walid Hajji,CMT-9dc809177956,"Commission de l'éducation, la formation, la recherche scientifique, d…","Éducation, la formation…",member
+TNP-00007,Hichem Hosni,CMT-5267b383ff24,"La commission du règlement intérieur, des lois électorales, des lois…","Règlement intérieur, de…",member vice_chair
+TNP-00008,Hela Jaballa,CMT-76cc55ae8838,Commission des droits et libertés,Droits et libertés,chair member rapporteur
+TNP-00009,Noura Chabrak,CMT-10ce63ee42df,"Commission de la Planification Stratégique, du Développement Durable…",Planification Stratégiq…,member
+TNP-00009,Noura Chabrak,CMT-56efc6c780f9,Commission de la legislation,Legislation,member
+TNP-00010,Nourelhouda Sbaiti,CMT-6d49329b2466,"Commission de l'Industrie, du commerce, des richesses naturelles, de…","Industrie, du commerce…",member
+TNP-00011,Nizar Seddik,CMT-7c0357a9f3f7,"Commission du tourisme, la culture, des services et des industries ar…","Tourisme, la culture, d…",member
+TNP-00011,Nizar Seddik,CMT-9dc809177956,"Commission de l'éducation, la formation, la recherche scientifique, d…","Éducation, la formation…",member
+TNP-00012,Nejib Akremi,CMT-9dc809177956,"Commission de l'éducation, la formation, la recherche scientifique, d…","Éducation, la formation…",rapporteur
+TNP-00013,Najla Lahiani,CMT-9dc809177956,"Commission de l'éducation, la formation, la recherche scientifique, d…","Éducation, la formation…",member vice_chair
+TNP-00013,Najla Lahiani,CMT-d74c07127db9,"Commission des Relations Extérieures, de la Coopération international…",Relations Extérieures…,member
+TNP-00014,Nabih Thabet,CMT-18172a2cec3f,"Commission de la santé, de la femme et de la famille, des affaires so…","Santé, de la femme et d…",chair
+TNP-00015,Nabil Hamdi,CMT-6d49329b2466,"Commission de l'Industrie, du commerce, des richesses naturelles, de…","Industrie, du commerce…",member
+TNP-00015,Nabil Hamdi,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,member
+TNP-00016,Maha Ameur,CMT-6d49329b2466,"Commission de l'Industrie, du commerce, des richesses naturelles, de…","Industrie, du commerce…",member rapporteur
+TNP-00016,Maha Ameur,CMT-9dc809177956,"Commission de l'éducation, la formation, la recherche scientifique, d…","Éducation, la formation…",member
+TNP-00017,Mounir Kammouni,CMT-9dc809177956,"Commission de l'éducation, la formation, la recherche scientifique, d…","Éducation, la formation…",member vice_chair
+TNP-00017,Mounir Kammouni,CMT-b3ceee509580,"Commission d'organisation administrative, Développement, Digitalisati…",Organisation administra…,member
+TNP-00018,Moncef Maaloul,CMT-18172a2cec3f,"Commission de la santé, de la femme et de la famille, des affaires so…","Santé, de la femme et d…",member vice_chair
+TNP-00019,Manel Bdida,CMT-18172a2cec3f,"Commission de la santé, de la femme et de la famille, des affaires so…","Santé, de la femme et d…",member
+TNP-00019,Manel Bdida,CMT-76cc55ae8838,Commission des droits et libertés,Droits et libertés,vice_chair
+TNP-00019,Manel Bdida,CMT-9dc809177956,"Commission de l'éducation, la formation, la recherche scientifique, d…","Éducation, la formation…",member
+TNP-00020,Melik Kammoun,CMT-56efc6c780f9,Commission de la legislation,Legislation,member rapporteur
+TNP-00021,Moez Ben Youssef,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,member
+TNP-00021,Moez Ben Youssef,CMT-d74c07127db9,"Commission des Relations Extérieures, de la Coopération international…",Relations Extérieures…,member
+TNP-00022,Moez Barkallah,CMT-10ce63ee42df,"Commission de la Planification Stratégique, du Développement Durable…",Planification Stratégiq…,member vice_chair
+TNP-00023,Moez Riahi,CMT-56efc6c780f9,Commission de la legislation,Legislation,member
+TNP-00024,Mustapha Boubakri,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,member
+TNP-00025,Messaoud Grira,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,member
+TNP-00026,Mariem Cherif,CMT-56efc6c780f9,Commission de la legislation,Legislation,member
+TNP-00026,Mariem Cherif,CMT-5a174a8e00bb,Commission de l'agriculture de la sécurité alimentaire de l'eau et de…,Agriculture de la sécur…,rapporteur
+TNP-00026,Mariem Cherif,CMT-7c0357a9f3f7,"Commission du tourisme, la culture, des services et des industries ar…","Tourisme, la culture, d…",vice_chair
+TNP-00027,Mourad khezami,CMT-b3ceee509580,"Commission d'organisation administrative, Développement, Digitalisati…",Organisation administra…,vice_chair
+TNP-00028,Mokhtar Ifaoui,CMT-56efc6c780f9,Commission de la legislation,Legislation,member
+TNP-00029,Mahmoud Chalghaf,CMT-309f56b78ead,"Commission de la défense, de la sécurité et des forces armées","Défense, de la sécurité…",member
+TNP-00029,Mahmoud Chalghaf,CMT-b3ceee509580,"Commission d'organisation administrative, Développement, Digitalisati…",Organisation administra…,member
+TNP-00030,Mahmoud El Amri,CMT-309f56b78ead,"Commission de la défense, de la sécurité et des forces armées","Défense, de la sécurité…",chair member
+TNP-00031,Mohamed Mejdi,CMT-6d49329b2466,"Commission de l'Industrie, du commerce, des richesses naturelles, de…","Industrie, du commerce…",chair member
+TNP-00032,Mohamed Ali Fennira,CMT-6d49329b2466,"Commission de l'Industrie, du commerce, des richesses naturelles, de…","Industrie, du commerce…",member rapporteur
+TNP-00033,Mohamed Ali,CMT-76cc55ae8838,Commission des droits et libertés,Droits et libertés,chair member rapporteur
+TNP-00034,Mohamed Dhaw,CMT-309f56b78ead,"Commission de la défense, de la sécurité et des forces armées","Défense, de la sécurité…",member
+TNP-00034,Mohamed Dhaw,CMT-5267b383ff24,"La commission du règlement intérieur, des lois électorales, des lois…","Règlement intérieur, de…",member
+TNP-00035,Mohamed Chaabani,CMT-5a174a8e00bb,Commission de l'agriculture de la sécurité alimentaire de l'eau et de…,Agriculture de la sécur…,vice_chair
+TNP-00035,Mohamed Chaabani,CMT-76cc55ae8838,Commission des droits et libertés,Droits et libertés,member
+TNP-00036,Mohamed Zied El Maher,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,member
+TNP-00037,Mohamed Ben Said,CMT-5a174a8e00bb,Commission de l'agriculture de la sécurité alimentaire de l'eau et de…,Agriculture de la sécur…,member vice_chair
+TNP-00038,Mohamed Ben Hassine,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,member rapporteur
+TNP-00039,Mohamed Amine Mbarki,CMT-5a174a8e00bb,Commission de l'agriculture de la sécurité alimentaire de l'eau et de…,Agriculture de la sécur…,member rapporteur
+TNP-00039,Mohamed Amine Mbarki,CMT-6d49329b2466,"Commission de l'Industrie, du commerce, des richesses naturelles, de…","Industrie, du commerce…",chair
+TNP-00040,Mohamed Amine Ouerghi,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,member
+TNP-00041,Mohamed Yahyaoui,CMT-7c0357a9f3f7,"Commission du tourisme, la culture, des services et des industries ar…","Tourisme, la culture, d…",chair
+TNP-00041,Mohamed Yahyaoui,CMT-9dc809177956,"Commission de l'éducation, la formation, la recherche scientifique, d…","Éducation, la formation…",member
+TNP-00042,Mohamed Elhedi Allani,CMT-7c0357a9f3f7,"Commission du tourisme, la culture, des services et des industries ar…","Tourisme, la culture, d…",member vice_chair
+TNP-00043,mohamed Ahmed,CMT-5267b383ff24,"La commission du règlement intérieur, des lois électorales, des lois…","Règlement intérieur, de…",chair
+TNP-00044,Mohsen Hermi,CMT-18172a2cec3f,"Commission de la santé, de la femme et de la famille, des affaires so…","Santé, de la femme et d…",member
+TNP-00044,Mohsen Hermi,CMT-5267b383ff24,"La commission du règlement intérieur, des lois électorales, des lois…","Règlement intérieur, de…",member
+TNP-00045,Maher Boubaker Hadhri,CMT-b3ceee509580,"Commission d'organisation administrative, Développement, Digitalisati…",Organisation administra…,member
+TNP-00046,Maher Ketari,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,chair member
+TNP-00047,Majda Ouerghi,CMT-18172a2cec3f,"Commission de la santé, de la femme et de la famille, des affaires so…","Santé, de la femme et d…",member
+TNP-00047,Majda Ouerghi,CMT-7c0357a9f3f7,"Commission du tourisme, la culture, des services et des industries ar…","Tourisme, la culture, d…",member
+TNP-00048,Lotfi Hammami,CMT-56efc6c780f9,Commission de la legislation,Legislation,member
+TNP-00049,Lotfi Saadaoui,CMT-5a174a8e00bb,Commission de l'agriculture de la sécurité alimentaire de l'eau et de…,Agriculture de la sécur…,member
+TNP-00049,Lotfi Saadaoui,CMT-76cc55ae8838,Commission des droits et libertés,Droits et libertés,member
+TNP-00049,Lotfi Saadaoui,CMT-b3ceee509580,"Commission d'organisation administrative, Développement, Digitalisati…",Organisation administra…,member
+TNP-00050,Kamel Keraani,CMT-d74c07127db9,"Commission des Relations Extérieures, de la Coopération international…",Relations Extérieures…,member vice_chair
+TNP-00051,Kamel Farrah,CMT-9dc809177956,"Commission de l'éducation, la formation, la recherche scientifique, d…","Éducation, la formation…",chair member
+TNP-00052,Fayçal Sghaier,CMT-5a174a8e00bb,Commission de l'agriculture de la sécurité alimentaire de l'eau et de…,Agriculture de la sécur…,member
+TNP-00052,Fayçal Sghaier,CMT-7c0357a9f3f7,"Commission du tourisme, la culture, des services et des industries ar…","Tourisme, la culture, d…",member
+TNP-00053,Faouzi Daas,CMT-56efc6c780f9,Commission de la legislation,Legislation,chair member
+TNP-00054,Fakhri Abdelkhalek,CMT-76cc55ae8838,Commission des droits et libertés,Droits et libertés,member
+TNP-00055,Fakhreddine Fadhloun,CMT-9dc809177956,"Commission de l'éducation, la formation, la recherche scientifique, d…","Éducation, la formation…",chair member
+TNP-00056,Fethi Rjeb,CMT-18172a2cec3f,"Commission de la santé, de la femme et de la famille, des affaires so…","Santé, de la femme et d…",member
+TNP-00056,Fethi Rjeb,CMT-309f56b78ead,"Commission de la défense, de la sécurité et des forces armées","Défense, de la sécurité…",member
+TNP-00057,Fethi Mechrgui,CMT-309f56b78ead,"Commission de la défense, de la sécurité et des forces armées","Défense, de la sécurité…",rapporteur
+TNP-00057,Fethi Mechrgui,CMT-56efc6c780f9,Commission de la legislation,Legislation,member
+TNP-00058,Msedi Fatma,CMT-56efc6c780f9,Commission de la legislation,Legislation,member
+TNP-00058,Msedi Fatma,CMT-76cc55ae8838,Commission des droits et libertés,Droits et libertés,member
+TNP-00059,Faten Ncibi,CMT-76cc55ae8838,Commission des droits et libertés,Droits et libertés,vice_chair
+TNP-00059,Faten Ncibi,CMT-b3ceee509580,"Commission d'organisation administrative, Développement, Digitalisati…",Organisation administra…,member
+TNP-00060,Ghassen Yamoun,CMT-309f56b78ead,"Commission de la défense, de la sécurité et des forces armées","Défense, de la sécurité…",member vice_chair
+TNP-00060,Ghassen Yamoun,CMT-56efc6c780f9,Commission de la legislation,Legislation,member
+TNP-00061,Awatef Cheniti,CMT-18172a2cec3f,"Commission de la santé, de la femme et de la famille, des affaires so…","Santé, de la femme et d…",member
+TNP-00062,Amor Ben Amor,CMT-5a174a8e00bb,Commission de l'agriculture de la sécurité alimentaire de l'eau et de…,Agriculture de la sécur…,chair member
+TNP-00062,Amor Ben Amor,CMT-6d49329b2466,"Commission de l'Industrie, du commerce, des richesses naturelles, de…","Industrie, du commerce…",member vice_chair
+TNP-00063,Amor Barhoumi,CMT-d74c07127db9,"Commission des Relations Extérieures, de la Coopération international…",Relations Extérieures…,member
+TNP-00064,Ammar Idoudi,CMT-56efc6c780f9,Commission de la legislation,Legislation,member
+TNP-00064,Ammar Idoudi,CMT-5a174a8e00bb,Commission de l'agriculture de la sécurité alimentaire de l'eau et de…,Agriculture de la sécur…,member
+TNP-00064,Ammar Idoudi,CMT-d74c07127db9,"Commission des Relations Extérieures, de la Coopération international…",Relations Extérieures…,vice_chair
+TNP-00065,Ouled jebril Imed,CMT-76cc55ae8838,Commission des droits et libertés,Droits et libertés,member
+TNP-00066,Imededdine Sdiri,CMT-5a174a8e00bb,Commission de l'agriculture de la sécurité alimentaire de l'eau et de…,Agriculture de la sécur…,member
+TNP-00066,Imededdine Sdiri,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,member
+TNP-00066,Imededdine Sdiri,CMT-b3ceee509580,"Commission d'organisation administrative, Développement, Digitalisati…",Organisation administra…,rapporteur
+TNP-00067,Ali Zaghdoud,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,member
+TNP-00068,Ali Bouzouzia,CMT-18172a2cec3f,"Commission de la santé, de la femme et de la famille, des affaires so…","Santé, de la femme et d…",member vice_chair
+TNP-00068,Ali Bouzouzia,CMT-56efc6c780f9,Commission de la legislation,Legislation,member
+TNP-00069,Issam Chouchen,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,chair member vice_chair
+TNP-00070,Issam Bahri Jebri,CMT-6d49329b2466,"Commission de l'Industrie, du commerce, des richesses naturelles, de…","Industrie, du commerce…",member
+TNP-00070,Issam Bahri Jebri,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,rapporteur
+TNP-00071,Aziz Ben Lakhdher,CMT-5267b383ff24,"La commission du règlement intérieur, des lois électorales, des lois…","Règlement intérieur, de…",member
+TNP-00071,Aziz Ben Lakhdher,CMT-7c0357a9f3f7,"Commission du tourisme, la culture, des services et des industries ar…","Tourisme, la culture, d…",member
+TNP-00071,Aziz Ben Lakhdher,CMT-d74c07127db9,"Commission des Relations Extérieures, de la Coopération international…",Relations Extérieures…,chair
+TNP-00072,Ezzeddine Tayeb,CMT-18172a2cec3f,"Commission de la santé, de la femme et de la famille, des affaires so…","Santé, de la femme et d…",chair member
+TNP-00073,Adnen Allouche,CMT-6d49329b2466,"Commission de l'Industrie, du commerce, des richesses naturelles, de…","Industrie, du commerce…",vice_chair
+TNP-00074,Abdelkader Ammar,CMT-18172a2cec3f,"Commission de la santé, de la femme et de la famille, des affaires so…","Santé, de la femme et d…",member vice_chair
+TNP-00075,Abdelkader Ben Zineb,CMT-5267b383ff24,"La commission du règlement intérieur, des lois électorales, des lois…","Règlement intérieur, de…",member
+TNP-00075,Abdelkader Ben Zineb,CMT-6d49329b2466,"Commission de l'Industrie, du commerce, des richesses naturelles, de…","Industrie, du commerce…",member
+TNP-00076,Abdelaziz Chaabani,CMT-6d49329b2466,"Commission de l'Industrie, du commerce, des richesses naturelles, de…","Industrie, du commerce…",member
+TNP-00076,Abdelaziz Chaabani,CMT-b3ceee509580,"Commission d'organisation administrative, Développement, Digitalisati…",Organisation administra…,member
+TNP-00077,Abdessalem Dahmani,CMT-56efc6c780f9,Commission de la legislation,Legislation,member
+TNP-00077,Abdessalem Dahmani,CMT-b3ceee509580,"Commission d'organisation administrative, Développement, Digitalisati…",Organisation administra…,member
+TNP-00078,Abdessalem Hamrouni,CMT-309f56b78ead,"Commission de la défense, de la sécurité et des forces armées","Défense, de la sécurité…",chair member
+TNP-00078,Abdessalem Hamrouni,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,member
+TNP-00079,Abdessattar Zarai,CMT-5a174a8e00bb,Commission de l'agriculture de la sécurité alimentaire de l'eau et de…,Agriculture de la sécur…,member
+TNP-00080,Abderrazek Aouidet,CMT-9dc809177956,"Commission de l'éducation, la formation, la recherche scientifique, d…","Éducation, la formation…",chair member
+TNP-00080,Abderrazek Aouidet,CMT-d74c07127db9,"Commission des Relations Extérieures, de la Coopération international…",Relations Extérieures…,member
+TNP-00081,Abdelhalim  Boussema,CMT-309f56b78ead,"Commission de la défense, de la sécurité et des forces armées","Défense, de la sécurité…",member
+TNP-00081,Abdelhalim  Boussema,CMT-6d49329b2466,"Commission de l'Industrie, du commerce, des richesses naturelles, de…","Industrie, du commerce…",member
+TNP-00082,Abdelhafedh Louhichi,CMT-d74c07127db9,"Commission des Relations Extérieures, de la Coopération international…",Relations Extérieures…,member
+TNP-00083,Abdel jalil El Heni,CMT-18172a2cec3f,"Commission de la santé, de la femme et de la famille, des affaires so…","Santé, de la femme et d…",member
+TNP-00083,Abdel jalil El Heni,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,chair vice_chair
+TNP-00084,Adel Dhief,CMT-309f56b78ead,"Commission de la défense, de la sécurité et des forces armées","Défense, de la sécurité…",chair member
+TNP-00085,Adel Bousselmi,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,member
+TNP-00086,dhafer Sghiri,CMT-56efc6c780f9,Commission de la legislation,Legislation,rapporteur
+TNP-00086,dhafer Sghiri,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,member vice_chair
+TNP-00087,Tarek Mehdi,CMT-10ce63ee42df,"Commission de la Planification Stratégique, du Développement Durable…",Planification Stratégiq…,member vice_chair
+TNP-00088,Tarek Rebai,CMT-10ce63ee42df,"Commission de la Planification Stratégique, du Développement Durable…",Planification Stratégiq…,member
+TNP-00088,Tarek Rebai,CMT-d74c07127db9,"Commission des Relations Extérieures, de la Coopération international…",Relations Extérieures…,member rapporteur
+TNP-00089,Dhouha Selmi,CMT-7c0357a9f3f7,"Commission du tourisme, la culture, des services et des industries ar…","Tourisme, la culture, d…",member
+TNP-00089,Dhouha Selmi,CMT-d74c07127db9,"Commission des Relations Extérieures, de la Coopération international…",Relations Extérieures…,member
+TNP-00090,Slah ferchichi,CMT-5267b383ff24,"La commission du règlement intérieur, des lois électorales, des lois…","Règlement intérieur, de…",member
+TNP-00090,Slah ferchichi,CMT-5a174a8e00bb,Commission de l'agriculture de la sécurité alimentaire de l'eau et de…,Agriculture de la sécur…,chair
+TNP-00091,Salah Mbarki,CMT-56efc6c780f9,Commission de la legislation,Legislation,member vice_chair
+TNP-00092,Salah Sayadi,CMT-309f56b78ead,"Commission de la défense, de la sécurité et des forces armées","Défense, de la sécurité…",member
+TNP-00092,Salah Sayadi,CMT-7c0357a9f3f7,"Commission du tourisme, la culture, des services et des industries ar…","Tourisme, la culture, d…",member
+TNP-00093,Salah Selmi,CMT-10ce63ee42df,"Commission de la Planification Stratégique, du Développement Durable…",Planification Stratégiq…,rapporteur
+TNP-00094,Sabeur Masmoudi,CMT-b3ceee509580,"Commission d'organisation administrative, Développement, Digitalisati…",Organisation administra…,member
+TNP-00095,Sabeur Jelassi,CMT-10ce63ee42df,"Commission de la Planification Stratégique, du Développement Durable…",Planification Stratégiq…,chair member
+TNP-00096,Chokri Ben Bahri,CMT-6d49329b2466,"Commission de l'Industrie, du commerce, des richesses naturelles, de…","Industrie, du commerce…",chair member
+TNP-00096,Chokri Ben Bahri,CMT-76cc55ae8838,Commission des droits et libertés,Droits et libertés,member
+TNP-00097,Ezzedine Zaafouri,CMT-10ce63ee42df,"Commission de la Planification Stratégique, du Développement Durable…",Planification Stratégiq…,chair member
+TNP-00098,Cyrine Boussandel,CMT-5a174a8e00bb,Commission de l'agriculture de la sécurité alimentaire de l'eau et de…,Agriculture de la sécur…,rapporteur
+TNP-00098,Cyrine Boussandel,CMT-7c0357a9f3f7,"Commission du tourisme, la culture, des services et des industries ar…","Tourisme, la culture, d…",member
+TNP-00099,Sirine Mrabet,CMT-56efc6c780f9,Commission de la legislation,Legislation,member
+TNP-00099,Sirine Mrabet,CMT-d74c07127db9,"Commission des Relations Extérieures, de la Coopération international…",Relations Extérieures…,member
+TNP-00101,Sonia Ben Mabrouk,CMT-5267b383ff24,"La commission du règlement intérieur, des lois électorales, des lois…","Règlement intérieur, de…",member vice_chair
+TNP-00102,Sofien Ben hlima,CMT-10ce63ee42df,"Commission de la Planification Stratégique, du Développement Durable…",Planification Stratégiq…,member
+TNP-00103,Sami Toujani,CMT-309f56b78ead,"Commission de la défense, de la sécurité et des forces armées","Défense, de la sécurité…",member
+TNP-00103,Sami Toujani,CMT-5a174a8e00bb,Commission de l'agriculture de la sécurité alimentaire de l'eau et de…,Agriculture de la sécur…,member
+TNP-00103,Sami Toujani,CMT-6d49329b2466,"Commission de l'Industrie, du commerce, des richesses naturelles, de…","Industrie, du commerce…",member
+TNP-00104,Sami Rais,CMT-309f56b78ead,"Commission de la défense, de la sécurité et des forces armées","Défense, de la sécurité…",member
+TNP-00104,Sami Rais,CMT-b3ceee509580,"Commission d'organisation administrative, Développement, Digitalisati…",Organisation administra…,chair vice_chair
+TNP-00105,Sami Ben Abdelaali,CMT-5267b383ff24,"La commission du règlement intérieur, des lois électorales, des lois…","Règlement intérieur, de…",member
+TNP-00106,Sami Essaied,CMT-6d49329b2466,"Commission de l'Industrie, du commerce, des richesses naturelles, de…","Industrie, du commerce…",member
+TNP-00106,Sami Essaied,CMT-7c0357a9f3f7,"Commission du tourisme, la culture, des services et des industries ar…","Tourisme, la culture, d…",member
+TNP-00107,Sami Hadj Amor,CMT-10ce63ee42df,"Commission de la Planification Stratégique, du Développement Durable…",Planification Stratégiq…,member
+TNP-00107,Sami Hadj Amor,CMT-76cc55ae8838,Commission des droits et libertés,Droits et libertés,member
+TNP-00108,Zina Jiballah,CMT-5267b383ff24,"La commission du règlement intérieur, des lois électorales, des lois…","Règlement intérieur, de…",member
+TNP-00108,Zina Jiballah,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,member rapporteur
+TNP-00109,Rim Maachaoui,CMT-10ce63ee42df,"Commission de la Planification Stratégique, du Développement Durable…",Planification Stratégiq…,member
+TNP-00109,Rim Maachaoui,CMT-56efc6c780f9,Commission de la legislation,Legislation,member
+TNP-00109,Rim Maachaoui,CMT-6d49329b2466,"Commission de l'Industrie, du commerce, des richesses naturelles, de…","Industrie, du commerce…",rapporteur
+TNP-00110,Rym Sghaier,CMT-56efc6c780f9,Commission de la legislation,Legislation,member
+TNP-00110,Rym Sghaier,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,member
+TNP-00110,Rym Sghaier,CMT-d74c07127db9,"Commission des Relations Extérieures, de la Coopération international…",Relations Extérieures…,vice_chair
+TNP-00111,Jaidane Riadh,CMT-5267b383ff24,"La commission du règlement intérieur, des lois électorales, des lois…","Règlement intérieur, de…",member
+TNP-00111,Jaidane Riadh,CMT-d74c07127db9,"Commission des Relations Extérieures, de la Coopération international…",Relations Extérieures…,chair
+TNP-00112,Riadh Blel,CMT-18172a2cec3f,"Commission de la santé, de la femme et de la famille, des affaires so…","Santé, de la femme et d…",member
+TNP-00113,Raouf Fekiri,CMT-18172a2cec3f,"Commission de la santé, de la femme et de la famille, des affaires so…","Santé, de la femme et d…",rapporteur
+TNP-00114,Ramzi Chetoui,CMT-7c0357a9f3f7,"Commission du tourisme, la culture, des services et des industries ar…","Tourisme, la culture, d…",member
+TNP-00115,Dellai Ridha,CMT-7c0357a9f3f7,"Commission du tourisme, la culture, des services et des industries ar…","Tourisme, la culture, d…",member
+TNP-00115,Dellai Ridha,CMT-b3ceee509580,"Commission d'organisation administrative, Développement, Digitalisati…",Organisation administra…,chair member
+TNP-00116,Rochdi Rouissi,CMT-5a174a8e00bb,Commission de l'agriculture de la sécurité alimentaire de l'eau et de…,Agriculture de la sécur…,member
+TNP-00116,Rochdi Rouissi,CMT-b3ceee509580,"Commission d'organisation administrative, Développement, Digitalisati…",Organisation administra…,member
+TNP-00117,khaled Hakim Mabrouki,CMT-309f56b78ead,"Commission de la défense, de la sécurité et des forces armées","Défense, de la sécurité…",rapporteur vice_chair
+TNP-00117,khaled Hakim Mabrouki,CMT-5a174a8e00bb,Commission de l'agriculture de la sécurité alimentaire de l'eau et de…,Agriculture de la sécur…,vice_chair
+TNP-00118,Hamza Bidhiafi,CMT-5a174a8e00bb,Commission de l'agriculture de la sécurité alimentaire de l'eau et de…,Agriculture de la sécur…,member
+TNP-00119,Hamdi Ben Abdelali,CMT-10ce63ee42df,"Commission de la Planification Stratégique, du Développement Durable…",Planification Stratégiq…,member
+TNP-00119,Hamdi Ben Abdelali,CMT-9dc809177956,"Commission de l'éducation, la formation, la recherche scientifique, d…","Éducation, la formation…",member
+TNP-00120,Hamdi Ben Salah,CMT-76cc55ae8838,Commission des droits et libertés,Droits et libertés,member
+TNP-00120,Hamdi Ben Salah,CMT-b3ceee509580,"Commission d'organisation administrative, Développement, Digitalisati…",Organisation administra…,chair member
+TNP-00121,Hammadi Ghilani,CMT-7c0357a9f3f7,"Commission du tourisme, la culture, des services et des industries ar…","Tourisme, la culture, d…",member rapporteur vice_chair
+TNP-00122,Hassen Jarboui,CMT-5a174a8e00bb,Commission de l'agriculture de la sécurité alimentaire de l'eau et de…,Agriculture de la sécur…,chair member
+TNP-00123,Hassen Boussama,CMT-309f56b78ead,"Commission de la défense, de la sécurité et des forces armées","Défense, de la sécurité…",member
+TNP-00123,Hassen Boussama,CMT-5267b383ff24,"La commission du règlement intérieur, des lois électorales, des lois…","Règlement intérieur, de…",member
+TNP-00123,Hassen Boussama,CMT-5a174a8e00bb,Commission de l'agriculture de la sécurité alimentaire de l'eau et de…,Agriculture de la sécur…,member
+TNP-00124,Hassen Ben Ali,CMT-56efc6c780f9,Commission de la legislation,Legislation,member
+TNP-00124,Hassen Ben Ali,CMT-9dc809177956,"Commission de l'éducation, la formation, la recherche scientifique, d…","Éducation, la formation…",member
+TNP-00125,Houssem Mahjoub,CMT-56efc6c780f9,Commission de la legislation,Legislation,member
+TNP-00126,Hatem Labbaoui,CMT-56efc6c780f9,Commission de la legislation,Legislation,member
+TNP-00126,Hatem Labbaoui,CMT-9dc809177956,"Commission de l'éducation, la formation, la recherche scientifique, d…","Éducation, la formation…",member vice_chair
+TNP-00127,Hatem Houaoui,CMT-5267b383ff24,"La commission du règlement intérieur, des lois électorales, des lois…","Règlement intérieur, de…",vice_chair
+TNP-00127,Hatem Houaoui,CMT-76cc55ae8838,Commission des droits et libertés,Droits et libertés,member rapporteur
+TNP-00128,Jalel khedmi,CMT-6d49329b2466,"Commission de l'Industrie, du commerce, des richesses naturelles, de…","Industrie, du commerce…",member
+TNP-00128,Jalel khedmi,CMT-76cc55ae8838,Commission des droits et libertés,Droits et libertés,member
+TNP-00129,Thameur Mazhoud,CMT-10ce63ee42df,"Commission de la Planification Stratégique, du Développement Durable…",Planification Stratégiq…,member vice_chair
+TNP-00130,Thabet Abed,CMT-309f56b78ead,"Commission de la défense, de la sécurité et des forces armées","Défense, de la sécurité…",member rapporteur
+TNP-00130,Thabet Abed,CMT-76cc55ae8838,Commission des droits et libertés,Droits et libertés,chair
+TNP-00131,Boubaker Ben Yahya,CMT-7c0357a9f3f7,"Commission du tourisme, la culture, des services et des industries ar…","Tourisme, la culture, d…",member
+TNP-00131,Boubaker Ben Yahya,CMT-b3ceee509580,"Commission d'organisation administrative, Développement, Digitalisati…",Organisation administra…,rapporteur
+TNP-00131,Boubaker Ben Yahya,CMT-d74c07127db9,"Commission des Relations Extérieures, de la Coopération international…",Relations Extérieures…,member
+TNP-00132,Bilel Ibn El Mechri,CMT-5a174a8e00bb,Commission de l'agriculture de la sécurité alimentaire de l'eau et de…,Agriculture de la sécur…,chair member
+TNP-00132,Bilel Ibn El Mechri,CMT-76cc55ae8838,Commission des droits et libertés,Droits et libertés,member
+TNP-00133,Basma Hammami,CMT-56efc6c780f9,Commission de la legislation,Legislation,member
+TNP-00133,Basma Hammami,CMT-b3ceee509580,"Commission d'organisation administrative, Développement, Digitalisati…",Organisation administra…,member
+TNP-00134,badreddine gammoudi,CMT-b3ceee509580,"Commission d'organisation administrative, Développement, Digitalisati…",Organisation administra…,member
+TNP-00135,Boutheina Ghanmi,CMT-6d49329b2466,"Commission de l'Industrie, du commerce, des richesses naturelles, de…","Industrie, du commerce…",member vice_chair
+TNP-00135,Boutheina Ghanmi,CMT-9dc809177956,"Commission de l'éducation, la formation, la recherche scientifique, d…","Éducation, la formation…",member
+TNP-00136,Bedis Belhadj Ali,CMT-7c0357a9f3f7,"Commission du tourisme, la culture, des services et des industries ar…","Tourisme, la culture, d…",chair member
+TNP-00137,Aymen Negra,CMT-d74c07127db9,"Commission des Relations Extérieures, de la Coopération international…",Relations Extérieures…,member
+TNP-00138,Aymen Ben Salah,CMT-5267b383ff24,"La commission du règlement intérieur, des lois électorales, des lois…","Règlement intérieur, de…",member
+TNP-00138,Aymen Ben Salah,CMT-76cc55ae8838,Commission des droits et libertés,Droits et libertés,vice_chair
+TNP-00138,Aymen Ben Salah,CMT-b3ceee509580,"Commission d'organisation administrative, Développement, Digitalisati…",Organisation administra…,member
+TNP-00139,Aymen Maraoui,CMT-18172a2cec3f,"Commission de la santé, de la femme et de la famille, des affaires so…","Santé, de la femme et d…",member
+TNP-00140,Aymen Boughdiri,CMT-7c0357a9f3f7,"Commission du tourisme, la culture, des services et des industries ar…","Tourisme, la culture, d…",rapporteur
+TNP-00140,Aymen Boughdiri,CMT-d74c07127db9,"Commission des Relations Extérieures, de la Coopération international…",Relations Extérieures…,chair
+TNP-00142,Amel Meddeb,CMT-10ce63ee42df,"Commission de la Planification Stratégique, du Développement Durable…",Planification Stratégiq…,member
+TNP-00142,Amel Meddeb,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,member
+TNP-00143,Ilyes Boukoucha,CMT-309f56b78ead,"Commission de la défense, de la sécurité et des forces armées","Défense, de la sécurité…",member vice_chair
+TNP-00144,Nouri Jridi,CMT-76cc55ae8838,Commission des droits et libertés,Droits et libertés,member
+TNP-00144,Nouri Jridi,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,member
+TNP-00145,Channoufi Naceur,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,member
+TNP-00145,Channoufi Naceur,CMT-9dc809177956,"Commission de l'éducation, la formation, la recherche scientifique, d…","Éducation, la formation…",member
+TNP-00146,Mokhtar Abdelmoula,CMT-309f56b78ead,"Commission de la défense, de la sécurité et des forces armées","Défense, de la sécurité…",member
+TNP-00146,Mokhtar Abdelmoula,CMT-5267b383ff24,"La commission du règlement intérieur, des lois électorales, des lois…","Règlement intérieur, de…",member
+TNP-00146,Mokhtar Abdelmoula,CMT-56efc6c780f9,Commission de la legislation,Legislation,member
+TNP-00147,Olfa Marouani,CMT-5267b383ff24,"La commission du règlement intérieur, des lois électorales, des lois…","Règlement intérieur, de…",rapporteur
+TNP-00147,Olfa Marouani,CMT-9dc809177956,"Commission de l'éducation, la formation, la recherche scientifique, d…","Éducation, la formation…",member
+TNP-00148,Fadhel Ben Torkia,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,member
+TNP-00148,Fadhel Ben Torkia,CMT-d74c07127db9,"Commission des Relations Extérieures, de la Coopération international…",Relations Extérieures…,member
+TNP-00149,Taïeb Talbi,CMT-6d49329b2466,"Commission de l'Industrie, du commerce, des richesses naturelles, de…","Industrie, du commerce…",member
+TNP-00149,Taïeb Talbi,CMT-76cc55ae8838,Commission des droits et libertés,Droits et libertés,member
+TNP-00149,Taïeb Talbi,CMT-d74c07127db9,"Commission des Relations Extérieures, de la Coopération international…",Relations Extérieures…,rapporteur
+TNP-00150,Tahar Ben Mansour,CMT-5a174a8e00bb,Commission de l'agriculture de la sécurité alimentaire de l'eau et de…,Agriculture de la sécur…,member
+TNP-00151,Asma Derouiche,CMT-d74c07127db9,"Commission des Relations Extérieures, de la Coopération international…",Relations Extérieures…,member rapporteur
+TNP-00152,Ahmed Saidani,CMT-309f56b78ead,"Commission de la défense, de la sécurité et des forces armées","Défense, de la sécurité…",member
+TNP-00152,Ahmed Saidani,CMT-76cc55ae8838,Commission des droits et libertés,Droits et libertés,member
+TNP-00153,Ahmed Bannour,CMT-18172a2cec3f,"Commission de la santé, de la femme et de la famille, des affaires so…","Santé, de la femme et d…",member
+TNP-00153,Ahmed Bannour,CMT-7c0357a9f3f7,"Commission du tourisme, la culture, des services et des industries ar…","Tourisme, la culture, d…",member rapporteur
+TNP-00154,Brahim Ben hsine,CMT-966af1bec2c4,Commission des Finances et du Budget,Finances et du Budget,member

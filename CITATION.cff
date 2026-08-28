@@ -13,10 +13,11 @@ abstract: >-
   from mandates, stores party, bloc, committee and career affiliations as dated
   spells, and carries cell-level provenance linking every value to a source and
   a retrieval date. Person-level coverage is complete for the 1956 Constituent
-  Assembly, the 2011-2014 National Constituent Assembly, the 2019-2021 Assembly
-  of the Representatives of the People and the chamber elected in 2023; the
-  eleven chambers of the single-party era (1959-2011) and the 2014-2019 term are
-  present as institutional frame only. Derived network files support committee
+  Assembly, the 2011-2014 National Constituent Assembly, the 2014-2019 and
+  2019-2021 Assemblies of the Representatives of the People and the chamber
+  elected in 2023, giving a continuous panel across the democratic period; the
+  eleven chambers of the single-party era (1959-2011) are present as
+  institutional frame only. Derived network files support committee
   co-membership, bloc co-membership, shared-constituency, shared-organisation and
   written-question co-signature analyses.
 keywords:

@@ -1,0 +1,208 @@
+# Findings
+
+What the dataset shows, in one place, with the number and the file to check it
+in. Everything here is computed from the committed tables — nothing is quoted
+from memory, and every row can be re-derived by running `make figures`.
+
+Each finding names the figure that draws it and the CSV that holds its numbers.
+The CSVs are the authoritative form: `figures/output/figNN_name.csv` sits beside
+every PNG for exactly this purpose.
+
+> **Read the coverage caveat first.** Person-level data exists for **five** of the
+> nineteen chamber-terms: 1956, 2011–14, 2014–19, 2019–21 and 2023–. The other
+> fourteen — the whole single-party era and both upper houses — are present as
+> institutions, usually with only a presiding officer named. Any statement below
+> about "Tunisian parliamentarians" describes those five chambers, and the gap is
+> **not random**: it is exactly the authoritarian period. See
+> [COVERAGE.md](COVERAGE.md) and figure 4.
+
+---
+
+## 1. The institutional frame
+
+**Nineteen chamber-terms across seventy years, and the chamber has been
+shrinking.** Seats climb from 98 (1956) to 217 (2011–2021), then fall to 161 in
+2023 — the only sustained contraction in the series, and the first under
+single-member districts rather than closed-list PR.
+· *Figures 1–2 · `fig01_institutional_timeline.csv`, `fig02_chamber_size.csv`*
+
+**Coverage is bimodal, not graded.** Five chambers are near-complete (96–113% of
+nominal seats, the excess being mid-term replacements); the other fourteen record
+between 0 and 3 people each. There is no partial middle.
+· *Figure 4 · `fig04_coverage.csv`*
+
+| | chambers | mandates recorded |
+| --- | --- | --- |
+| Person-level roster | 5 | 942 |
+| Institutional frame only | 14 | 17 |
+
+---
+
+## 2. Who sits
+
+**Women's share rose under list PR with parity, then halved under single-member
+districts.** 31% (2011) → 35% (2014) → 27% (2019) → **16%** (2023). The 2023 fall
+coincides with the electoral-system change, though this dataset alone cannot
+establish that as the cause.
+· *Figure 3 · `fig03_women_share.csv`* — sex for 2011 is inferred from French
+grammatical agreement in the source biographies, not recorded.
+
+**The 2014 chamber was drawn from a narrow professional base.** Lawyers 16%,
+secondary teachers 10%, company directors 9%, university professors 9%. Farmers:
+**2 of 223 coded members (0.9%)**, in a country where agriculture is a major
+employer.
+· *Figure 5 · `fig05_professions_arp2014.csv`* — the CSV carries the full
+unfolded distribution, including the tail the chart folds into "Other".
+
+**Diaspora representation was a post-2011 novelty that has now collapsed.**
+Out-of-country seats fell from 8.4% of mapped members (2011) to **1.9%** (2023).
+· *Figure 6 · `fig06_region_heatmap.csv`*
+
+**The 1956 assembly cannot be placed regionally.** Its compound districts
+("Sidi Bouzid–Gafsa–Tozeur") predate the modern governorates; only 13 of 98
+members map. It is excluded from figure 6 rather than silently mis-assigned.
+
+---
+
+## 3. Elite circulation
+
+**Tunisia's democratic parliaments were not staffed by a stable political
+class.** No chamber draws even a quarter of its members from its predecessor, and
+the 2023 chamber draws **3%**.
+
+| chamber | members | returning from previous | share |
+| --- | --- | --- | --- |
+| NCA-2011 | 217 | — | — |
+| ARP-2014 | 246 | 31 | 12.6% |
+| ARP-2019 | 216 | 50 | 23.1% |
+| ARP-2023 | 155 | **5** | **3.2%** |
+
+· *Figure 9 · `fig09_elite_flow.csv`*
+
+**Almost nobody sits more than twice.** 772 of 856 parliamentarians appear in one
+chamber only; 68 in two; 14 in three; 2 in four or more.
+· *Figure 8 · `fig08_chambers_served.csv`*
+
+**A pairwise overlap is not a skip count.** 13 people sat in both 2011 and 2019 —
+but 12 of them also sat in 2014. Exactly **one** member left and returned.
+Compute skip patterns from `mandates.csv`, not from the matrix.
+· *Figure 10 · `fig10_chamber_overlap.csv`*
+
+**The pre-2011 rows are the substantive gap, not a rounding error.** The only
+links across 2011 are between the sparse Ben Ali-era rows themselves. Whether the
+people who sat under Ben Ali returned after the revolution is a question this
+dataset **cannot currently answer**, because those chambers have no roster.
+
+---
+
+## 4. Bloc dynamics, 2014–2019
+
+Only possible because that chamber was reconstructed from ~29 monthly Internet
+Archive captures, which turn bloc membership into dated spells. Boundaries are
+bracketed to the interval between two captures — read trends, not months.
+
+**The party that won the election was not the largest bloc by the end of the
+term.** Nidaa Tounes enters with 86 seats against Ennahdha's 69 — the official
+2014 result exactly — and finishes on 38 against Ennahdha's 68, behind the
+National Coalition's 44.
+· *Figure 11 · `fig11_bloc_composition_arp2014.csv`*
+
+**Fragmentation rose from 3.6 to 5.3 effective blocs**, essentially all of it
+from Nidaa Tounes dissolving rather than from small blocs appearing at the
+margins.
+· *Figure 12 · `fig12_effective_blocs_arp2014.csv`* (Laakso–Taagepera, 1/Σs²)
+
+**108 of the 238 members with a recorded bloc history changed bloc**, across 240
+moves. Nidaa's members disperse rather than relocating together — 28 to Al Horra,
+21 to the National Coalition, 16 to no bloc — which is the signature of a party
+dissolving, not splitting cleanly in two.
+· *Figure 13 · `fig13_bloc_switching_arp2014.csv`*
+
+**The reconstruction's error is shown, not smoothed.** The monthly panel totals
+212–220 members against 217 seats. That spread is the uncertainty; 478 spells
+carry `dates_bracketed = true` with the bracketing interval in `notes`.
+
+---
+
+## 5. Networks: assigned ties versus chosen ties
+
+**The headline result of the network layer.** Committee membership is assigned by
+the chamber; co-signing a written question is chosen by the deputy. They behave
+oppositely with respect to bloc.
+
+| network | chamber | n | ties | bloc assortativity |
+| --- | --- | --- | --- | --- |
+| Committee co-membership | NCA-2011 | 194 | 4,009 | **−0.03** |
+| Committee co-membership | ARP-2019 | 184 | 3,099 | **−0.04** |
+| Committee co-membership | ARP-2023 | 152 | 1,579 | **−0.07** |
+| Written-question co-signature | ARP-2023 | 114 | 1,663 | **+0.18** |
+
+Committee assignment does not track bloc lines in any chamber — the coefficient
+is slightly *negative* throughout. Co-signature, in the same chamber and among
+the same people, runs clearly positive: 553 of 1,663 ties are within-bloc.
+· *Figures 14–16, 18 · `fig14–16_*.csv`, `fig18_cosignature_network_arp2023.csv`*
+
+**Treat the committee projection with care: it is exactly the union of the
+committee cliques.** Every tie in NCA-2011 and ARP-2019 is reproduced by taking
+each committee and joining all its members. Its density (0.14–0.21) is
+manufactured by projection, not observed. 247 memberships stand behind ARP-2023's
+1,579 dyads.
+· *Figure 17 · `fig17_committee_bipartite_arp2023.csv`* — build your own
+projection from this incidence structure rather than inheriting a weighting.
+
+**Most deputies bridge committees.** 151 of 194 (2011), 151 of 184 (2019), 80 of
+152 (2023) sit on more than one. Figures 14–17 place a deputy by *which*
+committees she sits on (angle) and *how many* (distance from the centre), so
+bridging is the readable structure.
+
+**Joint action is rare.** Of 6,332 written questions in the 2023 chamber, only
+**78** carry more than one signatory, and **41 of 155** deputies never co-signed
+anything at all.
+· *Figure 18*
+
+---
+
+## 6. Floor behaviour
+
+**Turning up and voting are not the same thing.** Across 216 members of the
+2019 chamber the median gap between plenary attendance and vote participation is
+**8.9 points**, reaching 56 points at the extreme.
+· *Figure 19 · `fig19_participation_arp2019.csv`* — both rates are proportions
+published by Al Bawsala without denominators, so compare within this chamber only.
+
+**Written questions are the most unequally distributed activity in the dataset.**
+6,603 filings by 154 deputies; the median deputy files 28, the busiest 201, and
+the top twenty account for **42%** of all filings.
+· *Figure 20 · `fig20_written_questions_arp2023.csv`*
+
+**Two totals for written questions, both correct.** The chamber holds **6,332
+distinct questions** (the basis for figure 18); per-deputy filings sum to
+**6,603** (figure 20), because each signatory of the 78 jointly signed questions
+is credited. Use the first for question counts and the second for individual
+activity.
+
+---
+
+## What this dataset cannot support
+
+Stated plainly, because the absences are as important as the findings.
+
+- **Any claim about parliamentary elites 1959–2011.** Twelve chambers across the
+  single-party and Ben Ali eras have no roster. Elite continuity across the
+  revolution is unmeasurable here.
+- **Comparative participation rates across chambers.** The attendance and voting
+  rates are published as proportions without denominators.
+- **Committee networks for 2014–2019.** The mandate panel is continuous but the
+  committee panel is not; the archived observatory pages should yield to the same
+  method used for the roster.
+- **Exact dates for 2014–2019 bloc changes.** They are bracketed to the interval
+  between web captures, never to the day.
+- **Causal claims from any of the above.** These are descriptive results on
+  observational data with a non-random coverage gap.
+
+---
+
+*Regenerate every number here with `make figures`; each figure writes its own
+table. Method and design notes are in [`figures/README.md`](../figures/README.md);
+the network layer's construction is in [NETWORK_GUIDE.md](NETWORK_GUIDE.md);
+variable definitions are in [CODEBOOK.md](CODEBOOK.md).*

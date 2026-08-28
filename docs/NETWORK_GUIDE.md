@@ -9,12 +9,12 @@ means substantively, what the projection choices are, and where the traps are.
 
 | File | Shape | Rows | What a tie means |
 | --- | --- | --- | --- |
-| `nodes.csv` | node attributes | 682 | one parliamentarian |
+| `nodes.csv` | node attributes | 856 | one parliamentarian |
 | `bipartite_person_committee.csv` | incidence | 1,129 | this person sat on this committee |
-| `bipartite_person_bloc.csv` | incidence | 638 | this person belonged to this bloc |
+| `bipartite_person_bloc.csv` | incidence | 1,116 | this person belonged to this bloc |
 | `edges_committee_comembership.csv` | projection | 8,687 | co-served on a committee, same chamber, overlapping in time |
-| `edges_bloc_comembership.csv` | projection | 11,318 | belonged to the same bloc, same chamber |
-| `edges_shared_constituency.csv` | projection | 1,829 | returned by the same constituency, same chamber |
+| `edges_bloc_comembership.csv` | projection | 20,805 | belonged to the same bloc, same chamber |
+| `edges_shared_constituency.csv` | projection | 2,978 | returned by the same constituency, same chamber |
 | `edges_shared_organisation.csv` | projection | 37 | passed through the same outside organisation (any period) |
 | `edges_question_cosignature.csv` | projection | 1,663 | co-signed a written question (ARP-2023) |
 
@@ -69,7 +69,8 @@ rankings.
 ## What each layer supports, and what it does not
 
 **Committee co-membership** is the workhorse. It is date-verified, it covers
-three chambers (NCA-2011, ARP-2019, ARP-2023), and committee assignment is
+three chambers (NCA-2011, ARP-2019, ARP-2023) — not ARP-2014, whose committee
+pages were not recovered from the Archive — and committee assignment is
 plausibly consequential for legislative behaviour. It is also partly endogenous
 to bloc: blocs negotiate committee seats, so committee ties and bloc ties are
 correlated by construction. Control for co-bloc membership before claiming a
@@ -77,9 +78,16 @@ committee effect.
 
 **Bloc co-membership** is dense and near-block-diagonal — it is close to a
 partition, not a network. It is most useful as a *covariate* (are these two in
-the same bloc?) rather than as an object of analysis. Because switching is
-unobservable before 2023, do not use this layer to study defection except in
-ARP-2023, where `arp.tn` publishes appointment and departure dates.
+the same bloc?) rather than as an object of analysis.
+
+For *defection*, the picture is now uneven in a way worth knowing precisely.
+Switching is observable for **ARP-2014** (108 of 246 members changed bloc,
+reconstructed by diffing monthly web captures) and for **ARP-2023** (44 members,
+from dates the chamber publishes itself). It is *not* observable for NCA-2011 or
+ARP-2019, whose sources publish a single end-of-term snapshot — so a zero there
+means "not measured", not "did not happen". Filter ARP-2014 spells on
+`dates_bracketed` if exact timing matters: those boundaries are located to the
+interval between two captures, not to the day.
 
 **Shared constituency** exists only where districts are multi-member. Under the
 2011-2019 list system a constituency returned several deputies; the 2023 chamber
@@ -108,15 +116,15 @@ Regional homophily is better computed from these attributes than from an edge
 list — an assortativity coefficient on `region` or `littoral` answers the
 question directly, and the coastal/interior cleavage is the one most likely to
 be substantively interesting. Watch the missingness: `birth_governorate_id` is
-present for only 68 of 682 people, whereas `governorate_id` (the constituency's
-governorate, not the person's origin) is present for 531. **These are different
+present for only 68 of 856 people, whereas `governorate_id` (the constituency's
+governorate, not the person's origin) is present for 705. **These are different
 variables.** Constituency governorate is where someone was elected; birth
 governorate is where they are from. Conflating them will produce a confident
 finding about the wrong thing.
 
 ## Worked examples
 
-`analysis/example_python.py` and `analysis/example_r.R` load the tables, build
+`examples/example_python.py` and `examples/example_r.R` load the tables, build
 one projection from the incidence file, and report degree, density and
 assortativity for a chosen chamber. Both run on the committed data with no
 network dependency beyond `igraph` (R) or `networkx` (Python), and both print
@@ -124,12 +132,15 @@ their missingness before reporting any statistic.
 
 ## Cautions worth repeating
 
-- **Coverage is not random.** Three chambers have person-level data; eleven have
+- **Coverage is not random.** Five chambers have person-level data; eleven have
   only their speaker. Any network claim about "Tunisian parliamentarians" is a
-  claim about 2011-2014, 2019-2021 and 2023-present unless you say otherwise.
-- **ARP-2014 is missing**, so there is no continuous 2011-2023 panel. A
-  longitudinal network design across the democratic period cannot be executed on
-  this data as it stands.
+  claim about 1956, 2011-2014, 2014-2019, 2019-2021 and 2023-present unless you
+  say otherwise.
+- **The mandate panel is continuous across the democratic period**
+  (NCA-2011 → ARP-2014 → ARP-2019 → ARP-2023): 84 people appear in more than one
+  chamber and 16 in three or more. But ARP-2014 has no committee data, so a
+  committee-network panel still has a hole in the middle where the mandate panel
+  does not — check which layer your design actually needs.
 - **`n_mandates` counts only mandates in this dataset.** Someone who served in
   1994 and again in 2011 will show `n_mandates = 1`, because the 1994 chamber has
   no roster. Re-election and elite-persistence measures are therefore biased

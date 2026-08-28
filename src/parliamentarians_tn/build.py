@@ -389,6 +389,12 @@ class Builder:
                     "end_date": spell.get("end_date", ""),
                     "role": spell.get("role") or "unknown",
                     "is_founding_member": "",
+                    # Preserved from the collector: a spell whose boundaries come
+                    # from diffing observations is not the same claim as one read
+                    # off a published date, and the difference must survive into
+                    # the published table.
+                    "dates_bracketed": "true" if spell.get("dates_bracketed") else "",
+                    "notes": spell.get("notes", ""),
                     "source_ids": source_id,
                 })
 

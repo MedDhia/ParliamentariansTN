@@ -420,6 +420,16 @@ BLOC_MEMBERSHIPS = Table(
         Column("end_date", "date", "End of membership."),
         Column("role", "enum", "Role in the bloc.", enum=OFFICE),
         Column("is_founding_member", "boolean", "Member at the bloc's constitution."),
+        Column(
+            "dates_bracketed",
+            "boolean",
+            "True where the spell's boundaries were derived by comparing dated "
+            "observations rather than read from a published date. The change "
+            "occurred somewhere in the interval ending at start_date, not "
+            "necessarily on it. Applies to the 2014-2019 chamber, whose bloc "
+            "history is reconstructed from monthly web captures.",
+        ),
+        Column("notes", "string", "Analyst notes, including the bracketing interval where relevant."),
         Column("source_ids", "string", "Provenance.", references="sources.source_id"),
     ],
 )

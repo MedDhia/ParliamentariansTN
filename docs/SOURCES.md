@@ -12,6 +12,7 @@ covers — what was checked and found wanting.
 | --- | --- | --- | --- | --- |
 | `ARP_ODOO` | Assembly of the Representatives of the People, official site | ARP-2023 | Roster, bilingual names, sex, governorate, constituency, blocs, committees, offices, written questions | Odoo JSON-RPC, read-only |
 | `MARSAD_MAJLES` | Marsad Majles (Al Bawsala) | ARP-2019 | Roster, sex, profession, district, list, bloc, dated committee spells, attendance and voting rates | HTML |
+| `MARSAD_ARP2014` | Marsad Majles 2014 observatory, via the Internet Archive | ARP-2014 | Full roster, Arabic + romanised names, sex, profession, constituency, list, seat number, **bloc membership as dated spells** | Wayback CDX + raw captures |
 | `MARSAD_ANC` | Marsad (Al Bawsala) | NCA-2011 | Narrative biographies (ar+fr), birth date and place, sex (inferred), marital status, languages, bloc, list, party, committees with roles, vote participation | HTML |
 | `WIKI_AR_ANC1956` | Arabic Wikipedia | ANC-1956 | Full 98-member roster with constituencies, August 1956 by-elections, presiding officers, aggregate occupational profile | MediaWiki API |
 | `REFERENCE` | This repository | All 19 chamber-terms | Institutional frame, geography, party register, 1959–2011 presiding officers | Hand-curated |
@@ -85,6 +86,63 @@ priority biographical layer for the whole chamber.
   the individual profile pages, and are not published alongside the roster
   figures. Compare these rates within this term only.
 - Committee pages *do* publish joining and leaving dates, and those are used.
+
+## `MARSAD_ARP2014` — the 2014-2019 chamber, from the Internet Archive
+
+**What it is.** Al Bawsala ran a third observatory, at `majles.marsad.tn/2014`,
+covering the assembly elected in October 2014. The live site no longer serves
+those paths: every `/2014/*` URL now returns the current site's catch-all page,
+which is why this term looked like it had no source at all. The Internet Archive
+holds it.
+
+**Why it matters.** This was the dataset's largest gap — a democratic term
+between two well-documented ones, whose absence broke any continuous 2011-2023
+panel. Recovering it takes the number of people traceable across more than one
+chamber from 26 to 84.
+
+**How it is collected.** The Wayback CDX index enumerates captures of
+`/2014/assemblee`; each is fetched with the `id_` modifier, which returns the
+capture unrewritten (no Archive toolbar, no rewritten links). Each of the 217
+members renders as a card whose data attributes carry the whole priority layer:
+
+```
+<a href="/2014/elus/Noureddine_Bhiri" class="depute"
+   data-nom="نور الدين البحيري"  data-bloc="حركة النهضة"
+   data-liste="حركة النهضة"      data-region="بن عروس"
+   data-sexe="رجال"              data-age="57"
+   data-profession="محامي"        data-siege="11">
+```
+
+**Bloc switching.** Roughly 29 monthly captures survive from January 2015 to May
+2019. Diffing consecutive captures reconstructs bloc membership as dated spells,
+making this **the one chamber for which switching is directly observable**: 108
+of 246 members changed bloc. The recovered sequences track the real history —
+members leaving Nidaa Tounes for الكتلة الحرّة in early 2016 and then for the
+Machrouu Tounes bloc in December 2016, and the National Coalition forming in
+2017.
+
+**Cross-checks.** The first capture gives bloc sizes of Nidaa Tounes 86 and
+Ennahdha 69, matching the official 2014 election result exactly, across 33
+constituencies, matching the delimitation then in force, with 19 out-of-country
+seats.
+
+**Cautions.**
+
+- **Spell boundaries are bracketed, not published.** A change is located only to
+  the interval between two captures. Affected rows carry
+  `bloc_memberships.dates_bracketed = true` and a note giving the interval;
+  `start_date` is the first date the new bloc was actually observed, which is the
+  conservative choice. Do not treat these as exact dates.
+- **Captures after May 2019 yield nothing.** The page was redesigned, so the
+  collector stops there; the term ended in October 2019 in any case.
+- **Age is published without a birth date and is not converted.** Even with a
+  known capture date it would only fix the birth year to within a year, so the
+  raw age and observation date are preserved in the mandate note instead.
+- The roster is a snapshot series, so the 246 people recorded include the 217
+  elected plus 29 who entered later; members absent from the final usable
+  capture have `exit_mode = unknown` rather than an invented departure reason.
+- Committee membership was **not** recovered: the archived captures of the
+  committee pages were not part of this collection and remain an open lead.
 
 ## `MARSAD_ANC` — Al Bawsala's first observatory
 
@@ -174,19 +232,14 @@ Chamber of Deputies position; Arabic Wikipedia, which has a members category for
 1956 but none for later chambers. The route is archival — see
 `RECONSTRUCTION_PROTOCOL.md`.
 
-**ARP-2014.** The most valuable remaining gap. Leads worth pursuing, none yet
-successful: the Internet Archive's captures of `majles.marsad.tn` and of the
-2014-2019 `arp.tn`; Al Bawsala's own published dataset of ARP deputies prepared
-for *Cahiers de la Liberté*, referenced in secondary literature but not located
-online; the Data4Tunisia portal (`data4tunisia.org`), whose AlBawsala
-organisation page returned HTTP 403 to automated requests and should be checked
-by hand; and a direct request to Al Bawsala, which is the most likely to work.
-
-**Bloc switching before 2023.** `marsad.tn/mercato` is a dedicated Al Bawsala
-page tracking party and bloc movement in the Constituent Assembly — its name is
-the Tunisian press's term for the phenomenon. It was identified but not parsed,
-and is the obvious next collector for anyone who needs within-term defection for
-2011-2014.
+**Bloc switching in 2011-2014 and 2019-2021.** Switching is now observable for
+the 2014-2019 chamber (from archived captures) and for the sitting chamber (from
+`arp.tn`, which publishes appointment and departure dates), but not for the
+Constituent Assembly or the 2019 chamber, whose sources publish end-of-term
+snapshots. `marsad.tn/mercato` is a dedicated Al Bawsala page tracking bloc
+movement in the Constituent Assembly — the Tunisian press's term for the
+phenomenon — and archived captures of the 2019 roster may permit the same
+snapshot-diffing approach used for 2014. Both are identified but not parsed.
 
 **Roll-call votes.** `marsad.tn/deputes/<id>/votes` returns a large per-member
 voting record for the Constituent Assembly, and `majles.marsad.tn` publishes
