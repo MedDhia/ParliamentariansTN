@@ -1,0 +1,37 @@
+bloc_a,bloc_b,members_a,members_b,pairs_possible,pairs_tied,density,ratio_to_chamber
+Ennahdha,Ennahdha,87,87,3741,1862,0.4977,1.2461
+Ennahdha,No bloc,87,52,4524,1195,0.2641,0.6613
+Ennahdha,Democratic Bloc,87,18,1566,210,0.1341,0.3357
+Ennahdha,CPR,87,14,1218,253,0.2077,0.52
+Ennahdha,Democratic Transition,87,14,1218,469,0.3851,0.964
+Ennahdha,Ettakatol,87,12,1044,273,0.2615,0.6547
+Ennahdha,Democratic Alliance,87,10,870,317,0.3644,0.9122
+Ennahdha,Loyalty to the Revolution,87,10,870,263,0.3023,0.7568
+No bloc,No bloc,52,52,1326,781,0.589,1.4746
+No bloc,Democratic Bloc,52,18,936,395,0.422,1.0565
+No bloc,CPR,52,14,728,351,0.4821,1.2071
+No bloc,Democratic Transition,52,14,728,481,0.6607,1.6542
+No bloc,Ettakatol,52,12,624,303,0.4856,1.2157
+No bloc,Democratic Alliance,52,10,520,344,0.6615,1.6562
+No bloc,Loyalty to the Revolution,52,10,520,259,0.4981,1.247
+Democratic Bloc,Democratic Bloc,18,18,153,98,0.6405,1.6036
+Democratic Bloc,CPR,18,14,252,78,0.3095,0.7749
+Democratic Bloc,Democratic Transition,18,14,252,63,0.25,0.6259
+Democratic Bloc,Ettakatol,18,12,216,72,0.3333,0.8345
+Democratic Bloc,Democratic Alliance,18,10,180,112,0.6222,1.5578
+Democratic Bloc,Loyalty to the Revolution,18,10,180,37,0.2056,0.5146
+CPR,CPR,14,14,91,87,0.956,2.3935
+CPR,Democratic Transition,14,14,196,132,0.6735,1.6861
+CPR,Ettakatol,14,12,168,93,0.5536,1.3859
+CPR,Democratic Alliance,14,10,140,82,0.5857,1.4664
+CPR,Loyalty to the Revolution,14,10,140,114,0.8143,2.0386
+Democratic Transition,Democratic Transition,14,14,91,80,0.8791,2.2009
+Democratic Transition,Ettakatol,14,12,168,78,0.4643,1.1624
+Democratic Transition,Democratic Alliance,14,10,140,74,0.5286,1.3233
+Democratic Transition,Loyalty to the Revolution,14,10,140,121,0.8643,2.1638
+Ettakatol,Ettakatol,12,12,66,32,0.4848,1.2139
+Ettakatol,Democratic Alliance,12,10,120,72,0.6,1.5021
+Ettakatol,Loyalty to the Revolution,12,10,120,56,0.4667,1.1683
+Democratic Alliance,Democratic Alliance,10,10,45,38,0.8444,2.1141
+Democratic Alliance,Loyalty to the Revolution,10,10,100,48,0.48,1.2017
+Loyalty to the Revolution,Loyalty to the Revolution,10,10,45,38,0.8444,2.1141

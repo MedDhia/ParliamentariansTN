@@ -64,7 +64,7 @@ make collect
 Worked examples: `examples/example_python.py` (networkx) and
 `examples/example_r.R` (igraph).
 
-Twenty descriptive and exploratory figures, each with its numbers as a companion
+Twenty-two descriptive and exploratory figures, each with its numbers as a companion
 CSV, are in [`figures/`](figures/README.md):
 
 ```bash
@@ -264,9 +264,10 @@ documentation cannot drift from the data.
 
 ## Figures
 
-[`figures/`](figures/README.md) holds twenty figures over the dataset —
+[`figures/`](figures/README.md) holds twenty-two figures over the dataset —
 institutional timeline, composition, coverage, elite circulation, bloc dynamics,
-four network views, and behavioural distributions. Each script writes one PNG and
+five network views, the 2011–2014 roll-call record, and behavioural
+distributions. Each script writes one PNG and
 one CSV, so every figure states its own numbers.
 
 Three conventions worth knowing: **no figure renders Arabic** (matplotlib has no
@@ -343,10 +344,19 @@ acting in public office.
 
 ## Contributing
 
-The most valuable contributions, in order: ARP-2014 committee membership from
-the archived `/2014/` committee pages (the same Wayback method that recovered its
-roster should work); a `marsad.tn/mercato` collector to recover bloc switching
-for 2011-2014; a roll-call votes table; hand-coded career histories to replace
-the rule-extracted rows. Add a source by writing a collector that emits the staging shape in
+The most valuable contribution remains **ARP-2014 committee membership** from the
+archived `/2014/assemblee/commissions` pages — the same Wayback method that
+recovered that chamber's roster should work, and the archived roster links the
+pages, so the captures are known to exist. It is open because `web.archive.org`
+was unreachable from the environment this was last worked in, not because it was
+tried and failed; the same trip would also close ARP-2014's empty bureau table.
+After that: hand-coded career histories to replace the rule-extracted rows, and
+committee membership for any chamber before 2011.
+
+Two items previously listed here are done. The `marsad.tn/mercato` collector
+landed and recovered 105 party switches for 2011–2014, and the roll-call table
+now holds 370,922 positions across 1,724 divisions.
+
+Add a source by writing a collector that emits the staging shape in
 `src/parliamentarians_tn/collect/base.py` — entity resolution and provenance are
 handled centrally, so a new source is a self-contained job.

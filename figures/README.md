@@ -1,6 +1,6 @@
 # Figures
 
-Twenty descriptive and exploratory figures over the dataset. Each is a
+Twenty-two descriptive and exploratory figures over the dataset. Each is a
 standalone script that writes one image and one CSV.
 
 **Looking for the results rather than the method?**
@@ -13,14 +13,14 @@ figures/figNN_name.py  →  figures/output/figNN_name.png
 ```
 
 ```bash
-make figures                          # render all twenty
+make figures                          # render all twenty-two
 python figures/make_all.py 11 12      # just those two
 python figures/fig11_bloc_composition_arp2014.py   # or run one directly
 FIGURES_PDF=1 make figures            # also write PDFs, for LaTeX
 FIGURES_DARK=1 make figures           # dark-surface variants
 ```
 
-Rendering the set takes about 25 seconds and needs `matplotlib` and `networkx`
+Rendering the set takes about half a minute and needs `matplotlib` and `networkx`
 (`pip install -r requirements-figures.txt`). Nothing here touches the network or
 regenerates the dataset — figures read `data/processed` and `data/networks`.
 
@@ -68,7 +68,8 @@ Archive captures, which turn bloc membership into dated spells.
 | --- | --- | --- |
 | 14–16 | Committee co-membership, one chamber each | Which committees a deputy bridges, and how little that tracks her bloc: assortativity −0.03, −0.04, −0.07. |
 | 17 | Deputies × committees, bipartite | The 247 memberships behind figure 16's 1,579 ties, in figure 16's exact coordinates. |
-| 18 | Written-question co-signature | The only *behavioural* network — and the contrast: +0.18. 41 of 155 deputies never co-signed anything. |
+| 18 | Written-question co-signature | A *behavioural* network — and the contrast: +0.18. 41 of 155 deputies never co-signed anything. |
+| 22 | Amendment co-sponsorship, bloc × bloc | The same contrast in the 2011 chamber, twelve years earlier. Every off-diagonal cell in Ennahdha's row is below the chamber rate; no other bloc's is. |
 
 **Reading 14–17.** These are not force-directed drawings. A committee
 co-membership network is a projection, and the projection is *exactly* the union
@@ -103,6 +104,15 @@ the companion CSV has a `committee_labels` column that resolves them.
 | --- | --- | --- |
 | 19 | Attendance vs voting, ARP-2019 | The gap between turning up and voting, which is not uniform. |
 | 20 | Written questions filed | The most unequal distribution in the dataset. |
+| 21 | Roll-call scaling, NCA-2011 | The 370,922 recorded positions reduced to two dimensions, faceted per bloc. Ennahdha at one pole and every other bloc at the other, its own Troika partners included. |
+
+**Why 21 is faceted and 22 is a matrix.** Both are cases where the obvious form
+fails. Eight blocs is five past the all-pairs colour cap, so 21 repeats the whole
+chamber in grey behind one highlighted bloc per panel rather than putting eight
+hues in one point cloud. And the 2011 amendment network has a density of 0.40 —
+9,361 of 23,436 possible pairs — so a node-link drawing of it is a solid disc;
+22 shows the same ties as bloc-by-bloc mixing instead. Neither is a stylistic
+preference: the discarded form would have shown less.
 
 ## Design rules these figures follow
 
@@ -124,6 +134,15 @@ follow and `_style.categorical()` enforces them by raising:
   direct labels mandatory from four.
 
 Never solve "too many series" by generating another hue.
+
+**Sequential for magnitude, diverging for departure.** `_style.sequential()` is
+one hue light→dark. `_style.diverging()` is for a value read against a reference
+— figure 22's ratios against the chamber-wide rate — and takes the *signed* log
+departure plus a symmetric limit, so 2× and ½× land the same distance from
+neutral. Its poles are the categorical blue and orange with a near-surface
+neutral between them: two hues and a grey midpoint, never a hue at the middle and
+never a rainbow. It returns the ink colour with the fill, chosen against the fill
+rather than the surface, so a pale cell takes dark ink in either mode.
 
 **Every figure ships a table.** `figNN_name.csv` beside the PNG. This is the
 accessible twin of the chart (three light-mode palette slots sit below 3:1

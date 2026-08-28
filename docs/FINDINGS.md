@@ -148,8 +148,19 @@ different institutions and different sources — the constituent assembly tablin
 amendments to the constitution in 2011–2014, and the 2023 chamber co-signing
 written questions to ministers. That is what makes it worth more than either
 figure alone: it is not an artefact of one chamber's committee-allocation rule.
-· *Figures 14–16, 18 · `fig14–16_*.csv`, `fig18_cosignature_network_arp2023.csv`,
-`data/networks/edges_amendment_cosponsorship.csv`*
+· *Figures 14–16, 18, 22 · `fig14–16_*.csv`, `fig18_cosignature_network_arp2023.csv`,
+`fig22_amendment_mixing_nca2011.csv`*
+
+**Where the 2011 assortativity comes from: one bloc, not all of them.** Read as a
+bloc × bloc mixing matrix, the amendment network puts every off-diagonal cell in
+Ennahdha's row *below* the chamber-wide rate — 0.34× with the Democratic Bloc,
+0.52× with CPR, 0.96× at its most collaborative. No other bloc has that property,
+and the small blocs co-sponsor with each other at up to 2.2× the chamber rate.
+The positive coefficient is the largest bloc keeping to itself rather than
+general bloc discipline. The diagonal is a weaker guide: a ten-member bloc has 45
+internal pairs and an 87-member one has 3,741, so within-bloc density rises as
+bloc size falls for arithmetic reasons.
+· *Figure 22 · `fig22_amendment_mixing_nca2011.csv`*
 
 **Treat the committee projection with care: it is exactly the union of the
 committee cliques.** Every tie in NCA-2011 and ARP-2019 is reproduced by taking
@@ -184,6 +195,27 @@ bound. And a division missing from a member's page has no row rather than a row
 reading absent: members who joined late or left early are simply not listed, and
 manufacturing an absence for them would assert something the source does not.
 · *`data/processed/votes.csv`, `vote_positions.csv`*
+
+**The chamber's main cleavage is Ennahdha against everyone, not government
+against opposition.** A singular value decomposition of the member × division
+matrix — 217 members over the 993 divisions that were actually contested — gives
+a first dimension carrying **22%** of the variance, and it separates Ennahdha
+(mean **+10.2**) from every other bloc. Its own Troika coalition partners sit on
+the far side of zero from it, CPR at −4.0 and Ettakatol at −3.2, and the
+Democratic Bloc anchors the other pole at −11.8. The gap from Ennahdha to the
+nearest other bloc is wider than the range containing all seven of them.
+
+This is a first cut and is reported as one: no error model, no bootstrap, no
+claim to be an ideal point. Abstention and absence are both coded 0, which pulls
+frequent abstainers toward the centre, and near-unanimous divisions are dropped
+because they locate nobody. Fit ideal points with uncertainty from
+`vote_positions.csv` if that is what you need.
+
+**It agrees with the co-sponsorship record, from a different table.** Figure 22
+finds the same shape in who tabled amendments with whom: the largest bloc keeping
+to itself while the small blocs work with each other. Two independent behavioural
+records of the same chamber, pointing the same way.
+· *Figure 21 · `fig21_rollcall_scaling_nca2011.csv`*
 
 **105 of the 217 ended the term in a party other than the one they were elected
 on.** The dataset previously recorded zero, and the source metadata asserted that
