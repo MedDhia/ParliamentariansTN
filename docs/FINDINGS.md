@@ -130,17 +130,26 @@ carry `dates_bracketed = true` with the bracketing interval in `notes`.
 the chamber; co-signing a written question is chosen by the deputy. They behave
 oppositely with respect to bloc.
 
-| network | chamber | n | ties | bloc assortativity |
-| --- | --- | --- | --- | --- |
-| Committee co-membership | NCA-2011 | 194 | 4,009 | **−0.03** |
-| Committee co-membership | ARP-2019 | 184 | 3,099 | **−0.04** |
-| Committee co-membership | ARP-2023 | 152 | 1,579 | **−0.07** |
-| Written-question co-signature | ARP-2023 | 114 | 1,663 | **+0.18** |
+| network | tie is | chamber | n | ties | bloc assortativity |
+| --- | --- | --- | --- | --- | --- |
+| Committee co-membership | assigned | NCA-2011 | 194 | 4,009 | **−0.03** |
+| Committee co-membership | assigned | ARP-2019 | 184 | 3,099 | **−0.04** |
+| Committee co-membership | assigned | ARP-2023 | 152 | 1,579 | **−0.07** |
+| Amendment co-sponsorship | chosen | NCA-2011 | 203 | 9,361 | **+0.13** |
+| Written-question co-signature | chosen | ARP-2023 | 114 | 1,663 | **+0.18** |
 
 Committee assignment does not track bloc lines in any chamber — the coefficient
-is slightly *negative* throughout. Co-signature, in the same chamber and among
-the same people, runs clearly positive: 553 of 1,663 ties are within-bloc.
-· *Figures 14–16, 18 · `fig14–16_*.csv`, `fig18_cosignature_network_arp2023.csv`*
+is slightly *negative* throughout. The two chosen-tie networks, among the same
+people in the same chambers, both run positive: 3,016 of 9,361 amendment ties
+and 553 of 1,663 co-signature ties are within-bloc.
+
+**The contrast replicates across two chambers twelve years apart**, under
+different institutions and different sources — the constituent assembly tabling
+amendments to the constitution in 2011–2014, and the 2023 chamber co-signing
+written questions to ministers. That is what makes it worth more than either
+figure alone: it is not an artefact of one chamber's committee-allocation rule.
+· *Figures 14–16, 18 · `fig14–16_*.csv`, `fig18_cosignature_network_arp2023.csv`,
+`data/networks/edges_amendment_cosponsorship.csv`*
 
 **Treat the committee projection with care: it is exactly the union of the
 committee cliques.** Every tie in NCA-2011 and ARP-2019 is reproduced by taking
@@ -162,7 +171,28 @@ anything at all.
 
 ---
 
-## 6. Long-run elite persistence: no surname signal
+## 6. The 2011-2014 roll-call record
+
+**370,922 recorded positions across 1,724 divisions**, for the 217 members of the
+constituent assembly — the only chamber in the dataset with a division-level
+voting record. Published as pour / contre / abstenu / absent.
+
+Two cautions before anyone estimates ideal points from it. "Absent" conflates
+being away with being present and not voting, because the source does not
+separate them, so an abstention rate computed from these positions is a lower
+bound. And a division missing from a member's page has no row rather than a row
+reading absent: members who joined late or left early are simply not listed, and
+manufacturing an absence for them would assert something the source does not.
+· *`data/processed/votes.csv`, `vote_positions.csv`*
+
+**105 of the 217 ended the term in a party other than the one they were elected
+on.** The dataset previously recorded zero, and the source metadata asserted that
+switching was not recoverable here; both were wrong. The rows are undated and
+cannot be chained — a member who moved twice appears once, as origin and
+destination.
+· *`data/processed/party_switches.csv`*
+
+## 7. Long-run elite persistence: no surname signal
 
 **Surnames from the 1956 Constituent Assembly do not reach modern parliament more
 than chance.** 51 of 742 post-2011 deputies (6.9%) carry a surname also borne by
@@ -204,7 +234,7 @@ limits do the work here and none is fixable with the present data:
   common in the parliamentary population — plausibly regional recomposition — which
   is not the same thing as the absence of dynasties.
 
-## 7. Floor behaviour
+## 8. Floor behaviour
 
 **Turning up and voting are not the same thing.** Across 216 members of the
 2019 chamber the median gap between plenary attendance and vote participation is
@@ -232,14 +262,21 @@ Stated plainly, because the absences are as important as the findings.
 - **Any claim about parliamentary elites 1959–2011.** Twelve chambers across the
   single-party and Ben Ali eras have no roster. Elite continuity across the
   revolution is unmeasurable here.
-- **Comparative participation rates across chambers.** The attendance and voting
-  rates are published as proportions without denominators.
+- **Comparative participation rates across chambers.** Denominators are
+  published for ARP-2019 and recorded, so rates there are checkable; for the
+  other chambers they are not, and a rate without its denominator cannot be
+  compared to one with a different denominator.
 - **Committee networks for 2014–2019.** The mandate panel is continuous but the
   committee panel is not; the archived observatory pages should yield to the same
   method used for the roster.
+- **Roll-call votes outside 2011–2014.** Only the constituent assembly publishes
+  a division-level record. Nothing equivalent exists here for 2014–19, 2019–21 or
+  2023–, so a voting-behaviour comparison across chambers is not available.
+- **When a 2011–2014 party switch happened.** The rows are from/to pairs without
+  dates, and a member who moved twice appears once.
 - **Exact dates for 2014–2019 bloc changes.** They are bracketed to the interval
   between web captures, never to the day.
-- **Kinship, or dynastic descent.** There is no genealogical field. Section 6
+- **Kinship, or dynastic descent.** There is no genealogical field. Section 7
   tests the closest available proxy — shared surnames — and can only rule out
   persistence at a scale of roughly 5% of a chamber. Small numbers of persistent
   families are invisible to it, and a surname match is never itself evidence of
@@ -249,7 +286,7 @@ Stated plainly, because the absences are as important as the findings.
 
 ---
 
-*Regenerate every number here with `make figures`; §6 with
+*Regenerate every number here with `make figures`; §7 with
 `python examples/surname_persistence.py`; each figure writes its own
 table. Method and design notes are in [`figures/README.md`](../figures/README.md);
 the network layer's construction is in [NETWORK_GUIDE.md](NETWORK_GUIDE.md);

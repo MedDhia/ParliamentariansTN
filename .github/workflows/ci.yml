@@ -112,3 +112,19 @@ jobs:
           done
           [ "$missing" = "0" ] || exit 1
           echo "All figures have a companion CSV."
+
+      - name: Figures must be reproducible
+        # Rendering twice must give the same bytes. A figure that iterates a
+        # Python set of ids is not reproducible — string hashing is randomised
+        # per process, so node order, tie-broken row order and any seeded layout
+        # that depends on it all move between runs. That happened here, silently,
+        # and only showed up as an unexplained diff in a committed table.
+        run: |
+          find figures/output -name 'fig*' -type f | sort | xargs md5sum > /tmp/first.txt
+          make figures
+          find figures/output -name 'fig*' -type f | sort | xargs md5sum > /tmp/second.txt
+          if ! diff -u /tmp/first.txt /tmp/second.txt; then
+            echo "::error::figures are not reproducible — two renders differ"
+            exit 1
+          fi
+          echo "Two renders produced identical bytes."

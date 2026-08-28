@@ -496,3 +496,127 @@ class TestSchema:
         for tbl in schema.TABLES:
             for col in tbl.columns:
                 assert col.description.strip(), f"{tbl.name}.{col.name}"
+
+
+class TestMarsadActivityParsing:
+    """The NCA activity pages that an earlier version of the collector missed.
+
+    The member's position on a division is carried in a CSS class, not in text,
+    so a text-node walk silently returns nothing — which is exactly how 374,000
+    recorded positions went unnoticed. These tests pin the markup contract.
+    """
+
+    VOTE_HTML = """
+    <div class="vote-day"><div class="vote-date float">25 sept. 2014</div>
+    <a href="/fr/vote/542d274612bdaa35e4bc6f9e" class="vote-article">
+    <span class="float right-10 voted-absent"></span>
+    Vote sur le projet de loi N&#176;64/2014</a>
+    <div class="vote-day"><div class="vote-date float">3 janv. 2013</div>
+    <a href="/fr/vote/542d242f12bdaa35e4bc6f9d" class="vote-article">
+    <span class="float right-10 voted-pour"></span>
+    Vote sur l'article 5</a>
+    """
+
+    def test_position_comes_from_the_css_class(self):
+        rows = marsad_anc.parse_votes(self.VOTE_HTML)
+        assert [r["position"] for r in rows] == ["absent", "pour"]
+
+    def test_division_identity_and_dates(self):
+        rows = marsad_anc.parse_votes(self.VOTE_HTML)
+        assert rows[0]["vote_source_key"] == "542d274612bdaa35e4bc6f9e"
+        assert rows[0]["date"] == "2014-09-25"
+        assert rows[1]["date"] == "2013-01-03"
+        assert "N°64/2014" in rows[0]["title"]
+
+    def test_abbreviated_french_months(self):
+        assert marsad_anc.parse_french_date("25 sept. 2014") == "2014-09-25"
+        assert marsad_anc.parse_french_date("1 août 2013") == "2013-08-01"
+        assert marsad_anc.parse_french_date("not a date") == ""
+
+    AMENDMENT_HTML = """
+    <p class="grey">Amendement sur <a href="/fr/constitution/3/article/0">Préambule</a>
+    Soumis par <a href="#" class="show-deps" data-id="52c6a05412bdaa7f9b90f3c7">2 élus</a></p>
+    <p id="52c6a05412bdaa7f9b90f3c7" class="deps small grey">
+    <a href="/fr/deputes/4f4fbcf3bd8cb561570000ba">Mourad Amdouni</a>,
+    <a href="/fr/deputes/4f4fbcf3bd8cb56157000001">Ibrahim Hamdi</a></p>
+    <p style="text-align: justify;">Ajout de la lutte contre le colonialisme.</p>
+    """
+
+    def test_amendment_sponsors_and_text(self):
+        rows = marsad_anc.parse_amendments(self.AMENDMENT_HTML)
+        assert len(rows) == 1
+        assert rows[0]["sponsor_source_keys"] == [
+            "4f4fbcf3bd8cb561570000ba", "4f4fbcf3bd8cb56157000001"]
+        assert rows[0]["target_label"] == "Préambule"
+        # The wording, not the sponsor list that precedes it — the bug this
+        # test exists for.
+        assert rows[0]["text"] == "Ajout de la lutte contre le colonialisme."
+        assert "Mourad" not in rows[0]["text"]
+
+    MERCATO_HTML = """
+    <script>var deps = {"a": "A"}, click = false,
+    mercato_map = {"Ennahdha": {"then": 89, "now": 89, "partis": {}},
+    "CPR": {"then": 29, "now": 0, "partis": {"CPR": ["x1"], "Wafa": ["x2", "x3"]}}};
+    </script>
+    """
+
+    def test_mercato_yields_from_to_pairs(self):
+        moves = marsad_anc.parse_mercato(self.MERCATO_HTML)
+        assert {(m["deputy_source_key"], m["party_to"]) for m in moves} == {
+            ("x1", "CPR"), ("x2", "Wafa"), ("x3", "Wafa")}
+        # A member listed under their own party of election did not move; the
+        # builder drops those rather than recording a switch to nowhere.
+        assert [m for m in moves if m["party_from"] == m["party_to"]]
+
+    def test_empty_activity_pages_are_recognised(self):
+        assert marsad_anc._is_empty_page("<p>Aucune question pour le moment</p>")
+        assert marsad_anc._is_empty_page("<p>Aucune publication pour l'instant</p>")
+        assert not marsad_anc._is_empty_page(self.AMENDMENT_HTML)
+
+    def test_position_codes_round_trip(self):
+        from parliamentarians_tn.build import MARSAD_VOTE_CODES
+        for position, code in marsad_anc.POSITION_CODES.items():
+            assert MARSAD_VOTE_CODES[code] == position
+        # "-" must never decode to a position: it means the division was not on
+        # that member's page, which is not the same as being absent from it.
+        assert "-" not in MARSAD_VOTE_CODES
+
+
+class TestMajlesMemberStatistics:
+    """ARP-2019 attendance, which the collector previously read only as a rate.
+
+    The member page is the only place the *denominators* appear — how many
+    sittings there were to attend. Without them the rates cannot be checked,
+    which is why the dataset carried an attendance rate and an empty
+    plenary_denominator for every member of this chamber.
+    """
+
+    HTML = """
+    <a title="Présence en plénières : 87 / 112"><svg></svg></a>
+    <a title="Présence en commissions permanentes : 37 / 80"><svg></svg></a>
+    <a title="Participation aux votes : 121 / 335"><svg></svg></a>
+    <span title="Absence justifiée : 6 / 25">Absence justifiée <b class="ml-1">5.36%</b></span>
+    <span>Discipline de vote <b class="ml-1">28.06%</b></span>
+    """
+
+    def test_rates_are_recomputed_from_counts(self):
+        stats = marsad_majles.parse_member_statistics(self.HTML)
+        assert stats["plenary_attendance_rate"] == "0.7768"
+        assert stats["plenary_denominator"] == "112"
+        assert stats["vote_participation_rate"] == "0.3612"
+        assert stats["vote_denominator"] == "335"
+        assert stats["committee_attendance_rate"] == "0.4625"
+
+    def test_discipline_is_stored_as_a_proportion(self):
+        stats = marsad_majles.parse_member_statistics(self.HTML)
+        assert stats["vote_discipline_rate"] == "0.2806"
+
+    def test_unrecognised_measures_are_ignored(self):
+        # "Absence justifiée" also matches the title pattern but is not one of
+        # the measures the participation table holds; it must not leak in.
+        stats = marsad_majles.parse_member_statistics(self.HTML)
+        assert not any("justif" in k for k in stats)
+
+    def test_zero_denominator_does_not_divide(self):
+        assert marsad_majles.parse_member_statistics(
+            '<a title="Participation aux votes : 0 / 0"></a>') == {}

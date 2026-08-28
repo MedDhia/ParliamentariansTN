@@ -1,6 +1,6 @@
 # Coverage
 
-Generated from the built data on 2026-08-27. Run `make codebook` to refresh.
+Generated from the built data on 2026-08-28. Run `make codebook` to refresh.
 
 This is the document to read before using the dataset for anything comparative. Coverage is deeply uneven, and the unevenness is not random: it tracks what Tunisian institutions and civic monitors chose to publish, which in turn tracks the political openness of each period. Any analysis pooling across chambers is implicitly comparing well-documented democratic terms with barely-documented authoritarian ones, and needs to say so.
 

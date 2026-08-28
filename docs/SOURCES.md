@@ -65,11 +65,21 @@ cross-source name matching tractable.
 2019: the chamber frozen by Presidential Decree 2021-117 on 25 July 2021 and
 dissolved on 30 March 2022.
 
-**Why it is cheap to collect.** The roster page renders all 216 members as cards
-whose `data-filter-*` attributes carry bloc, electoral list, district,
+**Why the roster is cheap to collect.** The roster page renders all 216 members
+as cards whose `data-filter-*` attributes carry bloc, electoral list, district,
 profession, age and sex, plus a vote-participation rate, an attendance rate, and
 whether the member filed the statutory asset declaration. One request yields the
 priority biographical layer for the whole chamber.
+
+**Why the member pages are collected anyway.** The roster card gives a rounded
+rate and nothing else. Each member's own page gives five measures *with their
+denominators* — plenary attendance, standing-committee attendance,
+special-committee attendance, vote participation and vote discipline — plus the
+justified and unjustified absence split. The denominator is what makes a rate
+checkable and comparable within the chamber: "87 of 112 sittings" supports
+inference that "77.68%" alone does not. Rates here are recomputed from the
+counts rather than read from the rendered percentage, so upstream rounding does
+not propagate.
 
 **Cautions.**
 
@@ -82,9 +92,15 @@ priority biographical layer for the whole chamber.
   is a substantive limitation, not a cosmetic one.
 - **Age is published without a reference date** and is therefore *not* converted
   into a birth date. It is preserved in the mandate note.
-- Attendance and participation denominators differ between the roster cards and
-  the individual profile pages, and are not published alongside the roster
-  figures. Compare these rates within this term only.
+- Attendance and participation figures differ between the roster cards and the
+  member pages. The member page is preferred because it states its denominator;
+  where the two disagree the page's figure is the one recorded. Compare these
+  rates within this term only — the denominators are this chamber's sitting and
+  division counts and mean nothing against another chamber's.
+- **"Absence justifiée" and "absence injustifiée" are published** as a further
+  split of non-attendance. They are not carried into `participation`, which has
+  no column for them; they are available on the cached member pages for anyone
+  who wants to code them.
 - Committee pages *do* publish joining and leaving dates, and those are used.
 
 ## `MARSAD_ARP2014` — the 2014-2019 chamber, from the Internet Archive
@@ -147,10 +163,25 @@ seats.
 ## `MARSAD_ANC` — Al Bawsala's first observatory
 
 **What it is.** `marsad.tn`, covering the 2011-2014 National Constituent
-Assembly. It is the richest biographical source for any Tunisian legislature:
-narrative profiles for all 217 members in both Arabic and French, plus bloc,
-electoral list, constituency, party, committee assignments with roles, and a
-vote-participation rate with the member's rank in the chamber.
+Assembly. It is the richest source for any Tunisian legislature, biographically
+*and* behaviourally: narrative profiles for all 217 members in both Arabic and
+French, plus bloc, electoral list, constituency, party, committee assignments
+with roles, a vote-participation rate with the member's rank — and, on separate
+sub-pages, the chamber's entire recorded voting record, the constitutional
+amendments each member tabled, and their party of election against their party
+at the end of the term.
+
+**An earlier version of this collector took about a fifth of it.** Each profile
+links five sub-pages; only `/commissions` was followed. `/votes`, `/amendements`,
+`/questions` and `/transparence` were never opened, nor was the site-level
+`/mercato`. What that left behind was not marginal: roughly 1,700 recorded
+divisions per member. The gap was invisible from the inside — the collector ran
+clean, the profile pages parsed, and nothing in the data said "there is a voting
+record you have not looked at". It was found only by listing the outbound links
+on a page already in the cache. The lesson is recorded in
+[RECONSTRUCTION_PROTOCOL.md](RECONSTRUCTION_PROTOCOL.md): enumerate a source's
+endpoints before declaring it exhausted, because a collector cannot report data
+it never requested.
 
 **Why the French pages are parsed.** The French profiles render dates in one
 predictable form (`Né le 02 Novembre 1975, à Sidi Khlif dans le gouvernorat de
@@ -161,8 +192,21 @@ still stored verbatim as `biography_ar`.
 
 - Compiled by an NGO partly from member questionnaires, so occupations and civic
   roles are **self-reported**.
-- Bloc affiliation is a single snapshot; switching within 2011-2014 is not
-  recoverable from this source and must not be inferred from its absence.
+- Bloc affiliation is a single snapshot; *bloc* switching within 2011-2014 is
+  not recoverable and must not be inferred from its absence. *Party* switching
+  is recoverable, from the `/mercato` diagram, which publishes each member's
+  party of election against their party at the end of the term.
+- **The party-switching rows are undated.** The source gives the from/to pair,
+  not the moment, so a row says that a member moved and not when. They also
+  cannot be chained: a member who moved twice appears once, as origin and
+  destination.
+- **"Absent" on a division conflates two things** — being away, and being
+  present and not voting. The source does not separate them, so an abstention
+  rate computed from these positions is a lower bound.
+- Divisions missing from a member's page get no row at all rather than a row
+  reading absent. Members who joined late or left early are simply not listed,
+  and manufacturing an absence for them would assert something the source does
+  not.
 - Some profiles are pasted from Wikipedia and carry footnote markers glued to
   years (`né le 1er mai 19561`). The parser handles this, and rejects any birth
   year implying an age under 18 or over 90 at election — a guard added after one

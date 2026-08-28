@@ -25,6 +25,38 @@ assembly and none for any later chamber. The searches are recorded in
 The information itself is not lost. Election results and the composition of each
 chamber were published contemporaneously; they are simply on paper.
 
+## Before an archival trip: exhaust the source you already have
+
+Archival work is expensive, so it is worth being certain that what you are going
+to Tunis for is not already sitting in a cache. Two of this dataset's largest
+gains came from re-reading a source that had been declared collected.
+
+**Enumerate a source's endpoints before declaring it exhausted.** A collector
+cannot report data it never requested, so an incomplete extraction looks exactly
+like a complete one: the run is clean, the parsed pages are correct, and nothing
+anywhere says "there is more". The `marsad.tn` collector fetched three pages per
+member for months and looked finished. Listing the outbound links on a page
+already in the cache showed five sub-pages per member, of which one was being
+followed — and the unfollowed ones held roughly 1,700 recorded divisions per
+member, the constitutional amendments each had tabled, and the party-switching
+series the documentation had described as unrecoverable.
+
+The check costs one command against a page you already hold:
+
+```bash
+grep -oE 'href="/[^"]*"' cached_page.html | sort -u
+```
+
+Do it for a member page, a committee page and the site root, and do it again
+when a source is revisited. Where a site renders a chart, look for the data
+behind it: `mercato`'s party-switching series is a JSON literal inline in the
+page, not an image.
+
+**Prefer a published denominator to a published rate.** Where a source offers
+both a summary figure and the counts behind it, the counts are worth an extra
+request per member: "87 of 112 sittings" can be checked and recomputed, "77.68%"
+cannot.
+
 ## Primary sources, in order of authority
 
 **1. *Journal Officiel de la République Tunisienne* (JORT).** The authoritative

@@ -1,6 +1,6 @@
 # Codebook
 
-Generated from `src/parliamentarians_tn/schema.py` and the built data on 2026-08-27. Do not edit by hand — run `make codebook` instead.
+Generated from `src/parliamentarians_tn/schema.py` and the built data on 2026-08-28. Do not edit by hand — run `make codebook` instead.
 
 ## Reading this codebook
 
@@ -28,6 +28,11 @@ Rates are proportions in [0, 1], not percentages. Denominators differ across sou
 | [`offices`](#offices) | One row per person per parliamentary office per spell. | 47 |
 | [`careers`](#careers) | One row per person per extra-parliamentary role. | 171 |
 | [`participation`](#participation) | One row per person per assembly. | 583 |
+| [`votes`](#votes) | One row per recorded division. | 1,724 |
+| [`vote_positions`](#vote_positions) | One row per member per division. | 370,922 |
+| [`party_switches`](#party_switches) | One row per member per recorded change of party within a term. | 105 |
+| [`amendments`](#amendments) | One row per tabled amendment. | 251 |
+| [`amendment_sponsorships`](#amendment_sponsorships) | One row per member per amendment they tabled. | 3,646 |
 | [`person_xref`](#person_xref) | One row per person per external identifier. | 950 |
 | [`sources`](#sources) | One row per data source. | 6 |
 | [`provenance`](#provenance) | One row per (table, record, field) that a source supplied. | 5,039 |
@@ -552,15 +557,123 @@ Behavioural indicators published by the chamber or by Al Bawsala. Available only
 | `person_id` | string → `persons.person_id` | 583 (100%) | *(required)* Person. |
 | `assembly_id` | string → `assemblies.assembly_id` | 583 (100%) | *(required)* Assembly. |
 | `plenary_attendance_rate` | number | 216 (37%) | Share of plenary sittings attended. |
-| `plenary_denominator` | integer | 0 (0%) | Number of plenary sittings in the base. |
-| `committee_attendance_rate` | number | 0 (0%) | Share of committee meetings attended. |
-| `committee_denominator` | integer | 0 (0%) | Number of committee meetings in the base. |
+| `plenary_denominator` | integer | 216 (37%) | Number of plenary sittings in the base. |
+| `committee_attendance_rate` | number | 203 (35%) | Share of committee meetings attended. |
+| `committee_denominator` | integer | 203 (35%) | Number of committee meetings in the base. |
 | `vote_participation_rate` | number | 429 (74%) | Share of recorded votes in which the member voted. |
-| `vote_denominator` | integer | 0 (0%) | Number of recorded votes in the base. |
-| `vote_discipline_rate` | number | 0 (0%) | Share of votes cast with the member's bloc. |
+| `vote_denominator` | integer | 216 (37%) | Number of recorded votes in the base. |
+| `vote_discipline_rate` | number | 207 (36%) | Share of votes cast with the member's bloc. |
 | `n_written_questions` | integer | 154 (26%) | Written questions submitted. |
 | `n_oral_questions` | integer | 0 (0%) | Oral questions submitted. |
 | `source_ids` | string → `sources.source_id` | 583 (100%) | Provenance. |
+
+## `votes`
+
+**Unit of observation.** One row per recorded division.
+
+Divisions on which a chamber's members are individually recorded. The title is the source's own description of what was voted on and is not normalised into bill identifiers, because the same instrument appears under several descriptions across procedural stages.
+
+**Primary key.** `vote_id`
+
+**Rows.** 1,724
+
+| Variable | Type | Non-empty | Description |
+| --- | --- | --- | --- |
+| `vote_id` | string | 1,724 (100%) | *(required, unique)* Identifier. |
+| `assembly_id` | string → `assemblies.assembly_id` | 1,724 (100%) | *(required)* Chamber. |
+| `vote_date` | date | 1,724 (100%) | Date of the division. |
+| `title` | string | 1,724 (100%) | The source's description of the division. |
+| `source_url` | string | 0 (0%) | Page the division was read from. |
+| `n_recorded` | integer | 1,724 (100%) | Members with a recorded position. |
+| `source_ids` | string → `sources.source_id` | 1,724 (100%) | Provenance. |
+
+## `vote_positions`
+
+**Unit of observation.** One row per member per division.
+
+How each member is recorded on each division. A member missing from a division has no row rather than a row reading 'absent': members who joined late or left early are simply not listed, and inventing an absence for them would be a different claim from the one the source makes. Note that 'absent' as published conflates being away with being present and not voting; the source does not separate them.
+
+**Primary key.** `vote_id, person_id`
+
+**Rows.** 370,922
+
+| Variable | Type | Non-empty | Description |
+| --- | --- | --- | --- |
+| `vote_id` | string → `votes.vote_id` | 370,922 (100%) | *(required)* Division. |
+| `person_id` | string → `persons.person_id` | 370,922 (100%) | *(required)* Member. |
+| `assembly_id` | string → `assemblies.assembly_id` | 370,922 (100%) | *(required)* Chamber. |
+| `position` | enum | 370,922 (100%) | *(required)* Recorded position. One of: `pour`, `contre`, `abstenu`, `absent`. |
+| `source_ids` | string → `sources.source_id` | 370,922 (100%) | Provenance. |
+
+<details><summary>Distribution of <code>position</code></summary>
+
+| Value | n |
+| --- | --- |
+| `pour` | 187,239 |
+| `absent` | 129,240 |
+| `contre` | 35,654 |
+| `abstenu` | 18,789 |
+
+</details>
+
+## `party_switches`
+
+**Unit of observation.** One row per member per recorded change of party within a term.
+
+The party a member was elected on against the party they ended the term in. Undated by construction: the source publishes the pair, not the moment, so a row establishes that a move happened and not when. Members who kept their party have no row, which is why the absence of a row here means 'did not move', unlike missingness elsewhere in the dataset.
+
+The two id columns are empty where the published party name does not resolve to the curated register. That is deliberate. The source names parties in French only, and the near-misses are treacherous: 'Parti communiste des ouvriers de Tunisie' and 'Parti communiste tunisien' are different parties, so a fuzzy match would silently merge two organisations. The verbatim names are always present, and crosswalking them is left to a human who can tell those two apart.
+
+**Primary key.** `person_id, assembly_id, party_from_name, party_to_name`
+
+**Rows.** 105
+
+| Variable | Type | Non-empty | Description |
+| --- | --- | --- | --- |
+| `person_id` | string → `persons.person_id` | 105 (100%) | *(required)* Member. |
+| `assembly_id` | string → `assemblies.assembly_id` | 105 (100%) | *(required)* Chamber. |
+| `party_from_id` | string → `parties.party_id` | 40 (38%) | Party of election; empty where the published name does not resolve to the curated register. |
+| `party_to_id` | string → `parties.party_id` | 98 (93%) | Party at end of term; empty where the published name does not resolve to the curated register. |
+| `party_from_name` | string | 105 (100%) | Party of election, as published. |
+| `party_to_name` | string | 105 (100%) | Party at end of term, as published. |
+| `source_ids` | string → `sources.source_id` | 105 (100%) | Provenance. |
+
+## `amendments`
+
+**Unit of observation.** One row per tabled amendment.
+
+Amendments tabled to the text of the constitution during the 2011-2014 drafting. Sponsorship is collective, so the sponsors are a separate table rather than a column.
+
+**Primary key.** `amendment_id`
+
+**Rows.** 251
+
+| Variable | Type | Non-empty | Description |
+| --- | --- | --- | --- |
+| `amendment_id` | string | 251 (100%) | *(required, unique)* Identifier. |
+| `assembly_id` | string → `assemblies.assembly_id` | 251 (100%) | *(required)* Chamber. |
+| `target_label` | string | 251 (100%) | Article or section amended, as published. |
+| `target_url` | string | 251 (100%) | Source link to the article amended. |
+| `text` | string | 251 (100%) | The amendment's wording, as published. |
+| `n_sponsors` | integer | 251 (100%) | Number of members who tabled it. |
+| `source_ids` | string → `sources.source_id` | 251 (100%) | Provenance. |
+
+## `amendment_sponsorships`
+
+**Unit of observation.** One row per member per amendment they tabled.
+
+Who tabled which amendment. This is a chosen tie rather than an assigned one, which makes it the constituent assembly's counterpart to the written-question co-signatures recorded for the 2023 chamber.
+
+**Primary key.** `amendment_id, person_id`
+
+**Rows.** 3,646
+
+| Variable | Type | Non-empty | Description |
+| --- | --- | --- | --- |
+| `amendment_id` | string → `amendments.amendment_id` | 3,646 (100%) | *(required)* Amendment. |
+| `person_id` | string → `persons.person_id` | 3,646 (100%) | *(required)* Sponsor. |
+| `assembly_id` | string → `assemblies.assembly_id` | 3,646 (100%) | *(required)* Chamber. |
+| `source_ids` | string → `sources.source_id` | 3,646 (100%) | Provenance. |
 
 ## `person_xref`
 

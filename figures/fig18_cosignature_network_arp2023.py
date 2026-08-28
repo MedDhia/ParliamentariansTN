@@ -45,7 +45,12 @@ def main() -> None:
               if m["assembly_id"] == ASSEMBLY}
 
     graph = nx.Graph()
-    graph.add_nodes_from(roster)
+    # Sorted, not the raw set. Python randomises string hashing per process, so
+    # iterating a set of person_ids gives a different node order on every run —
+    # which reorders equal-degree rows in the companion table and, because the
+    # spring layout seeds from node order, moves the drawing too. The figure was
+    # silently not reproducible until this was pinned.
+    graph.add_nodes_from(sorted(roster))
     for r in S.load("edges_question_cosignature"):
         graph.add_edge(r["source"], r["target"],
                        weight=int(r["weight"]),
@@ -124,7 +129,7 @@ def main() -> None:
     )
 
     placed: list[tuple[float, float]] = []
-    for n in sorted(connected, key=lambda x: -degree[x]):
+    for n in sorted(connected, key=lambda x: (-degree[x], x)):
         if len(placed) >= 5:
             break
         x, y = pos[n]
@@ -214,7 +219,7 @@ def main() -> None:
             "weighted_degree_newman": round(
                 sum(d["weight_newman"] for _, _, d in graph.edges(n, data=True)), 4),
         }
-        for n in sorted(graph.nodes(), key=lambda x: -degree[x])
+        for n in sorted(graph.nodes(), key=lambda x: (-degree[x], x))
     ])
 
 
