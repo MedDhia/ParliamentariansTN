@@ -62,9 +62,36 @@ Archive captures, which turn bloc membership into dated spells.
 
 | | Figure | What to look at |
 | --- | --- | --- |
-| 14–16 | Committee co-membership, one chamber each | Dense (0.14–0.21). Blocs are interspersed, not segregated — committee ties are not simply bloc ties. |
-| 17 | Deputies × committees, bipartite | The sparse structure the projections are derived from. Start here if tie strength matters to your argument. |
-| 18 | Written-question co-signature | The only *behavioural* network. 41 of 155 deputies never co-signed anything. |
+| 14–16 | Committee co-membership, one chamber each | Which committees a deputy bridges, and how little that tracks her bloc: assortativity −0.03, −0.04, −0.07. |
+| 17 | Deputies × committees, bipartite | The 247 memberships behind figure 16's 1,579 ties, in figure 16's exact coordinates. |
+| 18 | Written-question co-signature | The only *behavioural* network — and the contrast: +0.18. 41 of 155 deputies never co-signed anything. |
+
+**Reading 14–17.** These are not force-directed drawings. A committee
+co-membership network is a projection, and the projection is *exactly* the union
+of the committee cliques — every tie in NCA-2011 and ARP-2019 is reproduced by
+taking each committee and joining all its members. A spring layout of overlapping
+cliques is a hairball whose only content is the roster it came from, so position
+is computed instead:
+
+- **angle** — which committees. They are anchored around the rim, ordered by
+  spectral seriation so committees sharing members sit near each other.
+- **distance from the centre** — how many. One committee puts a deputy on the
+  rim; each further one pulls her in, so the biggest bridges are in the middle.
+- **identical portfolios sit together**, being computed from the same set.
+
+Only ties of weight ≥ 2 are drawn, bundled toward the centre; the weight-1 mass
+is what the lobes already say. Nothing is seeded, so the drawing never drifts
+between runs.
+
+**The finding these figures are for.** Colour is bloc, position is committee, so
+the figures answer whether committee assignment follows bloc lines. It does not —
+assortativity is slightly *negative* in all three chambers. Co-signing a written
+question, which a deputy chooses rather than is assigned, runs **+0.18**. Assigned
+ties ignore bloc; chosen ties follow it.
+
+Committee names for NCA-2011 and ARP-2019 exist only in Arabic and so cannot be
+drawn (see the Arabic rule below); those rims carry keys like "Standing 7", and
+the companion CSV has a `committee_labels` column that resolves them.
 
 **Behaviour**
 

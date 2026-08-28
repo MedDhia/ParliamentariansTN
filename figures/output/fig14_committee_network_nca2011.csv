@@ -1,195 +1,195 @@
-person_id,name_lat,bloc,degree_full_graph,degree_backbone,weighted_degree_newman
-TNP-00247,Latifa Habachi,Ennahdha,83,25,6.0
-TNP-00477,Imed Hammami,Ennahdha,77,16,5.0
-TNP-00332,Samia Abbou,CPR,73,29,5.0
-TNP-00430,Rim Mahjoub,Democratic Bloc,72,11,4.0
-TNP-00468,Abdelaziz Kotti,No bloc,72,4,4.0
-TNP-00400,Iyed Dahmani,No bloc,71,20,5.0
-TNP-00504,Mohamed Tahar Ilahi,No bloc,70,11,4.0
-TNP-00438,Salma Hedia Mabrouk,Democratic Bloc,68,13,4.0
-TNP-00457,Tarek Bouaziz,Democratic Transition,68,12,4.0
-TNP-00289,Mongi Rahoui,Democratic Bloc,68,15,4.0
-TNP-00452,Salha Ben Aicha,Ennahdha,67,8,4.0
-TNP-00402,Aymen Zouaghi,No bloc,63,18,4.0
-TNP-00425,Rabiî Abdi,Loyalty to the Revolution,63,11,4.0
-TNP-00523,Mahmoud Gouiaa,Ennahdha,62,16,4.0
-TNP-00488,Faiçal Jadlaoui,No bloc,62,12,4.0
-TNP-00370,Ahmed Essefi,No bloc,62,10,4.0
-TNP-00552,Kamel Ben Romdhane,Ennahdha,62,7,4.0
-TNP-00475,Ali Fares,Ennahdha,61,17,4.0
-TNP-00397,Amel Azzouz,Ennahdha,61,3,3.0
-TNP-00551,Wissem Yassine,No bloc,61,1,3.0
-TNP-00484,Farida Labidi,Ennahdha,60,14,4.0
-TNP-00450,Chokri Arfaoui,Democratic Transition,60,3,3.0
-TNP-00385,Zohra Smida,Ennahdha,58,4,3.0
-TNP-00542,Nizar Makhloufi,Loyalty to the Revolution,58,6,3.0
-TNP-00416,Hasna Mersit,No bloc,57,4,3.0
-TNP-00526,Mustapha Ben Jaafar,Ettakatol,57,11,4.0
-TNP-00394,Hedi Ben Braham,Ennahdha,57,4,3.0
-TNP-00391,Mouldi Riahi,Ettakatol,57,6,3.0
-TNP-00434,Saâd Bouaïche,Democratic Transition,57,4,3.0
-TNP-00427,Rafik Tlili,Loyalty to the Revolution,57,3,3.0
-TNP-00408,Jalel Bouzid,Ettakatol,57,4,3.0
-TNP-00463,Abderrazak Khallouli,Democratic Transition,56,6,3.0
-TNP-00497,Lobna Jeribi,Ettakatol,56,6,3.0
-TNP-00514,Mohamed Gahbich,Democratic Alliance,56,6,3.0
-TNP-00474,Ali Bechrifa,Democratic Bloc,56,8,3.0
-TNP-00378,Ikbel Msadaa,CPR,56,6,3.0
-TNP-00531,Monia Gasri,Ennahdha,56,4,3.0
-TNP-00376,Iskander Bouallagui,No bloc,55,6,3.0
-TNP-00485,Fattoum Lassoued,Ennahdha,55,4,3.0
-TNP-00536,Nadia Chaabane,Democratic Bloc,55,6,3.0
-TNP-00460,Abdelbasset Becheikh,Ennahdha,55,7,3.0
-TNP-00556,Habib Bribech,Ennahdha,55,7,3.0
-TNP-00519,Mohamed Ali Nasri,No bloc,55,6,3.0
-TNP-00532,Mounir Ben Hnia,Ennahdha,55,6,3.0
-TNP-00540,Nejib Mrad,Ennahdha,55,6,3.0
-TNP-00547,Hajer Azaiez,Ennahdha,54,7,3.0
-TNP-00384,Hasni Badri,Democratic Transition,54,8,3.0
-TNP-00395,Hedi Chaouech,No bloc,54,8,3.0
-TNP-00539,Najla Bourial,Democratic Alliance,54,7,3.0
-TNP-00496,Kaouther Ladgham,Ennahdha,54,8,3.0
-TNP-00499,Mabrouka Mbarek,CPR,54,7,3.0
-TNP-00436,Salma Baccar,Democratic Bloc,54,9,3.0
-TNP-00543,Noômane Fehri,Democratic Bloc,54,4,3.0
-TNP-00364,Zied Laadhari,Ennahdha,53,10,3.0
-TNP-00398,Amel Ghouil,Ennahdha,53,7,3.0
-TNP-00264,Mehdi Ben Gharbia,Democratic Alliance,53,5,3.0
-TNP-00390,Moncef Cherni,Democratic Transition,53,8,3.0
-TNP-00396,Walid Bennani,Ennahdha,53,8,3.0
-TNP-00530,Monia Ibrahim,Ennahdha,53,8,3.0
-TNP-00415,Hassan Radhouani,No bloc,53,3,3.0
-TNP-00419,Hanène Sassi,Democratic Transition,53,7,3.0
-TNP-00513,Mohamed Essghaier,Ennahdha,52,6,3.0
-TNP-00410,Jamel Touir,Ettakatol,52,6,3.0
-TNP-00465,Abdessattar Dhifi,Loyalty to the Revolution,51,8,3.0
-TNP-00414,Habiba Triki,Ennahdha,51,5,3.0
-TNP-00458,Adel Ben Attia,Ennahdha,51,5,3.0
-TNP-00502,Mohamed Habib Harguem,Ettakatol,51,8,3.0
-TNP-00471,Abdelmajid Najar,Ennahdha,51,5,3.0
-TNP-00445,Sana Mersni,Ennahdha,51,10,3.0
-TNP-00510,Mohamed Saidi,Ennahdha,51,9,3.0
-TNP-00277,Mohamed Karim Krifa,No bloc,51,0,3.0
-TNP-00558,Noura Ben Hassen,CPR,49,2,3.0
-TNP-00374,Azed Badi,Loyalty to the Revolution,48,5,3.0
-TNP-00324,Sahbi Atig,Ennahdha,48,10,3.0
-TNP-00478,Omar Chetoui,CPR,48,9,3.0
-TNP-00424,Rabeh Khraifi,No bloc,48,1,3.0
-TNP-00493,Kamel Saadaoui,No bloc,46,4,3.0
-TNP-00375,Oussama Al Saghir,Ennahdha,43,9,3.0
-TNP-00454,Slaheddine Elhiba,Ennahdha,41,2,2.0
-TNP-00467,Abdelaziz Chaabane,Ennahdha,41,0,2.0
-TNP-00511,Mohamed Ben Mabrouk Hamdi,Democratic Alliance,41,0,2.0
-TNP-00379,Lazhar Chamli,CPR,40,1,2.0
-TNP-00411,Jawhara Tiss,Ennahdha,40,1,2.0
-TNP-00407,Jalel Farhat,Democratic Transition,40,2,2.0
-TNP-00525,Mourad Amdouni,No bloc,40,2,2.0
-TNP-00518,Mohamed Abdelmonem Krir,No bloc,40,1,2.0
-TNP-00381,Jdidi Essbouîi,No bloc,40,0,2.0
-TNP-00521,Mohamed Nejib Hosni,No bloc,39,2,2.0
-TNP-00413,Hafedh Ibrahim Lassoued,Ennahdha,39,2,2.0
-TNP-00480,Fatma Gharbi,No bloc,39,1,2.0
-TNP-00377,Essia Naffati,Ennahdha,39,1,2.0
-TNP-00481,Faiza Kadoussi,No bloc,39,1,2.0
-TNP-00487,Foued Thamer,Democratic Bloc,39,1,2.0
-TNP-00476,Ali Houiji,Loyalty to the Revolution,39,2,2.0
-TNP-00404,Basma Jebali,Ennahdha,39,2,2.0
-TNP-00541,Nejiba Beryoul,Ennahdha,39,2,2.0
-TNP-00406,Baya Jaouadi,Ennahdha,39,1,2.0
-TNP-00482,Fathi Eltaif,No bloc,39,1,2.0
-TNP-00470,Abdelkader Kadri,Ennahdha,39,1,2.0
-TNP-00507,Mohamed Karray Jerbi,Loyalty to the Revolution,39,1,2.0
-TNP-00528,Moufida Marzouki,Ennahdha,39,1,2.0
-TNP-00437,Salma Sarsout,Ennahdha,39,0,2.0
-TNP-00550,Haythem Belgacem,CPR,39,0,2.0
-TNP-00357,Yamina Zoghlami,Ennahdha,39,0,2.0
-TNP-00267,Moez Belhaj Rhouma,Ennahdha,38,2,2.0
-TNP-00369,Ahmed Mechergui,Ennahdha,38,1,2.0
-TNP-00446,Sana Haddad,Ennahdha,38,1,2.0
-TNP-00380,Bechir Chammem,Ennahdha,38,5,2.0
-TNP-00392,Naceur Brahmi,No bloc,38,5,2.0
-TNP-00423,Dalila Bouain,Ennahdha,38,5,2.0
-TNP-00466,Abdessalem Chaabane,CPR,38,5,2.0
-TNP-00389,Ferjani Doghmane,Ennahdha,38,2,2.0
-TNP-00486,Fattouma Attia,Ennahdha,38,2,2.0
-TNP-00443,Samir Bettaieb,Democratic Bloc,38,3,2.0
-TNP-00418,Halima Guenni,Ennahdha,38,2,2.0
-TNP-00448,Chokri Yaich,Democratic Alliance,38,2,2.0
-TNP-00440,Selim Ben Abdessalam,No bloc,38,2,2.0
-TNP-00464,Abderraouf Ayadi,Loyalty to the Revolution,38,2,2.0
-TNP-00422,Dalila Babba,Ennahdha,38,1,2.0
-TNP-00512,Mahmoud El May,No bloc,38,1,2.0
-TNP-00529,Mouna Ben Nasr,No bloc,38,1,2.0
-TNP-00559,Jamal Bouajaja,Ennahdha,38,1,2.0
-TNP-00560,Frej Ben Amor,Ennahdha,38,0,2.0
-TNP-00453,Slaheddine Zahaf,Democratic Bloc,38,0,2.0
-TNP-00459,Aicha Dhaouadi,Ennahdha,37,2,2.0
-TNP-00538,Nabiha Torjmane,Ennahdha,37,3,2.0
-TNP-00544,Noureddine Mrabti,Democratic Transition,37,2,2.0
-TNP-00447,Sonia Toumia,Ennahdha,37,1,2.0
-TNP-00557,Bechir Nefzi,CPR,37,1,2.0
-TNP-00520,Mohamed Lotfi Ben Mesbah,Democratic Bloc,37,2,2.0
-TNP-00421,Khira Sghairi,Ennahdha,36,3,2.0
-TNP-00546,Hajer Mnifi,Ennahdha,36,2,2.0
-TNP-00426,Rabiaa Najlaoui,No bloc,36,3,2.0
-TNP-00524,Mahmoud Baroudi,Democratic Alliance,36,1,2.0
-TNP-00456,Tarek Labidi,Ettakatol,36,5,2.0
-TNP-00301,Neji Jmal,Ennahdha,36,6,2.0
-TNP-00373,Ahmed Nejib Chebbi,No bloc,36,5,2.0
-TNP-00386,Sadok Chourou,Ennahdha,36,1,2.0
-TNP-00554,Souhir Dardouri,Democratic Transition,36,5,2.0
-TNP-00451,Salah Chouaib,No bloc,36,2,2.0
-TNP-00509,Mohamed Neji Gharsalli,No bloc,36,1,2.0
-TNP-00517,Mohamed Chafik Zorkin,Democratic Alliance,36,1,2.0
-TNP-00368,Ibrahim Kassas,No bloc,35,3,2.0
-TNP-00533,Mounira Omri,Ennahdha,35,3,2.0
-TNP-00501,Mohsen Kaabi,Ennahdha,35,5,2.0
-TNP-00441,Slimane Hlal,Ennahdha,34,3,2.0
-TNP-00506,Mohamed Elarbi Fadhel Moussa,Democratic Bloc,33,2,2.0
-TNP-00449,Chokri Kastalli,Democratic Alliance,32,0,2.0
-TNP-00383,Habib Khedher,Ennahdha,31,6,2.0
-TNP-00498,Mabrouk Hrizi,Loyalty to the Revolution,30,3,2.0
-TNP-00367,Ibrahim Hamdi,Loyalty to the Revolution,30,0,2.0
-TNP-00141,Anouar Marzouki,Democratic Transition,22,0,1.0
-TNP-00429,Rim Thairi,No bloc,22,0,1.0
-TNP-00432,Samia Ferchichi,Ennahdha,22,0,1.0
-TNP-00515,Mohamed Nejib Khila,No bloc,22,0,1.0
-TNP-00537,Nabila Askri Snoussi,Ennahdha,22,0,1.0
-TNP-00420,Khmais Ksila,No bloc,21,0,1.0
-TNP-00494,Kamel Ammar,Ennahdha,21,0,1.0
-TNP-00387,Tahar Hmila,No bloc,21,0,1.0
-TNP-00399,Amira Marzouk,No bloc,21,0,1.0
-TNP-00473,Issam Chebbi,No bloc,21,0,1.0
-TNP-00535,Maya Jeribi,No bloc,21,0,1.0
-TNP-00007,Hichem Hosni,No bloc,20,0,1.0
-TNP-00490,Karim Bouabdelli,Democratic Bloc,20,0,1.0
-TNP-00508,Moncef Cheikhrouhou,Democratic Alliance,20,0,1.0
-TNP-00534,Mouldi Zidi,No bloc,20,0,1.0
-TNP-00555,Mokhtar Lamouchi,Ennahdha,20,0,1.0
-TNP-00401,Imen Ben Mhamed,Ennahdha,20,0,1.0
-TNP-00442,Samir Ben Amor,CPR,20,0,1.0
-TNP-00492,Kalthoum Badreddine,Ennahdha,20,0,1.0
-TNP-00549,Hichem Ben Jemaa,CPR,20,0,1.0
-TNP-00561,Khalid Belhaj,No bloc,20,0,1.0
-TNP-00371,Ahmed Smiai,Ennahdha,20,0,1.0
-TNP-00372,Ahmed Brahim,Democratic Bloc,20,0,1.0
-TNP-00405,Bechir Lazzem,Ennahdha,20,0,1.0
-TNP-00409,Jamel Gargouri,Democratic Alliance,20,0,1.0
-TNP-00428,Romdhane Doghmani,Democratic Transition,20,0,1.0
-TNP-00461,Abdelhalim Zouari,Ennahdha,20,0,1.0
-TNP-00483,Farah Nsibi,No bloc,20,0,1.0
-TNP-00522,Mohamed Nizar Kacem,No bloc,20,0,1.0
-TNP-00174,Ameur Laraiedh,Ennahdha,19,0,1.0
-TNP-00285,Mohamed Zrig,Ennahdha,19,0,1.0
-TNP-00382,Habib Ellouz,Ennahdha,19,0,1.0
-TNP-00433,Souad Abderrahim,Ennahdha,19,0,1.0
-TNP-00479,Fadhel Elouej,No bloc,18,0,1.0
-TNP-00393,Nafti Mahdhi,Ennahdha,16,0,1.0
-TNP-00417,Hattab Barakati,No bloc,16,0,1.0
-TNP-00435,Said Kharchoufi,No bloc,16,0,1.0
-TNP-00469,Abdelkader Ben Khmis,Democratic Bloc,16,0,1.0
-TNP-00489,Kais Mokhtar,No bloc,16,0,1.0
-TNP-00495,Kamel Ben Amara,Ennahdha,16,0,1.0
-TNP-00505,Mohamed Tahar Tlili,Ennahdha,16,0,1.0
-TNP-00553,Soulef Ksantini,Ennahdha,16,0,1.0
-TNP-00562,Nafissa Marzouki,Ettakatol,10,0,1.0
+person_id,name_lat,bloc,n_committees,committee_ids,committee_labels,degree_full_graph,degree_backbone,weighted_degree_newman
+TNP-00247,Latifa Habachi,Ennahdha,6,CMT-336c11e63d66 CMT-4d57513fbffc CMT-5d1546fffb75 CMT-663b2e4cb3f4 CMT-b46554e2045e CMT-e6b2fac8e5c7,Special 2 | Constituent 5 | Special 1 | Joint 1 | Legislative 7 | Legislative 6,83,25,6.0
+TNP-00477,Imed Hammami,Ennahdha,5,CMT-336c11e63d66 CMT-5d1546fffb75 CMT-663b2e4cb3f4 CMT-b46554e2045e CMT-c6c8260db7f4,Special 2 | Special 1 | Joint 1 | Legislative 7 | Constituent 4,77,16,5.0
+TNP-00332,Samia Abbou,CPR,5,CMT-336c11e63d66 CMT-545e8558a206 CMT-5d1546fffb75 CMT-78e966e1d482 CMT-f2d2d05db58f,Special 2 | Constituent 3 | Special 1 | Special 3 | Legislative 4,73,29,5.0
+TNP-00400,Iyed Dahmani,No bloc,5,CMT-336c11e63d66 CMT-663b2e4cb3f4 CMT-7249209246b3 CMT-78e966e1d482 CMT-e6b2fac8e5c7,Special 2 | Joint 1 | Constituent 6 | Special 3 | Legislative 6,71,20,5.0
+TNP-00430,Rim Mahjoub,Democratic Bloc,4,CMT-400b91a3bed5 CMT-52252f4274f6 CMT-545e8558a206 CMT-5d1546fffb75,Special 5 | Legislative 3 | Constituent 3 | Special 1,72,11,4.0
+TNP-00468,Abdelaziz Kotti,No bloc,4,CMT-499d23e8523f CMT-4d57513fbffc CMT-78e966e1d482 CMT-f6f9e9d7cbb2,Special 6 | Constituent 5 | Special 3 | Legislative 8,72,4,4.0
+TNP-00504,Mohamed Tahar Ilahi,No bloc,4,CMT-3b890b1f160a CMT-5d1546fffb75 CMT-8978fc995f04 CMT-f2d2d05db58f,Special 4 | Special 1 | Legislative 5 | Legislative 4,70,11,4.0
+TNP-00438,Salma Hedia Mabrouk,Democratic Bloc,4,CMT-336c11e63d66 CMT-52252f4274f6 CMT-5d1546fffb75 CMT-7249209246b3,Special 2 | Legislative 3 | Special 1 | Constituent 6,68,13,4.0
+TNP-00457,Tarek Bouaziz,Democratic Transition,4,CMT-13e8b4757c0d CMT-336c11e63d66 CMT-499d23e8523f CMT-c6c8260db7f4,Legislative 2 | Special 2 | Special 6 | Constituent 4,68,12,4.0
+TNP-00289,Mongi Rahoui,Democratic Bloc,4,CMT-13e8b4757c0d CMT-3b890b1f160a CMT-5d1546fffb75 CMT-c6c8260db7f4,Legislative 2 | Special 4 | Special 1 | Constituent 4,68,15,4.0
+TNP-00452,Salha Ben Aicha,Ennahdha,4,CMT-400b91a3bed5 CMT-545e8558a206 CMT-663b2e4cb3f4 CMT-f2d2d05db58f,Special 5 | Constituent 3 | Joint 1 | Legislative 4,67,8,4.0
+TNP-00402,Aymen Zouaghi,No bloc,4,CMT-336c11e63d66 CMT-545e8558a206 CMT-78e966e1d482 CMT-f2d2d05db58f,Special 2 | Constituent 3 | Special 3 | Legislative 4,63,18,4.0
+TNP-00425,Rabiî Abdi,Loyalty to the Revolution,4,CMT-178580c40e35 CMT-5d1546fffb75 CMT-663b2e4cb3f4 CMT-b46554e2045e,Constituent 1 | Special 1 | Joint 1 | Legislative 7,63,11,4.0
+TNP-00523,Mahmoud Gouiaa,Ennahdha,4,CMT-336c11e63d66 CMT-7249209246b3 CMT-78e966e1d482 CMT-e6b2fac8e5c7,Special 2 | Constituent 6 | Special 3 | Legislative 6,62,16,4.0
+TNP-00488,Faiçal Jadlaoui,No bloc,4,CMT-13e8b4757c0d CMT-499d23e8523f CMT-663b2e4cb3f4 CMT-c6c8260db7f4,Legislative 2 | Special 6 | Joint 1 | Constituent 4,62,12,4.0
+TNP-00370,Ahmed Essefi,No bloc,4,CMT-545e8558a206 CMT-5d1546fffb75 CMT-cbc65065020c CMT-e6b2fac8e5c7,Constituent 3 | Special 1 | Special 7 | Legislative 6,62,10,4.0
+TNP-00552,Kamel Ben Romdhane,Ennahdha,4,CMT-13e8b4757c0d CMT-499d23e8523f CMT-4d57513fbffc CMT-cbc65065020c,Legislative 2 | Special 6 | Constituent 5 | Special 7,62,7,4.0
+TNP-00475,Ali Fares,Ennahdha,4,CMT-336c11e63d66 CMT-7249209246b3 CMT-78e966e1d482 CMT-b46554e2045e,Special 2 | Constituent 6 | Special 3 | Legislative 7,61,17,4.0
+TNP-00484,Farida Labidi,Ennahdha,4,CMT-336c11e63d66 CMT-5d1546fffb75 CMT-663b2e4cb3f4 CMT-7249209246b3,Special 2 | Special 1 | Joint 1 | Constituent 6,60,14,4.0
+TNP-00526,Mustapha Ben Jaafar,Ettakatol,4,CMT-5d1546fffb75 CMT-663b2e4cb3f4 CMT-78e966e1d482 CMT-cbc65065020c,Special 1 | Joint 1 | Special 3 | Special 7,57,11,4.0
+TNP-00397,Amel Azzouz,Ennahdha,3,CMT-12bc734f9df1 CMT-336c11e63d66 CMT-4e91930c5e8b,Legislative 1 | Special 2 | Constituent 2,61,3,3.0
+TNP-00551,Wissem Yassine,No bloc,3,CMT-178580c40e35 CMT-52252f4274f6 CMT-78e966e1d482,Constituent 1 | Legislative 3 | Special 3,61,1,3.0
+TNP-00450,Chokri Arfaoui,Democratic Transition,3,CMT-12bc734f9df1 CMT-400b91a3bed5 CMT-4e91930c5e8b,Legislative 1 | Special 5 | Constituent 2,60,3,3.0
+TNP-00385,Zohra Smida,Ennahdha,3,CMT-12bc734f9df1 CMT-4e91930c5e8b CMT-8978fc995f04,Legislative 1 | Constituent 2 | Legislative 5,58,4,3.0
+TNP-00542,Nizar Makhloufi,Loyalty to the Revolution,3,CMT-12bc734f9df1 CMT-78e966e1d482 CMT-c6c8260db7f4,Legislative 1 | Special 3 | Constituent 4,58,6,3.0
+TNP-00416,Hasna Mersit,No bloc,3,CMT-52252f4274f6 CMT-5d1546fffb75 CMT-7249209246b3,Legislative 3 | Special 1 | Constituent 6,57,4,3.0
+TNP-00394,Hedi Ben Braham,Ennahdha,3,CMT-13e8b4757c0d CMT-3b890b1f160a CMT-545e8558a206,Legislative 2 | Special 4 | Constituent 3,57,4,3.0
+TNP-00391,Mouldi Riahi,Ettakatol,3,CMT-4e91930c5e8b CMT-5d1546fffb75 CMT-f2d2d05db58f,Constituent 2 | Special 1 | Legislative 4,57,6,3.0
+TNP-00434,Saâd Bouaïche,Democratic Transition,3,CMT-336c11e63d66 CMT-545e8558a206 CMT-8978fc995f04,Special 2 | Constituent 3 | Legislative 5,57,4,3.0
+TNP-00427,Rafik Tlili,Loyalty to the Revolution,3,CMT-3b890b1f160a CMT-4e91930c5e8b CMT-e6b2fac8e5c7,Special 4 | Constituent 2 | Legislative 6,57,3,3.0
+TNP-00408,Jalel Bouzid,Ettakatol,3,CMT-78e966e1d482 CMT-8978fc995f04 CMT-c6c8260db7f4,Special 3 | Legislative 5 | Constituent 4,57,4,3.0
+TNP-00463,Abderrazak Khallouli,Democratic Transition,3,CMT-13e8b4757c0d CMT-4e91930c5e8b CMT-5d1546fffb75,Legislative 2 | Constituent 2 | Special 1,56,6,3.0
+TNP-00497,Lobna Jeribi,Ettakatol,3,CMT-13e8b4757c0d CMT-4e91930c5e8b CMT-5d1546fffb75,Legislative 2 | Constituent 2 | Special 1,56,6,3.0
+TNP-00514,Mohamed Gahbich,Democratic Alliance,3,CMT-4d57513fbffc CMT-5d1546fffb75 CMT-f2d2d05db58f,Constituent 5 | Special 1 | Legislative 4,56,6,3.0
+TNP-00474,Ali Bechrifa,Democratic Bloc,3,CMT-12bc734f9df1 CMT-545e8558a206 CMT-78e966e1d482,Legislative 1 | Constituent 3 | Special 3,56,8,3.0
+TNP-00378,Ikbel Msadaa,CPR,3,CMT-545e8558a206 CMT-5d1546fffb75 CMT-8978fc995f04,Constituent 3 | Special 1 | Legislative 5,56,6,3.0
+TNP-00531,Monia Gasri,Ennahdha,3,CMT-3b890b1f160a CMT-4d57513fbffc CMT-52252f4274f6,Special 4 | Constituent 5 | Legislative 3,56,4,3.0
+TNP-00376,Iskander Bouallagui,No bloc,3,CMT-3b890b1f160a CMT-5d1546fffb75 CMT-e6b2fac8e5c7,Special 4 | Special 1 | Legislative 6,55,6,3.0
+TNP-00485,Fattoum Lassoued,Ennahdha,3,CMT-4d57513fbffc CMT-78e966e1d482 CMT-b46554e2045e,Constituent 5 | Special 3 | Legislative 7,55,4,3.0
+TNP-00536,Nadia Chaabane,Democratic Bloc,3,CMT-178580c40e35 CMT-336c11e63d66 CMT-e6b2fac8e5c7,Constituent 1 | Special 2 | Legislative 6,55,6,3.0
+TNP-00460,Abdelbasset Becheikh,Ennahdha,3,CMT-12bc734f9df1 CMT-178580c40e35 CMT-499d23e8523f,Legislative 1 | Constituent 1 | Special 6,55,7,3.0
+TNP-00556,Habib Bribech,Ennahdha,3,CMT-13e8b4757c0d CMT-336c11e63d66 CMT-78e966e1d482,Legislative 2 | Special 2 | Special 3,55,7,3.0
+TNP-00519,Mohamed Ali Nasri,No bloc,3,CMT-499d23e8523f CMT-52252f4274f6 CMT-5d1546fffb75,Special 6 | Legislative 3 | Special 1,55,6,3.0
+TNP-00532,Mounir Ben Hnia,Ennahdha,3,CMT-13e8b4757c0d CMT-178580c40e35 CMT-400b91a3bed5,Legislative 2 | Constituent 1 | Special 5,55,6,3.0
+TNP-00540,Nejib Mrad,Ennahdha,3,CMT-3b890b1f160a CMT-7249209246b3 CMT-78e966e1d482,Special 4 | Constituent 6 | Special 3,55,6,3.0
+TNP-00547,Hajer Azaiez,Ennahdha,3,CMT-336c11e63d66 CMT-4e91930c5e8b CMT-e6b2fac8e5c7,Special 2 | Constituent 2 | Legislative 6,54,7,3.0
+TNP-00384,Hasni Badri,Democratic Transition,3,CMT-499d23e8523f CMT-5d1546fffb75 CMT-c6c8260db7f4,Special 6 | Special 1 | Constituent 4,54,8,3.0
+TNP-00395,Hedi Chaouech,No bloc,3,CMT-13e8b4757c0d CMT-78e966e1d482 CMT-c6c8260db7f4,Legislative 2 | Special 3 | Constituent 4,54,8,3.0
+TNP-00539,Najla Bourial,Democratic Alliance,3,CMT-3b890b1f160a CMT-78e966e1d482 CMT-f2d2d05db58f,Special 4 | Special 3 | Legislative 4,54,7,3.0
+TNP-00496,Kaouther Ladgham,Ennahdha,3,CMT-12bc734f9df1 CMT-499d23e8523f CMT-c6c8260db7f4,Legislative 1 | Special 6 | Constituent 4,54,8,3.0
+TNP-00499,Mabrouka Mbarek,CPR,3,CMT-13e8b4757c0d CMT-400b91a3bed5 CMT-4e91930c5e8b,Legislative 2 | Special 5 | Constituent 2,54,7,3.0
+TNP-00436,Salma Baccar,Democratic Bloc,3,CMT-12bc734f9df1 CMT-7249209246b3 CMT-78e966e1d482,Legislative 1 | Constituent 6 | Special 3,54,9,3.0
+TNP-00543,Noômane Fehri,Democratic Bloc,3,CMT-178580c40e35 CMT-336c11e63d66 CMT-f6f9e9d7cbb2,Constituent 1 | Special 2 | Legislative 8,54,4,3.0
+TNP-00364,Zied Laadhari,Ennahdha,3,CMT-336c11e63d66 CMT-545e8558a206 CMT-5d1546fffb75,Special 2 | Constituent 3 | Special 1,53,10,3.0
+TNP-00398,Amel Ghouil,Ennahdha,3,CMT-400b91a3bed5 CMT-545e8558a206 CMT-f2d2d05db58f,Special 5 | Constituent 3 | Legislative 4,53,7,3.0
+TNP-00264,Mehdi Ben Gharbia,Democratic Alliance,3,CMT-178580c40e35 CMT-499d23e8523f CMT-b46554e2045e,Constituent 1 | Special 6 | Legislative 7,53,5,3.0
+TNP-00390,Moncef Cherni,Democratic Transition,3,CMT-13e8b4757c0d CMT-400b91a3bed5 CMT-c6c8260db7f4,Legislative 2 | Special 5 | Constituent 4,53,8,3.0
+TNP-00396,Walid Bennani,Ennahdha,3,CMT-499d23e8523f CMT-545e8558a206 CMT-78e966e1d482,Special 6 | Constituent 3 | Special 3,53,8,3.0
+TNP-00530,Monia Ibrahim,Ennahdha,3,CMT-7249209246b3 CMT-78e966e1d482 CMT-f2d2d05db58f,Constituent 6 | Special 3 | Legislative 4,53,8,3.0
+TNP-00415,Hassan Radhouani,No bloc,3,CMT-499d23e8523f CMT-4e91930c5e8b CMT-f6f9e9d7cbb2,Special 6 | Constituent 2 | Legislative 8,53,3,3.0
+TNP-00419,Hanène Sassi,Democratic Transition,3,CMT-3b890b1f160a CMT-4d57513fbffc CMT-f2d2d05db58f,Special 4 | Constituent 5 | Legislative 4,53,7,3.0
+TNP-00513,Mohamed Essghaier,Ennahdha,3,CMT-400b91a3bed5 CMT-7249209246b3 CMT-b46554e2045e,Special 5 | Constituent 6 | Legislative 7,52,6,3.0
+TNP-00410,Jamel Touir,Ettakatol,3,CMT-12bc734f9df1 CMT-178580c40e35 CMT-663b2e4cb3f4,Legislative 1 | Constituent 1 | Joint 1,52,6,3.0
+TNP-00465,Abdessattar Dhifi,Loyalty to the Revolution,3,CMT-336c11e63d66 CMT-4d57513fbffc CMT-e6b2fac8e5c7,Special 2 | Constituent 5 | Legislative 6,51,8,3.0
+TNP-00414,Habiba Triki,Ennahdha,3,CMT-178580c40e35 CMT-400b91a3bed5 CMT-f6f9e9d7cbb2,Constituent 1 | Special 5 | Legislative 8,51,5,3.0
+TNP-00458,Adel Ben Attia,Ennahdha,3,CMT-178580c40e35 CMT-400b91a3bed5 CMT-f6f9e9d7cbb2,Constituent 1 | Special 5 | Legislative 8,51,5,3.0
+TNP-00502,Mohamed Habib Harguem,Ettakatol,3,CMT-178580c40e35 CMT-400b91a3bed5 CMT-b46554e2045e,Constituent 1 | Special 5 | Legislative 7,51,8,3.0
+TNP-00471,Abdelmajid Najar,Ennahdha,3,CMT-13e8b4757c0d CMT-4e91930c5e8b CMT-663b2e4cb3f4,Legislative 2 | Constituent 2 | Joint 1,51,5,3.0
+TNP-00445,Sana Mersni,Ennahdha,3,CMT-3b890b1f160a CMT-545e8558a206 CMT-f2d2d05db58f,Special 4 | Constituent 3 | Legislative 4,51,10,3.0
+TNP-00510,Mohamed Saidi,Ennahdha,3,CMT-499d23e8523f CMT-52252f4274f6 CMT-c6c8260db7f4,Special 6 | Legislative 3 | Constituent 4,51,9,3.0
+TNP-00277,Mohamed Karim Krifa,No bloc,3,CMT-178580c40e35 CMT-cbc65065020c CMT-f2d2d05db58f,Constituent 1 | Special 7 | Legislative 4,51,0,3.0
+TNP-00558,Noura Ben Hassen,CPR,3,CMT-3b890b1f160a CMT-c6c8260db7f4 CMT-cbc65065020c,Special 4 | Constituent 4 | Special 7,49,2,3.0
+TNP-00374,Azed Badi,Loyalty to the Revolution,3,CMT-4d57513fbffc CMT-663b2e4cb3f4 CMT-e6b2fac8e5c7,Constituent 5 | Joint 1 | Legislative 6,48,5,3.0
+TNP-00324,Sahbi Atig,Ennahdha,3,CMT-4e91930c5e8b CMT-5d1546fffb75 CMT-663b2e4cb3f4,Constituent 2 | Special 1 | Joint 1,48,10,3.0
+TNP-00478,Omar Chetoui,CPR,3,CMT-545e8558a206 CMT-663b2e4cb3f4 CMT-78e966e1d482,Constituent 3 | Joint 1 | Special 3,48,9,3.0
+TNP-00424,Rabeh Khraifi,No bloc,3,CMT-4d57513fbffc CMT-8978fc995f04 CMT-cbc65065020c,Constituent 5 | Legislative 5 | Special 7,48,1,3.0
+TNP-00493,Kamel Saadaoui,No bloc,3,CMT-499d23e8523f CMT-545e8558a206 CMT-cbc65065020c,Special 6 | Constituent 3 | Special 7,46,4,3.0
+TNP-00375,Oussama Al Saghir,Ennahdha,3,CMT-545e8558a206 CMT-78e966e1d482 CMT-cbc65065020c,Constituent 3 | Special 3 | Special 7,43,9,3.0
+TNP-00454,Slaheddine Elhiba,Ennahdha,2,CMT-12bc734f9df1 CMT-c6c8260db7f4,Legislative 1 | Constituent 4,41,2,2.0
+TNP-00467,Abdelaziz Chaabane,Ennahdha,2,CMT-178580c40e35 CMT-3b890b1f160a,Constituent 1 | Special 4,41,0,2.0
+TNP-00511,Mohamed Ben Mabrouk Hamdi,Democratic Alliance,2,CMT-4e91930c5e8b CMT-52252f4274f6,Constituent 2 | Legislative 3,41,0,2.0
+TNP-00379,Lazhar Chamli,CPR,2,CMT-336c11e63d66 CMT-52252f4274f6,Special 2 | Legislative 3,40,1,2.0
+TNP-00411,Jawhara Tiss,Ennahdha,2,CMT-12bc734f9df1 CMT-8978fc995f04,Legislative 1 | Legislative 5,40,1,2.0
+TNP-00407,Jalel Farhat,Democratic Transition,2,CMT-12bc734f9df1 CMT-7249209246b3,Legislative 1 | Constituent 6,40,2,2.0
+TNP-00525,Mourad Amdouni,No bloc,2,CMT-12bc734f9df1 CMT-7249209246b3,Legislative 1 | Constituent 6,40,2,2.0
+TNP-00518,Mohamed Abdelmonem Krir,No bloc,2,CMT-178580c40e35 CMT-52252f4274f6,Constituent 1 | Legislative 3,40,1,2.0
+TNP-00381,Jdidi Essbouîi,No bloc,2,CMT-400b91a3bed5 CMT-4d57513fbffc,Special 5 | Constituent 5,40,0,2.0
+TNP-00521,Mohamed Nejib Hosni,No bloc,2,CMT-336c11e63d66 CMT-4d57513fbffc,Special 2 | Constituent 5,39,2,2.0
+TNP-00413,Hafedh Ibrahim Lassoued,Ennahdha,2,CMT-3b890b1f160a CMT-c6c8260db7f4,Special 4 | Constituent 4,39,2,2.0
+TNP-00480,Fatma Gharbi,No bloc,2,CMT-545e8558a206 CMT-e6b2fac8e5c7,Constituent 3 | Legislative 6,39,1,2.0
+TNP-00377,Essia Naffati,Ennahdha,2,CMT-178580c40e35 CMT-8978fc995f04,Constituent 1 | Legislative 5,39,1,2.0
+TNP-00481,Faiza Kadoussi,No bloc,2,CMT-178580c40e35 CMT-8978fc995f04,Constituent 1 | Legislative 5,39,1,2.0
+TNP-00487,Foued Thamer,Democratic Bloc,2,CMT-4e91930c5e8b CMT-8978fc995f04,Constituent 2 | Legislative 5,39,1,2.0
+TNP-00476,Ali Houiji,Loyalty to the Revolution,2,CMT-3b890b1f160a CMT-545e8558a206,Special 4 | Constituent 3,39,2,2.0
+TNP-00404,Basma Jebali,Ennahdha,2,CMT-52252f4274f6 CMT-c6c8260db7f4,Legislative 3 | Constituent 4,39,2,2.0
+TNP-00541,Nejiba Beryoul,Ennahdha,2,CMT-52252f4274f6 CMT-c6c8260db7f4,Legislative 3 | Constituent 4,39,2,2.0
+TNP-00406,Baya Jaouadi,Ennahdha,2,CMT-499d23e8523f CMT-4e91930c5e8b,Special 6 | Constituent 2,39,1,2.0
+TNP-00482,Fathi Eltaif,No bloc,2,CMT-400b91a3bed5 CMT-52252f4274f6,Special 5 | Legislative 3,39,1,2.0
+TNP-00470,Abdelkader Kadri,Ennahdha,2,CMT-4d57513fbffc CMT-52252f4274f6,Constituent 5 | Legislative 3,39,1,2.0
+TNP-00507,Mohamed Karray Jerbi,Loyalty to the Revolution,2,CMT-400b91a3bed5 CMT-7249209246b3,Special 5 | Constituent 6,39,1,2.0
+TNP-00528,Moufida Marzouki,Ennahdha,2,CMT-3b890b1f160a CMT-52252f4274f6,Special 4 | Legislative 3,39,1,2.0
+TNP-00437,Salma Sarsout,Ennahdha,2,CMT-7249209246b3 CMT-8978fc995f04,Constituent 6 | Legislative 5,39,0,2.0
+TNP-00550,Haythem Belgacem,CPR,2,CMT-400b91a3bed5 CMT-8978fc995f04,Special 5 | Legislative 5,39,0,2.0
+TNP-00357,Yamina Zoghlami,Ennahdha,2,CMT-499d23e8523f CMT-f2d2d05db58f,Special 6 | Legislative 4,39,0,2.0
+TNP-00267,Moez Belhaj Rhouma,Ennahdha,2,CMT-13e8b4757c0d CMT-3b890b1f160a,Legislative 2 | Special 4,38,2,2.0
+TNP-00369,Ahmed Mechergui,Ennahdha,2,CMT-4e91930c5e8b CMT-b46554e2045e,Constituent 2 | Legislative 7,38,1,2.0
+TNP-00446,Sana Haddad,Ennahdha,2,CMT-4e91930c5e8b CMT-b46554e2045e,Constituent 2 | Legislative 7,38,1,2.0
+TNP-00380,Bechir Chammem,Ennahdha,2,CMT-12bc734f9df1 CMT-178580c40e35,Legislative 1 | Constituent 1,38,5,2.0
+TNP-00392,Naceur Brahmi,No bloc,2,CMT-12bc734f9df1 CMT-178580c40e35,Legislative 1 | Constituent 1,38,5,2.0
+TNP-00423,Dalila Bouain,Ennahdha,2,CMT-12bc734f9df1 CMT-178580c40e35,Legislative 1 | Constituent 1,38,5,2.0
+TNP-00466,Abdessalem Chaabane,CPR,2,CMT-12bc734f9df1 CMT-178580c40e35,Legislative 1 | Constituent 1,38,5,2.0
+TNP-00389,Ferjani Doghmane,Ennahdha,2,CMT-13e8b4757c0d CMT-4d57513fbffc,Legislative 2 | Constituent 5,38,2,2.0
+TNP-00486,Fattouma Attia,Ennahdha,2,CMT-13e8b4757c0d CMT-4d57513fbffc,Legislative 2 | Constituent 5,38,2,2.0
+TNP-00443,Samir Bettaieb,Democratic Bloc,2,CMT-400b91a3bed5 CMT-545e8558a206,Special 5 | Constituent 3,38,3,2.0
+TNP-00418,Halima Guenni,Ennahdha,2,CMT-8978fc995f04 CMT-c6c8260db7f4,Legislative 5 | Constituent 4,38,2,2.0
+TNP-00448,Chokri Yaich,Democratic Alliance,2,CMT-8978fc995f04 CMT-c6c8260db7f4,Legislative 5 | Constituent 4,38,2,2.0
+TNP-00440,Selim Ben Abdessalam,No bloc,2,CMT-4d57513fbffc CMT-f2d2d05db58f,Constituent 5 | Legislative 4,38,2,2.0
+TNP-00464,Abderraouf Ayadi,Loyalty to the Revolution,2,CMT-3b890b1f160a CMT-4d57513fbffc,Special 4 | Constituent 5,38,2,2.0
+TNP-00422,Dalila Babba,Ennahdha,2,CMT-400b91a3bed5 CMT-e6b2fac8e5c7,Special 5 | Legislative 6,38,1,2.0
+TNP-00512,Mahmoud El May,No bloc,2,CMT-400b91a3bed5 CMT-e6b2fac8e5c7,Special 5 | Legislative 6,38,1,2.0
+TNP-00529,Mouna Ben Nasr,No bloc,2,CMT-3b890b1f160a CMT-8978fc995f04,Special 4 | Legislative 5,38,1,2.0
+TNP-00559,Jamal Bouajaja,Ennahdha,2,CMT-8978fc995f04 CMT-f2d2d05db58f,Legislative 5 | Legislative 4,38,1,2.0
+TNP-00560,Frej Ben Amor,Ennahdha,2,CMT-8978fc995f04 CMT-e6b2fac8e5c7,Legislative 5 | Legislative 6,38,0,2.0
+TNP-00453,Slaheddine Zahaf,Democratic Bloc,2,CMT-3b890b1f160a CMT-b46554e2045e,Special 4 | Legislative 7,38,0,2.0
+TNP-00459,Aicha Dhaouadi,Ennahdha,2,CMT-3b890b1f160a CMT-e6b2fac8e5c7,Special 4 | Legislative 6,37,2,2.0
+TNP-00538,Nabiha Torjmane,Ennahdha,2,CMT-13e8b4757c0d CMT-400b91a3bed5,Legislative 2 | Special 5,37,3,2.0
+TNP-00544,Noureddine Mrabti,Democratic Transition,2,CMT-7249209246b3 CMT-e6b2fac8e5c7,Constituent 6 | Legislative 6,37,2,2.0
+TNP-00447,Sonia Toumia,Ennahdha,2,CMT-499d23e8523f CMT-e6b2fac8e5c7,Special 6 | Legislative 6,37,1,2.0
+TNP-00557,Bechir Nefzi,CPR,2,CMT-499d23e8523f CMT-e6b2fac8e5c7,Special 6 | Legislative 6,37,1,2.0
+TNP-00520,Mohamed Lotfi Ben Mesbah,Democratic Bloc,2,CMT-499d23e8523f CMT-52252f4274f6,Special 6 | Legislative 3,37,2,2.0
+TNP-00421,Khira Sghairi,Ennahdha,2,CMT-4d57513fbffc CMT-e6b2fac8e5c7,Constituent 5 | Legislative 6,36,3,2.0
+TNP-00546,Hajer Mnifi,Ennahdha,2,CMT-4d57513fbffc CMT-b46554e2045e,Constituent 5 | Legislative 7,36,2,2.0
+TNP-00426,Rabiaa Najlaoui,No bloc,2,CMT-178580c40e35 CMT-b46554e2045e,Constituent 1 | Legislative 7,36,3,2.0
+TNP-00524,Mahmoud Baroudi,Democratic Alliance,2,CMT-499d23e8523f CMT-b46554e2045e,Special 6 | Legislative 7,36,1,2.0
+TNP-00456,Tarek Labidi,Ettakatol,2,CMT-13e8b4757c0d CMT-c6c8260db7f4,Legislative 2 | Constituent 4,36,5,2.0
+TNP-00301,Neji Jmal,Ennahdha,2,CMT-545e8558a206 CMT-78e966e1d482,Constituent 3 | Special 3,36,6,2.0
+TNP-00373,Ahmed Nejib Chebbi,No bloc,2,CMT-545e8558a206 CMT-f2d2d05db58f,Constituent 3 | Legislative 4,36,5,2.0
+TNP-00386,Sadok Chourou,Ennahdha,2,CMT-4e91930c5e8b CMT-f6f9e9d7cbb2,Constituent 2 | Legislative 8,36,1,2.0
+TNP-00554,Souhir Dardouri,Democratic Transition,2,CMT-336c11e63d66 CMT-7249209246b3,Special 2 | Constituent 6,36,5,2.0
+TNP-00451,Salah Chouaib,No bloc,2,CMT-400b91a3bed5 CMT-b46554e2045e,Special 5 | Legislative 7,36,2,2.0
+TNP-00509,Mohamed Neji Gharsalli,No bloc,2,CMT-c6c8260db7f4 CMT-f6f9e9d7cbb2,Constituent 4 | Legislative 8,36,1,2.0
+TNP-00517,Mohamed Chafik Zorkin,Democratic Alliance,2,CMT-c6c8260db7f4 CMT-f6f9e9d7cbb2,Constituent 4 | Legislative 8,36,1,2.0
+TNP-00368,Ibrahim Kassas,No bloc,2,CMT-7249209246b3 CMT-b46554e2045e,Constituent 6 | Legislative 7,35,3,2.0
+TNP-00533,Mounira Omri,Ennahdha,2,CMT-7249209246b3 CMT-b46554e2045e,Constituent 6 | Legislative 7,35,3,2.0
+TNP-00501,Mohsen Kaabi,Ennahdha,2,CMT-499d23e8523f CMT-c6c8260db7f4,Special 6 | Constituent 4,35,5,2.0
+TNP-00441,Slimane Hlal,Ennahdha,2,CMT-178580c40e35 CMT-f6f9e9d7cbb2,Constituent 1 | Legislative 8,34,3,2.0
+TNP-00506,Mohamed Elarbi Fadhel Moussa,Democratic Bloc,2,CMT-4d57513fbffc CMT-663b2e4cb3f4,Constituent 5 | Joint 1,33,2,2.0
+TNP-00449,Chokri Kastalli,Democratic Alliance,2,CMT-12bc734f9df1 CMT-cbc65065020c,Legislative 1 | Special 7,32,0,2.0
+TNP-00383,Habib Khedher,Ennahdha,2,CMT-5d1546fffb75 CMT-663b2e4cb3f4,Special 1 | Joint 1,31,6,2.0
+TNP-00498,Mabrouk Hrizi,Loyalty to the Revolution,2,CMT-663b2e4cb3f4 CMT-b46554e2045e,Joint 1 | Legislative 7,30,3,2.0
+TNP-00367,Ibrahim Hamdi,Loyalty to the Revolution,2,CMT-7249209246b3 CMT-cbc65065020c,Constituent 6 | Special 7,30,0,2.0
+TNP-00141,Anouar Marzouki,Democratic Transition,1,CMT-12bc734f9df1,Legislative 1,22,0,1.0
+TNP-00429,Rim Thairi,No bloc,1,CMT-12bc734f9df1,Legislative 1,22,0,1.0
+TNP-00432,Samia Ferchichi,Ennahdha,1,CMT-12bc734f9df1,Legislative 1,22,0,1.0
+TNP-00515,Mohamed Nejib Khila,No bloc,1,CMT-12bc734f9df1,Legislative 1,22,0,1.0
+TNP-00537,Nabila Askri Snoussi,Ennahdha,1,CMT-12bc734f9df1,Legislative 1,22,0,1.0
+TNP-00420,Khmais Ksila,No bloc,1,CMT-336c11e63d66,Special 2,21,0,1.0
+TNP-00494,Kamel Ammar,Ennahdha,1,CMT-545e8558a206,Constituent 3,21,0,1.0
+TNP-00387,Tahar Hmila,No bloc,1,CMT-4e91930c5e8b,Constituent 2,21,0,1.0
+TNP-00399,Amira Marzouk,No bloc,1,CMT-4e91930c5e8b,Constituent 2,21,0,1.0
+TNP-00473,Issam Chebbi,No bloc,1,CMT-4e91930c5e8b,Constituent 2,21,0,1.0
+TNP-00535,Maya Jeribi,No bloc,1,CMT-4e91930c5e8b,Constituent 2,21,0,1.0
+TNP-00007,Hichem Hosni,No bloc,1,CMT-4d57513fbffc,Constituent 5,20,0,1.0
+TNP-00490,Karim Bouabdelli,Democratic Bloc,1,CMT-13e8b4757c0d,Legislative 2,20,0,1.0
+TNP-00508,Moncef Cheikhrouhou,Democratic Alliance,1,CMT-13e8b4757c0d,Legislative 2,20,0,1.0
+TNP-00534,Mouldi Zidi,No bloc,1,CMT-13e8b4757c0d,Legislative 2,20,0,1.0
+TNP-00555,Mokhtar Lamouchi,Ennahdha,1,CMT-3b890b1f160a,Special 4,20,0,1.0
+TNP-00401,Imen Ben Mhamed,Ennahdha,1,CMT-f2d2d05db58f,Legislative 4,20,0,1.0
+TNP-00442,Samir Ben Amor,CPR,1,CMT-f2d2d05db58f,Legislative 4,20,0,1.0
+TNP-00492,Kalthoum Badreddine,Ennahdha,1,CMT-f2d2d05db58f,Legislative 4,20,0,1.0
+TNP-00549,Hichem Ben Jemaa,CPR,1,CMT-f2d2d05db58f,Legislative 4,20,0,1.0
+TNP-00561,Khalid Belhaj,No bloc,1,CMT-f2d2d05db58f,Legislative 4,20,0,1.0
+TNP-00371,Ahmed Smiai,Ennahdha,1,CMT-7249209246b3,Constituent 6,20,0,1.0
+TNP-00372,Ahmed Brahim,Democratic Bloc,1,CMT-7249209246b3,Constituent 6,20,0,1.0
+TNP-00405,Bechir Lazzem,Ennahdha,1,CMT-52252f4274f6,Legislative 3,20,0,1.0
+TNP-00409,Jamel Gargouri,Democratic Alliance,1,CMT-52252f4274f6,Legislative 3,20,0,1.0
+TNP-00428,Romdhane Doghmani,Democratic Transition,1,CMT-52252f4274f6,Legislative 3,20,0,1.0
+TNP-00461,Abdelhalim Zouari,Ennahdha,1,CMT-52252f4274f6,Legislative 3,20,0,1.0
+TNP-00483,Farah Nsibi,No bloc,1,CMT-52252f4274f6,Legislative 3,20,0,1.0
+TNP-00522,Mohamed Nizar Kacem,No bloc,1,CMT-400b91a3bed5,Special 5,20,0,1.0
+TNP-00174,Ameur Laraiedh,Ennahdha,1,CMT-8978fc995f04,Legislative 5,19,0,1.0
+TNP-00285,Mohamed Zrig,Ennahdha,1,CMT-8978fc995f04,Legislative 5,19,0,1.0
+TNP-00382,Habib Ellouz,Ennahdha,1,CMT-8978fc995f04,Legislative 5,19,0,1.0
+TNP-00433,Souad Abderrahim,Ennahdha,1,CMT-e6b2fac8e5c7,Legislative 6,19,0,1.0
+TNP-00479,Fadhel Elouej,No bloc,1,CMT-b46554e2045e,Legislative 7,18,0,1.0
+TNP-00393,Nafti Mahdhi,Ennahdha,1,CMT-f6f9e9d7cbb2,Legislative 8,16,0,1.0
+TNP-00417,Hattab Barakati,No bloc,1,CMT-f6f9e9d7cbb2,Legislative 8,16,0,1.0
+TNP-00435,Said Kharchoufi,No bloc,1,CMT-f6f9e9d7cbb2,Legislative 8,16,0,1.0
+TNP-00469,Abdelkader Ben Khmis,Democratic Bloc,1,CMT-f6f9e9d7cbb2,Legislative 8,16,0,1.0
+TNP-00489,Kais Mokhtar,No bloc,1,CMT-f6f9e9d7cbb2,Legislative 8,16,0,1.0
+TNP-00495,Kamel Ben Amara,Ennahdha,1,CMT-f6f9e9d7cbb2,Legislative 8,16,0,1.0
+TNP-00505,Mohamed Tahar Tlili,Ennahdha,1,CMT-f6f9e9d7cbb2,Legislative 8,16,0,1.0
+TNP-00553,Soulef Ksantini,Ennahdha,1,CMT-f6f9e9d7cbb2,Legislative 8,16,0,1.0
+TNP-00562,Nafissa Marzouki,Ettakatol,1,CMT-cbc65065020c,Special 7,10,0,1.0

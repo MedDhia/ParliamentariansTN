@@ -24,12 +24,15 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+from collections import Counter
+
 import matplotlib.lines as mlines
 import matplotlib.pyplot as plt
 import networkx as nx
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import _labels as LBL  # noqa: E402
+import _network as NET  # noqa: E402
 import _style as S  # noqa: E402
 
 ASSEMBLY = "ARP-2023"
@@ -83,9 +86,21 @@ def main() -> None:
         col, row = i % per_row, i // per_row
         pos[n] = (0.02 + 0.965 * col / max(per_row - 1, 1), -0.28 - 0.075 * row)
 
-    fig, ax = plt.subplots(figsize=S.figsize(8.0, 7.0))
-    blue, orange = S.categorical(2, all_pairs=True)
-    grey = S.CHROME["deemph"]
+    # Colour is bloc, on the same three-class cap as the committee networks, so
+    # the two are directly comparable. Never-co-signers are told apart by
+    # *position* — they sit in their own labelled band below — which leaves
+    # colour free to carry the substantive variable rather than participation.
+    bloc_of = NET._bloc_of(ASSEMBLY)
+    bloc_sizes = Counter(bloc_of.get(n, "No bloc") for n in graph.nodes())
+    top_blocs = [b for b, _ in bloc_sizes.most_common(2)]
+    palette = S.categorical(3, all_pairs=True)
+    bloc_colour = {b: palette[i] for i, b in enumerate(top_blocs)}
+    other_colour = palette[-1]
+
+    def colour(n: str) -> str:
+        return bloc_colour.get(bloc_of.get(n, "No bloc"), other_colour)
+
+    fig, ax = plt.subplots(figsize=S.figsize(8.0, 7.4))
 
     weights = [d["weight"] for _, _, d in graph.edges(data=True)]
     max_w = max(weights) if weights else 1
@@ -99,11 +114,13 @@ def main() -> None:
     nx.draw_networkx_nodes(
         graph, pos, ax=ax, nodelist=connected,
         node_size=[18 + 150 * (degree[n] / max_degree) for n in connected],
-        node_color=blue, linewidths=1.0, edgecolors=S.CHROME["surface"],
+        node_color=[colour(n) for n in connected],
+        linewidths=1.0, edgecolors=S.CHROME["surface"],
     )
     nx.draw_networkx_nodes(
-        graph, pos, ax=ax, nodelist=isolated, node_size=18,
-        node_color=grey, linewidths=0.6, edgecolors=S.CHROME["surface"],
+        graph, pos, ax=ax, nodelist=isolated, node_size=22,
+        node_color=[colour(n) for n in isolated],
+        linewidths=0.6, edgecolors=S.CHROME["surface"],
     )
 
     placed: list[tuple[float, float]] = []
@@ -137,6 +154,28 @@ def main() -> None:
         )
 
     ax.set_axis_off()
+
+    nx.set_node_attributes(graph, {n: bloc_of.get(n, "No bloc") for n in graph}, "bloc")
+    try:
+        assortativity = nx.attribute_assortativity_coefficient(graph, "bloc")
+    except (ZeroDivisionError, ValueError):
+        assortativity = float("nan")
+    within = sum(1 for u, v in graph.edges()
+                 if bloc_of.get(u, "a") == bloc_of.get(v, "b"))
+
+    # Recompute figure 16's coefficient rather than quoting a remembered one:
+    # the contrast is the whole point of the sentence, and a hardcoded number
+    # goes stale silently the next time the collectors change.
+    committee_graph, _ = NET.build_graph(ASSEMBLY)
+    nx.set_node_attributes(
+        committee_graph,
+        {n: bloc_of.get(n, "No bloc") for n in committee_graph}, "bloc")
+    try:
+        committee_assortativity = nx.attribute_assortativity_coefficient(
+            committee_graph, "bloc")
+    except (ZeroDivisionError, ValueError):
+        committee_assortativity = float("nan")
+
     S.titles(
         ax,
         "Written-question co-signature, chamber elected in 2023",
@@ -144,16 +183,23 @@ def main() -> None:
         f"question with another; {graph.number_of_edges():,} ties.\nFrom 6,332 written "
         "questions, of which only 78 carry more than one signatory — joint filing is rare. "
         "Edge weight is\nthe number of shared questions; use the Newman-corrected weight in "
-        "the CSV for centrality, since one mass filing\ncan manufacture hundreds of dyads.",
+        "the CSV for centrality, since one mass filing\ncan manufacture hundreds of dyads.\n"
+        f"Bloc assortativity {assortativity:+.2f} ({within} of {graph.number_of_edges():,} "
+        "ties are within-bloc): unlike committee membership, which is assigned and\nignores "
+        f"bloc (figure 16, {committee_assortativity:+.2f}), co-signing is chosen — and it "
+        "follows bloc lines.",
     )
     ax.legend(
         handles=[
             mlines.Line2D([], [], marker="o", linestyle="none", markersize=7,
-                          color=blue, label="Co-signed at least once (size = degree)"),
-            mlines.Line2D([], [], marker="o", linestyle="none", markersize=5,
-                          color=grey, label="Never co-signed"),
+                          color=bloc_colour[b], label=S.label(f"{b} ({bloc_sizes[b]})"))
+            for b in top_blocs
+        ] + [
+            mlines.Line2D([], [], marker="o", linestyle="none", markersize=7,
+                          color=other_colour, label=S.label(
+                              f"Other blocs ({sum(v for k, v in bloc_sizes.items() if k not in top_blocs)})")),
         ],
-        loc="upper right", bbox_to_anchor=(1.02, 1.0), fontsize=7.6,
+        loc="upper right", bbox_to_anchor=(1.02, 1.02), fontsize=7.6,
     )
     S.source_note(fig, "ParliamentariansTN · data/networks/edges_question_cosignature.csv")
 
@@ -161,6 +207,7 @@ def main() -> None:
         {
             "person_id": n,
             "name_lat": persons.get(n, {}).get("name_lat", ""),
+            "bloc": bloc_of.get(n, ""),
             "cosignature_degree": degree[n],
             "cosigned_questions_total": sum(
                 d["weight"] for _, _, d in graph.edges(n, data=True)),

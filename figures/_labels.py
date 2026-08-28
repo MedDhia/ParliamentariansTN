@@ -231,6 +231,30 @@ def committee(name_ar: str, name_lat: str = "", name_en: str = "",
     )
 
 
+_COMMITTEE_PREFIX = re.compile(
+    r"^(?:la\s+)?commissions?\s+(?:de\s+la\s+|de\s+l['’]|de\s+|du\s+|des\s+|d['’])?",
+    re.IGNORECASE,
+)
+
+
+def committee_short(name_ar: str, name_lat: str = "", name_en: str = "",
+                    limit: int = 26) -> str:
+    """Committee label with the boilerplate prefix removed.
+
+    Every French committee name begins "Commission de la …", so truncating from
+    the left spends the whole budget on the part they all share and cuts off the
+    only word that tells them apart — "Commission de la sant…" and "Commission de
+    la Plan…" differ in characters 18 onward. Dropping the prefix puts the policy
+    domain first, which is what a rim label has room for.
+    """
+    full = committee(name_ar, name_lat, name_en, limit=200)
+    stripped = _COMMITTEE_PREFIX.sub("", full).strip(" ,")
+    if not stripped:
+        stripped = full
+    stripped = stripped[0].upper() + stripped[1:] if stripped else stripped
+    return _shorten(stripped, limit)
+
+
 def person_name(name_lat: str) -> str:
     """Display form of a Latin-script personal name.
 

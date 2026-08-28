@@ -1,137 +1,96 @@
 """Figure 17 — Deputies and committees as a bipartite network, 2023 chamber.
 
-The one-mode projections in figures 14–16 are dense because projection *creates*
-density: put nine people on a committee and you have created 36 ties. This figure
-shows the structure those projections are derived from — deputies on one side,
-committees on the other, an edge where a deputy sits on a committee — which is
-sparse, legible, and closer to the underlying fact.
+The one-mode projection in figure 16 is dense because projection *creates*
+density: put twenty people on a committee and you have created 190 ties. This
+figure shows the structure that projection starts from — an edge wherever a
+deputy sits on a committee — which is sparse, countable, and closer to the
+underlying fact. 247 memberships stand behind 1,579 projected dyads.
 
-It is the honest companion to the projections, and the network guide recommends
-starting here: anyone whose argument depends on tie strength should build their
-own projection from this incidence structure rather than inherit someone else's
-weighting.
+**It uses figure 16's exact coordinates.** Same deputies, same committee anchors,
+same positions; only the ties differ. That is the point of the pair: whatever
+looks like structure in figure 16 can be checked here against the memberships it
+was manufactured from, with nothing moved in between. Anyone whose argument
+depends on tie strength should build their own projection from this incidence
+structure rather than inherit someone else's weighting.
 
-Committees are drawn as labelled squares sized by membership; deputies as small
-circles. The 2023 chamber is used because it is the only one whose committees
-carry Latin-script names in the data, so the hubs can be labelled without
-inventing translations.
+Drawing the memberships rather than the dyads is also what makes a deputy's
+position legible: her spokes fan out to each committee she sits on, so the rule
+behind the layout — angle is which committees, depth is how many — is visible
+rather than asserted.
 
-What it shows: committee sizes are uneven, and a visible minority of deputies sit
-on two or more committees — those are the members who generate most of the ties
-in figure 16.
+The 2023 chamber is used because it is the only one whose committees carry
+Latin-script names in the data, so the anchors can be labelled without inventing
+translations.
+
+An earlier version laid this out with a spring simulation, which put the
+committees wherever the physics landed and made the comparison with figure 16
+impossible.
 """
 
 from __future__ import annotations
 
 import sys
-from collections import defaultdict
 from pathlib import Path
 
 import matplotlib.lines as mlines
 import matplotlib.pyplot as plt
-import networkx as nx
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import _labels as LBL  # noqa: E402
+import _network as NET  # noqa: E402
 import _style as S  # noqa: E402
 
 ASSEMBLY = "ARP-2023"
-SEED = 20260827
 
 
 def main() -> None:
-    committees = {c["committee_id"]: c for c in S.load("committees")
-                  if c["assembly_id"] == ASSEMBLY}
     persons = {p["person_id"]: p for p in S.load("persons")}
+    frame = NET.Frame(ASSEMBLY)
+    if not frame.order:
+        raise SystemExit(f"no committee data for {ASSEMBLY}")
 
-    graph = nx.Graph()
-    seats: defaultdict[str, int] = defaultdict(int)
-    memberships: defaultdict[str, int] = defaultdict(int)
-    rows = []
+    roles = {}
     for r in S.load("bipartite_person_committee"):
-        if r["assembly_id"] != ASSEMBLY:
-            continue
-        cid, pid = r["committee_id"], r["person_id"]
-        if cid not in committees:
-            continue
-        graph.add_node(cid, kind="committee")
-        graph.add_node(pid, kind="person")
-        graph.add_edge(pid, cid)
-        rows.append({
-            "person_id": pid,
-            "name_lat": persons.get(pid, {}).get("name_lat", ""),
-            "committee_id": cid,
-            "committee": LBL.committee(committees[cid]["name_ar"],
-                                       committees[cid]["name_lat"],
-                                       committees[cid]["name_en"], limit=70),
-            "role": r["role"],
-        })
+        if r["assembly_id"] == ASSEMBLY and r["committee_id"] in frame.rows:
+            roles.setdefault((r["person_id"], r["committee_id"]), set()).add(r["role"])
 
-    if not graph:
-        raise SystemExit(f"no bipartite committee data for {ASSEMBLY}")
+    people = sorted(frame.portfolio)
+    memberships = sorted(
+        (p, c) for p in people for c in frame.portfolio[p] if c in frame.anchors
+    )
 
-    people = [n for n, d in graph.nodes(data=True) if d["kind"] == "person"]
-    comms = [n for n, d in graph.nodes(data=True) if d["kind"] == "committee"]
-
-    # Count distinct committees per deputy, and distinct deputies per committee,
-    # from the graph rather than from the input rows. The bipartite table carries
-    # one row per *role* and per dated spell, so a deputy who chairs a committee
-    # appears on it twice (once as member, once as chair) and one who leaves and
-    # rejoins appears twice again. Counting rows put 117 deputies on more than one
-    # committee out of 152 — arithmetically impossible against 247 memberships.
-    for n in people:
-        memberships[n] = graph.degree(n)
-    for c in comms:
-        seats[c] = graph.degree(c)
-
-    pos = nx.spring_layout(graph, seed=SEED, k=0.42, iterations=300)
-
-    fig, ax = plt.subplots(figsize=S.figsize(8.0, 7.0))
+    fig, ax = plt.subplots(figsize=S.figsize(8.2, 8.2))
     blue, orange = S.categorical(2, all_pairs=True)
 
-    nx.draw_networkx_edges(graph, pos, ax=ax, width=0.5,
-                           edge_color=S.CHROME["axis"], alpha=0.55)
-    # Deputies: small circles, sized by how many committees they sit on.
-    nx.draw_networkx_nodes(
-        graph, pos, ax=ax, nodelist=people,
-        node_size=[16 + 26 * memberships[n] for n in people],
-        node_color=blue, linewidths=0.8, edgecolors=S.CHROME["surface"],
+    frame.draw_rim(ax)
+    for person, cid in memberships:
+        (x0, y0), (x1, y1) = frame.pos[person], frame.anchors[cid]
+        ax.plot([x0, x1], [y0, y1], color=S.CHROME["axis"], linewidth=0.45,
+                alpha=0.55, zorder=1, solid_capstyle="round")
+
+    ax.scatter(
+        [frame.pos[p][0] for p in people], [frame.pos[p][1] for p in people],
+        s=[16 + 22 * len(frame.portfolio[p]) for p in people],
+        c=blue, linewidths=0.8, edgecolors=S.CHROME["surface"], zorder=3,
     )
-    # Committees: squares, sized by membership.
-    nx.draw_networkx_nodes(
-        graph, pos, ax=ax, nodelist=comms, node_shape="s",
-        node_size=[40 + 7.0 * seats[n] for n in comms],
-        node_color=orange, linewidths=1.0, edgecolors=S.CHROME["surface"],
+    ax.scatter(
+        [frame.anchors[c][0] for c in frame.order],
+        [frame.anchors[c][1] for c in frame.order],
+        s=[26 + 5.5 * frame.seats[c] for c in frame.order], marker="s",
+        c=orange, linewidths=1.0, edgecolors=S.CHROME["surface"], zorder=4,
     )
 
-    # Label above the square by default, below when that would land on a label
-    # already placed. Two committees whose squares sit close together otherwise
-    # print one name over the other.
-    placed: list[tuple[float, float]] = []
-    for cid in sorted(comms, key=lambda c: -seats[c]):
-        name = LBL.committee(committees[cid]["name_ar"], committees[cid]["name_lat"],
-                             committees[cid]["name_en"], limit=26)
-        x, y = pos[cid]
-        above = not any(abs(x - px) < 0.28 and abs((y + 0.035) - py) < 0.05
-                        for px, py in placed)
-        dy, va = (10, "bottom") if above else (-11, "top")
-        placed.append((x, y + (0.035 if above else -0.035)))
-        ax.annotate(
-            S.label(name), xy=(x, y), xytext=(0, dy), textcoords="offset points",
-            ha="center", va=va, fontsize=6.6, color=S.CHROME["text_primary"], zorder=6,
-            bbox=dict(boxstyle="round,pad=0.18", facecolor=S.CHROME["surface"],
-                      edgecolor="none", alpha=0.85),
-        )
-
-    ax.set_axis_off()
-    multi = sum(1 for n in people if memberships[n] > 1)
+    frame.set_limits(ax)
+    multi = sum(1 for p in people if len(frame.portfolio[p]) > 1)
     S.titles(
         ax,
         "Deputies and committees, chamber elected in 2023",
-        f"{len(people)} deputies, {len(comms)} committees, {graph.number_of_edges()} "
-        f"memberships. {multi} deputies sit on more than one committee — they are what\n"
-        "makes the one-mode projection in figure 16 dense. Committee names are the "
-        "chamber's own French labels, shortened.",
+        f"{len(people)} deputies, {len(frame.order)} committees, {len(memberships)} "
+        "memberships — the incidence structure figure 16's 1,579 ties are\nprojected from. "
+        "Identical coordinates to figure 16, so the two differ only in which ties are "
+        f"drawn. {multi} deputies\nsit on more than one committee; their spokes are what "
+        "makes the projection dense. Committee names are the\nchamber's own French "
+        "labels, shortened, with the boilerplate prefix dropped.",
     )
     ax.legend(
         handles=[
@@ -140,10 +99,23 @@ def main() -> None:
             mlines.Line2D([], [], marker="s", linestyle="none", markersize=8,
                           color=orange, label="Committee (size = members)"),
         ],
-        loc="lower left", bbox_to_anchor=(-0.02, -0.02), ncol=2, fontsize=7.6,
+        loc="lower left", bbox_to_anchor=(-0.01, -0.005), ncol=2, fontsize=7.6,
     )
     S.source_note(fig, "ParliamentariansTN · data/networks/bipartite_person_committee.csv")
-    S.save(fig, "fig17_committee_bipartite_arp2023", rows)
+
+    S.save(fig, "fig17_committee_bipartite_arp2023", [
+        {
+            "person_id": person,
+            "name_lat": persons.get(person, {}).get("name_lat", ""),
+            "committee_id": cid,
+            "committee": LBL.committee(frame.rows[cid]["name_ar"],
+                                       frame.rows[cid]["name_lat"],
+                                       frame.rows[cid]["name_en"], limit=70),
+            "committee_label": frame.label(cid),
+            "roles": " ".join(sorted(roles.get((person, cid), ()))),
+        }
+        for person, cid in memberships
+    ])
 
 
 if __name__ == "__main__":
