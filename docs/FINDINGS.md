@@ -162,7 +162,49 @@ anything at all.
 
 ---
 
-## 6. Floor behaviour
+## 6. Long-run elite persistence: no surname signal
+
+**Surnames from the 1956 Constituent Assembly do not reach modern parliament more
+than chance.** 51 of 742 post-2011 deputies (6.9%) carry a surname also borne by
+a 1956 member, and 29 of the 105 distinct 1956 surnames reappear. Both look like
+persistence and neither is: a null cohort of the same size, drawn from the modern
+pool itself, covers **9.2%** (sd 1.2). The observed value sits 1.9 standard
+deviations *below* chance, so the raw overlap is fully explained by how common
+Tunisian surnames are.
+
+| specification | observed | null | z |
+| --- | --- | --- | --- |
+| nasab particle kept | 6.9% | 9.2% | −1.90 |
+| nasab particle dropped | 8.0% | 11.0% | −2.23 |
+| given-name-like candidates removed | 6.8% | 9.5% | −2.13 |
+
+· *Reproduce with `python examples/surname_persistence.py`*
+
+**The design is blunt, and that is the more important result.** Injecting
+artificial descendants shows it detects persistence only at **≥5% of the modern
+chamber** (40 people; at 30 the power is zero). And it finds nothing in a
+positive control either: between chambers five years apart, with the members who
+actually sat in both removed, surname continuity runs z = +0.5 and +0.4 —
+directionally positive, nowhere near significant.
+
+So the defensible claim is narrow: **large-scale dynastic reproduction of the
+founding elite can be ruled out; a handful of persistent families cannot.** Three
+limits do the work here and none is fixable with the present data:
+
+- **A shared surname is not kinship.** 62% of modern deputies have a surname
+  unique within modern parliament, so the name space is wide — but matching on
+  names identifies neither descent nor its absence.
+- **There is a fifty-five-year hole in the middle.** Twelve chambers between 1959
+  and 2011 have no roster, so this compares 1956 against 2011+ directly. Families
+  could have held seats throughout the single-party era and left before 2011, and
+  nothing here would show it.
+- **The null is a demanding benchmark.** Its cohorts are drawn from the modern
+  pool, so they are frequency-matched to the target by construction. The observed
+  falling *below* it is consistent with 1956 surnames simply having become less
+  common in the parliamentary population — plausibly regional recomposition — which
+  is not the same thing as the absence of dynasties.
+
+## 7. Floor behaviour
 
 **Turning up and voting are not the same thing.** Across 216 members of the
 2019 chamber the median gap between plenary attendance and vote participation is
@@ -197,12 +239,18 @@ Stated plainly, because the absences are as important as the findings.
   method used for the roster.
 - **Exact dates for 2014–2019 bloc changes.** They are bracketed to the interval
   between web captures, never to the day.
+- **Kinship, or dynastic descent.** There is no genealogical field. Section 6
+  tests the closest available proxy — shared surnames — and can only rule out
+  persistence at a scale of roughly 5% of a chamber. Small numbers of persistent
+  families are invisible to it, and a surname match is never itself evidence of
+  descent.
 - **Causal claims from any of the above.** These are descriptive results on
   observational data with a non-random coverage gap.
 
 ---
 
-*Regenerate every number here with `make figures`; each figure writes its own
+*Regenerate every number here with `make figures`; §6 with
+`python examples/surname_persistence.py`; each figure writes its own
 table. Method and design notes are in [`figures/README.md`](../figures/README.md);
 the network layer's construction is in [NETWORK_GUIDE.md](NETWORK_GUIDE.md);
 variable definitions are in [CODEBOOK.md](CODEBOOK.md).*
