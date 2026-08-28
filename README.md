@@ -22,7 +22,7 @@ show.
 | If you want to… | Go to |
 | --- | --- |
 | **See what the data shows** | [docs/FINDINGS.md](docs/FINDINGS.md) — every result, with the file to check it in |
-| **Look at the figures** | [figures/output/](figures/output/) — 20 PNGs, each beside its CSV |
+| **Look at the figures** | [figures/output/](figures/output/) — 22 PNGs, each beside its CSV |
 | **Know what a column means** | [docs/CODEBOOK.md](docs/CODEBOOK.md) — every variable, with fill rates |
 | **Know which chambers are usable** | [docs/COVERAGE.md](docs/COVERAGE.md) — completeness by chamber. **Read before comparing across time.** |
 | **Use the network layer** | [docs/NETWORK_GUIDE.md](docs/NETWORK_GUIDE.md), then [examples/](examples/) |
@@ -62,7 +62,10 @@ make collect
 ```
 
 Worked examples: `examples/example_python.py` (networkx) and
-`examples/example_r.R` (igraph).
+`examples/example_r.R` (igraph). Two analyses runnable on the committed data:
+`examples/surname_persistence.py` (long-run elite persistence, with its null
+model and a power simulation) and `examples/voting_space.py` (whether the 2011
+chamber's voting axis is more than Ennahdha membership).
 
 Twenty-two descriptive and exploratory figures, each with its numbers as a companion
 CSV, are in [`figures/`](figures/README.md):
@@ -165,7 +168,8 @@ Two consequences you cannot design around:
   has no roster. The bias is systematic, not noise.
 - **ARP-2014 has no committee data**, so a committee-network panel still has a
   hole in the middle even though the mandate panel does not. Its archived
-  committee pages are the cheapest remaining win.
+  committee pages remain the cheapest remaining win, and are open rather than
+  exhausted — see [Contributing](#contributing).
 
 Closing the remaining gaps is archival work, and
 [docs/RECONSTRUCTION_PROTOCOL.md](docs/RECONSTRUCTION_PROTOCOL.md) specifies how
@@ -225,7 +229,7 @@ because members were replaced mid-term.
 data/
   reference/    curated frame: assemblies, governorates, parties
   raw/          cached upstream responses (gitignored) + staging documents
-  processed/    the 17 analysis-ready tables
+  processed/    the 22 analysis-ready tables
   networks/     node attributes, bipartite lists, projections
 docs/
   README.md                 index: which document answers what, and in what order
@@ -277,6 +281,24 @@ the network figures is capped at three classes**, because that is what the
 validated palette clears for a form where any two marks can end up adjacent; and
 **every subtitle carries n and the relevant caveat**, because a figure travels
 without its caption.
+
+**The clearest thing the figures found.** Ties the chamber *assigns* and ties a
+member *chooses* behave oppositely with respect to bloc. Committee co-membership
+runs slightly negative on bloc assortativity in all three chambers that have it
+(−0.03, −0.04, −0.07); amendment co-sponsorship in 2011 runs +0.13 and
+written-question co-signature in 2023 runs +0.18. Two chambers twelve years
+apart, different institutions and different sources, same contrast.
+
+The 2011 roll-call record then puts a number on the cleavage underneath that.
+The first dimension of the voting space carries 22% of the variance and
+separates Ennahdha from every other bloc — its own Troika coalition partners
+included, which is not what a government/opposition axis would do. Read it with
+the caveat that this bloc was 40% of the chamber and voted cohesively, so a
+leading component aligned with it is partly arithmetic: membership alone accounts
+for R² = 0.76 of the spread. The remaining quarter is real, and removing
+Ennahdha's 87 members and rescaling the other 130 leaves a second coherent
+cleavage at 11.3% of variance. One strong axis with structure underneath it, not
+a one-dimensional chamber.
 
 Drawing the data also found three bugs in the 2014–2019 collector. It dated every
 member's opening bloc spell to the chamber's first sitting, including

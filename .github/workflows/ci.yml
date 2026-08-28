@@ -113,6 +113,13 @@ jobs:
           [ "$missing" = "0" ] || exit 1
           echo "All figures have a companion CSV."
 
+      - name: Run the voting-space analysis
+        # Lives in this job rather than the build job because it needs numpy,
+        # which the pipeline deliberately does not depend on. It prints the
+        # numbers docs/FINDINGS.md section 6 quotes, so running it here keeps
+        # that claim from drifting away from the data silently.
+        run: python examples/voting_space.py
+
       - name: Figures must be reproducible
         # Rendering twice must give the same bytes. A figure that iterates a
         # Python set of ids is not reproducible — string hashing is randomised

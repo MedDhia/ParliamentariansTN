@@ -217,6 +217,28 @@ to itself while the small blocs work with each other. Two independent behavioura
 records of the same chamber, pointing the same way.
 · *Figure 21 · `fig21_rollcall_scaling_nca2011.csv`*
 
+**But the axis is not reducible to Ennahdha membership, and saying so matters.**
+That bloc held 87 of 217 seats and voted cohesively, and a principal component is
+the direction of greatest variance — so a leading dimension aligned with a large
+cohesive bloc is partly arithmetic rather than a discovery. Two checks bound how
+much:
+
+- Regressing dimension 1 on an Ennahdha dummy gives **R² = 0.760**. Membership
+  accounts for three-quarters of the spread along the axis; the remaining
+  **24%** is within- and between-bloc variation a dummy cannot produce.
+- Removing all 87 Ennahdha members and rescaling the other 130 from scratch —
+  re-filtering to the 908 divisions contested among *them*, since the contested
+  set is a property of who is voting — leaves a coherent second cleavage at
+  **11.3%** of variance, ordering Loyalty to the Revolution (+6.2), Democratic
+  Transition (+5.7) and CPR (+4.4) against the Democratic Bloc (−8.0).
+
+So the chamber was not one-dimensional. It had one strong cleavage with real
+structure underneath it, and the position of Ennahdha's coalition partners on
+that first axis is a fact about how they voted rather than a restatement of who
+they were not — which it would be if the axis were defined as distance from the
+governing bloc.
+· *Reproduce with `python examples/voting_space.py`*
+
 **105 of the 217 ended the term in a party other than the one they were elected
 on.** The dataset previously recorded zero, and the source metadata asserted that
 switching was not recoverable here; both were wrong. The rows are undated and
