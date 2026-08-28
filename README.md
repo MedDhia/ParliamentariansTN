@@ -16,6 +16,21 @@ present as institutions but not as people. See [Coverage](#coverage) before usin
 it comparatively, and [Findings](docs/FINDINGS.md) for what the covered chambers
 show.
 
+## Start here
+
+| If you want to… | Go to |
+| --- | --- |
+| **See what the data shows** | [docs/FINDINGS.md](docs/FINDINGS.md) — every result, with the file to check it in |
+| **Look at the figures** | [figures/output/](figures/output/) — 20 PNGs, each beside its CSV |
+| **Know what a column means** | [docs/CODEBOOK.md](docs/CODEBOOK.md) — every variable, with fill rates |
+| **Know which chambers are usable** | [docs/COVERAGE.md](docs/COVERAGE.md) — completeness by chamber. **Read before comparing across time.** |
+| **Use the network layer** | [docs/NETWORK_GUIDE.md](docs/NETWORK_GUIDE.md), then [examples/](examples/) |
+| **Judge a source** | [docs/SOURCES.md](docs/SOURCES.md) — what each one is, and what it gets wrong |
+| **Rebuild or extend it** | [Reproducing](#reproducing) below, then [docs/RECONSTRUCTION_PROTOCOL.md](docs/RECONSTRUCTION_PROTOCOL.md) |
+| **Just load the tables** | `data/processed/*.csv` — 17 UTF-8 CSVs, committed and ready |
+
+Everything under `docs/` is indexed in [docs/README.md](docs/README.md).
+
 ## Why this exists
 
 Tunisia is the central case in the comparative literature on democratisation and
@@ -45,8 +60,8 @@ make build validate networks codebook
 make collect
 ```
 
-Worked examples: `analysis/example_python.py` (networkx) and
-`analysis/example_r.R` (igraph).
+Worked examples: `examples/example_python.py` (networkx) and
+`examples/example_r.R` (igraph).
 
 Twenty descriptive and exploratory figures, each with its numbers as a companion
 CSV, are in [`figures/`](figures/README.md):
@@ -207,6 +222,7 @@ data/
   processed/    the 17 analysis-ready tables
   networks/     node attributes, bipartite lists, projections
 docs/
+  README.md                 index: which document answers what, and in what order
   FINDINGS.md               what the data shows, with the file to check each number in
   CODEBOOK.md               generated: every variable, with fill rates
   COVERAGE.md               generated: completeness by chamber and attribute
@@ -223,11 +239,18 @@ src/parliamentarians_tn/
   validate.py   schema and substantive checks
   networks.py   network derivation
   codebook.py   documentation generation
-analysis/       worked examples in Python and R
-figures/        20 figure scripts + shared style, palette and label glosses
+examples/       worked analyses in Python and R, runnable on the committed data
+figures/
+  figNN_*.py    one figure each, numbered in reading order
+  _*.py         shared: style and palette, label glosses, bloc and network helpers
   output/       figNN_name.png beside figNN_name.csv (the table view)
 tests/          unit tests
 ```
+
+Reading the tree: anything with a leading `_` is shared machinery rather than a
+thing to run, and anything generated is marked as such where it is listed.
+`data/raw` holds the cached upstream responses (gitignored) plus the staging
+documents (committed), which is why `make build` works offline on a fresh clone.
 
 `schema.py` is the single source of truth: the builder, the validator, the
 network derivation and the codebook all read the same column declarations, so
@@ -248,13 +271,15 @@ validated palette clears for a form where any two marks can end up adjacent; and
 **every subtitle carries n and the relevant caveat**, because a figure travels
 without its caption.
 
-Drawing the data also found two bugs in it. The 2014–2019 collector dated every
+Drawing the data also found three bugs in the 2014–2019 collector. It dated every
 member's opening bloc spell to the chamber's first sitting, including
-replacements who first appear in a 2017 capture, and closed departed members'
-spells at the end of term — together these pushed the reconstructed chamber to
-238 members against 217 seats. Both are fixed; the monthly panel now sits at
-212–220, and that residual spread is the reconstruction's error rather than
-something smoothed away.
+replacements who first appear in a 2017 capture; it closed departed members'
+spells at the end of term (together these pushed the reconstructed chamber to 238
+members against 217 seats); and it closed a spell at the previous observation
+rather than where the next one starts, which left members in no bloc across the
+capture gap. All three are fixed; the monthly panel now sits at 212–220, and that
+residual spread is the reconstruction's error rather than something smoothed
+away.
 
 ## Caveats
 
@@ -262,16 +287,18 @@ something smoothed away.
   `extraction_method='rule'` and a confidence grade, and are a starting point for
   hand-coding rather than a finished career history. The `shared_organisation`
   network layer inherits that uncertainty.
-- **Cross-source person matches are recorded, not assumed.** Twenty-two people
-  were merged across sources; every merge is listed with its method in
-  `data/processed/_match_review.csv` for audit. Matching never collapses two
-  members of the same chamber on a name alone, because Tunisian homonyms are
-  common.
-- **Bloc switching is measured for two chambers only.** ARP-2014 (108 of 246
-  members changed bloc, reconstructed by diffing monthly web captures, so
-  boundaries are bracketed not exact) and ARP-2023 (44 members, from dates the
-  chamber publishes). For NCA-2011 and ARP-2019 the sources give end-of-term
-  snapshots, so a zero there means "not measured", not "did not happen".
+- **Cross-source person matches are recorded, not assumed.** Every match is
+  listed with its method in `data/processed/_match_review.csv` for audit — 94
+  matches over 80 people, of whom 14 were matched to more than one source.
+  Matching never collapses two members of the same chamber on a name alone,
+  because Tunisian homonyms are common.
+- **Bloc switching is measured for two chambers only.** ARP-2014 — 108 of the 238
+  members with a recorded bloc history changed bloc, reconstructed by diffing
+  monthly web captures, so boundaries are bracketed not exact — and ARP-2023,
+  where 29 of 155 changed bloc from dates the chamber publishes (44 have more
+  than one spell, but 15 of those return to a bloc they had already sat in). For
+  NCA-2011 and ARP-2019 the sources give end-of-term snapshots, so a zero there
+  means "not measured", not "did not happen".
 - **Sex for the 2011–2014 chamber is inferred, not recorded.** Marsad publishes
   no sex field, which would have left a third of the dataset unusable for any
   gender analysis. It is inferred from French grammatical agreement in each

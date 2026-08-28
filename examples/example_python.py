@@ -12,7 +12,7 @@ What it reports, in this order:
 3. Newman's categorical assortativity on parliamentary bloc, region and sex;
 4. the coastal/interior comparison, which is the cleavage most likely to matter.
 
-    python analysis/example_python.py
+    python examples/example_python.py
 
 If networkx is installed it also cross-checks the density figure, as a guard
 against a hand-rolled arithmetic error.
@@ -101,7 +101,9 @@ def main() -> None:
     print("ParliamentariansTN — committee co-membership networks")
     print("=" * 68)
     print()
-    print("Missingness across all 682 persons in the dataset:")
+    # Counted, not hardcoded: a literal here went stale the moment the 2014
+    # chamber was recovered and the dataset grew from 682 people to 856.
+    print(f"Missingness across all {len(nodes)} persons in the dataset:")
     for field in ("gender", "birth_year", "governorate_id", "birth_governorate_id",
                   "occupation_raw"):
         n = sum(1 for v in nodes.values() if v.get(field))

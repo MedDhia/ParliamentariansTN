@@ -76,7 +76,7 @@ jobs:
           echo "No contact details in the published tables."
 
       - name: Run the worked example
-        run: python analysis/example_python.py
+        run: python examples/example_python.py
 
   figures:
     # Separate job because plotting needs matplotlib/networkx, which the dataset

@@ -5,7 +5,7 @@
 # pre-made edge list, because every projection embeds a weighting decision and
 # you should own yours. Reports missingness before any statistic.
 #
-#   Rscript analysis/example_r.R
+#   Rscript examples/example_r.R
 #
 # Requires: igraph (install.packages("igraph")). Base R otherwise.
 

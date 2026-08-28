@@ -124,7 +124,7 @@ finding about the wrong thing.
 
 ## Worked examples
 
-`analysis/example_python.py` and `analysis/example_r.R` load the tables, build
+`examples/example_python.py` and `examples/example_r.R` load the tables, build
 one projection from the incidence file, and report degree, density and
 assortativity for a chosen chamber. Both run on the committed data with no
 network dependency beyond `igraph` (R) or `networkx` (Python), and both print
