@@ -22,7 +22,7 @@ show.
 | If you want to… | Go to |
 | --- | --- |
 | **See what the data shows** | [docs/FINDINGS.md](docs/FINDINGS.md) — every result, with the file to check it in |
-| **Look at the figures** | [figures/output/](figures/output/) — 22 PNGs, each beside its CSV |
+| **Look at the figures** | [figures/output/](figures/output/) — 32 PNGs, each beside its CSV |
 | **Know what a column means** | [docs/CODEBOOK.md](docs/CODEBOOK.md) — every variable, with fill rates |
 | **Know which chambers are usable** | [docs/COVERAGE.md](docs/COVERAGE.md) — completeness by chamber. **Read before comparing across time.** |
 | **Use the network layer** | [docs/NETWORK_GUIDE.md](docs/NETWORK_GUIDE.md), then [examples/](examples/) |
@@ -67,7 +67,7 @@ Worked examples: `examples/example_python.py` (networkx) and
 model and a power simulation) and `examples/voting_space.py` (whether the 2011
 chamber's voting axis is more than Ennahdha membership).
 
-Twenty-two descriptive and exploratory figures, each with its numbers as a companion
+Thirty-two descriptive and exploratory figures, each with its numbers as a companion
 CSV, are in [`figures/`](figures/README.md):
 
 ```bash
@@ -268,7 +268,7 @@ documentation cannot drift from the data.
 
 ## Figures
 
-[`figures/`](figures/README.md) holds twenty-two figures over the dataset —
+[`figures/`](figures/README.md) holds thirty-two figures over the dataset —
 institutional timeline, composition, coverage, elite circulation, bloc dynamics,
 five network views, the 2011–2014 roll-call record, and behavioural
 distributions. Each script writes one PNG and

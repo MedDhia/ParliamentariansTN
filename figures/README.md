@@ -1,6 +1,6 @@
 # Figures
 
-Twenty-two descriptive and exploratory figures over the dataset. Each is a
+Thirty-two descriptive and exploratory figures over the dataset. Each is a
 standalone script that writes one image and one CSV.
 
 **Looking for the results rather than the method?**
@@ -13,7 +13,7 @@ figures/figNN_name.py  →  figures/output/figNN_name.png
 ```
 
 ```bash
-make figures                          # render all twenty-two
+make figures                          # render all thirty-two
 python figures/make_all.py 11 12      # just those two
 python figures/fig11_bloc_composition_arp2014.py   # or run one directly
 FIGURES_PDF=1 make figures            # also write PDFs, for LaTeX
@@ -104,7 +104,31 @@ the companion CSV has a `committee_labels` column that resolves them.
 | --- | --- | --- |
 | 19 | Attendance vs voting, ARP-2019 | The gap between turning up and voting, which is not uniform. |
 | 20 | Written questions filed | The most unequal distribution in the dataset. |
-| 21 | Roll-call scaling, NCA-2011 | The 370,922 recorded positions reduced to two dimensions, faceted per bloc. Ennahdha at one pole and every other bloc at the other, its own Troika partners included. |
+| 27 | Activity inequality, Lorenz | Amendments (2011) and questions (2023) on one axis: Gini 0.43 against 0.51. Two chambers, two activities, different shapes. |
+| 29 | Women in committee leadership | An underpowered null. Every point estimate runs against women; every interval overlaps. 54 female memberships in 2023 cannot resolve it. |
+| 30 | Career sectors | Teachers and judges — from the 13% of the dataset with any career recorded, all of it rule-extracted from one chamber's prose. |
+
+**The 2011–2014 roll-call record**
+
+370,922 positions across 1,724 divisions, the only chamber with a division-level
+voting record. Read 25 and 26 before 21 and 23: they say how much of the chamber
+the record covers and how much of it was contested.
+
+| | Figure | What to look at |
+| --- | --- | --- |
+| 21 | Roll-call scaling | The positions reduced to two dimensions, faceted per bloc. Ennahdha at one pole and every other bloc at the other, its own Troika partners included. |
+| 23 | Bloc cohesion, Rice index | Every bloc votes together most of the time — but bloc size bounds the measure, so the ordering is as much arithmetic as discipline. |
+| 24 | The voting calendar | Two-thirds of the record falls in three months. Nine months pass after the election before the first recorded division. |
+| 25 | Participation decay | 18% of members not voting in July 2012; 56% across the last three months. This is the coverage behind 21 and 23. |
+| 26 | Vote margins | 42% of divisions clear a 0.95 margin — the cut figure 21 makes before scaling, shown rather than asserted. |
+
+**Party, constitution and provenance**
+
+| | Figure | What to look at |
+| --- | --- | --- |
+| 28 | Party switching, NCA-2011 | 105 of 217 ended the term in a different party. Undated from/to pairs, so a lower bound on moves. |
+| 31 | Contested constitutional articles | The preamble drew 19 amendments, twice any single article. Bars split by how many members co-signed. |
+| 32 | Provenance by field | Which source stands behind which column. Names draw on all five collectors; birth dates on one. |
 
 **Why 21 is faceted and 22 is a matrix.** Both are cases where the obvious form
 fails. Eight blocs is five past the all-pairs colour cap, so 21 repeats the whole
@@ -113,6 +137,14 @@ hues in one point cloud. And the 2011 amendment network has a density of 0.40 �
 9,361 of 23,436 possible pairs — so a node-link drawing of it is a solid disc;
 22 shows the same ties as bloc-by-bloc mixing instead. Neither is a stylistic
 preference: the discarded form would have shown less.
+
+**Three figures exist to qualify other figures.** 25 and 26 are the coverage and
+contestedness behind the roll-call analyses, and 32 is the provenance behind
+every variable in the dataset. They are not decoration: figure 21 drops 42% of
+divisions and figure 23 measures discipline only among members who turned up, and
+a reader who does not know the size of those exclusions will over-read both. The
+set treats "here is the caveat, drawn at the same resolution as the claim" as
+part of the argument rather than a footnote.
 
 ## Design rules these figures follow
 
