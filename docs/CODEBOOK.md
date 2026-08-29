@@ -357,7 +357,7 @@ Dated bloc membership. Consecutive rows for one person within one assembly are t
 | `assembly_id` | string → `assemblies.assembly_id` | 1,116 (100%) | *(required)* Assembly. |
 | `start_date` | date | 1,116 (100%) | Start of membership. |
 | `end_date` | date | 748 (67%) | End of membership. |
-| `role` | enum | 1,116 (100%) | Role in the bloc. One of: `speaker`, `first_vice_speaker`, `vice_speaker`, `bureau_member`, `bloc_chair`, `unknown`. |
+| `role` | enum | 1,116 (100%) | Role in the bloc. One of: `speaker`, `first_vice_speaker`, `vice_speaker`, `bureau_member`, `bloc_chair`, `bloc_vice_chair`, `unknown`. |
 | `is_founding_member` | boolean | 0 (0%) | Member at the bloc's constitution. |
 | `dates_bracketed` | boolean | 478 (43%) | True where the spell's boundaries were derived by comparing dated observations rather than read from a published date. The change occurred somewhere in the interval ending at start_date, not necessarily on it. Applies to the 2014-2019 chamber, whose bloc history is reconstructed from monthly web captures. |
 | `notes` | string | 478 (43%) | Analyst notes, including the bracketing interval where relevant. |
@@ -367,9 +367,9 @@ Dated bloc membership. Consecutive rows for one person within one assembly are t
 
 | Value | n |
 | --- | --- |
-| `unknown` | 1,093 |
-| `vice_speaker` | 12 |
-| `speaker` | 11 |
+| `unknown` | 1,092 |
+| `bloc_vice_chair` | 12 |
+| `bloc_chair` | 12 |
 
 </details>
 
@@ -455,7 +455,7 @@ Bureau and presiding offices of the chamber.
 | `office_id` | string | 60 (100%) | *(required, unique)* Identifier. |
 | `person_id` | string → `persons.person_id` | 60 (100%) | *(required)* Office holder. |
 | `assembly_id` | string → `assemblies.assembly_id` | 60 (100%) | *(required)* Assembly. |
-| `office` | enum | 60 (100%) | Office held. One of: `speaker`, `first_vice_speaker`, `vice_speaker`, `bureau_member`, `bloc_chair`, `unknown`. |
+| `office` | enum | 60 (100%) | Office held. One of: `speaker`, `first_vice_speaker`, `vice_speaker`, `bureau_member`, `bloc_chair`, `bloc_vice_chair`, `unknown`. |
 | `office_label_ar` | string | 60 (100%) | Office title as given by the source. |
 | `start_date` | date | 60 (100%) | Start of tenure. |
 | `end_date` | date | 32 (53%) | End of tenure. |
@@ -465,8 +465,8 @@ Bureau and presiding offices of the chamber.
 
 | Value | n |
 | --- | --- |
-| `speaker` | 41 |
-| `bureau_member` | 10 |
+| `bureau_member` | 39 |
+| `speaker` | 12 |
 | `unknown` | 5 |
 | `vice_speaker` | 3 |
 | `first_vice_speaker` | 1 |

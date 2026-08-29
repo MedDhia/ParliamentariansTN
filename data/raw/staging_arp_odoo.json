@@ -9,8 +9,8 @@
   "coverage": "ARP-2023 only: full roster, bilingual names, sex, governorate, constituency, seat number, bloc and committee memberships with appointment/departure dates and roles, bureau offices, written-question counts",
   "language": "ar; fr",
   "licence": "Not stated. Public institutional data on public office-holders.",
-  "first_retrieved": "2026-08-27",
-  "last_retrieved": "2026-08-27",
+  "first_retrieved": "2026-08-29",
+  "last_retrieved": "2026-08-29",
   "reliability_notes": "Authoritative for the sitting chamber's composition. Biographical depth is thin in the public projection: birthday, marital status and biography are empty for most members even though the fields exist. Record rules restrict membership rows to the current mandate, so the 2011-14, 2014-19 and 2019-24 terms return zero rows and are covered from Al Bawsala instead. One mandate label is mistyped upstream as 'Mandat Parlementaire 2028-2027' for the 2023-2027 term."
  },
  "assembly_id": "ARP-2023",
@@ -2536,8 +2536,8 @@
    "is_abroad": false
   }
  ],
- "notes": "155 deputies; 205 bloc memberships; 324 committee memberships; 37 office tenures. Fetch: 4 fetched, 15 from cache.",
- "retrieved_at": "2026-08-27",
+ "notes": "155 deputies; 205 bloc memberships; 324 committee memberships; 37 office tenures. Fetch: 0 fetched, 19 from cache.",
+ "retrieved_at": "2026-08-29",
  "records": [
   {
    "source_key": "814",
@@ -2584,7 +2584,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة الخط الوطني السيادي",
      "colour": "#96928b",
-     "role": "vice_speaker",
+     "role": "bloc_vice_chair",
      "role_label_ar": "نائب رئيس",
      "start_date": "2024-10-29",
      "end_date": "",
@@ -2597,7 +2597,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة الخط الوطني السيادي",
      "colour": "#96928b",
-     "role": "vice_speaker",
+     "role": "bloc_vice_chair",
      "role_label_ar": "نائب رئيس",
      "start_date": "2023-10-17",
      "end_date": "2025-11-07",
@@ -2610,7 +2610,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة الخط الوطني السيادي",
      "colour": "#96928b",
-     "role": "speaker",
+     "role": "bloc_chair",
      "role_label_ar": "رئيس",
      "start_date": "2023-05-11",
      "end_date": "2023-10-16",
@@ -3121,7 +3121,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بالعلاقات مع المواطن ومع المجتمع المدني",
      "start_date": "2026-01-15",
      "end_date": ""
@@ -3425,7 +3425,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بشؤون النواب",
      "start_date": "2025-01-02",
      "end_date": "2026-01-15"
@@ -3491,7 +3491,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة الأمانة والعمل",
      "colour": "#fd6c6c",
-     "role": "speaker",
+     "role": "bloc_chair",
      "role_label_ar": "رئيس",
      "start_date": "2025-12-16",
      "end_date": "",
@@ -3504,7 +3504,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة الأمانة والعمل",
      "colour": "#fd6c6c",
-     "role": "vice_speaker",
+     "role": "bloc_vice_chair",
      "role_label_ar": "نائب رئيس",
      "start_date": "2023-05-11",
      "end_date": "2025-12-15",
@@ -3623,7 +3623,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بالعلاقات مع المواطن ومع المجتمع المدني",
      "start_date": "2025-01-02",
      "end_date": "2026-01-15"
@@ -3998,7 +3998,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بشؤون التشريع",
      "start_date": "2026-01-15",
      "end_date": ""
@@ -4892,7 +4892,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة الوطنية المستقلة",
      "colour": "#e39816",
-     "role": "vice_speaker",
+     "role": "bloc_vice_chair",
      "role_label_ar": "نائب رئيس",
      "start_date": "2025-12-16",
      "end_date": "",
@@ -5298,7 +5298,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بالإعلام والاتصال",
      "start_date": "2026-01-15",
      "end_date": ""
@@ -6571,7 +6571,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بالعلاقات مع المواطن ومع المجتمع المدني",
      "start_date": "2023-05-18",
      "end_date": "2025-01-02"
@@ -7054,7 +7054,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بمتابعة العمل الرقابي",
      "start_date": "2026-01-15",
      "end_date": ""
@@ -7419,7 +7419,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة لينتصر الشعب",
      "colour": "#f2ff05",
-     "role": "vice_speaker",
+     "role": "bloc_vice_chair",
      "role_label_ar": "نائب رئيس",
      "start_date": "2023-05-11",
      "end_date": "2026-02-11",
@@ -7931,7 +7931,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة الأمانة والعمل",
      "colour": "#fd6c6c",
-     "role": "speaker",
+     "role": "bloc_chair",
      "role_label_ar": "رئيس",
      "start_date": "2023-05-11",
      "end_date": "2025-12-15",
@@ -7955,7 +7955,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بالعلاقات الخارجية و التونسيين بالخارج و الهجرة",
      "start_date": "2026-01-15",
      "end_date": ""
@@ -8653,7 +8653,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بشؤون النواب",
      "start_date": "2023-05-18",
      "end_date": "2025-01-02"
@@ -8874,7 +8874,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بالإصلاحات الكبرى",
      "start_date": "2025-01-02",
      "end_date": "2026-01-15"
@@ -9060,7 +9060,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة الوطنية المستقلة",
      "colour": "#e39816",
-     "role": "speaker",
+     "role": "bloc_chair",
      "role_label_ar": "رئيس",
      "start_date": "2023-05-11",
      "end_date": "2025-12-15",
@@ -9084,7 +9084,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مُكلّف بالعلاقة مع المجلس الوطني للجهات والأقاليم",
      "start_date": "2026-01-15",
      "end_date": ""
@@ -9270,7 +9270,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة لينتصر الشعب",
      "colour": "#f2ff05",
-     "role": "speaker",
+     "role": "bloc_chair",
      "role_label_ar": "رئيس",
      "start_date": "2023-05-11",
      "end_date": "2024-12-19",
@@ -9818,7 +9818,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بالعلاقات الخارجية و التونسيين بالخارج و الهجرة",
      "start_date": "2023-05-18",
      "end_date": "2025-01-02"
@@ -10124,7 +10124,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بالإعلام والاتصال",
      "start_date": "2025-01-02",
      "end_date": "2026-01-15"
@@ -10226,7 +10226,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مُكلّف بالعلاقة مع المجلس الوطني للجهات والأقاليم",
      "start_date": "2025-01-02",
      "end_date": "2026-01-15"
@@ -10292,7 +10292,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة لينتصر الشعب",
      "colour": "#f2ff05",
-     "role": "speaker",
+     "role": "bloc_chair",
      "role_label_ar": "رئيس",
      "start_date": "2026-01-19",
      "end_date": "",
@@ -10590,7 +10590,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة الخط الوطني السيادي",
      "colour": "#96928b",
-     "role": "speaker",
+     "role": "bloc_chair",
      "role_label_ar": "رئيس",
      "start_date": "2024-10-29",
      "end_date": "",
@@ -10603,7 +10603,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة الخط الوطني السيادي",
      "colour": "#96928b",
-     "role": "speaker",
+     "role": "bloc_chair",
      "role_label_ar": "رئيس",
      "start_date": "2023-10-17",
      "end_date": "2024-10-28",
@@ -10616,7 +10616,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة الخط الوطني السيادي",
      "colour": "#96928b",
-     "role": "unknown",
+     "role": "bloc_chair",
      "role_label_ar": "Président",
      "start_date": "2023-05-11",
      "end_date": "2024-10-23",
@@ -11127,7 +11127,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مُكلّف بالعلاقات مع الوظيفة القضائية والهيئات الدستورية والوطنية",
      "start_date": "2026-01-15",
      "end_date": ""
@@ -11408,7 +11408,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة الوطنية المستقلة",
      "colour": "#e39816",
-     "role": "speaker",
+     "role": "bloc_chair",
      "role_label_ar": "رئيس",
      "start_date": "2025-12-16",
      "end_date": "",
@@ -11564,7 +11564,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بالعلاقات الخارجية و التونسيين بالخارج و الهجرة",
      "start_date": "2025-01-02",
      "end_date": "2026-01-15"
@@ -12011,7 +12011,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة الأحرار",
      "colour": "#15c53e",
-     "role": "speaker",
+     "role": "bloc_chair",
      "role_label_ar": "رئيس",
      "start_date": "2023-05-11",
      "end_date": "",
@@ -12535,7 +12535,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بالإعلام والاتصال",
      "start_date": "2023-05-18",
      "end_date": "2025-01-02"
@@ -12714,7 +12714,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بشؤون النواب",
      "start_date": "2026-01-15",
      "end_date": ""
@@ -12863,7 +12863,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة الأمانة والعمل",
      "colour": "#fd6c6c",
-     "role": "vice_speaker",
+     "role": "bloc_vice_chair",
      "role_label_ar": "نائب رئيس",
      "start_date": "2025-12-16",
      "end_date": "",
@@ -12996,7 +12996,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة الوطنية المستقلة",
      "colour": "#e39816",
-     "role": "vice_speaker",
+     "role": "bloc_vice_chair",
      "role_label_ar": "نائب رئيس",
      "start_date": "2025-01-08",
      "end_date": "2025-12-15",
@@ -13140,7 +13140,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بمتابعة العمل الرقابي",
      "start_date": "2023-05-18",
      "end_date": "2025-01-02"
@@ -13786,7 +13786,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بالإصلاحات الكبرى",
      "start_date": "2023-05-18",
      "end_date": "2025-01-02"
@@ -14067,7 +14067,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بالتصرف العام",
      "start_date": "2025-01-02",
      "end_date": "2026-01-15"
@@ -14766,7 +14766,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة صوت الجمهورية",
      "colour": "#98d03e",
-     "role": "vice_speaker",
+     "role": "bloc_vice_chair",
      "role_label_ar": "نائب رئيس",
      "start_date": "2023-05-11",
      "end_date": "2024-07-29",
@@ -15088,7 +15088,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة صوت الجمهورية",
      "colour": "#98d03e",
-     "role": "vice_speaker",
+     "role": "bloc_vice_chair",
      "role_label_ar": "نائب رئيس",
      "start_date": "2024-10-29",
      "end_date": "",
@@ -15220,7 +15220,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بشؤون التشريع",
      "start_date": "2023-05-18",
      "end_date": "2026-01-15"
@@ -15536,7 +15536,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بالتصرف العام",
      "start_date": "2026-01-15",
      "end_date": ""
@@ -16050,7 +16050,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة لينتصر الشعب",
      "colour": "#f2ff05",
-     "role": "vice_speaker",
+     "role": "bloc_vice_chair",
      "role_label_ar": "نائب رئيس",
      "start_date": "2026-02-12",
      "end_date": "",
@@ -16208,7 +16208,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مُكلّف بالعلاقات مع الوظيفة القضائية والهيئات الدستورية والوطنية",
      "start_date": "2023-05-18",
      "end_date": "2025-01-02"
@@ -16381,7 +16381,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة الأحرار",
      "colour": "#15c53e",
-     "role": "vice_speaker",
+     "role": "bloc_vice_chair",
      "role_label_ar": "نائب رئيس",
      "start_date": "2023-07-17",
      "end_date": "",
@@ -16597,7 +16597,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة الوطنية المستقلة",
      "colour": "#e39816",
-     "role": "vice_speaker",
+     "role": "bloc_vice_chair",
      "role_label_ar": "نائب رئيس",
      "start_date": "2023-05-11",
      "end_date": "2025-01-07",
@@ -16823,7 +16823,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مُكلّف بالعلاقة مع المجلس الوطني للجهات والأقاليم",
      "start_date": "2023-05-18",
      "end_date": "2025-01-02"
@@ -16966,7 +16966,7 @@
      "name_lat": "",
      "name_lat_raw": "كتلة صوت الجمهورية",
      "colour": "#98d03e",
-     "role": "speaker",
+     "role": "bloc_chair",
      "role_label_ar": "رئيس",
      "start_date": "2023-05-11",
      "end_date": "",
@@ -17192,7 +17192,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بمتابعة العمل الرقابي",
      "start_date": "2025-01-02",
      "end_date": "2026-01-15"
@@ -17515,7 +17515,7 @@
      "end_date": ""
     },
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مُكلّف بالعلاقات مع الوظيفة القضائية والهيئات الدستورية والوطنية",
      "start_date": "2025-01-02",
      "end_date": "2026-01-15"
@@ -17617,7 +17617,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بالتصرف العام",
      "start_date": "2023-05-18",
      "end_date": "2025-01-02"
@@ -18042,7 +18042,7 @@
    ],
    "offices": [
     {
-     "office": "speaker",
+     "office": "bureau_member",
      "office_label_ar": "نائب مساعد للرئيس مكلّف بالإصلاحات الكبرى",
      "start_date": "2026-01-15",
      "end_date": ""

@@ -66,7 +66,14 @@ ROLE_MAP = {
     "عضو": "member",
 }
 
+# Chamber offices, from arp.mandat.fonction. `_map_role` tries the longest key
+# first, which is what keeps these apart: every title below contains "رئيس", so
+# a shorter key would swallow the longer ones. "نائب مساعد للرئيس" — assistant
+# deputy to the president, the chamber's assessors — is the case that made this
+# explicit: without it, 29 of the 37 recorded tenures fell through to the
+# four-character "رئيس" and were coded `speaker`, in a chamber that has one.
 OFFICE_MAP = {
+    "نائب مساعد للرئيس": "bureau_member",
     "رئيس": "speaker",
     "رئيس المجلس": "speaker",
     "النائب الأول لرئيس": "first_vice_speaker",
@@ -74,6 +81,19 @@ OFFICE_MAP = {
     "نائب رئيس": "vice_speaker",
     "نائب الرئيس": "vice_speaker",
     "عضو المكتب": "bureau_member",
+}
+
+# Roles *inside a bloc*, from arp.deputegroupe. A separate map from OFFICE_MAP,
+# because the same word means different things in the two places: the head of a
+# bloc is not the speaker of the chamber. Sharing the map coded 11 bloc chairs
+# as `speaker` and 12 bloc vice-chairs as `vice_speaker`. `marsad_majles` has
+# used bloc_chair for this since it was written; this brings arp.tn into line.
+BLOC_ROLE_MAP = {
+    "نائب رئيس": "bloc_vice_chair",
+    "نائب الرئيس": "bloc_vice_chair",
+    "رئيس": "bloc_chair",
+    "الرئيس": "bloc_chair",
+    "Président": "bloc_chair",
 }
 
 # arp.deputegroupe / arp.deputecommission `cause` -> mandates.exit_mode idiom.
@@ -282,7 +302,8 @@ def collect(refresh: bool = False) -> StagingDoc:
             "name_lat": _m2o_name(grp_fr_by_id.get(int(gid), {}).get("name")) if gid.isdigit() else "",
             "name_lat_raw": _clean_str(grp_fr_by_id.get(int(gid), {}).get("name")) if gid.isdigit() else "",
             "colour": _clean_str(grp_by_id.get(int(gid), {}).get("couleur")) if gid.isdigit() else "",
-            "role": _map_role(_m2o_name(row.get("id_fonction")), OFFICE_MAP, default="unknown"),
+            "role": _map_role(_m2o_name(row.get("id_fonction")), BLOC_ROLE_MAP,
+                              default="unknown"),
             "role_label_ar": _m2o_name(row.get("id_fonction")),
             "start_date": _date_only(row.get("date_affectation")),
             "end_date": _date_only(row.get("date_demission")),

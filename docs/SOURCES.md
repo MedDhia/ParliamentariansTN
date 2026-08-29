@@ -58,6 +58,18 @@ cross-source name matching tractable.
 - Odoo returns `False` for every empty field regardless of declared type. The
   pipeline converts this to an empty string; naive ingestion produces the string
   `"False"` throughout.
+- **Every role title in `arp.fonction` contains the word "رئيس" (president),**
+  which makes substring matching on it hazardous. The chamber's assessors are
+  titled *نائب مساعد للرئيس مكلّف بـ…* — "assistant deputy to the president in
+  charge of X" — and a naive match coded 29 of the 37 recorded office tenures as
+  `speaker`, in a chamber that has one. Match the longest title first, and
+  read the map in `arp_odoo.py` before adding to it.
+- **The same title means different things in `arp.mandat.fonction` and
+  `arp.deputegroupe`.** `رئيس` is the speaker of the chamber in the first and
+  the chair of a bloc in the second, so the two use separate maps: `OFFICE_MAP`
+  and `BLOC_ROLE_MAP`. Sharing one map coded 11 bloc chairs as `speaker` and 12
+  bloc vice-chairs as `vice_speaker`. Both were fixed after the figures work
+  drew `offices` and the count was visibly impossible.
 
 ## `MARSAD_MAJLES` — Al Bawsala's second observatory
 
