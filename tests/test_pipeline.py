@@ -8,12 +8,14 @@ that corresponds to a bug found in the data names it.
 
 from __future__ import annotations
 
+import csv
 import sys
 from pathlib import Path
 
 import pytest
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "src"))
 
 from parliamentarians_tn import schema  # noqa: E402
 from parliamentarians_tn.collect import (  # noqa: E402
@@ -625,6 +627,48 @@ class TestMajlesMemberStatistics:
     def test_zero_denominator_does_not_divide(self):
         assert marsad_majles.parse_member_statistics(
             '<a title="Participation aux votes : 0 / 0"></a>') == {}
+
+
+class TestVoteAgreementLayer:
+    """The derived vote-agreement dyads, which behave unlike every other layer.
+
+    Checked against the committed file rather than by re-deriving: the point is
+    that what ships obeys the contract the network guide states.
+    """
+
+    @staticmethod
+    def _rows():
+        path = ROOT / "data" / "networks" / "edges_vote_agreement.csv"
+        if not path.exists():
+            pytest.skip("run `make networks` first")
+        with path.open(encoding="utf-8") as fh:
+            return list(csv.DictReader(fh))
+
+    def test_weight_is_a_rate_not_a_count(self):
+        # Every other layer's weight counts events. This one is a proportion,
+        # and weight_newman is empty because there is no group size to correct.
+        for row in self._rows():
+            assert 0.0 <= float(row["weight"]) <= 1.0
+            assert row["weight_newman"] == ""
+
+    def test_pairs_are_ordered_and_unique(self):
+        seen = set()
+        for row in self._rows():
+            assert row["source"] < row["target"], "dyads must be canonically ordered"
+            key = (row["source"], row["target"])
+            assert key not in seen, f"duplicate dyad {key}"
+            seen.add(key)
+
+    def test_thinly_scored_pairs_are_dropped_not_scored(self):
+        # A pair scored on five divisions would take values on a coarse grid and
+        # read as signal. The builder drops them; nothing below the floor ships.
+        assert all(int(r["shared_count"]) >= 30 for r in self._rows())
+
+    def test_layer_and_assembly_are_consistent(self):
+        rows = self._rows()
+        assert {r["layer"] for r in rows} == {"vote_agreement"}
+        # Only one chamber has a roll-call record, so only one can appear here.
+        assert {r["assembly_id"] for r in rows} == {"NCA-2011"}
 
 
 class TestOdooRoleMapping:

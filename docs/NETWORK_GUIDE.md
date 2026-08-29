@@ -17,6 +17,8 @@ means substantively, what the projection choices are, and where the traps are.
 | `edges_shared_constituency.csv` | projection | 2,978 | returned by the same constituency, same chamber |
 | `edges_shared_organisation.csv` | projection | 37 | passed through the same outside organisation (any period) |
 | `edges_question_cosignature.csv` | projection | 1,663 | co-signed a written question (ARP-2023) |
+| `edges_amendment_cosponsorship.csv` | projection | 9,361 | co-sponsored a constitutional amendment (NCA-2011) |
+| `edges_vote_agreement.csv` | weighted dyads | 23,337 | share of contested divisions voted the same way (NCA-2011) |
 
 ## Start from the bipartite files
 
@@ -100,10 +102,39 @@ organisation matched on a normalised name string may be two different bodies.
 Filter on `careers.confidence` and treat this layer as a lead for hand-coding
 rather than as evidence. It is the layer most worth investing in.
 
-**Question co-signature** is the only behavioural relational layer, and it exists
-for ARP-2023 only, from 6,332 written questions of which 78 were jointly signed.
+**Question co-signature** is a behavioural relational layer, and it exists for
+ARP-2023 only, from 6,332 written questions of which 78 were jointly signed.
 Weights run up to 15. Note the group-size problem is acute here: some questions
 carry 20+ signatories, so `weight_newman` matters more than usual.
+
+**Amendment co-sponsorship** is its NCA-2011 counterpart and the larger of the
+two: 9,361 ties from 251 constitutional amendments. Same group-size caution — an
+amendment carrying 58 sponsors manufactures 1,653 dyads on its own.
+
+**Vote agreement is different in kind from every other layer here, and mixing it
+in with them will produce nonsense.** Three differences matter:
+
+- **It is revealed, not assigned or chosen.** A committee seat is given to a
+  member and a co-sponsorship is an act they perform; an agreement tie exists
+  because two voting records correlate, whether or not either member knew or
+  intended it. Two opponents who both back an uncontroversial motion are "tied"
+  in exactly the sense two allies are. Do not read it as cooperation.
+- **It is near-complete, not sparse.** 23,337 of the 23,436 possible pairs carry
+  a score, so it is a weighted graph and not an edge list of events. Anything
+  that assumes sparsity — most centrality measures, most community detection —
+  needs a threshold applied first, and the threshold is an analytical choice the
+  file deliberately does not make for you. Figures 34–37 use 0.75 and show what
+  moves when that changes.
+- **`weight` is a rate, not a count.** Every other layer's weight counts events;
+  this one is a proportion in [0, 1], and `weight_newman` is empty because there
+  is no group size to correct for.
+
+It is built on **contested divisions only** — near-unanimous ones excluded, the
+same filter figure 21 uses — because agreement on a vote nobody opposed is
+agreement with the whole chamber. Leaving them in pushes every pair to about
+0.84 and compresses exactly the differences the layer exists to show. A pair
+needs 30 jointly-cast divisions to be scored, and only NCA-2011 has a roll-call
+record at all, so this layer covers one chamber.
 
 ## Node attributes for homophily
 

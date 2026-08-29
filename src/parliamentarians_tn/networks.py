@@ -318,6 +318,92 @@ def build_amendment_edges() -> list[dict[str, Any]]:
     return sorted(out, key=lambda r: (r["source"], r["target"]))
 
 
+def build_vote_agreement_edges(
+    min_cast: int = 40, min_minority: float = 0.025, min_shared: int = 30,
+) -> list[dict[str, Any]]:
+    """Agreement between every pair of members on contested divisions (NCA-2011).
+
+    The only *revealed* tie layer in the dataset. Committee co-membership is
+    assigned and co-sponsorship is chosen; this is neither — two members are
+    tied to the degree that they voted the same way, whether or not they meant
+    to be associated. That makes it the layer to use for polarisation, and the
+    one to be most careful with, because a tie here is a correlation and not an
+    act.
+
+    ``weight`` is the share of jointly-cast divisions on which the pair voted
+    the same way, on **contested divisions only**. Near-unanimous divisions are
+    excluded first (the same filter figure 21 uses): agreement on a vote nobody
+    opposed is agreement with the whole chamber, and leaving those in pushes
+    every pair toward 0.84 and compresses the differences that matter. On the
+    993 contested divisions the same measure spreads from 0.2 to 1.0.
+
+    Abstention and absence are not agreement or disagreement — they are absence
+    of a position — so a division counts for a pair only where *both* cast pour
+    or contre. ``shared_count`` records how many divisions that was, and pairs
+    below ``min_shared`` are dropped rather than scored on a handful of votes.
+
+    Unlike every other layer here this one is near-complete: almost every pair
+    of members has a value, so it is a weighted graph rather than a sparse one.
+    Threshold it before running anything that assumes sparsity, and remember
+    that the threshold is an analytical choice the file does not make for you.
+    """
+    positions: dict[str, dict[str, int]] = defaultdict(dict)
+    assemblies: dict[str, str] = {}
+    for row in read_table("vote_positions"):
+        if row["position"] == "pour":
+            positions[row["person_id"]][row["vote_id"]] = 1
+        elif row["position"] == "contre":
+            positions[row["person_id"]][row["vote_id"]] = -1
+        else:
+            continue
+        assemblies[row["vote_id"]] = row["assembly_id"]
+    if not positions:
+        return []
+
+    votes = sorted({v for p in positions.values() for v in p})
+    index = {v: j for j, v in enumerate(votes)}
+    people = sorted(positions)
+    matrix = [[0] * len(votes) for _ in people]
+    for i, person in enumerate(people):
+        for vote_id, value in positions[person].items():
+            matrix[i][index[vote_id]] = value
+
+    # Contested divisions only. Done with plain loops so the network layer keeps
+    # the pipeline's no-scientific-stack promise; it is 217 x 1,724 and runs in
+    # about a second.
+    keep = []
+    for j in range(len(votes)):
+        yes = sum(1 for i in range(len(people)) if matrix[i][j] == 1)
+        no = sum(1 for i in range(len(people)) if matrix[i][j] == -1)
+        cast = yes + no
+        if cast >= min_cast and min(yes, no) / cast >= min_minority:
+            keep.append(j)
+
+    out: list[dict[str, Any]] = []
+    for a in range(len(people)):
+        row_a = matrix[a]
+        for b in range(a + 1, len(people)):
+            row_b = matrix[b]
+            shared = agreed = 0
+            for j in keep:
+                va, vb = row_a[j], row_b[j]
+                if va and vb:
+                    shared += 1
+                    agreed += va == vb
+            if shared < min_shared:
+                continue
+            out.append({
+                "source": people[a], "target": people[b],
+                "layer": "vote_agreement",
+                "assembly_id": assemblies[votes[keep[0]]] if keep else "",
+                "weight": round(agreed / shared, 6),
+                "weight_newman": "", "group_ids": "", "group_names": "",
+                "group_size": "", "shared_count": shared,
+                "overlap_start": "", "overlap_end": "", "dates_assumed": "false",
+            })
+    return sorted(out, key=lambda r: (r["source"], r["target"]))
+
+
 def build_shared_constituency_edges() -> list[dict[str, Any]]:
     """Ties between members returned by the same constituency in the same chamber.
 
@@ -446,6 +532,10 @@ def write_all() -> dict[str, int]:
     amend = build_amendment_edges()
     write_rows(NETWORKS / "edges_amendment_cosponsorship.csv", EDGE_FIELDS, amend)
     counts["edges_amendment_cosponsorship"] = len(amend)
+
+    agree = build_vote_agreement_edges()
+    write_rows(NETWORKS / "edges_vote_agreement.csv", EDGE_FIELDS, agree)
+    counts["edges_vote_agreement"] = len(agree)
 
     return counts
 

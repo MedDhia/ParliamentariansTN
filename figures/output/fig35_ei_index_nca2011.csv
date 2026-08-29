@@ -1,0 +1,9 @@
+bloc,members,internal_ties,external_ties,ei_observed,ei_null_mean,ei_null_p2_5,ei_null_p97_5,below_null
+Ennahdha,87,3735,3132,-0.0878,0.5009,0.4408,0.5574,True
+Democratic Bloc,18,127,615,0.6577,0.9194,0.8922,0.9412,True
+No bloc,52,301,1835,0.7182,0.732,0.6877,0.7685,False
+CPR,14,67,781,0.842,0.9403,0.9192,0.9607,True
+Democratic Transition,14,68,962,0.868,0.94,0.9179,0.9581,True
+Democratic Alliance,10,37,606,0.8849,0.9587,0.9411,0.9758,True
+Loyalty to the Revolution,10,17,322,0.8997,0.9584,0.9402,0.9751,True
+Ettakatol,12,51,1193,0.918,0.9489,0.9284,0.967,True

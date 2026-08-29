@@ -1,0 +1,37 @@
+bloc_a,bloc_b,members_a,members_b,member_pairs,mean_agreement,vs_chamber_mean
+Ennahdha,Ennahdha,87,87,3741,0.9154,0.2055
+Democratic Alliance,Democratic Alliance,10,10,45,0.8454,0.1355
+Ettakatol,Ettakatol,12,12,65,0.8339,0.124
+Democratic Bloc,Democratic Bloc,18,18,146,0.8202,0.1103
+CPR,CPR,14,14,91,0.7913,0.0814
+Ennahdha,Ettakatol,87,12,1042,0.7881,0.0782
+Democratic Transition,Democratic Transition,14,14,91,0.7817,0.0718
+Democratic Bloc,Democratic Alliance,18,10,177,0.7722,0.0623
+Ettakatol,Democratic Alliance,12,10,119,0.7718,0.0619
+Democratic Transition,Ettakatol,14,12,168,0.7597,0.0497
+Ennahdha,Democratic Transition,87,14,1218,0.7471,0.0372
+Loyalty to the Revolution,Loyalty to the Revolution,10,10,45,0.736,0.0261
+CPR,Ettakatol,14,12,166,0.7255,0.0156
+Democratic Transition,CPR,14,14,196,0.7212,0.0113
+Ennahdha,CPR,87,14,1218,0.7167,0.0068
+CPR,Loyalty to the Revolution,14,10,140,0.7084,-0.0016
+Democratic Transition,Democratic Alliance,14,10,140,0.7047,-0.0052
+Democratic Transition,Loyalty to the Revolution,14,10,140,0.7036,-0.0064
+No bloc,Democratic Alliance,52,10,519,0.6969,-0.013
+Ennahdha,Democratic Alliance,87,10,870,0.6963,-0.0136
+Democratic Bloc,Ettakatol,18,12,210,0.6913,-0.0186
+No bloc,Ettakatol,52,12,615,0.6861,-0.0238
+No bloc,Democratic Bloc,52,18,906,0.6652,-0.0447
+No bloc,Democratic Transition,52,14,728,0.6645,-0.0454
+CPR,Democratic Alliance,14,10,140,0.664,-0.0459
+Ennahdha,Loyalty to the Revolution,87,10,870,0.6639,-0.046
+Ettakatol,Loyalty to the Revolution,12,10,117,0.6497,-0.0602
+No bloc,No bloc,52,52,1323,0.6468,-0.0631
+No bloc,CPR,52,14,728,0.6426,-0.0673
+Ennahdha,No bloc,87,52,4523,0.6324,-0.0775
+Democratic Bloc,CPR,18,14,245,0.6181,-0.0918
+Democratic Alliance,Loyalty to the Revolution,10,10,99,0.6118,-0.0981
+Democratic Bloc,Democratic Transition,18,14,249,0.6114,-0.0986
+No bloc,Loyalty to the Revolution,52,10,517,0.605,-0.105
+Ennahdha,Democratic Bloc,87,18,1558,0.5892,-0.1207
+Democratic Bloc,Loyalty to the Revolution,18,10,172,0.5198,-0.1902
