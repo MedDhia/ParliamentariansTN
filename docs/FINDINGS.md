@@ -243,8 +243,49 @@ governing bloc.
 on.** The dataset previously recorded zero, and the source metadata asserted that
 switching was not recoverable here; both were wrong. The rows are undated and
 cannot be chained — a member who moved twice appears once, as origin and
-destination.
-· *`data/processed/party_switches.csv`*
+destination. The Pétition Populaire list dissolves hardest, losing 26 members and
+gaining none; the Alliance Démocratique gains most at +11.
+· *Figure 28 · `data/processed/party_switches.csv`*
+
+**Two-thirds of the chamber's recorded voting happened in three months**, and
+nine months passed after the election before its first recorded division. The
+peak is December 2013 to January 2014, the article-by-article passage of the
+constitution; April 2014, *after* adoption, is the third. The opening silence is
+a source boundary as much as a political fact — Al Bawsala's series begins in
+July 2012, and whether earlier recorded votes went uncaptured is not answerable
+here.
+· *Figure 24 · `fig24_voting_calendar_nca2011.csv`*
+
+**Read two coverage facts before any of the above.** Both bound what the
+roll-call analyses can support:
+
+- **Participation collapses across the term.** The share of listed members
+  casting neither pour nor contre runs at a median of 18% in July 2012 and 56%
+  across the assembly's last three months. Any estimate from late-term divisions
+  rests on a much smaller share of the chamber than the same estimate early on.
+  · *Figure 25*
+- **42% of divisions were near-unanimous**, with a margin above 0.95 and a
+  median margin of 0.92. That is the cut figure 21 makes before scaling, and it
+  is a large one. A constituent assembly passes most of a founding text by
+  consensus and fights over a minority of it; figure 31 shows which parts.
+  · *Figure 26*
+
+**Bloc cohesion is high everywhere and mostly tells you about bloc size.** The
+Rice index runs at a median of 1.00 for seven of eight blocs; what separates them
+is how *often* they were unanimous, from 83% (Democratic Alliance, 10 members)
+down to 58% (Ennahdha, 87). Since a ten-member bloc can only divide on a coarse
+grid, that ordering is as much arithmetic as discipline, and the defensible
+comparison is Ennahdha against its own size. The non-attached, who were under no
+obligation to agree, sit at 33% and show what an undisciplined group looks like.
+· *Figure 23 · `fig23_bloc_cohesion_nca2011.csv`*
+
+**The preamble was the most-amended part of the draft constitution** — 19
+amendments, more than twice any single article — followed by articles 39, 127, 6
+and 46. The 251 amendments spread over 98 targets, so no single article
+dominated: the busiest drew nine. Article numbers are the source's own and
+numbering shifted between drafts, so match a number to a subject against the
+draft it was tabled on rather than against the adopted text.
+· *Figure 31 · `fig31_contested_articles_nca2011.csv`*
 
 ## 7. Long-run elite persistence: no surname signal
 
@@ -293,8 +334,10 @@ limits do the work here and none is fixable with the present data:
 **Turning up and voting are not the same thing.** Across 216 members of the
 2019 chamber the median gap between plenary attendance and vote participation is
 **8.9 points**, reaching 56 points at the extreme.
-· *Figure 19 · `fig19_participation_arp2019.csv`* — both rates are proportions
-published by Al Bawsala without denominators, so compare within this chamber only.
+· *Figure 19 · `fig19_participation_arp2019.csv`* — both rates now carry the
+denominators Al Bawsala publishes on the member pages (`plenary_denominator`,
+`vote_denominator`), so they can be recomputed and checked. They still describe
+this chamber's own sittings and divisions, so compare within it only.
 
 **Written questions are the most unequally distributed activity in the dataset.**
 6,603 filings by 154 deputies; the median deputy files 28, the busiest 201, and
@@ -306,6 +349,47 @@ distinct questions** (the basis for figure 18); per-deputy filings sum to
 **6,603** (figure 20), because each signatory of the 78 jointly signed questions
 is credited. Use the first for question counts and the second for individual
 activity.
+
+**Concentration is not the same in both chambers.** Amendment tabling in 2011
+gives a Gini of **0.43** across 203 members; written questions in 2023 give
+**0.51** across 154. Both are unequal, and the later chamber more so — but the
+comparison is between two different activities under two different institutions,
+so it separates "parliamentary work is always concentrated" from "these chambers
+concentrated it differently" without settling which mechanism produced either.
+Members with nothing recorded are excluded from both curves, since for 2011 the
+source does not distinguish tabling nothing from not being covered.
+· *Figure 27 · `fig27_activity_inequality.csv`*
+
+**Whether women reach committee leadership less often cannot be resolved here.**
+Chair-or-vice-chair shares run 6.5% against 10.0% (2011), 9.9% against 10.2%
+(2019) and 14.8% against 23.7% (2023). Every point estimate runs against women;
+every pair of 95% intervals overlaps, including 2023, where 54 female memberships
+give an interval from 7.7% to 26.6%. This is an underpowered null and should be
+reported as one — not as evidence of parity, and not as evidence of a gap.
+· *Figure 29 · `fig29_women_committee_leadership.csv`*
+
+---
+
+## 9. What the dataset says about itself
+
+**Career data is the thinnest layer and should be treated as a lead, not
+evidence.** 171 roles for 114 people — 13% of the dataset — all from one source,
+the 2011 assembly's narrative biographies, all rule-extracted from French prose
+rather than hand-coded. Education (46) and the judiciary (36) lead. Nothing here
+supports a claim about recruitment into Tunisian parliament generally, and
+hand-coding these rows is the repository's standing request.
+· *Figure 30 · `fig30_career_sectors.csv`*
+
+**Fields are not equally sourced, and the difference is large.** `name_ar` and
+`assembly_id` draw on all five collectors; `birth_date`, `biography_ar`,
+`marital_status` and `languages` each rest on one. Any individual cell has one
+source, but a field supported by five independent collections is a different
+object from one resting on a single observatory's biographies, and a reader
+quoting two columns of the same table should know which is which. Height there
+is coverage and not accuracy — `gender` appears at full height for the 2011
+chamber because the inference returned a value for everyone, not because it was
+published.
+· *Figure 32 · `fig32_provenance_by_source.csv`*
 
 ---
 
