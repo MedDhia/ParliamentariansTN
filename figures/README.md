@@ -1,6 +1,6 @@
 # Figures
 
-Thirty-two descriptive and exploratory figures over the dataset. Each is a
+Forty descriptive and exploratory figures over the dataset. Each is a
 standalone script that writes one image and one CSV.
 
 **Looking for the results rather than the method?**
@@ -13,14 +13,14 @@ figures/figNN_name.py  →  figures/output/figNN_name.png
 ```
 
 ```bash
-make figures                          # render all thirty-two
+make figures                          # render all forty
 python figures/make_all.py 11 12      # just those two
 python figures/fig11_bloc_composition_arp2014.py   # or run one directly
 FIGURES_PDF=1 make figures            # also write PDFs, for LaTeX
 FIGURES_DARK=1 make figures           # dark-surface variants
 ```
 
-Rendering the set takes about half a minute and needs `matplotlib` and `networkx`
+Rendering the set takes about a minute and needs `matplotlib` and `networkx`
 (`pip install -r requirements-figures.txt`). Nothing here touches the network or
 regenerates the dataset — figures read `data/processed` and `data/networks`.
 
@@ -121,6 +121,35 @@ the record covers and how much of it was contested.
 | 24 | The voting calendar | Two-thirds of the record falls in three months. Nine months pass after the election before the first recorded division. |
 | 25 | Participation decay | 18% of members not voting in July 2012; 56% across the last three months. This is the coverage behind 21 and 23. |
 | 26 | Vote margins | 42% of divisions clear a 0.95 margin — the cut figure 21 makes before scaling, shown rather than asserted. |
+
+**Polarisation, 2011 Constituent Assembly (33–40)**
+
+Eight figures asking one question in eight ways: how far do the lines this
+chamber divided on coincide with its bloc boundaries? Five are built on
+`edges_vote_agreement.csv`, a layer derived for this set — every pair of members
+scored on the share of *contested* divisions they voted the same way. Read
+`docs/NETWORK_GUIDE.md` before using it: it is revealed rather than assigned or
+chosen, near-complete rather than sparse, and its weight is a rate rather than a
+count, so it does not behave like the other layers.
+
+| | Figure | What to look at |
+| --- | --- | --- |
+| 33 | Agreement distribution | Within-bloc 0.84 against cross-bloc 0.67, Cohen's d 1.36 — yet 92% of cross-bloc pairs still agree more often than not. Both facts at once. |
+| 34 | The agreement network | Ennahdha's internal density is **0.998** — 3,735 of 3,741 possible pairs. The other 130 members sit at 0.269. One clique and one cloud. |
+| 35 | E-I index against a size-matched null | The figure that corrects itself: raw E-I says the small blocs are outward-looking, the null says that is arithmetic. Seven of eight cohere; Ennahdha by eight times the median margin. |
+| 36 | Communities vs blocs | Louvain, told nothing about blocs, returns Ennahdha at 88% purity. Modularity 0.21 — below the usual 0.3 threshold, so this is not really a community structure. |
+| 37 | Cross-bloc brokers | Ennahdha members agree widely and inwardly; everyone else outwardly. The dashed lines are what bloc size alone forces, so read distance from them. |
+| 38 | Polarisation over the term | Six windows of equal contested divisions. The gap holds between 0.15 and 0.20 throughout — the chamber starts divided and stays that way. |
+| 39 | Bloc × bloc agreement | Figure 22's form on revealed rather than chosen ties. Ennahdha agrees most with Ettakatol (0.79) — the partner it co-sponsored with least (0.65×). |
+| 40 | Agreement vs co-sponsorship | r = +0.14. Voting together explains under 2% of whether a pair ever co-sponsored. |
+
+**Why these are eight figures and not one.** Polarisation has no single
+operationalisation, and the measures disagree in informative ways: 33 says the
+chamber is strongly bloc-structured, 34 says only one bloc is, 36 says the
+structure is too weak to call communities, and 38 says none of it moves over
+time. A single number would have had to pick one of those. Two of the eight
+exist mainly to stop the others being over-read — 35's null and 40's correlation
+both say "less than it looks".
 
 **Party, constitution and provenance**
 

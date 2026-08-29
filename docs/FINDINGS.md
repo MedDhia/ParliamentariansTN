@@ -370,7 +370,67 @@ reported as one — not as evidence of parity, and not as evidence of a gap.
 
 ---
 
-## 9. What the dataset says about itself
+## 9. Polarisation in the 2011 Constituent Assembly
+
+Eight figures ask one question in eight ways: how far do the lines the chamber
+divided on coincide with its bloc boundaries? They are built on a derived layer,
+`edges_vote_agreement.csv`, scoring every pair of members on the share of
+*contested* divisions they voted the same way.
+
+**Bloc predicts agreement sharply, and the chamber is still not two camps.**
+Within-bloc pairs average **0.84**, cross-bloc pairs **0.67** — Cohen's d 1.36,
+with only 0.9% of cross-bloc pairs reaching the within-bloc median. And yet 92%
+of cross-bloc pairs agree more often than they disagree. Both hold at once.
+· *Figure 33 · `fig33_agreement_distribution_nca2011.csv`*
+
+**One bloc is a clique. Ennahdha's 87 members have an internal density of
+0.998** at a 75%-agreement threshold — 3,735 of 3,741 possible pairs. The other
+130 members sit at 0.269. Louvain community detection, given no bloc
+information, returns Ennahdha at **88% purity**.
+· *Figures 34, 36 · `fig34_*.csv`, `fig36_*.csv`*
+
+**But the graph is not really a community structure.** Modularity is 0.12 under
+the bloc partition and 0.21 under the detected one, both below the ~0.3 usually
+taken as evidence of real communities. It is one tight clique plus a
+weakly-differentiated remainder, not a set of camps.
+· *Figure 36*
+
+**Every bloc coheres more than chance; the margins are what differ.** Raw E-I
+indices say the small blocs are outward-looking and Ennahdha insular — but that
+ordering is arithmetic, since a ten-member bloc has 45 internal pairs against
+2,070 external. Against a null that reassigns labels while holding sizes fixed,
+**seven of the eight groups fall below their null**. The exception is the
+non-attached, who are a residual category and should not cohere — which is the
+best available evidence the method works. Ennahdha's margin is 0.59 below its
+null mean; the median bloc's is under 0.08.
+· *Figure 35 · `fig35_ei_index_nca2011.csv`*
+
+**The chamber did not polarise as it went.** Across six windows of equal
+contested divisions the within/cross gap holds between **0.15 and 0.20** with no
+monotone movement — through the constitution's drafting, two assassinations and
+a change of government. It began divided along bloc lines and ended that way.
+· *Figure 38 · `fig38_polarisation_over_time_nca2011.csv`*
+
+**Voting together is not working together.** Ennahdha agrees most with Ettakatol
+(0.79, above the chamber mean of 0.71) — the bloc it co-sponsored amendments
+with at 0.65× the chamber rate. At the level of individual pairs the correlation
+between agreement and ever co-sponsoring is **r = +0.14**: agreement explains
+under 2% of the variance, and +0.11 within cross-bloc pairs alone, so it is not
+simply bloc membership. This is why the dataset carries chosen and revealed tie
+layers separately rather than treating either as a proxy for cooperation.
+· *Figures 39, 40 · `fig39_*.csv`, `fig40_*.csv`*
+
+**What none of this establishes.** Agreement is a correlation between voting
+records, not an act: two opponents both backing an uncontroversial motion are
+"tied" in the same sense two allies are. The layer covers one chamber, because
+only NCA-2011 has a roll-call record. Bloc is each member's last recorded spell
+applied to the whole term, which matters in a chamber where 105 of 217 changed
+party. And participation falls from 18% to 56% not voting across the term
+(figure 25), so later windows describe a smaller and more selective slice.
+
+---
+
+## 10. What the dataset says about itself
 
 **Career data is the thinnest layer and should be treated as a lead, not
 evidence.** 171 roles for 114 people — 13% of the dataset — all from one source,
