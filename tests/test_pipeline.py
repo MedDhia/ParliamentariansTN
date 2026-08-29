@@ -16,7 +16,12 @@ import pytest
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from parliamentarians_tn import schema  # noqa: E402
-from parliamentarians_tn.collect import marsad_anc, marsad_arp2014, marsad_majles  # noqa: E402
+from parliamentarians_tn.collect import (  # noqa: E402
+    arp_odoo,
+    marsad_anc,
+    marsad_arp2014,
+    marsad_majles,
+)
 from parliamentarians_tn.ids import (  # noqa: E402
     IdRegistry,
     arabic_match_key,
@@ -620,6 +625,56 @@ class TestMajlesMemberStatistics:
     def test_zero_denominator_does_not_divide(self):
         assert marsad_majles.parse_member_statistics(
             '<a title="Participation aux votes : 0 / 0"></a>') == {}
+
+
+class TestOdooRoleMapping:
+    """arp.tn role titles, which all contain the word "president".
+
+    Both maps are matched longest-key-first, and these are the strings the
+    source actually uses — taken from the cached `arp.mandat.fonction` and
+    `arp.deputegroupe` responses, not invented. Two bugs lived here: the
+    assessors fell through to the four-character key and were coded `speaker`
+    in a chamber with one, and bloc roles were mapped with the *chamber's*
+    vocabulary, making every bloc chair a `speaker`.
+    """
+
+    ASSESSORS = [
+        "نائب مساعد للرئيس مكلّف بشؤون التشريع",
+        "نائب مساعد للرئيس مكلّف بالتصرف العام",
+        "نائب مساعد للرئيس مُكلّف بالعلاقة مع المجلس الوطني للجهات والأقاليم",
+    ]
+
+    def _office(self, label):
+        return arp_odoo._map_role(label, arp_odoo.OFFICE_MAP, default="unknown")
+
+    def _bloc(self, label):
+        return arp_odoo._map_role(label, arp_odoo.BLOC_ROLE_MAP, default="unknown")
+
+    def test_assessors_are_bureau_members_not_speakers(self):
+        for label in self.ASSESSORS:
+            assert self._office(label) == "bureau_member", label
+
+    def test_the_chamber_has_exactly_one_speaker_title(self):
+        assert self._office("رئيس مجلس نواب الشعب") == "speaker"
+        assert self._office("نائب رئيس مجلس نواب الشعب") == "vice_speaker"
+
+    def test_a_bloc_head_is_a_bloc_chair_not_a_speaker(self):
+        assert self._bloc("رئيس") == "bloc_chair"
+        assert self._bloc("Président") == "bloc_chair"
+        assert self._bloc("نائب رئيس") == "bloc_vice_chair"
+        assert self._bloc("عضو") == "unknown"
+
+    def test_both_maps_emit_only_declared_vocabulary(self):
+        for mapping in (arp_odoo.OFFICE_MAP, arp_odoo.BLOC_ROLE_MAP):
+            assert set(mapping.values()) <= set(schema.OFFICE)
+
+    def test_the_non_attached_representative_is_not_forced_into_a_role(self):
+        # "Representative of the non-attached in the conference of presidents"
+        # is not a bureau post and the vocabulary has no slot for it. `unknown`
+        # is the honest answer; guessing `bureau_member` would assert a fact.
+        label = "ممثّل عن النواب غير المنتمين إلى كتل في ندوة الرؤساء"
+        assert self._office(label) == "unknown"
+        assert self._bloc(label) == "unknown"
 
 
 class TestMajlesBureau:

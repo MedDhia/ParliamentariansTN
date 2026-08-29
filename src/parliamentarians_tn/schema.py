@@ -136,12 +136,16 @@ COMMITTEE_TYPE = (
 
 COMMITTEE_ROLE = ("chair", "vice_chair", "rapporteur", "assistant_rapporteur", "member", "unknown")
 
+# Used by `offices.office` for chamber offices and by `bloc_memberships.role`
+# for roles inside a bloc, which is why it carries both kinds. The two are not
+# interchangeable: a bloc's chair is `bloc_chair`, never `speaker`.
 OFFICE = (
     "speaker",
     "first_vice_speaker",
     "vice_speaker",
     "bureau_member",
     "bloc_chair",
+    "bloc_vice_chair",
     "unknown",
 )
 
