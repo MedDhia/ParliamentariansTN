@@ -178,13 +178,23 @@ If effort is limited, this is the order that buys the most:
    environment it was last tried in (connection reset on every request, while
    `archive.org` itself answered), not because the pages were checked and found
    missing. Anyone with working Archive access should be able to close it.
-2. **COD-2009 and COD-2004.** The last two chambers of the Ben Ali period, with
+2. **ADV-2005, the Chamber of Advisors** — and this one may not need archival
+   work at all. It sits in the dataset with 112 seats and zero members, listed
+   until now as having no source. But its own site, `chambredesconseillers.tn`,
+   was captured by the Internet Archive before it went dead: the availability
+   API confirms a capture of `/fr/index.php?id=145` from 21 August 2010
+   returning 200. Nobody has read it. If those pages carry a member list, this
+   is a web-scraping job of the same shape as ARP-2014, not a JORT search, and
+   it closes an entire chamber. It is blocked by the same unreachable
+   `web.archive.org` as item 1, so one working Archive session could settle
+   both.
+3. **COD-2009 and COD-2004.** The last two chambers of the Ben Ali period, with
    substantial documented opposition contingents, immediately adjacent to the
    2011 rupture. This is what makes elite continuity across the revolution
    measurable — currently impossible.
-3. **COD-1994 and COD-1999.** The introduction and consolidation of compensatory
+4. **COD-1994 and COD-1999.** The introduction and consolidation of compensatory
    opposition seats.
-4. **1956 verification**, per above.
-5. **The single-party chambers 1959-1989.** Highest archival cost, and the
+5. **1956 verification**, per above.
+6. **The single-party chambers 1959-1989.** Highest archival cost, and the
    membership is least variable, so the lowest marginal return — but necessary
    for any claim about the founding elite's persistence across the whole period.

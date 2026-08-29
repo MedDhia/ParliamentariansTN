@@ -620,3 +620,43 @@ class TestMajlesMemberStatistics:
     def test_zero_denominator_does_not_divide(self):
         assert marsad_majles.parse_member_statistics(
             '<a title="Participation aux votes : 0 / 0"></a>') == {}
+
+
+class TestMajlesBureau:
+    """ARP-2019 presiding officers, the chamber's only office data.
+
+    The enum has to come from the *individual* title rather than the section
+    heading, because "Vice-présiendent(e)s" covers both vice-presidencies and
+    only each holder's own title carries the ordinal that separates them.
+    """
+
+    def _card(self, slug, dates, name, role):
+        return f"""
+        <a href="/ar/person/{slug}" class="text-center">
+          <div class="info-popup"><span>Bloc X</span>
+            <span><img class="popup-icon" src="/icons/calendar.svg">{dates}</span>
+          </div>
+          <div class="person-name h6">{name}</div>
+          <div class="person-bloc txt-red">{role}</div>
+        </a>"""
+
+    def test_ordinal_separates_the_two_vice_speakers(self):
+        markup = (self._card("a", "13 نوفمبر 2019 - اليوم", "A", "Première vice-présidente")
+                  + self._card("b", "14 نوفمبر 2019 - اليوم", "B", "Deuxième vice-président"))
+        parsed = marsad_majles.parse_bureau(markup)
+        assert marsad_majles._office_code(parsed["a"]["role"]) == "first_vice_speaker"
+        assert marsad_majles._office_code(parsed["b"]["role"]) == "vice_speaker"
+
+    def test_assessors_are_bureau_members_not_speakers(self):
+        # Their titles all contain "Président" as the person they assist, so a
+        # naive substring test on "président" would make ten of them speakers.
+        role = "L’assesseur auprès du Président chargé de la législation"
+        assert marsad_majles._office_code(role) == "bureau_member"
+
+    def test_dates_are_parsed_and_the_open_end_stays_empty(self):
+        parsed = marsad_majles.parse_bureau(
+            self._card("a", "20 أكتوبر 2020 - اليوم", "A", "الرئيس"))
+        assert parsed["a"]["start_date"] == "2020-10-20"
+        # "اليوم" means still serving when the site froze in 2021 — not today,
+        # and not the March 2022 dissolution. Neither may be invented here.
+        assert parsed["a"]["end_date"] == ""

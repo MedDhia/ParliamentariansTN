@@ -5,13 +5,13 @@
   "name": "Marsad Majles (Al Bawsala) — 2019 ARP observatory",
   "publisher": "Al Bawsala",
   "url": "https://majles.marsad.tn/ar/assembly/deputies",
-  "access_method": "HTML scrape of server-rendered roster, bloc and committee pages",
-  "coverage": "ARP-2019: 216 members with sex, profession, district, electoral list, bloc; dated bloc memberships (bloc switching observable); dated committee memberships with roles; vote-participation and plenary-attendance rates; asset-declaration compliance",
+  "access_method": "HTML scrape of server-rendered roster, bloc, committee, bureau and individual member pages",
+  "coverage": "ARP-2019: 216 members with sex, profession, district, electoral list, bloc; end-of-term bloc membership; dated committee memberships with roles; the 13-member bureau with each tenure's start date and the source's own title; plenary and committee attendance, vote participation and vote discipline with their denominators; asset-declaration compliance",
   "language": "ar; fr",
   "licence": "Not stated. Civic-monitoring data on public office-holders.",
-  "first_retrieved": "2026-08-28",
-  "last_retrieved": "2026-08-28",
-  "reliability_notes": "Frozen archive: the site has not been updated since 2021, so it reflects the chamber as of its suspension and is stable to cite. Bloc pages render a per-bloc attendance table rather than a dated membership history, so bloc membership is an end-of-term snapshot and switching within the term is NOT recoverable here. Age is published as a value on the roster card with no reference date and is therefore NOT converted to a birth date. Attendance and participation denominators differ between the roster cards and the individual profile pages; the roster figures are used here and the denominators are not published alongside them, so these rates should be compared within this term only."
+  "first_retrieved": "2026-08-29",
+  "last_retrieved": "2026-08-29",
+  "reliability_notes": "Frozen archive: the site has not been updated since 2021, so it reflects the chamber as of its suspension and is stable to cite. Bloc pages render a per-bloc attendance table rather than a dated membership history, so bloc membership is an end-of-term snapshot and switching within the term is NOT recoverable here. Age is published as a value on the roster card with no reference date and is therefore NOT converted to a birth date. Attendance and participation figures differ between the roster cards and the individual member pages; the member page is preferred because it states its denominator, and the rates are recomputed from those counts rather than read from the rendered percentage. The denominators are this chamber's own sitting and division counts, so compare these rates within this term only. The bureau page gives each tenure a start date but renders its end as 'still serving', which means as of the site's last update in 2021 rather than today or the chamber's dissolution in March 2022; end dates are therefore left empty."
  },
  "assembly_id": "ARP-2019",
  "assembly_updates": {
@@ -245,8 +245,8 @@
   ]
  },
  "constituencies": [],
- "notes": "216 members; 8 bloc-years; 28 committees. Fetch: 216 fetched, 40 from cache.",
- "retrieved_at": "2026-08-28",
+ "notes": "216 members; 8 bloc-years; 28 committees. Fetch: 0 fetched, 258 from cache.",
+ "retrieved_at": "2026-08-29",
  "records": [
   {
    "source_key": "abdallah-hrizi",
@@ -472,7 +472,14 @@
     }
    ],
    "committees": [],
-   "offices": [],
+   "offices": [
+    {
+     "office": "bureau_member",
+     "office_label_ar": "مساعد الرئيس المكلّف بشؤون التّشريع",
+     "start_date": "2020-10-20",
+     "end_date": ""
+    }
+   ],
    "careers": [],
    "party_affiliations": [],
    "participation": {
@@ -889,7 +896,14 @@
     }
    ],
    "committees": [],
-   "offices": [],
+   "offices": [
+    {
+     "office": "bureau_member",
+     "office_label_ar": "مساعدة الرئيس المكلفة بشؤون النواب",
+     "start_date": "2020-10-20",
+     "end_date": ""
+    }
+   ],
    "careers": [],
    "party_affiliations": [],
    "participation": {
@@ -4946,7 +4960,14 @@
     }
    ],
    "committees": [],
-   "offices": [],
+   "offices": [
+    {
+     "office": "bureau_member",
+     "office_label_ar": "مساعد الرئيس المكلّف بالتصرف العام",
+     "start_date": "2020-10-20",
+     "end_date": ""
+    }
+   ],
    "careers": [],
    "party_affiliations": [],
    "participation": {
@@ -7327,7 +7348,14 @@
      "end_date": ""
     }
    ],
-   "offices": [],
+   "offices": [
+    {
+     "office": "bureau_member",
+     "office_label_ar": "مساعةد الرئيس المكلّفة بالعلاقات مع المواطن ومع المجتمع المدني",
+     "start_date": "2020-10-20",
+     "end_date": ""
+    }
+   ],
    "careers": [],
    "party_affiliations": [],
    "participation": {
@@ -7901,7 +7929,14 @@
     }
    ],
    "committees": [],
-   "offices": [],
+   "offices": [
+    {
+     "office": "bureau_member",
+     "office_label_ar": "مساعد الرئيس المكلف بالتونسيين بالخارج",
+     "start_date": "2020-10-20",
+     "end_date": ""
+    }
+   ],
    "careers": [],
    "party_affiliations": [],
    "participation": {
@@ -8834,7 +8869,14 @@
     }
    ],
    "committees": [],
-   "offices": [],
+   "offices": [
+    {
+     "office": "bureau_member",
+     "office_label_ar": "مساعد الرئيس المكلف بالعلاقات مع السلطة القضائية والهيئات الدستورية",
+     "start_date": "2020-10-20",
+     "end_date": ""
+    }
+   ],
    "careers": [],
    "party_affiliations": [],
    "participation": {
@@ -8999,7 +9041,14 @@
     }
    ],
    "committees": [],
-   "offices": [],
+   "offices": [
+    {
+     "office": "bureau_member",
+     "office_label_ar": "مساعد الرئيس المكلف بالإعلام والاتصال",
+     "start_date": "2020-10-20",
+     "end_date": ""
+    }
+   ],
    "careers": [],
    "party_affiliations": [],
    "participation": {
@@ -12680,7 +12729,14 @@
     }
    ],
    "committees": [],
-   "offices": [],
+   "offices": [
+    {
+     "office": "bureau_member",
+     "office_label_ar": "مساعد الرئيس المكلف بالرقابة على تنفيذ الميزانية",
+     "start_date": "2020-10-20",
+     "end_date": ""
+    }
+   ],
    "careers": [],
    "party_affiliations": [],
    "participation": {
@@ -14145,7 +14201,14 @@
     }
    ],
    "committees": [],
-   "offices": [],
+   "offices": [
+    {
+     "office": "speaker",
+     "office_label_ar": "الرئيس",
+     "start_date": "2019-11-13",
+     "end_date": ""
+    }
+   ],
    "careers": [],
    "party_affiliations": [],
    "participation": {
@@ -15559,7 +15622,14 @@
     }
    ],
    "committees": [],
-   "offices": [],
+   "offices": [
+    {
+     "office": "bureau_member",
+     "office_label_ar": "مساعدة الرئيس المكلفة بالعلاقات مع الحكومة ورئاسة الجمهورية",
+     "start_date": "2020-10-20",
+     "end_date": ""
+    }
+   ],
    "careers": [],
    "party_affiliations": [],
    "participation": {
@@ -15802,7 +15872,14 @@
     }
    ],
    "committees": [],
-   "offices": [],
+   "offices": [
+    {
+     "office": "first_vice_speaker",
+     "office_label_ar": "النائبة الأولى لرئيس المجلس",
+     "start_date": "2019-11-13",
+     "end_date": ""
+    }
+   ],
    "careers": [],
    "party_affiliations": [],
    "participation": {
@@ -16649,7 +16726,14 @@
     }
    ],
    "committees": [],
-   "offices": [],
+   "offices": [
+    {
+     "office": "bureau_member",
+     "office_label_ar": "مساعد الرئيس المكلّف بالعلاقات الخارجية",
+     "start_date": "2020-10-20",
+     "end_date": ""
+    }
+   ],
    "careers": [],
    "party_affiliations": [],
    "participation": {
@@ -17032,7 +17116,14 @@
     }
    ],
    "committees": [],
-   "offices": [],
+   "offices": [
+    {
+     "office": "vice_speaker",
+     "office_label_ar": "النائب الثاني لرئيس المجلس",
+     "start_date": "2019-11-14",
+     "end_date": ""
+    }
+   ],
    "careers": [],
    "party_affiliations": [],
    "participation": {

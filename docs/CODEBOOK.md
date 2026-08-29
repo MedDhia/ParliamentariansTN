@@ -1,6 +1,6 @@
 # Codebook
 
-Generated from `src/parliamentarians_tn/schema.py` and the built data on 2026-08-28. Do not edit by hand — run `make codebook` instead.
+Generated from `src/parliamentarians_tn/schema.py` and the built data on 2026-08-29. Do not edit by hand — run `make codebook` instead.
 
 ## Reading this codebook
 
@@ -25,7 +25,7 @@ Rates are proportions in [0, 1], not percentages. Denominators differ across sou
 | [`bloc_memberships`](#bloc_memberships) | One row per person per bloc per spell. | 1,116 |
 | [`committees`](#committees) | One row per committee per assembly. | 54 |
 | [`committee_memberships`](#committee_memberships) | One row per person per committee per spell. | 1,129 |
-| [`offices`](#offices) | One row per person per parliamentary office per spell. | 47 |
+| [`offices`](#offices) | One row per person per parliamentary office per spell. | 60 |
 | [`careers`](#careers) | One row per person per extra-parliamentary role. | 171 |
 | [`participation`](#participation) | One row per person per assembly. | 583 |
 | [`votes`](#votes) | One row per recorded division. | 1,724 |
@@ -448,26 +448,28 @@ Bureau and presiding offices of the chamber.
 
 **Primary key.** `office_id`
 
-**Rows.** 47
+**Rows.** 60
 
 | Variable | Type | Non-empty | Description |
 | --- | --- | --- | --- |
-| `office_id` | string | 47 (100%) | *(required, unique)* Identifier. |
-| `person_id` | string → `persons.person_id` | 47 (100%) | *(required)* Office holder. |
-| `assembly_id` | string → `assemblies.assembly_id` | 47 (100%) | *(required)* Assembly. |
-| `office` | enum | 47 (100%) | Office held. One of: `speaker`, `first_vice_speaker`, `vice_speaker`, `bureau_member`, `bloc_chair`, `unknown`. |
-| `office_label_ar` | string | 47 (100%) | Office title as given by the source. |
-| `start_date` | date | 47 (100%) | Start of tenure. |
-| `end_date` | date | 32 (68%) | End of tenure. |
-| `source_ids` | string → `sources.source_id` | 47 (100%) | Provenance. |
+| `office_id` | string | 60 (100%) | *(required, unique)* Identifier. |
+| `person_id` | string → `persons.person_id` | 60 (100%) | *(required)* Office holder. |
+| `assembly_id` | string → `assemblies.assembly_id` | 60 (100%) | *(required)* Assembly. |
+| `office` | enum | 60 (100%) | Office held. One of: `speaker`, `first_vice_speaker`, `vice_speaker`, `bureau_member`, `bloc_chair`, `unknown`. |
+| `office_label_ar` | string | 60 (100%) | Office title as given by the source. |
+| `start_date` | date | 60 (100%) | Start of tenure. |
+| `end_date` | date | 32 (53%) | End of tenure. |
+| `source_ids` | string → `sources.source_id` | 60 (100%) | Provenance. |
 
 <details><summary>Distribution of <code>office</code></summary>
 
 | Value | n |
 | --- | --- |
-| `speaker` | 40 |
+| `speaker` | 41 |
+| `bureau_member` | 10 |
 | `unknown` | 5 |
-| `vice_speaker` | 2 |
+| `vice_speaker` | 3 |
+| `first_vice_speaker` | 1 |
 
 </details>
 
