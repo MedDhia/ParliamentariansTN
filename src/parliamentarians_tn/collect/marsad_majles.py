@@ -22,8 +22,21 @@ requests:
   ``marsad.tn/mercato`` as the lead for recovering switching properly.
 * ``/ar/assembly/commissions/<slug>`` lists committee members with role and
   joining/leaving dates, which *are* published.
+* ``/ar/assembly/office`` renders the chamber's bureau — the speaker, the two
+  vice-speakers and the ten assessors — each with the start of their tenure and
+  the source's own Arabic title for the post. It is fetched in both languages:
+  the Arabic page for the dates and titles, the French one for the wording the
+  ``offices.office`` enum is read from, since only the French title carries the
+  ordinal that separates the first vice-speaker from the second.
 
-The French mirror is fetched for the roster only, to supply Latin-script names.
+Individual member pages supply the participation denominators. The French mirror
+is fetched for the roster and the bureau, to supply Latin-script names and the
+role wording.
+
+Two site-level sections remain uncollected and are not gaps in this chamber's
+*membership* data but are worth knowing about: ``/fr/legislation`` and
+``/fr/government-control`` carry the chamber's legislative and oversight output,
+for which this dataset has no tables.
 """
 
 from __future__ import annotations
@@ -44,6 +57,8 @@ ROSTER_AR = f"{SITE}/ar/assembly/deputies"
 ROSTER_FR = f"{SITE}/fr/assembly/deputies"
 COMMISSIONS_INDEX = f"{SITE}/ar/assembly/commissions"
 BLOCS_INDEX = f"{SITE}/ar/assembly/blocs"
+BUREAU_AR = f"{SITE}/ar/assembly/office"
+BUREAU_FR = f"{SITE}/fr/assembly/office"
 
 FIRST_SITTING = "2019-11-13"
 ELECTION_DATE = "2019-10-06"
@@ -279,6 +294,63 @@ def parse_bloc_members(markup: str) -> list[str]:
     return sorted(set(re.findall(r"/ar/person/([a-z0-9\-]+)", markup)))
 
 
+# ---------------------------------------------------------------------------
+# Bureau
+# ---------------------------------------------------------------------------
+
+# The page groups members under a heading per office class, but each card also
+# carries its holder's own title, and that is what the enum is read from: the
+# two vice-presidencies are distinguished only by the ordinal in their titles,
+# which the headings do not carry. Scanning for cards directly therefore loses
+# nothing — both readings return the same 13 — and drops a level of nesting.
+_BUREAU_MEMBER = re.compile(
+    r'<a href="/(?:fr|ar)/person/(?P<slug>[a-z0-9\-]+)"[^>]*>.*?'
+    r'<img class="popup-icon" src="/icons/calendar\.svg">\s*(?P<dates>.*?)\s*</span>.*?'
+    r'<div class="person-name[^"]*">\s*(?P<name>[^<]+?)\s*</div>.*?'
+    r'<div class="person-bloc[^"]*">\s*(?P<role>[^<]+?)\s*</div>', re.S)
+
+
+def _office_code(role_fr: str) -> str:
+    """Map a French bureau title onto the `offices.office` vocabulary."""
+    role = role_fr.lower()
+    if "assesseur" in role:
+        return "bureau_member"
+    if "vice" in role:
+        return "first_vice_speaker" if "première" in role or "premier" in role else "vice_speaker"
+    if "président" in role:
+        return "speaker"
+    return "unknown"
+
+
+def parse_bureau(markup: str) -> dict[str, dict[str, str]]:
+    """Parse a bureau page into slug -> {role, start_date, end_date}.
+
+    Dates are only meaningful from the Arabic page, whose month names
+    ``parse_arabic_date`` already knows; the French page is parsed for the role
+    titles the enum is derived from.
+
+    The open end of a tenure renders as "اليوم" / "Aujourd'hui", which means
+    *still in office when the site was last updated in 2021* — not today, and
+    not the chamber's dissolution in March 2022. It is left empty rather than
+    resolved to either, because the source does not state when these tenures
+    ended and inventing a date would assert something it does not.
+
+    Keyed by slug, so a member holding two posts in succession would keep only
+    the later. That is safe for this page, which renders the composition in
+    force at the freeze rather than a history, and the count is asserted by the
+    caller's log line.
+    """
+    out: dict[str, dict[str, str]] = {}
+    for m in _BUREAU_MEMBER.finditer(markup):
+        start, _, end = _txt(m.group("dates")).partition("-")
+        out[m.group("slug")] = {
+            "role": html.unescape(m.group("role")).strip(),
+            "start_date": parse_arabic_date(start),
+            "end_date": parse_arabic_date(end),
+        }
+    return out
+
+
 def _page_title(markup: str) -> str:
     m = re.search(r"<title[^>]*>(.*?)</title>", markup, re.S | re.I)
     if not m:
@@ -369,6 +441,33 @@ def collect(refresh: bool = False) -> StagingDoc:
     log(f"  committees: {len(com_meta)} committees, "
         f"{sum(len(v) for v in committees_by_slug.values())} memberships")
 
+    # -- bureau ------------------------------------------------------------
+    # Both languages are needed: the Arabic page for the dates (its month names
+    # are the ones parse_arabic_date knows) and the source's own Arabic title,
+    # the French page for the title the office enum is read from.
+    bureau_ar = parse_bureau(fetcher.get_text(BUREAU_AR, slug="bureau_ar"))
+    bureau_fr = parse_bureau(fetcher.get_text(BUREAU_FR, slug="bureau_fr"))
+    offices_by_slug: dict[str, list[dict[str, Any]]] = {}
+    for slug, ar in sorted(bureau_ar.items()):
+        if slug not in roster:
+            # Every holder should be a sitting member; if one is not, the roster
+            # and the bureau page disagree and that is worth seeing, not hiding.
+            log(f"  ! bureau member {slug} is not on the roster; skipped")
+            continue
+        fr = bureau_fr.get(slug, {})
+        if not fr:
+            # Without the French title the office falls to 'unknown', which is
+            # honest but lossy, so say which member it happened to.
+            log(f"  ! bureau member {slug} has no French title; office unknown")
+        offices_by_slug.setdefault(slug, []).append({
+            "office": _office_code(fr.get("role", "")),
+            "office_label_ar": ar["role"],
+            "start_date": ar["start_date"],
+            "end_date": ar["end_date"],
+        })
+    log(f"  bureau: {len(offices_by_slug)} office holders "
+        f"({sorted({o['office'] for v in offices_by_slug.values() for o in v})})")
+
     # -- member pages ------------------------------------------------------
     # The roster card carries two rounded percentages. The member's own page
     # carries five measures *with their denominators* — how many sittings there
@@ -439,6 +538,7 @@ def collect(refresh: bool = False) -> StagingDoc:
                 }
             ] if card["bloc_ar"] else []),
             committees=committees_by_slug.get(slug, []),
+            offices=offices_by_slug.get(slug, []),
             participation=participation,
             authoritative_fields=["name_ar", "name_lat", "gender", "occupation_raw"],
         ))
@@ -451,12 +551,17 @@ def collect(refresh: bool = False) -> StagingDoc:
             "name": "Marsad Majles (Al Bawsala) — 2019 ARP observatory",
             "publisher": "Al Bawsala",
             "url": ROSTER_AR,
-            "access_method": "HTML scrape of server-rendered roster, bloc and committee pages",
+            "access_method": (
+                "HTML scrape of server-rendered roster, bloc, committee, bureau "
+                "and individual member pages"
+            ),
             "coverage": (
                 "ARP-2019: 216 members with sex, profession, district, electoral "
-                "list, bloc; dated bloc memberships (bloc switching observable); "
-                "dated committee memberships with roles; vote-participation and "
-                "plenary-attendance rates; asset-declaration compliance"
+                "list, bloc; end-of-term bloc membership; dated committee "
+                "memberships with roles; the 13-member bureau with each tenure's "
+                "start date and the source's own title; plenary and committee "
+                "attendance, vote participation and vote discipline with their "
+                "denominators; asset-declaration compliance"
             ),
             "language": "ar; fr",
             "licence": "Not stated. Civic-monitoring data on public office-holders.",
@@ -470,10 +575,16 @@ def collect(refresh: bool = False) -> StagingDoc:
                 "snapshot and switching within the term is NOT recoverable here. "
                 "Age is published as a value on the roster card with no reference "
                 "date and is therefore NOT converted to a birth date. Attendance "
-                "and participation denominators differ between the roster cards "
-                "and the individual profile pages; the roster figures are used "
-                "here and the denominators are not published alongside them, so "
-                "these rates should be compared within this term only."
+                "and participation figures differ between the roster cards and "
+                "the individual member pages; the member page is preferred "
+                "because it states its denominator, and the rates are recomputed "
+                "from those counts rather than read from the rendered "
+                "percentage. The denominators are this chamber's own sitting and "
+                "division counts, so compare these rates within this term only. "
+                "The bureau page gives each tenure a start date but renders its "
+                "end as 'still serving', which means as of the site's last "
+                "update in 2021 rather than today or the chamber's dissolution "
+                "in March 2022; end dates are therefore left empty."
             ),
         },
         assembly_updates={"blocs": bloc_meta, "committees": com_meta},

@@ -96,7 +96,7 @@ Twenty-two tables in `data/processed`, all UTF-8 CSV with a header row.
 | `bloc_memberships` | 1,116 | dated bloc membership |
 | `committees` | 54 | committee × chamber |
 | `committee_memberships` | 1,129 | dated committee membership with role |
-| `offices` | 47 | speaker, vice-speaker, bureau tenures |
+| `offices` | 60 | speaker, vice-speaker, bureau tenures |
 | `careers` | 171 | extra-parliamentary roles |
 | `participation` | 583 | attendance, voting, written questions |
 | `votes` | 1,724 | one recorded division (NCA-2011) |

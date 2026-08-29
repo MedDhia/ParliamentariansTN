@@ -11,7 +11,7 @@ covers — what was checked and found wanting.
 | ID | Source | Covers | Depth | Access |
 | --- | --- | --- | --- | --- |
 | `ARP_ODOO` | Assembly of the Representatives of the People, official site | ARP-2023 | Roster, bilingual names, sex, governorate, constituency, blocs, committees, offices, written questions | Odoo JSON-RPC, read-only |
-| `MARSAD_MAJLES` | Marsad Majles (Al Bawsala) | ARP-2019 | Roster, sex, profession, district, list, bloc, dated committee spells, attendance and voting rates | HTML |
+| `MARSAD_MAJLES` | Marsad Majles (Al Bawsala) | ARP-2019 | Roster, sex, profession, district, list, bloc, dated committee spells, the bureau, attendance and voting rates with denominators | HTML |
 | `MARSAD_ARP2014` | Marsad Majles 2014 observatory, via the Internet Archive | ARP-2014 | Full roster, Arabic + romanised names, sex, profession, constituency, list, seat number, **bloc membership as dated spells** | Wayback CDX + raw captures |
 | `MARSAD_ANC` | Marsad (Al Bawsala) | NCA-2011 | Narrative biographies (ar+fr), birth date and place, sex (inferred), marital status, languages, bloc, list, party, committees with roles, vote participation | HTML |
 | `WIKI_AR_ANC1956` | Arabic Wikipedia | ANC-1956 | Full 98-member roster with constituencies, August 1956 by-elections, presiding officers, aggregate occupational profile | MediaWiki API |
@@ -71,6 +71,12 @@ profession, age and sex, plus a vote-participation rate, an attendance rate, and
 whether the member filed the statutory asset declaration. One request yields the
 priority biographical layer for the whole chamber.
 
+**The bureau.** `/ar/assembly/office` publishes the chamber's presiding
+officers — a speaker, two vice-speakers and ten assessors with named portfolios
+— each with the start of their tenure and the source's own title for the post.
+This is the only ARP-2019 office data in any source collected here, and it went
+unrequested until the site's navigation was enumerated rather than assumed.
+
 **Why the member pages are collected anyway.** The roster card gives a rounded
 rate and nothing else. Each member's own page gives five measures *with their
 denominators* — plenary attendance, standing-committee attendance,
@@ -102,6 +108,20 @@ not propagate.
   no column for them; they are available on the cached member pages for anyone
   who wants to code them.
 - Committee pages *do* publish joining and leaving dates, and those are used.
+- **The bureau page is a composition, not a history.** `/ar/assembly/office`
+  gives the 13 members holding office when the site was last updated — the
+  speaker and first vice-speaker from 13 November 2019, the second vice-speaker
+  from the 14th, and all ten assessors from 20 October 2020. Anyone who held a
+  bureau post earlier and left before that date does not appear, so these are
+  the tenures in force at the freeze rather than every tenure of the term.
+- **Bureau end dates are empty on purpose.** The page renders an open tenure as
+  "still serving", which means as of the 2021 freeze — not today, and not the
+  chamber's dissolution in March 2022. Writing either date would assert
+  something the source does not say.
+- Two site sections are not collected: `/fr/legislation` and
+  `/fr/government-control`, the chamber's legislative and oversight output. The
+  dataset has no tables for bills or oversight acts, so this is a schema gap
+  rather than a collection oversight.
 
 ## `MARSAD_ARP2014` — the 2014-2019 chamber, from the Internet Archive
 
@@ -276,23 +296,48 @@ Chamber of Deputies position; Arabic Wikipedia, which has a members category for
 1956 but none for later chambers. The route is archival — see
 `RECONSTRUCTION_PROTOCOL.md`.
 
-**Bloc switching in 2011-2014 and 2019-2021.** Switching is now observable for
-the 2014-2019 chamber (from archived captures) and for the sitting chamber (from
-`arp.tn`, which publishes appointment and departure dates), but not for the
-Constituent Assembly or the 2019 chamber, whose sources publish end-of-term
-snapshots. `marsad.tn/mercato` is a dedicated Al Bawsala page tracking bloc
-movement in the Constituent Assembly — the Tunisian press's term for the
-phenomenon — and archived captures of the 2019 roster may permit the same
-snapshot-diffing approach used for 2014. Both are identified but not parsed.
+**Bloc switching in 2011-2014 and 2019-2021.** *Bloc* switching is observable
+for the 2014-2019 chamber (from archived captures) and for the sitting chamber
+(from `arp.tn`, which publishes appointment and departure dates), but not for
+the Constituent Assembly or the 2019 chamber, whose sources publish end-of-term
+snapshots. Archived captures of the 2019 roster may permit the same
+snapshot-diffing approach used for 2014; that is identified but not attempted.
 
-**Roll-call votes.** `marsad.tn/deputes/<id>/votes` returns a large per-member
-voting record for the Constituent Assembly, and `majles.marsad.tn` publishes
-votes for 2019. Neither is collected here: the schema holds voting *rates* but
-not individual vote choices, and adding a votes table is the single largest
-available extension to this dataset.
+Note what `marsad.tn/mercato` did and did not settle. It *is* collected, and it
+is what puts 105 rows in `party_switches` — but it publishes each member's party
+of election against their party at the end of the term, which is **party**
+switching, undated and unchainable. It does not recover bloc spells, so the
+Constituent Assembly's bloc data remains a snapshot.
 
-**Chamber of Advisors (2005-2011) and CNRD (2023-).** Neither has a published
-machine-readable roster; the CNRD is covered by neither observatory.
+**Roll-call votes.** The Constituent Assembly's are collected: 370,922 positions
+across 1,724 divisions from `marsad.tn/fr/deputes/<id>/votes`, in `votes` and
+`vote_positions`.
+
+An earlier version of this section claimed `majles.marsad.tn` also publishes
+votes for 2019. **That appears to be wrong.** Its `/fr/votes` path 301-redirects
+to `anc.majles.marsad.tn/fr/votes` — the 2011-2014 record, already collected —
+and no division-level voting for the 2019 chamber was found anywhere on that
+site. What it does publish for that chamber is a vote-*participation* rate with
+its denominator, which is a count of divisions attended, not a set of positions.
+Treat 2019 roll-call votes as unlocated rather than available.
+
+**Chamber of Advisors (2005-2011) and CNRD (2023-).** Neither has a roster in
+any source collected here, and the CNRD is covered by neither observatory. For
+the Chamber of Advisors this is weaker than it sounds: its own site,
+`chambredesconseillers.tn`, is dead, but Internet Archive captures of it exist —
+the availability API confirms a 2010 capture of its member pages returning 200.
+Nobody has read them. That chamber should be treated as **unattempted**, not as
+unavailable, until someone with working `web.archive.org` access looks.
+
+**A note on how these gaps get found.** Three of the entries above were wrong or
+stale until someone enumerated a site's own navigation rather than trusting the
+collector's assumptions about it. `marsad.tn` was thought exhausted while four
+member sub-pages and the site-level `/mercato` had never been requested;
+`majles.marsad.tn/fr/assembly/office` published this dataset's only ARP-2019
+bureau data for as long as the collector went looking only at rosters, blocs and
+committees. Before recording a layer as unavailable, list the source's outbound
+links and check each one — a collector cannot report data it never requested,
+and its silence looks exactly like absence.
 
 ## Access ethics
 
