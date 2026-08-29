@@ -387,14 +387,22 @@ ASSEMBLY_ROWS: list[dict[str, object]] = [
         "termination_mode": "Dissolved after the revolution of 14 January 2011",
         "speaker_person_id": "",
         "legal_basis": "Constitutional amendment approved by referendum on 26 May 2002",
-        "coverage_status": "frame_only",
+        "coverage_status": "partial",
         "notes": (
             "Tunisia's only upper house before 2023. Sat 2005-2011 in parallel with the "
             "Chamber of Deputies. start_date is left EMPTY because the date of its first "
             "sitting could not be verified; it is not unknown-but-approximately-2005, it "
-            "is simply not established here. Membership was reported as 112 at creation "
-            "and 126 after the 2008 partial renewal; both figures require verification. "
-            "No person-level data is included for this chamber."
+            "is simply not established here — and for the same reason no member's mandate "
+            "carries a start date. The membership is now recovered from Internet Archive "
+            "captures of the chamber's own site: 43 governorate representatives, 28 "
+            "professional-organisation representatives and 41 presidential appointees, "
+            "summing to exactly the nominal 112, plus one later appointee, with committee "
+            "membership and the bureau. That reconciliation also settles a figure this "
+            "row previously flagged as unverified: the chamber's own pages list 112 in "
+            "2010, two years AFTER the 2008 partial renewal, so the reported 126 is not "
+            "supported. Coverage is partial rather than full because the site published a "
+            "roster and not member profiles — no dates of birth, parties, biographies or "
+            "votes exist for this chamber."
         ),
     },
     {

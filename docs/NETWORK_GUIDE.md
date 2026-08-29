@@ -163,15 +163,19 @@ their missingness before reporting any statistic.
 
 ## Cautions worth repeating
 
-- **Coverage is not random.** Five chambers have person-level data; eleven have
+- **Coverage is not random.** Six chambers have person-level data; eleven have
   only their speaker. Any network claim about "Tunisian parliamentarians" is a
-  claim about 1956, 2011-2014, 2014-2019, 2019-2021 and 2023-present unless you
-  say otherwise.
+  claim about 1956, 2005-2011, 2011-2014, 2014-2019, 2019-2021 and 2023-present
+  unless you say otherwise.
 - **The mandate panel is continuous across the democratic period**
-  (NCA-2011 → ARP-2014 → ARP-2019 → ARP-2023): 84 people appear in more than one
-  chamber and 16 in three or more. But ARP-2014 has no committee data, so a
-  committee-network panel still has a hole in the middle where the mandate panel
-  does not — check which layer your design actually needs.
+  (NCA-2011 → ARP-2014 → ARP-2019 → ARP-2023), and so, now, is the committee
+  panel: ARP-2014's committee membership was the last hole in it and is
+  recovered. 84 people appear in more than one chamber and 16 in three or more.
+- **ARP-2014's committee spells are dated coarsely.** They come from diffing
+  twelve web captures per committee, so 803 of 985 carry
+  `dates_bracketed = true` and a recorded span that is an outer bound. That is
+  fine for a co-membership projection over the whole term and wrong for anything
+  that slices the term finely — check `dates_bracketed` before you window.
 - **`n_mandates` counts only mandates in this dataset.** Someone who served in
   1994 and again in 2011 will show `n_mandates = 1`, because the 1994 chamber has
   no roster. Re-election and elite-persistence measures are therefore biased

@@ -56,6 +56,17 @@ SOURCE_PRIORITY = [
 ]
 
 
+# A shared name is the *weakest* evidence this pipeline merges on, and its
+# reliability falls with the distance between the two chambers: two people
+# called الطيب السحباني, one seated in 1956 and one in 2005, is a far likelier
+# reading than one man serving across forty-nine years. Where a birth date
+# exists the question is settled on evidence and this rule does not apply; where
+# neither side has one, the gap is all there is to go on. Forty years is chosen
+# to sit above the longest career this dataset actually contains and below the
+# span that would make a single career remarkable enough to need its own source.
+MAX_NAME_ONLY_MERGE_YEARS = 40
+
+
 def _priority(source_id: str) -> int:
     try:
         return SOURCE_PRIORITY.index(source_id)
@@ -86,6 +97,7 @@ class Builder:
         self.person_fields: dict[str, dict[str, tuple[int, str]]] = defaultdict(dict)
         self.xref: list[dict[str, Any]] = []
         self.match_review: list[dict[str, Any]] = []
+        self.rejected_merges: list[dict[str, Any]] = []
         self.provenance: list[dict[str, Any]] = []
 
         # match indices: key -> [(person_id, assembly_id, source_id, name)]
@@ -141,6 +153,37 @@ class Builder:
             self.person_fields[person_id][field] = (prio, str(value))
 
     # -- entity resolution ------------------------------------------------
+    def _assembly_year(self, assembly_id: str) -> int | None:
+        row = self.assemblies.get(assembly_id) or {}
+        for field in ("start_date", "end_date", "nominal_end_date"):
+            value = row.get(field) or ""
+            if value[:4].isdigit():
+                return int(value[:4])
+        return None
+
+    def _too_far_apart(self, person_id: str, other_assembly: str, assembly_id: str) -> bool:
+        """Refuse a name-only merge across an implausible span of years.
+
+        Only applies where neither side carries a birth date: with one, the
+        match is decided on evidence rather than on a name. Refusals are counted
+        and reported, never silent — a suppressed merge is as much a judgement
+        as a made one.
+        """
+        if self.person_fields[person_id].get("birth_date"):
+            return False
+        here, there = self._assembly_year(assembly_id), self._assembly_year(other_assembly)
+        if here is None or there is None:
+            return False
+        if abs(here - there) <= MAX_NAME_ONLY_MERGE_YEARS:
+            return False
+        self.rejected_merges.append({
+            "person_id": person_id,
+            "assembly_a": other_assembly,
+            "assembly_b": assembly_id,
+            "years_apart": abs(here - there),
+        })
+        return True
+
     def resolve_person(self, rec: dict[str, Any], source_id: str, assembly_id: str) -> str:
         """Return the person_id for a staged record, matching across sources."""
         existing = self.persons.get(source_id, rec["source_key"])
@@ -158,6 +201,8 @@ class Builder:
                 # Never merge two members of the same chamber on a name alone.
                 if a_id == assembly_id:
                     continue
+                if self._too_far_apart(pid, a_id, assembly_id):
+                    continue
                 # If both sides have a Latin name, require it to agree too.
                 other_lat = self.person_fields[pid].get("name_lat")
                 if lat_key and other_lat:
@@ -170,6 +215,8 @@ class Builder:
         if candidate is None and lat_key:
             for pid, a_id, s_id, nm in self.by_lat_key.get(lat_key, []):
                 if a_id == assembly_id:
+                    continue
+                if self._too_far_apart(pid, a_id, assembly_id):
                     continue
                 candidate = (pid, "normalised_name_lat")
                 break
@@ -381,6 +428,7 @@ class Builder:
                     "seat_number": m.get("seat_number", ""),
                     "is_diaspora_seat": "true" if m.get("is_diaspora_seat") else "false",
                     "election_date": m.get("election_date", ""),
+                    "notes": m.get("notes", ""),
                     "source_ids": source_id,
                 })
                 self._record_provenance("mandates", mandate_id, "assembly_id", source_id,
@@ -419,6 +467,8 @@ class Builder:
                     "role": spell.get("role") or "member",
                     "start_date": spell.get("start_date", ""),
                     "end_date": spell.get("end_date", ""),
+                    "dates_bracketed": "true" if spell.get("dates_bracketed") else "false",
+                    "notes": spell.get("notes", ""),
                     "source_ids": source_id,
                 })
 
@@ -503,6 +553,30 @@ class Builder:
                               "n_written_questions", "n_oral_questions"):
                     if part.get(field) not in (None, ""):
                         row[field] = part[field]
+
+        # Staged constituency rows are merged LAST, and the order is the whole
+        # point. A collector that knows a constituency's magnitude — how many
+        # seats it returns — can say so, and until now nothing read it: the
+        # field was staged and dropped, leaving `magnitude` empty for all 286
+        # rows. Merging it before the records instead would be worse than not
+        # merging it at all: `resolve_constituency` only derives a governorate
+        # for a constituency it is creating, so a row pre-seeded here with a
+        # blank one would stop that derivation from ever running and silently
+        # strip `governorate_id` from a whole chamber. Filling blanks after the
+        # fact cannot do that.
+        for row in doc.get("constituencies") or []:
+            cid = deterministic_id(
+                "TNC", row.get("assembly_id") or default_assembly,
+                self._norm_place(row.get("name_ar") or row.get("name_lat") or ""))
+            target = self.constituencies.setdefault(cid, {
+                "constituency_id": cid,
+                "assembly_id": row.get("assembly_id") or default_assembly,
+                "name_ar": "", "name_lat": "", "governorate_id": "",
+                "is_abroad": "false", "magnitude": "",
+            })
+            for field in ("name_ar", "name_lat", "governorate_id", "is_abroad", "magnitude"):
+                if row.get(field) and not target.get(field):
+                    target[field] = row[field]
 
     # -- pre-2011 presiding officers --------------------------------------
     def add_presiding_officers(self) -> None:
@@ -787,6 +861,9 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.parse_args()
     b = build()
+    for rejected in b.rejected_merges:
+        log(f"  name-only merge refused: {rejected['assembly_a']} and "
+            f"{rejected['assembly_b']} are {rejected['years_apart']} years apart")
     log(f"built {len(b.person_rows())} persons, {len(b.mandates)} mandates")
 
 

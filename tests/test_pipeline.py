@@ -17,9 +17,11 @@ import pytest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
+from parliamentarians_tn import build as build_mod  # noqa: E402
 from parliamentarians_tn import schema  # noqa: E402
 from parliamentarians_tn.collect import (  # noqa: E402
     arp_odoo,
+    chambre_conseillers,
     marsad_anc,
     marsad_arp2014,
     marsad_majles,
@@ -759,3 +761,516 @@ class TestMajlesBureau:
         # "اليوم" means still serving when the site froze in 2021 — not today,
         # and not the March 2022 dissolution. Neither may be invented here.
         assert parsed["a"]["end_date"] == ""
+
+
+# ---------------------------------------------------------------------------
+# The Chamber of Advisors, 2005-2011
+# ---------------------------------------------------------------------------
+
+ADV_GOV_FR = """
+<div id="texte">
+<table><tbody>
+ <tr><td class="CelTab1" colspan="2">La Manouba</td></tr>
+ <tr><td class="CelTab2">Abdelwahed Trabelsi</td><td class="CelTab2">Salem Ben Amor</td></tr>
+</tbody></table>
+<table><tbody>
+ <tr><td class="CelTab1" colspan="2">Zaghouan</td></tr>
+ <tr><td class="CelTab2">Salah Ben Haj Hessine</td></tr>
+</tbody></table>
+</div>
+<div id="end"></div>
+"""
+
+ADV_GOV_AR = """
+<div id="content">
+<table><tbody>
+ <tr><td class="CelTab1" colspan="2">زغوان</td></tr>
+ <tr><td class="CelTab2">صالح بن الحاج حسين</td></tr>
+</tbody></table>
+<table><tbody>
+ <tr><td class="CelTab1" colspan="2">منوبة</td></tr>
+ <tr><td class="CelTab2">سالم بن عمر</td><td class="CelTab2">عبد الواحد الطرابلسي</td></tr>
+</tbody></table>
+</div>
+<div id="end"></div>
+"""
+
+ADV_APPOINTEES = """
+<div id="texte"><table><tbody>
+ <tr><td class="CelTab2">1</td><td class="CelTab2">Abdallah Kallel</td>
+     <td class="CelTab2">15</td><td class="CelTab2">Chedli Klibi</td></tr>
+ <tr><td class="CelTab2">2</td><td class="CelTab2"></td>
+     <td class="CelTab2">16</td><td class="CelTab2">Sadok Ben Jemâa</td></tr>
+</tbody></table></div>
+<div id="end"></div>
+"""
+
+ADV_COMMITTEE = """
+<div id="texte"><table><tbody>
+ <tr><td class="CelTab1">Liste des membres de la Commission des finances</td>
+     <td class="CelTab1">Liste des membres de la Commission de l’immunité</td></tr>
+ <tr><td class="CelTab2"><div>Mohamed Sahraoui - Pr&eacute;sident de la Commission<br />
+        Mongi Cherif - Rapporteur de la Commission<br />
+        Salah Ben Haj Hessine - Rapporteur-adjoint<br />
+        Abdelwahed Trabelsi</div></td>
+     <td class="CelTab2"><div>Salem Ben Amor - Pr&eacute;sident de la Commission<br />
+        - Rapporteur de la Commission<br />
+        Mohamed Nejib Hamadi- Rapporteur-adjoint</div></td></tr>
+</tbody></table></div>
+<div id="end"></div>
+"""
+
+
+class TestAdvGovernorateJoin:
+    """The two language versions list governorates in different orders."""
+
+    def test_headings_resolve_to_governorate_ids(self):
+        latin = chambre_conseillers.parse_governorates(ADV_GOV_FR, arabic=False)
+        arabic = chambre_conseillers.parse_governorates(ADV_GOV_AR, arabic=True)
+        assert set(latin) == set(arabic)
+        # Manouba is TN-14, Zaghouan TN-22 — and note the pages disagree on order,
+        # which is exactly why the join cannot be positional.
+        assert latin["TN-14"] == ["Abdelwahed Trabelsi", "Salem Ben Amor"]
+        assert arabic["TN-14"] == ["سالم بن عمر", "عبد الواحد الطرابلسي"]
+
+    def test_pair_assignment_undoes_the_reversal(self):
+        latin = chambre_conseillers.parse_governorates(ADV_GOV_FR, arabic=False)
+        arabic = chambre_conseillers.parse_governorates(ADV_GOV_AR, arabic=True)
+        pairs = dict(chambre_conseillers._assign_pair(
+            arabic["TN-14"], latin["TN-14"], "TN-14"))
+        assert pairs["سالم بن عمر"] == "Salem Ben Amor"
+
+    def test_single_member_governorate_needs_no_decision(self):
+        latin = chambre_conseillers.parse_governorates(ADV_GOV_FR, arabic=False)
+        arabic = chambre_conseillers.parse_governorates(ADV_GOV_AR, arabic=True)
+        assert len(chambre_conseillers._assign_pair(
+            arabic["TN-22"], latin["TN-22"], "TN-22")) == 1
+
+    def test_size_disagreement_raises(self):
+        with pytest.raises(ValueError):
+            chambre_conseillers._assign_pair(["أ"], ["A", "B"], "somewhere")
+
+    def test_unknown_heading_raises_rather_than_dropping_a_governorate(self):
+        with pytest.raises(ValueError):
+            chambre_conseillers.parse_governorates(
+                '<div id="texte"><table><tbody>'
+                '<tr><td class="CelTab1">Atlantis</td></tr>'
+                '<tr><td class="CelTab2">Someone</td></tr>'
+                "</tbody></table></div><div id=\"end\"></div>",
+                arabic=False,
+            )
+
+
+class TestAdvAppointees:
+    def test_slot_numbers_are_the_join_key(self):
+        slots = chambre_conseillers.parse_appointees(
+            chambre_conseillers._content(ADV_APPOINTEES))
+        assert slots[1] == "Abdallah Kallel"
+        assert slots[15] == "Chedli Klibi"
+
+    def test_an_empty_cell_is_a_vacancy_not_a_missing_row(self):
+        """A blank name beside a live number is a seat the chamber did not fill."""
+        slots = chambre_conseillers.parse_appointees(
+            chambre_conseillers._content(ADV_APPOINTEES))
+        assert 2 in slots
+        assert slots[2] == ""
+
+
+class TestAdvCommittees:
+    def test_members_and_roles(self):
+        lists = chambre_conseillers.parse_committee_lists(
+            chambre_conseillers._content(ADV_COMMITTEE))
+        assert len(lists) == 2
+        name, members = lists[0]
+        assert "Commission des finances" in name
+        assert [chambre_conseillers._committee_role(r) for _n, r in members] == [
+            "chair", "rapporteur", "assistant_rapporteur", "member"]
+
+    def test_a_titled_row_with_no_name_is_not_a_member(self):
+        """The source prints a rapporteur's title with no name beside it."""
+        _name, members = chambre_conseillers.parse_committee_lists(
+            chambre_conseillers._content(ADV_COMMITTEE))[1]
+        assert ("", "Rapporteur de la Commission") in members
+
+    def test_missing_space_before_the_dash_still_splits(self):
+        assert chambre_conseillers._split_member(
+            "Mohamed Nejib Hamadi- Rapporteur-adjoint") == (
+                "Mohamed Nejib Hamadi", "Rapporteur-adjoint")
+
+    def test_a_bare_name_has_no_role(self):
+        assert chambre_conseillers._split_member("Abdelwahed Trabelsi") == (
+            "Abdelwahed Trabelsi", "")
+
+    def test_assistant_rapporteur_does_not_resolve_as_rapporteur(self):
+        assert chambre_conseillers._committee_role("Rapporteur-adjoint") == (
+            "assistant_rapporteur")
+
+
+class TestAdvMemberResolution:
+    """Committee pages spell a dozen names differently from the roster pages."""
+
+    def _roster(self):
+        names = [("ع", "Essia Dekhili"), ("ع", "Jamel Eddine Khemakhem"),
+                 ("ع", "Mohamed Jalel Rouissi"), ("ع", "Slaheddine Chaâben"),
+                 ("ع", "Hayet Aouani")]
+        seats = {}
+        for name_ar, name_lat in names:
+            seat = chambre_conseillers.Seat(name_ar, name_lat, "appointed")
+            seats[seat.source_key] = seat
+        return seats
+
+    @pytest.mark.parametrize("spelling,expected", [
+        ("Essia Dekhili", "Essia_Dekhili"),          # exact
+        ("Essia Dekhil", "Essia_Dekhili"),           # truncated
+        ("Jameleddine Khemakhem", "Jamel_Eddine_Khemakhem"),
+        ("Jalel Rouissi", "Mohamed_Jalel_Rouissi"),  # dropped given name
+        ("Saleheddine Chaâbane", "Slaheddine_Cha_ben"),
+        ("Hayet Laouani", "Hayet_Aouani"),
+    ])
+    def test_variants_resolve_into_the_roster(self, spelling, expected):
+        assert chambre_conseillers._resolve_member(spelling, self._roster()) == expected
+
+    def test_a_role_label_that_leaked_through_resolves_to_nobody(self):
+        """A parse slip must not invent a member; it must return nothing."""
+        assert chambre_conseillers._resolve_member(
+            "Rapporteur de la Commission", self._roster()) == ""
+
+
+class TestAdvVersionObservation:
+    def _seat(self, name):
+        return chambre_conseillers.Seat("ع", name, "appointed")
+
+    def test_a_member_on_every_state_is_neither_arrival_nor_departure(self):
+        seats = {}
+        for index, date in enumerate(["2010-04-12", "2011-09-01"]):
+            seen = {s.source_key: s for s in [self._seat("A")]}
+            chambre_conseillers._observe(seats, seen, date, date, index == 0, "appointed")
+        assert seats["A"].first_absent == ""
+        assert seats["A"].late_arrival is False
+
+    def test_a_member_who_stops_appearing_is_bracketed(self):
+        seats = {}
+        chambre_conseillers._observe(
+            seats, {s.source_key: s for s in [self._seat("A"), self._seat("B")]},
+            "2010-04-12", "2010-08-21", True, "appointed")
+        chambre_conseillers._observe(
+            seats, {s.source_key: s for s in [self._seat("A")]},
+            "2011-09-01", "2011-09-01", False, "appointed")
+        assert seats["B"].last_seen == "2010-08-21"
+        assert seats["B"].first_absent == "2011-09-01"
+        end, exit_mode, note = chambre_conseillers._mandate_notes(seats["B"])
+        # The interval contains the dissolution, so no end date is asserted.
+        assert end == ""
+        assert exit_mode == "unknown"
+        assert "2010-08-21" in note and "2011-09-01" in note
+
+    def test_a_member_of_another_page_is_not_recorded_as_having_left(self):
+        """Absence is only ever read off the page a seat belongs to."""
+        seats = {}
+        chambre_conseillers._observe(
+            seats, {s.source_key: s for s in [self._seat("A")]},
+            "2010-04-12", "2010-08-21", True, "appointed")
+        other = chambre_conseillers.Seat("ع", "B", "governorate")
+        chambre_conseillers._observe(
+            seats, {other.source_key: other}, "2011-09-01", "2011-09-01", True, "governorate")
+        assert seats["A"].first_absent == ""
+
+    def test_a_late_arrival_keeps_the_dissolution_as_its_end(self):
+        seats = {}
+        chambre_conseillers._observe(
+            seats, {s.source_key: s for s in [self._seat("A")]},
+            "2010-04-12", "2010-08-21", True, "appointed")
+        chambre_conseillers._observe(
+            seats, {s.source_key: s for s in [self._seat("A"), self._seat("B")]},
+            "2011-09-01", "2011-09-01", False, "appointed")
+        assert seats["B"].late_arrival is True
+        end, exit_mode, note = chambre_conseillers._mandate_notes(seats["B"])
+        assert end == chambre_conseillers.DISSOLUTION
+        assert exit_mode == "dissolution"
+        assert "bracketed" in note
+
+
+class TestAdvStructuralJoinGuard:
+    def test_corresponding_pages_pass(self):
+        pairs = [("محمد الصحراوي", "Mohamed Sahraoui"),
+                 ("مبروك البحري", "Mabrouk Bahri")]
+        assert chambre_conseillers._check_similarity(pairs, "test") > 0.3
+
+    def test_a_shifted_join_raises_instead_of_mislabelling(self):
+        pairs = [("محمد الصحراوي", "Mabrouk Bahri"),
+                 ("مبروك البحري", "Joseph Roger Bismuth")]
+        with pytest.raises(ValueError):
+            chambre_conseillers._check_similarity(pairs, "test")
+
+
+# ---------------------------------------------------------------------------
+# ARP-2014 committees and bureau, across three site layouts
+# ---------------------------------------------------------------------------
+
+COMMITTEE_2015 = """
+<h4>لجنة التشريع العام</h4>
+<a href="/2014/elus/Slim_Besbes" class="membre">
+  <span class="elu-fonction floati">الرئيس</span>
+  <span class="elu-nom">سليم بسباس</span><br>
+  <span class="elu-liste">حركة النهضة</span>
+</a>
+<a href="/2014/elus/Olfa_Soukri" class="membre">
+  <span class="elu-fonction floati">المقرر</span>
+  <span class="elu-nom">ألفة السكري</span>
+</a>
+"""
+
+COMMITTEE_2016 = """
+<h1 class="col-5">لجنة التشريع العام</h1>
+<a href="/2014/elus/Chaker_Ayadi" data-bloc="حركة نداء تونس" data-region="جندوبة">
+  <div class="elu-nom">شاكر عيادي</div>
+  <div class="elu-fonction">رئيس اللجنة</div>
+</a>
+<a href="/2014/elus/Latifa_Habachi" data-bloc="حركة النهضة" data-region="منوبة">
+  <div class="elu-nom">لطيفة الحباشي</div>
+  <div class="elu-fonction">نائبة رئيس اللجنة</div>
+</a>
+<a href="/2014/elus/Sana_Mersni" data-bloc="حركة النهضة" data-region="جندوبة">
+  <div class="elu-nom">سناء مرسني</div>
+  <div class="elu-fonction">مقررة مساعدة أولى</div>
+</a>
+"""
+
+COMMITTEE_2019 = """
+<h1>لجنة التشريع العام</h1>
+<a href="/2014/elus/Karim_Helali" class="link-elu">
+  <h6 class="card-title mb-1">كريم الهلالي</h6>
+  <span class="p-0 d-block text-primary font-weight-normal h6">رئيس</span>
+</a>
+"""
+
+# A wound-up committee: no sitting members, only a list of who resigned.
+COMMITTEE_DISSOLVED = """
+<h4>اللجنة الخاصة المكلفة بالماليّة</h4>
+<h4>أعضاء مستقيلين</h4>
+<div><a class="black" href="/2014/elus/Tarek_Fetiti">طارق فتيتي</a></div>
+<div><a class="black" href="/2014/elus/Olfa_Soukri">ألفة السكري</a></div>
+"""
+
+BUREAU_2019 = """
+<h5 class="card-header">الرئيس</h5>
+<a href="/2014/elus/Mohamed_Ennaceur" class="link-elu">
+  <h6 class="card-title mb-1">محمد الناصر</h6>
+  <span class="p-0 d-block text-primary"><i class="fal fa-briefcase"></i> الرئيس</span>
+  <span class="p-0 d-block"><i class="fal fa-calendar-alt"></i> 04 ديسمبر 2015 - 25 جويلية 2019</span>
+</a>
+<a href="/2014/elus/Abdelfattah_Mourou" class="link-elu">
+  <h6 class="card-title mb-1">عبد الفتاح مورو</h6>
+  <span class="p-0 d-block text-primary"><i class="fal fa-briefcase"></i> النائب الأوّل لرئيس المجلس</span>
+  <span class="p-0 d-block"><i class="fal fa-calendar-alt"></i> 04 ديسمبر 2014 - الآن</span>
+</a>
+<a href="/2014/elus/Faycel_Khelifa" class="link-elu">
+  <h6 class="card-title mb-1">فيصل خليفة</h6>
+  <span class="p-0 d-block text-primary"><i class="fal fa-briefcase"></i> مساعد الرئيس المكلف بالإعلام والاتصال</span>
+  <span class="p-0 d-block"><i class="fal fa-calendar-alt"></i> 19 أكتوبر 2018 - الآن</span>
+</a>
+"""
+
+
+class TestArp2014CommitteeLayouts:
+    """The site was redesigned twice mid-term; all three layouts must parse."""
+
+    @pytest.mark.parametrize("markup,slug", [
+        (COMMITTEE_2015, "Slim_Besbes"),
+        (COMMITTEE_2016, "Chaker_Ayadi"),
+        (COMMITTEE_2019, "Karim_Helali"),
+    ])
+    def test_each_layout_yields_its_chair(self, markup, slug):
+        name, members = marsad_arp2014.parse_committee_page(markup)
+        assert name == "لجنة التشريع العام"
+        assert (slug, "chair") in members
+
+    def test_resigned_members_are_not_current_members(self):
+        """A wound-up committee still links its former members."""
+        _name, members = marsad_arp2014.parse_committee_page(COMMITTEE_DISSOLVED)
+        assert members == []
+
+
+class TestArp2014RoleClassification:
+    """39 spellings of 5 roles; classification is by token, and order matters."""
+
+    @pytest.mark.parametrize("label,expected", [
+        ("رئيس اللجنة", "chair"),
+        ("رئيسة اللجنة", "chair"),
+        ("الرئيس", "chair"),
+        ("نائب رئيس اللجنة", "vice_chair"),
+        ("نائبة رئيسة اللجنة", "vice_chair"),
+        ("مقرر اللجنة", "rapporteur"),
+        ("مقرّرة", "rapporteur"),
+        ("مقرر مساعد أول", "assistant_rapporteur"),
+        ("مقررة مساعدة ثانية", "assistant_rapporteur"),
+        ("مساعد مقرر ثاني", "assistant_rapporteur"),
+        ("عضو", "member"),
+        ("عضوة", "member"),
+    ])
+    def test_labels(self, label, expected):
+        assert marsad_arp2014._classify(
+            label, marsad_arp2014.COMMITTEE_ROLE_TOKENS, "member") == expected
+
+    def test_a_vice_chair_is_not_read_as_a_chair(self):
+        """'نائب رئيس اللجنة' contains 'رئيس'; the order of the tests is the fix."""
+        assert marsad_arp2014._classify(
+            "نائب رئيس اللجنة", marsad_arp2014.COMMITTEE_ROLE_TOKENS, "member") != "chair"
+
+    def test_an_assistant_rapporteur_is_not_read_as_a_rapporteur(self):
+        assert marsad_arp2014._classify(
+            "مقرر مساعد أول", marsad_arp2014.COMMITTEE_ROLE_TOKENS, "member") != "rapporteur"
+
+    def test_the_shadda_does_not_change_the_answer(self):
+        assert marsad_arp2014._classify(
+            "مقرّر", marsad_arp2014.COMMITTEE_ROLE_TOKENS, "member") == (
+                marsad_arp2014._classify(
+                    "مقرر", marsad_arp2014.COMMITTEE_ROLE_TOKENS, "member"))
+
+
+class TestArp2014Bureau:
+    def test_offices_and_portfolios(self):
+        rows = marsad_arp2014.parse_bureau_page(BUREAU_2019)
+        offices = {slug: office for slug, office, _t, _d in rows}
+        assert offices["Mohamed_Ennaceur"] == "speaker"
+        assert offices["Abdelfattah_Mourou"] == "first_vice_speaker"
+        # An assistant to the speaker holds a portfolio and sits on the bureau.
+        assert offices["Faycel_Khelifa"] == "bureau_member"
+
+    def test_the_portfolio_label_is_kept_verbatim(self):
+        rows = {slug: title for slug, _o, title, _d in
+                marsad_arp2014.parse_bureau_page(BUREAU_2019)}
+        assert rows["Faycel_Khelifa"] == "مساعد الرئيس المكلف بالإعلام والاتصال"
+
+    def test_published_dates_are_parsed(self):
+        dates = {slug: d for slug, _o, _t, d in
+                 marsad_arp2014.parse_bureau_page(BUREAU_2019)}
+        assert marsad_arp2014.parse_arabic_date(
+            dates["Mohamed_Ennaceur"].split(" - ")[0]) == "2015-12-04"
+        assert marsad_arp2014.parse_arabic_date(
+            dates["Mohamed_Ennaceur"].split(" - ")[1]) == "2019-07-25"
+
+    def test_still_serving_is_recognised_rather_than_parsed_as_a_date(self):
+        assert marsad_arp2014.parse_arabic_date("الآن") == ""
+        assert any(tok in "04 ديسمبر 2014 - الآن"
+                   for tok in marsad_arp2014.STILL_SERVING)
+
+
+class TestArp2014CommitteeSpells:
+    def _obs(self, *pairs):
+        """(date, [slugs]) -> observation list."""
+        return [(date, {slug: "member" for slug in slugs}) for date, slugs in pairs]
+
+    def test_present_throughout_is_one_unbracketed_spell(self):
+        spells = marsad_arp2014.build_committee_spells(
+            self._obs(("2015-03-07", ["A"]), ("2019-08-23", ["A"])))["A"]
+        assert len(spells) == 1
+        assert spells[0]["start_date"] == marsad_arp2014.FIRST_SITTING
+        assert spells[0]["end_date"] == marsad_arp2014.TERM_END
+        assert spells[0]["dates_bracketed"] is False
+
+    def test_a_late_joiner_starts_when_first_seen_not_at_the_first_sitting(self):
+        spells = marsad_arp2014.build_committee_spells(
+            self._obs(("2015-03-07", ["A"]), ("2017-05-25", ["A", "B"])))["B"]
+        assert spells[0]["start_date"] == "2017-05-25"
+        assert spells[0]["dates_bracketed"] is True
+
+    def test_someone_who_leaves_does_not_serve_to_the_end_of_the_term(self):
+        spells = marsad_arp2014.build_committee_spells(
+            self._obs(("2015-03-07", ["A", "B"]), ("2017-05-25", ["A"]),
+                      ("2019-08-23", ["A"])))["B"]
+        assert len(spells) == 1
+        assert spells[0]["end_date"] != marsad_arp2014.TERM_END
+        assert spells[0]["last_observed"] == "2015-03-07"
+
+    def test_leaving_and_returning_is_two_spells_not_one(self):
+        spells = marsad_arp2014.build_committee_spells(
+            self._obs(("2015-03-07", ["A"]), ("2017-05-25", []),
+                      ("2019-08-23", ["A"])))["A"]
+        assert len(spells) == 2
+
+    def test_a_promotion_does_not_split_the_spell(self):
+        observations = [("2015-03-07", {"A": "member"}), ("2017-05-25", {"A": "chair"})]
+        spells = marsad_arp2014.build_committee_spells(observations)["A"]
+        assert len(spells) == 1
+        assert spells[0]["role"] == "chair"
+
+
+class TestNameOnlyMergeDistance:
+    """A shared name is the weakest evidence here, and it decays with time."""
+
+    def _builder(self, years):
+        b = object.__new__(build_mod.Builder)
+        b.assemblies = {a: {"start_date": f"{y}-01-01", "end_date": ""}
+                        for a, y in years.items()}
+        b.person_fields = {"P": {}}
+        b.rejected_merges = []
+        return b
+
+    def test_a_plausible_gap_still_merges(self):
+        """Rachid Sfar sat in the 1986 chamber and the 2005 upper house."""
+        b = self._builder({"COD-1986": 1986, "ADV-2005": 2005})
+        assert b._too_far_apart("P", "COD-1986", "ADV-2005") is False
+
+    def test_an_implausible_gap_is_refused(self):
+        """Two men called الطيب السحباني beats one serving 1956 to 2005."""
+        b = self._builder({"ANC-1956": 1956, "ADV-2005": 2005})
+        assert b._too_far_apart("P", "ANC-1956", "ADV-2005") is True
+
+    def test_the_refusal_is_recorded_not_silent(self):
+        b = self._builder({"ANC-1956": 1956, "ADV-2005": 2005})
+        b._too_far_apart("P", "ANC-1956", "ADV-2005")
+        assert b.rejected_merges[0]["years_apart"] == 49
+
+    def test_a_birth_date_settles_it_on_evidence_instead(self):
+        b = self._builder({"ANC-1956": 1956, "ADV-2005": 2005})
+        b.person_fields["P"]["birth_date"] = (0, "1930-01-01")
+        assert b._too_far_apart("P", "ANC-1956", "ADV-2005") is False
+
+    def test_an_undated_chamber_does_not_trigger_the_rule(self):
+        """The rule needs two dates; without them it must not guess."""
+        b = self._builder({"ADV-2005": 2005})
+        b.assemblies["MYSTERY"] = {"start_date": "", "end_date": ""}
+        assert b._too_far_apart("P", "MYSTERY", "ADV-2005") is False
+
+
+class TestStagedConstituencyMerge:
+    """Staged constituency rows must enrich the derived ones, never pre-empt them."""
+
+    def _builder(self):
+        b = object.__new__(build_mod.Builder)
+        b.constituencies = {}
+        b.gov_by_name = {"تونس": "TN-11"}
+        return b
+
+    def test_a_staged_row_fills_a_blank_field(self):
+        b = self._builder()
+        cid = b.resolve_constituency("تونس", "Tunis", "ADV-2005", "تونس", False)
+        for field, value in [("magnitude", "2")]:
+            if not b.constituencies[cid].get(field):
+                b.constituencies[cid][field] = value
+        assert b.constituencies[cid]["magnitude"] == "2"
+
+    def test_resolution_still_derives_a_governorate_after_a_row_exists(self):
+        """The regression this guards.
+
+        `resolve_constituency` only derives a governorate for a constituency it
+        is *creating*. Seeding the table from staged rows before the records are
+        read therefore stops that derivation running at all, and silently strips
+        `governorate_id` from every mandate in the chamber — which is why the
+        merge happens after ingest, not before.
+        """
+        b = self._builder()
+        cid = b.resolve_constituency("تونس", "Tunis", "ARP-2023", "تونس", False)
+        assert b.constituencies[cid]["governorate_id"] == "TN-11"
+
+    def test_a_preseeded_blank_row_would_have_lost_the_governorate(self):
+        """States the failure mode explicitly, so the ordering cannot drift back."""
+        b = self._builder()
+        cid = build_mod.deterministic_id("TNC", "ARP-2023", b._norm_place("تونس"))
+        b.constituencies[cid] = {
+            "constituency_id": cid, "assembly_id": "ARP-2023", "name_ar": "تونس",
+            "name_lat": "", "governorate_id": "", "is_abroad": "false", "magnitude": "2",
+        }
+        b.resolve_constituency("تونس", "Tunis", "ARP-2023", "تونس", False)
+        assert b.constituencies[cid]["governorate_id"] == ""

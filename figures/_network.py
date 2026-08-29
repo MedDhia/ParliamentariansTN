@@ -242,7 +242,7 @@ def _layout(portfolio: dict[str, set[str]],
     return pos, anchors
 
 
-def build_graph(assembly_id: str) -> tuple[nx.Graph, nx.Graph]:
+def build_graph(assembly_id: str, min_weight: int = MIN_WEIGHT) -> tuple[nx.Graph, nx.Graph]:
     """Return (full graph, backbone) from the derived committee edge list."""
     full = nx.Graph()
     for r in S.load("edges_committee_comembership"):
@@ -254,7 +254,7 @@ def build_graph(assembly_id: str) -> tuple[nx.Graph, nx.Graph]:
     backbone = nx.Graph()
     backbone.add_nodes_from(full.nodes())
     for u, v, d in full.edges(data=True):
-        if d["weight"] >= MIN_WEIGHT:
+        if d["weight"] >= min_weight:
             backbone.add_edge(u, v, **d)
     return full, backbone
 
@@ -341,8 +341,18 @@ class Frame:
         ax.set_axis_off()
 
 
-def draw(assembly_id: str, slug: str, title: str, note: str = "") -> None:
-    full, backbone = build_graph(assembly_id)
+def draw(assembly_id: str, slug: str, title: str, note: str = "",
+         min_weight: int = MIN_WEIGHT) -> None:
+    """Draw one chamber's committee co-membership network.
+
+    ``min_weight`` is the threshold above which a tie is *drawn*; every tie is
+    still counted in the density and assortativity the subtitle reports. The
+    default suits chambers whose projection has a few thousand ties. A chamber
+    dense enough that the default fills the centre with solid ink needs a higher
+    one — an unreadable drawing is not a more honest drawing, and the caption
+    says which threshold produced it either way.
+    """
+    full, backbone = build_graph(assembly_id, min_weight)
     if full.number_of_nodes() == 0:
         raise SystemExit(f"no committee co-membership edges for {assembly_id}")
 
@@ -373,7 +383,7 @@ def draw(assembly_id: str, slug: str, title: str, note: str = "") -> None:
 
     # Only the strong ties. The weight-1 mass is what the lobes already say.
     strong = [(u, v, d) for u, v, d in full.edges(data=True)
-              if d["weight"] >= MIN_WEIGHT]
+              if d["weight"] >= min_weight]
     max_w = max((d["weight"] for _, _, d in strong), default=1)
     _draw_bundled(ax, pos, strong, max_w)
     nx.draw_networkx_nodes(
@@ -429,7 +439,7 @@ def draw(assembly_id: str, slug: str, title: str, note: str = "") -> None:
         f"how many, so the {bridging} deputies who bridge committees sit inside the rim "
         "and identical portfolios sit\ntogether. The projection is exactly the union of "
         f"the committee cliques ({full.number_of_edges():,} ties, density {density:.2f}), "
-        f"so only the\n{backbone.number_of_edges():,} ties of weight ≥ {MIN_WEIGHT} are "
+        f"so only the\n{backbone.number_of_edges():,} ties of weight ≥ {min_weight} are "
         "drawn — the rest is what the lobes already say. Colour is bloc: assortativity "
         f"{assortativity:+.2f},\nso committee assignment does not track bloc. "
         + note + naming,

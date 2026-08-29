@@ -1,0 +1,232 @@
+person_id,name_lat,bloc,n_committees,committee_ids,committee_labels,degree_full_graph,degree_backbone,weighted_degree_newman
+TNP-00065,Ouled jebril Imed,Nidaa Tounes,9,CMT-3a051620fd33 CMT-47b4ceeab70a CMT-535731ec7ffd CMT-5863460337e8 CMT-7858621d9962 CMT-8d6af35d5cb4 CMT-90ddb75794d7 CMT-a48500711e9b CMT-f7166b323046,Standing 4 | Standing 16 | Standing 1 | Standing 10 | Standing 14 | Special 1 | Standing 5 | Standing 11 | Standing 3,182,19,7.9448
+TNP-00853,Issam Matoussi,National Coalition,8,CMT-3e7af871322d CMT-47b4ceeab70a CMT-8a5b9ec83476 CMT-8d6af35d5cb4 CMT-90ddb75794d7 CMT-b9e5e4367488 CMT-c19410caa909 CMT-cab87800ef44,Standing 7 | Standing 16 | Standing 2 | Special 1 | Standing 5 | Standing 17 | Standing 6 | Standing 12,175,23,7.7111
+TNP-00548,Hela Hammi,Ennahdha,8,CMT-4633b2874c88 CMT-535731ec7ffd CMT-601d95a949aa CMT-79ca761acaf6 CMT-8a5b9ec83476 CMT-b9e5e4367488 CMT-cab87800ef44 CMT-e5dff9bf0bca,Standing 9 | Standing 1 | Standing 13 | Special 3 | Standing 2 | Standing 17 | Standing 12 | Special 2,173,13,7.2307
+TNP-00927,Ons Hattab,Nidaa Tounes,8,CMT-2bc1cee50ba8 CMT-3e7af871322d CMT-535731ec7ffd CMT-601d95a949aa CMT-879180464a95 CMT-8a5b9ec83476 CMT-a9259327aabc CMT-f7166b323046,Standing 8 | Standing 7 | Standing 1 | Standing 13 | Special 4 | Standing 2 | Standing 18 | Standing 3,167,19,7.5371
+TNP-00908,Mohamed Troudi,Al Horra (Machrouu Tounes),8,CMT-3a051620fd33 CMT-3e7af871322d CMT-79ca761acaf6 CMT-894b8d7f301d CMT-8a5b9ec83476 CMT-8d6af35d5cb4 CMT-90ddb75794d7 CMT-c19410caa909,Standing 4 | Standing 7 | Special 3 | Standing 15 | Standing 2 | Special 1 | Standing 5 | Standing 6,153,11,6.3832
+TNP-00822,Chahida Fraj,Ennahdha,7,CMT-5863460337e8 CMT-601d95a949aa CMT-7858621d9962 CMT-879180464a95 CMT-894b8d7f301d CMT-a48500711e9b CMT-b9e5e4367488,Standing 10 | Standing 13 | Standing 14 | Special 4 | Standing 15 | Standing 11 | Standing 17,158,2,5.574
+TNP-00944,Sana Salhi,National Coalition,7,CMT-4633b2874c88 CMT-47b4ceeab70a CMT-535731ec7ffd CMT-601d95a949aa CMT-8d6af35d5cb4 CMT-a48500711e9b CMT-cab87800ef44,Standing 9 | Standing 16 | Standing 1 | Standing 13 | Special 1 | Standing 11 | Standing 12,150,15,6.1109
+TNP-00949,Tahar Fdhil,National Coalition,7,CMT-3a051620fd33 CMT-4633b2874c88 CMT-601d95a949aa CMT-79ca761acaf6 CMT-90ddb75794d7 CMT-c19410caa909 CMT-e5dff9bf0bca,Standing 4 | Standing 9 | Standing 13 | Special 3 | Standing 5 | Standing 6 | Special 2,140,14,6.0016
+TNP-00350,Tarek Fetiti,No bloc,7,CMT-2bc1cee50ba8 CMT-879180464a95 CMT-894b8d7f301d CMT-8d6af35d5cb4 CMT-c19410caa909 CMT-e1fb561ef6b9 CMT-f7166b323046,Standing 8 | Special 4 | Standing 15 | Special 1 | Standing 6 | Special 5 | Standing 3,134,9,6.4747
+TNP-00904,Mohamed Rachdi Bouguerra,National Coalition,6,CMT-3e7af871322d CMT-535731ec7ffd CMT-5863460337e8 CMT-894b8d7f301d CMT-cab87800ef44 CMT-f7166b323046,Standing 7 | Standing 1 | Standing 10 | Standing 15 | Standing 12 | Standing 3,165,6,5.4768
+TNP-00817,Belgacem Dkhili,Al Horra (Machrouu Tounes),6,CMT-2bc1cee50ba8 CMT-3e7af871322d CMT-8a5b9ec83476 CMT-c19410caa909 CMT-cab87800ef44 CMT-f7166b323046,Standing 8 | Standing 7 | Standing 2 | Standing 6 | Standing 12 | Standing 3,160,9,5.5916
+TNP-00891,Mohamed Ennaceur Jbira,National Coalition,6,CMT-3a051620fd33 CMT-5863460337e8 CMT-79ca761acaf6 CMT-894b8d7f301d CMT-90ddb75794d7 CMT-f7166b323046,Standing 4 | Standing 10 | Special 3 | Standing 15 | Standing 5 | Standing 3,153,14,6.371
+TNP-00839,Heger Laaroussi,Al Horra (Machrouu Tounes),6,CMT-3a051620fd33 CMT-601d95a949aa CMT-8a5b9ec83476 CMT-cab87800ef44 CMT-e5dff9bf0bca CMT-f7166b323046,Standing 4 | Standing 13 | Standing 2 | Standing 12 | Special 2 | Standing 3,152,7,5.3663
+TNP-00826,El Khansa Ben Harrath,Nidaa Tounes,6,CMT-3a051620fd33 CMT-4633b2874c88 CMT-7858621d9962 CMT-894b8d7f301d CMT-c19410caa909 CMT-f7166b323046,Standing 4 | Standing 9 | Standing 14 | Standing 15 | Standing 6 | Standing 3,152,6,4.9541
+TNP-00212,Hassouna Nasfi,Al Horra (Machrouu Tounes),6,CMT-3a051620fd33 CMT-535731ec7ffd CMT-79ca761acaf6 CMT-8a5b9ec83476 CMT-90ddb75794d7 CMT-f7166b323046,Standing 4 | Standing 1 | Special 3 | Standing 2 | Standing 5 | Standing 3,147,15,5.7618
+TNP-00251,Lotfi Ali,National Coalition,6,CMT-4633b2874c88 CMT-90ddb75794d7 CMT-b9e5e4367488 CMT-c19410caa909 CMT-e1fb561ef6b9 CMT-f7166b323046,Standing 9 | Standing 5 | Standing 17 | Standing 6 | Special 5 | Standing 3,145,3,4.9004
+TNP-00937,Sahbi Ben Fraj,National Coalition,6,CMT-3e7af871322d CMT-7858621d9962 CMT-8a5b9ec83476 CMT-8d6af35d5cb4 CMT-a48500711e9b CMT-c19410caa909,Standing 7 | Standing 14 | Standing 2 | Special 1 | Standing 11 | Standing 6,145,8,5.6107
+TNP-00345,Sofien Toubel,Nidaa Tounes,6,CMT-3a051620fd33 CMT-535731ec7ffd CMT-601d95a949aa CMT-8a5b9ec83476 CMT-b9e5e4367488 CMT-e5dff9bf0bca,Standing 4 | Standing 1 | Standing 13 | Standing 2 | Standing 17 | Special 2,145,7,5.2413
+TNP-00430,Rim Mahjoub,Loyalty to the Nation,6,CMT-2bc1cee50ba8 CMT-3a051620fd33 CMT-3e7af871322d CMT-8d6af35d5cb4 CMT-90ddb75794d7 CMT-a48500711e9b,Standing 8 | Standing 4 | Standing 7 | Special 1 | Standing 5 | Standing 11,144,8,5.3062
+TNP-00809,Amal Souid,Ennahdha,6,CMT-3a051620fd33 CMT-4633b2874c88 CMT-47b4ceeab70a CMT-535731ec7ffd CMT-a48500711e9b CMT-cab87800ef44,Standing 4 | Standing 9 | Standing 16 | Standing 1 | Standing 11 | Standing 12,144,8,4.9035
+TNP-00961,Zohra Idriss,National Coalition,6,CMT-2bc1cee50ba8 CMT-5863460337e8 CMT-879180464a95 CMT-a48500711e9b CMT-cab87800ef44 CMT-f7166b323046,Standing 8 | Standing 10 | Special 4 | Standing 11 | Standing 12 | Standing 3,144,1,4.9392
+TNP-00843,Houda Slim,National Coalition,6,CMT-4633b2874c88 CMT-47b4ceeab70a CMT-535731ec7ffd CMT-8d6af35d5cb4 CMT-a48500711e9b CMT-f7166b323046,Standing 9 | Standing 16 | Standing 1 | Special 1 | Standing 11 | Standing 3,138,5,5.2849
+TNP-00947,Souad Zaouali,National Coalition,6,CMT-3a051620fd33 CMT-5863460337e8 CMT-601d95a949aa CMT-a48500711e9b CMT-cab87800ef44 CMT-e5dff9bf0bca,Standing 4 | Standing 10 | Standing 13 | Standing 11 | Standing 12 | Special 2,137,8,5.306
+TNP-00295,Mustapha Ben Ahmed,National Coalition,6,CMT-3e7af871322d CMT-4633b2874c88 CMT-79ca761acaf6 CMT-8a5b9ec83476 CMT-90ddb75794d7 CMT-c19410caa909,Standing 7 | Standing 9 | Special 3 | Standing 2 | Standing 5 | Standing 6,133,21,6.1183
+TNP-00208,Hafedh Zouari,National Coalition,6,CMT-2bc1cee50ba8 CMT-3e7af871322d CMT-535731ec7ffd CMT-894b8d7f301d CMT-a9259327aabc CMT-cab87800ef44,Standing 8 | Standing 7 | Standing 1 | Standing 15 | Standing 18 | Standing 12,131,1,4.2696
+TNP-00860,Karim Helali,National Coalition,6,CMT-3a051620fd33 CMT-4633b2874c88 CMT-535731ec7ffd CMT-601d95a949aa CMT-79ca761acaf6 CMT-e5dff9bf0bca,Standing 4 | Standing 9 | Standing 1 | Standing 13 | Special 3 | Special 2,129,5,5.1324
+TNP-00500,Meherzia Labidi,Ennahdha,6,CMT-3a051620fd33 CMT-3e7af871322d CMT-4633b2874c88 CMT-47b4ceeab70a CMT-8d6af35d5cb4 CMT-a48500711e9b,Standing 4 | Standing 7 | Standing 9 | Standing 16 | Special 1 | Standing 11,128,14,5.2176
+TNP-00357,Yamina Zoghlami,Ennahdha,6,CMT-3a051620fd33 CMT-4633b2874c88 CMT-535731ec7ffd CMT-8d6af35d5cb4 CMT-a48500711e9b CMT-e5dff9bf0bca,Standing 4 | Standing 9 | Standing 1 | Special 1 | Standing 11 | Special 2,128,7,5.0801
+TNP-00289,Mongi Rahoui,Popular Front,6,CMT-2bc1cee50ba8 CMT-601d95a949aa CMT-879180464a95 CMT-8d6af35d5cb4 CMT-c19410caa909 CMT-e1fb561ef6b9,Standing 8 | Standing 13 | Special 4 | Special 1 | Standing 6 | Special 5,118,11,6.2453
+TNP-00885,Mohamed Amine Kahloul,No bloc,5,CMT-47b4ceeab70a CMT-535731ec7ffd CMT-5863460337e8 CMT-8a5b9ec83476 CMT-f7166b323046,Standing 16 | Standing 1 | Standing 10 | Standing 2 | Standing 3,151,2,4.3625
+TNP-00305,Noomane El Euch,Democratic Bloc,5,CMT-2bc1cee50ba8 CMT-3a051620fd33 CMT-3e7af871322d CMT-601d95a949aa CMT-8a5b9ec83476,Standing 8 | Standing 4 | Standing 7 | Standing 13 | Standing 2,143,1,3.6907
+TNP-00925,Olfa Jouini,Nidaa Tounes,5,CMT-3a051620fd33 CMT-5863460337e8 CMT-7858621d9962 CMT-8a5b9ec83476 CMT-a48500711e9b,Standing 4 | Standing 10 | Standing 14 | Standing 2 | Standing 11,142,2,3.9935
+TNP-00553,Soulef Ksantini,Ennahdha,5,CMT-3a051620fd33 CMT-535731ec7ffd CMT-894b8d7f301d CMT-90ddb75794d7 CMT-a48500711e9b,Standing 4 | Standing 1 | Standing 15 | Standing 5 | Standing 11,141,2,3.7969
+TNP-00952,Taoufik Jemli,Loyalty to the Nation,5,CMT-4633b2874c88 CMT-5863460337e8 CMT-894b8d7f301d CMT-c19410caa909 CMT-f7166b323046,Standing 9 | Standing 10 | Standing 15 | Standing 6 | Standing 3,139,13,4.8453
+TNP-00896,Mohamed Jalel Ghedira,National Coalition,5,CMT-47b4ceeab70a CMT-5863460337e8 CMT-601d95a949aa CMT-894b8d7f301d CMT-c19410caa909,Standing 16 | Standing 10 | Standing 13 | Standing 15 | Standing 6,137,0,4.5109
+TNP-00893,Mohamed Frikha,Ennahdha,5,CMT-2bc1cee50ba8 CMT-3e7af871322d CMT-4633b2874c88 CMT-535731ec7ffd CMT-c19410caa909,Standing 8 | Standing 7 | Standing 9 | Standing 1 | Standing 6,136,2,4.0704
+TNP-00864,Khemais Ksila,Loyalty to the Nation,5,CMT-4633b2874c88 CMT-535731ec7ffd CMT-79ca761acaf6 CMT-894b8d7f301d CMT-90ddb75794d7,Standing 9 | Standing 1 | Special 3 | Standing 15 | Standing 5,134,10,4.9057
+TNP-00333,Samir Dilou,Ennahdha,5,CMT-3a051620fd33 CMT-7858621d9962 CMT-894b8d7f301d CMT-90ddb75794d7 CMT-a48500711e9b,Standing 4 | Standing 14 | Standing 15 | Standing 5 | Standing 11,134,1,3.7653
+TNP-00876,Lilia Younes Ksibi,National Coalition,5,CMT-2bc1cee50ba8 CMT-601d95a949aa CMT-894b8d7f301d CMT-a48500711e9b CMT-b9e5e4367488,Standing 8 | Standing 13 | Standing 15 | Standing 11 | Standing 17,133,2,4.4257
+TNP-00865,Lajmi Lourimi,Ennahdha,5,CMT-2bc1cee50ba8 CMT-3e7af871322d CMT-47b4ceeab70a CMT-535731ec7ffd CMT-c19410caa909,Standing 8 | Standing 7 | Standing 16 | Standing 1 | Standing 6,133,1,3.7566
+TNP-00911,Mondher Belhaj Ali,No bloc,5,CMT-3a051620fd33 CMT-47b4ceeab70a CMT-535731ec7ffd CMT-e5dff9bf0bca CMT-f7166b323046,Standing 4 | Standing 16 | Standing 1 | Special 2 | Standing 3,132,1,4.335
+TNP-00804,Ahmed Seddik,Popular Front,5,CMT-3a051620fd33 CMT-a48500711e9b CMT-c19410caa909 CMT-cab87800ef44 CMT-e5dff9bf0bca,Standing 4 | Standing 11 | Standing 6 | Standing 12 | Special 2,131,5,4.7714
+TNP-00247,Latifa Habachi,Ennahdha,5,CMT-3a051620fd33 CMT-4633b2874c88 CMT-5863460337e8 CMT-7858621d9962 CMT-c19410caa909,Standing 4 | Standing 9 | Standing 10 | Standing 14 | Standing 6,131,1,3.6797
+TNP-00254,Mahbouba Ben Dhifallah,Ennahdha,5,CMT-3e7af871322d CMT-a48500711e9b CMT-cab87800ef44 CMT-e5dff9bf0bca CMT-f7166b323046,Standing 7 | Standing 11 | Standing 12 | Special 2 | Standing 3,129,2,4.1998
+TNP-00897,Mohamed Kamel Besbes,Ennahdha,5,CMT-3e7af871322d CMT-4633b2874c88 CMT-7858621d9962 CMT-8a5b9ec83476 CMT-c19410caa909,Standing 7 | Standing 9 | Standing 14 | Standing 2 | Standing 6,129,1,3.5823
+TNP-00931,Ramzi Ben Fraj,Ennahdha,5,CMT-3a051620fd33 CMT-4633b2874c88 CMT-5863460337e8 CMT-79ca761acaf6 CMT-8a5b9ec83476,Standing 4 | Standing 9 | Standing 10 | Special 3 | Standing 2,128,3,4.3791
+TNP-00468,Abdelaziz Kotti,Nidaa Tounes,5,CMT-2bc1cee50ba8 CMT-535731ec7ffd CMT-90ddb75794d7 CMT-b9e5e4367488 CMT-cab87800ef44,Standing 8 | Standing 1 | Standing 5 | Standing 17 | Standing 12,128,4,4.2283
+TNP-00836,Haykel Belgacem,Popular Front,5,CMT-47b4ceeab70a CMT-8a5b9ec83476 CMT-90ddb75794d7 CMT-a9259327aabc CMT-cab87800ef44,Standing 16 | Standing 2 | Standing 5 | Standing 18 | Standing 12,126,3,4.3486
+TNP-00803,Ahmed Saidi,National Coalition,5,CMT-3e7af871322d CMT-7858621d9962 CMT-894b8d7f301d CMT-e5dff9bf0bca CMT-f7166b323046,Standing 7 | Standing 14 | Standing 15 | Special 2 | Standing 3,126,1,4.4061
+TNP-00874,Leila Ouled Ali,National Coalition,5,CMT-5863460337e8 CMT-90ddb75794d7 CMT-b9e5e4367488 CMT-e5dff9bf0bca CMT-f7166b323046,Standing 10 | Standing 5 | Standing 17 | Special 2 | Standing 3,124,7,5.0656
+TNP-00355,Walid Jalled,National Coalition,5,CMT-3e7af871322d CMT-894b8d7f301d CMT-8a5b9ec83476 CMT-a9259327aabc CMT-c19410caa909,Standing 7 | Standing 15 | Standing 2 | Standing 18 | Standing 6,123,5,4.9828
+TNP-00236,Jamila Jouini,Ennahdha,5,CMT-535731ec7ffd CMT-601d95a949aa CMT-a48500711e9b CMT-b9e5e4367488 CMT-cab87800ef44,Standing 1 | Standing 13 | Standing 11 | Standing 17 | Standing 12,123,2,3.775
+TNP-00840,Hela Omrane,National Coalition,5,CMT-4633b2874c88 CMT-8a5b9ec83476 CMT-8d6af35d5cb4 CMT-90ddb75794d7 CMT-a48500711e9b,Standing 9 | Standing 2 | Special 1 | Standing 5 | Standing 11,123,2,4.1369
+TNP-00445,Sana Mersni,Ennahdha,5,CMT-3a051620fd33 CMT-79ca761acaf6 CMT-90ddb75794d7 CMT-b9e5e4367488 CMT-c19410caa909,Standing 4 | Special 3 | Standing 5 | Standing 17 | Standing 6,122,5,4.3344
+TNP-00793,Abdellatif Mekki,Ennahdha,5,CMT-2bc1cee50ba8 CMT-894b8d7f301d CMT-8d6af35d5cb4 CMT-90ddb75794d7 CMT-c19410caa909,Standing 8 | Standing 15 | Special 1 | Standing 5 | Standing 6,122,5,4.2215
+TNP-00871,Leila Bougatef,Al Horra (Machrouu Tounes),5,CMT-79ca761acaf6 CMT-894b8d7f301d CMT-8a5b9ec83476 CMT-c19410caa909 CMT-e5dff9bf0bca,Special 3 | Standing 15 | Standing 2 | Standing 6 | Special 2,120,2,4.7083
+TNP-00204,Ferida Laabidi,Ennahdha,5,CMT-3a051620fd33 CMT-3e7af871322d CMT-7858621d9962 CMT-79ca761acaf6 CMT-8d6af35d5cb4,Standing 4 | Standing 7 | Standing 14 | Special 3 | Special 1,120,1,4.4571
+TNP-00815,Bechir Ben Amor,National Coalition,5,CMT-2bc1cee50ba8 CMT-535731ec7ffd CMT-879180464a95 CMT-e1fb561ef6b9 CMT-f7166b323046,Standing 8 | Standing 1 | Special 4 | Special 5 | Standing 3,118,6,4.7496
+TNP-00912,Mongi Harbaoui,Nidaa Tounes,5,CMT-2bc1cee50ba8 CMT-879180464a95 CMT-90ddb75794d7 CMT-e5dff9bf0bca CMT-f7166b323046,Standing 8 | Special 4 | Standing 5 | Special 2 | Standing 3,118,12,4.8322
+TNP-00902,Mohamed Nejib Torjmane,Al Horra (Machrouu Tounes),5,CMT-2bc1cee50ba8 CMT-b9e5e4367488 CMT-c19410caa909 CMT-e1fb561ef6b9 CMT-f7166b323046,Standing 8 | Standing 17 | Standing 6 | Special 5 | Standing 3,118,1,3.87
+TNP-00943,Sami Fetnassi,Ennahdha,5,CMT-2bc1cee50ba8 CMT-3e7af871322d CMT-47b4ceeab70a CMT-601d95a949aa CMT-879180464a95,Standing 8 | Standing 7 | Standing 16 | Standing 13 | Special 4,116,4,4.2141
+TNP-00812,Asma Bou Hana,Nidaa Tounes,5,CMT-601d95a949aa CMT-79ca761acaf6 CMT-894b8d7f301d CMT-c19410caa909 CMT-e1fb561ef6b9,Standing 13 | Special 3 | Standing 15 | Standing 6 | Special 5,116,4,4.6922
+TNP-00837,Hedi Soula,Ennahdha,5,CMT-601d95a949aa CMT-879180464a95 CMT-cab87800ef44 CMT-e1fb561ef6b9 CMT-f7166b323046,Standing 13 | Special 4 | Standing 12 | Special 5 | Standing 3,114,0,4.6124
+TNP-00498,Mabrouk Hrizi,Democratic Bloc,5,CMT-79ca761acaf6 CMT-894b8d7f301d CMT-8d6af35d5cb4 CMT-90ddb75794d7 CMT-c19410caa909,Special 3 | Standing 15 | Special 1 | Standing 5 | Standing 6,110,8,5.1818
+TNP-00872,Leila Hamrouni,National Coalition,5,CMT-2bc1cee50ba8 CMT-3e7af871322d CMT-47b4ceeab70a CMT-8d6af35d5cb4 CMT-a48500711e9b,Standing 8 | Standing 7 | Standing 16 | Special 1 | Standing 11,110,4,4.5096
+TNP-00183,Bechir Khelifi,Ennahdha,5,CMT-3a051620fd33 CMT-5863460337e8 CMT-7858621d9962 CMT-a9259327aabc CMT-e5dff9bf0bca,Standing 4 | Standing 10 | Standing 14 | Standing 18 | Special 2,108,1,4.3324
+TNP-00945,Slim Besbes,Ennahdha,5,CMT-2bc1cee50ba8 CMT-601d95a949aa CMT-879180464a95 CMT-a48500711e9b CMT-e1fb561ef6b9,Standing 8 | Standing 13 | Special 4 | Standing 11 | Special 5,107,7,4.6531
+TNP-00935,Sabrine Goubantini,National Coalition,5,CMT-3e7af871322d CMT-79ca761acaf6 CMT-894b8d7f301d CMT-8a5b9ec83476 CMT-c19410caa909,Standing 7 | Special 3 | Standing 15 | Standing 2 | Standing 6,106,1,3.6762
+TNP-00926,Olfa Soukri,No bloc,5,CMT-2bc1cee50ba8 CMT-601d95a949aa CMT-879180464a95 CMT-a48500711e9b CMT-e1fb561ef6b9,Standing 8 | Standing 13 | Special 4 | Standing 11 | Special 5,105,10,5.0296
+TNP-00792,Abdelkader Ben Dhifallah,No bloc,4,CMT-5863460337e8 CMT-7858621d9962 CMT-c19410caa909 CMT-cab87800ef44,Standing 10 | Standing 14 | Standing 6 | Standing 12,133,3,4.4536
+TNP-00919,Najla Saadaoui,Nidaa Tounes,4,CMT-3a051620fd33 CMT-3e7af871322d CMT-c19410caa909 CMT-cab87800ef44,Standing 4 | Standing 7 | Standing 6 | Standing 12,127,3,4.1445
+TNP-00824,Chakib Bani,Nidaa Tounes,4,CMT-2bc1cee50ba8 CMT-535731ec7ffd CMT-5863460337e8 CMT-601d95a949aa,Standing 8 | Standing 1 | Standing 10 | Standing 13,126,2,4.0456
+TNP-00797,Abderraouf Chebbi,Nidaa Tounes,4,CMT-2bc1cee50ba8 CMT-5863460337e8 CMT-894b8d7f301d CMT-8a5b9ec83476,Standing 8 | Standing 10 | Standing 15 | Standing 2,126,1,3.8155
+TNP-00801,Abir Abdelli,National Coalition,4,CMT-4633b2874c88 CMT-8a5b9ec83476 CMT-cab87800ef44 CMT-f7166b323046,Standing 9 | Standing 2 | Standing 12 | Standing 3,124,0,3.6283
+TNP-00807,Ali Bennour,National Coalition,4,CMT-47b4ceeab70a CMT-535731ec7ffd CMT-90ddb75794d7 CMT-c19410caa909,Standing 16 | Standing 1 | Standing 5 | Standing 6,123,3,3.4145
+TNP-00913,Monia Brahim,Ennahdha,4,CMT-601d95a949aa CMT-894b8d7f301d CMT-8a5b9ec83476 CMT-c19410caa909,Standing 13 | Standing 15 | Standing 2 | Standing 6,123,1,3.2398
+TNP-00950,Taher Battikh,Nidaa Tounes,4,CMT-2bc1cee50ba8 CMT-3e7af871322d CMT-8a5b9ec83476 CMT-b9e5e4367488,Standing 8 | Standing 7 | Standing 2 | Standing 17,122,2,3.743
+TNP-00849,Ibtissem Jebabli,National Coalition,4,CMT-535731ec7ffd CMT-5863460337e8 CMT-894b8d7f301d CMT-a48500711e9b,Standing 1 | Standing 10 | Standing 15 | Standing 11,122,2,3.4178
+TNP-00886,Mohamed Anouar Adhar,National Coalition,4,CMT-535731ec7ffd CMT-894b8d7f301d CMT-cab87800ef44 CMT-f7166b323046,Standing 1 | Standing 15 | Standing 12 | Standing 3,122,0,3.2953
+TNP-00948,Souhail Alouini,National Coalition,4,CMT-4633b2874c88 CMT-601d95a949aa CMT-7858621d9962 CMT-c19410caa909,Standing 9 | Standing 13 | Standing 14 | Standing 6,121,9,4.5107
+TNP-00942,Sameh Bouhaouel,Nidaa Tounes,4,CMT-3a051620fd33 CMT-601d95a949aa CMT-a48500711e9b CMT-cab87800ef44,Standing 4 | Standing 13 | Standing 11 | Standing 12,121,16,4.8999
+TNP-00838,Heger Ben Cheikh Ahmed,National Coalition,4,CMT-3a051620fd33 CMT-4633b2874c88 CMT-535731ec7ffd CMT-90ddb75794d7,Standing 4 | Standing 9 | Standing 1 | Standing 5,121,1,2.8692
+TNP-00844,Houda Tekaya,Nidaa Tounes,4,CMT-3a051620fd33 CMT-535731ec7ffd CMT-b9e5e4367488 CMT-f7166b323046,Standing 4 | Standing 1 | Standing 17 | Standing 3,121,0,3.3385
+TNP-00799,Abderraouf El May,National Coalition,4,CMT-2bc1cee50ba8 CMT-4633b2874c88 CMT-5863460337e8 CMT-7858621d9962,Standing 8 | Standing 9 | Standing 10 | Standing 14,121,0,3.0099
+TNP-00956,Wafa Makhlouf,Nidaa Tounes,4,CMT-4633b2874c88 CMT-5863460337e8 CMT-601d95a949aa CMT-8a5b9ec83476,Standing 9 | Standing 10 | Standing 13 | Standing 2,120,5,3.7657
+TNP-00361,Zeineb Brahmi,Ennahdha,4,CMT-3a051620fd33 CMT-3e7af871322d CMT-4633b2874c88 CMT-7858621d9962,Standing 4 | Standing 7 | Standing 9 | Standing 14,120,0,3.5305
+TNP-00884,Mohamed Ali Bedoui,Ennahdha,4,CMT-5863460337e8 CMT-8a5b9ec83476 CMT-90ddb75794d7 CMT-cab87800ef44,Standing 10 | Standing 2 | Standing 5 | Standing 12,119,1,3.7356
+TNP-00917,Nadia Zangar,Al Horra (Machrouu Tounes),4,CMT-3e7af871322d CMT-5863460337e8 CMT-7858621d9962 CMT-8a5b9ec83476,Standing 7 | Standing 10 | Standing 14 | Standing 2,118,0,3.3953
+TNP-00174,Ameur Laraiedh,Ennahdha,4,CMT-535731ec7ffd CMT-5863460337e8 CMT-601d95a949aa CMT-b9e5e4367488,Standing 1 | Standing 10 | Standing 13 | Standing 17,117,6,3.8824
+TNP-00802,Ahmed Ameri,Ennahdha,4,CMT-535731ec7ffd CMT-5863460337e8 CMT-894b8d7f301d CMT-8d6af35d5cb4,Standing 1 | Standing 10 | Standing 15 | Special 1,117,2,3.7647
+TNP-00910,Moncef Sellami,National Coalition,4,CMT-2bc1cee50ba8 CMT-5863460337e8 CMT-b9e5e4367488 CMT-f7166b323046,Standing 8 | Standing 10 | Standing 17 | Standing 3,117,4,3.8415
+TNP-00923,Noureddine Ben Achour,Loyalty to the Nation,4,CMT-2bc1cee50ba8 CMT-3a051620fd33 CMT-535731ec7ffd CMT-c19410caa909,Standing 8 | Standing 4 | Standing 1 | Standing 6,117,1,2.9422
+TNP-00959,Youssef Jouini,Nidaa Tounes,4,CMT-601d95a949aa CMT-7858621d9962 CMT-79ca761acaf6 CMT-90ddb75794d7,Standing 13 | Standing 14 | Special 3 | Standing 5,116,3,4.6699
+TNP-00846,Hssan Amri,Nidaa Tounes,4,CMT-3a051620fd33 CMT-601d95a949aa CMT-8a5b9ec83476 CMT-8d6af35d5cb4,Standing 4 | Standing 13 | Standing 2 | Special 1,116,1,3.5372
+TNP-00332,Samia Abbou,Democratic Bloc,4,CMT-2bc1cee50ba8 CMT-3a051620fd33 CMT-535731ec7ffd CMT-b9e5e4367488,Standing 8 | Standing 4 | Standing 1 | Standing 17,116,0,3.0307
+TNP-00401,Imen Ben Mhamed,Ennahdha,4,CMT-3e7af871322d CMT-4633b2874c88 CMT-90ddb75794d7 CMT-b9e5e4367488,Standing 7 | Standing 9 | Standing 5 | Standing 17,115,2,3.1193
+TNP-00933,Ridha Zghondi,No bloc,4,CMT-3a051620fd33 CMT-4633b2874c88 CMT-535731ec7ffd CMT-c19410caa909,Standing 4 | Standing 9 | Standing 1 | Standing 6,115,6,3.6659
+TNP-00145,Channoufi Naceur,National Coalition,4,CMT-47b4ceeab70a CMT-90ddb75794d7 CMT-b9e5e4367488 CMT-f7166b323046,Standing 16 | Standing 5 | Standing 17 | Standing 3,114,1,3.2102
+TNP-00954,Tarek Barrak,Popular Front,4,CMT-47b4ceeab70a CMT-8a5b9ec83476 CMT-90ddb75794d7 CMT-f7166b323046,Standing 16 | Standing 2 | Standing 5 | Standing 3,114,1,3.0808
+TNP-00285,Mohamed Zrig,Ennahdha,4,CMT-535731ec7ffd CMT-8d6af35d5cb4 CMT-b9e5e4367488 CMT-c19410caa909,Standing 1 | Special 1 | Standing 17 | Standing 6,114,1,3.8294
+TNP-00429,Rim Thairi,Democratic Bloc,4,CMT-4633b2874c88 CMT-47b4ceeab70a CMT-7858621d9962 CMT-a48500711e9b,Standing 9 | Standing 16 | Standing 14 | Standing 11,113,9,4.2612
+TNP-00936,Safia Khalfi,Ennahdha,4,CMT-3e7af871322d CMT-cab87800ef44 CMT-e5dff9bf0bca CMT-f7166b323046,Standing 7 | Standing 12 | Special 2 | Standing 3,113,3,3.7273
+TNP-00818,Bochra Belhaj Hamida,National Coalition,4,CMT-4633b2874c88 CMT-535731ec7ffd CMT-7858621d9962 CMT-a48500711e9b,Standing 9 | Standing 1 | Standing 14 | Standing 11,113,1,3.3169
+TNP-00850,Ikram Moulahi,National Coalition,4,CMT-3e7af871322d CMT-894b8d7f301d CMT-a48500711e9b CMT-cab87800ef44,Standing 7 | Standing 15 | Standing 11 | Standing 12,113,2,3.5151
+TNP-00898,Mohamed Lakhdhar Lajili,Ennahdha,4,CMT-47b4ceeab70a CMT-535731ec7ffd CMT-b9e5e4367488 CMT-f7166b323046,Standing 16 | Standing 1 | Standing 17 | Standing 3,113,0,3.3274
+TNP-00331,Sameh Dammak,Nidaa Tounes,4,CMT-4633b2874c88 CMT-47b4ceeab70a CMT-535731ec7ffd CMT-a48500711e9b,Standing 9 | Standing 16 | Standing 1 | Standing 11,112,6,3.9869
+TNP-00895,Mohamed Hedi Gueddich,Al Horra (Machrouu Tounes),4,CMT-5863460337e8 CMT-601d95a949aa CMT-b9e5e4367488 CMT-cab87800ef44,Standing 10 | Standing 13 | Standing 17 | Standing 12,112,3,3.4736
+TNP-00492,Kalthoum Badreddine,Ennahdha,4,CMT-3e7af871322d CMT-601d95a949aa CMT-79ca761acaf6 CMT-8a5b9ec83476,Standing 7 | Standing 13 | Special 3 | Standing 2,111,1,3.8627
+TNP-00375,Oussama Al Saghir,Ennahdha,4,CMT-2bc1cee50ba8 CMT-535731ec7ffd CMT-8d6af35d5cb4 CMT-c19410caa909,Standing 8 | Standing 1 | Special 1 | Standing 6,111,0,3.4005
+TNP-00869,Lamia Mlayah,Nidaa Tounes,4,CMT-5863460337e8 CMT-8a5b9ec83476 CMT-cab87800ef44 CMT-e1fb561ef6b9,Standing 10 | Standing 2 | Standing 12 | Special 5,110,0,3.3363
+TNP-00906,Mohamed Saidane,National Coalition,4,CMT-535731ec7ffd CMT-90ddb75794d7 CMT-b9e5e4367488 CMT-cab87800ef44,Standing 1 | Standing 5 | Standing 17 | Standing 12,109,2,3.0907
+TNP-00790,Abada Kefi,Al Horra (Machrouu Tounes),4,CMT-3a051620fd33 CMT-4633b2874c88 CMT-c19410caa909 CMT-e5dff9bf0bca,Standing 4 | Standing 9 | Standing 6 | Special 2,108,6,3.9171
+TNP-00805,Ali Belakhoua,No bloc,4,CMT-5863460337e8 CMT-601d95a949aa CMT-879180464a95 CMT-b9e5e4367488,Standing 10 | Standing 13 | Special 4 | Standing 17,108,2,3.8627
+TNP-00882,Meriem Boujbel,Al Horra (Machrouu Tounes),4,CMT-2bc1cee50ba8 CMT-3e7af871322d CMT-601d95a949aa CMT-7858621d9962,Standing 8 | Standing 7 | Standing 13 | Standing 14,108,1,3.0182
+TNP-00951,Taieb Medni,Nidaa Tounes,4,CMT-3a051620fd33 CMT-79ca761acaf6 CMT-90ddb75794d7 CMT-b9e5e4367488,Standing 4 | Special 3 | Standing 5 | Standing 17,107,3,3.6085
+TNP-00946,Souad Bayouli,Popular Front,4,CMT-3e7af871322d CMT-47b4ceeab70a CMT-a48500711e9b CMT-cab87800ef44,Standing 7 | Standing 16 | Standing 11 | Standing 12,107,4,3.334
+TNP-00847,Hssine Yahyaoui,Ennahdha,4,CMT-b9e5e4367488 CMT-cab87800ef44 CMT-e5dff9bf0bca CMT-f7166b323046,Standing 17 | Standing 12 | Special 2 | Standing 3,105,3,4.0675
+TNP-00383,Habib Khedher,Ennahdha,4,CMT-79ca761acaf6 CMT-8a5b9ec83476 CMT-90ddb75794d7 CMT-c19410caa909,Special 3 | Standing 2 | Standing 5 | Standing 6,102,4,3.4017
+TNP-00365,Zouhair Maghzaoui,Democratic Bloc,4,CMT-2bc1cee50ba8 CMT-47b4ceeab70a CMT-879180464a95 CMT-90ddb75794d7,Standing 8 | Standing 16 | Special 4 | Standing 5,101,3,3.764
+TNP-00868,Lamia Gharbi,Nidaa Tounes,4,CMT-47b4ceeab70a CMT-601d95a949aa CMT-7858621d9962 CMT-a48500711e9b,Standing 16 | Standing 13 | Standing 14 | Standing 11,101,2,3.0108
+TNP-00058,Msedi Fatma,Nidaa Tounes,4,CMT-47b4ceeab70a CMT-8a5b9ec83476 CMT-8d6af35d5cb4 CMT-a48500711e9b,Standing 16 | Standing 2 | Special 1 | Standing 11,101,5,3.5536
+TNP-00873,Leila Oueslati,Ennahdha,4,CMT-47b4ceeab70a CMT-601d95a949aa CMT-a48500711e9b CMT-e1fb561ef6b9,Standing 16 | Standing 13 | Standing 11 | Special 5,99,6,4.1837
+TNP-00845,Houssem Bounenni,Nidaa Tounes,4,CMT-2bc1cee50ba8 CMT-879180464a95 CMT-90ddb75794d7 CMT-e1fb561ef6b9,Standing 8 | Special 4 | Standing 5 | Special 5,97,8,3.9974
+TNP-00831,Ghazi Chaouachi,Democratic Bloc,4,CMT-3a051620fd33 CMT-5863460337e8 CMT-879180464a95 CMT-e5dff9bf0bca,Standing 4 | Standing 10 | Special 4 | Special 2,97,0,3.512
+TNP-00301,Neji Jmal,Ennahdha,4,CMT-3a051620fd33 CMT-5863460337e8 CMT-79ca761acaf6 CMT-8a5b9ec83476,Standing 4 | Standing 10 | Special 3 | Standing 2,94,2,3.2539
+TNP-00857,Jilani Hammami,Popular Front,4,CMT-601d95a949aa CMT-79ca761acaf6 CMT-894b8d7f301d CMT-e1fb561ef6b9,Standing 13 | Special 3 | Standing 15 | Special 5,94,2,4.0
+TNP-00887,Mohamed Ben Salem,Ennahdha,4,CMT-2bc1cee50ba8 CMT-879180464a95 CMT-e1fb561ef6b9 CMT-f7166b323046,Standing 8 | Special 4 | Special 5 | Standing 3,88,6,3.7692
+TNP-00870,Leila %D9%90Chettaoui Bougatef,National Coalition,4,CMT-894b8d7f301d CMT-8d6af35d5cb4 CMT-c19410caa909 CMT-e5dff9bf0bca,Standing 15 | Special 1 | Standing 6 | Special 2,86,0,3.2347
+TNP-00394,Hedi Ben Braham,Ennahdha,4,CMT-2bc1cee50ba8 CMT-601d95a949aa CMT-879180464a95 CMT-e1fb561ef6b9,Standing 8 | Standing 13 | Special 4 | Special 5,83,7,4.0
+TNP-00892,Mohamed Fadhel Ben Omrane,Nidaa Tounes,4,CMT-2bc1cee50ba8 CMT-879180464a95 CMT-e1fb561ef6b9 CMT-e5dff9bf0bca,Standing 8 | Special 4 | Special 5 | Special 2,78,10,4.3571
+TNP-00929,Rabha Ben Hassine,Al Horra (Machrouu Tounes),3,CMT-4633b2874c88 CMT-90ddb75794d7 CMT-f7166b323046,Standing 9 | Standing 5 | Standing 3,115,5,3.4909
+TNP-00823,Chaker Ayadi,Nidaa Tounes,3,CMT-3a051620fd33 CMT-535731ec7ffd CMT-8a5b9ec83476,Standing 4 | Standing 1 | Standing 2,110,2,2.8566
+TNP-00808,Ali Laraiedh,Ennahdha,3,CMT-2bc1cee50ba8 CMT-c19410caa909 CMT-f7166b323046,Standing 8 | Standing 6 | Standing 3,109,2,2.9919
+TNP-00905,Mohamed Ramzi Khmiss,Nidaa Tounes,3,CMT-3e7af871322d CMT-894b8d7f301d CMT-8a5b9ec83476,Standing 7 | Standing 15 | Standing 2,107,4,3.6875
+TNP-00878,Mahmoud Kahri,No bloc,3,CMT-535731ec7ffd CMT-601d95a949aa CMT-cab87800ef44,Standing 1 | Standing 13 | Standing 12,104,1,2.6078
+TNP-00915,Mourad Hamaidi,Popular Front,3,CMT-3a051620fd33 CMT-3e7af871322d CMT-a48500711e9b,Standing 4 | Standing 7 | Standing 11,104,0,2.653
+TNP-00309,Noureddine Bhiri,Ennahdha,3,CMT-3a051620fd33 CMT-535731ec7ffd CMT-a48500711e9b,Standing 4 | Standing 1 | Standing 11,103,1,2.7355
+TNP-00877,Lotfi Nabli,National Coalition,3,CMT-2bc1cee50ba8 CMT-47b4ceeab70a CMT-c19410caa909,Standing 8 | Standing 16 | Standing 6,103,4,3.9105
+TNP-00918,Najia Ben Abdelhafidh,National Coalition,3,CMT-4633b2874c88 CMT-5863460337e8 CMT-8a5b9ec83476,Standing 9 | Standing 10 | Standing 2,103,2,2.7143
+TNP-00881,Mbarka Aouania,Popular Front,3,CMT-3e7af871322d CMT-535731ec7ffd CMT-7858621d9962,Standing 7 | Standing 1 | Standing 14,103,0,2.7077
+TNP-00369,Ahmed Mechergui,Ennahdha,3,CMT-3e7af871322d CMT-894b8d7f301d CMT-f7166b323046,Standing 7 | Standing 15 | Standing 3,102,3,3.0322
+TNP-00811,Ammar Amroussia,Popular Front,3,CMT-8a5b9ec83476 CMT-cab87800ef44 CMT-f7166b323046,Standing 2 | Standing 12 | Standing 3,102,1,2.9382
+TNP-00191,Emna Ben Hmayed,Ennahdha,3,CMT-4633b2874c88 CMT-894b8d7f301d CMT-a48500711e9b,Standing 9 | Standing 15 | Standing 11,102,0,2.6875
+TNP-00855,Jihen Aouichi,National Coalition,3,CMT-3a051620fd33 CMT-7858621d9962 CMT-90ddb75794d7,Standing 4 | Standing 14 | Standing 5,101,3,3.031
+TNP-00115,Dellai Ridha,Democratic Bloc,3,CMT-47b4ceeab70a CMT-7858621d9962 CMT-f7166b323046,Standing 16 | Standing 14 | Standing 3,100,0,2.4491
+TNP-00953,Taoufik Ouali,Al Horra (Machrouu Tounes),3,CMT-a48500711e9b CMT-b9e5e4367488 CMT-f7166b323046,Standing 11 | Standing 17 | Standing 3,100,0,2.6531
+TNP-00422,Dalila Babba,Ennahdha,3,CMT-5863460337e8 CMT-8a5b9ec83476 CMT-cab87800ef44,Standing 10 | Standing 2 | Standing 12,100,0,2.6042
+TNP-00907,Mohamed Sidhom,Ennahdha,3,CMT-894b8d7f301d CMT-90ddb75794d7 CMT-c19410caa909,Standing 15 | Standing 5 | Standing 6,99,1,2.7036
+TNP-00221,Heger Bouzemmi,Ennahdha,3,CMT-535731ec7ffd CMT-7858621d9962 CMT-a48500711e9b,Standing 1 | Standing 14 | Standing 11,99,0,2.7647
+TNP-00957,Walid Banneni,Ennahdha,3,CMT-535731ec7ffd CMT-b9e5e4367488 CMT-f7166b323046,Standing 1 | Standing 17 | Standing 3,99,0,2.7647
+TNP-00914,Mounir Hamdi,Nidaa Tounes,3,CMT-3a051620fd33 CMT-8a5b9ec83476 CMT-90ddb75794d7,Standing 4 | Standing 2 | Standing 5,98,2,2.5246
+TNP-00267,Moez Belhaj Rhouma,Ennahdha,3,CMT-2bc1cee50ba8 CMT-3e7af871322d CMT-894b8d7f301d,Standing 8 | Standing 7 | Standing 15,98,1,2.6875
+TNP-00901,Mohamed Mohsen Soudani,Ennahdha,3,CMT-3a051620fd33 CMT-4633b2874c88 CMT-c19410caa909,Standing 4 | Standing 9 | Standing 6,98,2,2.5246
+TNP-00178,Aroua Ben Abbas,Ennahdha,3,CMT-8a5b9ec83476 CMT-90ddb75794d7 CMT-b9e5e4367488,Standing 2 | Standing 5 | Standing 17,97,2,2.6829
+TNP-00227,Ibtihej Ben Helal,Nidaa Tounes,3,CMT-894b8d7f301d CMT-c19410caa909 CMT-f7166b323046,Standing 15 | Standing 6 | Standing 3,97,0,2.5472
+TNP-00825,Dorra Yaacoubi,No bloc,3,CMT-90ddb75794d7 CMT-a48500711e9b CMT-b9e5e4367488,Standing 5 | Standing 11 | Standing 17,96,2,3.1655
+TNP-00863,Khaoula Ben Aicha,Al Horra (Machrouu Tounes),3,CMT-5863460337e8 CMT-894b8d7f301d CMT-8a5b9ec83476,Standing 10 | Standing 15 | Standing 2,96,1,2.5536
+TNP-00889,Mohamed El Hamdi,Democratic Bloc,3,CMT-535731ec7ffd CMT-894b8d7f301d CMT-f7166b323046,Standing 1 | Standing 15 | Standing 3,96,1,2.3801
+TNP-00852,Ismail Ben Mahmoud,National Coalition,3,CMT-3e7af871322d CMT-601d95a949aa CMT-b9e5e4367488,Standing 7 | Standing 13 | Standing 17,95,0,2.7273
+TNP-00814,Badreddine Abdelkefi,Ennahdha,3,CMT-894b8d7f301d CMT-90ddb75794d7 CMT-b9e5e4367488,Standing 15 | Standing 5 | Standing 17,94,2,2.6875
+TNP-00217,Hayet Omri,Ennahdha,3,CMT-47b4ceeab70a CMT-a48500711e9b CMT-f7166b323046,Standing 16 | Standing 11 | Standing 3,93,2,2.6531
+TNP-00830,Faycel Khelifa,Nidaa Tounes,3,CMT-47b4ceeab70a CMT-601d95a949aa CMT-b9e5e4367488,Standing 16 | Standing 13 | Standing 17,93,1,3.31
+TNP-00354,Wafa Attia,Ennahdha,3,CMT-3a051620fd33 CMT-cab87800ef44 CMT-f7166b323046,Standing 4 | Standing 12 | Standing 3,93,2,2.6273
+TNP-00939,Salah Bargaoui,Al Horra (Machrouu Tounes),3,CMT-47b4ceeab70a CMT-8a5b9ec83476 CMT-90ddb75794d7,Standing 16 | Standing 2 | Standing 5,92,2,2.6193
+TNP-00299,Naoufel Jammali,Ennahdha,3,CMT-4633b2874c88 CMT-879180464a95 CMT-cab87800ef44,Standing 9 | Special 4 | Standing 12,92,1,3.4174
+TNP-00834,Hatem Ferjani,Nidaa Tounes,3,CMT-3a051620fd33 CMT-4633b2874c88 CMT-5863460337e8,Standing 4 | Standing 9 | Standing 10,92,0,2.1374
+TNP-00861,Karima Taggaz,Ennahdha,3,CMT-4633b2874c88 CMT-5863460337e8 CMT-b9e5e4367488,Standing 9 | Standing 10 | Standing 17,92,0,2.4359
+TNP-00875,Leila Zahaf,Al Horra (Machrouu Tounes),3,CMT-47b4ceeab70a CMT-a48500711e9b CMT-cab87800ef44,Standing 16 | Standing 11 | Standing 12,90,5,3.2014
+TNP-00111,Jaidane Riadh,Loyalty to the Nation,3,CMT-5863460337e8 CMT-8a5b9ec83476 CMT-e1fb561ef6b9,Standing 10 | Standing 2 | Special 5,90,0,2.7143
+TNP-00930,Radhia Toumi,Ennahdha,3,CMT-3e7af871322d CMT-7858621d9962 CMT-a48500711e9b,Standing 7 | Standing 14 | Standing 11,89,1,3.1504
+TNP-00962,Zouhair Rejbi,Ennahdha,3,CMT-cab87800ef44 CMT-e5dff9bf0bca CMT-f7166b323046,Standing 12 | Special 2 | Standing 3,89,1,2.8958
+TNP-00821,Chafik Ayadi,Popular Front,3,CMT-8a5b9ec83476 CMT-90ddb75794d7 CMT-b9e5e4367488,Standing 2 | Standing 5 | Standing 17,87,4,2.8229
+TNP-00199,Fathi Ayadi,Ennahdha,3,CMT-3a051620fd33 CMT-535731ec7ffd CMT-7858621d9962,Standing 4 | Standing 1 | Standing 14,87,0,2.1324
+TNP-00235,Jamila Debbech,Ennahdha,3,CMT-601d95a949aa CMT-7858621d9962 CMT-e1fb561ef6b9,Standing 13 | Standing 14 | Special 5,86,2,3.9002
+TNP-00920,Nawel Tayech,Nidaa Tounes,3,CMT-3e7af871322d CMT-47b4ceeab70a CMT-a48500711e9b,Standing 7 | Standing 16 | Standing 11,83,2,2.6159
+TNP-00867,Lamia Dridi,National Coalition,3,CMT-4633b2874c88 CMT-8d6af35d5cb4 CMT-a48500711e9b,Standing 9 | Special 1 | Standing 11,83,0,2.5685
+TNP-00842,Houcine Jaziri,Ennahdha,3,CMT-7858621d9962 CMT-8a5b9ec83476 CMT-90ddb75794d7,Standing 14 | Standing 2 | Standing 5,82,0,2.0809
+TNP-00854,Iyad Dahmani,No bloc,3,CMT-2bc1cee50ba8 CMT-3e7af871322d CMT-79ca761acaf6,Standing 8 | Standing 7 | Special 3,78,0,2.4951
+TNP-00262,Marouan Falfel,National Coalition,3,CMT-2bc1cee50ba8 CMT-5863460337e8 CMT-e1fb561ef6b9,Standing 8 | Standing 10 | Special 5,64,0,2.2047
+TNP-00544,Noureddine Mrabti,Nidaa Tounes,3,CMT-4633b2874c88 CMT-a9259327aabc CMT-f7166b323046,Standing 9 | Standing 18 | Standing 3,64,0,2.1245
+TNP-00796,Abdennaceur Chouikh,Loyalty to the Nation,2,CMT-90ddb75794d7 CMT-cab87800ef44,Standing 5 | Standing 12,84,1,2.0
+TNP-00794,Abdelmoumen Belanes,Popular Front,2,CMT-535731ec7ffd CMT-7858621d9962,Standing 1 | Standing 14,84,0,2.0
+TNP-00806,Ali Ben Salem,Nidaa Tounes,2,CMT-4633b2874c88 CMT-535731ec7ffd,Standing 9 | Standing 1,81,1,2.3636
+TNP-00523,Mahmoud Gouiaa,Ennahdha,2,CMT-8a5b9ec83476 CMT-90ddb75794d7,Standing 2 | Standing 5,80,1,2.0
+TNP-00816,Bechir Ellazzem,Ennahdha,2,CMT-7858621d9962 CMT-90ddb75794d7,Standing 14 | Standing 5,80,0,2.0
+TNP-00828,Faten Oueslati,No bloc,2,CMT-7858621d9962 CMT-f7166b323046,Standing 14 | Standing 3,79,0,1.7907
+TNP-00924,Nozha Biaoui,National Coalition,2,CMT-8a5b9ec83476 CMT-90ddb75794d7,Standing 2 | Standing 5,79,0,1.8545
+TNP-00940,Salem Hamdi,No bloc,2,CMT-c19410caa909 CMT-cab87800ef44,Standing 6 | Standing 12,78,2,1.8125
+TNP-00813,Aymen Aloui,Popular Front,2,CMT-4633b2874c88 CMT-5863460337e8,Standing 9 | Standing 10,77,1,2.0
+TNP-00866,Lakhdhar Belhouchat,Ennahdha,2,CMT-47b4ceeab70a CMT-f7166b323046,Standing 16 | Standing 3,76,1,2.0
+TNP-00228,Imed Khemiri,Ennahdha,2,CMT-4633b2874c88 CMT-c19410caa909,Standing 9 | Standing 6,76,2,2.0
+TNP-00851,Imed Daimi,Democratic Bloc,2,CMT-4633b2874c88 CMT-c19410caa909,Standing 9 | Standing 6,76,2,2.0
+TNP-00255,Maher Madhioub,Ennahdha,2,CMT-47b4ceeab70a CMT-5863460337e8,Standing 16 | Standing 10,76,0,2.0
+TNP-00916,Nadhir Ben Ammou,Loyalty to the Nation,2,CMT-3a051620fd33 CMT-cab87800ef44,Standing 4 | Standing 12,76,0,1.6188
+TNP-00859,Kamel Harraghi,No bloc,2,CMT-3e7af871322d CMT-47b4ceeab70a,Standing 7 | Standing 16,72,0,2.0
+TNP-00900,Mohamed Mahjoub,Ennahdha,2,CMT-3e7af871322d CMT-47b4ceeab70a,Standing 7 | Standing 16,72,0,2.0
+TNP-00820,Brahim Nacef,Al Horra (Machrouu Tounes),2,CMT-3e7af871322d CMT-7858621d9962,Standing 7 | Standing 14,72,0,2.0
+TNP-00960,Zied Lakhdhar,Popular Front,2,CMT-5863460337e8 CMT-b9e5e4367488,Standing 10 | Standing 17,72,0,2.0
+TNP-00922,Noura Amri,Nidaa Tounes,2,CMT-7858621d9962 CMT-a48500711e9b,Standing 14 | Standing 11,72,0,2.0
+TNP-00848,Ibrahim Ben Said,Democratic Bloc,2,CMT-601d95a949aa CMT-cab87800ef44,Standing 13 | Standing 12,71,1,2.2745
+TNP-00888,Mohamed Ben Souf,Nidaa Tounes,2,CMT-894b8d7f301d CMT-c19410caa909,Standing 15 | Standing 6,70,0,2.0
+TNP-00880,Marouan Felfel,Al Horra (Machrouu Tounes),2,CMT-2bc1cee50ba8 CMT-47b4ceeab70a,Standing 8 | Standing 16,66,0,1.5722
+TNP-00319,Ridha Charfeddine,Nidaa Tounes,2,CMT-5863460337e8 CMT-7858621d9962,Standing 10 | Standing 14,66,0,1.7907
+TNP-00894,Mohamed Ghannem,National Coalition,2,CMT-5863460337e8 CMT-7858621d9962,Standing 10 | Standing 14,66,0,1.7907
+TNP-00163,Adnane Hajji,Loyalty to the Nation,2,CMT-535731ec7ffd CMT-b9e5e4367488,Standing 1 | Standing 17,65,0,1.7647
+TNP-00841,Hmed Khaskhoussi,Loyalty to the Nation,2,CMT-8a5b9ec83476 CMT-90ddb75794d7,Standing 2 | Standing 5,65,0,1.5143
+TNP-00932,Riadh Mouakhar,No bloc,2,CMT-b9e5e4367488 CMT-c19410caa909,Standing 17 | Standing 6,64,0,1.6052
+TNP-00340,Sayida Ounissi,Ennahdha,2,CMT-2bc1cee50ba8 CMT-535731ec7ffd,Standing 8 | Standing 1,64,0,1.3719
+TNP-00963,Zouheir Rajbi,Ennahdha,2,CMT-cab87800ef44 CMT-f7166b323046,Standing 12 | Standing 3,63,0,1.5401
+TNP-00203,Faycel Tebini,No bloc,2,CMT-601d95a949aa CMT-cab87800ef44,Standing 13 | Standing 12,62,0,1.6336
+TNP-00934,Sabri Dekhil,Democratic Bloc,2,CMT-3e7af871322d CMT-7858621d9962,Standing 7 | Standing 14,62,0,1.7273
+TNP-00909,Mohsen Hssan,No bloc,2,CMT-2bc1cee50ba8 CMT-f7166b323046,Standing 8 | Standing 3,61,0,1.7514
+TNP-00795,Abdelouahab Ouerfelli,Loyalty to the Nation,2,CMT-8a5b9ec83476 CMT-f7166b323046,Standing 2 | Standing 3,61,0,1.169
+TNP-00883,Mohamed Abdellaoui,Nidaa Tounes,2,CMT-5863460337e8 CMT-cab87800ef44,Standing 10 | Standing 12,58,0,1.3387
+TNP-00358,Yassine Ayari,No bloc,2,CMT-4633b2874c88 CMT-5863460337e8,Standing 9 | Standing 10,52,0,1.1603
+TNP-00798,Abderraouf Cherif,Al Horra (Machrouu Tounes),2,CMT-3e7af871322d CMT-7858621d9962,Standing 7 | Standing 14,51,0,1.3319
+TNP-00303,Nesrine Laamari,Al Horra (Machrouu Tounes),2,CMT-47b4ceeab70a CMT-601d95a949aa,Standing 16 | Standing 13,51,0,1.1268
+TNP-00404,Basma Jebali,Ennahdha,2,CMT-894b8d7f301d CMT-a9259327aabc,Standing 15 | Standing 18,43,0,2.0
+TNP-00835,Hayet Kebaier,No bloc,2,CMT-2bc1cee50ba8 CMT-879180464a95,Standing 8 | Special 4,37,0,1.875
+TNP-00324,Sahbi Atig,Ennahdha,1,CMT-8a5b9ec83476,Standing 2,50,0,1.2678
+TNP-00829,Fathi Chamkhi,Popular Front,1,CMT-2bc1cee50ba8,Standing 8,43,0,1.0
+TNP-00800,Abderrazak Chraiet,No bloc,1,CMT-cab87800ef44,Standing 12,42,0,0.9792
+TNP-00276,Mohamed Kamel Hamzaoui,Nidaa Tounes,1,CMT-7858621d9962,Standing 14,39,0,1.0
+TNP-00856,Jihene Abadi,Al Horra (Machrouu Tounes),1,CMT-894b8d7f301d,Standing 15,33,0,0.6875
+TNP-00858,Kamel Dhaouadi,Nidaa Tounes,1,CMT-3a051620fd33,Standing 4,32,0,0.5246
+TNP-00879,Maroua Bouazzi,National Coalition,1,CMT-535731ec7ffd,Standing 1,31,0,0.6078
+TNP-00810,Amira Zoukari,Nidaa Tounes,1,CMT-7858621d9962,Standing 14,30,0,0.6977
+TNP-00921,Nizar Amami,Popular Front,1,CMT-e5dff9bf0bca,Special 2,22,0,1.0
+TNP-00543,Noômane Fehri,,1,CMT-879180464a95,Special 4,21,0,1.0
+TNP-00938,Said Aidi,,1,CMT-879180464a95,Special 4,21,0,1.0
+TNP-00328,Salem Labiadh,Democratic Bloc,1,CMT-e1fb561ef6b9,Special 5,19,0,1.0
