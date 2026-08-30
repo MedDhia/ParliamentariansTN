@@ -8,6 +8,7 @@ that corresponds to a bug found in the data names it.
 
 from __future__ import annotations
 
+import collections
 import csv
 import sys
 from pathlib import Path
@@ -1293,8 +1294,14 @@ try:
 except ModuleNotFoundError:  # pragma: no cover - depends on the CI job
     fig42 = None
 
+try:
+    import _crisis as crisis  # noqa: E402
+except ModuleNotFoundError:  # pragma: no cover - depends on the CI job
+    crisis = None
+
 requires_figure_stack = pytest.mark.skipif(
-    fig42 is None, reason="matplotlib/networkx are figures-only dependencies")
+    fig42 is None or crisis is None,
+    reason="matplotlib/networkx/numpy are figures-only dependencies")
 
 
 @requires_figure_stack
@@ -1345,3 +1352,53 @@ class TestNearestAlignments:
     def test_k_larger_than_the_chamber_keeps_everything(self):
         _graph, picks = fig42.nearest_alignments(self._dyads(), k=99)
         assert len(picks["A"]) == 3
+
+
+@requires_figure_stack
+class TestCrisisWindowSubsampling:
+    """Matching the pre/post windows on divisions alone would compare a year of
+    business against one afternoon, so the post window is subsampled across its
+    sitting days. These guard the properties that makes rely on."""
+
+    def _dates(self):
+        # three sitting days: one busy, two thin — the shape of the real window,
+        # where 78 of 94 divisions fell on a single day.
+        dates = {}
+        for i in range(20):
+            dates[f"busy{i}"] = "2013-12-26"
+        for i in range(3):
+            dates[f"thin{i}"] = "2013-12-21"
+        for i in range(3):
+            dates[f"tiny{i}"] = "2013-12-14"
+        return dates
+
+    def test_returns_exactly_the_target_count(self):
+        dates = self._dates()
+        picked = crisis.subsample(sorted(dates), 9, dates)
+        assert len(picked) == 9
+
+    def test_spreads_across_days_rather_than_taking_the_busiest(self):
+        """Drawing at random would take mostly the 20 divisions of one sitting."""
+        dates = self._dates()
+        picked = crisis.subsample(sorted(dates), 9, dates)
+        per_day = collections.Counter(dates[v] for v in picked)
+        assert len(per_day) == 3
+        # 9 across 3 days is 3 each, and no day may dominate
+        assert max(per_day.values()) <= 4
+
+    def test_is_deterministic(self):
+        """Two figures share this window; they cannot draw different subsamples."""
+        dates = self._dates()
+        first = crisis.subsample(sorted(dates), 9, dates)
+        second = crisis.subsample(sorted(dates), 9, dates)
+        assert first == second
+
+    def test_a_window_at_or_below_the_target_is_returned_whole(self):
+        dates = self._dates()
+        everything = sorted(dates)
+        assert crisis.subsample(everything, len(everything) + 5, dates) == everything
+
+    def test_the_result_is_sorted_so_downstream_order_is_stable(self):
+        dates = self._dates()
+        picked = crisis.subsample(sorted(dates), 9, dates)
+        assert picked == sorted(picked)

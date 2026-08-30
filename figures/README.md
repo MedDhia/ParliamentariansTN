@@ -128,9 +128,9 @@ the record covers and how much of it was contested.
 | 25 | Participation decay | 18% of members not voting in July 2012; 56% across the last three months. This is the coverage behind 21 and 23. |
 | 26 | Vote margins | 42% of divisions clear a 0.95 margin — the cut figure 21 makes before scaling, shown rather than asserted. |
 
-**Polarisation, 2011 Constituent Assembly (33–40, 42, 43)**
+**Polarisation, 2011 Constituent Assembly (33–40, 42–45)**
 
-Ten figures asking one question in ten ways: how far do the lines this
+Twelve figures asking one question in twelve ways: how far do the lines this
 chamber divided on coincide with its bloc boundaries? Six are built on
 `edges_vote_agreement.csv`, a layer derived for this set — every pair of members
 scored on the share of *contested* divisions they voted the same way. Read
@@ -150,15 +150,25 @@ count, so it does not behave like the other layers.
 | 40 | Agreement vs co-sponsorship | r = +0.14. Voting together explains under 2% of whether a pair ever co-sponsored. |
 | 42 | Nearest-alignment network | Each member joined to their three closest allies, edges weighted by alignment level. 73% stay inside the member's bloc against a 24% baseline — but Ennahdha, highest on the raw share, has the **lowest** lift over chance. |
 | 43 | The Brahmi assassination | An event study on 25 July 2013. The crisis is a walkout, not a realignment: Democratic Bloc turnout 51% → 21%, Ennahdha 79% → 80%, everyone back by December. Affinity has no comparable estimate during it — **0 of 18** Democratic Bloc members appear in a scoreable pair. |
+| 44 | Affinity before the shock | The baseline the crisis has to be measured against: within-bloc agreement 0.930, cross-bloc 0.672, and 1,209 of 4,792 strong ties crossing a bloc. |
+| 45 | Affinity after the shock | Same members, positions, threshold and division count. Within-bloc agreement falls to 0.879 and cross-bloc does not move — blocs **loosened** rather than closing ranks. Reliable cross-bloc allies fall 63%. |
 
-**Why these are ten figures and not one.** Polarisation has no single
+**Why these are twelve figures and not one.** Polarisation has no single
 operationalisation, and the measures disagree in informative ways: 33 says the
 chamber is strongly bloc-structured, 34 says only one bloc is, 36 says the
 structure is too weak to call communities, 38 says none of it moves over time,
 42 says every bloc is distinctive once you ask who its members are *closest* to
 rather than who they merely agree with, and 43 says the chamber's worst political
 crisis left no trace in any of it — because the members it silenced are the ones
-the measure needs. A single number would have had to
+the measure needs.
+
+**44 and 45 are the pair that answers what 43 could not.** 43's affinity panel
+was 90% Ennahdha and 6% Democratic Bloc, because matching the windows on
+*divisions* left the post window four days long. Matching on *sitting days*
+instead gives 32 days either side, 196 of 217 members and 16 of the 18 Democratic
+Bloc, which is enough to compare the networks properly. The answer is that
+neither standard account holds: within-bloc agreement fell and cross-bloc
+agreement held, so blocs loosened rather than closing ranks. A single number would have had to
 pick one of those. Two of the nine exist mainly to stop the others being
 over-read — 35's null and 40's correlation both say "less than it looks".
 
@@ -179,8 +189,9 @@ visible; on 34 they are indistinguishable cloud.
 | 31 | Contested constitutional articles | The preamble drew 19 amendments, twice any single article. Bars split by how many members co-signed. |
 | 32 | Provenance by field | Which source stands behind which column. Names draw on all five collectors; birth dates on one. |
 
-**Why 21 is faceted, 22 is a matrix, 42 labels instead of colouring, and 43
-leaves a panel blank.** Four cases where the obvious form fails. Eight blocs is five past the all-pairs colour cap, so 21 repeats the whole
+**Why 21 is faceted, 22 is a matrix, 42 labels instead of colouring, 43 leaves a
+panel blank, and 44–45 share one frame.** Five cases where the obvious form
+fails. Eight blocs is five past the all-pairs colour cap, so 21 repeats the whole
 chamber in grey behind one highlighted bloc per panel rather than putting eight
 hues in one point cloud. And the 2011 amendment network has a density of 0.40 —
 9,361 of 23,436 possible pairs — so a node-link drawing of it is a solid disc;
@@ -192,6 +203,15 @@ into. The non-attached get no label at all: their spread is twice that of any
 real bloc, so no point on the drawing stands for them. None of these is a
 stylistic preference — in each case the discarded form would have shown less, or
 would have shown something untrue.
+
+44 and 45 are the case where the obvious form fails *silently*. Two network
+drawings laid out independently are not comparable: a force simulation moves
+nodes for its own reasons, and a reader has no way to tell that from a change in
+the chamber. So the pair shares one panel, one set of coordinates, one threshold
+and one division count, computed once in `_crisis.py`. The last of those is the
+one that would have been easiest to miss — agreement is a rate, and a rate from
+94 divisions clears a threshold by chance more often than one from 417, which
+would have manufactured exactly the thinning figure 45 reports.
 
 43 is the strongest version of that last point. Its middle slot *could* carry a
 number: 4,259 pairs clear the scoring floor during the crisis months, which is
