@@ -1,6 +1,6 @@
 # Codebook
 
-Generated from `src/parliamentarians_tn/schema.py` and the built data on 2026-08-29. Do not edit by hand — run `make codebook` instead.
+Generated from `src/parliamentarians_tn/schema.py` and the built data on 2026-08-30. Do not edit by hand — run `make codebook` instead.
 
 ## Reading this codebook
 
