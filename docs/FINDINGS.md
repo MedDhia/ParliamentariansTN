@@ -391,7 +391,7 @@ reported as one — not as evidence of parity, and not as evidence of a gap.
 
 ## 9. Polarisation in the 2011 Constituent Assembly
 
-Nine figures ask one question in nine ways: how far do the lines the chamber
+Ten figures ask one question in ten ways: how far do the lines the chamber
 divided on coincide with its bloc boundaries? They are built on a derived layer,
 `edges_vote_agreement.csv`, scoring every pair of members on the share of
 *contested* divisions they voted the same way.
@@ -463,6 +463,39 @@ contested divisions the within/cross gap holds between **0.15 and 0.20** with no
 monotone movement — through the constitution's drafting, two assassinations and
 a change of government. It began divided along bloc lines and ended that way.
 · *Figure 38 · `fig38_polarisation_over_time_nca2011.csv`*
+
+**The chamber's worst crisis registers as a walkout, not a realignment.**
+Mohamed Brahmi, an opposition member, was assassinated on 25 July 2013. Over the
+four months that followed, the Democratic Bloc's turnout fell from **51% to 21%**
+and the Democratic Alliance's from 50% to 26%, while Ennahdha went 79% to 80%
+and CPR 57% to 58%. The split is clean: the chamber's two largest parties did
+not move, and the rest largely stopped. By December **seven of the eight blocs**
+are back at or above where they started; the exception is Loyalty to the
+Revolution, which recovers only from 40% to 43% against 50% before. August 2013
+produced a single contested division, fewer than any other month in which this
+chamber divided at all.
+· *Figure 43 · `fig43_brahmi_crisis_nca2011.csv`*
+
+**For the crisis itself there is no comparable affinity estimate, and the reason
+is selection rather than sample size.** A within-versus-cross-bloc gap *could* be
+computed from the 35 contested divisions: 4,259 pairs clear the scoring floor.
+But **zero of the eighteen Democratic Bloc members appear in a single scoreable
+pair**, one of ten Democratic Alliance members does, and 52% of the surviving
+pairs are Ennahdha with Ennahdha. That number would measure the governing side's
+internal cohesion under the chamber's name.
+
+**Across the crisis, no change in affinity is detectable — and the method
+decides that.** On 94 contested divisions either side, the gap runs +0.21 before
+and +0.18 after. Bootstrapping over *pairs* gives intervals of about ±0.01 and
+makes the narrowing look real; but every member sits in more than a hundred
+pairs, so pair resampling counts one person's behaviour as a hundred independent
+observations. Resampling *members* widens the intervals to ±0.05 and ±0.09 and
+they overlap comfortably. The first version of this analysis reported a
+significant narrowing and was wrong. The remaining limit is not fixable by
+resampling: the 127 members scoreable in every window are 90% of Ennahdha and 6%
+of the Democratic Bloc, so the comparison is only available for a sample selected
+on the very behaviour the crisis changed.
+· *Figure 43*
 
 **Voting together is not working together.** Ennahdha agrees most with Ettakatol
 (0.79, above the chamber mean of 0.71) — the bloc it co-sponsored amendments
