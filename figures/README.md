@@ -128,10 +128,10 @@ the record covers and how much of it was contested.
 | 25 | Participation decay | 18% of members not voting in July 2012; 56% across the last three months. This is the coverage behind 21 and 23. |
 | 26 | Vote margins | 42% of divisions clear a 0.95 margin — the cut figure 21 makes before scaling, shown rather than asserted. |
 
-**Polarisation, 2011 Constituent Assembly (33–40)**
+**Polarisation, 2011 Constituent Assembly (33–40, 42)**
 
-Eight figures asking one question in eight ways: how far do the lines this
-chamber divided on coincide with its bloc boundaries? Five are built on
+Nine figures asking one question in nine ways: how far do the lines this
+chamber divided on coincide with its bloc boundaries? Six are built on
 `edges_vote_agreement.csv`, a layer derived for this set — every pair of members
 scored on the share of *contested* divisions they voted the same way. Read
 `docs/NETWORK_GUIDE.md` before using it: it is revealed rather than assigned or
@@ -148,14 +148,25 @@ count, so it does not behave like the other layers.
 | 38 | Polarisation over the term | Six windows of equal contested divisions. The gap holds between 0.15 and 0.20 throughout — the chamber starts divided and stays that way. |
 | 39 | Bloc × bloc agreement | Figure 22's form on revealed rather than chosen ties. Ennahdha agrees most with Ettakatol (0.79) — the partner it co-sponsored with least (0.65×). |
 | 40 | Agreement vs co-sponsorship | r = +0.14. Voting together explains under 2% of whether a pair ever co-sponsored. |
+| 42 | Nearest-alignment network | Each member joined to their three closest allies, edges weighted by alignment level. 73% stay inside the member's bloc against a 24% baseline — but Ennahdha, highest on the raw share, has the **lowest** lift over chance. |
 
-**Why these are eight figures and not one.** Polarisation has no single
+**Why these are nine figures and not one.** Polarisation has no single
 operationalisation, and the measures disagree in informative ways: 33 says the
 chamber is strongly bloc-structured, 34 says only one bloc is, 36 says the
-structure is too weak to call communities, and 38 says none of it moves over
-time. A single number would have had to pick one of those. Two of the eight
-exist mainly to stop the others being over-read — 35's null and 40's correlation
-both say "less than it looks".
+structure is too weak to call communities, 38 says none of it moves over time,
+and 42 says every bloc is distinctive once you ask who its members are *closest*
+to rather than who they merely agree with. A single number would have had to
+pick one of those. Two of the nine exist mainly to stop the others being
+over-read — 35's null and 40's correlation both say "less than it looks".
+
+**Why 34 and 42 are both here.** They draw the same layer and answer different
+questions, and the difference is forced by the data rather than chosen. The
+agreement graph is 99.6% complete with weights packed around 0.71, so a
+threshold (34) has very little room to work and the disparity filter — the
+standard weighted-backbone method — extracts nothing at all. 42 therefore asks a
+question a threshold cannot express: not "who agrees above a cut" but "who does
+each member agree with most". That reframing is what makes the small blocs
+visible; on 34 they are indistinguishable cloud.
 
 **Party, constitution and provenance**
 
@@ -165,13 +176,19 @@ both say "less than it looks".
 | 31 | Contested constitutional articles | The preamble drew 19 amendments, twice any single article. Bars split by how many members co-signed. |
 | 32 | Provenance by field | Which source stands behind which column. Names draw on all five collectors; birth dates on one. |
 
-**Why 21 is faceted and 22 is a matrix.** Both are cases where the obvious form
-fails. Eight blocs is five past the all-pairs colour cap, so 21 repeats the whole
+**Why 21 is faceted, 22 is a matrix, and 42 labels instead of colouring.** Three
+cases where the obvious form fails. Eight blocs is five past the all-pairs colour cap, so 21 repeats the whole
 chamber in grey behind one highlighted bloc per panel rather than putting eight
 hues in one point cloud. And the 2011 amendment network has a density of 0.40 —
 9,361 of 23,436 possible pairs — so a node-link drawing of it is a solid disc;
-22 shows the same ties as bloc-by-bloc mixing instead. Neither is a stylistic
-preference: the discarded form would have shown less.
+22 shows the same ties as bloc-by-bloc mixing instead. And 42 needs to name
+eight blocs on one canvas, so it colours three and gives the rest a direct label
+on each bloc's *medoid* — the member nearest its centre, which guarantees the
+label sits on a real node instead of in the empty space a centroid can fall
+into. The non-attached get no label at all: their spread is twice that of any
+real bloc, so no point on the drawing stands for them. None of these is a
+stylistic preference — in each case the discarded form would have shown less, or
+would have shown something untrue.
 
 **Three figures exist to qualify other figures.** 25 and 26 are the coverage and
 contestedness behind the roll-call analyses, and 32 is the provenance behind

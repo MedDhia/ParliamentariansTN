@@ -391,7 +391,7 @@ reported as one — not as evidence of parity, and not as evidence of a gap.
 
 ## 9. Polarisation in the 2011 Constituent Assembly
 
-Eight figures ask one question in eight ways: how far do the lines the chamber
+Nine figures ask one question in nine ways: how far do the lines the chamber
 divided on coincide with its bloc boundaries? They are built on a derived layer,
 `edges_vote_agreement.csv`, scoring every pair of members on the share of
 *contested* divisions they voted the same way.
@@ -423,6 +423,40 @@ non-attached, who are a residual category and should not cohere — which is the
 best available evidence the method works. Ennahdha's margin is 0.59 below its
 null mean; the median bloc's is under 0.08.
 · *Figure 35 · `fig35_ei_index_nca2011.csv`*
+
+**Ask who each member is *closest* to, and every bloc becomes distinctive.**
+Give each member their three strongest alignments — the colleagues they voted
+with most often — and **477 of 651** of those nearest ties stay inside their own
+bloc, against **23.7%** if partners were drawn at random. This is a different
+question from the ones above and a sharper one: not who a member agrees with,
+which in this chamber is nearly everyone, but who they agree with *most*.
+
+It has to be asked this way because a threshold has almost nothing to cut. The
+agreement graph is **99.6% complete** — 23,337 of 23,436 possible pairs carry a
+score — with weights packed around a mean of 0.71, and the disparity filter, the
+standard method for extracting a weighted network's backbone, returns **nothing**
+at any conventional significance level. No member's alignment with anyone is
+disproportionate.
+
+**Correcting for size inverts the ranking, and that is the result.** Ennahdha has
+the highest raw share of co-partisan nearest allies (92.7%) and the *lowest* lift
+over chance (2.3×), because at 87 of 217 members a random partner is already a
+co-partisan 39.8% of the time. The Democratic Alliance, ten members, reaches
+**16.8×** on a raw share of 70%. Read the raw column and Ennahdha is the
+disciplined bloc; correct for size and it is the least distinctive one in the
+chamber. This is the same size trap figure 35's null was built to defeat,
+arriving by a different route and pointing the same way.
+
+**And the non-attached are not one group but eleven.** 59% of their nearest
+allies are also non-attached — a 2.5× lift for a residual category that should
+have no reason to cohere. Restricted to its own members, the non-attached
+subgraph breaks into **eleven** disconnected pockets: 26, 13, 4, 2 and seven
+isolated individuals. Ennahdha, CPR and Ettakatol each form a single pocket. So
+figure 35's null was right that the non-attached do not cohere *as a category*,
+and they still contain two sizeable clusters that do — most likely members who
+left blocs late and together, though bloc here is the last recorded spell and
+this cannot be separated from affinity that was always there.
+· *Figure 42 · `fig42_alignment_network_nca2011.csv`*
 
 **The chamber did not polarise as it went.** Across six windows of equal
 contested divisions the within/cross gap holds between **0.15 and 0.20** with no
