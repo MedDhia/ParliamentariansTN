@@ -1,0 +1,200 @@
+person_id,name_lat,bloc,strong_ties_before,strong_ties_cross_before,strong_ties_after,strong_ties_cross_after,strong_ties_after_later,strong_ties_cross_after_later
+TNP-00007,Hichem Hosni,No bloc,1,0,0,0,0,0
+TNP-00141,Anouar Marzouki,Democratic Transition,2,1,9,3,0,0
+TNP-00199,Fathi Ayadi,Ennahdha,92,12,62,0,73,6
+TNP-00247,Latifa Habachi,Ennahdha,88,8,69,4,70,4
+TNP-00264,Mehdi Ben Gharbia,Democratic Alliance,1,0,0,0,0,0
+TNP-00267,Moez Belhaj Rhouma,Ennahdha,80,7,31,2,47,7
+TNP-00277,Mohamed Karim Krifa,No bloc,3,1,1,1,2,2
+TNP-00289,Mongi Rahoui,Democratic Bloc,5,5,10,7,0,0
+TNP-00301,Neji Jmal,Ennahdha,94,11,57,3,67,2
+TNP-00324,Sahbi Atig,Ennahdha,98,14,58,0,69,2
+TNP-00332,Samia Abbou,CPR,1,0,3,2,2,1
+TNP-00357,Yamina Zoghlami,Ennahdha,98,14,55,6,75,7
+TNP-00364,Zied Laadhari,Ennahdha,94,13,68,6,66,7
+TNP-00367,Ibrahim Hamdi,Loyalty to the Revolution,4,3,0,0,0,0
+TNP-00368,Ibrahim Kassas,No bloc,0,0,0,0,0,0
+TNP-00369,Ahmed Mechergui,Ennahdha,94,11,64,3,50,1
+TNP-00370,Ahmed Essefi,No bloc,0,0,0,0,0,0
+TNP-00371,Ahmed Smiai,Ennahdha,81,7,1,1,0,0
+TNP-00372,Ahmed Brahim,Democratic Bloc,2,2,4,3,0,0
+TNP-00374,Azed Badi,Loyalty to the Revolution,4,1,9,8,28,26
+TNP-00375,Oussama Al Saghir,Ennahdha,96,12,83,7,56,1
+TNP-00377,Essia Naffati,Ennahdha,98,15,64,2,66,5
+TNP-00378,Ikbel Msadaa,CPR,6,2,19,15,5,2
+TNP-00379,Lazhar Chamli,CPR,1,0,1,1,0,0
+TNP-00380,Bechir Chammem,Ennahdha,99,16,57,2,33,4
+TNP-00381,Jdidi Essbouîi,No bloc,0,0,0,0,0,0
+TNP-00382,Habib Ellouz,Ennahdha,97,13,2,0,32,4
+TNP-00383,Habib Khedher,Ennahdha,95,11,64,3,69,2
+TNP-00384,Hasni Badri,Democratic Transition,0,0,4,2,0,0
+TNP-00385,Zohra Smida,Ennahdha,97,14,65,9,42,3
+TNP-00386,Sadok Chourou,Ennahdha,80,8,39,0,17,5
+TNP-00387,Tahar Hmila,No bloc,3,1,0,0,1,1
+TNP-00388,Arbi Abid,Ettakatol,76,73,31,29,30,27
+TNP-00389,Ferjani Doghmane,Ennahdha,101,17,19,0,32,6
+TNP-00390,Moncef Cherni,Democratic Transition,4,2,6,3,3,2
+TNP-00391,Mouldi Riahi,Ettakatol,98,94,43,40,54,51
+TNP-00392,Naceur Brahmi,No bloc,1,1,0,0,0,0
+TNP-00393,Nafti Mahdhi,Ennahdha,95,11,31,1,56,4
+TNP-00394,Hedi Ben Braham,Ennahdha,100,16,65,3,77,7
+TNP-00395,Hedi Chaouech,No bloc,3,3,8,6,0,0
+TNP-00396,Walid Bennani,Ennahdha,93,9,67,5,67,4
+TNP-00397,Amel Azzouz,Ennahdha,95,11,64,4,68,4
+TNP-00398,Amel Ghouil,Ennahdha,97,13,69,9,68,3
+TNP-00399,Amira Marzouk,No bloc,7,6,4,3,0,0
+TNP-00400,Iyed Dahmani,No bloc,6,2,5,3,17,17
+TNP-00401,Imen Ben Mhamed,Ennahdha,99,15,60,2,68,9
+TNP-00403,Badreddine Abdelkafi,Ennahdha,97,14,79,11,78,7
+TNP-00404,Basma Jebali,Ennahdha,93,13,71,6,64,1
+TNP-00405,Bechir Lazzem,Ennahdha,95,12,71,7,75,5
+TNP-00406,Baya Jaouadi,Ennahdha,97,13,36,7,17,4
+TNP-00408,Jalel Bouzid,Ettakatol,86,81,13,10,31,28
+TNP-00410,Jamel Touir,Ettakatol,31,30,4,4,1,1
+TNP-00411,Jawhara Tiss,Ennahdha,100,16,45,1,69,3
+TNP-00412,Hatem Klaii,No bloc,3,3,5,3,0,0
+TNP-00413,Hafedh Ibrahim Lassoued,Ennahdha,100,16,73,8,75,8
+TNP-00414,Habiba Triki,Ennahdha,96,12,64,1,62,5
+TNP-00415,Hassan Radhouani,No bloc,2,2,5,4,3,3
+TNP-00416,Hasna Mersit,No bloc,1,1,0,0,0,0
+TNP-00417,Hattab Barakati,No bloc,1,0,0,0,1,0
+TNP-00418,Halima Guenni,Ennahdha,98,14,17,1,70,12
+TNP-00419,Hanène Sassi,Democratic Transition,13,12,4,4,20,20
+TNP-00420,Khmais Ksila,No bloc,1,1,2,2,0,0
+TNP-00421,Khira Sghairi,Ennahdha,95,12,63,9,10,1
+TNP-00422,Dalila Babba,Ennahdha,101,17,56,2,69,4
+TNP-00423,Dalila Bouain,Ennahdha,95,12,65,2,67,6
+TNP-00424,Rabeh Khraifi,No bloc,8,3,6,4,12,12
+TNP-00425,Rabiî Abdi,Loyalty to the Revolution,5,4,0,0,3,2
+TNP-00426,Rabiaa Najlaoui,No bloc,0,0,0,0,0,0
+TNP-00427,Rafik Tlili,Loyalty to the Revolution,0,0,0,0,1,1
+TNP-00428,Romdhane Doghmani,Democratic Transition,99,99,43,43,23,23
+TNP-00429,Rim Thairi,No bloc,0,0,0,0,1,0
+TNP-00430,Rim Mahjoub,Democratic Bloc,18,12,4,3,4,0
+TNP-00431,Zied Doulatli,Ennahdha,92,11,64,3,61,4
+TNP-00432,Samia Ferchichi,Ennahdha,99,15,76,8,72,3
+TNP-00433,Souad Abderrahim,Ennahdha,90,14,11,2,21,8
+TNP-00434,Saâd Bouaïche,Democratic Transition,2,1,6,2,0,0
+TNP-00435,Said Kharchoufi,No bloc,0,0,0,0,0,0
+TNP-00436,Salma Baccar,Democratic Bloc,6,3,13,7,5,1
+TNP-00437,Salma Sarsout,Ennahdha,98,14,39,1,54,2
+TNP-00438,Salma Hedia Mabrouk,Democratic Bloc,5,2,2,0,0,0
+TNP-00440,Selim Ben Abdessalam,No bloc,6,3,8,8,6,5
+TNP-00441,Slimane Hlal,Ennahdha,96,12,67,9,19,3
+TNP-00442,Samir Ben Amor,CPR,12,7,3,1,7,7
+TNP-00443,Samir Bettaieb,Democratic Bloc,7,4,3,1,7,3
+TNP-00444,Samira Merai,Democratic Bloc,9,3,10,4,5,1
+TNP-00445,Sana Mersni,Ennahdha,99,15,65,2,70,2
+TNP-00446,Sana Haddad,Ennahdha,88,8,42,0,62,2
+TNP-00447,Sonia Toumia,Ennahdha,99,15,14,4,0,0
+TNP-00448,Chokri Yaich,Democratic Alliance,6,6,8,5,8,4
+TNP-00449,Chokri Kastalli,Democratic Alliance,2,2,0,0,5,2
+TNP-00450,Chokri Arfaoui,Democratic Transition,14,12,6,3,0,0
+TNP-00451,Salah Chouaib,No bloc,2,0,2,2,0,0
+TNP-00452,Salha Ben Aicha,Ennahdha,96,12,41,1,68,1
+TNP-00453,Slaheddine Zahaf,Democratic Bloc,0,0,2,1,1,1
+TNP-00454,Slaheddine Elhiba,Ennahdha,96,12,74,6,62,0
+TNP-00455,Dhamir Mannai,No bloc,0,0,2,1,0,0
+TNP-00456,Tarek Labidi,Ettakatol,35,33,0,0,3,3
+TNP-00457,Tarek Bouaziz,Democratic Transition,1,0,9,6,1,0
+TNP-00458,Adel Ben Attia,Ennahdha,100,16,53,6,75,5
+TNP-00459,Aicha Dhaouadi,Ennahdha,98,14,63,2,56,1
+TNP-00460,Abdelbasset Becheikh,Ennahdha,97,15,52,9,62,4
+TNP-00461,Abdelhalim Zouari,Ennahdha,98,14,67,7,66,2
+TNP-00463,Abderrazak Khallouli,Democratic Transition,0,0,0,0,0,0
+TNP-00465,Abdessattar Dhifi,Loyalty to the Revolution,32,32,8,8,0,0
+TNP-00466,Abdessalem Chaabane,CPR,7,2,25,22,1,1
+TNP-00467,Abdelaziz Chaabane,Ennahdha,95,13,11,0,21,4
+TNP-00468,Abdelaziz Kotti,No bloc,3,1,1,1,0,0
+TNP-00469,Abdelkader Ben Khmis,Democratic Bloc,3,1,7,7,1,1
+TNP-00470,Abdelkader Kadri,Ennahdha,99,15,70,6,72,6
+TNP-00471,Abdelmajid Najar,Ennahdha,94,12,68,4,60,2
+TNP-00473,Issam Chebbi,No bloc,8,4,5,3,1,1
+TNP-00474,Ali Bechrifa,Democratic Bloc,2,1,7,4,6,2
+TNP-00475,Ali Fares,Ennahdha,93,14,51,9,17,3
+TNP-00476,Ali Houiji,Loyalty to the Revolution,0,0,0,0,0,0
+TNP-00477,Imed Hammami,Ennahdha,96,12,51,1,52,2
+TNP-00478,Omar Chetoui,CPR,4,1,0,0,1,1
+TNP-00479,Fadhel Elouej,No bloc,0,0,0,0,0,0
+TNP-00480,Fatma Gharbi,No bloc,2,2,3,3,1,0
+TNP-00481,Faiza Kadoussi,No bloc,0,0,0,0,0,0
+TNP-00482,Fathi Eltaif,No bloc,2,1,1,1,1,0
+TNP-00483,Farah Nsibi,No bloc,86,82,24,21,0,0
+TNP-00484,Farida Labidi,Ennahdha,95,11,79,7,65,6
+TNP-00485,Fattoum Lassoued,Ennahdha,95,12,11,2,21,5
+TNP-00486,Fattouma Attia,Ennahdha,75,17,21,0,0,0
+TNP-00487,Foued Thamer,Democratic Bloc,3,0,7,4,2,1
+TNP-00488,Faiçal Jadlaoui,No bloc,7,7,11,7,16,14
+TNP-00489,Kais Mokhtar,No bloc,1,1,1,0,7,7
+TNP-00490,Karim Bouabdelli,Democratic Bloc,9,5,0,0,1,0
+TNP-00491,Karima Souid,Democratic Bloc,5,4,5,3,5,1
+TNP-00492,Kalthoum Badreddine,Ennahdha,89,9,56,2,71,6
+TNP-00493,Kamel Saadaoui,No bloc,87,82,40,37,14,11
+TNP-00494,Kamel Ammar,Ennahdha,94,10,23,0,52,2
+TNP-00495,Kamel Ben Amara,Ennahdha,94,10,53,1,62,2
+TNP-00496,Kaouther Ladgham,Ennahdha,97,14,18,2,61,7
+TNP-00497,Lobna Jeribi,Ettakatol,73,68,19,16,36,33
+TNP-00498,Mabrouk Hrizi,Loyalty to the Revolution,1,0,1,0,0,0
+TNP-00499,Mabrouka Mbarek,CPR,19,12,5,1,3,0
+TNP-00500,Meherzia Labidi,Ennahdha,85,11,62,17,4,2
+TNP-00501,Mohsen Kaabi,Ennahdha,87,9,41,1,70,4
+TNP-00502,Mohamed Habib Harguem,Ettakatol,4,4,2,2,0,0
+TNP-00503,Mohamed Salah Chairat,Democratic Transition,6,6,4,1,0,0
+TNP-00504,Mohamed Tahar Ilahi,No bloc,4,2,0,0,0,0
+TNP-00505,Mohamed Tahar Tlili,Ennahdha,98,14,82,11,69,6
+TNP-00506,Mohamed Elarbi Fadhel Moussa,Democratic Bloc,12,7,12,7,8,2
+TNP-00507,Mohamed Karray Jerbi,Loyalty to the Revolution,3,1,0,0,5,4
+TNP-00508,Moncef Cheikhrouhou,Democratic Alliance,5,5,0,0,1,1
+TNP-00509,Mohamed Neji Gharsalli,No bloc,43,38,1,0,4,4
+TNP-00510,Mohamed Saidi,Ennahdha,96,12,57,2,48,0
+TNP-00511,Mohamed Ben Mabrouk Hamdi,Democratic Alliance,7,5,17,13,7,3
+TNP-00512,Mahmoud El May,No bloc,1,1,7,4,0,0
+TNP-00513,Mohamed Essghaier,Ennahdha,98,14,67,4,59,1
+TNP-00514,Mohamed Gahbich,Democratic Alliance,9,7,15,12,6,2
+TNP-00515,Mohamed Nejib Khila,No bloc,8,5,1,0,1,1
+TNP-00516,Mohamed Ben Youssef Hamdi,No bloc,0,0,0,0,2,0
+TNP-00518,Mohamed Abdelmonem Krir,No bloc,3,2,0,0,1,1
+TNP-00519,Mohamed Ali Nasri,No bloc,4,1,1,1,0,0
+TNP-00521,Mohamed Nejib Hosni,No bloc,62,59,3,1,17,16
+TNP-00522,Mohamed Nizar Kacem,No bloc,105,99,60,51,19,19
+TNP-00523,Mahmoud Gouiaa,Ennahdha,98,14,81,8,74,5
+TNP-00524,Mahmoud Baroudi,Democratic Alliance,14,11,9,7,1,0
+TNP-00525,Mourad Amdouni,No bloc,3,1,1,1,0,0
+TNP-00526,Mustapha Ben Jaafar,Ettakatol,15,15,15,15,0,0
+TNP-00528,Moufida Marzouki,Ennahdha,94,11,71,3,69,3
+TNP-00529,Mouna Ben Nasr,No bloc,6,4,2,1,0,0
+TNP-00530,Monia Ibrahim,Ennahdha,99,16,37,4,52,1
+TNP-00531,Monia Gasri,Ennahdha,98,14,34,6,72,4
+TNP-00532,Mounir Ben Hnia,Ennahdha,100,16,89,11,44,1
+TNP-00533,Mounira Omri,Ennahdha,87,7,53,5,39,1
+TNP-00535,Maya Jeribi,No bloc,1,0,1,1,4,4
+TNP-00536,Nadia Chaabane,Democratic Bloc,11,6,4,1,7,1
+TNP-00537,Nabila Askri Snoussi,Ennahdha,98,14,82,8,70,0
+TNP-00538,Nabiha Torjmane,Ennahdha,86,9,64,1,73,5
+TNP-00539,Najla Bourial,Democratic Alliance,15,11,17,13,11,7
+TNP-00540,Nejib Mrad,Ennahdha,97,13,0,0,21,6
+TNP-00541,Nejiba Beryoul,Ennahdha,97,14,64,4,77,6
+TNP-00543,Noômane Fehri,Democratic Bloc,1,1,1,1,1,1
+TNP-00544,Noureddine Mrabti,Democratic Transition,10,10,7,7,1,1
+TNP-00545,Naoufel Ghribi,CPR,0,0,3,3,0,0
+TNP-00546,Hajer Mnifi,Ennahdha,88,9,59,1,0,0
+TNP-00547,Hajer Azaiez,Ennahdha,71,5,34,0,61,1
+TNP-00548,Hela Hammi,Ennahdha,94,12,52,2,70,3
+TNP-00549,Hichem Ben Jemaa,CPR,28,23,2,2,16,15
+TNP-00550,Haythem Belgacem,CPR,25,23,6,5,3,1
+TNP-00551,Wissem Yassine,No bloc,93,88,6,3,5,2
+TNP-00552,Kamel Ben Romdhane,Ennahdha,98,14,11,0,64,2
+TNP-00553,Soulef Ksantini,Ennahdha,98,15,10,1,23,0
+TNP-00554,Souhir Dardouri,Democratic Transition,2,2,2,2,2,2
+TNP-00555,Mokhtar Lamouchi,Ennahdha,89,8,54,3,47,1
+TNP-00556,Habib Bribech,Ennahdha,94,11,1,0,16,1
+TNP-00557,Bechir Nefzi,CPR,2,0,3,1,6,4
+TNP-00558,Noura Ben Hassen,CPR,5,0,1,0,2,0
+TNP-00559,Jamal Bouajaja,Ennahdha,97,13,38,1,75,8
+TNP-00560,Frej Ben Amor,Ennahdha,96,12,67,3,68,7
+TNP-00561,Khalid Belhaj,No bloc,98,92,55,51,14,10
+TNP-00562,Nafissa Marzouki,Ettakatol,5,3,2,1,2,2
+TNP-00563,Warda Turki,Ennahdha,84,7,55,0,61,1
+[window: before],"94 contested divisions, 94 drawn",mean within 0.9298 / cross 0.6716,3583,1209,,,,
+[window: after],"417 contested divisions, 94 drawn",mean within 0.8788 / cross 0.6787,,,2100,453,,
+[window: after_later],"360 contested divisions, 94 drawn",mean within 0.8732 / cross 0.6580,,,,,2179,363

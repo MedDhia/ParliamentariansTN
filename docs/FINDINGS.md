@@ -391,7 +391,7 @@ reported as one — not as evidence of parity, and not as evidence of a gap.
 
 ## 9. Polarisation in the 2011 Constituent Assembly
 
-Ten figures ask one question in ten ways: how far do the lines the chamber
+Twelve figures ask one question in twelve ways: how far do the lines the chamber
 divided on coincide with its bloc boundaries? They are built on a derived layer,
 `edges_vote_agreement.csv`, scoring every pair of members on the share of
 *contested* divisions they voted the same way.
@@ -496,6 +496,42 @@ resampling: the 127 members scoreable in every window are 90% of Ennahdha and 6%
 of the Democratic Bloc, so the comparison is only available for a sample selected
 on the very behaviour the crisis changed.
 · *Figure 43*
+
+**Matched properly, the crisis did change the affinity network — and in the
+direction neither standard account predicts.** Figure 43 could not settle this
+because matching the windows on *divisions* left the post window four days long
+and its panel 90% Ennahdha. Matching on **sitting days** instead — 32 either
+side, then subsampling the post window back to the same division count — gives a
+panel of **196 of 217 members**, including 16 of the 18 Democratic Bloc members
+whose withdrawal figure 43 documents. On that panel:
+
+| | before | after | 32 days later |
+| --- | --- | --- | --- |
+| mean within-bloc agreement | **0.930** | 0.879 | 0.873 |
+| mean cross-bloc agreement | 0.672 | **0.679** | 0.658 |
+| gap | 0.258 | 0.200 | 0.215 |
+| strong ties (≥90% agreement) | 4,792 | 2,553 | 2,542 |
+| of which cross-bloc | 1,209 | **453** | 363 |
+
+The polarisation account predicts within-bloc agreement rises and cross-bloc
+falls; the elite-settlement account predicts cross-bloc rises. Neither happens.
+**Within-bloc agreement falls and cross-bloc agreement does not move**: the blocs
+loosened rather than closing ranks, and nobody picked up the ground they lost.
+The gap narrows because its top came down.
+
+**The strong ties carry the sharper version.** Reliable voting partnerships —
+pairs agreeing on at least 90% of the divisions they both cast — nearly halve,
+and unevenly: within-bloc down 41%, cross-bloc down **63%**. Steady average
+cross-bloc agreement conceals the collapse of its upper tail. After the crisis a
+member could still expect to agree with someone from another bloc about
+two-thirds of the time, and could no longer expect any of them to be a dependable
+ally. The next 32 sitting days, to August 2014, look the same, so this is not a
+transient.
+
+**What it does not establish.** That the assassination caused it. The National
+Dialogue, a change of government and the constitution's drafting endgame sit in
+the same gap; this is a before-and-after, not an identification strategy.
+· *Figures 44, 45 · `fig44_*.csv`, `fig45_*.csv`*
 
 **Voting together is not working together.** Ennahdha agrees most with Ettakatol
 (0.79, above the chamber mean of 0.71) — the bloc it co-sponsored amendments
