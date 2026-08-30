@@ -1295,12 +1295,16 @@ except ModuleNotFoundError:  # pragma: no cover - depends on the CI job
     fig42 = None
 
 try:
+    import fig46_cooperation_over_time_nca2011 as fig46  # noqa: E402
+except ModuleNotFoundError:
+    fig46 = None
+try:
     import _crisis as crisis  # noqa: E402
 except ModuleNotFoundError:  # pragma: no cover - depends on the CI job
     crisis = None
 
 requires_figure_stack = pytest.mark.skipif(
-    fig42 is None or crisis is None,
+    fig42 is None or crisis is None or fig46 is None,
     reason="matplotlib/networkx/numpy are figures-only dependencies")
 
 
@@ -1402,3 +1406,152 @@ class TestCrisisWindowSubsampling:
         dates = self._dates()
         picked = crisis.subsample(sorted(dates), 9, dates)
         assert picked == sorted(picked)
+
+
+@requires_figure_stack
+class TestDivisionSimilarity:
+    """Figure 46's |phi| between divisions, the measure that uses no bloc labels.
+
+    Its whole claim is that a chamber dividing the same way twice scores high and
+    one whose majorities re-form scores low, computed only over the members who
+    voted in both divisions. Each of those three clauses is a place it could be
+    silently wrong.
+    """
+
+    @staticmethod
+    def _columns(*splits):
+        """Build a members x divisions matrix from strings of '+', '-' and '.'."""
+        import numpy as np
+        rows = len(splits[0])
+        matrix = np.zeros((rows, len(splits)), dtype=np.int8)
+        for j, column in enumerate(splits):
+            for i, mark in enumerate(column):
+                matrix[i, j] = {"+": 1, "-": -1, ".": 0}[mark]
+        return matrix
+
+    @staticmethod
+    def _phi(matrix):
+        return fig46.phi_matrix(matrix == 1, matrix == -1)
+
+    def test_identical_splits_score_one(self):
+        column = ("+" * 30 + "-" * 30)
+        phi = self._phi(self._columns(column, column))
+        assert phi[0, 1] == pytest.approx(1.0)
+
+    def test_reversed_splits_also_score_one(self):
+        """The measure is unsigned: which side is 'yes' is a labelling accident."""
+        column = "+" * 30 + "-" * 30
+        flipped = column.replace("+", "x").replace("-", "+").replace("x", "-")
+        phi = self._phi(self._columns(column, flipped))
+        assert phi[0, 1] == pytest.approx(1.0)
+
+    def test_orthogonal_splits_score_zero(self):
+        first = ("+" * 30 + "-" * 30)
+        second = ("+" * 15 + "-" * 15) * 2
+        phi = self._phi(self._columns(first, second))
+        assert phi[0, 1] == pytest.approx(0.0, abs=1e-12)
+
+    def test_absent_members_are_dropped_not_counted_as_disagreement(self):
+        """Two divisions can only be compared over members present in both.
+
+        The 30 members who voted in the first and not the second must not be
+        read as having taken the opposite side, which is what an imputation
+        would do and would show as a spurious cleavage.
+        """
+        first = "+" * 30 + "-" * 30
+        second = "+" * 30 + "." * 30
+        phi = self._phi(self._columns(first, second))
+        # every shared member voted the same way both times, so this is
+        # undefined rather than perfect -- the second split has no variation
+        # among them, and a zero-variance split has no phi.
+        import numpy as np
+        assert np.isnan(phi[0, 1])
+
+    def test_pairs_below_the_overlap_floor_are_not_scored(self):
+        first = "+" * 30 + "-" * 30
+        second = "+" * 10 + "-" * 10 + "." * 40
+        phi = self._phi(self._columns(first, second))
+        import numpy as np
+        assert fig46.MIN_OVERLAP > 20
+        assert np.isnan(phi[0, 1])
+
+    def test_mean_phi_skips_unscoreable_pairs(self):
+        column = "+" * 30 + "-" * 30
+        thin = "+" * 5 + "-" * 5 + "." * 50
+        matrix = self._columns(column, column, thin)
+        assert fig46.mean_phi(self._phi(matrix)) == pytest.approx(1.0)
+
+    def test_permutation_holds_each_divisions_margin_fixed(self):
+        """The null must destroy alignment between divisions and nothing else.
+
+        If it changed a division's margin it would also change the chance
+        agreement the observed value is being compared against, and the excess
+        would no longer be interpretable.
+        """
+        import numpy as np
+        matrix = self._columns("+" * 40 + "-" * 20, "+" * 25 + "-" * 35)
+        yes, no = matrix == 1, matrix == -1
+        shuffled_yes, shuffled_no = fig46.permuted(
+            yes, no, np.random.default_rng(0))
+        assert (shuffled_yes.sum(0) == yes.sum(0)).all()
+        assert (shuffled_no.sum(0) == no.sum(0)).all()
+        # and participation per member is untouched
+        assert ((shuffled_yes | shuffled_no) == (yes | no)).all()
+
+    def test_permutation_pulls_identical_splits_down(self):
+        import numpy as np
+        column = "+" * 40 + "-" * 40
+        matrix = self._columns(*([column] * 6))
+        yes, no = matrix == 1, matrix == -1
+        observed = fig46.mean_phi(self._phi(matrix))
+        null = fig46.mean_phi(fig46.phi_matrix(
+            *fig46.permuted(yes, no, np.random.default_rng(4))))
+        assert observed == pytest.approx(1.0)
+        assert null < 0.5
+
+
+@requires_figure_stack
+class TestCrossCuttingWins:
+    """Figure 46's cooperation measure, which is one bloc distinction wide."""
+
+    @staticmethod
+    def _matrix(*splits):
+        return TestDivisionSimilarity._columns(*splits)
+
+    @staticmethod
+    def _group(size, members):
+        import numpy as np
+        flags = np.zeros(size, dtype=bool)
+        flags[:members] = True
+        return flags
+
+    def test_a_division_both_groups_back_counts(self):
+        import numpy as np
+        matrix = self._matrix("+" * 8 + "+" * 8 + "-" * 4)
+        group = self._group(20, 8)
+        assert fig46.crossing(matrix, np.array([0]), group) == 1.0
+
+    def test_a_division_one_group_opposes_does_not(self):
+        import numpy as np
+        matrix = self._matrix("+" * 12 + "-" * 8)
+        group = self._group(20, 12)   # the first 12 carry it alone
+        assert fig46.crossing(matrix, np.array([0]), group) == 0.0
+
+    def test_a_group_that_mostly_abstained_is_judged_on_who_voted(self):
+        """Absence must not veto the classification.
+
+        Turnout in this chamber collapses for months at a time (figure 43), so
+        counting non-voters against the winning side would report the walkout
+        as a breakdown of cooperation.
+        """
+        import numpy as np
+        matrix = self._matrix("+" * 10 + "+" * 2 + "." * 8)
+        group = self._group(20, 10)
+        assert fig46.crossing(matrix, np.array([0]), group) == 1.0
+
+    def test_an_exact_half_does_not_count_as_carrying(self):
+        import numpy as np
+        matrix = self._matrix("+" * 10 + "+-" * 5)
+        group = self._group(20, 10)
+        assert fig46.crossing(matrix, np.array([0]), group) == 0.0
+
