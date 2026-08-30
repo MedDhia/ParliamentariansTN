@@ -8,12 +8,15 @@ Each finding names the figure that draws it and the CSV that holds its numbers.
 The CSVs are the authoritative form: `figures/output/figNN_name.csv` sits beside
 every PNG for exactly this purpose.
 
-> **Read the coverage caveat first.** Person-level data exists for **five** of the
-> nineteen chamber-terms: 1956, 2011–14, 2014–19, 2019–21 and 2023–. The other
-> fourteen — the whole single-party era and both upper houses — are present as
+> **Read the coverage caveat first.** Person-level data exists for **six** of the
+> nineteen chamber-terms: 1956, 2005–11, 2011–14, 2014–19, 2019–21 and 2023–. The
+> other thirteen — almost the whole single-party era — are present as
 > institutions, usually with only a presiding officer named. Any statement below
-> about "Tunisian parliamentarians" describes those five chambers, and the gap is
-> **not random**: it is exactly the authoritarian period. See
+> about "Tunisian parliamentarians" describes those six chambers, and the gap is
+> **not random**: it is exactly the authoritarian period. The one exception is the
+> Chamber of Advisors, the upper house of 2005–11, whose roster survives because
+> its own website was archived; it has members but no biography, no votes and no
+> parties, so it appears below only where a roster is enough. See
 > [COVERAGE.md](COVERAGE.md) and figure 4.
 
 ---
@@ -133,6 +136,7 @@ oppositely with respect to bloc.
 | network | tie is | chamber | n | ties | bloc assortativity |
 | --- | --- | --- | --- | --- | --- |
 | Committee co-membership | assigned | NCA-2011 | 194 | 4,009 | **−0.03** |
+| Committee co-membership | assigned | ARP-2014 | 231 | 11,940 | **−0.01** |
 | Committee co-membership | assigned | ARP-2019 | 184 | 3,099 | **−0.04** |
 | Committee co-membership | assigned | ARP-2023 | 152 | 1,579 | **−0.07** |
 | Amendment co-sponsorship | chosen | NCA-2011 | 203 | 9,361 | **+0.13** |
@@ -143,12 +147,25 @@ is slightly *negative* throughout. The two chosen-tie networks, among the same
 people in the same chambers, both run positive: 3,016 of 9,361 amendment ties
 and 553 of 1,663 co-signature ties are within-bloc.
 
+**The 2014–2019 row is new and it is the hardest test in the table.** That
+chamber's committee pages were recovered from the Internet Archive after the
+rest of this section was written, and it is the chamber whose governing
+coalition broke apart: 108 of its 246 members changed bloc mid-term. If
+committee seats were traded along bloc lines anywhere in this dataset, they
+would be traded there. The coefficient is −0.01. Two cautions travel with it,
+both pushing the same way: 803 of its 985 committee spells have bracketed dates,
+and the tie unions the whole term, so its ties are over- rather than
+under-counted — which inflates density (0.45 against 0.14–0.21 elsewhere)
+without giving bloc any purchase it did not have.
+
 **The contrast replicates across two chambers twelve years apart**, under
 different institutions and different sources — the constituent assembly tabling
 amendments to the constitution in 2011–2014, and the 2023 chamber co-signing
 written questions to ministers. That is what makes it worth more than either
 figure alone: it is not an artefact of one chamber's committee-allocation rule.
-· *Figures 14–16, 18, 22 · `fig14–16_*.csv`, `fig18_cosignature_network_arp2023.csv`,
+· *Figures 14–16, 18, 22, 41 · `fig14–16_*.csv`,
+`fig41_committee_network_arp2014.csv`,
+`fig18_cosignature_network_arp2023.csv`,
 `fig22_amendment_mixing_nca2011.csv`*
 
 **Where the 2011 assortativity comes from: one bloc, not all of them.** Read as a
@@ -164,14 +181,16 @@ bloc size falls for arithmetic reasons.
 
 **Treat the committee projection with care: it is exactly the union of the
 committee cliques.** Every tie in NCA-2011 and ARP-2019 is reproduced by taking
-each committee and joining all its members. Its density (0.14–0.21) is
-manufactured by projection, not observed. 247 memberships stand behind ARP-2023's
-1,579 dyads.
+each committee and joining all its members. Its density (0.14–0.21, and 0.45 for
+ARP-2014) is manufactured by projection, not observed. 247 memberships stand
+behind ARP-2023's 1,579 dyads.
 · *Figure 17 · `fig17_committee_bipartite_arp2023.csv`* — build your own
 projection from this incidence structure rather than inheriting a weighting.
 
-**Most deputies bridge committees.** 151 of 194 (2011), 151 of 184 (2019), 80 of
-152 (2023) sit on more than one. Figures 14–17 place a deputy by *which*
+**Most deputies bridge committees.** 151 of 194 (2011), 219 of 231 (2014), 151 of
+184 (2019), 80 of 152 (2023) sit on more than one. The 2014 chamber is the
+outlier: 4.3 committees per deputy against 2.3 in 2011, so almost nobody sat on
+one committee alone. Figures 14–17 place a deputy by *which*
 committees she sits on (angle) and *how many* (distance from the centre), so
 bridging is the readable structure.
 
@@ -430,7 +449,64 @@ party. And participation falls from 18% to 56% not voting across the term
 
 ---
 
-## 10. What the dataset says about itself
+## 10. The upper house of 2005–2011
+
+The Chamber of Advisors is the only chamber in this dataset that was *designed*
+rather than elected: two-thirds returned indirectly by local councils and
+professional bodies, one-third appointed by the President. Its own site was
+archived before it died with the chamber, and reading it closes the last empty
+chamber-term of the period. What follows is what a roster alone can support —
+there is no biography, no party, no vote and no attendance for this chamber
+anywhere, so nothing below is about behaviour.
+
+**The seat counts reconcile exactly, which settles a figure the frame had
+flagged.** 43 governorate representatives + 28 professional-organisation
+representatives + 41 presidential appointees = 112, the chamber's nominal size,
+split 71 selected to 41 appointed. `assemblies.csv` had carried "112 at creation
+and 126 after the 2008 partial renewal; both figures require verification"; the
+chamber's own pages in 2010, two years after that renewal, list 112.
+· *`mandates.csv` filtered to `ADV-2005`*
+
+**A third of the chamber represented "professional organisations", and labour is
+not among them.** The 28 professional seats sit in exactly two colleges of 14 —
+employers (`المنظمة المهنية للأعراف`) and farmers (`المنظمة المهنية للفلاحين`).
+The chamber's own page has no column for a workers' organisation. Whether seats
+for one were never allotted or were allotted and left unfilled, the site does not
+say; what is observable is that the corporatist third of Tunisia's upper house
+was capital and agriculture, with no labour representation listed.
+· *`constituencies.csv` filtered to `ADV-2005`*
+
+**Every under-represented governorate is an interior one.** Nineteen governorates
+return two advisors and five return one — Kebili, Siliana, Tataouine, Tozeur and
+Zaghouan. All five are non-littoral. All thirteen coastal governorates return
+two. That is consistent with a population rule rather than a coastal bias, since
+those five are also the least populous, and this dataset cannot separate the two
+readings — but the *effect* is that every reduced seat falls in the interior, on
+exactly the cleavage the post-2011 politics of regional inequality runs along.
+· *`constituencies.csv`, `magnitude` column*
+
+**It shares one member with the rest of the dataset and none after 2011.** Rachid
+Sfar, prime minister in the 1980s and a member of the 1986 Chamber of Deputies,
+appears in the upper house's appointed third. No advisor sits in any chamber
+after the revolution. That is a striking zero, and it is worth almost nothing as
+evidence: the lower house sitting beside this one has no roster, so the dataset
+cannot see the population where continuity would be most likely.
+· *Figure 10 · `fig10_chamber_overlap.csv`*
+
+**Seven seats change hands in a window that contains the dissolution.** Between
+captures of 21 August 2010 and 1 September 2011, six of the 41 appointed slots go
+blank on the chamber's own page and a seventh changes hands. The dissolution of
+23 March 2011 falls inside that window, so the site cannot say whether those
+seats were vacated while the chamber sat or the page was edited after it ceased
+to exist. Those mandates end on an empty date with `exit_mode = unknown` and the
+interval in `mandates.notes`. The chamber's alphabetical index, a separately
+maintained page, agrees exactly — it lists 106 names and omits precisely those
+seven.
+· *`mandates.csv`, `notes` column*
+
+---
+
+## 11. What the dataset says about itself
 
 **Career data is the thinnest layer and should be treated as a lead, not
 evidence.** 171 roles for 114 people — 13% of the dataset — all from one source,
@@ -441,9 +517,9 @@ hand-coding these rows is the repository's standing request.
 · *Figure 30 · `fig30_career_sectors.csv`*
 
 **Fields are not equally sourced, and the difference is large.** `name_ar` and
-`assembly_id` draw on all five collectors; `birth_date`, `biography_ar`,
+`assembly_id` draw on all six collectors; `birth_date`, `biography_ar`,
 `marital_status` and `languages` each rest on one. Any individual cell has one
-source, but a field supported by five independent collections is a different
+source, but a field supported by six independent collections is a different
 object from one resting on a single observatory's biographies, and a reader
 quoting two columns of the same table should know which is which. Height there
 is coverage and not accuracy — `gender` appears at full height for the 2011
@@ -457,16 +533,20 @@ published.
 
 Stated plainly, because the absences are as important as the findings.
 
-- **Any claim about parliamentary elites 1959–2011.** Twelve chambers across the
-  single-party and Ben Ali eras have no roster. Elite continuity across the
-  revolution is unmeasurable here.
+- **Any claim about parliamentary elites 1959–2011.** Eleven chambers across the
+  single-party and Ben Ali eras have no roster — the upper house of 2005–11 is
+  the one exception, and it has a roster and nothing else. Elite continuity
+  across the revolution is unmeasurable here: the lower house sitting through
+  2011 is exactly the chamber still missing.
 - **Comparative participation rates across chambers.** Denominators are
   published for ARP-2019 and recorded, so rates there are checkable; for the
   other chambers they are not, and a rate without its denominator cannot be
   compared to one with a different denominator.
-- **Committee networks for 2014–2019.** The mandate panel is continuous but the
-  committee panel is not; the archived observatory pages should yield to the same
-  method used for the roster.
+- **Fine-grained committee timing for 2014–2019.** The committee panel is
+  continuous now, but that chamber's spells come from diffing twelve web
+  captures, so 803 of 985 have bracketed boundaries and the recorded span is an
+  outer bound. Co-membership over the whole term is sound; anything that slices
+  the term into months is not.
 - **Roll-call votes outside 2011–2014.** Only the constituent assembly publishes
   a division-level record. Nothing equivalent exists here for 2014–19, 2019–21 or
   2023–, so a voting-behaviour comparison across chambers is not available.
@@ -479,6 +559,11 @@ Stated plainly, because the absences are as important as the findings.
   persistence at a scale of roughly 5% of a chamber. Small numbers of persistent
   families are invisible to it, and a surname match is never itself evidence of
   descent.
+- **Anything behavioural about the upper house of 2005–11.** Its site published
+  a roster and not member profiles: no dates of birth, no parties, no
+  biographies, no attendance and no votes exist for that chamber anywhere. Even
+  its members' sex is unrecorded, so it is absent from every figure that splits
+  by sex.
 - **Causal claims from any of the above.** These are descriptive results on
   observational data with a non-random coverage gap.
 

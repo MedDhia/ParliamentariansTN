@@ -18,6 +18,14 @@ is why each row carries its own n — the 1956 assembly drops out of the figure
 entirely because its compound districts ("Sidi Bouzid-Gafsa-Tozeur") predate the
 modern governorates and only 13 of 98 can be mapped without inventing a
 correspondence.
+
+The Chamber of Advisors drops out for a different reason, and a more interesting
+one: only 43 of its 113 members had a *place* at all. The other 70 were returned
+by professional organisations or appointed by the President, so they represent a
+sector or nothing rather than a governorate. A regional profile of that chamber
+would be a profile of two-fifths of it, which is why the threshold excludes it
+rather than showing a row whose n silently means something different from every
+other row's.
 """
 
 from __future__ import annotations

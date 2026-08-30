@@ -16,9 +16,17 @@ scale would make every real overlap look like nothing by comparison.
 
 The pre-2011 chambers are included deliberately, and their near-empty row is the
 substantive point: the dataset cannot yet say whether the people who sat under
-Ben Ali returned after 2011, because those chambers have no roster. The one
-visible link is Fouad Mebazaa, who presided over the Chamber of Deputies and
-became interim President in 2011.
+Ben Ali returned after 2011, because those chambers have no roster. Every cell
+joining a pre-2011 chamber to a post-2011 one reads zero, and that zero means
+"not observed", not "did not happen".
+
+The Chamber of Advisors, recovered from web captures of its own site, is the one
+chamber of the Ben Ali period with a full roster, and its row is worth reading
+for what it does *not* show. It shares exactly one member with any other chamber
+here — Rachid Sfar, prime minister in the 1980s, appointed to the upper house in
+its final years — and none at all with any chamber after 2011. That is a real
+finding about the 2011 rupture only to the degree its neighbours are observed,
+which for the 2009 Chamber of Deputies sitting beside it is not at all.
 """
 
 from __future__ import annotations

@@ -142,14 +142,14 @@ a flagged fallback. Cross-source matching runs on a normalised Arabic key.
 
 ## Coverage
 
-Person-level data exists for five chambers. The rest are institutional frame
+Person-level data exists for six chambers. The rest are institutional frame
 only.
 
 | Chamber | Period | Seats | Mandates | Status |
 | --- | --- | --- | --- | --- |
 | ANC-1956 | 1956–1959 | 98 | 108 | full |
 | NA-1959 → COD-2009 (12 chambers) | 1959–2011 | 90–214 | 1–3 each | frame only |
-| ADV-2005 | 2005–2011 | 112 | 0 | frame only |
+| ADV-2005 | 2005–2011 | 112 | 113 | partial |
 | NCA-2011 | 2011–2014 | 217 | 217 | full |
 | ARP-2014 | 2014–2019 | 217 | 246 | full |
 | ARP-2019 | 2019–2021 | 217 | 216 | full |
@@ -162,15 +162,24 @@ The 2014–2019 term was recovered from Internet Archive captures of an Al Bawsa
 observatory the live site no longer serves — see
 [docs/SOURCES.md](docs/SOURCES.md).
 
+The Chamber of Advisors — Tunisia's only upper house before 2023 — was recovered
+from Internet Archive captures of its own site, which died with it. Its 112 seats
+reconcile exactly: 43 governorate representatives, 28 professional-organisation
+representatives and 41 presidential appointees, the two-thirds/one-third split
+the 2002 constitutional amendment prescribed. It is `partial` rather than `full`
+because the site published a roster and not member profiles: no dates of birth,
+parties, biographies or votes exist for that chamber anywhere.
+
 Two consequences you cannot design around:
 
 - **`n_mandates` is biased downward** for anyone who served before 2011. Someone
   elected in 1994 and again in 2011 shows one mandate, because the 1994 chamber
   has no roster. The bias is systematic, not noise.
-- **ARP-2014 has no committee data**, so a committee-network panel still has a
-  hole in the middle even though the mandate panel does not. Its archived
-  committee pages remain the cheapest remaining win, and are open rather than
-  exhausted — see [Contributing](#contributing).
+- **Most ARP-2014 committee spells have bracketed dates.** That chamber's
+  committee history is reconstructed by diffing web captures, so 803 of its 985
+  spells have boundaries that fall in a gap between observations rather than on a
+  published date. They carry `dates_bracketed = true` and a note giving the
+  window; the recorded span is an outer bound, not an exact one.
 
 Closing the remaining gaps is archival work, and
 [docs/RECONSTRUCTION_PROTOCOL.md](docs/RECONSTRUCTION_PROTOCOL.md) specifies how
@@ -184,6 +193,7 @@ entry and exit modes, and the priority order.
 | `arp.tn` (chamber's own Odoo backend) | ARP-2023 | Public JSON-RPC, read-only |
 | `majles.marsad.tn` (Al Bawsala) | ARP-2019 | HTML |
 | `majles.marsad.tn/2014` via Internet Archive | ARP-2014 | Wayback CDX + raw captures |
+| `chambredesconseillers.tn` via Internet Archive | ADV-2005 | Wayback CDX + raw captures |
 | `marsad.tn` (Al Bawsala) | NCA-2011 | HTML |
 | Arabic Wikipedia | ANC-1956 | MediaWiki API |
 | Curated in `reference.py` | all 19 chambers | hand-coded |
@@ -367,18 +377,24 @@ acting in public office.
 
 ## Contributing
 
-The most valuable contribution remains **ARP-2014 committee membership** from the
-archived `/2014/assemblee/commissions` pages — the same Wayback method that
-recovered that chamber's roster should work, and the archived roster links the
-pages, so the captures are known to exist. It is open because `web.archive.org`
-was unreachable from the environment this was last worked in, not because it was
-tried and failed; the same trip would also close ARP-2014's empty bureau table.
-After that: hand-coded career histories to replace the rule-extracted rows, and
-committee membership for any chamber before 2011.
+The most valuable contributions now are **hand-coded career histories** to
+replace the rule-extracted rows, **committee membership for any chamber before
+2011**, and **rosters for the 1959–2011 chambers**, which is archival work —
+[docs/RECONSTRUCTION_PROTOCOL.md](docs/RECONSTRUCTION_PROTOCOL.md) says how.
 
-Two items previously listed here are done. The `marsad.tn/mercato` collector
-landed and recovered 105 party switches for 2011–2014, and the roll-call table
-now holds 370,922 positions across 1,724 divisions.
+Four items previously listed here are done. The `marsad.tn/mercato` collector
+landed and recovered 105 party switches for 2011–2014; the roll-call table now
+holds 370,922 positions across 1,724 divisions; ARP-2014's committee membership
+and bureau came out of the archived `/2014/` pages; and the Chamber of Advisors,
+which had sat here with 112 seats and no members and no source, turned out to be
+a web-scraping job rather than an archival one.
+
+The last two were open for the same reason, and it is worth naming: one
+environment where `web.archive.org` reset every connection while `archive.org`
+itself answered. Neither was blocked by the archive. Because both entries said
+so — "blocked, not exhausted", with the failure mode written down — closing them
+later was a matter of retrying rather than re-investigating. When a lead fails,
+record *how* it failed.
 
 Add a source by writing a collector that emits the staging shape in
 `src/parliamentarians_tn/collect/base.py` — entity resolution and provenance are

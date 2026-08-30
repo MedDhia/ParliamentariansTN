@@ -183,12 +183,24 @@ class Fetcher:
         raise RuntimeError(f"failed after 4 attempts: {url}") from last_exc
 
     # -- public API -------------------------------------------------------
-    def get_text(self, url: str, slug: str, ext: str = "html") -> str:
+    def get_text(self, url: str, slug: str, ext: str = "html",
+                 encoding: str | None = None) -> str:
+        """Fetch a text resource, caching it as UTF-8.
+
+        ``encoding`` overrides the response's declared charset. It exists for
+        servers that return HTML with no charset in the Content-Type header, in
+        which case HTTP says to assume Latin-1 and the library dutifully does —
+        turning a UTF-8 Arabic page into mojibake that is then cached, so the
+        damage survives every later run. Passing the encoding the page's own
+        meta tag declares fixes it at the point the bytes are decoded.
+        """
         path = self._cache_path(slug, ext)
         if path.exists() and not self.refresh:
             self.n_cached += 1
             return path.read_text(encoding="utf-8")
         resp = self._request("GET", url)
+        if encoding:
+            resp.encoding = encoding
         path.write_text(resp.text, encoding="utf-8")
         self.n_fetched += 1
         return resp.text

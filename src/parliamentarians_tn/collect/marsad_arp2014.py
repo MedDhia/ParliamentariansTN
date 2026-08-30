@@ -48,6 +48,7 @@ import re
 from collections import defaultdict
 from typing import Any
 
+from ..ids import normalize_arabic
 from ..io import Fetcher, RAW, log, today
 from .base import PersonRecord, StagingDoc
 
@@ -226,6 +227,386 @@ def build_bloc_spells(
     return spells
 
 
+# ---------------------------------------------------------------------------
+# Committees and the bureau
+#
+# The roster page was only ever half of what this observatory published. The
+# committee pages under /2014/assemblee/commissions/<id> and the bureau page
+# carry the chamber's internal organisation, and they were the one part of this
+# recovery left open when the roster landed. They are worth the second pass for
+# a specific reason: committee co-membership is the standard measure of
+# legislative co-work, and this dataset otherwise has it for 2011-14 and 2019-
+# but not for the term in between — exactly the term whose coalition broke up.
+#
+# Two complications, both handled below.
+#
+# **The site was redesigned mid-term.** Captures up to about 2017 use a compact
+# layout (``<a class="membre">`` wrapping ``elu-fonction`` / ``elu-nom``); later
+# ones use Bootstrap cards (``<a class="link-elu">`` wrapping a ``card-title``).
+# Both are parsed; a capture that yields nothing under either is skipped rather
+# than silently treated as an empty committee, which would read as every member
+# having left at once.
+#
+# **The /2014/ paths outlived the chamber.** Captures from 2020 return the
+# *2019* chamber's committees under the same URLs — spot-checked and confirmed:
+# a 2020 capture of the general-legislation committee lists members elected in
+# 2019. Anything captured after the term ended is therefore discarded, which is
+# a stricter window than the roster pass needed.
+# ---------------------------------------------------------------------------
+
+COMMISSIONS_INDEX = "https://majles.marsad.tn/2014/assemblee/commissions"
+BUREAU_URL = "https://majles.marsad.tn/2014/assemblee/bureau"
+COMMITTEE_ID_RE = re.compile(r"/2014/assemblee/commissions/([0-9a-f]{24})/?$")
+
+# Every member of a committee or of the bureau is an anchor to that person's own
+# page, in all three layouts the site went through. What changes between layouts
+# is what sits *inside* the anchor, so one block regex plus tolerant extraction
+# beats three parsers:
+#
+#   2015      <a href="/2014/elus/X" class="membre">
+#                <span class="elu-fonction">الرئيس</span>
+#                <span class="elu-nom">…</span>
+#   2015-17   <a href="/2014/elus/X" data-bloc="…" data-region="…">
+#                <div class="elu-nom">…</div>
+#                <div class="elu-fonction">رئيس اللجنة</div>
+#   2019      <a href="/2014/elus/X" class="link-elu">
+#                <h6 class="card-title mb-1">…</h6>
+#                <span class="p-0 d-block text-primary …">رئيس</span>
+ELU_BLOCK_RE = re.compile(
+    r'<a\s+(?:class="[^"]*"\s+)?href="/2014/elus/([^"?]+)"[^>]*>(.*?)</a>', re.S)
+# A wound-up committee's page still links its former members, as bare anchors
+# with neither a name element nor a role. Requiring a name element is what keeps
+# "أعضاء مستقيلين" — resigned members — from being read as current membership.
+NAME_MARKER_RE = re.compile(r"elu-nom|card-title")
+ROLE_RE = re.compile(
+    r'class="elu-fonction[^"]*"\s*>(.*?)</(?:span|div)>'
+    r'|<span class="p-0 d-block text-primary[^"]*">(.*?)</span>', re.S)
+HEADING_RE = re.compile(r"<h[1-6][^>]*>(.*?)</h[1-6]>", re.S)
+# The 2019 bureau page prints each spell as "04 ديسمبر 2015 - 25 جويلية 2019".
+BUREAU_DATES_RE = re.compile(r"fa-calendar-alt[^>]*></i>\s*([^<]+)</span>", re.S)
+
+# Committee roles are classified by token rather than by table lookup: the
+# corpus spells them 39 different ways across 3,172 labels — masculine and
+# feminine ("مقرر" / "مقررة"), with and without the definite article, with and
+# without the shadda, with and without "اللجنة", and "first"/"second" assistant
+# rapporteurs written four ways each. Enumerating that is a losing game; the
+# distinguishing token is not.
+#
+# Order is the whole algorithm. "مساعد مقرر ثاني" is an assistant rapporteur and
+# contains "مقرر"; "نائب رئيس اللجنة" is a vice-chair and contains "رئيس". Each
+# test therefore has to run before the one whose token it also contains.
+COMMITTEE_ROLE_TOKENS = (
+    (("مساعد", "مساعدة"), "assistant_rapporteur"),
+    (("نائب", "نائبة"), "vice_chair"),
+    (("مقرر", "مقررة"), "rapporteur"),
+    (("رئيس", "رئيسة"), "chair"),
+    (("عضو", "عضوة"), "member"),
+)
+
+# Bureau titles. "مساعد الرئيس المكلف بالإعلام والاتصال" — assistant to the
+# speaker for media — is a portfolio, and every holder of one sits on the
+# bureau, so they all map to `bureau_member` with the portfolio kept verbatim in
+# `office_label_ar`. That label is worth keeping: it is the only place in this
+# dataset where a chamber's internal division of labour is named.
+OFFICE_ROLE_TOKENS = (
+    (("مساعد", "مساعدة"), "bureau_member"),
+    (("النائب الاول", "النائبة الاولى", "النائب الأول", "النائبة الأولى"),
+     "first_vice_speaker"),
+    (("نائب", "نائبة"), "vice_speaker"),
+    (("رئيس", "رئيسة"), "speaker"),
+)
+
+# Committees created for one job rather than standing ones. The index page files
+# these under "اللجان المؤقتة"; the distinction is substantive enough to keep.
+SPECIAL_COMMITTEE_TOKENS = ("الخاصة", "المؤقتة", "التحقيق")
+
+ARABIC_MONTHS = {
+    "جانفي": 1, "فيفري": 2, "مارس": 3, "أفريل": 4, "ماي": 5, "جوان": 6,
+    "جويلية": 7, "أوت": 8, "سبتمبر": 9, "أكتوبر": 10, "نوفمبر": 11, "ديسمبر": 12,
+    "يناير": 1, "فبراير": 2, "إبريل": 4, "أبريل": 4, "مايو": 5, "يونيو": 6,
+    "يوليو": 7, "أغسطس": 8,
+}
+# What the site prints instead of an end date for someone still in post.
+STILL_SERVING = ("الآن", "اليوم")
+
+
+def _strip_tags(markup: str) -> str:
+    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", markup))).strip()
+
+
+def _classify(label: str, tokens: tuple, default: str) -> str:
+    """Map a role label to a code by the first distinguishing token it carries."""
+    folded = normalize_arabic(label)
+    for candidates, code in tokens:
+        if any(normalize_arabic(c) in folded for c in candidates):
+            return code
+    return default
+
+
+def _parse_member_blocks(markup: str) -> list[tuple[str, str, str]]:
+    """Return ``[(slug, role label, whole anchor)]`` for every member anchor."""
+    out = []
+    for match in ELU_BLOCK_RE.finditer(markup):
+        blob = match.group(2)
+        if not NAME_MARKER_RE.search(blob):
+            continue
+        role = ROLE_RE.search(blob)
+        label = _strip_tags(role.group(1) or role.group(2) or "") if role else ""
+        out.append((html.unescape(match.group(1)).strip(), label, blob))
+    return out
+
+
+def parse_committee_page(markup: str) -> tuple[str, list[tuple[str, str]]]:
+    """Return ``(committee name, [(member slug, role)])`` from any of the layouts."""
+    members = [
+        (slug, _classify(label, COMMITTEE_ROLE_TOKENS, "member"))
+        for slug, label, _blob in _parse_member_blocks(markup)
+    ]
+    name = ""
+    for heading in HEADING_RE.findall(markup):
+        text = _strip_tags(heading)
+        if text and "لجنة" in text:
+            name = text
+            break
+    return name, members
+
+
+def parse_bureau_page(markup: str) -> list[tuple[str, str, str, str]]:
+    """Return ``[(slug, office, printed title, printed date range)]``.
+
+    The later layout prints an explicit date range beside each member, which is
+    better than anything capture-diffing can produce: these office spells carry
+    the chamber's own dates rather than a bracket between crawls.
+    """
+    out = []
+    for slug, label, blob in _parse_member_blocks(markup):
+        dates = BUREAU_DATES_RE.search(blob)
+        out.append((slug, _classify(label, OFFICE_ROLE_TOKENS, "bureau_member"),
+                    label, _strip_tags(dates.group(1)) if dates else ""))
+    return out
+
+
+def parse_arabic_date(text: str) -> str:
+    """``04 ديسمبر 2015`` -> ``2015-12-04``; anything else -> ``""``."""
+    match = re.search(r"(\d{1,2})\s+(\S+)\s+(\d{4})", text.strip())
+    if not match:
+        return ""
+    day, month_name, year = match.groups()
+    month = ARABIC_MONTHS.get(month_name.strip())
+    if not month:
+        return ""
+    return f"{year}-{month:02d}-{int(day):02d}"
+
+
+# At most this many captures are read per committee. Twenty-five committees
+# times every monthly capture would be seven hundred fetches for resolution the
+# data cannot carry anyway — a membership change is located to the gap between
+# captures either way. Twelve evenly spaced captures put that gap at roughly a
+# quarter across the term, with enough slack that the handful of captures which
+# yield nothing (a wound-up committee showing only its resigned members) do not
+# leave a committee with two usable observations four years apart.
+MAX_COMMITTEE_CAPTURES = 12
+
+
+def _sample(values: list[str], limit: int) -> list[str]:
+    """Take ``limit`` evenly spaced items, always keeping the first and last."""
+    if len(values) <= limit:
+        return values
+    step = (len(values) - 1) / (limit - 1)
+    picked = {values[min(int(round(i * step)), len(values) - 1)] for i in range(limit)}
+    picked.update({values[0], values[-1]})
+    return sorted(picked)
+
+
+def list_committee_captures(fetcher: Fetcher) -> dict[str, list[str]]:
+    """Return ``committee id -> [capture timestamps]``, within the term only."""
+    payload = fetcher.get_json(
+        CDX,
+        slug="cdx_commissions",
+        params={
+            "url": "majles.marsad.tn/2014/assemblee/commissions*",
+            "output": "json",
+            "filter": "statuscode:200",
+            "limit": "8000",
+        },
+    )
+    if not payload or len(payload) < 2:
+        raise RuntimeError("no Wayback captures found for the 2014 committee pages")
+    header = payload[0]
+    ti, ui, li = header.index("timestamp"), header.index("original"), header.index("length")
+    per_month: dict[tuple[str, str], tuple[str, int]] = {}
+    for row in payload[1:]:
+        url = row[ui]
+        if "?" in url:
+            # Session-scoped variants of the same page; the bare URL is enough.
+            continue
+        match = COMMITTEE_ID_RE.search(url)
+        if not match:
+            continue
+        ts, length = row[ti], int(row[li] or 0)
+        # Captures after the term ended show the NEXT chamber's committees under
+        # these same paths, verified by spot check. They are not this chamber.
+        if ts[:8] > TERM_END.replace("-", ""):
+            continue
+        key = (match.group(1), ts[:6])
+        if key not in per_month or length > per_month[key][1]:
+            per_month[key] = (ts, length)
+    out: dict[str, list[str]] = defaultdict(list)
+    for (cid, _month), (ts, _length) in sorted(per_month.items()):
+        out[cid].append(ts)
+    return {cid: _sample(sorted(stamps), MAX_COMMITTEE_CAPTURES)
+            for cid, stamps in sorted(out.items())}
+
+
+def build_committee_spells(
+    observations: list[tuple[str, dict[str, str]]],
+) -> dict[str, list[dict[str, Any]]]:
+    """Turn a committee's capture series into dated membership spells.
+
+    ``observations`` is [(capture_date, {member slug: role})] in date order.
+    A member observed across a contiguous run of captures gets one spell. A
+    member who drops out and returns gets two, which is the honest reading: the
+    site showed them off the committee in between.
+    """
+    spells: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    if not observations:
+        return spells
+    last_date = observations[-1][0]
+    previous: dict[str, str] = {}
+    for index, (capture_date, roster) in enumerate(observations):
+        for slug, role in roster.items():
+            current = spells[slug][-1] if spells.get(slug) else None
+            if current is not None and not current["closed"]:
+                current["last_observed"] = capture_date
+                current["role"] = role  # a member promoted to chair keeps one spell
+                continue
+            spells[slug].append({
+                "role": role,
+                "first_observed": capture_date,
+                "last_observed": capture_date,
+                "start_bracketed_from": previous.get(slug, ""),
+                "closed": False,
+                "from_first_capture": index == 0,
+            })
+        for slug, member_spells in spells.items():
+            if slug in roster or not member_spells or member_spells[-1]["closed"]:
+                continue
+            member_spells[-1]["closed"] = True
+            member_spells[-1]["end_bracketed_to"] = capture_date
+        previous = {slug: capture_date for slug in roster}
+    out: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for slug, member_spells in spells.items():
+        for spell in member_spells:
+            served_from_start = spell["from_first_capture"]
+            served_to_end = not spell["closed"] and spell["last_observed"] == last_date
+            spell["start_date"] = FIRST_SITTING if served_from_start else spell["first_observed"]
+            spell["end_date"] = TERM_END if served_to_end else (
+                spell.get("end_bracketed_to") or spell["last_observed"])
+            spell["dates_bracketed"] = not (served_from_start and served_to_end)
+            out[slug].append(spell)
+    return out
+
+
+def collect_committees(fetcher: Fetcher) -> tuple[dict[str, list[dict[str, Any]]], dict[str, Any]]:
+    """Committee membership for every member, as dated spells."""
+    captures = list_committee_captures(fetcher)
+    log(f"  {len(captures)} committees, "
+        f"{sum(len(v) for v in captures.values())} captures to read")
+    by_member: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    summary: dict[str, Any] = {"committees": [], "n_unparsed_captures": 0}
+    for cid, stamps in captures.items():
+        observations: list[tuple[str, dict[str, str]]] = []
+        name = ""
+        for ts in stamps:
+            markup = fetcher.get_text(
+                WAYBACK.format(timestamp=ts, url=f"{COMMISSIONS_INDEX}/{cid}"),
+                slug=f"commission_{cid}_{ts}",
+            )
+            page_name, members = parse_committee_page(markup)
+            if not members:
+                # A redirect, an error page, or a layout this parser does not
+                # know. Treating it as an empty committee would read as the
+                # whole membership resigning on that date.
+                summary["n_unparsed_captures"] += 1
+                continue
+            name = name or page_name
+            observations.append((_timestamp_to_date(ts), dict(members)))
+        if not observations or not name:
+            continue
+        kind = "special" if any(tok in name for tok in SPECIAL_COMMITTEE_TOKENS) else "standing"
+        spells = build_committee_spells(observations)
+        for slug, member_spells in spells.items():
+            for spell in member_spells:
+                by_member[slug].append({
+                    "source_key": cid,
+                    "name_ar": name,
+                    "type": kind,
+                    "role": spell["role"],
+                    "start_date": spell["start_date"],
+                    "end_date": spell["end_date"],
+                    "dates_bracketed": spell["dates_bracketed"],
+                    "notes": (
+                        f"observed on this committee on captures from "
+                        f"{spell['first_observed']} to {spell['last_observed']}, "
+                        f"out of {len(observations)} readable captures of its page; "
+                        f"the recorded span {spell['start_date']}..{spell['end_date']} "
+                        "is the outer bound, since each boundary falls in a gap "
+                        "between captures rather than on a known date"
+                    ) if spell["dates_bracketed"] else "",
+                })
+        summary["committees"].append({
+            "committee_id": cid,
+            "name_ar": name,
+            "type": kind,
+            "captures": len(observations),
+            "distinct_members": len(spells),
+            "first_capture": observations[0][0],
+            "last_capture": observations[-1][0],
+        })
+    return by_member, summary
+
+
+def collect_bureau(fetcher: Fetcher) -> tuple[dict[str, list[dict[str, Any]]], int]:
+    """Bureau membership, with the chamber's own dates where the page gives them."""
+    payload = fetcher.get_json(
+        CDX,
+        slug="cdx_bureau",
+        params={"url": "majles.marsad.tn/2014/assemblee/bureau", "output": "json",
+                "filter": "statuscode:200", "limit": "300"},
+    )
+    header = payload[0]
+    ti, li = header.index("timestamp"), header.index("length")
+    stamps = [row[ti] for row in sorted(payload[1:], key=lambda r: -int(r[li] or 0))
+              if row[ti][:8] <= TERM_END.replace("-", "")]
+    out: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    seen: set[tuple[str, str, str]] = set()
+    n_read = 0
+    for ts in stamps[:4]:
+        markup = fetcher.get_text(
+            WAYBACK.format(timestamp=ts, url=BUREAU_URL), slug=f"bureau_{ts}")
+        rows = parse_bureau_page(markup)
+        if not rows:
+            continue
+        n_read += 1
+        for slug, office, title, printed in rows:
+            if (slug, office, title) in seen:
+                continue
+            seen.add((slug, office, title))
+            start, _, end = printed.partition(" - ")
+            out[slug].append({
+                "office": office,
+                "office_label_ar": title,
+                "start_date": parse_arabic_date(start),
+                # The page writes "الآن" for someone still in post at the time of
+                # the capture. Every capture read here predates the end of the
+                # term, and a chamber office cannot outlive its chamber, so the
+                # term's end is the correct close — a published date, not a guess.
+                "end_date": (TERM_END if any(tok in end for tok in STILL_SERVING)
+                             else parse_arabic_date(end)),
+            })
+    return out, n_read
+
+
 def collect(refresh: bool = False, max_captures: int | None = None) -> StagingDoc:
     fetcher = Fetcher(RAW / "marsad_arp2014", delay=1.5, refresh=refresh)
 
@@ -257,6 +638,11 @@ def collect(refresh: bool = False, max_captures: int | None = None) -> StagingDo
         raise RuntimeError("no capture yielded a parseable roster; upstream layout changed")
 
     spells = build_bloc_spells(observations)
+    committee_spells, committee_summary = collect_committees(fetcher)
+    bureau_spells, n_bureau_captures = collect_bureau(fetcher)
+    log(f"  {sum(len(v) for v in committee_spells.values())} committee spells across "
+        f"{len(committee_summary['committees'])} committees; "
+        f"{sum(len(v) for v in bureau_spells.values())} bureau seats")
 
     # The union of every capture is the set of people who sat at any point, which
     # is what the mandates table wants — replacements included.
@@ -338,6 +724,8 @@ def collect(refresh: bool = False, max_captures: int | None = None) -> StagingDo
                 "notes": "; ".join(notes),
             },
             blocs=member_spells,
+            committees=committee_spells.get(slug, []),
+            offices=bureau_spells.get(slug, []),
             authoritative_fields=["name_ar", "name_lat", "gender", "occupation_raw"],
         ))
 
@@ -355,8 +743,10 @@ def collect(refresh: bool = False, max_captures: int | None = None) -> StagingDo
             ),
             "coverage": (
                 "ARP-2014: all 217 members with Arabic and romanised names, sex, "
-                "profession, constituency, electoral list, seat number, and "
-                "bloc membership as dated spells derived from ~35 monthly captures"
+                "profession, constituency, electoral list, seat number, bloc "
+                "membership as dated spells derived from ~35 monthly captures, "
+                "committee membership with roles from the archived committee "
+                "pages, and the bureau with the chamber's own dates"
             ),
             "language": "ar",
             "licence": "Not stated. Civic-monitoring data on public office-holders.",
@@ -377,14 +767,20 @@ def collect(refresh: bool = False, max_captures: int | None = None) -> StagingDo
             ),
         },
         assembly_updates={
-            "captures_used": [ts for ts, _ in [(t, None) for t in timestamps]],
+            "captures_used": list(timestamps),
             "n_captures": len(observations),
             "n_bloc_switchers": n_switchers,
             "baseline_capture": baseline_date,
+            "committees": committee_summary["committees"],
+            "n_unparsed_committee_captures": committee_summary["n_unparsed_captures"],
+            "n_bureau_captures_read": n_bureau_captures,
         },
         notes=(
             f"{len(records)} members from {len(observations)} Internet Archive "
             f"captures; {n_switchers} members changed bloc during the term. "
+            f"{sum(len(v) for v in committee_spells.values())} committee spells "
+            f"across {len(committee_summary['committees'])} committees and "
+            f"{sum(len(v) for v in bureau_spells.values())} bureau seats. "
             f"Fetch: {fetcher.report()}."
         ),
         records=records,

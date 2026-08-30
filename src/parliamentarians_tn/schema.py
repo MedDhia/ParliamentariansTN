@@ -295,6 +295,11 @@ MANDATES = Table(
         Column("seat_number", "string", "Seat or file number used by the chamber."),
         Column("is_diaspora_seat", "boolean", "True where the constituency is an out-of-country constituency."),
         Column("election_date", "date", "Date of the election returning this mandate."),
+        # Several sources can date a mandate only to an interval — a bloc
+        # observed between two web captures, a seat that emptied at some point
+        # between crawls. Collectors compose that qualification in prose; before
+        # this column existed it was composed and then dropped on the floor.
+        Column("notes", "string", "Source-specific qualification of this mandate's dates or mode."),
         Column("source_ids", "string", "Semicolon-separated source_id list.", references="sources.source_id"),
     ],
 )
@@ -472,6 +477,19 @@ COMMITTEE_MEMBERSHIPS = Table(
         Column("role", "enum", "Role on the committee.", enum=COMMITTEE_ROLE),
         Column("start_date", "date", "Start of service."),
         Column("end_date", "date", "End of service."),
+        # The 2014-2019 chamber's committee history is reconstructed by diffing
+        # web captures, so most of its spells have boundaries that fall in a gap
+        # between observations. Without this flag those rows read as exact dates,
+        # which is the single most likely way to misuse this table.
+        Column(
+            "dates_bracketed",
+            "boolean",
+            "True where the spell's boundaries were derived by comparing dated "
+            "observations rather than read from a published date. The recorded "
+            "span is the outer bound: the member joined at some point up to "
+            "start_date and left at some point up to end_date.",
+        ),
+        Column("notes", "string", "Analyst notes, including the observation window where relevant."),
         Column("source_ids", "string", "Provenance.", references="sources.source_id"),
     ],
 )

@@ -1,21 +1,27 @@
 """Figure 29 — Do women reach committee leadership at the rate they sit?
 
 Committee memberships split by whether the role is a leading one — chair or
-vice-chair — and by the member's sex, in the three chambers with committee data.
+vice-chair — and by the member's sex, in the four chambers with committee data.
 The bar is the share of each group's memberships that carry a leading role, and
 the interval is a 95% Wilson score interval, because the counts behind these
 percentages are small and a bare bar would hide that.
 
-The answer is that this design cannot tell. In all three chambers the two
-intervals overlap — 6.5% against 10.0% in 2011, 9.9% against 10.2% in 2019, and
-14.8% against 23.7% in 2023, where the female interval runs from 7.7% to 26.6%
-and swallows the male estimate whole. Every point estimate runs against women,
-which is worth noting as a direction, but not one of the three differences is
-distinguishable from chance at this sample size. The largest apparent gap sits
-in the chamber with the fewest female memberships, which is exactly where noise
-is largest.
+The answer is that this design cannot tell. In all four chambers the two
+intervals overlap — 6.5% against 10.0% in 2011, 7.5% against 8.8% in 2014, 9.9%
+against 10.2% in 2019, and 14.8% against 23.7% in 2023, where the female
+interval runs from 7.7% to 26.6% and swallows the male estimate whole. Every
+point estimate runs against women, which is worth noting as a direction, but not
+one of the four differences is distinguishable from chance at this sample size.
+The largest apparent gap sits in the chamber with the fewest female memberships,
+which is exactly where noise is largest.
 
-Report this as an underpowered null, not as evidence of parity: 54 female
+**The 2014 chamber is the one that carries weight.** Its 985 memberships are
+more than the other three chambers combined, and they buy the tightest intervals
+in the figure — 5.2–10.6% for women against 6.8–11.3% for men. Those still
+overlap heavily. Where the other columns say "we cannot see a difference", this
+one says a difference large enough to matter would have shown.
+
+Report the rest as an underpowered null, not as evidence of parity: 54 female
 memberships cannot resolve a difference of the size that would matter.
 
 **Why memberships and not people.** A deputy on three committees contributes
@@ -126,7 +132,9 @@ def main() -> None:
         "overlaps, including the 2023 chamber's 15% against 24%, where 54 female "
         "memberships give an interval from 8% to 27%.\nRead this as an "
         "underpowered null: the point estimates all run against women, but none "
-        "of the three gaps is distinguishable from\nchance here. The unit is the "
+        "of the four gaps is distinguishable from\nchance here — and the 2014 "
+        "chamber, whose 985 memberships buy the tightest intervals in the "
+        "figure, still overlaps heavily.\nThe unit is the "
         "membership, not the person, so a deputy on three committees counts "
         "three times: this asks what share of leading roles a group\nholds "
         "relative to its presence in committee rooms. Rapporteurships are not "

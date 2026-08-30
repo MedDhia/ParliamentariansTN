@@ -2,7 +2,8 @@ PY ?= python3
 export PYTHONPATH := src
 
 .PHONY: help all collect build validate networks codebook test clean-cache reference \
-        figures collect-arp collect-anc collect-arp2014 collect-majles collect-wiki
+        figures collect-arp collect-anc collect-arp2014 collect-majles collect-wiki \
+        collect-adv
 
 help:
 	@echo "ParliamentariansTN"
@@ -17,14 +18,14 @@ help:
 	@echo "  make figures    render figures/ (needs requirements-figures.txt)"
 	@echo "  make reference  rewrite data/reference from reference.py"
 	@echo ""
-	@echo "  Individual collectors: collect-arp collect-anc collect-arp2014 collect-majles collect-wiki"
+	@echo "  Individual collectors: collect-arp collect-anc collect-arp2014 collect-majles collect-wiki collect-adv"
 	@echo "  Add REFRESH=1 to bypass the raw cache."
 
 REFRESH_FLAG := $(if $(REFRESH),--refresh,)
 
 all: build validate networks codebook
 
-collect: collect-wiki collect-anc collect-arp2014 collect-majles collect-arp
+collect: collect-wiki collect-anc collect-arp2014 collect-adv collect-majles collect-arp
 
 collect-arp:
 	$(PY) -m parliamentarians_tn.collect.arp_odoo $(REFRESH_FLAG)
@@ -40,6 +41,9 @@ collect-majles:
 
 collect-wiki:
 	$(PY) -m parliamentarians_tn.collect.wikipedia_anc1956 $(REFRESH_FLAG)
+
+collect-adv:
+	$(PY) -m parliamentarians_tn.collect.chambre_conseillers $(REFRESH_FLAG)
 
 reference:
 	$(PY) -m parliamentarians_tn.reference

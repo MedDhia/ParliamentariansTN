@@ -51,11 +51,50 @@ OFC-65df678586a7,TNP-00345,ARP-2019,bureau_member,مساعد الرئيس الم
 OFC-37f709db8c28,TNP-00350,ARP-2019,vice_speaker,النائب الثاني لرئيس المجلس,2019-11-14,,MARSAD_MAJLES
 OFC-6e9a6d839894,TNP-00581,ANC-1956,speaker,رئيس المجلس القومي التأسيسي,1956-04-15,1959-06-01,WIKI_AR_ANC1956
 OFC-506e3a1a15ce,TNP-00609,ANC-1956,speaker,رئيس المجلس القومي التأسيسي,1956-04-09,1956-04-15,WIKI_AR_ANC1956
+OFC-af29f53d9488,TNP-00678,ADV-2005,speaker,رئيـس المجلـس,,2011-03-23,ADV_CHAMBRE
+OFC-576937c61118,TNP-00680,ADV-2005,bureau_member,مقرر لجنة التجهيز والخدمات و البيئة,,2011-03-23,ADV_CHAMBRE
+OFC-c01242bd41d8,TNP-00683,ADV-2005,bureau_member,مقرر لجنة التشريع العام والتنظيم العام للإدارة,,2011-03-23,ADV_CHAMBRE
+OFC-0e51b8331a2c,TNP-00684,ADV-2005,bureau_member,مقرر لجنة الفلاحة والصناعة والتجارة,,2011-03-23,ADV_CHAMBRE
+OFC-7beb4259bf85,TNP-00703,ADV-2005,bureau_member,رئيس لجنة الشؤون الإجتماعية والصحة العمومية,,2011-03-23,ADV_CHAMBRE
+OFC-490ed7609ec7,TNP-00704,ADV-2005,bureau_member,مقرر لجنة التربية والثقافة والإعلام والشباب,,2011-03-23,ADV_CHAMBRE
+OFC-964fccb785f8,TNP-00708,ADV-2005,bureau_member,رئيس لجنة التشريع العام والتنظيم العام للإدارة,,2011-03-23,ADV_CHAMBRE
+OFC-93f76855be6b,TNP-00710,ADV-2005,bureau_member,رئيس لجنة التجهيز والخدمات و البيئة,,2011-03-23,ADV_CHAMBRE
+OFC-2a6a5bdd2caa,TNP-00730,ADV-2005,first_vice_speaker,النائب الأول لرئيس المجلس,,2011-03-23,ADV_CHAMBRE
+OFC-d71840f99359,TNP-00744,ADV-2005,bureau_member,رئيس لجنة التربية والثقافة والإعلام والشباب,,2011-03-23,ADV_CHAMBRE
+OFC-8a5ac8918e1b,TNP-00749,ADV-2005,bureau_member,رئيس لجنة الفلاحة والصناعة والتجارة,,2011-03-23,ADV_CHAMBRE
+OFC-fbcdc5dc8bfa,TNP-00755,ADV-2005,bureau_member,رئيس لجنة المالية والتخطيط والتنمية الجهوية,,2011-03-23,ADV_CHAMBRE
+OFC-79a5b7c0432a,TNP-00763,ADV-2005,bureau_member,مقرر لجنة المالية والتخطيط والتنمية الجهوية,,2011-03-23,ADV_CHAMBRE
+OFC-d9c48b94e6a4,TNP-00765,ADV-2005,bureau_member,مقرر لجنة الشؤون الإجتماعية والصحة العمومية,,2011-03-23,ADV_CHAMBRE
+OFC-226084f967c8,TNP-00769,ADV-2005,vice_speaker,النائب الثاني لرئيس المجلس,,2011-03-23,ADV_CHAMBRE
+OFC-9859eb501bec,TNP-00786,ADV-2005,bureau_member,رئيس لجنة الشؤون السياسية و حقوق الإنسان و العلاقات الخارجية,,2011-03-23,ADV_CHAMBRE
+OFC-a152ffaf452c,TNP-00791,ARP-2014,first_vice_speaker,النائب الأوّل لرئيس المجلس,2014-12-04,2019-10-05,MARSAD_ARP2014
+OFC-6c2c6b2bf062,TNP-00799,ARP-2014,bureau_member,مساعد الرئيس المكلف بالتونسيين بالخارج,2018-10-19,2019-10-05,MARSAD_ARP2014
+OFC-b8100be5e112,TNP-00820,ARP-2014,bureau_member,مساعد الرئيس المكلف بالعلاقات مع الحكومة ورئاسة الجمهورية,2018-11-24,2019-10-05,MARSAD_ARP2014
+OFC-ce7dd3ecb4f3,TNP-00824,ARP-2014,bureau_member,مساعد الرئيس المكلّف بالتصرف العام,2017-10-18,2019-10-05,MARSAD_ARP2014
+OFC-04ea71438b28,TNP-00827,ARP-2014,vice_speaker,النائبة الثانية لرئيس المجلس,2014-12-04,2019-10-05,MARSAD_ARP2014
+OFC-32d241e17ecc,TNP-00827,ARP-2014,vice_speaker,النائب الثاني لرئيس المجلس,,,MARSAD_ARP2014
+OFC-8b35f6b43298,TNP-00830,ARP-2014,bureau_member,مساعد الرئيس المكلف بالإعلام والاتصال,2018-10-19,2019-10-05,MARSAD_ARP2014
+OFC-e8db2c0a3c79,TNP-00204,ARP-2014,bureau_member,مساعدة الرئيس المكلّفة بشؤون التّشريع,2018-10-19,2019-10-05,MARSAD_ARP2014
+OFC-80b6b9e1937f,TNP-00831,ARP-2014,bureau_member,مساعد الرئيس المكلف بشؤون النواب,2016-10-17,2019-10-05,MARSAD_ARP2014
+OFC-96022dae4162,TNP-00834,ARP-2014,bureau_member,مساعد الرئيس المكلّف بالعلاقات الخارجية,,,MARSAD_ARP2014
+OFC-f239c767e1ca,TNP-00235,ARP-2014,bureau_member,مساعد الرئيس المكلّف بالعلاقات مع المواطن ومع المجتمع المدني,,,MARSAD_ARP2014
+OFC-52a0ccac4e0f,TNP-00492,ARP-2014,bureau_member,مساعدة الرئيس المكلفة بالعلاقات مع السلطة القضائية والهيئات الدستورية,2018-10-19,2019-10-05,MARSAD_ARP2014
+OFC-dc6be4f4736a,TNP-00877,ARP-2014,bureau_member,مساعد الرئيس المكلّف بالتصرف العام,,,MARSAD_ARP2014
+OFC-4260c4cd2e2c,TNP-00890,ARP-2014,speaker,الرئيس,2015-12-04,2019-07-25,MARSAD_ARP2014
+OFC-a2f00bd08a3e,TNP-00906,ARP-2014,bureau_member,مساعد الرئيس المكلّف بالعلاقات الخارجية,2018-10-19,2019-10-05,MARSAD_ARP2014
+OFC-9b558f47c32e,TNP-00912,ARP-2014,bureau_member,مساعد الرئيس المكلف بالإعلام والاتصال,,,MARSAD_ARP2014
+OFC-60df8373f403,TNP-00301,ARP-2014,bureau_member,مساعد الرئيس المكلف بالتونسيين بالخارج,,,MARSAD_ARP2014
+OFC-3e6c5007ae85,TNP-00921,ARP-2014,bureau_member,مساعد الرئيس المكلف بالرقابة على تنفيذ الميزانية,2015-02-16,2019-10-05,MARSAD_ARP2014
+OFC-fabdec742378,TNP-00544,ARP-2014,bureau_member,مساعد الرئيس المكلف بالعلاقات مع الحكومة ورئاسة الجمهورية,,,MARSAD_ARP2014
+OFC-1341ccf25d25,TNP-00928,ARP-2014,bureau_member,مساعد الرئيس المكلّف بالعلاقات مع المواطن ومع المجتمع المدني,2017-10-18,2019-10-05,MARSAD_ARP2014
+OFC-6e70714d42c2,TNP-00935,ARP-2014,bureau_member,مساعد الرئيس المكلّف بالعلاقات الخارجية,,,MARSAD_ARP2014
+OFC-f426075b9dac,TNP-00324,ARP-2014,bureau_member,مساعد الرئيس المكلّف بشؤون التّشريع,,,MARSAD_ARP2014
+OFC-6e827cf1c604,TNP-00939,ARP-2014,bureau_member,مساعد الرئيس المكلف بالعلاقات مع السلطة القضائية والهيئات الدستورية,,,MARSAD_ARP2014
 OFC-6eccf98c624a,TNP-00581,NA-1959,speaker,رئيس مجلس النواب,1959-01-01,1964-12-31,REFERENCE
 OFC-37194d4db857,TNP-00646,NA-1964,speaker,رئيس مجلس النواب,1964-01-01,1981-12-31,REFERENCE
-OFC-dbf7fbc4d98b,TNP-00851,COD-1981,speaker,رئيس مجلس النواب,1981-01-01,1987-12-31,REFERENCE
-OFC-f6f8031e34b3,TNP-00852,COD-1986,speaker,رئيس مجلس النواب,1987-01-01,1988-12-31,REFERENCE
-OFC-508e16f2f7ab,TNP-00853,COD-1986,speaker,رئيس مجلس النواب,1988-01-01,1990-12-31,REFERENCE
-OFC-198aa9051726,TNP-00854,COD-1989,speaker,رئيس مجلس النواب,1990-01-01,1991-12-31,REFERENCE
-OFC-c747f6653471,TNP-00855,COD-1989,speaker,رئيس مجلس النواب,1991-01-01,1997-12-31,REFERENCE
-OFC-6e9795ab1911,TNP-00856,COD-1994,speaker,رئيس مجلس النواب,1997-01-01,2011-12-31,REFERENCE
+OFC-adc376f6dee3,TNP-00964,COD-1981,speaker,رئيس مجلس النواب,1981-01-01,1987-12-31,REFERENCE
+OFC-9b5fc08ea4f4,TNP-00772,COD-1986,speaker,رئيس مجلس النواب,1987-01-01,1988-12-31,REFERENCE
+OFC-803edf325bbb,TNP-00965,COD-1986,speaker,رئيس مجلس النواب,1988-01-01,1990-12-31,REFERENCE
+OFC-ff6df4b5550c,TNP-00966,COD-1989,speaker,رئيس مجلس النواب,1990-01-01,1991-12-31,REFERENCE
+OFC-b1b21675a110,TNP-00967,COD-1989,speaker,رئيس مجلس النواب,1991-01-01,1997-12-31,REFERENCE
+OFC-14a41ac4264e,TNP-00968,COD-1994,speaker,رئيس مجلس النواب,1997-01-01,2011-12-31,REFERENCE

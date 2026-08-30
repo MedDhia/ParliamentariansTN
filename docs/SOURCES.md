@@ -14,6 +14,7 @@ covers — what was checked and found wanting.
 | `MARSAD_MAJLES` | Marsad Majles (Al Bawsala) | ARP-2019 | Roster, sex, profession, district, list, bloc, dated committee spells, the bureau, attendance and voting rates with denominators | HTML |
 | `MARSAD_ARP2014` | Marsad Majles 2014 observatory, via the Internet Archive | ARP-2014 | Full roster, Arabic + romanised names, sex, profession, constituency, list, seat number, **bloc membership as dated spells** | Wayback CDX + raw captures |
 | `MARSAD_ANC` | Marsad (Al Bawsala) | NCA-2011 | Narrative biographies (ar+fr), birth date and place, sex (inferred), marital status, languages, bloc, list, party, committees with roles, vote participation | HTML |
+| `ADV_CHAMBRE` | Chamber of Advisors' own website, via the Internet Archive | ADV-2005 | Full roster with seat category (governorate, professional organisation, presidential appointee), Arabic names and the chamber's own French romanisation, constituency, committee membership with roles, the bureau | Wayback CDX + raw captures |
 | `WIKI_AR_ANC1956` | Arabic Wikipedia | ANC-1956 | Full 98-member roster with constituencies, August 1956 by-elections, presiding officers, aggregate occupational profile | MediaWiki API |
 | `REFERENCE` | This repository | All 19 chamber-terms | Institutional frame, geography, party register, 1959–2011 presiding officers | Hand-curated |
 
@@ -169,6 +170,17 @@ members leaving Nidaa Tounes for الكتلة الحرّة in early 2016 and the
 Machrouu Tounes bloc in December 2016, and the National Coalition forming in
 2017.
 
+**Committees and the bureau.** The observatory also published a page per
+committee and a bureau page, and those were left uncollected when the roster
+landed. They are recovered here by the same method. Two wrinkles had to be
+handled: the site was redesigned mid-term, so captures up to about 2017 use a
+compact `<a class="membre">` layout and later ones Bootstrap cards, and both are
+parsed; and a capture that yields no members under either layout is *skipped*
+rather than read as an empty committee, which would look like the entire
+membership resigning on one date. The bureau page is the better of the two — its
+later layout prints an explicit date range beside each member, so those office
+spells carry the chamber's own dates rather than a bracket between crawls.
+
 **Cross-checks.** The first capture gives bloc sizes of Nidaa Tounes 86 and
 Ennahdha 69, matching the official 2014 election result exactly, across 33
 constituencies, matching the delimitation then in force, with 19 out-of-country
@@ -189,8 +201,17 @@ seats.
 - The roster is a snapshot series, so the 246 people recorded include the 217
   elected plus 29 who entered later; members absent from the final usable
   capture have `exit_mode = unknown` rather than an invented departure reason.
-- Committee membership was **not** recovered: the archived captures of the
-  committee pages were not part of this collection and remain an open lead.
+- **Committee spells are coarser than bloc spells.** Twenty-five committees
+  times every monthly capture would be seven hundred fetches for resolution the
+  data cannot carry, so eight evenly spaced captures are read per committee.
+  Boundaries therefore fall in gaps of a few months rather than a few weeks.
+  Every affected row carries `dates_bracketed = true` and a note naming the
+  window it was observed in.
+- **The `/2014/` paths outlived the chamber.** Captures from 2020 return the
+  *2019* chamber's committees under the same URLs — confirmed by spot check, a
+  2020 capture of the general-legislation committee lists members elected in
+  2019. Everything captured after the term ended on 5 October 2019 is discarded,
+  a stricter window than the roster pass needed.
 
 ## `MARSAD_ANC` — Al Bawsala's first observatory
 
@@ -246,6 +267,91 @@ still stored verbatim as `biography_ar`.
 - Career rows extracted from these narratives are rule-based, carry
   `extraction_method='rule'` and a confidence grade, and are a starting point
   for hand-coding rather than a finished career history.
+
+## `ADV_CHAMBRE` — the Chamber of Advisors, from its own website
+
+**What it is.** The upper house that sat from 2005 until its dissolution on 23
+March 2011 ran a bilingual site at `chambredesconseillers.tn`. The site died with
+the chamber. The Internet Archive holds it, and six pages carry the whole
+membership:
+
+```
+fr/index.php?id=148  ar/index.php?id=189   governorate representatives
+fr/index.php?id=149  ar/index.php?id=191   professional-organisation reps
+fr/index.php?id=150  ar/index.php?id=190   presidential appointees
+fr/index.php?id=142  ar/index.php?id=184   committee membership, with roles
+fr/index.php?id=145  ar/index.php?id=186   the bureau
+fr/index.php?id=146  ar/index.php?id=187   every member, alphabetically
+```
+
+**Why it matters.** This chamber was the dataset's last completely empty one —
+112 seats, no members, and no source listed at all. It is also the only chamber
+in the dataset with a *mixed* selection method, which makes it the only place
+where indirectly elected and appointed legislators can be compared inside one
+body.
+
+**How it is collected.** The Wayback CDX index is collapsed on content digest,
+which turns a list of visits into a list of page *states*: it distinguishes "the
+Archive crawled this again" from "the chamber changed". Every distinct state of
+every page is fetched with the `id_` modifier. The archived responses carry no
+charset header, so the decode is forced to UTF-8 — without that the Arabic pages
+cache as mojibake and the damage survives every later run.
+
+**The bilingual join.** Each roster page exists in Arabic and French with the
+same table geometry, so members arrive with an Arabic name *and* the chamber's
+own French romanisation rather than a machine transliteration. The two sides are
+joined structurally — by governorate for the governorate pages, by the printed
+slot number for the appointees, by column for the professional colleges, by
+position within a committee — never by matching names across scripts. The
+obvious shortcut, pairing the two pages by position, silently mismatches nine of
+the twenty-four governorates: the two language versions list the governorates in
+different orders.
+
+Structure runs out in exactly one place: *inside* a governorate returning two
+members, where the pair appears in either order. There the assignment is decided
+by romanisation similarity between two options, with the winning margin checked —
+the closest call separates by 0.40, so a layout change would trip the guard
+rather than quietly swap two members' names.
+
+**The seat counts reconcile exactly.** 43 governorate representatives + 28
+professional-organisation representatives + 41 presidential appointees = 112,
+the chamber's nominal size, split 71/41 — the two-thirds indirect, one-third
+appointed composition the 2002 constitutional amendment prescribed. The
+chamber's own alphabetical index, a separately maintained page captured a year
+later, resolves entirely into that roster and omits exactly the seven members
+the other pages show leaving.
+
+**That also settles a figure the frame flagged as unverified.** `assemblies.csv`
+carried "112 at creation and 126 after the 2008 partial renewal; both figures
+require verification". The chamber's own pages in 2010 — two years *after* that
+renewal — list 112. The 126 figure is not supported.
+
+**Cautions.**
+
+- **No mandate start dates.** The date of the chamber's first sitting is not
+  established anywhere this dataset trusts, so no member carries one. An empty
+  date is a known unknown; `2005-08-01` would be a fabrication no later analysis
+  could detect.
+- **Seven seats change hands in an interval that contains the dissolution.** The
+  appointee page has one state change between a capture of 21 August 2010 and one
+  of 1 September 2011: six of the 41 slots go blank and a seventh changes hands.
+  Because the dissolution falls inside that window, the site cannot say whether
+  those seats were vacated while the chamber sat or the page was edited after the
+  chamber ceased to exist. Those mandates end on an *empty* date with
+  `exit_mode = unknown` and the interval written into `mandates.notes`; neither
+  reading is asserted.
+- **Committee and bureau membership is read from the baseline state only.** By
+  2011 the Arabic and French versions of the committee page had been re-edited on
+  different dates and disagree about who sits where; pairing across that
+  disagreement would mis-align a whole committee's names. The later states drop
+  exactly the members already recorded as vanishing, so nothing is lost.
+- **Two committee seats are recorded as empty in the source.** The
+  political-affairs and immunity committees each print a rapporteur's title with
+  no name beside it. Those seats are skipped rather than filled.
+- **This closes the chamber's membership, not its prosopography.** The site
+  published a roster, not member profiles: no dates of birth, parties,
+  biographies, attendance or votes exist for this chamber anywhere here.
+  `coverage_status` is `partial` for that reason.
 
 ## `WIKI_AR_ANC1956` — the founding assembly
 
@@ -333,15 +439,19 @@ site. What it does publish for that chamber is a vote-*participation* rate with
 its denominator, which is a count of divisions attended, not a set of positions.
 Treat 2019 roll-call votes as unlocated rather than available.
 
-**Chamber of Advisors (2005-2011) and CNRD (2023-).** Neither has a roster in
-any source collected here, and the CNRD is covered by neither observatory. For
-the Chamber of Advisors this is weaker than it sounds: its own site,
-`chambredesconseillers.tn`, is dead, but Internet Archive captures of it exist —
-the availability API confirms a 2010 capture of its member pages returning 200.
-Nobody has read them. That chamber should be treated as **unattempted**, not as
-unavailable, until someone with working `web.archive.org` access looks.
+**CNRD (2023-).** No roster in any source collected here, and the chamber is
+covered by neither observatory.
 
-**A note on how these gaps get found.** Three of the entries above were wrong or
+The Chamber of Advisors used to be listed here beside it, on the grounds that
+its own site was dead. That entry was wrong in the way this section exists to
+prevent: the site was dead, but Internet Archive captures of it were not, and
+nobody had read them. They are now `ADV_CHAMBRE` above, and they closed the
+chamber — 113 members, seat categories, committees and the bureau. The entry
+had already been softened once, from "unavailable" to "unattempted", when the
+availability API confirmed a 2010 capture returning 200; the distance between
+those two words was an entire chamber.
+
+**A note on how these gaps get found.** Four of the entries above were wrong or
 stale until someone enumerated a site's own navigation rather than trusting the
 collector's assumptions about it. `marsad.tn` was thought exhausted while four
 member sub-pages and the site-level `/mercato` had never been requested;
@@ -350,6 +460,14 @@ bureau data for as long as the collector went looking only at rosters, blocs and
 committees. Before recording a layer as unavailable, list the source's outbound
 links and check each one — a collector cannot report data it never requested,
 and its silence looks exactly like absence.
+
+The Chamber of Advisors adds a second failure mode to that one. Both it and the
+2014 committee pages sat here as open leads for the same reason — a single
+environment where `web.archive.org` reset every connection while `archive.org`
+itself answered. That is a property of one network path, not of the archive, and
+recording it as "blocked, not exhausted" rather than "unavailable" is what made
+it cheap to close later: the note said what to retry and from where. When a
+source fails, write down *how* it failed.
 
 ## Access ethics
 

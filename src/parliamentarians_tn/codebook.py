@@ -222,13 +222,16 @@ def coverage_markdown() -> str:
         "specifies how."
     )
     add(
-        "2. **ARP-2014 has no committee data.** The chamber itself was recovered from "
-        "Internet Archive captures of Al Bawsala's 2014 observatory, so the mandate "
-        "panel is now continuous across the democratic period — but only the roster "
-        "page was collected, not the committee pages. A committee-network panel "
-        "therefore still has a hole in the middle where the mandate panel does not. "
-        "The archived `/2014/` committee pages should yield to the same method and are "
-        "the cheapest remaining win."
+        "2. **The Chamber of Advisors has a roster but no prosopography.** Its own "
+        "site, recovered from Internet Archive captures, published a membership list "
+        "and nothing else: seat category, constituency, committees and the bureau are "
+        "present, while dates of birth, parties, biographies, attendance and votes do "
+        "not exist for this chamber anywhere. `coverage_status` is `partial` for that "
+        "reason, and no member carries a mandate start date, because the date of the "
+        "chamber's first sitting is not established. It is also the only chamber here "
+        "with a mixed selection method — two-thirds indirectly elected, one-third "
+        "appointed by the President — which makes it the only place the two kinds of "
+        "legislator can be compared inside one body."
     )
     add(
         "3. **Bloc switching is measured for two chambers of four.** It is observable "
