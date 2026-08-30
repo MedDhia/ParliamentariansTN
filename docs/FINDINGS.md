@@ -391,10 +391,11 @@ reported as one — not as evidence of parity, and not as evidence of a gap.
 
 ## 9. Polarisation in the 2011 Constituent Assembly
 
-Twelve figures ask one question in twelve ways: how far do the lines the chamber
-divided on coincide with its bloc boundaries? They are built on a derived layer,
-`edges_vote_agreement.csv`, scoring every pair of members on the share of
-*contested* divisions they voted the same way.
+Thirteen figures ask one question in thirteen ways: how far do the lines the
+chamber divided on coincide with its bloc boundaries? Most are built on a derived
+layer, `edges_vote_agreement.csv`, scoring every pair of members on the share of
+*contested* divisions they voted the same way; the last of them asks the question
+without bloc labels at all, because this chamber's are undated.
 
 **Bloc predicts agreement sharply, and the chamber is still not two camps.**
 Within-bloc pairs average **0.84**, cross-bloc pairs **0.67** — Cohen's d 1.36,
@@ -541,6 +542,39 @@ under 2% of the variance, and +0.11 within cross-bloc pairs alone, so it is not
 simply bloc membership. This is why the dataset carries chosen and revealed tie
 layers separately rather than treating either as a proxy for cooperation.
 · *Figures 39, 40 · `fig39_*.csv`, `fig40_*.csv`*
+
+**Cooperation did not erode, and the chamber's divisions grew less alike as it
+went.** Nugent's *After Repression* (2020) argues that Tunisia's transition held
+because indiscriminate repression under Ben Ali left its opposition
+comparatively unpolarised, where Egypt's narrowly-targeted repression did not.
+That claim is about elite perceptions and roll calls cannot test it, but it
+implies something checkable in the chamber that wrote the constitution. Two
+measures, quarter by quarter:
+
+- A coalition carrying more than half of Ennahdha's voters **and** more than half
+  of everyone else's won **75%** of the 993 contested divisions and **86%** of all
+  1,724 recorded ones. Per quarter: 87, 71, 72, 92, 68, 69, **78%** — the term
+  ends above the two quarters before it.
+- Mean |φ| between pairs of divisions — how alike the lines the chamber split on
+  were, computed over the members voting in both and using no bloc labels at all
+  — runs above its permutation null in every quarter, so this is a structured
+  chamber, not a random one. But the excess **falls from +0.27 to +0.11**, and the
+  three quarters carrying 73% of the term's contested business are its three
+  least structured.
+
+Neither is an artefact of the later quarters being larger: cutting every quarter
+to the smallest one's 17 divisions moves no excess by more than 0.03. Nor of
+turnout: the permutation null tracks √(2/π·overlap) to within 0.003 everywhere,
+which is what absorbs the fall in common voters from 118 per division-pair in
+2014Q1 to 52 in 2014Q3.
+
+**What it does not establish.** Not Nugent's mechanism — repression type shaping
+perceived distance — which roll calls cannot reach. Not anything about Egypt, the
+comparison the argument rests on. Roll-call behaviour is disciplined and
+agenda-conditioned, so behavioural cooperation and attitudinal polarisation are
+different constructs. And the NCA is where the consensus outcome was produced, so
+cross-cutting votes in it confirm the outcome was real rather than explain it.
+· *Figure 46 · `fig46_cooperation_over_time_nca2011.csv`*
 
 **What none of this establishes.** Agreement is a correlation between voting
 records, not an act: two opponents both backing an uncontroversial motion are
