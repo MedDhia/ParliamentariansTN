@@ -1,0 +1,218 @@
+person_id,name_lat,bloc,closest_allies_in_own_bloc,closest_ally,closest_ally_bloc,closest_ally_agreement,mean_agreement_of_top3,times_chosen_by_others,bloc_observed_share,bloc_chance_share,bloc_lift
+TNP-00007,Hichem Hosni,No bloc,3,Fadhel Saghraoui,No bloc,0.7725,0.757,0,0.5897,0.2361,2.498
+TNP-00141,Anouar Marzouki,Democratic Transition,2,Moez Kammoun,Democratic Transition,0.8637,0.8564,2,0.4048,0.0602,6.725
+TNP-00174,Ameur Laraiedh,Ennahdha,2,Amel Ghouil,Ennahdha,0.986,0.9835,7,0.9272,0.3981,2.329
+TNP-00199,Fathi Ayadi,Ennahdha,3,Mohamed Zrig,Ennahdha,0.9796,0.9773,0,0.9272,0.3981,2.329
+TNP-00247,Latifa Habachi,Ennahdha,3,Mohamed Zrig,Ennahdha,0.9813,0.9795,0,0.9272,0.3981,2.329
+TNP-00264,Mehdi Ben Gharbia,Democratic Alliance,2,Mohamed Ben Mabrouk Hamdi,Democratic Alliance,0.9603,0.939,5,0.7,0.0417,16.8
+TNP-00267,Moez Belhaj Rhouma,Ennahdha,3,Badreddine Abdelkafi,Ennahdha,0.9485,0.9447,2,0.9272,0.3981,2.329
+TNP-00277,Mohamed Karim Krifa,No bloc,3,Amira Marzouk,No bloc,0.9412,0.9314,4,0.5897,0.2361,2.498
+TNP-00285,Mohamed Zrig,Ennahdha,3,Oussama Al Saghir,Ennahdha,0.9901,0.988,15,0.9272,0.3981,2.329
+TNP-00289,Mongi Rahoui,Democratic Bloc,3,Rim Mahjoub,Democratic Bloc,0.905,0.8834,3,0.6481,0.0787,8.235
+TNP-00301,Neji Jmal,Ennahdha,3,Mahmoud Gouiaa,Ennahdha,0.976,0.9738,1,0.9272,0.3981,2.329
+TNP-00324,Sahbi Atig,Ennahdha,3,Mahmoud Gouiaa,Ennahdha,0.9884,0.986,8,0.9272,0.3981,2.329
+TNP-00332,Samia Abbou,CPR,3,Mabrouka Mbarek,CPR,0.8619,0.8501,0,0.7857,0.0602,13.055
+TNP-00357,Yamina Zoghlami,Ennahdha,2,Mustapha Ben Jaafar,Ettakatol,0.9829,0.9755,0,0.9272,0.3981,2.329
+TNP-00364,Zied Laadhari,Ennahdha,3,Mohamed Zrig,Ennahdha,0.984,0.9822,1,0.9272,0.3981,2.329
+TNP-00367,Ibrahim Hamdi,Loyalty to the Revolution,0,Jalel Farhat,Democratic Transition,0.7794,0.765,0,0.4333,0.0417,10.4
+TNP-00368,Ibrahim Kassas,No bloc,2,Mohamed Chafik Zorkin,Democratic Alliance,0.8305,0.7891,1,0.5897,0.2361,2.498
+TNP-00369,Ahmed Mechergui,Ennahdha,3,Mounir Ben Hnia,Ennahdha,0.9785,0.9744,2,0.9272,0.3981,2.329
+TNP-00370,Ahmed Essefi,No bloc,1,Selim Ben Abdessalam,No bloc,0.8667,0.8478,1,0.5897,0.2361,2.498
+TNP-00371,Ahmed Smiai,Ennahdha,3,Bechir Chammem,Ennahdha,0.8873,0.8764,0,0.9272,0.3981,2.329
+TNP-00372,Ahmed Brahim,Democratic Bloc,3,Nadia Chaabane,Democratic Bloc,0.9031,0.9004,4,0.6481,0.0787,8.235
+TNP-00373,Ahmed Nejib Chebbi,No bloc,0,Moncef Cheikhrouhou,Democratic Alliance,0.8947,0.8774,0,0.5897,0.2361,2.498
+TNP-00374,Azed Badi,Loyalty to the Revolution,1,Adel Ben Attia,Ennahdha,0.8796,0.8741,3,0.4333,0.0417,10.4
+TNP-00375,Oussama Al Saghir,Ennahdha,3,Mohamed Zrig,Ennahdha,0.9901,0.9837,8,0.9272,0.3981,2.329
+TNP-00376,Iskander Bouallagui,No bloc,3,Mohamed Ben Youssef Hamdi,No bloc,0.9048,0.8828,5,0.5897,0.2361,2.498
+TNP-00377,Essia Naffati,Ennahdha,3,Mahmoud Gouiaa,Ennahdha,0.965,0.9638,0,0.9272,0.3981,2.329
+TNP-00378,Ikbel Msadaa,CPR,3,Mabrouka Mbarek,CPR,0.968,0.9407,7,0.7857,0.0602,13.055
+TNP-00379,Lazhar Chamli,CPR,3,Bechir Nefzi,CPR,0.8294,0.8235,0,0.7857,0.0602,13.055
+TNP-00380,Bechir Chammem,Ennahdha,3,Salha Ben Aicha,Ennahdha,0.9543,0.9469,3,0.9272,0.3981,2.329
+TNP-00381,Jdidi Essbouîi,No bloc,3,Said Kharchoufi,No bloc,0.8581,0.8447,2,0.5897,0.2361,2.498
+TNP-00382,Habib Ellouz,Ennahdha,3,Nafti Mahdhi,Ennahdha,0.9559,0.934,2,0.9272,0.3981,2.329
+TNP-00383,Habib Khedher,Ennahdha,3,Mohamed Zrig,Ennahdha,0.9782,0.9771,0,0.9272,0.3981,2.329
+TNP-00384,Hasni Badri,Democratic Transition,1,Mustapha Ben Jaafar,Ettakatol,0.8561,0.8468,0,0.4048,0.0602,6.725
+TNP-00385,Zohra Smida,Ennahdha,3,Samia Ferchichi,Ennahdha,0.954,0.9515,2,0.9272,0.3981,2.329
+TNP-00386,Sadok Chourou,Ennahdha,3,Basma Jebali,Ennahdha,0.961,0.9572,1,0.9272,0.3981,2.329
+TNP-00387,Tahar Hmila,No bloc,0,Salma Nazih Znaidi,Ettakatol,0.8713,0.831,0,0.5897,0.2361,2.498
+TNP-00388,Arbi Abid,Ettakatol,1,Meherzia Labidi,Ennahdha,0.9773,0.9618,2,0.6667,0.0509,13.091
+TNP-00389,Ferjani Doghmane,Ennahdha,3,Salha Ben Aicha,Ennahdha,0.9444,0.9423,0,0.9272,0.3981,2.329
+TNP-00390,Moncef Cherni,Democratic Transition,3,Tarek Bouaziz,Democratic Transition,0.9312,0.8983,2,0.4048,0.0602,6.725
+TNP-00391,Mouldi Riahi,Ettakatol,3,Mustapha Ben Jaafar,Ettakatol,0.9818,0.9739,3,0.6667,0.0509,13.091
+TNP-00392,Naceur Brahmi,No bloc,0,Samir Bettaieb,Democratic Bloc,0.9407,0.8973,1,0.5897,0.2361,2.498
+TNP-00393,Nafti Mahdhi,Ennahdha,3,Habib Ellouz,Ennahdha,0.9559,0.9485,3,0.9272,0.3981,2.329
+TNP-00394,Hedi Ben Braham,Ennahdha,3,Mahmoud Gouiaa,Ennahdha,0.9898,0.9847,6,0.9272,0.3981,2.329
+TNP-00395,Hedi Chaouech,No bloc,3,Mohamed Karim Krifa,No bloc,0.9312,0.9157,3,0.5897,0.2361,2.498
+TNP-00396,Walid Bennani,Ennahdha,3,Basma Jebali,Ennahdha,0.9803,0.9795,2,0.9272,0.3981,2.329
+TNP-00397,Amel Azzouz,Ennahdha,3,Mahmoud Gouiaa,Ennahdha,0.9767,0.9764,0,0.9272,0.3981,2.329
+TNP-00398,Amel Ghouil,Ennahdha,2,Ameur Laraiedh,Ennahdha,0.986,0.9775,1,0.9272,0.3981,2.329
+TNP-00399,Amira Marzouk,No bloc,3,Fadhel Elouej,No bloc,0.9623,0.9343,3,0.5897,0.2361,2.498
+TNP-00400,Iyed Dahmani,No bloc,3,Issam Chebbi,No bloc,0.9043,0.8909,2,0.5897,0.2361,2.498
+TNP-00401,Imen Ben Mhamed,Ennahdha,3,Nabila Askri Snoussi,Ennahdha,0.9589,0.9575,0,0.9272,0.3981,2.329
+TNP-00402,Aymen Zouaghi,No bloc,3,Said Kharchoufi,No bloc,0.882,0.8729,4,0.5897,0.2361,2.498
+TNP-00403,Badreddine Abdelkafi,Ennahdha,3,Samia Ferchichi,Ennahdha,0.982,0.9806,4,0.9272,0.3981,2.329
+TNP-00404,Basma Jebali,Ennahdha,3,Walid Bennani,Ennahdha,0.9803,0.98,14,0.9272,0.3981,2.329
+TNP-00405,Bechir Lazzem,Ennahdha,3,Samia Ferchichi,Ennahdha,0.9766,0.9764,0,0.9272,0.3981,2.329
+TNP-00406,Baya Jaouadi,Ennahdha,2,Mustapha Ben Jaafar,Ettakatol,0.9748,0.9587,7,0.9272,0.3981,2.329
+TNP-00407,Jalel Farhat,Democratic Transition,0,Jamel Touir,Ettakatol,0.9004,0.8929,6,0.4048,0.0602,6.725
+TNP-00408,Jalel Bouzid,Ettakatol,2,Lobna Jeribi,Ettakatol,0.9829,0.9701,3,0.6667,0.0509,13.091
+TNP-00409,Jamel Gargouri,Democratic Alliance,3,Najla Bourial,Democratic Alliance,0.9316,0.9255,5,0.7,0.0417,16.8
+TNP-00410,Jamel Touir,Ettakatol,2,Meherzia Labidi,Ennahdha,0.9447,0.9351,2,0.6667,0.0509,13.091
+TNP-00411,Jawhara Tiss,Ennahdha,3,Mohamed Zrig,Ennahdha,0.9741,0.9729,0,0.9272,0.3981,2.329
+TNP-00412,Hatem Klaii,No bloc,1,Mohamed Nizar Kacem,No bloc,0.8916,0.8736,1,0.5897,0.2361,2.498
+TNP-00413,Hafedh Ibrahim Lassoued,Ennahdha,3,Samia Ferchichi,Ennahdha,0.9805,0.9798,7,0.9272,0.3981,2.329
+TNP-00414,Habiba Triki,Ennahdha,3,Farida Labidi,Ennahdha,0.9818,0.9803,7,0.9272,0.3981,2.329
+TNP-00415,Hassan Radhouani,No bloc,1,Salma Nazih Znaidi,Ettakatol,0.85,0.8377,0,0.5897,0.2361,2.498
+TNP-00416,Hasna Mersit,No bloc,1,Salma Nazih Znaidi,Ettakatol,0.8852,0.8486,0,0.5897,0.2361,2.498
+TNP-00417,Hattab Barakati,No bloc,3,Fadhel Saghraoui,No bloc,0.8897,0.8741,4,0.5897,0.2361,2.498
+TNP-00418,Halima Guenni,Ennahdha,3,Zohra Smida,Ennahdha,0.9433,0.9396,1,0.9272,0.3981,2.329
+TNP-00419,Hanène Sassi,Democratic Transition,1,Salma Nazih Znaidi,Ettakatol,0.875,0.8688,0,0.4048,0.0602,6.725
+TNP-00420,Khmais Ksila,No bloc,1,Ahmed Brahim,Democratic Bloc,0.8947,0.8881,3,0.5897,0.2361,2.498
+TNP-00421,Khira Sghairi,Ennahdha,2,Baya Jaouadi,Ennahdha,0.9507,0.948,3,0.9272,0.3981,2.329
+TNP-00422,Dalila Babba,Ennahdha,3,Habiba Triki,Ennahdha,0.9699,0.9666,0,0.9272,0.3981,2.329
+TNP-00423,Dalila Bouain,Ennahdha,3,Habiba Triki,Ennahdha,0.9725,0.967,0,0.9272,0.3981,2.329
+TNP-00424,Rabeh Khraifi,No bloc,2,Issam Chebbi,No bloc,0.883,0.8776,1,0.5897,0.2361,2.498
+TNP-00425,Rabiî Abdi,Loyalty to the Revolution,2,Abderraouf Ayadi,Loyalty to the Revolution,0.8842,0.8647,3,0.4333,0.0417,10.4
+TNP-00426,Rabiaa Najlaoui,No bloc,3,Mohamed Abdelmonem Krir,No bloc,0.9161,0.8773,1,0.5897,0.2361,2.498
+TNP-00427,Rafik Tlili,Loyalty to the Revolution,2,Mabrouka Mbarek,CPR,0.8608,0.8456,3,0.4333,0.0417,10.4
+TNP-00428,Romdhane Doghmani,Democratic Transition,0,Mohamed Nizar Kacem,No bloc,0.9342,0.9173,2,0.4048,0.0602,6.725
+TNP-00429,Rim Thairi,No bloc,3,Mohamed Ben Youssef Hamdi,No bloc,0.9217,0.8882,4,0.5897,0.2361,2.498
+TNP-00430,Rim Mahjoub,Democratic Bloc,3,Samira Merai,Democratic Bloc,0.9426,0.9204,6,0.6481,0.0787,8.235
+TNP-00431,Zied Doulatli,Ennahdha,2,Mustapha Ben Jaafar,Ettakatol,0.9907,0.9827,3,0.9272,0.3981,2.329
+TNP-00432,Samia Ferchichi,Ennahdha,2,Mustapha Ben Jaafar,Ettakatol,0.9873,0.9857,25,0.9272,0.3981,2.329
+TNP-00433,Souad Abderrahim,Ennahdha,2,Mustapha Ben Jaafar,Ettakatol,0.9832,0.967,3,0.9272,0.3981,2.329
+TNP-00434,Saâd Bouaïche,Democratic Transition,1,Mohamed Nizar Kacem,No bloc,0.8719,0.8498,2,0.4048,0.0602,6.725
+TNP-00435,Said Kharchoufi,No bloc,3,Aymen Zouaghi,No bloc,0.882,0.8683,3,0.5897,0.2361,2.498
+TNP-00436,Salma Baccar,Democratic Bloc,3,Samir Bettaieb,Democratic Bloc,0.9408,0.9213,5,0.6481,0.0787,8.235
+TNP-00437,Salma Sarsout,Ennahdha,3,Samia Ferchichi,Ennahdha,0.9599,0.9504,0,0.9272,0.3981,2.329
+TNP-00438,Salma Hedia Mabrouk,Democratic Bloc,3,Nadia Chaabane,Democratic Bloc,0.8649,0.8601,0,0.6481,0.0787,8.235
+TNP-00439,Slim Ben Hmidane,CPR,2,Hichem Ben Jemaa,CPR,0.8944,0.8826,2,0.7857,0.0602,13.055
+TNP-00440,Selim Ben Abdessalam,No bloc,1,Karima Souid,Democratic Bloc,0.9186,0.909,6,0.5897,0.2361,2.498
+TNP-00441,Slimane Hlal,Ennahdha,2,Mustapha Ben Jaafar,Ettakatol,0.9593,0.9486,0,0.9272,0.3981,2.329
+TNP-00442,Samir Ben Amor,CPR,2,Abdelwahab Maatar,CPR,0.8671,0.8537,2,0.7857,0.0602,13.055
+TNP-00443,Samir Bettaieb,Democratic Bloc,2,Salma Baccar,Democratic Bloc,0.9408,0.9383,5,0.6481,0.0787,8.235
+TNP-00444,Samira Merai,Democratic Bloc,3,Rim Mahjoub,Democratic Bloc,0.9426,0.9263,7,0.6481,0.0787,8.235
+TNP-00445,Sana Mersni,Ennahdha,3,Hajer Mnifi,Ennahdha,0.9771,0.9722,0,0.9272,0.3981,2.329
+TNP-00446,Sana Haddad,Ennahdha,3,Nabiha Torjmane,Ennahdha,0.9445,0.9403,0,0.9272,0.3981,2.329
+TNP-00447,Sonia Toumia,Ennahdha,2,Mustapha Ben Jaafar,Ettakatol,0.9515,0.9271,0,0.9272,0.3981,2.329
+TNP-00448,Chokri Yaich,Democratic Alliance,2,Jamel Gargouri,Democratic Alliance,0.9228,0.9141,4,0.7,0.0417,16.8
+TNP-00449,Chokri Kastalli,Democratic Alliance,2,Salma Nazih Znaidi,Ettakatol,0.8953,0.8678,0,0.7,0.0417,16.8
+TNP-00450,Chokri Arfaoui,Democratic Transition,2,Jalel Farhat,Democratic Transition,0.8831,0.8807,3,0.4048,0.0602,6.725
+TNP-00451,Salah Chouaib,No bloc,0,Saâd Bouaïche,Democratic Transition,0.8306,0.8111,0,0.5897,0.2361,2.498
+TNP-00452,Salha Ben Aicha,Ennahdha,3,Basma Jebali,Ennahdha,0.9663,0.9659,15,0.9272,0.3981,2.329
+TNP-00453,Slaheddine Zahaf,Democratic Bloc,0,Jamel Gargouri,Democratic Alliance,0.8976,0.8962,1,0.6481,0.0787,8.235
+TNP-00454,Slaheddine Elhiba,Ennahdha,2,Mustapha Ben Jaafar,Ettakatol,0.9885,0.9792,0,0.9272,0.3981,2.329
+TNP-00455,Dhamir Mannai,No bloc,1,Nafissa Marzouki,Ettakatol,0.8858,0.8786,4,0.5897,0.2361,2.498
+TNP-00456,Tarek Labidi,Ettakatol,3,Abderrahmane Ladgham,Ettakatol,0.9504,0.8572,1,0.6667,0.0509,13.091
+TNP-00457,Tarek Bouaziz,Democratic Transition,3,Moncef Cherni,Democratic Transition,0.9312,0.874,1,0.4048,0.0602,6.725
+TNP-00458,Adel Ben Attia,Ennahdha,2,Mustapha Ben Jaafar,Ettakatol,0.9706,0.9669,5,0.9272,0.3981,2.329
+TNP-00459,Aicha Dhaouadi,Ennahdha,3,Mahmoud Gouiaa,Ennahdha,0.9767,0.9753,0,0.9272,0.3981,2.329
+TNP-00460,Abdelbasset Becheikh,Ennahdha,2,Mustapha Ben Jaafar,Ettakatol,0.9527,0.9515,1,0.9272,0.3981,2.329
+TNP-00461,Abdelhalim Zouari,Ennahdha,3,Samia Ferchichi,Ennahdha,0.9725,0.9705,0,0.9272,0.3981,2.329
+TNP-00462,Abderrahmane Ladgham,Ettakatol,3,Tarek Labidi,Ettakatol,0.9504,0.8594,1,0.6667,0.0509,13.091
+TNP-00463,Abderrazak Khallouli,Democratic Transition,2,Mohamed Salah Chairat,Democratic Transition,0.7976,0.7949,0,0.4048,0.0602,6.725
+TNP-00464,Abderraouf Ayadi,Loyalty to the Revolution,2,Rabiî Abdi,Loyalty to the Revolution,0.8842,0.863,4,0.4333,0.0417,10.4
+TNP-00465,Abdessattar Dhifi,Loyalty to the Revolution,0,Sadok Chourou,Ennahdha,0.8964,0.8953,1,0.4333,0.0417,10.4
+TNP-00466,Abdessalem Chaabane,CPR,3,Ikbel Msadaa,CPR,0.9194,0.9013,5,0.7857,0.0602,13.055
+TNP-00467,Abdelaziz Chaabane,Ennahdha,3,Salha Ben Aicha,Ennahdha,0.9013,0.8995,0,0.9272,0.3981,2.329
+TNP-00468,Abdelaziz Kotti,No bloc,1,Ahmed Brahim,Democratic Bloc,0.8795,0.8781,1,0.5897,0.2361,2.498
+TNP-00469,Abdelkader Ben Khmis,Democratic Bloc,0,Moncef Cheikhrouhou,Democratic Alliance,0.881,0.8758,0,0.6481,0.0787,8.235
+TNP-00470,Abdelkader Kadri,Ennahdha,3,Samia Ferchichi,Ennahdha,0.9859,0.9794,6,0.9272,0.3981,2.329
+TNP-00471,Abdelmajid Najar,Ennahdha,3,Mahmoud Gouiaa,Ennahdha,0.9812,0.9792,4,0.9272,0.3981,2.329
+TNP-00472,Abdelwahab Maatar,CPR,1,Samir Ben Amor,CPR,0.8671,0.8292,1,0.7857,0.0602,13.055
+TNP-00473,Issam Chebbi,No bloc,3,Maya Jeribi,No bloc,0.9223,0.9032,3,0.5897,0.2361,2.498
+TNP-00474,Ali Bechrifa,Democratic Bloc,1,Selim Ben Abdessalam,No bloc,0.9139,0.8893,2,0.6481,0.0787,8.235
+TNP-00475,Ali Fares,Ennahdha,2,Mustapha Ben Jaafar,Ettakatol,0.9703,0.9569,5,0.9272,0.3981,2.329
+TNP-00476,Ali Houiji,Loyalty to the Revolution,2,Abderraouf Ayadi,Loyalty to the Revolution,0.8068,0.8027,0,0.4333,0.0417,10.4
+TNP-00477,Imed Hammami,Ennahdha,3,Mohamed Zrig,Ennahdha,0.9715,0.9674,0,0.9272,0.3981,2.329
+TNP-00478,Omar Chetoui,CPR,3,Abdessalem Chaabane,CPR,0.864,0.8425,0,0.7857,0.0602,13.055
+TNP-00479,Fadhel Elouej,No bloc,3,Amira Marzouk,No bloc,0.9623,0.9336,3,0.5897,0.2361,2.498
+TNP-00480,Fatma Gharbi,No bloc,1,Selim Ben Abdessalam,No bloc,0.8627,0.8496,0,0.5897,0.2361,2.498
+TNP-00481,Faiza Kadoussi,No bloc,2,Salma Nazih Znaidi,Ettakatol,0.8235,0.8121,0,0.5897,0.2361,2.498
+TNP-00482,Fathi Eltaif,No bloc,3,Hattab Barakati,No bloc,0.8634,0.8399,2,0.5897,0.2361,2.498
+TNP-00483,Farah Nsibi,No bloc,1,Khalid Belhaj,No bloc,0.9287,0.9169,1,0.5897,0.2361,2.498
+TNP-00484,Farida Labidi,Ennahdha,3,Mahmoud Gouiaa,Ennahdha,0.9936,0.9872,11,0.9272,0.3981,2.329
+TNP-00485,Fattoum Lassoued,Ennahdha,2,Salma Nazih Znaidi,Ettakatol,0.9286,0.913,0,0.9272,0.3981,2.329
+TNP-00486,Fattouma Attia,Ennahdha,3,Mahmoud Gouiaa,Ennahdha,0.9511,0.9486,0,0.9272,0.3981,2.329
+TNP-00487,Foued Thamer,Democratic Bloc,2,Karim Bouabdelli,Democratic Bloc,0.9106,0.8822,1,0.6481,0.0787,8.235
+TNP-00488,Faiçal Jadlaoui,No bloc,1,Salma Nazih Znaidi,Ettakatol,0.9012,0.8934,0,0.5897,0.2361,2.498
+TNP-00489,Kais Mokhtar,No bloc,1,Mahmoud El May,No bloc,0.9007,0.8881,2,0.5897,0.2361,2.498
+TNP-00490,Karim Bouabdelli,Democratic Bloc,1,Foued Thamer,Democratic Bloc,0.9106,0.8824,1,0.6481,0.0787,8.235
+TNP-00491,Karima Souid,Democratic Bloc,1,Selim Ben Abdessalam,No bloc,0.9186,0.8993,5,0.6481,0.0787,8.235
+TNP-00492,Kalthoum Badreddine,Ennahdha,3,Ameur Laraiedh,Ennahdha,0.9716,0.9655,0,0.9272,0.3981,2.329
+TNP-00493,Kamel Saadaoui,No bloc,0,Khira Sghairi,Ennahdha,0.9263,0.9254,0,0.5897,0.2361,2.498
+TNP-00494,Kamel Ammar,Ennahdha,3,Moufida Marzouki,Ennahdha,0.948,0.9434,0,0.9272,0.3981,2.329
+TNP-00495,Kamel Ben Amara,Ennahdha,2,Ameur Laraiedh,Ennahdha,0.9633,0.9519,0,0.9272,0.3981,2.329
+TNP-00496,Kaouther Ladgham,Ennahdha,3,Hafedh Ibrahim Lassoued,Ennahdha,0.9591,0.9518,1,0.9272,0.3981,2.329
+TNP-00497,Lobna Jeribi,Ettakatol,2,Jalel Bouzid,Ettakatol,0.9829,0.9695,5,0.6667,0.0509,13.091
+TNP-00498,Mabrouk Hrizi,Loyalty to the Revolution,2,Azed Badi,Loyalty to the Revolution,0.8303,0.822,0,0.4333,0.0417,10.4
+TNP-00499,Mabrouka Mbarek,CPR,3,Ikbel Msadaa,CPR,0.968,0.9512,9,0.7857,0.0602,13.055
+TNP-00500,Meherzia Labidi,Ennahdha,1,Mustapha Ben Jaafar,Ettakatol,1.0,0.9813,25,0.9272,0.3981,2.329
+TNP-00501,Mohsen Kaabi,Ennahdha,3,Hedi Ben Braham,Ennahdha,0.958,0.9553,0,0.9272,0.3981,2.329
+TNP-00502,Mohamed Habib Harguem,Ettakatol,2,Mustapha Ben Jaafar,Ettakatol,0.9248,0.9163,2,0.6667,0.0509,13.091
+TNP-00503,Mohamed Salah Chairat,Democratic Transition,0,Mustapha Ben Jaafar,Ettakatol,0.9104,0.895,3,0.4048,0.0602,6.725
+TNP-00504,Mohamed Tahar Ilahi,No bloc,1,Mustapha Ben Jaafar,Ettakatol,0.9483,0.8911,1,0.5897,0.2361,2.498
+TNP-00505,Mohamed Tahar Tlili,Ennahdha,3,Samia Ferchichi,Ennahdha,0.9785,0.9762,4,0.9272,0.3981,2.329
+TNP-00506,Mohamed Elarbi Fadhel Moussa,Democratic Bloc,3,Samir Bettaieb,Democratic Bloc,0.9333,0.9186,4,0.6481,0.0787,8.235
+TNP-00507,Mohamed Karray Jerbi,Loyalty to the Revolution,2,Rafik Tlili,Loyalty to the Revolution,0.8298,0.8273,1,0.4333,0.0417,10.4
+TNP-00508,Moncef Cheikhrouhou,Democratic Alliance,1,Mustapha Ben Jaafar,Ettakatol,0.9518,0.9226,6,0.7,0.0417,16.8
+TNP-00509,Mohamed Neji Gharsalli,No bloc,0,Ali Fares,Ennahdha,0.8944,0.8857,1,0.5897,0.2361,2.498
+TNP-00510,Mohamed Saidi,Ennahdha,3,Basma Jebali,Ennahdha,0.9502,0.9414,0,0.9272,0.3981,2.329
+TNP-00511,Mohamed Ben Mabrouk Hamdi,Democratic Alliance,3,Mehdi Ben Gharbia,Democratic Alliance,0.9603,0.9446,5,0.7,0.0417,16.8
+TNP-00512,Mahmoud El May,No bloc,3,Kais Mokhtar,No bloc,0.9007,0.8844,1,0.5897,0.2361,2.498
+TNP-00513,Mohamed Essghaier,Ennahdha,3,Mahmoud Gouiaa,Ennahdha,0.9797,0.975,1,0.9272,0.3981,2.329
+TNP-00514,Mohamed Gahbich,Democratic Alliance,3,Najla Bourial,Democratic Alliance,0.9783,0.9458,5,0.7,0.0417,16.8
+TNP-00515,Mohamed Nejib Khila,No bloc,1,Chokri Yaich,Democratic Alliance,0.8435,0.8392,0,0.5897,0.2361,2.498
+TNP-00516,Mohamed Ben Youssef Hamdi,No bloc,3,Rim Thairi,No bloc,0.9217,0.8894,4,0.5897,0.2361,2.498
+TNP-00517,Mohamed Chafik Zorkin,Democratic Alliance,0,Jalel Farhat,Democratic Transition,0.8333,0.8322,2,0.7,0.0417,16.8
+TNP-00518,Mohamed Abdelmonem Krir,No bloc,2,Rabiaa Najlaoui,No bloc,0.9161,0.8556,1,0.5897,0.2361,2.498
+TNP-00519,Mohamed Ali Nasri,No bloc,2,Dhamir Mannai,No bloc,0.8786,0.8623,2,0.5897,0.2361,2.498
+TNP-00520,Mohamed Lotfi Ben Mesbah,Democratic Bloc,0,Lobna Jeribi,Ettakatol,0.9394,0.9169,2,0.6481,0.0787,8.235
+TNP-00521,Mohamed Nejib Hosni,No bloc,0,Abdessattar Dhifi,Loyalty to the Revolution,0.8861,0.8808,0,0.5897,0.2361,2.498
+TNP-00522,Mohamed Nizar Kacem,No bloc,1,Wissem Yassine,No bloc,0.9477,0.9327,17,0.5897,0.2361,2.498
+TNP-00523,Mahmoud Gouiaa,Ennahdha,3,Farida Labidi,Ennahdha,0.9936,0.9906,25,0.9272,0.3981,2.329
+TNP-00524,Mahmoud Baroudi,Democratic Alliance,2,Mohamed Ben Mabrouk Hamdi,Democratic Alliance,0.8803,0.875,0,0.7,0.0417,16.8
+TNP-00525,Mourad Amdouni,No bloc,3,Fadhel Saghraoui,No bloc,0.8889,0.8664,4,0.5897,0.2361,2.498
+TNP-00526,Mustapha Ben Jaafar,Ettakatol,1,Meherzia Labidi,Ennahdha,1.0,0.9969,34,0.6667,0.0509,13.091
+TNP-00527,Moez Kammoun,Democratic Transition,2,Mohamed Nizar Kacem,No bloc,0.8719,0.8599,2,0.4048,0.0602,6.725
+TNP-00528,Moufida Marzouki,Ennahdha,3,Hajer Mnifi,Ennahdha,0.9861,0.9826,7,0.9272,0.3981,2.329
+TNP-00529,Mouna Ben Nasr,No bloc,3,Mohamed Nizar Kacem,No bloc,0.7923,0.7769,0,0.5897,0.2361,2.498
+TNP-00530,Monia Ibrahim,Ennahdha,3,Samia Ferchichi,Ennahdha,0.9574,0.95,0,0.9272,0.3981,2.329
+TNP-00531,Monia Gasri,Ennahdha,3,Abdelkader Kadri,Ennahdha,0.9528,0.9504,0,0.9272,0.3981,2.329
+TNP-00532,Mounir Ben Hnia,Ennahdha,3,Nabila Askri Snoussi,Ennahdha,0.9799,0.9788,10,0.9272,0.3981,2.329
+TNP-00533,Mounira Omri,Ennahdha,3,Mohamed Tahar Tlili,Ennahdha,0.9481,0.9438,0,0.9272,0.3981,2.329
+TNP-00534,Mouldi Zidi,No bloc,2,Aymen Zouaghi,No bloc,0.8723,0.8406,2,0.5897,0.2361,2.498
+TNP-00535,Maya Jeribi,No bloc,2,Issam Chebbi,No bloc,0.9223,0.9063,5,0.5897,0.2361,2.498
+TNP-00536,Nadia Chaabane,Democratic Bloc,3,Ahmed Brahim,Democratic Bloc,0.9031,0.8992,3,0.6481,0.0787,8.235
+TNP-00537,Nabila Askri Snoussi,Ennahdha,3,Hajer Mnifi,Ennahdha,0.9865,0.9838,13,0.9272,0.3981,2.329
+TNP-00538,Nabiha Torjmane,Ennahdha,3,Habiba Triki,Ennahdha,0.9808,0.9757,5,0.9272,0.3981,2.329
+TNP-00539,Najla Bourial,Democratic Alliance,3,Mohamed Gahbich,Democratic Alliance,0.9783,0.9488,5,0.7,0.0417,16.8
+TNP-00540,Nejib Mrad,Ennahdha,3,Habib Ellouz,Ennahdha,0.905,0.8895,0,0.9272,0.3981,2.329
+TNP-00541,Nejiba Beryoul,Ennahdha,3,Hafedh Ibrahim Lassoued,Ennahdha,0.9697,0.9668,3,0.9272,0.3981,2.329
+TNP-00542,Nizar Makhloufi,Loyalty to the Revolution,0,Dhamir Mannai,No bloc,0.8343,0.8309,0,0.4333,0.0417,10.4
+TNP-00543,Noômane Fehri,Democratic Bloc,3,Samira Merai,Democratic Bloc,0.9219,0.9137,1,0.6481,0.0787,8.235
+TNP-00544,Noureddine Mrabti,Democratic Transition,0,Meherzia Labidi,Ennahdha,0.9262,0.8959,0,0.4048,0.0602,6.725
+TNP-00545,Naoufel Ghribi,CPR,1,Samir Ben Amor,CPR,0.8556,0.8509,3,0.7857,0.0602,13.055
+TNP-00546,Hajer Mnifi,Ennahdha,3,Nabila Askri Snoussi,Ennahdha,0.9865,0.9856,7,0.9272,0.3981,2.329
+TNP-00547,Hajer Azaiez,Ennahdha,3,Farida Labidi,Ennahdha,0.9383,0.9361,0,0.9272,0.3981,2.329
+TNP-00548,Hela Hammi,Ennahdha,2,Mustapha Ben Jaafar,Ettakatol,0.9718,0.9654,0,0.9272,0.3981,2.329
+TNP-00549,Hichem Ben Jemaa,CPR,1,Slim Ben Hmidane,CPR,0.8944,0.8785,2,0.7857,0.0602,13.055
+TNP-00550,Haythem Belgacem,CPR,2,Meherzia Labidi,Ennahdha,0.9045,0.8902,0,0.7857,0.0602,13.055
+TNP-00551,Wissem Yassine,No bloc,1,Mohamed Nizar Kacem,No bloc,0.9477,0.8877,6,0.5897,0.2361,2.498
+TNP-00552,Kamel Ben Romdhane,Ennahdha,3,Salha Ben Aicha,Ennahdha,0.9586,0.9394,0,0.9272,0.3981,2.329
+TNP-00553,Soulef Ksantini,Ennahdha,3,Adel Ben Attia,Ennahdha,0.9321,0.926,0,0.9272,0.3981,2.329
+TNP-00554,Souhir Dardouri,Democratic Transition,0,Mabrouka Mbarek,CPR,0.875,0.8617,1,0.4048,0.0602,6.725
+TNP-00555,Mokhtar Lamouchi,Ennahdha,3,Oussama Al Saghir,Ennahdha,0.9513,0.9475,0,0.9272,0.3981,2.329
+TNP-00556,Habib Bribech,Ennahdha,3,Moufida Marzouki,Ennahdha,0.911,0.9079,0,0.9272,0.3981,2.329
+TNP-00557,Bechir Nefzi,CPR,3,Mabrouka Mbarek,CPR,0.93,0.9129,6,0.7857,0.0602,13.055
+TNP-00558,Noura Ben Hassen,CPR,3,Mabrouka Mbarek,CPR,0.9556,0.9128,3,0.7857,0.0602,13.055
+TNP-00559,Jamal Bouajaja,Ennahdha,3,Samia Ferchichi,Ennahdha,0.9643,0.9583,0,0.9272,0.3981,2.329
+TNP-00560,Frej Ben Amor,Ennahdha,3,Hajer Mnifi,Ennahdha,0.9599,0.9577,0,0.9272,0.3981,2.329
+TNP-00561,Khalid Belhaj,No bloc,1,Farah Nsibi,No bloc,0.9287,0.9228,1,0.5897,0.2361,2.498
+TNP-00562,Nafissa Marzouki,Ettakatol,1,Mustapha Ben Jaafar,Ettakatol,0.8993,0.8818,1,0.6667,0.0509,13.091
+TNP-00563,Warda Turki,Ennahdha,3,Hajer Mnifi,Ennahdha,0.9779,0.9762,1,0.9272,0.3981,2.329
+TNP-00564,Mohamed Mondher Ben Rahal,Ettakatol,1,Meherzia Labidi,Ennahdha,0.9138,0.8861,2,0.6667,0.0509,13.091
+TNP-00565,Manel Kadri,No bloc,1,Karima Souid,Democratic Bloc,0.9083,0.8975,6,0.5897,0.2361,2.498
+TNP-00566,Fadhel Saghraoui,No bloc,3,Hattab Barakati,No bloc,0.8897,0.8716,3,0.5897,0.2361,2.498
+TNP-00567,Monia Ben Nasr Ayadi,Democratic Bloc,1,Manel Kadri,No bloc,0.8898,0.8798,4,0.6481,0.0787,8.235
+TNP-00568,Salma Nazih Znaidi,Ettakatol,3,Mustapha Ben Jaafar,Ettakatol,1.0,0.9665,19,0.6667,0.0509,13.091

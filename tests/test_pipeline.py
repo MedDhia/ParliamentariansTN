@@ -1274,3 +1274,60 @@ class TestStagedConstituencyMerge:
         }
         b.resolve_constituency("تونس", "Tunis", "ARP-2023", "تونس", False)
         assert b.constituencies[cid]["governorate_id"] == ""
+
+
+# ---------------------------------------------------------------------------
+# Nearest-alignment graph (figure 42)
+# ---------------------------------------------------------------------------
+
+sys.path.insert(0, str(ROOT / "figures"))
+import fig42_alignment_network_nca2011 as fig42  # noqa: E402
+
+
+class TestNearestAlignments:
+    """Each member keeps their k strongest alignments, not a global threshold."""
+
+    def _dyads(self):
+        # A: closest to B (0.9), then C (0.8), then D (0.7).
+        # D's own three closest are A, B, C — so D reaches into the group even
+        # though nobody reaches back for it.
+        return [
+            ("A", "B", 0.90, 100),
+            ("A", "C", 0.80, 100),
+            ("A", "D", 0.70, 100),
+            ("B", "C", 0.85, 100),
+            ("B", "D", 0.60, 100),
+            ("C", "D", 0.65, 100),
+        ]
+
+    def test_each_member_keeps_its_k_strongest(self):
+        _graph, picks = fig42.nearest_alignments(self._dyads(), k=2)
+        assert [p for _w, p in picks["A"]] == ["B", "C"]
+        assert [p for _w, p in picks["D"]] == ["A", "C"]
+
+    def test_the_graph_is_the_union_not_the_intersection(self):
+        """A may be B's closest without B being A's; that asymmetry is the point."""
+        graph, _picks = fig42.nearest_alignments(self._dyads(), k=1)
+        # A's single closest is B, and D's is A — so A-D survives even though A
+        # never chose D. An intersection would drop it.
+        assert graph.has_edge("A", "D")
+
+    def test_edges_carry_the_alignment_weight(self):
+        graph, _picks = fig42.nearest_alignments(self._dyads(), k=2)
+        assert graph["A"]["B"]["weight"] == 0.90
+
+    def test_equal_weights_break_the_same_way_every_run(self):
+        """String hashing is randomised per process; iteration order cannot decide this."""
+        dyads = [("A", "B", 0.5, 10), ("A", "C", 0.5, 10), ("A", "D", 0.5, 10)]
+        first = fig42.nearest_alignments(dyads, k=1)[1]["A"]
+        second = fig42.nearest_alignments(list(reversed(dyads)), k=1)[1]["A"]
+        assert first == second == [(0.5, "B")]
+
+    def test_nodes_are_added_in_sorted_order(self):
+        """The spring layout is seeded, so insertion order has to be stable too."""
+        graph, _picks = fig42.nearest_alignments(self._dyads(), k=2)
+        assert list(graph.nodes()) == sorted(graph.nodes())
+
+    def test_k_larger_than_the_chamber_keeps_everything(self):
+        _graph, picks = fig42.nearest_alignments(self._dyads(), k=99)
+        assert len(picks["A"]) == 3
