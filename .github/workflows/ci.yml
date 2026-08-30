@@ -96,6 +96,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt -r requirements-figures.txt
 
+      - name: Unit tests, including the ones that need the plotting stack
+        # The build job runs these too, but skips any test that imports a figure
+        # module, since it installs the pipeline's dependencies alone. Running
+        # the suite again here is what stops those skips from being silent: a
+        # test guarded on matplotlib would otherwise never execute anywhere.
+        run: make test
+
       - name: Render all figures
         run: make figures
 

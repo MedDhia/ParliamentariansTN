@@ -1280,10 +1280,24 @@ class TestStagedConstituencyMerge:
 # Nearest-alignment graph (figure 42)
 # ---------------------------------------------------------------------------
 
+# The figures stack (matplotlib, networkx) is deliberately not a dependency of
+# the pipeline: the `build` CI job installs requirements.txt alone, and the
+# `figures` job adds requirements-figures.txt. Importing a figure module at
+# collection time therefore takes the WHOLE suite down in the build job — not
+# just these tests — which is exactly how this was found. Import defensively,
+# skip when the stack is absent, and let the figures job (which now runs
+# `make test` too) be where they actually execute.
 sys.path.insert(0, str(ROOT / "figures"))
-import fig42_alignment_network_nca2011 as fig42  # noqa: E402
+try:
+    import fig42_alignment_network_nca2011 as fig42  # noqa: E402
+except ModuleNotFoundError:  # pragma: no cover - depends on the CI job
+    fig42 = None
+
+requires_figure_stack = pytest.mark.skipif(
+    fig42 is None, reason="matplotlib/networkx are figures-only dependencies")
 
 
+@requires_figure_stack
 class TestNearestAlignments:
     """Each member keeps their k strongest alignments, not a global threshold."""
 
