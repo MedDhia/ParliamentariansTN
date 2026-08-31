@@ -1295,6 +1295,10 @@ except ModuleNotFoundError:  # pragma: no cover - depends on the CI job
     fig42 = None
 
 try:
+    import fig50_elite_continuity_nca_arp as fig50  # noqa: E402
+except ModuleNotFoundError:
+    fig50 = None
+try:
     import fig47_ideal_point_distributions_nca2011 as fig47  # noqa: E402
 except ModuleNotFoundError:
     fig47 = None
@@ -1317,7 +1321,7 @@ except ModuleNotFoundError:  # pragma: no cover - depends on the CI job
 
 requires_figure_stack = pytest.mark.skipif(
     fig42 is None or crisis is None or fig46 is None
-    or fig47 is None or fig48 is None or fig49 is None,
+    or fig47 is None or fig48 is None or fig49 is None or fig50 is None,
     reason="matplotlib/networkx/numpy are figures-only dependencies")
 
 
@@ -1714,4 +1718,58 @@ class TestSortedAgreementMatrix:
         """
         assert 0.4 <= fig49.VMIN < 0.55
         assert fig49.VMAX == 1.0
+
+
+@requires_figure_stack
+class TestEliteContinuity:
+    """Figure 50's gap detection, which is the whole difference from figure 9.
+
+    Figure 9 counts a returner only if they sat in the chamber immediately
+    before. Figure 50's claim is that this halves the 2023 chamber's continuity,
+    and that claim is entirely carried by classifying a career as consecutive or
+    gapped. If the classification is wrong the correction is wrong.
+    """
+
+    def test_adjacent_chambers_are_not_a_gap(self):
+        assert fig50.SEQ[:2] == ("NCA-2011", "ARP-2014")
+        # the module-level helper is defined inside main(), so rebuild the rule
+        # from SEQ exactly as the figure does
+        def gapped(pattern):
+            span = fig50.SEQ.index(pattern[-1]) - fig50.SEQ.index(pattern[0]) + 1
+            return span > len(pattern)
+        assert gapped(("NCA-2011", "ARP-2014")) is False
+        assert gapped(("ARP-2014", "ARP-2019", "ARP-2023")) is False
+
+    def test_a_skipped_chamber_is_a_gap(self):
+        def gapped(pattern):
+            span = fig50.SEQ.index(pattern[-1]) - fig50.SEQ.index(pattern[0]) + 1
+            return span > len(pattern)
+        assert gapped(("NCA-2011", "ARP-2019")) is True
+        assert gapped(("ARP-2014", "ARP-2023")) is True
+        # two chambers skipped, still one gapped career
+        assert gapped(("NCA-2011", "ARP-2023")) is True
+
+    def test_a_career_with_a_gap_and_a_run_counts_as_gapped(self):
+        """2011, then out, then 2019 and 2023: three chambers spanning four."""
+        def gapped(pattern):
+            span = fig50.SEQ.index(pattern[-1]) - fig50.SEQ.index(pattern[0]) + 1
+            return span > len(pattern)
+        assert gapped(("NCA-2011", "ARP-2019", "ARP-2023")) is True
+
+    def test_the_four_chambers_are_the_ones_with_a_roster(self):
+        """The map excludes 1959-2011 because those chambers list one member.
+
+        If a future collection closes that gap this constant is what has to
+        change, and the docstring's argument for excluding them stops holding.
+        """
+        assert fig50.SEQ == ("NCA-2011", "ARP-2014", "ARP-2019", "ARP-2023")
+        assert set(fig50.SHORT) == set(fig50.SEQ)
+
+    def test_careers_reads_mandates_into_both_directions(self):
+        held, members = fig50.careers()
+        assert held and members
+        # every person's chambers must agree with every chamber's members
+        for person, chambers in held.items():
+            for chamber in chambers:
+                assert person in members[chamber]
 
