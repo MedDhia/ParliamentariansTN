@@ -1295,9 +1295,17 @@ except ModuleNotFoundError:  # pragma: no cover - depends on the CI job
     fig42 = None
 
 try:
-    import fig47_durable_cleavage_nca2011 as fig47  # noqa: E402
+    import fig47_ideal_point_distributions_nca2011 as fig47  # noqa: E402
 except ModuleNotFoundError:
     fig47 = None
+try:
+    import fig48_agreement_networks_by_period_nca2011 as fig48  # noqa: E402
+except ModuleNotFoundError:
+    fig48 = None
+try:
+    import fig49_agreement_matrix_sorted_nca2011 as fig49  # noqa: E402
+except ModuleNotFoundError:
+    fig49 = None
 try:
     import fig46_cooperation_over_time_nca2011 as fig46  # noqa: E402
 except ModuleNotFoundError:
@@ -1308,7 +1316,8 @@ except ModuleNotFoundError:  # pragma: no cover - depends on the CI job
     crisis = None
 
 requires_figure_stack = pytest.mark.skipif(
-    fig42 is None or crisis is None or fig46 is None or fig47 is None,
+    fig42 is None or crisis is None or fig46 is None
+    or fig47 is None or fig48 is None or fig49 is None,
     reason="matplotlib/networkx/numpy are figures-only dependencies")
 
 
@@ -1619,81 +1628,90 @@ class TestCrossCuttingBaseline:
 
 
 @requires_figure_stack
-class TestDurableCleavage:
-    """Figure 47's block agreement and its shared layout.
+class TestIdealPointDistributions:
+    """Figure 47's kernel density and its rank statistic.
 
-    The figure's whole claim is a comparison between two edge sets drawn in one
-    set of coordinates. That needs the agreement to be right per block and the
-    coordinates to be identical between runs, or the comparison is between two
-    pictures rather than two edge sets.
+    The curves are decoration in the strict sense: every number the figure
+    reports comes from the members. These tests pin that the estimator is a
+    density at all, and that the statistic behaves at both extremes.
     """
+
+    def test_the_density_integrates_to_about_one(self):
+        import numpy as np
+        rng = np.random.default_rng(3)
+        values = rng.normal(0, 2, 400)
+        grid = np.linspace(-12, 12, 2000)
+        area = np.trapezoid(fig47.density(values, grid), grid)
+        assert area == pytest.approx(1.0, abs=0.02)
+
+    def test_a_single_valued_group_does_not_divide_by_zero(self):
+        """Ten members of one bloc voting identically is not hypothetical here."""
+        import numpy as np
+        grid = np.linspace(-1, 1, 100)
+        curve = fig47.density(np.zeros(10), grid)
+        assert np.isfinite(curve).all() and curve.max() > 0
+
+    def test_disjoint_groups_score_one(self):
+        import numpy as np
+        assert fig47.superiority(np.array([5.0, 6.0, 7.0]),
+                                 np.array([1.0, 2.0])) == pytest.approx(1.0)
+
+    def test_identical_groups_score_one_half(self):
+        """The null value. A gap of zero must not read as partial separation."""
+        import numpy as np
+        same = np.array([1.0, 2.0, 3.0])
+        assert fig47.superiority(same, same.copy()) == pytest.approx(0.5)
+
+    def test_ties_are_split_rather_than_counted_as_wins(self):
+        import numpy as np
+        assert fig47.superiority(np.array([1.0, 1.0]),
+                                 np.array([1.0, 3.0])) == pytest.approx(0.25)
+
+
+@requires_figure_stack
+class TestSortedAgreementMatrix:
+    """Figures 48 and 49 share an agreement estimator; 49 adds the ordering."""
 
     @staticmethod
     def _matrix(*rows):
-        """Rows of '+', '-' and '.', one per member, columns are divisions."""
         import numpy as np
         return np.array([[{"+": 1, "-": -1, ".": 0}[c] for c in row] for row in rows],
                         dtype=np.int8)
 
-    def test_agreement_is_the_share_of_shared_divisions_voted_alike(self):
+    def test_the_two_figures_agree_on_a_pair(self):
+        """They are separate scripts; a divergence here would be invisible."""
         import numpy as np
-        # 24 divisions, the pair differing on the last 6: 18/24 = 0.75
-        a = "+" * 24
-        b = "+" * 18 + "-" * 6
-        rate = fig47.agreement(self._matrix(a, b), np.arange(24))
-        assert rate[0, 1] == pytest.approx(0.75)
+        matrix = self._matrix("+" * 24, "+" * 18 + "-" * 6)
+        columns = np.arange(24)
+        assert fig48.agreement(matrix, columns)[0, 1] == pytest.approx(
+            fig49.agreement(matrix, columns)[0, 1])
 
-    def test_pairs_below_the_shared_division_floor_are_not_scored(self):
-        """A pair seen a handful of times would otherwise post a perfect score.
+    def test_the_diagonal_is_blank_in_the_matrix_figure(self):
+        """A member agrees with themselves by construction.
 
-        In this chamber turnout collapses for months (figure 25), so without the
-        floor the durable panel would fill with members who overlapped twice.
+        Left in, it draws a dark line through the middle of every block on the
+        diagonal and makes each one look more cohesive than it is.
         """
         import numpy as np
-        assert fig47.FLOOR == 20
-        a = "+" * 24
-        b = "+" * 10 + "." * 14
-        rate = fig47.agreement(self._matrix(a, b), np.arange(24))
-        assert np.isnan(rate[0, 1])
+        rate = fig49.agreement(self._matrix("+" * 24, "-" * 24), np.arange(24))
+        assert np.isnan(np.diag(rate)).all()
 
-    def test_absences_are_skipped_rather_than_counted_as_disagreement(self):
+    def test_the_contested_filter_drops_the_near_unanimous(self):
+        """A division everyone agrees on locates nobody."""
         import numpy as np
-        a = "+" * 30
-        b = "+" * 22 + "." * 8
-        rate = fig47.agreement(self._matrix(a, b), np.arange(30))
-        assert rate[0, 1] == pytest.approx(1.0)
+        unanimous = "+" * 60
+        split = "+" * 30 + "-" * 30
+        matrix = self._matrix(*[unanimous[i] + split[i] for i in range(60)])
+        # one column unanimous, one contested, 60 members
+        kept = fig49.contested(matrix)
+        assert kept.tolist() == [1]
 
-    def test_a_member_is_never_tied_to_themselves(self):
-        import numpy as np
-        rate = fig47.agreement(self._matrix("+" * 24, "+" * 24), np.arange(24))
-        assert np.isnan(rate[0, 0]) and np.isnan(rate[1, 1])
+    def test_the_scale_floor_sits_where_the_data_is(self):
+        """Guard on the fix, not the taste: at 0.2 the ramp showed nothing.
 
-    def test_the_layout_is_identical_between_runs(self):
-        """Two panels share these coordinates; drift between them is the bug."""
-        import numpy as np
-        rng = np.random.default_rng(0)
-        mean = rng.uniform(0.3, 0.95, (12, 12))
-        mean = (mean + mean.T) / 2
-        np.fill_diagonal(mean, np.nan)
-        biggest = np.array([True] * 5 + [False] * 7)
-        first = fig47.mds_layout(mean.copy(), biggest)
-        second = fig47.mds_layout(mean.copy(), biggest)
-        assert np.allclose(first, second)
-
-    def test_the_largest_group_is_pinned_to_one_side(self):
-        """eigh fixes an eigenvector only up to sign.
-
-        Unpinned, the two panels could come out mirrored from one run to the
-        next, and a reader comparing them across renders would see a change in
-        the chamber that is only a change of sign.
+        Agreement in this chamber runs 0.16 to 1.00 with a median of 0.71, so a
+        ramp anchored at the theoretical floor spends itself on the sparse tail.
         """
-        import numpy as np
-        # Two tight clusters: members 0-5 agree with each other, 6-11 likewise.
-        mean = np.full((12, 12), 0.55)
-        mean[:6, :6] = 0.95
-        mean[6:, 6:] = 0.95
-        np.fill_diagonal(mean, np.nan)
-        biggest = np.array([True] * 6 + [False] * 6)
-        coords = fig47.mds_layout(mean, biggest)
-        assert coords[biggest, 0].mean() < coords[~biggest, 0].mean()
+        assert 0.4 <= fig49.VMIN < 0.55
+        assert fig49.VMAX == 1.0
 

@@ -1,0 +1,10 @@
+bloc,members,within_mean,within_pairs,across_mean,median_position
+Ennahdha,87,0.9154,3741,0.6697,11.188
+Democratic Transition,14,0.7817,91,0.7088,-3.135
+Ettakatol,12,0.8358,66,0.7401,-3.676
+CPR,14,0.7913,91,0.6871,-4.431
+Loyalty to the Revolution,10,0.736,45,0.6394,-6.213
+Democratic Alliance,10,0.8454,45,0.7014,-7.949
+No bloc,52,0.6468,1326,0.6455,-8.542
+Democratic Bloc,18,0.8172,151,0.6255,-11.839
+"named blocs other than the largest, pair-weighted",78,0.8034,489,0.6793,
