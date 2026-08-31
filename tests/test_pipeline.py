@@ -1295,6 +1295,10 @@ except ModuleNotFoundError:  # pragma: no cover - depends on the CI job
     fig42 = None
 
 try:
+    import fig47_durable_cleavage_nca2011 as fig47  # noqa: E402
+except ModuleNotFoundError:
+    fig47 = None
+try:
     import fig46_cooperation_over_time_nca2011 as fig46  # noqa: E402
 except ModuleNotFoundError:
     fig46 = None
@@ -1304,7 +1308,7 @@ except ModuleNotFoundError:  # pragma: no cover - depends on the CI job
     crisis = None
 
 requires_figure_stack = pytest.mark.skipif(
-    fig42 is None or crisis is None or fig46 is None,
+    fig42 is None or crisis is None or fig46 is None or fig47 is None,
     reason="matplotlib/networkx/numpy are figures-only dependencies")
 
 
@@ -1612,4 +1616,84 @@ class TestCrossCuttingBaseline:
                             TestCrossCuttingWins._group(20, 12),
                             np.random.default_rng(0), draws=4)
         assert (matrix == before).all()
+
+
+@requires_figure_stack
+class TestDurableCleavage:
+    """Figure 47's block agreement and its shared layout.
+
+    The figure's whole claim is a comparison between two edge sets drawn in one
+    set of coordinates. That needs the agreement to be right per block and the
+    coordinates to be identical between runs, or the comparison is between two
+    pictures rather than two edge sets.
+    """
+
+    @staticmethod
+    def _matrix(*rows):
+        """Rows of '+', '-' and '.', one per member, columns are divisions."""
+        import numpy as np
+        return np.array([[{"+": 1, "-": -1, ".": 0}[c] for c in row] for row in rows],
+                        dtype=np.int8)
+
+    def test_agreement_is_the_share_of_shared_divisions_voted_alike(self):
+        import numpy as np
+        # 24 divisions, the pair differing on the last 6: 18/24 = 0.75
+        a = "+" * 24
+        b = "+" * 18 + "-" * 6
+        rate = fig47.agreement(self._matrix(a, b), np.arange(24))
+        assert rate[0, 1] == pytest.approx(0.75)
+
+    def test_pairs_below_the_shared_division_floor_are_not_scored(self):
+        """A pair seen a handful of times would otherwise post a perfect score.
+
+        In this chamber turnout collapses for months (figure 25), so without the
+        floor the durable panel would fill with members who overlapped twice.
+        """
+        import numpy as np
+        assert fig47.FLOOR == 20
+        a = "+" * 24
+        b = "+" * 10 + "." * 14
+        rate = fig47.agreement(self._matrix(a, b), np.arange(24))
+        assert np.isnan(rate[0, 1])
+
+    def test_absences_are_skipped_rather_than_counted_as_disagreement(self):
+        import numpy as np
+        a = "+" * 30
+        b = "+" * 22 + "." * 8
+        rate = fig47.agreement(self._matrix(a, b), np.arange(30))
+        assert rate[0, 1] == pytest.approx(1.0)
+
+    def test_a_member_is_never_tied_to_themselves(self):
+        import numpy as np
+        rate = fig47.agreement(self._matrix("+" * 24, "+" * 24), np.arange(24))
+        assert np.isnan(rate[0, 0]) and np.isnan(rate[1, 1])
+
+    def test_the_layout_is_identical_between_runs(self):
+        """Two panels share these coordinates; drift between them is the bug."""
+        import numpy as np
+        rng = np.random.default_rng(0)
+        mean = rng.uniform(0.3, 0.95, (12, 12))
+        mean = (mean + mean.T) / 2
+        np.fill_diagonal(mean, np.nan)
+        biggest = np.array([True] * 5 + [False] * 7)
+        first = fig47.mds_layout(mean.copy(), biggest)
+        second = fig47.mds_layout(mean.copy(), biggest)
+        assert np.allclose(first, second)
+
+    def test_the_largest_group_is_pinned_to_one_side(self):
+        """eigh fixes an eigenvector only up to sign.
+
+        Unpinned, the two panels could come out mirrored from one run to the
+        next, and a reader comparing them across renders would see a change in
+        the chamber that is only a change of sign.
+        """
+        import numpy as np
+        # Two tight clusters: members 0-5 agree with each other, 6-11 likewise.
+        mean = np.full((12, 12), 0.55)
+        mean[:6, :6] = 0.95
+        mean[6:, 6:] = 0.95
+        np.fill_diagonal(mean, np.nan)
+        biggest = np.array([True] * 6 + [False] * 6)
+        coords = fig47.mds_layout(mean, biggest)
+        assert coords[biggest, 0].mean() < coords[~biggest, 0].mean()
 
