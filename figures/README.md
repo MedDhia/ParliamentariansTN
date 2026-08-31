@@ -1,6 +1,6 @@
 # Figures
 
-Forty-seven descriptive and exploratory figures over the dataset. Each is a
+Forty-nine descriptive and exploratory figures over the dataset. Each is a
 standalone script that writes one image and one CSV.
 
 **Looking for the results rather than the method?**
@@ -13,7 +13,7 @@ figures/figNN_name.py  →  figures/output/figNN_name.png
 ```
 
 ```bash
-make figures                          # render all forty-seven
+make figures                          # render all forty-nine
 python figures/make_all.py 11 12      # just those two
 python figures/fig11_bloc_composition_arp2014.py   # or run one directly
 FIGURES_PDF=1 make figures            # also write PDFs, for LaTeX
@@ -128,7 +128,7 @@ the record covers and how much of it was contested.
 | 25 | Participation decay | 18% of members not voting in July 2012; 56% across the last three months. This is the coverage behind 21 and 23. |
 | 26 | Vote margins | 42% of divisions clear a 0.95 margin — the cut figure 21 makes before scaling, shown rather than asserted. |
 
-**Polarisation, 2011 Constituent Assembly (33–40, 42–47)**
+**Polarisation, 2011 Constituent Assembly (33–40, 42–49)**
 
 Twelve figures asking one question in twelve ways: how far do the lines this
 chamber divided on coincide with its bloc boundaries? Six are built on
@@ -153,9 +153,11 @@ count, so it does not behave like the other layers.
 | 44 | Affinity before the shock | The baseline the crisis has to be measured against: within-bloc agreement 0.930, cross-bloc 0.672, and 1,209 of 4,792 strong ties crossing a bloc. |
 | 45 | Affinity after the shock | Same members, positions, threshold and division count. Within-bloc agreement falls to 0.879 and cross-bloc does not move — blocs **loosened** rather than closing ranks. Reliable cross-bloc allies fall 63%. |
 | 46 | Polarisation, level and trend | Against Nugent (2020). Level and trend disagree: cross-cutting wins take 75% of contested divisions where a bloc-blind chamber gives **96%**, so the chamber is 20 points of bloc structure below chance — but nothing deepens, the similarity excess falling +0.27 → +0.11. "No build-up" is not "none". |
-| 47 | The durable cleavage | The polarisation drawn as a network, and the measure is *durability*. Of the ties that clear 0.75 in all four blocks of the term **77%** are within a bloc; of those clearing it in exactly one, **6%**. Only 34% of ever-strong ties are strong throughout — most high agreement here is transient and cross-cutting. |
+| 47 | Ideal-point distributions | The conventional picture, which this set lacked: first-dimension positions as densities per bloc with the medians marked. Median gap **18.6**, and a random Ennahdha member outscores a random other member **98.9%** of the time — a rank statistic, so it survives a change of decomposition. |
+| 48 | Agreement networks by period | Andris et al. (2015)'s small multiples, one panel per quarter of the term. Cross-bloc tie share 61% → 48% → 52% → 58%: no trend. Layouts are independent as in the original, so the printed share carries the comparison, not the geometry. |
+| 49 | The sorted agreement matrix | The blockmodel: every pair shaded, rows ordered by bloc and by position. Ennahdha 0.92 within against 0.67 across; the other **named** blocs 0.80 against 0.68. Counting the 52 unaffiliated as a bloc makes that second gap vanish — they are a residual, not a bloc. |
 
-**Why these are fourteen figures and not one.** Polarisation has no single
+**Why these are sixteen figures and not one.** Polarisation has no single
 operationalisation, and the measures disagree in informative ways: 33 says the
 chamber is strongly bloc-structured, 34 says only one bloc is, 36 says the
 structure is too weak to call communities, 38 says none of it moves over time,
@@ -164,8 +166,9 @@ rather than who they merely agree with, 43 says the chamber's worst political
 crisis left no trace in any of it — because the members it silenced are the ones
 the measure needs — 46 says level and trend answer differently — bloc
 structure well beyond chance on both its measures, and thinning rather than
-hardening across the term — and 47 says the structure is carried almost entirely
-by the ties that last, the transient ones running the other way.
+hardening across the term — and 47–49 say all of it again in the field's own
+three idioms, because a finding a reader cannot recognise the shape of is a
+finding they have to take on trust.
 
 **44 and 45 are the pair that answers what 43 could not.** 43's affinity panel
 was 90% Ennahdha and 6% Democratic Bloc, because matching the windows on
@@ -217,6 +220,18 @@ labels at all — it asks whether the same line keeps reappearing across pairs o
 divisions — and panel A uses the single distinction the argument is about and the
 one that barely moves. What the pair loses in resolution it gains in being about
 the period it is plotted against.
+
+**47, 48 and 49 exist because the rest of this block does not look like
+polarisation research.** Every figure above answers a question about
+polarisation in a form chosen for that question, and none of them is a form a
+reader of the literature would recognise on sight: no distribution of positions
+with party medians, no per-period small multiples, no sorted blockmodel. The
+three conventional presentations were added afterwards, from the same data and
+the same filters, and they agree with the bespoke ones. Where a convention has a
+known weakness the figure keeps the convention and prints the number instead of
+hiding behind it — 48's layouts are independent, as Andris's are, so the
+cross-bloc share is printed under every panel and the geometry is left to carry
+shape alone.
 
 44 and 45 are the case where the obvious form fails *silently*. Two network
 drawings laid out independently are not comparable: a force simulation moves

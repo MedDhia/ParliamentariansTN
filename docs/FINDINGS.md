@@ -391,10 +391,10 @@ reported as one — not as evidence of parity, and not as evidence of a gap.
 
 ## 9. Polarisation in the 2011 Constituent Assembly
 
-Fourteen figures ask one question in fourteen ways: how far do the lines the
+Sixteen figures ask one question in sixteen ways: how far do the lines the
 chamber divided on coincide with its bloc boundaries? Most are built on a derived
 layer, `edges_vote_agreement.csv`, scoring every pair of members on the share of
-*contested* divisions they voted the same way; figure 46 asks the question
+*contested* divisions they voted the same way; the last of them asks the question
 without bloc labels at all, because this chamber's are undated.
 
 **Bloc predicts agreement sharply, and the chamber is still not two camps.**
@@ -534,31 +534,35 @@ Dialogue, a change of government and the constitution's drafting endgame sit in
 the same gap; this is a before-and-after, not an identification strategy.
 · *Figures 44, 45 · `fig44_*.csv`, `fig45_*.csv`*
 
-**What persists is partisan; what does not is cross-cutting.** The chamber's
-dividing line is a single durable one rather than a sequence of issue coalitions:
-sittings a year apart split it as similarly as sittings a month apart (mean |φ|
-0.210 against 0.198, correlation with elapsed days **+0.006**), and a network of
-its 87 sitting days has a modularity of **0.052**. That is what makes a map of
-the ties interpretable, and the map sorts them sharply. Cutting the 993 contested
-divisions into four consecutive blocks and asking of each of the 18,428 pairs
-scoreable in all four — 206 of 217 members — how many blocks it clears the 0.75
-tie threshold in:
+**The same result in the field's three standard presentations.** Everything
+above uses a form chosen for its question rather than one a reader of the
+literature would recognise, so the conventional three were fitted afterwards to
+the same data and the same filters.
 
-| clears in | 1 of 4 | 2 of 4 | 3 of 4 | 4 of 4 |
-| --- | --- | --- | --- | --- |
-| pairs | 3,718 | 2,740 | 2,406 | 4,568 |
-| within a bloc | **5.9%** | 9.4% | 16.9% | **76.5%** |
+- *Distributions of position.* On the first dimension of the vote space,
+  Ennahdha's median sits **18.6** above the rest of the chamber's, on an axis
+  spanning −16.3 to +16.2. The scale-free version of that: a random Ennahdha
+  member outscores a random non-member **98.9%** of the time. The distributions
+  are not disjoint — 35 of 87 sit below the highest-scoring non-member — which
+  the medians alone would hide. Ordered by median, Ennahdha at +11.2 is 14 points
+  from its nearest neighbour, wider than the 8 points containing the other seven
+  blocs.
+- *Small multiples over time.* Drawn once per quarter of the term, the share of
+  ties crossing a bloc goes 61% → 48% → 52% → 58%: no trend, and the first panel
+  is high because equal-division windows make it seventeen months where the
+  others are one to five.
+- *The sorted matrix.* Ennahdha agrees internally at **0.915** against **0.670**
+  with everyone else. The other **named** blocs manage **0.803** against
+  **0.679** — half the gap, not none.
 
-A pair that agrees strongly in one block is almost certainly not co-partisan; one
-that does it in all four almost certainly is, and the intermediate counts sit in
-order between them, so this is a monotone relationship rather than a threshold
-artefact. At the stricter 0.90 cut the same ladder runs 30.0%, 76.6%, 94.2%,
-97.3%. Only **34%** of the ties that are ever strong are strong throughout: most
-high agreement in this chamber is transient and cross-cutting, and the part that
-persists is the part that is partisan. Figures 44 and 45 met the same fact from
-the other side — cross-bloc strong ties survived a 32-sitting-day gap 19–23% of
-the time whether or not an assassination fell in it.
-· *Figure 47 · `fig47_durable_cleavage_nca2011.csv`*
+That last figure corrected a claim. Read with the 52 unaffiliated members
+counted as a bloc, the non-Ennahdha gap collapses to 0.689 against 0.667 and the
+other blocs look as though they barely cohere at all. They are a residual
+category, their 1,326 pairs outnumber every real bloc's put together, and the
+difference between the two readings is the whole distance between "one bloc and
+an unstructured remainder" and "one bloc that coheres twice as hard as seven
+others that also cohere".
+· *Figures 47, 48, 49 · `fig47_*.csv`, `fig48_*.csv`, `fig49_*.csv`*
 
 **Voting together is not working together.** Ennahdha agrees most with Ettakatol
 (0.79, above the chamber mean of 0.71) — the bloc it co-sponsored amendments

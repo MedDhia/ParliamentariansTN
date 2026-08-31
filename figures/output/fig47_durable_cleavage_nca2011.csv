@@ -1,8 +1,0 @@
-series,group,ties,within_bloc_ties,within_bloc_share,ties_clearing_blocks,pairs,within_bloc_pairs
-edge_set,durable_all_blocks,4568,3495,0.7651,,,
-edge_set,single_block,3718,220,0.0592,,,
-durability_ladder,1 of 4,,,0.0592,1,3718,220
-durability_ladder,2 of 4,,,0.0942,2,2740,258
-durability_ladder,3 of 4,,,0.1692,3,2406,407
-durability_ladder,4 of 4,,,0.7651,4,4568,3495
-panel,members scoreable in all 4 blocks,206,,,,18428,

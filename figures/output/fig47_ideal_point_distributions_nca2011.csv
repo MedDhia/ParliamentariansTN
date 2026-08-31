@@ -1,0 +1,10 @@
+series,group,members,median,mean,sd,min,max
+bloc,Ennahdha,87,11.188,10.158,4.044,-4.491,16.232
+bloc,Democratic Transition,14,-3.135,-2.637,3.008,-8.475,2.491
+bloc,Ettakatol,12,-3.676,-3.223,3.554,-7.581,4.398
+bloc,CPR,14,-4.431,-3.945,4.591,-13.595,6.063
+bloc,Loyalty to the Revolution,10,-6.213,-5.813,3.533,-11.827,0.487
+bloc,Democratic Alliance,10,-7.949,-7.609,1.301,-9.048,-5.207
+bloc,No bloc,52,-8.542,-7.823,5.286,-15.399,9.828
+bloc,Democratic Bloc,18,-11.839,-11.771,2.651,-16.253,-6.456
+two_group_reduction,Ennahdha vs all others,217,18.577,0.9889,,-16.253,16.232
