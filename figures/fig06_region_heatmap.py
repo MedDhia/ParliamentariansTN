@@ -133,7 +133,7 @@ def main() -> None:
 
     S.titles(
         ax,
-        "Regional origin of seats, by chamber",
+        "Out-of-country seats appear in 2011 and all but vanish in 2023",
         "Share of the members whose constituency resolves to a region (n per row), using "
         "Tunisia's seven statistical\nregions. Shares, not counts, because chambers differ "
         "in size. The 1956 assembly is absent: its compound districts\n"

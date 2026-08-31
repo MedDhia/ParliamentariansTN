@@ -61,7 +61,7 @@ if __name__ == "__main__":
     NET.draw(
         "ARP-2014",
         "fig41_committee_network_arp2014",
-        "Committee co-membership: 2014–2019 chamber",
+        "Nearly every deputy bridges committees; bloc explains none",
         note=("Recovered from web captures: most spells are bracketed, so ties "
               "are over- rather than under-counted."),
         # Figures 14-16 draw every tie of weight >= 2, which for them is a few

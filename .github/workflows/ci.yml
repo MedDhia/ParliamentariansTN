@@ -106,6 +106,12 @@ jobs:
       - name: Render all figures
         run: make figures
 
+      - name: No figure's title may run past its frame
+        # bbox_inches="tight" widens the canvas rather than clipping, so an
+        # overlong title is invisible in the PNG and only shows up as a figure
+        # far wider than its figsize. Measured rather than eyeballed.
+        run: python figures/check_caption_fit.py
+
       - name: Every figure must ship its table view
         run: |
           missing=0

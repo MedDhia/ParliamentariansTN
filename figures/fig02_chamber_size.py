@@ -78,7 +78,7 @@ def main() -> None:
     S.frame(ax)
     S.titles(
         ax,
-        "Seats in the elected chamber, 1956–2026",
+        "Seats climb 98 to 217, then fall by a quarter in 2023",
         "Nominal seats provided by law, held constant within each term. Directly elected "
         "lower chambers and\nthe two constituent assemblies only; the indirectly chosen "
         "upper houses are excluded as a different unit.",

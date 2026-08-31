@@ -4,7 +4,7 @@ The elite-persistence distribution. One series, one hue; an emphasis treatment
 would be wrong here because no single bar is the story — the shape is.
 
 The caveat in the subtitle is not boilerplate, it is the main threat to reading
-this figure. The count is of mandates *in this dataset*, and eleven chambers
+this figure. The count is of mandates *in this dataset*, and twelve chambers
 between 1959 and 2011 have no roster. Someone elected in 1994 and again in 2011
 appears here as a one-term member. The bias is therefore systematic, not noise:
 it pushes every bar left, and it pushes hardest on exactly the people whose
@@ -73,9 +73,9 @@ def main() -> None:
     ax.legend(loc="upper right")
     S.titles(
         ax,
-        "Chambers served per parliamentarian",
+        "883 of 968 parliamentarians sit in one chamber only",
         "Log scale: most members sit once, so a linear axis would flatten the tail into "
-        "nothing.\nCounts are of mandates recorded HERE — the eleven chambers of 1959–2011 "
+        "nothing.\nCounts are of mandates recorded HERE — the twelve chambers of 1959–2011 "
         "have no roster, so anyone whose\nearlier service falls in that gap is undercounted.",
         ylabel="Parliamentarians (log)",
         xlabel="Number of chambers served",

@@ -214,7 +214,7 @@ def coverage_markdown() -> str:
     add("## Known gaps, in order of how much they matter")
     add("")
     add(
-        "1. **1959–2011 has no rosters.** Eleven chambers across fifty-two years are "
+        "1. **1959–2011 has no rosters.** Twelve chambers across fifty-two years are "
         "represented only by their eight presiding officers. Neither the chamber's own "
         "database nor any civic monitor covers the single-party era, and no published "
         "list of members exists in machine-readable form. Closing this gap requires "

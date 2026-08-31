@@ -124,7 +124,7 @@ def main() -> None:
     S.frame(ax, x_grid=True)
     S.titles(
         ax,
-        "Ennahdha members agree widely and inwardly; everyone else agrees outwardly",
+        "Ennahdha agrees widely and inwardly; everyone else outwardly",
         "Each member of the 2011 Constituent Assembly by how many others they "
         f"agree with on at least {POL.TIE_THRESHOLD:.0%} of the contested "
         "divisions both cast, and what\nshare of those agreements leave their own "

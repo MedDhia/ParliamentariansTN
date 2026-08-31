@@ -87,7 +87,7 @@ def main() -> None:
     S.frame(ax)
     S.titles(
         ax,
-        "Women's share of the chamber, by term",
+        "List parity delivered a third; 2023's districts, 15.5%",
         "Chambers with a person-level roster only; the 1956 assembly is excluded because no "
         "member's sex is recorded\n(women were not enfranchised until 1957). "
         "* sex inferred from French grammatical agreement in the source's own biographies.",

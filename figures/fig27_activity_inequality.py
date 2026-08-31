@@ -107,7 +107,7 @@ def main() -> None:
 
     S.titles(
         ax,
-        "Both chambers concentrate their work, but not to the same degree",
+        "Both chambers concentrate work, to different degrees",
         "Lorenz curves: cumulative share of recorded activity against cumulative "
         "share of members, ranked least to most\nactive. The diagonal is perfect "
         "equality; the further a curve falls below it, the more the work sits "

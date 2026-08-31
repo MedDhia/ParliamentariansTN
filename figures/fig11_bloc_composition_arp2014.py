@@ -89,8 +89,12 @@ def main() -> None:
     ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.10), ncol=4, fontsize=7.6)
     S.titles(
         ax,
-        "Bloc composition of the 2014–2019 chamber, month by month",
-        f"Reconstructed from ~29 monthly Internet Archive captures into "
+        "The 2014 election winner did not end as the largest bloc",
+        f"Each band is one parliamentary bloc, its height the members it held that month, "
+        f"across the 2014–2019 chamber.\nNidaa Tounes enters with 86 seats having just won "
+        f"the election, and bleeds continuously into Al Horra, then\nMachrouu Tounes, while "
+        f"the National Coalition assembles out of the pieces.\nReconstructed from ~29 "
+        f"monthly Internet Archive captures into "
         f"{meta['n_spells']} dated bloc spells. Every boundary is bracketed to the\n"
         f"interval between two captures, so a step is accurate to about a month, not to "
         f"the day. {meta['n_blocs']} blocs existed; the {meta['n_folded']}\nsmallest are "

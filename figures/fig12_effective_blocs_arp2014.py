@@ -90,7 +90,7 @@ def main() -> None:
     S.frame(ax)
     S.titles(
         ax,
-        "Effective number of parliamentary blocs, 2014–2019 chamber",
+        "Fragmentation climbs 3.6 to 5.3 as the largest bloc splits",
         "Laakso–Taagepera index, 1 / Σ share². Computed over all "
         f"{meta['n_blocs']} blocs — unfolded, since grouping the small ones\nwould "
         "understate fragmentation. Monthly resolution, from bracketed spells: read the "

@@ -709,7 +709,7 @@ published.
 
 Stated plainly, because the absences are as important as the findings.
 
-- **Any claim about parliamentary elites 1959–2011.** Eleven chambers across the
+- **Any claim about parliamentary elites 1959–2011.** Twelve chambers across the
   single-party and Ben Ali eras have no roster — the upper house of 2005–11 is
   the one exception, and it has a roster and nothing else. Elite continuity
   across the revolution is unmeasurable here: the lower house sitting through

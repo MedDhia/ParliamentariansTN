@@ -88,7 +88,7 @@ def main() -> None:
     )
     S.titles(
         ax,
-        "Attendance and voting, 2019–2021 chamber",
+        "Turning up and voting are not the same thing",
         f"{len(points)} members. Both rates are proportions published by Al Bawsala; their "
         "denominators are not published\nalongside them, so compare within this chamber only "
         "and not against other terms.",

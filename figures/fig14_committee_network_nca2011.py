@@ -23,6 +23,9 @@ if __name__ == "__main__":
     NET.draw(
         "NCA-2011",
         "fig14_committee_network_nca2011",
-        "Committee co-membership: 2011 Constituent Assembly",
-        note="This chamber ran constituent and legislative committees in parallel.",
+        "The densest committee network, and bloc explains none of it",
+        note="\nTwo parallel committee systems ran here — six constituent committees "
+             "drafting the constitution and a set of legislative committees for "
+             "ordinary\nbusiness — so members accumulated more shared assignments than "
+             "in a normal term. ",
     )

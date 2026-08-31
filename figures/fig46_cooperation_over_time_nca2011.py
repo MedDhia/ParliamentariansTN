@@ -371,7 +371,7 @@ def main() -> None:
     ax_b.set_ylim(0, 0.55)
     ax_b.set_title(S.label("B · Division similarity, against the same benchmark"),
                    loc="left", fontsize=9.6, color=S.CHROME["text_primary"], pad=8)
-    ax_b.set_ylabel(S.label("Mean |φ| between pairs of divisions"), fontsize=8.4)
+    ax_b.set_ylabel(S.label("Mean |φ|: how alike two divisions' splits are"), fontsize=8.4)
 
     silent = [r for r in rows if r["division_similarity"] == ""]
     for ax in (ax_a, ax_b):

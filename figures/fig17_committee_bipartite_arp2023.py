@@ -84,7 +84,7 @@ def main() -> None:
     multi = sum(1 for p in people if len(frame.portfolio[p]) > 1)
     S.titles(
         ax,
-        "Deputies and committees, chamber elected in 2023",
+        "80 of 152 deputies sit on more than one committee",
         f"{len(people)} deputies, {len(frame.order)} committees, {len(memberships)} "
         "memberships — the incidence structure figure 16's 1,579 ties are\nprojected from. "
         "Identical coordinates to figure 16, so the two differ only in which ties are "

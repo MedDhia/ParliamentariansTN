@@ -122,7 +122,8 @@ def main() -> None:
     S.titles(
         ax,
         "Voting alone recovers Ennahdha, and nothing else",
-        f"Louvain communities on the vote-agreement graph, found without any bloc "
+        f"Louvain communities on the 2011 Constituent Assembly's vote-agreement graph, "
+        "found without any bloc "
         f"information, against the blocs the chamber had. {len(communities)} "
         "communities;\nthe largest is "
         f"{purity:.0%} one bloc. The other two are mixtures corresponding to no "

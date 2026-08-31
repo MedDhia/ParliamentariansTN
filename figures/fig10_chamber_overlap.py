@@ -110,11 +110,16 @@ def main() -> None:
 
     S.titles(
         ax,
-        "Members shared between chambers",
-        "Every pair, not just consecutive ones. Grey diagonal = the chamber's own recorded "
-        "size.\n“·” means no member in common. Chambers with fewer than two recorded members "
-        "are omitted.\nA cell counts members who sat in both, not members who skipped what "
-        "lies between: 12 of the 13\nin 2011 × 2019 also sat in 2014.",
+        "The one Ben Ali–era roster shares nobody after 2011",
+        "Each cell is the number of people who sat in both of those two chambers — every "
+        "pair, not just consecutive ones.\nGrey diagonal = the chamber's own recorded size; "
+        "“·” means no member in common; chambers with fewer than two\nrecorded members are "
+        "omitted. A cell counts members who sat in both, not members who skipped what lies "
+        "between:\n12 of the 13 in 2011 × 2019 also sat in 2014. Every cell joining a "
+        "pre-2011 chamber to a post-2011 one reads zero,\nand that zero means \"not "
+        "observed\" — those chambers have no roster. The Chamber of Advisors is the "
+        "exception, and\nshares exactly one member with any chamber here: Rachid Sfar, prime "
+        "minister in the 1980s, appointed to the upper\nhouse in its final years.",
     )
     # Clear of the rotated tick labels.
     S.source_note(fig, "ParliamentariansTN · data/processed/mandates.csv", y=-0.10)
