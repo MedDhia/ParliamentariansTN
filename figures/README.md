@@ -152,7 +152,7 @@ count, so it does not behave like the other layers.
 | 43 | The Brahmi assassination | An event study on 25 July 2013. The crisis is a walkout, not a realignment: Democratic Bloc turnout 51% → 21%, Ennahdha 79% → 80%, everyone back by December. Affinity has no comparable estimate during it — **0 of 18** Democratic Bloc members appear in a scoreable pair. |
 | 44 | Affinity before the shock | The baseline the crisis has to be measured against: within-bloc agreement 0.930, cross-bloc 0.672, and 1,209 of 4,792 strong ties crossing a bloc. |
 | 45 | Affinity after the shock | Same members, positions, threshold and division count. Within-bloc agreement falls to 0.879 and cross-bloc does not move — blocs **loosened** rather than closing ranks. Reliable cross-bloc allies fall 63%. |
-| 46 | Cooperation over the term | The longitudinal test, against Nugent (2020). A coalition carrying majorities of both Ennahdha's voters and everyone else's won **75%** of the 993 contested divisions, with no erosion — and the chamber's divisions grew *less* alike as it went, the excess over a permutation null falling +0.27 → +0.11. |
+| 46 | Polarisation, level and trend | Against Nugent (2020). Level and trend disagree: cross-cutting wins take 75% of contested divisions where a bloc-blind chamber gives **96%**, so the chamber is 20 points of bloc structure below chance — but nothing deepens, the similarity excess falling +0.27 → +0.11. "No build-up" is not "none". |
 
 **Why these are thirteen figures and not one.** Polarisation has no single
 operationalisation, and the measures disagree in informative ways: 33 says the
@@ -161,8 +161,9 @@ structure is too weak to call communities, 38 says none of it moves over time,
 42 says every bloc is distinctive once you ask who its members are *closest* to
 rather than who they merely agree with, 43 says the chamber's worst political
 crisis left no trace in any of it — because the members it silenced are the ones
-the measure needs — and 46, asking without bloc labels at all, says the
-structure that is there thinned across the term rather than hardening.
+the measure needs — and 46 says level and trend answer differently — bloc
+structure well beyond chance on both its measures, and thinning rather than
+hardening across the term.
 
 **44 and 45 are the pair that answers what 43 could not.** 43's affinity panel
 was 90% Ennahdha and 6% Democratic Bloc, because matching the windows on

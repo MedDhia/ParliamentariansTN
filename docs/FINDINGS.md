@@ -543,37 +543,46 @@ simply bloc membership. This is why the dataset carries chosen and revealed tie
 layers separately rather than treating either as a proxy for cooperation.
 · *Figures 39, 40 · `fig39_*.csv`, `fig40_*.csv`*
 
-**Cooperation did not erode, and the chamber's divisions grew less alike as it
-went.** Nugent's *After Repression* (2020) argues that Tunisia's transition held
-because indiscriminate repression under Ben Ali left its opposition
-comparatively unpolarised, where Egypt's narrowly-targeted repression did not.
-That claim is about elite perceptions and roll calls cannot test it, but it
-implies something checkable in the chamber that wrote the constitution. Two
-measures, quarter by quarter:
+**Polarised throughout, and no more so at the end than at the start — which are
+two findings, not one.** Nugent's *After Repression* (2020) argues that Tunisia's
+transition held because indiscriminate repression under Ben Ali left its
+opposition comparatively unpolarised, where Egypt's narrowly-targeted repression
+did not. That is a claim about a *level*, and a comparative one: testing it needs
+Egypt, and this dataset has one chamber. What one chamber's roll calls can settle
+is whether polarisation grew, and what its level looks like against the only
+benchmark available — chance. Two measures, quarter by quarter, both read against
+the same permutation null (each division's votes reshuffled among the members who
+cast them, its margin held fixed):
 
-- A coalition carrying more than half of Ennahdha's voters **and** more than half
-  of everyone else's won **75%** of the 993 contested divisions and **86%** of all
-  1,724 recorded ones. Per quarter: 87, 71, 72, 92, 68, 69, **78%** — the term
-  ends above the two quarters before it.
-- Mean |φ| between pairs of divisions — how alike the lines the chamber split on
-  were, computed over the members voting in both and using no bloc labels at all
-  — runs above its permutation null in every quarter, so this is a structured
-  chamber, not a random one. But the excess **falls from +0.27 to +0.11**, and the
-  three quarters carrying 73% of the term's contested business are its three
-  least structured.
+- *Cross-cutting wins.* A coalition carrying more than half of Ennahdha's voters
+  **and** more than half of everyone else's won **75%** of the 993 contested
+  divisions. A bloc-blind chamber with the same margins gives **96%** — a
+  70-30 division in a chamber that is 40% Ennahdha is carried inside both groups
+  by arithmetic. The observed share is **20 points below chance**, and below it in
+  every quarter.
+- *Division similarity.* Mean |φ| between pairs of divisions, over the members
+  voting in both and using no bloc labels at all, runs **two to four times** its
+  null in every quarter.
 
-Neither is an artefact of the later quarters being larger: cutting every quarter
-to the smallest one's 17 divisions moves no excess by more than 0.03. Nor of
-turnout: the permutation null tracks √(2/π·overlap) to within 0.003 everywhere,
+So the chamber is polarised on both measures, which is what figures 21, 34 and 35
+find by other routes. But neither deepens. The similarity excess **falls from
++0.27 to +0.11**, the three quarters carrying 73% of the term's contested business
+are its three least structured, and the cross-cutting deficit ends at −15 points
+against −13 at the start, at its widest mid-term rather than at the end.
+
+Neither trend is an artefact of the later quarters being larger: cutting every
+quarter to the smallest one's 17 divisions moves no excess by more than 0.03. Nor
+of turnout: the permutation null tracks √(2/π·overlap) to within 0.003 everywhere,
 which is what absorbs the fall in common voters from 118 per division-pair in
 2014Q1 to 52 in 2014Q3.
 
-**What it does not establish.** Not Nugent's mechanism — repression type shaping
-perceived distance — which roll calls cannot reach. Not anything about Egypt, the
-comparison the argument rests on. Roll-call behaviour is disciplined and
-agenda-conditioned, so behavioural cooperation and attitudinal polarisation are
-different constructs. And the NCA is where the consensus outcome was produced, so
-cross-cutting votes in it confirm the outcome was real rather than explain it.
+**What it does not establish.** The level implication of Nugent's argument, which
+is comparative and needs a second case. Not her mechanism — repression type
+shaping perceived distance — which roll calls cannot reach. Roll-call behaviour is
+disciplined and agenda-conditioned, so behavioural cooperation and attitudinal
+polarisation are different constructs. And the NCA is where the consensus outcome
+was produced, so cross-cutting votes in it confirm the outcome was real rather
+than explain it.
 · *Figure 46 · `fig46_cooperation_over_time_nca2011.csv`*
 
 **What none of this establishes.** Agreement is a correlation between voting

@@ -1555,3 +1555,61 @@ class TestCrossCuttingWins:
         group = self._group(20, 10)
         assert fig46.crossing(matrix, np.array([0]), group) == 0.0
 
+
+@requires_figure_stack
+class TestCrossCuttingBaseline:
+    """The null that decides whether panel A's number means what it looks like.
+
+    A raw 75% reads as cooperation. Against a bloc-blind chamber with the same
+    margins it is a 20-point deficit, because a comfortable majority is carried
+    inside both groups by arithmetic. These tests pin the two ends of that.
+    """
+
+    @staticmethod
+    def _split(size, yes):
+        return TestDivisionSimilarity._columns("+" * yes + "-" * (size - yes))
+
+    def test_the_same_margin_scores_zero_or_near_one_depending_only_on_bloc(self):
+        """One division, one margin, two arrangements — and they bracket the range.
+
+        45 yes to 15 no in a 60-member chamber whose minority group has 24. Sort
+        the noes into that group and no cross-cutting win is possible; shuffle
+        them and one is almost guaranteed. Nothing but the alignment differs, so
+        this is the whole content of the baseline in one case.
+        """
+        import numpy as np
+        group = TestCrossCuttingWins._group(60, 24)
+        # all 15 noes inside the 24-member group: it backs the winner 9/24
+        sorted_in = TestDivisionSimilarity._columns(
+            "-" * 15 + "+" * 9 + "+" * 36)
+        columns = np.array([0])
+        assert fig46.crossing(sorted_in, columns, group) == 0.0
+        null = fig46.crossing_null(sorted_in, columns, group,
+                                   np.random.default_rng(3), draws=25)
+        assert null > 0.9
+
+    def test_a_narrow_margin_lowers_the_baseline_too(self):
+        """The null is not a constant: it follows each division's margin.
+
+        A 12-10 split leaves a bloc-blind chamber often failing to carry both
+        groups, so the same observed share means far less there than under a
+        landslide. A fixed benchmark would misprice every close division.
+        """
+        import numpy as np
+        narrow = self._split(22, 12)
+        landslide = self._split(22, 20)
+        group = TestCrossCuttingWins._group(22, 9)
+        rng = np.random.default_rng(5)
+        assert (fig46.crossing_null(narrow, np.array([0]), group, rng, draws=40)
+                < fig46.crossing_null(landslide, np.array([0]), group, rng, draws=40))
+
+    def test_the_null_leaves_the_observed_data_untouched(self):
+        """A permutation that mutated the matrix would corrupt every later panel."""
+        import numpy as np
+        matrix = TestDivisionSimilarity._columns("+" * 12 + "-" * 8)
+        before = matrix.copy()
+        fig46.crossing_null(matrix, np.array([0]),
+                            TestCrossCuttingWins._group(20, 12),
+                            np.random.default_rng(0), draws=4)
+        assert (matrix == before).all()
+
