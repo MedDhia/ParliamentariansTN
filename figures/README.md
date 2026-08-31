@@ -1,6 +1,6 @@
 # Figures
 
-Forty-nine descriptive and exploratory figures over the dataset. Each is a
+Fifty descriptive and exploratory figures over the dataset. Each is a
 standalone script that writes one image and one CSV.
 
 **Looking for the results rather than the method?**
@@ -13,7 +13,7 @@ figures/figNN_name.py  →  figures/output/figNN_name.png
 ```
 
 ```bash
-make figures                          # render all forty-nine
+make figures                          # render all fifty
 python figures/make_all.py 11 12      # just those two
 python figures/fig11_bloc_composition_arp2014.py   # or run one directly
 FIGURES_PDF=1 make figures            # also write PDFs, for LaTeX
@@ -50,6 +50,7 @@ regenerates the dataset — figures read `data/processed` and `data/networks`.
 | --- | --- | --- |
 | 9 | Continuity across chambers | No chamber draws even a quarter of its members from its predecessor; 2023 draws 3%. |
 | 10 | Shared members, all pairs | Every pair, so the non-consecutive overlaps are visible. Read a cell as "sat in both", not as a skip count: 13 sat in 2011 and 2019, but 12 of them also sat in 2014. |
+| 50 | Elite continuity, career by career | Every career spanning more than one full-roster chamber: 78 people in **8** patterns. Figure 9 counts only consecutive returns, which halves the 2023 chamber — 5 who sat in 2019 against **10** with any earlier service. Continuity runs through one link: 2014 → 2019 carries 50 of the 78. |
 
 **Bloc dynamics, 2014–2019**
 

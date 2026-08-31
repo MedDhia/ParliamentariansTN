@@ -98,6 +98,34 @@ dataset **cannot currently answer**, because those chambers have no roster.
 
 ---
 
+**Counting only consecutive returns halves the 2023 chamber's continuity.**
+Figure 9 reports returners as members who also sat in the chamber immediately
+before — the standard measure. Counting every earlier chamber instead:
+
+| chamber | sat in the one before | any earlier chamber | share of the chamber |
+| --- | --- | --- | --- |
+| ARP-2014 | 31 | 31 | 13% |
+| ARP-2019 | 50 | 51 | 24% |
+| ARP-2023 | **5** | **10** | 6% |
+
+So the 3% figure for 2023 is 6% once the five members who sat out a term are
+counted, and half that chamber's returning class had already been out of
+parliament — which the consecutive measure cannot see by construction.
+
+The 78 people who span more than one of the four full-roster chambers occupy
+only **8 distinct career patterns**, and continuity is concentrated in one link:
+2014 → 2019 carries 50 of the 78, and 2011 → 2014 carries 31. Only 10 careers
+reach 2023 at all.
+
+The map is restricted to 2011 onwards deliberately. All **7** multi-chamber
+careers touching a pre-2011 chamber belong to presiding officers, because a
+presiding officer is the only member those twelve chambers record — persistence
+that is a fact about coverage rather than about elites, and drawing it beside
+the post-2011 flows would invite the opposite reading.
+· *Figure 50 · `fig50_elite_continuity_nca_arp.csv`*
+
+---
+
 ## 4. Bloc dynamics, 2014–2019
 
 Only possible because that chamber was reconstructed from ~29 monthly Internet

@@ -67,7 +67,7 @@ Worked examples: `examples/example_python.py` (networkx) and
 model and a power simulation) and `examples/voting_space.py` (whether the 2011
 chamber's voting axis is more than Ennahdha membership).
 
-Forty-nine descriptive and exploratory figures, each with its numbers as a companion
+Fifty descriptive and exploratory figures, each with its numbers as a companion
 CSV, are in [`figures/`](figures/README.md):
 
 ```bash
@@ -279,7 +279,7 @@ documentation cannot drift from the data.
 
 ## Figures
 
-[`figures/`](figures/README.md) holds forty-nine figures over the dataset —
+[`figures/`](figures/README.md) holds fifty figures over the dataset —
 institutional timeline, composition, coverage, elite circulation, bloc dynamics,
 five network views, the 2011–2014 roll-call record, and behavioural
 distributions. Each script writes one PNG and
