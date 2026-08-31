@@ -1,18 +1,22 @@
-"""Figure 46 — Did cooperation erode in the 2011 assembly? Two measures, quarter by quarter.
+"""Figure 46 — Was the 2011 assembly polarised, and did it become more so?
+
+Those are two questions, and this figure exists because the second is much
+easier to answer than the first and the two are easy to run together.
 
 Elizabeth Nugent's *After Repression* (2020) argues that Tunisia's transition
-survived because its opposition entered it comparatively **unpolarised** —
-Ben Ali's repression having fallen indiscriminately on Islamists and secularists
+survived because its opposition entered it comparatively **unpolarised** — Ben
+Ali's repression having fallen indiscriminately on Islamists and secularists
 alike, where Egypt's fell narrowly on the Brotherhood — and that the low
 perceived distance between those groups is what made a negotiated constitution
-possible. The argument is about elite perceptions, measured by interview and
-survey. It is not about roll calls.
+possible.
 
-What roll calls can do is check an observable implication: if the chamber that
-produced the 2014 constitution was genuinely, not merely procedurally, working
-across the Islamist/secular line, cooperation there should be high and should
-**not erode** across the term. A transition that consensus-ed on paper while its
-legislature hardened into two camps would be a problem for the account.
+That is a claim about a **level**, and a comparative one. Testing it needs Egypt,
+or something like it, and this dataset has one chamber. What a single chamber's
+roll calls can do is two narrower things: say whether polarisation **grew**, and
+say what its level looks like against the only benchmark one chamber affords,
+which is chance. Both panels report both, and they disagree in the way that
+matters: the assembly is bloc-structured well beyond chance, and no more so at
+the end than at the start. "No build-up" is not "none".
 
 **Two measures, and why neither uses bloc labels for its headline.** This
 chamber's bloc data is undated — one spell per member covering the whole term —
@@ -31,43 +35,51 @@ smaller secular lists.
 contested divisions in a quarter it computes |φ| between the two yes/no splits
 over the members who voted in both, and averages. A chamber with one recurring
 cleavage returns a high value however its parties are named; a chamber whose
-majorities re-form question by question returns a low one. The benchmark is a
-permutation null — each division's votes reshuffled among the members who cast
-them, holding its margin fixed — which is what the same measure returns when
-nothing but the margins is structured.
+majorities re-form question by question returns a low one.
 
-**What the record shows.** Cross-cutting wins carry 75% of the term's 993
-contested divisions and 86% of all 1,724 recorded ones, with no downward trend:
-the last quarter of the term (78%) sits above the two before it. Division
-similarity runs well above its null in every quarter, so this is not a chamber
-without structure — but the excess *falls*, from +0.27 in late 2012 to +0.11 in
-its final quarter, and the three quarters carrying 73% of all contested business
-are the three least structured. The chamber's divisions grew less alike as it
-went, not more.
+**Both are read against the same permutation null** — each division's votes
+reshuffled among the members who cast them, holding its margin fixed. For panel B
+that is a convenience; for panel A it is the whole reading. A division carried
+70-30 in a chamber that is 40% Ennahdha will be carried inside *both* groups by
+arithmetic alone, so a bloc-blind chamber produces cross-cutting wins on 96% of
+these divisions. The observed 75% is twenty points of bloc structure, not
+seventy-five points of cooperation, and an earlier version of this figure that
+plotted the raw share with no baseline said the opposite of what the number
+means.
 
-The falling excess is not an artefact of the later quarters being larger. Mean
-|φ| is an average over pairs of divisions, so a random subsample of a quarter
-estimates the same quantity; cutting every quarter to the smallest one's 17
-divisions moves no excess by more than 0.03 and changes no ordering. Nor is it
+**What the record shows.** On level: cross-cutting wins fall 20 points below
+chance over the term and below it in every quarter; division similarity runs two
+to four times its null. This is a polarised chamber on both measures, which is
+what figures 21, 34 and 35 find by other routes — Ennahdha at one pole with an
+internal agreement density of 0.998.
+
+On trend: neither deepens. The similarity excess *falls*, from +0.27 in late 2012
+to +0.11 in the final quarter, and the three quarters carrying 73% of all
+contested business are the three least structured. The cross-cutting deficit ends
+at −15 points against −13 at the start, its widest points in the middle of the
+term rather than at the end.
+
+The falling similarity excess is not an artefact of the later quarters being
+larger. Mean |φ| is an average over pairs of divisions, so a random subsample of a
+quarter estimates the same quantity; cutting every quarter to the smallest one's
+17 divisions moves no excess by more than 0.03 and changes no ordering. Nor is it
 participation, which varies far more than the roster does. |φ| is a magnitude, so
 two divisions compared over few common voters return a larger one by chance
 alone, and the median pair of divisions shares 118 voters in 2014Q1 against 52 in
 2014Q3. The permutation null absorbs exactly that: it tracks √(2/π·overlap), the
-expected |φ| between independent splits, to within 0.003 in every quarter. That
-is why panel B annotates the excess over the null rather than the raw value, and
-why the raw line alone would be misread.
+expected |φ| between independent splits, to within 0.003 in every quarter.
 
-On this implication the account survives: there is no build-up of polarisation to
-find, and the constitution was carried by coalitions that crossed the cleavage in
-question rather than by one side of it.
-
-**Four things this does not establish.** It does not test Nugent's mechanism —
-repression type shaping perceived distance — which roll calls cannot reach.
-It says nothing about Egypt, the comparison the argument rests on. Roll-call
-behaviour is disciplined and agenda-conditioned, so behavioural cooperation and
-attitudinal polarisation are different constructs that can move apart. And the
-NCA is where the consensus outcome was produced, so finding cross-cutting votes
-in it is closer to confirming the outcome was real than to explaining it.
+**What survives of the test, and what does not.** The non-escalation implication
+holds: there is no build-up to find, and the constitution was carried by
+coalitions that crossed the cleavage more often than not. The level implication
+is not tested here at all — against chance this chamber is polarised, and whether
+it was *less* polarised than Egypt's constituent moment is a comparison this
+dataset cannot make. Nor does any of it reach Nugent's mechanism, repression type
+shaping perceived distance. Roll-call behaviour is disciplined and
+agenda-conditioned, so behavioural cooperation and attitudinal polarisation are
+different constructs that can move apart. And the NCA is where the consensus
+outcome was produced, so finding cross-cutting votes in it is closer to
+confirming the outcome was real than to explaining it.
 
 The 2013Q3 gap is not missing data: seven contested divisions fell in the quarter
 of the Brahmi assassination, too few to estimate from (figures 43-45).
@@ -193,6 +205,25 @@ def crossing(matrix: np.ndarray, columns: np.ndarray, ennahdha: np.ndarray) -> f
     return hits / len(columns)
 
 
+def crossing_null(matrix: np.ndarray, columns: np.ndarray, group: np.ndarray,
+                  rng, draws: int = 12) -> float:
+    """``crossing`` when bloc predicts nothing, each division's margin held fixed.
+
+    This baseline is not a formality — it reverses the reading. A division
+    carried 70-30 by a chamber that is 40% Ennahdha will be carried inside both
+    groups *by arithmetic*, whoever votes how, so a high raw share is what a
+    chamber with no bloc structure at all produces. Only the distance from this
+    line is behaviour.
+    """
+    values = []
+    for _ in range(draws):
+        yes, no = permuted(matrix[:, columns] == 1, matrix[:, columns] == -1, rng)
+        shuffled = np.zeros_like(matrix)
+        shuffled[:, columns] = yes.astype(np.int8) - no.astype(np.int8)
+        values.append(crossing(shuffled, columns, group))
+    return float(np.mean(values))
+
+
 def quarter_of(date: str) -> str:
     return f"{date[:4]}Q{(int(date[5:7]) - 1) // 3 + 1}"
 
@@ -225,7 +256,8 @@ def main() -> None:
             "quarter": name,
             "contested_divisions": int(picked.size),
             "sitting_days": days,
-            "cross_cutting_wins": "", "division_similarity": "",
+            "cross_cutting_wins": "", "cross_cutting_null": "",
+            "cross_cutting_excess": "", "division_similarity": "",
             "ci_low": "", "ci_high": "", "permutation_null": "", "excess": "",
         }
         if picked.size >= MIN_DIVISIONS:
@@ -240,8 +272,12 @@ def main() -> None:
                 for _ in range(BOOTSTRAP))
             null = float(np.mean([mean_phi(phi_matrix(*permuted(yes, no, rng)))
                                   for _ in range(NULLS)]))
+            wins = crossing(matrix, picked, ennahdha)
+            wins_null = crossing_null(matrix, picked, ennahdha, rng)
             entry.update({
-                "cross_cutting_wins": round(crossing(matrix, picked, ennahdha), 4),
+                "cross_cutting_wins": round(wins, 4),
+                "cross_cutting_null": round(wins_null, 4),
+                "cross_cutting_excess": round(wins - wins_null, 4),
                 "division_similarity": round(observed, 4),
                 "ci_low": round(draws[int(0.025 * len(draws))], 4),
                 "ci_high": round(draws[int(0.975 * len(draws))], 4),
@@ -254,6 +290,7 @@ def main() -> None:
     if len(drawn) < 3:
         raise SystemExit("too few quarters to draw a series")
     term_cross = crossing(matrix, columns, ennahdha)
+    term_null = crossing_null(matrix, columns, ennahdha, rng)
     all_cross = crossing(matrix, np.arange(matrix.shape[1]), ennahdha)
 
     # Marker area carries the quarter's volume, because these quarters differ by
@@ -277,29 +314,38 @@ def main() -> None:
         lookup = {r["quarter"]: r[field] for r in drawn}
         return np.array([lookup.get(n, np.nan) for n in axis], dtype=float)
 
-    # A — cross-cutting winning coalitions
-    ax_a.axhline(term_cross, color=S.CHROME["axis"], linewidth=1.0,
-                 linestyle=(0, (4, 2)), zorder=2)
-    ax_a.plot(grid, series("cross_cutting_wins"), color=accent,
-              linewidth=2.0, zorder=3)
+    # A — cross-cutting winning coalitions, against what bloc-blind voting gives
+    wins = series("cross_cutting_wins")
+    wins_null = series("cross_cutting_null")
+    ax_a.fill_between(grid, wins, wins_null, where=np.isfinite(wins),
+                      color=accent, alpha=0.10, zorder=1)
+    ax_a.plot(grid, wins_null, color=S.CHROME["axis"], linewidth=1.4,
+              linestyle=(0, (4, 2)), zorder=2)
+    ax_a.plot(grid, wins, color=accent, linewidth=2.0, zorder=3)
     ax_a.scatter(xs, [r["cross_cutting_wins"] for r in drawn],
                  s=[26 + 150 * r["contested_divisions"] / biggest for r in drawn],
                  color=accent, zorder=4, edgecolors=S.CHROME["surface"], linewidths=0.8)
     for r in drawn:
-        ax_a.annotate(f"{r['cross_cutting_wins']:.0%}",
-                      xy=(x[r["quarter"]], r["cross_cutting_wins"]), xytext=(0, 12),
+        ax_a.annotate(f"{r['cross_cutting_excess']:+.0%}",
+                      xy=(x[r["quarter"]], r["cross_cutting_wins"]), xytext=(0, -17),
                       textcoords="offset points", ha="center", fontsize=7.6,
                       color=S.CHROME["text_primary"], zorder=6)
-    ax_a.set_ylim(0.4, 1.0)
+    ax_a.set_ylim(0.4, 1.04)
     ax_a.annotate(
-        S.label(f"Dashed line: {term_cross:.0%}, the whole term.\nMarker area is "
-                f"the quarter's division count "
+        S.label("Bloc-blind chamber, same margins"),
+        xy=(grid[2], drawn[1]["cross_cutting_null"]), xytext=(0, -9),
+        textcoords="offset points", ha="center", va="top", fontsize=7.6,
+        color=S.CHROME["text_secondary"], zorder=5)
+    ax_a.annotate(
+        S.label(f"Whole term: {term_cross:.0%} observed against {term_null:.0%} by "
+                f"chance,\na deficit of {100 * (term_null - term_cross):.0f} points. "
+                f"Marker "
+                f"area is the quarter's\ndivision count "
                 f"({min(r['contested_divisions'] for r in drawn)} to {biggest})."),
         xy=(len(axis) - 0.7, 0.415), ha="right", va="bottom", fontsize=7.4,
         color=S.CHROME["text_secondary"], zorder=5)
     ax_a.yaxis.set_major_formatter(lambda v, _: f"{v:.0%}")
-    ax_a.set_title(S.label("A · Divisions won by a coalition that crossed the "
-                           "Ennahdha line"),
+    ax_a.set_title(S.label("A · Cross-cutting wins, against a bloc-blind chamber"),
                    loc="left", fontsize=9.6, color=S.CHROME["text_primary"], pad=8)
     ax_a.set_ylabel(S.label("Share of the quarter's contested divisions"), fontsize=8.4)
 
@@ -323,8 +369,7 @@ def main() -> None:
                       textcoords="offset points", ha="center", fontsize=7.6,
                       color=S.CHROME["text_primary"], zorder=6)
     ax_b.set_ylim(0, 0.55)
-    ax_b.set_title(S.label("B · How alike the quarter's divisions were, and how "
-                           "far above chance"),
+    ax_b.set_title(S.label("B · Division similarity, against the same benchmark"),
                    loc="left", fontsize=9.6, color=S.CHROME["text_primary"], pad=8)
     ax_b.set_ylabel(S.label("Mean |φ| between pairs of divisions"), fontsize=8.4)
 
@@ -337,41 +382,40 @@ def main() -> None:
         for r in silent:
             ax.axvspan(x[r["quarter"]] - 0.5, x[r["quarter"]] + 0.5,
                        color=S.CHROME["deemph"], alpha=0.35, zorder=0)
-            # Labelled at the top: the bottom of panel A carries the note about
-            # the dashed line, and a label there would sit on top of it.
+            # Labelled in the middle of the band. Both edges are occupied: the
+            # top of panel A by its baseline, the bottom by the note about it.
+            low, high = ax.get_ylim()
             ax.annotate(S.label(f"{r['contested_divisions']} contested\ndivisions"),
-                        xy=(x[r["quarter"]], ax.get_ylim()[1]), xytext=(0, -8),
-                        textcoords="offset points", ha="center", va="top",
-                        fontsize=7.0, color=S.CHROME["text_secondary"], zorder=5)
+                        xy=(x[r["quarter"]], (low + high) / 2), ha="center",
+                        va="center", fontsize=7.0,
+                        color=S.CHROME["text_secondary"], zorder=5)
 
-    fig.subplots_adjust(left=0.062, right=0.985, top=0.70, bottom=0.085)
+    fig.subplots_adjust(left=0.062, right=0.985, top=0.735, bottom=0.085)
     fig.text(0.010, 0.985,
-             "No build-up of polarisation to find: the assembly's divisions grew "
-             "less alike as it went, not more",
+             "Polarised throughout, and no more so at the end than at the start — "
+             "two different findings",
              ha="left", va="top", fontsize=13.5, fontweight="bold",
              color=S.CHROME["text_primary"])
     fig.text(
         0.010, 0.948,
         f"Nugent (2020) argues Tunisia's transition held because indiscriminate "
-        f"repression left its opposition comparatively unpolarised. That claim is "
-        f"about elite perceptions and roll calls cannot test it,\nbut it implies "
-        f"something checkable: cooperation in the chamber that wrote the "
-        f"constitution should be high and should not erode. It is and it does not. "
-        f"A coalition carrying more than half of\nEnnahdha's voters and more than "
-        f"half of everyone else's won {term_cross:.0%} of the "
-        f"{len(columns)} contested divisions and {all_cross:.0%} of all "
-        f"{matrix.shape[1]:,} recorded ones, ending the term above the two quarters "
-        f"before it. Panel B\nneeds no bloc labels at all — this chamber's are "
-        f"undated while 105 of 217 members switched party — and asks instead "
-        f"whether the same line keeps reappearing. It runs above\nchance "
-        f"everywhere, so the assembly is structured, not random; but the excess "
-        f"falls from {drawn[0]['excess']:+.2f} to {drawn[-1]['excess']:+.2f}, and "
-        f"the three quarters holding 73% of the term's business are its three "
-        f"least\nstructured. What this cannot do is test Nugent's mechanism, speak "
-        f"to Egypt, or separate disciplined behaviour from held belief — and the "
-        f"NCA is where the consensus was produced,\nso cross-cutting votes in it "
-        f"confirm the outcome was real rather than explain it. Bloc is each "
-        f"member's last recorded spell: the source publishes no dated bloc history.",
+        f"repression left its opposition comparatively unpolarised. That is a claim "
+        f"about a *level*, and a comparative\none: this dataset has one chamber and "
+        f"no Egypt, so it cannot be settled here. Two things can — whether "
+        f"polarisation grew, and what the level looks like against the only\n"
+        f"benchmark one chamber affords, which is chance. On level the assembly is "
+        f"bloc-structured well beyond it: coalitions carrying majorities of both "
+        f"Ennahdha's voters and\neveryone else's won {term_cross:.0%} of the "
+        f"{len(columns)} contested divisions where a bloc-blind chamber with the "
+        f"same margins gives {term_null:.0%}, and the same dividing line reappears "
+        f"across pairs of\ndivisions two to four times more often than chance. On "
+        f"trend neither deepens: the similarity excess falls "
+        f"{drawn[0]['excess']:+.2f} to {drawn[-1]['excess']:+.2f} and the "
+        f"cross-cutting deficit ends at "
+        f"{drawn[-1]['cross_cutting_excess']:+.0%} against\n"
+        f"{drawn[0]['cross_cutting_excess']:+.0%}. What this cannot do is test "
+        f"Nugent's mechanism, speak to Egypt, or separate disciplined behaviour from "
+        f"held belief. Bloc is each member's last recorded spell.",
         ha="left", va="top", fontsize=8.2, color=S.CHROME["text_secondary"],
         linespacing=1.35,
     )
