@@ -1,6 +1,6 @@
 # Figures
 
-Forty-six descriptive and exploratory figures over the dataset. Each is a
+Forty-seven descriptive and exploratory figures over the dataset. Each is a
 standalone script that writes one image and one CSV.
 
 **Looking for the results rather than the method?**
@@ -13,7 +13,7 @@ figures/figNN_name.py  →  figures/output/figNN_name.png
 ```
 
 ```bash
-make figures                          # render all forty-six
+make figures                          # render all forty-seven
 python figures/make_all.py 11 12      # just those two
 python figures/fig11_bloc_composition_arp2014.py   # or run one directly
 FIGURES_PDF=1 make figures            # also write PDFs, for LaTeX
@@ -128,7 +128,7 @@ the record covers and how much of it was contested.
 | 25 | Participation decay | 18% of members not voting in July 2012; 56% across the last three months. This is the coverage behind 21 and 23. |
 | 26 | Vote margins | 42% of divisions clear a 0.95 margin — the cut figure 21 makes before scaling, shown rather than asserted. |
 
-**Polarisation, 2011 Constituent Assembly (33–40, 42–46)**
+**Polarisation, 2011 Constituent Assembly (33–40, 42–47)**
 
 Twelve figures asking one question in twelve ways: how far do the lines this
 chamber divided on coincide with its bloc boundaries? Six are built on
@@ -153,17 +153,19 @@ count, so it does not behave like the other layers.
 | 44 | Affinity before the shock | The baseline the crisis has to be measured against: within-bloc agreement 0.930, cross-bloc 0.672, and 1,209 of 4,792 strong ties crossing a bloc. |
 | 45 | Affinity after the shock | Same members, positions, threshold and division count. Within-bloc agreement falls to 0.879 and cross-bloc does not move — blocs **loosened** rather than closing ranks. Reliable cross-bloc allies fall 63%. |
 | 46 | Polarisation, level and trend | Against Nugent (2020). Level and trend disagree: cross-cutting wins take 75% of contested divisions where a bloc-blind chamber gives **96%**, so the chamber is 20 points of bloc structure below chance — but nothing deepens, the similarity excess falling +0.27 → +0.11. "No build-up" is not "none". |
+| 47 | The durable cleavage | The polarisation drawn as a network, and the measure is *durability*. Of the ties that clear 0.75 in all four blocks of the term **77%** are within a bloc; of those clearing it in exactly one, **6%**. Only 34% of ever-strong ties are strong throughout — most high agreement here is transient and cross-cutting. |
 
-**Why these are thirteen figures and not one.** Polarisation has no single
+**Why these are fourteen figures and not one.** Polarisation has no single
 operationalisation, and the measures disagree in informative ways: 33 says the
 chamber is strongly bloc-structured, 34 says only one bloc is, 36 says the
 structure is too weak to call communities, 38 says none of it moves over time,
 42 says every bloc is distinctive once you ask who its members are *closest* to
 rather than who they merely agree with, 43 says the chamber's worst political
 crisis left no trace in any of it — because the members it silenced are the ones
-the measure needs — and 46 says level and trend answer differently — bloc
+the measure needs — 46 says level and trend answer differently — bloc
 structure well beyond chance on both its measures, and thinning rather than
-hardening across the term.
+hardening across the term — and 47 says the structure is carried almost entirely
+by the ties that last, the transient ones running the other way.
 
 **44 and 45 are the pair that answers what 43 could not.** 43's affinity panel
 was 90% Ennahdha and 6% Democratic Bloc, because matching the windows on
