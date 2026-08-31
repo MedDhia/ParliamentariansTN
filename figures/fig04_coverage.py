@@ -9,7 +9,7 @@ A dumbbell rather than two bars because the reader's job is to compare two value
 *per item* and see the distance; two shades of one hue rather than two categorical
 colours because these are the same measure — seats — under two definitions.
 
-Two things it shows that a coverage table does not. First, the eleven chambers of
+Two things it shows that a coverage table does not. First, the twelve chambers of
 the single-party era collapse to a near-zero column: fifty-two years of parliament
 present only through their eight presiding officers. Second, three chambers
 overshoot their seat count, which is not an error — a five-year term seats more
@@ -74,9 +74,16 @@ def main() -> None:
     S.frame(ax, x_grid=True, y_grid=False)
     S.titles(
         ax,
-        "Members recorded against seats available",
-        "Open marker: seats the chamber had. Filled marker: members this dataset records "
-        "individually.\nThe distance between them is the coverage gap.",
+        "Fifty-two years of parliament, eight presiding officers",
+        "One row per chamber-term, 1956–2026. Open marker: seats the chamber had. Filled "
+        "marker: members this\ndataset records individually — the distance between them is "
+        "the coverage gap. Five terms are recorded member\nby member, one partly, and "
+        "thirteen only as an institution: the twelve chambers of the single-party era "
+        "collapse\nto a near-zero column, fifty-two years of parliament present through "
+        "their eight presiding officers alone. Three\nterms overshoot their seat count, "
+        "which is not an error — a five-year term seats more people than it has seats, "
+        "because\nmembers are replaced. Read this figure before the rest: it is the bound "
+        "on every claim the others make.",
         xlabel="Members",
     )
     ax.legend(

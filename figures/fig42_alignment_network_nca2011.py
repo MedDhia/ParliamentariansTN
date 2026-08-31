@@ -259,7 +259,7 @@ def main() -> None:
 
     S.titles(
         ax,
-        "Every bloc's members vote closest to their own — and the biggest bloc least distinctively",
+        "Every bloc votes closest to its own — the biggest least distinctively",
         f"Each of the {n} members of the 2011 Constituent Assembly is joined to "
         f"their {K} closest voting alignments: the colleagues they voted with "
         f"most often\nacross the contested divisions both cast. Edge width and "

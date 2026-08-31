@@ -98,7 +98,7 @@ def main() -> None:
     ax.set_xlabel("Bloc joined", fontsize=8.4)
     S.titles(
         ax,
-        "Bloc-to-bloc moves within the 2014–2019 chamber",
+        "Nidaa Tounes' members disperse rather than relocate",
         f"{meta['n_moves']} moves by {meta['n_switchers']} of {meta['n_members']} members. "
         f"Blank = no move. The {len(hidden)} least-involved blocs are omitted\n"
         f"({n_hidden_moves} moves). Timing is bracketed to the interval between web "

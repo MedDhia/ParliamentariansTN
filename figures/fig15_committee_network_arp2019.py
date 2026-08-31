@@ -22,6 +22,6 @@ if __name__ == "__main__":
     NET.draw(
         "ARP-2019",
         "fig15_committee_network_arp2019",
-        "Committee co-membership: 2019–2021 chamber",
+        "Nine blocs, and committee seats still do not track bloc",
         note="Every tie is date-verified from published committee spells.",
     )

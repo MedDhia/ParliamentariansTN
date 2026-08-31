@@ -107,7 +107,7 @@ def main() -> None:
     )
     S.titles(
         ax,
-        "Continuity across the democratic chambers",
+        "No chamber draws a quarter of its members from the last",
         "Each chamber's recorded members, split by whether they also sat in the chamber "
         "immediately before.\nOnly consecutive pairs count here, so someone who sat in 2011 "
         "and 2023 but not 2019 is “new” in 2023;\nfigure 10 gives every pair.",

@@ -99,22 +99,26 @@ def main() -> None:
     S.titles(
         ax,
         "After the shock: blocs loosen, and reliable cross-bloc allies mostly vanish",
-        f"The same {len(data['members'])} members, positions, threshold and "
-        f"division count as figure 44, over the {days} sitting days after the "
-        f"chamber resumed contested\nbusiness. Mean within-bloc agreement falls "
+        f"Voting affinity in the 2011 Constituent Assembly over the {days} sitting "
+        f"days after it resumed contested business, following the assassination\nof "
+        f"Mohamed Brahmi on 25 July 2013. An edge joins two of the "
+        f"{len(data['members'])} members who voted the same way on at least "
+        f"{C.THRESHOLD:.0%} of the divisions both\ncast — same members, same "
+        f"positions, same threshold and same division count as figure 44, which "
+        f"draws the window before. Mean within-bloc\nagreement falls "
         f"{before_w:.3f} to {after_w:.3f} while cross-bloc agreement does not "
         f"move ({before_c:.3f} to {after_c:.3f}): blocs loosened rather than "
-        f"closing ranks,\nwhich is what neither the polarisation account "
+        f"closing ranks, which is what\nneither the polarisation account "
         f"(within up, cross down) nor the elite-settlement account (cross up) "
-        f"predicts. Ties at the {C.THRESHOLD:.0%} threshold fall from "
-        f"{bw + bc:,} to\n{aw + ac:,}, and unevenly — within-bloc down "
+        f"predicts. Ties at the {C.THRESHOLD:.0%} threshold fall\nfrom "
+        f"{bw + bc:,} to {aw + ac:,}, and unevenly — within-bloc down "
         f"{1 - aw / bw:.0%}, cross-bloc down {1 - ac / bc:.0%}. Steady average "
-        "cross-bloc agreement hides the loss of its upper tail: a member could "
-        "still expect to\nagree with someone from another bloc two thirds of the "
-        "time, and could no longer expect any of them to be a dependable ally. "
-        "The next 32 sitting days look\nthe same, so this is not a transient — "
-        "but the National Dialogue and a change of government sit in the same "
-        "gap, so read this as a before-and-after, not a cause.",
+        "cross-bloc agreement hides the loss of its upper\ntail: a member could "
+        "still expect to agree with someone from another bloc two thirds of the "
+        "time, and could no longer expect any of them to be a\ndependable ally. "
+        "The next 32 sitting days look the same, so this is not a transient — but "
+        "the National Dialogue and a change of government sit in the\nsame gap, "
+        "so read this as a before-and-after, not a cause.",
     )
     S.source_note(fig, "ParliamentariansTN · votes.csv × vote_positions.csv")
 

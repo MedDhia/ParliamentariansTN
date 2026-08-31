@@ -183,7 +183,7 @@ def main() -> None:
 
     S.titles(
         ax,
-        "Written-question co-signature, chamber elected in 2023",
+        "Committee seats ignore bloc; co-signatures follow it",
         f"{len(connected)} of {graph.number_of_nodes()} deputies co-signed at least one "
         f"question with another; {graph.number_of_edges():,} ties.\nFrom 6,332 written "
         "questions, of which only 78 carry more than one signatory — joint filing is rare. "

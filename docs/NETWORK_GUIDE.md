@@ -163,7 +163,7 @@ their missingness before reporting any statistic.
 
 ## Cautions worth repeating
 
-- **Coverage is not random.** Six chambers have person-level data; eleven have
+- **Coverage is not random.** Six chambers have person-level data; twelve have
   only their speaker. Any network claim about "Tunisian parliamentarians" is a
   claim about 1956, 2005-2011, 2011-2014, 2014-2019, 2019-2021 and 2023-present
   unless you say otherwise.

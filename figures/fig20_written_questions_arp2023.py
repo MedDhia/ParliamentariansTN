@@ -75,7 +75,7 @@ def main() -> None:
     S.frame(ax, x_grid=True, y_grid=False)
     S.titles(
         ax,
-        "Written questions filed: the twenty most active deputies",
+        "Twenty of 154 deputies file 42% of the chamber's written questions",
         f"{total:,} filings by {len(rows)} deputies in the chamber elected in 2023. "
         f"These twenty account for {top_share:.0f}% of them;\nthe median deputy filed "
         f"{median:.0f}. Counted per signer, so the 78 jointly signed questions are "

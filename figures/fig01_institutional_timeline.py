@@ -119,10 +119,14 @@ def main() -> None:
 
     S.titles(
         ax,
-        "Nineteen chamber-terms, 1956–2026",
-        "Bar length is the period actually sat; the faded tail is the term the chamber "
-        "was seated for but never served.\nNumbers at the bar end are nominal seats. "
-        "Blue = members recorded individually in this dataset; grey = institutional frame only.",
+        "Five of nineteen chamber-terms have a roster; thirteen do not",
+        "One bar per chamber-term of the Tunisian parliament, 1956–2026, in date order. "
+        "Bar length is the period actually\nsat; the faded tail is the term the chamber was "
+        "seated for but never served — the 2019 assembly's whole story, frozen\nin July 2021 "
+        "and nominally seated to 2024. Numbers at the bar end are nominal seats. Blue = "
+        "members recorded\nindividually here; grey = institutional frame only. Regime eras "
+        "run along the top, so the one colour channel stays\nwith the thing a reader of this "
+        "dataset most needs: whether a chamber exists here as people or only as a name.",
     )
     ax.legend(
         handles=[

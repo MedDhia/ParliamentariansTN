@@ -22,6 +22,6 @@ if __name__ == "__main__":
     NET.draw(
         "ARP-2023",
         "fig16_committee_network_arp2023",
-        "Committee co-membership: chamber elected in 2023",
+        "The sparsest committee network, and bloc explains none of it",
         note="Blocs here formed inside parliament, not at the election.",
     )

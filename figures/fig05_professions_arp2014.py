@@ -71,7 +71,7 @@ def main() -> None:
     S.frame(ax, x_grid=True, y_grid=False)
     S.titles(
         ax,
-        "Occupation before parliament: the 2014–2019 chamber",
+        "Lawyers and teachers lead; almost none from agriculture",
         f"Al Bawsala's own occupational categories, glossed into English for display. "
         f"{total} of {len(members)} members coded; "
         f"{n_missing} not recorded.\nThe smallest categories are folded into one bucket "

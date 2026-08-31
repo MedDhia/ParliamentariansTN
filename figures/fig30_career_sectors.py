@@ -87,7 +87,7 @@ def main() -> None:
 
     S.titles(
         ax,
-        "Teachers and judges — from the 13% of the dataset with any career recorded",
+        "Teachers and judges, from the 13% with any career recorded",
         f"Extra-parliamentary roles by sector: {len(careers)} roles for "
         f"{people} people out of {total_persons:,} in the dataset. All of them "
         "come from one source, the 2011\nassembly's narrative biographies, so "

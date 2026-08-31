@@ -72,7 +72,7 @@ def main() -> None:
     S.integer_axis(ax, "y")
     S.titles(
         ax,
-        "Birth years, 2011 Constituent Assembly",
+        "Three in five of the 2011 assembly were born before 1970",
         f"{len(years)} of {len(members)} members state a date of birth "
         f"({precision['day']} to the day, {precision['year']} to the year only).\n"
         "Drawn for this chamber alone: the 2014 and 2019 sources publish an age with no "

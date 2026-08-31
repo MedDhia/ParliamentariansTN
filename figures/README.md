@@ -328,7 +328,7 @@ dropped, and 9 why the ribbons were.
 ## Two caveats that apply to the whole set
 
 **Coverage is uneven and not random.** Five chambers have person-level data;
-eleven have only their presiding officer. Any figure aggregating "Tunisian
+twelve have only their presiding officer. Any figure aggregating "Tunisian
 parliamentarians" is describing 1956, 2011–14, 2014–19, 2019–21 and 2023–.
 See `docs/COVERAGE.md`.
 

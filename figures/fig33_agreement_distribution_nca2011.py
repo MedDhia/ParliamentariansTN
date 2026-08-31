@@ -84,7 +84,7 @@ def main() -> None:
     S.titles(
         ax,
         "Bloc predicts agreement sharply — and 92% of cross-bloc pairs still agree",
-        f"Every scored pair of members ({len(dyads):,} of the 23,436 possible), by "
+        f"Every scored pair of members of the 2011 Constituent Assembly ({len(dyads):,} of the 23,436 possible), by "
         "the share of contested divisions on which the two voted the same way. "
         "The two distributions\nseparate strongly — Cohen's d 1.36, and only 0.9% "
         "of cross-bloc pairs reach the within-bloc median — yet 92% of cross-bloc "

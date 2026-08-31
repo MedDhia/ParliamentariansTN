@@ -112,7 +112,8 @@ def main() -> None:
     S.titles(
         ax,
         "Ennahdha voted closest with the partners it co-sponsored least with",
-        "Mean agreement on contested divisions between every pair of blocs, "
+        "Mean agreement on contested divisions between every pair of blocs in the 2011 "
+        "Constituent Assembly, "
         f"averaged over member pairs. Blue is above the chamber-wide mean of "
         f"{overall:.2f},\norange below. The matrix is symmetric: columns are the "
         "same blocs as the rows, numbered. This is deliberately figure 22's form "

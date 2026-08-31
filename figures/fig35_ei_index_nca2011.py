@@ -108,7 +108,8 @@ def main() -> None:
     S.titles(
         ax,
         "Every bloc coheres more than chance — Ennahdha by an order of magnitude",
-        "Krackhardt–Stern E-I index on the vote-agreement graph — (external − "
+        "Krackhardt–Stern E-I index on the 2011 Constituent Assembly's vote-agreement "
+        "graph — (external − "
         "internal) / (external + internal) over each bloc's ties. −1 is a group "
         "whose ties all\nstay inside it. The grey bar is the middle 95% of a null "
         f"that reassigns bloc labels at random {DRAWS} times while holding every "

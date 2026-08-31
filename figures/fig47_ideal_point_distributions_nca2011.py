@@ -189,9 +189,8 @@ def main() -> None:
                       va="bottom", color=S.CHROME["text_primary"], zorder=60)
     ax_b.set_yticks([])
     ax_b.set_ylim(-0.15, len(order) * step + 0.15)
-    ax_b.set_title(S.label("B · Every bloc, ordered by median. The largest sits "
-                           "further from its nearest neighbour than the other "
-                           "seven span between them"),
+    ax_b.set_title(S.label("B · Every bloc by median. The largest sits further "
+                           "from its neighbour than the other seven span"),
                    loc="left", fontsize=9.8, color=S.CHROME["text_primary"], pad=6)
     S.frame(ax_b, y_grid=False)
 
