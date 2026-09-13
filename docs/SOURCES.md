@@ -414,6 +414,19 @@ Chamber of Deputies position; Arabic Wikipedia, which has a members category for
 1956 but none for later chambers. The route is archival — see
 `RECONSTRUCTION_PROTOCOL.md`.
 
+Since that search was made, the archival route has got shorter without becoming
+a collectable one. **`jort.tn`**, an independent mirror of the *Journal Officiel*,
+publishes 22,395 issues and 338,000+ OCR'd pages covering 1957 to the present —
+the whole of the gap — free to consult and searchable by full text. It is not
+added as a source here, because its `robots.txt` (on the site and on both its
+`ocr.` and `lake.` data hosts) disallows automated agents and closes `/api/`
+and every search-result URL to all of them, with a content signal of
+`ai-train=no, use=reference`. Treat it as a reading room that no longer requires
+a flight, not as an endpoint: a researcher can work the proclamations of results
+issue by issue and stage the rows by hand. The official publisher, `iort.tn`,
+carries the same material behind a session-bound WEBDEV application with no
+stable URLs.
+
 **Bloc switching in 2011-2014 and 2019-2021.** *Bloc* switching is observable
 for the 2014-2019 chamber (from archived captures) and for the sitting chamber
 (from `arp.tn`, which publishes appointment and departure dates), but not for
