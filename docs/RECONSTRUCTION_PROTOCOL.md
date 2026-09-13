@@ -65,8 +65,27 @@ constituency, which names every returned member, and subsequently records
 resignations, deaths, replacements and the composition of the bureau. Before 1957
 it appears as the *Journal Officiel Tunisien*. Holdings: the Imprimerie
 Officielle de la République Tunisienne, with partial runs in the Bibliothèque
-Nationale de Tunisie. Coverage of digitised issues is incomplete and varies by
-decade; assume on-site consultation is required.
+Nationale de Tunisie.
+
+A full run is now readable online, which an earlier version of this protocol
+said to assume it was not. **`jort.tn`** is an independent digital archive that
+mirrors the JORT from 1957 to the present — it advertises 22,395 issues and over
+338,000 OCR'd pages across the Journal Officiel (1957–), the Annonces Légales
+(2004–) and the Tribunal Immobilier (2000–), free to consult and searchable by
+full text. That covers the whole of the 1959–2011 gap. The official publisher's
+own site, `iort.tn`, holds the same material but serves it through a
+session-bound WEBDEV application that cannot be addressed by stable URL.
+
+**`jort.tn` may be read by a person, not harvested by a program.** Its
+`robots.txt` — on `jort.tn`, `ocr.jort.tn` and `lake.jort.tn` alike — disallows
+a list of automated agents outright, and disallows `/api/` and every
+search-result URL (`?q=`, `?page=`, `?year=`, and the rest) for *all* agents. Its
+content signal is `ai-train=no, use=reference`. So the archive shortens the trip
+to the reading room; it does not turn this into a scraping task. Anyone
+extracting rosters from it should work through the site as a reader, cite issue
+number and date per the provenance rule below, and — if bulk access is genuinely
+needed — ask the operator through the site's contact page rather than route
+around the file.
 
 **2. The chamber's own library and archive.** `bibliotheque.arp.tn` and
 `archive.arp.tn` (the Hichem Djaït library) hold the chamber's deliberation
@@ -110,6 +129,31 @@ not romanise by hand: `ids.romanize_arabic` handles the fallback and the codeboo
 records which rows were machine-romanised. Where the source itself supplies a
 French spelling (the JORT often does), record it as `name_lat` — a
 source-supplied romanisation always outranks a generated one.
+
+**Name similarity is a risk in both directions, and the matcher is currently
+tuned against only one of them.** A JORT full-text search returns every
+occurrence of a string across seventy years and three collections — including
+the Annonces Légales, where the same name belongs to private citizens with no
+connection to any chamber. A hit is not a deputy: nothing but the surrounding
+decree establishes that. Tunisian naming makes this worse rather than better —
+`examples/surname_persistence.py` finds that the share of post-2011 deputies
+carrying a 1956 deputy's surname (6.9%) is *below* the chance baseline (9.2%),
+so surname overlap carries no information about descent at all.
+
+The opposite error is already present in the built data. `build.py` refuses a
+cross-chamber merge whenever both records carry a Latin name and the two
+romanisations disagree — a guard against false merges that, because French
+transliteration of Tunisian Arabic is not standardised, produces false *splits*.
+Nine pairs of persons in `persons.csv` share a byte-identical `name_normalised`
+and are nonetheless held apart on spellings like *Khmais Ksila* / *Khemais
+Ksila*, *Iyed Dahmani* / *Iyad Dahmani*, *Monia Ibrahim* / *Monia Brahim*. None
+of the nine surfaces for review, because `_match_review.csv` logs the merges the
+builder *made* and never the ones it declined — a refusal leaves no trace. A
+tenth pair shares a name within one chamber, where the builder is right to
+refuse. Expect archival rows, which supply their own French spelling, to hit
+this guard; check a new name against `name_normalised` before concluding the
+person is new, and record a birth date wherever the source gives one — it is the
+only field that settles the question, and just 16% of persons currently have it.
 
 **Dates.** Use the date the source states, at the precision the source states.
 If only a year is known, write `YYYY-01-01` and set the companion precision
