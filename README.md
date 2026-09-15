@@ -62,10 +62,12 @@ make collect
 ```
 
 Worked examples: `examples/example_python.py` (networkx) and
-`examples/example_r.R` (igraph). Two analyses runnable on the committed data:
+`examples/example_r.R` (igraph). Three analyses runnable on the committed data:
 `examples/surname_persistence.py` (long-run elite persistence, with its null
-model and a power simulation) and `examples/voting_space.py` (whether the 2011
-chamber's voting axis is more than Ennahdha membership).
+model and a power simulation), `examples/voting_space.py` (whether the 2011
+chamber's voting axis is more than Ennahdha membership) and
+`examples/latin_veto_impact.py` (what the matcher's romanisation guard costs the
+continuity measures — it rebuilds the dataset both ways and diffs them).
 
 Fifty descriptive and exploratory figures, each with its numbers as a companion
 CSV, are in [`figures/`](figures/README.md):
@@ -328,10 +330,20 @@ away.
   hand-coding rather than a finished career history. The `shared_organisation`
   network layer inherits that uncertainty.
 - **Cross-source person matches are recorded, not assumed.** Every match is
-  listed with its method in `data/processed/_match_review.csv` for audit — 94
-  matches over 80 people, of whom 14 were matched to more than one source.
+  listed with its method in `data/processed/_match_review.csv` for audit — 95
+  matches over 81 people, of whom 14 were matched to more than one source.
   Matching never collapses two members of the same chamber on a name alone,
   because Tunisian homonyms are common.
+- **That conservatism has a measured cost, and it runs the other way.**
+  Requiring two sources' romanisations to agree splits eleven people who are
+  almost certainly one each — *Khmais* and *Khemais Ksila*, *Monia Ibrahim* and
+  *Monia Brahim* — on an exact Arabic-key match. All eleven are listed in
+  `data/processed/_latin_veto_report.csv`. `--relax-latin-veto` accepts them,
+  and `examples/latin_veto_impact.py` shows the default build is therefore
+  missing a tenth of all multi-chamber careers (85 rather than 94). The flag is
+  off by default because it reassigns `person_id` values; the shipped tables are
+  the conservative build, so **treat re-election and career-length figures as
+  lower bounds.**
 - **Bloc switching is measured for two chambers only.** ARP-2014 — 108 of the 238
   members with a recorded bloc history changed bloc, reconstructed by diffing
   monthly web captures, so boundaries are bracketed not exact — and ARP-2023,

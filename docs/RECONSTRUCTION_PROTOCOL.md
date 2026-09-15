@@ -144,16 +144,25 @@ The opposite error is already present in the built data. `build.py` refuses a
 cross-chamber merge whenever both records carry a Latin name and the two
 romanisations disagree — a guard against false merges that, because French
 transliteration of Tunisian Arabic is not standardised, produces false *splits*.
-Nine pairs of persons in `persons.csv` share a byte-identical `name_normalised`
-and are nonetheless held apart on spellings like *Khmais Ksila* / *Khemais
-Ksila*, *Iyed Dahmani* / *Iyad Dahmani*, *Monia Ibrahim* / *Monia Brahim*. None
-of the nine surfaces for review, because `_match_review.csv` logs the merges the
-builder *made* and never the ones it declined — a refusal leaves no trace. A
-tenth pair shares a name within one chamber, where the builder is right to
-refuse. Expect archival rows, which supply their own French spelling, to hit
-this guard; check a new name against `name_normalised` before concluding the
-person is new, and record a birth date wherever the source gives one — it is the
-only field that settles the question, and just 16% of persons currently have it.
+**Eleven** pairs of persons are held apart this way, each on an exact
+Arabic-key match: *Khmais* / *Khemais Ksila*, *Iyed* / *Iyad Dahmani*, *Monia
+Ibrahim* / *Monia Brahim*, *Fadhel Ouej* / *Fadhel Elouej*, *Walid Bennani* /
+*Walid Banneni*, and six more. Every refusal is now listed in
+`data/processed/_latin_veto_report.csv`; before that file existed none of them
+surfaced anywhere, because `_match_review.csv` logs the merges the builder
+*made* and never the ones it declined.
+
+`build.py --relax-latin-veto` accepts these merges, and
+`examples/latin_veto_impact.py` measures what that changes: 968 persons become
+957, and the count of people serving in more than one chamber rises from 85 to
+94. The veto is suppressing **a tenth of all multi-chamber careers**, and
+NCA-2011 → ARP-2014 continuity with it, from 13% to 15%. The flag defaults to
+off because turning it on reassigns `person_id` values.
+
+Expect archival rows, which supply their own French spelling, to hit this
+guard; check a new name against `name_normalised` before concluding the person
+is new, and record a birth date wherever the source gives one — it is the only
+field that settles the question, and just 16% of persons currently have it.
 
 **Dates.** Use the date the source states, at the precision the source states.
 If only a year is known, write `YYYY-01-01` and set the companion precision
