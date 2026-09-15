@@ -18,11 +18,21 @@ normalised Arabic name keys agree, and where both sources supply a Latin name
 those must agree too. Tunisian naming makes homonyms common, so a name match
 inside a single chamber is never treated as the same person: two members of one
 assembly with the same name are two people until a human says otherwise.
+
+That conservatism is one-sided, and the cost is measured rather than assumed.
+Requiring the romanisations to agree guards against a false merge but causes a
+false split whenever two sources transliterate one name differently, which for
+Tunisian Arabic is often. Every such refusal is now written to
+``data/processed/_latin_veto_report.csv`` whether or not it was acted on, and
+``--relax-latin-veto`` accepts the merge on an exact Arabic-key match alone.
+The flag is a prototype and defaults to off: turning it on reassigns
+``person_id`` values, which every figure and derived table is keyed on.
 """
 
 from __future__ import annotations
 
 import argparse
+import os
 from collections import Counter, defaultdict
 from typing import Any, Iterable
 
@@ -67,6 +77,18 @@ SOURCE_PRIORITY = [
 MAX_NAME_ONLY_MERGE_YEARS = 40
 
 
+# How much a merge is worth trusting, by the evidence that produced it. Derived
+# from the method name rather than guessed at from its spelling: the relaxed
+# method below agrees on Arabic and *disagrees* on Latin, and a substring test
+# for "ar" and "lat" reads that as the strongest case instead of the weakest.
+MERGE_CONFIDENCE = {
+    "normalised_name_ar+lat": "high",
+    "normalised_name_ar": "medium",
+    "normalised_name_lat": "medium",
+    "normalised_name_ar-latin_disagrees": "low",
+}
+
+
 def _priority(source_id: str) -> int:
     try:
         return SOURCE_PRIORITY.index(source_id)
@@ -75,7 +97,11 @@ def _priority(source_id: str) -> int:
 
 
 class Builder:
-    def __init__(self) -> None:
+    def __init__(self, *, relax_latin_veto: bool = False) -> None:
+        # Prototype switch for the Latin-spelling veto in ``resolve_person``.
+        # Off by default because turning it on reassigns person_id values, and
+        # every figure and derived table is keyed on those.
+        self.relax_latin_veto = relax_latin_veto
         self.assemblies = {r["assembly_id"]: r for r in read_table("assemblies", REFERENCE)}
         self.governorates = list(read_table("governorates", REFERENCE))
         self.parties_ref = list(read_table("parties", REFERENCE))
@@ -98,6 +124,7 @@ class Builder:
         self.xref: list[dict[str, Any]] = []
         self.match_review: list[dict[str, Any]] = []
         self.rejected_merges: list[dict[str, Any]] = []
+        self.latin_vetoes: list[dict[str, Any]] = []
         self.provenance: list[dict[str, Any]] = []
 
         # match indices: key -> [(person_id, assembly_id, source_id, name)]
@@ -184,6 +211,55 @@ class Builder:
         })
         return True
 
+    def _collapse_duplicates(self) -> None:
+        """Fold rows that a person merge turned into duplicates of each other.
+
+        Merging two records that each carried a mandate in the same assembly
+        leaves one person holding that seat twice, and the same field recorded
+        twice in ``provenance``. Nothing upstream produces those duplicates, so
+        with the Latin veto in force this is a no-op; it exists because
+        relaxing the veto is what creates them. Rows are folded, never dropped
+        silently: the first row wins and every source it absorbed is kept in
+        ``source_ids``, so a merged seat still names both sources that saw it.
+        """
+        seats: dict[tuple[str, str], dict[str, Any]] = {}
+        folded = 0
+        for row in self.mandates:
+            key = (row["person_id"], row["assembly_id"])
+            kept = seats.get(key)
+            if kept is None:
+                seats[key] = row
+                continue
+            folded += 1
+            existing = [s for s in kept.get("source_ids", "").split(";") if s]
+            for src in row.get("source_ids", "").split(";"):
+                if src and src not in existing:
+                    existing.append(src)
+            kept["source_ids"] = ";".join(existing)
+            # Keep any field the winning row left empty. A weaker source that
+            # recorded a constituency is better than no constituency.
+            for field, value in row.items():
+                if value and not kept.get(field):
+                    kept[field] = value
+        if folded:
+            self.mandates = list(seats.values())
+
+        seen: set[tuple[str, str, str, str]] = set()
+        unique_provenance = []
+        for row in self.provenance:
+            key = (row["table_name"], row["record_id"],
+                   row["field_name"], row["source_id"])
+            if key in seen:
+                continue
+            seen.add(key)
+            unique_provenance.append(row)
+        dropped = len(self.provenance) - len(unique_provenance)
+        self.provenance = unique_provenance
+
+        if folded or dropped:
+            log(f"person merges collapsed {folded} duplicate mandate(s) and "
+                f"{dropped} duplicate provenance row(s)")
+
     def resolve_person(self, rec: dict[str, Any], source_id: str, assembly_id: str) -> str:
         """Return the person_id for a staged record, matching across sources."""
         existing = self.persons.get(source_id, rec["source_key"])
@@ -205,9 +281,30 @@ class Builder:
                     continue
                 # If both sides have a Latin name, require it to agree too.
                 other_lat = self.person_fields[pid].get("name_lat")
-                if lat_key and other_lat:
-                    if latin_match_key(other_lat[1]) != lat_key:
+                if lat_key and other_lat and latin_match_key(other_lat[1]) != lat_key:
+                    # The Arabic keys agree exactly and the romanisations do
+                    # not. This guard exists to stop a false merge, but French
+                    # transliteration of Tunisian Arabic is not standardised —
+                    # Khmais/Khemais, Iyed/Iyad, Ibrahim/Brahim are one name —
+                    # so it also produces false splits. Record every refusal
+                    # either way: with the veto in force this list is the only
+                    # trace the merge was ever considered.
+                    self.latin_vetoes.append({
+                        "kept_person_id": pid,
+                        "kept_assembly_id": a_id,
+                        "kept_name_lat": other_lat[1],
+                        "incoming_source": source_id,
+                        "incoming_source_key": rec["source_key"],
+                        "incoming_assembly_id": assembly_id,
+                        "incoming_name_lat": name_lat,
+                        "name_ar": name_ar,
+                        "arabic_key": ar_key,
+                        "merged": "yes" if self.relax_latin_veto else "no",
+                    })
+                    if not self.relax_latin_veto:
                         continue
+                    candidate = (pid, "normalised_name_ar-latin_disagrees")
+                elif lat_key and other_lat:
                     candidate = (pid, "normalised_name_ar+lat")
                 else:
                     candidate = (pid, "normalised_name_ar")
@@ -232,7 +329,7 @@ class Builder:
                 "matched_name_lat": name_lat,
                 "assembly_id": assembly_id,
                 "method": method,
-                "confidence": "high" if "lat" in method and "ar" in method else "medium",
+                "confidence": MERGE_CONFIDENCE.get(method, "medium"),
                 "action_required": "confirm this is the same person",
             })
         else:
@@ -799,6 +896,7 @@ class Builder:
                 })
 
     def write_all(self) -> None:
+        self._collapse_duplicates()
         write_table(schema.ASSEMBLIES, list(self.assemblies.values()))
         write_table(schema.GOVERNORATES, self.governorates)
         write_table(schema.CONSTITUENCIES, sorted(
@@ -834,15 +932,28 @@ class Builder:
             )
         log(f"cross-source person merges needing review: {len(self.match_review)}")
 
+        # Written whether or not the veto was relaxed, so a refused merge is
+        # auditable rather than invisible. ``merged`` says which it was.
+        if self.latin_vetoes:
+            write_rows(
+                PROCESSED / "_latin_veto_report.csv",
+                list(self.latin_vetoes[0].keys()),
+                self.latin_vetoes,
+            )
+            held = sum(1 for v in self.latin_vetoes if v["merged"] == "no")
+            log(f"Arabic-key matches with disagreeing romanisations: "
+                f"{len(self.latin_vetoes)} ({held} held apart, "
+                f"{len(self.latin_vetoes) - held} merged)")
 
-def build() -> Builder:
+
+def build(*, relax_latin_veto: bool = False, write: bool = True) -> Builder:
     docs = all_staging()
     if not docs:
         raise SystemExit(
             "no staging documents found in data/raw. Run the collectors first "
             "(see `make collect` or python -m parliamentarians_tn.collect.<source>)."
         )
-    b = Builder()
+    b = Builder(relax_latin_veto=relax_latin_veto)
     # Ingest in source-priority order so that the authoritative naming of a
     # person is established before a weaker source tries to match against it.
     docs.sort(key=lambda d: _priority(d["source_id"]))
@@ -853,14 +964,30 @@ def build() -> Builder:
     # only resolve to person_ids once every roster has been through the first.
     for doc in docs:
         b.ingest_activity(doc)
-    b.write_all()
+    if write:
+        b.write_all()
+    else:
+        # Comparing two matcher settings needs both builds in one process
+        # without either overwriting data/processed. The collapse step runs
+        # either way, since it is part of what a merge produces.
+        b._collapse_duplicates()
     return b
 
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.parse_args()
-    b = build()
+    ap.add_argument(
+        "--relax-latin-veto",
+        action="store_true",
+        default=os.environ.get("TNP_RELAX_LATIN_VETO") == "1",
+        help="merge two records whose normalised Arabic names agree exactly "
+             "even where their romanisations disagree. PROTOTYPE: this "
+             "reassigns person_id values, so the figures and any saved "
+             "analysis keyed on them must be rebuilt together. Default off; "
+             "set TNP_RELAX_LATIN_VETO=1 to default it on.",
+    )
+    args = ap.parse_args()
+    b = build(relax_latin_veto=args.relax_latin_veto)
     for rejected in b.rejected_merges:
         log(f"  name-only merge refused: {rejected['assembly_a']} and "
             f"{rejected['assembly_b']} are {rejected['years_apart']} years apart")

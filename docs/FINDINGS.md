@@ -86,6 +86,16 @@ the 2023 chamber draws **3%**.
 chamber only; 68 in two; 14 in three; 2 in four or more.
 · *Figure 8 · `fig08_chambers_served.csv`*
 
+**Every number in this section is a lower bound.** The builder refuses to merge
+two records whose romanisations disagree, which splits eleven people who are
+almost certainly one each (`data/processed/_latin_veto_report.csv`). Rebuilding
+with `--relax-latin-veto` raises people-in-more-than-one-chamber from 85 to 94
+and NCA-2011 → ARP-2014 continuity from 12.6% to 15.1%; the other two
+transitions move by at most one person. A split deputy cannot be seen returning,
+so the bias only ever runs one way — against continuity. The shipped tables are
+the conservative build.
+· *Reproduce with `python examples/latin_veto_impact.py`*
+
 **A pairwise overlap is not a skip count.** 13 people sat in both 2011 and 2019 —
 but 12 of them also sat in 2014. Exactly **one** member left and returned.
 Compute skip patterns from `mandates.csv`, not from the matrix.
