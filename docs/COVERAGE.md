@@ -1,6 +1,6 @@
 # Coverage
 
-Generated from the built data on 2026-08-30. Run `make codebook` to refresh.
+Generated from the built data on 2026-09-19. Run `make codebook` to refresh.
 
 This is the document to read before using the dataset for anything comparative. Coverage is deeply uneven, and the unevenness is not random: it tracks what Tunisian institutions and civic monitors chose to publish, which in turn tracks the political openness of each period. Any analysis pooling across chambers is implicitly comparing well-documented democratic terms with barely-documented authoritarian ones, and needs to say so.
 
@@ -22,7 +22,7 @@ This is the document to read before using the dataset for anything comparative. 
 | `COD-2004` | 2004–2009 | 189 | 1 | 1% | 0 | 0 | 0 | frame_only |
 | `COD-2009` | 2009–2011 | 214 | 1 | 0% | 0 | 0 | 0 | frame_only |
 | `NCA-2011` | 2011–2014 | 217 | 217 | 100% | 448 | 217 | 213 | full |
-| `ARP-2014` | 2014–2019 | 217 | 246 | 113% | 985 | 478 | 0 | full |
+| `ARP-2014` | 2014–2019 | 217 | 245 | 113% | 985 | 478 | 0 | full |
 | `ARP-2019` | 2019–2021 | 217 | 216 | 100% | 357 | 216 | 216 | full |
 | `ARP-2023` | 2023–present | 161 | 155 | 96% | 324 | 205 | 154 | full |
 | `CNRD-2023` | 2024–present | 77 | 0 | 0% | 0 | 0 | 0 | frame_only |
@@ -35,19 +35,19 @@ This is the document to read before using the dataset for anything comparative. 
 
 ## Attribute completeness, persons table
 
-| Attribute | Non-empty | of 968 persons |
+| Attribute | Non-empty | of 957 persons |
 | --- | --- | --- |
-| `name_ar` | 968 | 100% |
-| `name_lat` | 968 | 100% |
-| `gender` | 742 | 77% |
-| `birth_date` | 158 | 16% |
+| `name_ar` | 957 | 100% |
+| `name_lat` | 957 | 100% |
+| `gender` | 731 | 76% |
+| `birth_date` | 158 | 17% |
 | `birth_place_ar` | 114 | 12% |
 | `birth_governorate_id` | 68 | 7% |
-| `occupation_raw` | 227 | 23% |
+| `occupation_raw` | 226 | 24% |
 | `biography_ar` | 222 | 23% |
 | `marital_status` | 62 | 6% |
 | `languages` | 47 | 5% |
-| `education_raw` | 217 | 22% |
+| `education_raw` | 217 | 23% |
 | `wikidata_qid` | 0 | 0% |
 
 Persons with at least one extracted career row: 114.

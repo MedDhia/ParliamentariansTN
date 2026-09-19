@@ -9,7 +9,7 @@ means substantively, what the projection choices are, and where the traps are.
 
 | File | Shape | Rows | What a tie means |
 | --- | --- | --- | --- |
-| `nodes.csv` | node attributes | 856 | one parliamentarian |
+| `nodes.csv` | node attributes | 957 | one parliamentarian |
 | `bipartite_person_committee.csv` | incidence | 1,129 | this person sat on this committee |
 | `bipartite_person_bloc.csv` | incidence | 1,116 | this person belonged to this bloc |
 | `edges_committee_comembership.csv` | projection | 8,687 | co-served on a committee, same chamber, overlapping in time |
@@ -83,7 +83,7 @@ partition, not a network. It is most useful as a *covariate* (are these two in
 the same bloc?) rather than as an object of analysis.
 
 For *defection*, the picture is now uneven in a way worth knowing precisely.
-Switching is observable for **ARP-2014** (108 of 246 members changed bloc,
+Switching is observable for **ARP-2014** (107 of 245 members changed bloc,
 reconstructed by diffing monthly web captures) and for **ARP-2023** (44 members,
 from dates the chamber publishes itself). It is *not* observable for NCA-2011 or
 ARP-2019, whose sources publish a single end-of-term snapshot — so a zero there
@@ -147,8 +147,8 @@ Regional homophily is better computed from these attributes than from an edge
 list — an assortativity coefficient on `region` or `littoral` answers the
 question directly, and the coastal/interior cleavage is the one most likely to
 be substantively interesting. Watch the missingness: `birth_governorate_id` is
-present for only 68 of 856 people, whereas `governorate_id` (the constituency's
-governorate, not the person's origin) is present for 705. **These are different
+present for only 68 of 957 people, whereas `governorate_id` (the constituency's
+governorate, not the person's origin) is present for 737. **These are different
 variables.** Constituency governorate is where someone was elected; birth
 governorate is where they are from. Conflating them will produce a confident
 finding about the wrong thing.

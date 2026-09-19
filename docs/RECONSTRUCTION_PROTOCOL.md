@@ -140,20 +140,32 @@ decree establishes that. Tunisian naming makes this worse rather than better —
 carrying a 1956 deputy's surname (6.9%) is *below* the chance baseline (9.2%),
 so surname overlap carries no information about descent at all.
 
-The opposite error is already present in the built data. `build.py` refuses a
-cross-chamber merge whenever both records carry a Latin name and the two
-romanisations disagree — a guard against false merges that, because French
-transliteration of Tunisian Arabic is not standardised, produces false *splits*.
-Nine pairs of persons in `persons.csv` share a byte-identical `name_normalised`
-and are nonetheless held apart on spellings like *Khmais Ksila* / *Khemais
-Ksila*, *Iyed Dahmani* / *Iyad Dahmani*, *Monia Ibrahim* / *Monia Brahim*. None
-of the nine surfaces for review, because `_match_review.csv` logs the merges the
-builder *made* and never the ones it declined — a refusal leaves no trace. A
-tenth pair shares a name within one chamber, where the builder is right to
-refuse. Expect archival rows, which supply their own French spelling, to hit
-this guard; check a new name against `name_normalised` before concluding the
-person is new, and record a birth date wherever the source gives one — it is the
-only field that settles the question, and just 16% of persons currently have it.
+The opposite error was in the built data until recently, and the fix is worth
+understanding before adding rows that will hit the same logic. `build.py` used
+to refuse a cross-chamber merge whenever both records carried a Latin name and
+the romanisations disagreed. Because French transliteration of Tunisian Arabic
+is not standardised, that guard produced false *splits* — and it fired
+precisely where the Arabic evidence was strongest, on an exact Arabic-key match.
+**Eleven** pairs were held apart: *Khmais* / *Khemais Ksila*, *Iyed* / *Iyad
+Dahmani*, *Monia Ibrahim* / *Monia Brahim*, *Fadhel Ouej* / *Fadhel Elouej*,
+*Walid Bennani* / *Walid Banneni*, and six more. Read individually, every one
+was the same person twice, so the Arabic key now decides and the romanisations
+only report. Merging them took 968 persons to 957 and raised people serving in
+more than one chamber from 85 to 94 — **a tenth of all multi-chamber careers**
+— with NCA-2011 → ARP-2014 continuity going from 12.6% to 15.1%.
+
+Every such merge is still listed in `data/processed/_latin_veto_report.csv`,
+because agreeing on Arabic while disagreeing on Latin is the weakest evidence
+this pipeline acts on, and `build.py --strict-latin-match` rebuilds the old way
+so the size of the correction stays checkable
+(`examples/latin_veto_impact.py`).
+
+So an archival row supplying its own French spelling will now merge on the
+Arabic key alone, which is usually right and is exactly what makes it worth
+checking. Check a new name against `name_normalised` before concluding the
+person is new *or* that they are an existing one, and record a birth date
+wherever the source gives one — it is the only field that settles the question,
+and just 158 of 957 persons currently carry one.
 
 **Dates.** Use the date the source states, at the precision the source states.
 If only a year is known, write `YYYY-01-01` and set the companion precision

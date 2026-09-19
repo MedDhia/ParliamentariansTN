@@ -8,6 +8,6 @@ turnout,Ettakatol,12,4,0.5,0.4122,0.3422,0.5724,-0.07,,
 turnout,CPR,14,11,0.7857,0.5733,0.579,0.6806,0.0057,,
 turnout,Ennahdha,87,75,0.8966,0.7862,0.8044,0.8061,0.0183,,
 crisis_window_composition,Ennahdha x Ennahdha share of scoreable crisis pairs,4259,2223,0.522,,,,,,
-within_minus_cross_agreement,Before 25 Jul 2013,127,,,,,0.2119,,0.1668,0.2596
-within_minus_cross_agreement,"After, matched volume",127,,,,,0.1783,,0.0959,0.2712
-within_minus_cross_agreement,"After, all 864 divisions",127,,,,,0.1785,,0.1504,0.2102
+within_minus_cross_agreement,Before 25 Jul 2013,127,,,,,0.2119,,0.1698,0.2563
+within_minus_cross_agreement,"After, matched volume",127,,,,,0.1783,,0.0973,0.2737
+within_minus_cross_agreement,"After, all 864 divisions",127,,,,,0.1785,,0.1491,0.21

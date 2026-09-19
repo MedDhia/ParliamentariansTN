@@ -76,18 +76,30 @@ the 2023 chamber draws **3%**.
 | chamber | members | returning from previous | share |
 | --- | --- | --- | --- |
 | NCA-2011 | 217 | — | — |
-| ARP-2014 | 246 | 31 | 12.6% |
-| ARP-2019 | 216 | 50 | 23.1% |
+| ARP-2014 | 245 | 37 | 15.1% |
+| ARP-2019 | 216 | 51 | 23.6% |
 | ARP-2023 | 155 | **5** | **3.2%** |
 
 · *Figure 9 · `fig09_elite_flow.csv`*
 
-**Almost nobody sits more than twice.** 772 of 856 parliamentarians appear in one
-chamber only; 68 in two; 14 in three; 2 in four or more.
+**Almost nobody sits more than twice.** 863 of 957 parliamentarians appear in one
+chamber only; 77 in two; 15 in three; 2 in four or more.
 · *Figure 8 · `fig08_chambers_served.csv`*
 
-**A pairwise overlap is not a skip count.** 13 people sat in both 2011 and 2019 —
-but 12 of them also sat in 2014. Exactly **one** member left and returned.
+**These numbers depend on a matching rule, and the rule changed.** Until
+recently the builder refused to merge two records whose romanisations disagreed,
+even where their normalised Arabic names were identical. Read individually, all
+eleven records it held apart were the same person twice — *Khmais* and *Khemais
+Ksila*, *Monia Ibrahim* and *Monia Brahim* — so the rule now only reports, and
+the Arabic key decides. That merge is what moved continuity from 12.6% to 15.1%
+for 2011 → 2014 and people-in-more-than-one-chamber from 85 to 94. Every case is
+listed in `data/processed/_latin_veto_report.csv`, and `--strict-latin-match`
+rebuilds the old way, so the size of the correction stays checkable rather than
+having to be taken on trust.
+· *Reproduce with `python examples/latin_veto_impact.py`*
+
+**A pairwise overlap is not a skip count.** 17 people sat in both 2011 and 2019 —
+but 13 of them also sat in 2014. **Four** members left and returned.
 Compute skip patterns from `mandates.csv`, not from the matrix.
 · *Figure 10 · `fig10_chamber_overlap.csv`*
 
@@ -143,7 +155,7 @@ from Nidaa Tounes dissolving rather than from small blocs appearing at the
 margins.
 · *Figure 12 · `fig12_effective_blocs_arp2014.csv`* (Laakso–Taagepera, 1/Σs²)
 
-**108 of the 238 members with a recorded bloc history changed bloc**, across 240
+**107 of the 237 members with a recorded bloc history changed bloc**, across 241
 moves. Nidaa's members disperse rather than relocating together — 28 to Al Horra,
 21 to the National Coalition, 16 to no bloc — which is the signature of a party
 dissolving, not splitting cleanly in two.
@@ -178,7 +190,7 @@ and 553 of 1,663 co-signature ties are within-bloc.
 **The 2014–2019 row is new and it is the hardest test in the table.** That
 chamber's committee pages were recovered from the Internet Archive after the
 rest of this section was written, and it is the chamber whose governing
-coalition broke apart: 108 of its 246 members changed bloc mid-term. If
+coalition broke apart: 107 of its 245 members changed bloc mid-term. If
 committee seats were traded along bloc lines anywhere in this dataset, they
 would be traded there. The coefficient is −0.01. Two cautions travel with it,
 both pushing the same way: 803 of its 985 committee spells have bracketed dates,

@@ -17,156 +17,156 @@ CAR-cf3388fcc0e9,TNP-00379,2,universitaire,,,,academia,,,,unknown,unknown,rule,m
 CAR-73b30c4f0114,TNP-00380,1,juge,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
 CAR-65c066c1b7ac,TNP-00380,2,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
 CAR-9438c4671f4d,TNP-00380,3,imam,,,,religious,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-9400028880d6,TNP-00382,1,membre du bureau politique du mouvement et son vice porte-parole lors de l’arrestation,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-4097aa58554a,TNP-00382,2,entrepreneur,,,,business,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-8c58e6b82a70,TNP-00383,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-9c48950819d8,TNP-00383,2,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-d2912031f5b3,TNP-00384,1,enseignant,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-e891332042d3,TNP-00385,1,institutrice,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-1b9f631789de,TNP-00386,1,membre du syndicat,,UGTT,ORG-5b95d566da8b,trade_union,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-a032fe0eec52,TNP-00386,2,Universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-a70d6a6b7584,TNP-00386,3,militaire,,,,military,,,,unknown,unknown,rule,low,MARSAD_ANC
-CAR-55fa2152876b,TNP-00387,1,instituteur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-685758b63d70,TNP-00388,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-ff74f9a6ccc9,TNP-00390,1,membre du syndicat,,UGTT,ORG-5b95d566da8b,trade_union,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-5fde8d4ffa9a,TNP-00390,2,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-edd91b53ea1d,TNP-00391,1,membre du bureau politique,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-000ab351ac9b,TNP-00397,1,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-1b3b86944bcf,TNP-00398,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-f9759723e3b7,TNP-00398,2,enseignante,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-2e7aa04a563f,TNP-00406,1,enseignante,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-b83ac824ca48,TNP-00408,1,Enseignant,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-d2f3eeacfb58,TNP-00409,1,médecin,,,,health,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-5e53fff4ee61,TNP-00410,1,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-ac4cd465d86a,TNP-00411,1,enseignante,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-2f010a288456,TNP-00411,2,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-2ca6ea3231f9,TNP-00412,1,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-af6c157ebcb9,TNP-00416,1,institutrice,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-d1908937fdcb,TNP-00417,1,membre du syndicat,,UGTT,ORG-5b95d566da8b,trade_union,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-25fa354ed6b0,TNP-00417,2,militaire,,,,military,,,,unknown,unknown,rule,low,MARSAD_ANC
-CAR-ff1498f2b74f,TNP-00418,1,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-1ede0701613d,TNP-00419,1,avocat,,avocate,ORG-6c5601afbae3,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-c31d7d019721,TNP-00421,1,enseignante,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-3898b1ad70a1,TNP-00423,1,enseignante,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-b3cf7afa543e,TNP-00424,1,membre du bureau politique,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-e036d60b1af5,TNP-00424,2,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-f04072292082,TNP-00430,1,Médecin,,,,health,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-91bf1b7f715b,TNP-00381,1,membre du bureau politique du mouvement et son vice porte-parole lors de l’arrestation,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-a58b23cc8c92,TNP-00381,2,entrepreneur,,,,business,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-341384f381c5,TNP-00382,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-be61788e5050,TNP-00382,2,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-c553b5363a49,TNP-00383,1,enseignant,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-0cbfddc85cc3,TNP-00384,1,institutrice,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-6b5770338c96,TNP-00385,1,membre du syndicat,,UGTT,ORG-5b95d566da8b,trade_union,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-16eb77da0ae1,TNP-00385,2,Universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-db0d82088a7d,TNP-00385,3,militaire,,,,military,,,,unknown,unknown,rule,low,MARSAD_ANC
+CAR-a627b9e7a0c8,TNP-00386,1,instituteur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-c1d590e31b95,TNP-00387,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-700763b47d4e,TNP-00389,1,membre du syndicat,,UGTT,ORG-5b95d566da8b,trade_union,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-ab8efb36b4d5,TNP-00389,2,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-491804447e57,TNP-00390,1,membre du bureau politique,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-14ba78ae646e,TNP-00396,1,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-299ed41f5684,TNP-00397,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-c7cf0ca145ae,TNP-00397,2,enseignante,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-9b91e1f0c0a8,TNP-00405,1,enseignante,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-29ea4ddf1056,TNP-00407,1,Enseignant,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-1342f45b91c7,TNP-00408,1,médecin,,,,health,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-039530f54e90,TNP-00409,1,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-c9f13550490f,TNP-00410,1,enseignante,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-310854dc1b67,TNP-00410,2,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-36e6df4c9a7f,TNP-00411,1,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-4235f00ba518,TNP-00415,1,institutrice,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-e39176e3189b,TNP-00416,1,membre du syndicat,,UGTT,ORG-5b95d566da8b,trade_union,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-22d67711199b,TNP-00416,2,militaire,,,,military,,,,unknown,unknown,rule,low,MARSAD_ANC
+CAR-25a0a46e50ed,TNP-00417,1,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-31f00327201b,TNP-00418,1,avocat,,avocate,ORG-6c5601afbae3,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-2eb41c9e596b,TNP-00420,1,enseignante,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-c1d1b74289c8,TNP-00422,1,enseignante,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-ed9dcebe6818,TNP-00423,1,membre du bureau politique,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-ca5e8e3bc08f,TNP-00423,2,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-af00a53d879a,TNP-00429,1,Médecin,,,,health,,,,unknown,unknown,rule,medium,MARSAD_ANC
 CAR-3e28898817f9,TNP-00364,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-591080e547d5,TNP-00431,1,militaire,,,,military,,,,unknown,unknown,rule,low,MARSAD_ANC
-CAR-a03fae110ad6,TNP-00439,1,ministre des Domaines de l'État et des Affaires foncières depuis le,,,,state_executive,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-322fc4b04cae,TNP-00439,2,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-bd4a6516bb15,TNP-00440,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-f8d6d75cbed2,TNP-00440,2,Imam,,,,religious,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-48c7e148e591,TNP-00442,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-545f45f57636,TNP-00443,1,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-d3733eae3cf8,TNP-00444,1,médecin,,,,health,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-1f0386dfef2e,TNP-00444,2,Professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-181c86a01d07,TNP-00444,3,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-b29b670df73e,TNP-00430,1,militaire,,,,military,,,,unknown,unknown,rule,low,MARSAD_ANC
+CAR-afc925f3a099,TNP-00438,1,ministre des Domaines de l'État et des Affaires foncières depuis le,,,,state_executive,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-27237cae239e,TNP-00438,2,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-2cd5a648c311,TNP-00439,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-5845fce3daed,TNP-00439,2,Imam,,,,religious,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-2251079d6dfe,TNP-00441,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-b86baa8e7dce,TNP-00442,1,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-e2c52ffa01ed,TNP-00443,1,médecin,,,,health,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-e4cc6df1895f,TNP-00443,2,Professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-ad2801301cc4,TNP-00443,3,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-1d9a9f08e798,TNP-00444,1,avocat,,avocate,ORG-6c5601afbae3,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
 CAR-91f88a8a8f2f,TNP-00445,1,avocat,,avocate,ORG-6c5601afbae3,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-aa583e12af4a,TNP-00446,1,avocat,,avocate,ORG-6c5601afbae3,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-778fed13644d,TNP-00448,1,Professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-e7fa6ece6355,TNP-00447,1,Professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-42d1a408b7df,TNP-00448,1,enseignant,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
 CAR-fafa3b31be53,TNP-00449,1,enseignant,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-4bceae272c8e,TNP-00450,1,enseignant,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-187938d59157,TNP-00451,1,membre du bureau politique du Mouvement des Démocrates Socialistes (MDS) puis membre d,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-9941530df772,TNP-00451,2,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-ab5faf7fcc8c,TNP-00451,3,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-233e7ef7eb85,TNP-00452,1,avocat,,avocate,ORG-6c5601afbae3,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-753f8db4e6d4,TNP-00453,1,homme d'affaires,,,,business,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-7323211fb6ae,TNP-00455,1,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-e25705cae4ec,TNP-00455,2,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-261242af551d,TNP-00456,1,membre du bureau politique du Congrès Pour la République (CPR),,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-2f6b4781f495,TNP-00456,2,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-b6a8b3427fc7,TNP-00459,1,juge,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-59ddcb2cae7f,TNP-00461,1,médecin,,,,health,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-10b9601eb3de,TNP-00462,1,ministre de Bourguiba,,,,state_executive,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-67c292388ace,TNP-00462,2,Professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-d15fcbc44f40,TNP-00462,3,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-d028c1002db3,TNP-00450,1,membre du bureau politique du Mouvement des Démocrates Socialistes (MDS) puis membre d,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-37c7202227d3,TNP-00450,2,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-62e88d6d16ae,TNP-00450,3,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-086f969ada15,TNP-00451,1,avocat,,avocate,ORG-6c5601afbae3,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-b798db77475e,TNP-00452,1,homme d'affaires,,,,business,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-9e4177a972c7,TNP-00454,1,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-06938628a4a3,TNP-00454,2,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-5d9f32011f80,TNP-00455,1,membre du bureau politique du Congrès Pour la République (CPR),,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-c6537dbfd5d3,TNP-00455,2,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-d9cf22cbbe94,TNP-00458,1,juge,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-ea5bc14207c7,TNP-00460,1,médecin,,,,health,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-552aa64f86c5,TNP-00461,1,ministre de Bourguiba,,,,state_executive,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-7908af9f1999,TNP-00461,2,Professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-813d46fb6f10,TNP-00461,3,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-914cc9b1f08e,TNP-00462,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
 CAR-5bf720cdb51f,TNP-00463,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-16e289774d01,TNP-00464,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-d293b49e4228,TNP-00466,1,instituteur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-2caf2bc7a794,TNP-00467,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-2a74f13417c5,TNP-00469,1,membre du syndicat,,,,trade_union,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-26ff642aeb4d,TNP-00469,2,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-8c0691fef7f7,TNP-00469,3,maitre de conférences,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-f85bc058240f,TNP-00470,1,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-446cb015fb28,TNP-00471,1,enseignant,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-06bb5a77a6bc,TNP-00472,1,membre du bureau politique depuis cette date,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-6a2cc3341964,TNP-00472,2,ministre de la Formation professionnelle et de l'Emploi depuis le 24,,,,state_executive,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-11c8d3c4999d,TNP-00472,3,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-2de35fb3a950,TNP-00472,4,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-42d8d254066d,TNP-00473,1,membre du bureau politique du Parti Républicain,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-60508144b91d,TNP-00474,1,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-ede6b6e30b95,TNP-00478,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-bd436ec4207b,TNP-00478,2,Professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-292ebf5d27b4,TNP-00479,1,homme d’affaires,,,,business,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-2a6338f59e38,TNP-00482,1,membre du syndicat,,UGTT,ORG-5b95d566da8b,trade_union,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-a03311adacdb,TNP-00465,1,instituteur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-246e1a383a48,TNP-00466,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-494ab7839c8e,TNP-00468,1,membre du syndicat,,,,trade_union,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-3919beeda092,TNP-00468,2,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-86f646334bc3,TNP-00468,3,maitre de conférences,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-475239e98bed,TNP-00469,1,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-af63cf16b42d,TNP-00470,1,enseignant,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-7ac4fd6b36fd,TNP-00471,1,membre du bureau politique depuis cette date,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-f9fb7e7ac80a,TNP-00471,2,ministre de la Formation professionnelle et de l'Emploi depuis le 24,,,,state_executive,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-869b54fe2dd8,TNP-00471,3,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-6900e712c992,TNP-00471,4,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-b9d0159ba69d,TNP-00472,1,membre du bureau politique du Parti Républicain,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-25c814881e49,TNP-00473,1,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-65d9e3ae4993,TNP-00477,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-2a50733718e9,TNP-00477,2,Professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-c8b1a2853e1e,TNP-00193,1,homme d’affaires,,,,business,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-7fb167fc42b6,TNP-00480,1,membre du syndicat,,UGTT,ORG-5b95d566da8b,trade_union,,,,unknown,unknown,rule,medium,MARSAD_ANC
 CAR-4268762192e9,TNP-00199,1,ingénieur,,,,other,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-3bcea944bdfd,TNP-00483,1,médecin,,,,health,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-ee5fe9341775,TNP-00485,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-2596a19f2bc8,TNP-00485,2,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-9255241bcc69,TNP-00487,1,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-c89b10643524,TNP-00488,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-c5f8781e81f2,TNP-00488,2,ingénieur,,,,other,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-5e413f8bb3b5,TNP-00491,1,ministre de l'Intérieur lors de l'affaire du viol de cette victime r,,,,state_executive,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-c31b5db4c56f,TNP-00491,2,juge,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-df2706892891,TNP-00492,1,avocat,,avocate,ORG-6c5601afbae3,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-c50268fc59f3,TNP-00493,1,enseignant,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-518340767381,TNP-00495,1,ingénieur,,,,other,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-9c9e98323e46,TNP-00497,1,enseignante,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-22b551236459,TNP-00497,2,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-608f69e4008c,TNP-00481,1,médecin,,,,health,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-c22597c053b1,TNP-00482,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-d4afafb44d17,TNP-00482,2,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-6e01b54ebee3,TNP-00205,1,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-caa43a4f94fa,TNP-00484,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-343822ca753f,TNP-00484,2,ingénieur,,,,other,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-65ce475ad1af,TNP-00487,1,ministre de l'Intérieur lors de l'affaire du viol de cette victime r,,,,state_executive,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-4a7754bd141e,TNP-00487,2,juge,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-c89b10643524,TNP-00488,1,avocat,,avocate,ORG-6c5601afbae3,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-41cab91eaf44,TNP-00489,1,enseignant,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-8afe110309ac,TNP-00491,1,ingénieur,,,,other,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-37d6202cd8db,TNP-00493,1,enseignante,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-e900169dc4a5,TNP-00493,2,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
 CAR-482005b7b018,TNP-00247,1,avocat,,avocate,ORG-6c5601afbae3,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-99b3bed68f15,TNP-00502,1,enseignant,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-3594349172d9,TNP-00504,1,ingénieur,,,,other,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-4158dc04e307,TNP-00504,2,enseignant,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-65f1e46b0a0a,TNP-00504,3,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-5a7522cc55cc,TNP-00506,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-741fafdb55c0,TNP-00506,2,Professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-6e34a37be40b,TNP-00507,1,membre du syndicat,,syndicaliste,ORG-90034a45a294,trade_union,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-bce6938d627a,TNP-00508,1,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-f172d60fe87a,TNP-00509,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-0b78db365896,TNP-00509,2,juge,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-371c01e21b8a,TNP-00510,1,membre du syndicat,,syndicaliste,ORG-90034a45a294,trade_union,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-820e7474950e,TNP-00510,2,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-c3e189871767,TNP-00511,1,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-90295bce93dc,TNP-00512,1,ingénieur,,,,other,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-16286415b18c,TNP-00513,1,membre du syndicat,,,,trade_union,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-1002d1d536b7,TNP-00513,2,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-8252dadc129b,TNP-00514,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-5325edd26517,TNP-00519,1,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-ce1a9f061a22,TNP-00498,1,enseignant,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-9c24795d3a8c,TNP-00500,1,ingénieur,,,,other,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-40c7ed69072e,TNP-00500,2,enseignant,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-7517d26acc40,TNP-00500,3,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-fe6521e32b9c,TNP-00502,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-dfb1005ae624,TNP-00502,2,Professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-da85f44a19d3,TNP-00503,1,membre du syndicat,,syndicaliste,ORG-90034a45a294,trade_union,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-e3c4f2915331,TNP-00504,1,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-997d7c3278b3,TNP-00505,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-7ec528eccd6f,TNP-00505,2,juge,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-e3725cf3d421,TNP-00506,1,membre du syndicat,,syndicaliste,ORG-90034a45a294,trade_union,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-d7903dd03e65,TNP-00506,2,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-43fd28ffc3df,TNP-00507,1,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-67d1125cd7ee,TNP-00508,1,ingénieur,,,,other,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-33409953a6b9,TNP-00509,1,membre du syndicat,,,,trade_union,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-52c2ff8491ae,TNP-00509,2,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-c6decbd426cc,TNP-00510,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-173b084e6d88,TNP-00515,1,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
 CAR-f9df3b3223a2,TNP-00277,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-9b335245f586,TNP-00522,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-7f9a560d05da,TNP-00525,1,membre du syndicat,,,,trade_union,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-cd8e285b8313,TNP-00525,2,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-ca7327b7b365,TNP-00526,1,ministre Ahmed Ben Salah en 1969 puis par l'échec du congrès du part,,,,state_executive,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-21898b11a7cc,TNP-00526,2,médecin,,,,health,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-a63182e7b3c0,TNP-00526,3,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-5e82a5851d40,TNP-00527,1,ingénieur,,,,other,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-001770983613,TNP-00529,1,fonctionnaire,,,,state_administration,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-22bc68112667,TNP-00533,1,journaliste,,,,media,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-f35bc143c863,TNP-00535,1,membre du bureau politique du parti,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-60573e4b50e1,TNP-00535,2,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-b71e0caff76d,TNP-00540,1,journaliste,,,,media,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-7129ff5737d2,TNP-00543,1,ingénieur,,Ingénieur,ORG-f6277e16693d,other,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-1f49242ddb50,TNP-00547,1,avocat,,avocate,ORG-6c5601afbae3,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-66f7f9d7f2eb,TNP-00547,2,juge,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-b3898b0bcb42,TNP-00518,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-ae3a5758548d,TNP-00521,1,membre du syndicat,,,,trade_union,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-4bc45b90c424,TNP-00521,2,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-50454aa48dc2,TNP-00522,1,ministre Ahmed Ben Salah en 1969 puis par l'échec du congrès du part,,,,state_executive,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-15173e92ef08,TNP-00522,2,médecin,,,,health,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-f5057c72dce6,TNP-00522,3,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-71f3c2cfdf2b,TNP-00523,1,ingénieur,,,,other,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-d7e20c6b8577,TNP-00525,1,fonctionnaire,,,,state_administration,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-0fdcd787e130,TNP-00529,1,journaliste,,,,media,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-069c5a83365d,TNP-00531,1,membre du bureau politique du parti,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-3f0cd30fd37e,TNP-00531,2,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-8a9076a2bed1,TNP-00536,1,journaliste,,,,media,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-82c50ebbd6b5,TNP-00539,1,ingénieur,,Ingénieur,ORG-f6277e16693d,other,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-8b34210e9cdd,TNP-00543,1,avocat,,avocate,ORG-6c5601afbae3,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-c5f4387b250b,TNP-00543,2,juge,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
 CAR-8329efc706fb,TNP-00007,1,membre du syndicat,,syndicaliste,ORG-90034a45a294,trade_union,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-964c3feabab8,TNP-00549,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-7be95b24698e,TNP-00550,1,membre du bureau politique du parti du congrès pour la république et aussi président d,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-0299dbd6f2b9,TNP-00550,2,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-f90b0b30590a,TNP-00551,1,enseignant,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-5b3a0aba6880,TNP-00552,1,ingénieur,,,,other,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-4de5a80fc2da,TNP-00556,1,membre du bureau politique d’Ennahdha pour le gouvernorat de Tunis,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-6b206f3e8a4a,TNP-00557,1,membre du bureau politique du CPR en France responsable de la structuration et de la c,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-b5cc31bb1784,TNP-00545,1,avocat,,,,judiciary,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-0af48f12d1e4,TNP-00546,1,membre du bureau politique du parti du congrès pour la république et aussi président d,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-adf6a46f419e,TNP-00546,2,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-b9ca3ce7f091,TNP-00547,1,enseignant,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-347c39acac3c,TNP-00548,1,ingénieur,,,,other,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-2a0db35c73e3,TNP-00552,1,membre du bureau politique d’Ennahdha pour le gouvernorat de Tunis,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-0e17aca80fcc,TNP-00553,1,membre du bureau politique du CPR en France responsable de la structuration et de la c,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-924b9e94925a,TNP-00554,1,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-9b97ac95766d,TNP-00555,1,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
 CAR-914be314795f,TNP-00558,1,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-b0c6eb7a21db,TNP-00559,1,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-affab4a2abfc,TNP-00562,1,professeur,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-9fc9c2c88383,TNP-00564,1,membre du bureau politique d’Ettakatol trésorier du parti lors du congrès de mai 2009,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-7a6b1c6de595,TNP-00564,2,ministre et député,,,,state_executive,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-455be6d6480c,TNP-00566,1,enseignant,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-d63d4961fe05,TNP-00560,1,membre du bureau politique d’Ettakatol trésorier du parti lors du congrès de mai 2009,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-8f3d1b7a3ddc,TNP-00560,2,ministre et député,,,,state_executive,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-7c672f06fd73,TNP-00562,1,enseignant,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
 CAR-7d209a7f712e,TNP-00285,1,membre du syndicat,,UGTT,ORG-5b95d566da8b,trade_union,,,,unknown,unknown,rule,medium,MARSAD_ANC
 CAR-a26e4027236d,TNP-00285,2,Membre du bureau politique à la faculté des sciences Secrétaire Générale du syndicat p,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
 CAR-22e2da4ef143,TNP-00285,3,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-b40c258f07ac,TNP-00567,1,institutrice,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-c4399f588e9c,TNP-00567,2,fonctionnaire,,,,state_administration,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-467720ec37c0,TNP-00568,1,membre du bureau politique d'Ettakatol,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
-CAR-d0e30b99b9a4,TNP-00568,2,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-10d763f751a1,TNP-00563,1,institutrice,,,,education,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-27c8e407ddff,TNP-00563,2,fonctionnaire,,,,state_administration,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-43355cdf0ca4,TNP-00564,1,membre du bureau politique d'Ettakatol,,,,party,,,,unknown,unknown,rule,medium,MARSAD_ANC
+CAR-a8d92c243fe0,TNP-00564,2,universitaire,,,,academia,,,,unknown,unknown,rule,medium,MARSAD_ANC

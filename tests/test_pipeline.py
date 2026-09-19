@@ -1235,6 +1235,159 @@ class TestNameOnlyMergeDistance:
         assert b._too_far_apart("P", "MYSTERY", "ADV-2005") is False
 
 
+class TestLatinSpellingVeto:
+    """Requiring two romanisations to agree splits people as well as joining them."""
+
+    def _builder(self, *, relax=False):
+        b = object.__new__(build_mod.Builder)
+        b.assemblies = {"NCA-2011": {"start_date": "2011-01-01", "end_date": ""},
+                        "ARP-2014": {"start_date": "2014-01-01", "end_date": ""}}
+        b.persons = IdRegistry("TNP")
+        b.person_fields = collections.defaultdict(dict)
+        b.by_ar_key = collections.defaultdict(list)
+        b.by_lat_key = collections.defaultdict(list)
+        b.match_review = []
+        b.rejected_merges = []
+        b.latin_vetoes = []
+        b.relax_latin_veto = relax
+        b.xref = []
+        return b
+
+    def _seat(self, b, name_ar, name_lat, assembly, source):
+        """Resolve one staged record, as an ingest would."""
+        pid = b.resolve_person(
+            {"source_key": f"{source}:{name_lat}", "name_ar": name_ar,
+             "name_lat": name_lat}, source, assembly)
+        b.person_fields[pid].setdefault("name_lat", (0, name_lat))
+        return pid
+
+    # Monia Ibrahim sat in the Constituent Assembly and returned in 2014. One
+    # source romanises the Arabic منية ابراهيم as "Ibrahim", the other drops
+    # the initial alif to "Brahim". The Arabic keys are identical.
+    AR = "منية ابراهيم"
+
+    def test_disagreeing_romanisations_are_held_apart_by_default(self):
+        b = self._builder()
+        first = self._seat(b, self.AR, "Monia Ibrahim", "NCA-2011", "MARSAD_ANC")
+        second = self._seat(b, self.AR, "Monia Brahim", "ARP-2014", "MARSAD_ARP2014")
+        assert first != second
+
+    def test_the_refusal_is_recorded_even_when_it_stands(self):
+        """With the veto in force this list is the only trace of the decision."""
+        b = self._builder()
+        self._seat(b, self.AR, "Monia Ibrahim", "NCA-2011", "MARSAD_ANC")
+        self._seat(b, self.AR, "Monia Brahim", "ARP-2014", "MARSAD_ARP2014")
+        assert len(b.latin_vetoes) == 1
+        assert b.latin_vetoes[0]["merged"] == "no"
+        assert b.latin_vetoes[0]["incoming_name_lat"] == "Monia Brahim"
+
+    def test_relaxing_the_veto_merges_them(self):
+        b = self._builder(relax=True)
+        first = self._seat(b, self.AR, "Monia Ibrahim", "NCA-2011", "MARSAD_ANC")
+        second = self._seat(b, self.AR, "Monia Brahim", "ARP-2014", "MARSAD_ARP2014")
+        assert first == second
+        assert b.latin_vetoes[0]["merged"] == "yes"
+
+    def test_a_relaxed_merge_is_the_weakest_kind_not_the_strongest(self):
+        """The method name contains both "ar" and "lat"; confidence must not
+        be read off that. Agreeing on Arabic while *disagreeing* on Latin is
+        the weakest evidence the pipeline acts on."""
+        b = self._builder(relax=True)
+        self._seat(b, self.AR, "Monia Ibrahim", "NCA-2011", "MARSAD_ANC")
+        self._seat(b, self.AR, "Monia Brahim", "ARP-2014", "MARSAD_ARP2014")
+        assert b.match_review[-1]["method"] == "normalised_name_ar-latin_disagrees"
+        assert b.match_review[-1]["confidence"] == "low"
+
+    def test_agreeing_romanisations_still_merge_at_high_confidence(self):
+        b = self._builder()
+        first = self._seat(b, self.AR, "Monia Ibrahim", "NCA-2011", "MARSAD_ANC")
+        second = self._seat(b, self.AR, "Monia Ibrahim", "ARP-2014", "MARSAD_ARP2014")
+        assert first == second
+        assert b.latin_vetoes == []
+        assert b.match_review[-1]["confidence"] == "high"
+
+    def test_relaxing_does_not_override_the_same_chamber_rule(self):
+        """Two members of one assembly are two people however they are spelled."""
+        b = self._builder(relax=True)
+        first = self._seat(b, self.AR, "Monia Ibrahim", "ARP-2014", "MARSAD_ARP2014")
+        second = self._seat(b, self.AR, "Monia Brahim", "ARP-2014", "MARSAD_ANC")
+        assert first != second
+
+    def test_relaxing_does_not_override_the_distance_rule(self):
+        b = self._builder(relax=True)
+        b.assemblies["ANC-1956"] = {"start_date": "1956-01-01", "end_date": ""}
+        b.assemblies["ADV-2005"] = {"start_date": "2005-01-01", "end_date": ""}
+        first = self._seat(b, self.AR, "Taieb Sahbani", "ANC-1956", "WIKI_AR_ANC1956")
+        second = self._seat(b, self.AR, "Tayeb Sehbani", "ADV-2005", "ADV_CHAMBRE")
+        assert first != second
+        assert b.rejected_merges
+
+
+class TestDuplicateCollapse:
+    """A merge that joins two records holding one seat must not double the seat."""
+
+    def _builder(self):
+        b = object.__new__(build_mod.Builder)
+        b.mandates = []
+        b.provenance = []
+        return b
+
+    def test_two_mandates_for_one_seat_fold_into_one(self):
+        b = self._builder()
+        b.mandates = [
+            {"mandate_id": "A", "person_id": "P", "assembly_id": "ARP-2014",
+             "constituency_id": "", "source_ids": "MARSAD_ANC"},
+            {"mandate_id": "B", "person_id": "P", "assembly_id": "ARP-2014",
+             "constituency_id": "TNC-1", "source_ids": "MARSAD_ARP2014"},
+        ]
+        b._collapse_duplicates()
+        assert len(b.mandates) == 1
+
+    def test_folding_keeps_both_sources_and_the_fuller_record(self):
+        """A weaker source that recorded a constituency beats no constituency."""
+        b = self._builder()
+        b.mandates = [
+            {"mandate_id": "A", "person_id": "P", "assembly_id": "ARP-2014",
+             "constituency_id": "", "source_ids": "MARSAD_ANC"},
+            {"mandate_id": "B", "person_id": "P", "assembly_id": "ARP-2014",
+             "constituency_id": "TNC-1", "source_ids": "MARSAD_ARP2014"},
+        ]
+        b._collapse_duplicates()
+        assert b.mandates[0]["source_ids"] == "MARSAD_ANC;MARSAD_ARP2014"
+        assert b.mandates[0]["constituency_id"] == "TNC-1"
+
+    def test_two_seats_in_different_chambers_are_left_alone(self):
+        b = self._builder()
+        b.mandates = [
+            {"mandate_id": "A", "person_id": "P", "assembly_id": "NCA-2011",
+             "source_ids": "MARSAD_ANC"},
+            {"mandate_id": "B", "person_id": "P", "assembly_id": "ARP-2014",
+             "source_ids": "MARSAD_ARP2014"},
+        ]
+        b._collapse_duplicates()
+        assert len(b.mandates) == 2
+
+    def test_duplicate_provenance_rows_are_dropped(self):
+        b = self._builder()
+        row = {"table_name": "persons", "record_id": "P",
+               "field_name": "name_ar", "source_id": "MARSAD_ANC"}
+        b.provenance = [dict(row), dict(row)]
+        b._collapse_duplicates()
+        assert len(b.provenance) == 1
+
+    def test_it_is_a_no_op_on_a_clean_build(self):
+        """Nothing upstream produces these duplicates, so the default build
+        must come through untouched."""
+        b = self._builder()
+        b.mandates = [{"mandate_id": "A", "person_id": "P",
+                       "assembly_id": "NCA-2011", "source_ids": "MARSAD_ANC"}]
+        b.provenance = [{"table_name": "persons", "record_id": "P",
+                         "field_name": "name_ar", "source_id": "MARSAD_ANC"}]
+        before = [dict(m) for m in b.mandates]
+        b._collapse_duplicates()
+        assert b.mandates == before
+
+
 class TestStagedConstituencyMerge:
     """Staged constituency rows must enrich the derived ones, never pre-empt them."""
 

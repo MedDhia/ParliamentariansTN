@@ -6,7 +6,7 @@ recruitment layer the dataset was built to support, and it is the thinnest
 layer in it.
 
 **Read the denominator before the bars.** 171 roles are recorded for 114 people
-out of 856 in the dataset — 13%. Every one of them comes from a single source,
+out of 957 in the dataset — 12%. Every one of them comes from a single source,
 the 2011 assembly's narrative biographies on Marsad, so this is not "Tunisian
 parliamentarians" but "the minority of one chamber's members whose biography
 mentioned a prior role, as parsed". Nothing here supports a claim about

@@ -21,11 +21,11 @@ table instead.
 
 **One row per career pattern, not per person.** The 78 people with two or more
 of these four chambers occupy only eight distinct patterns, so a row per pattern
-is exhaustive and a row per person would be 78 near-identical lines. The count
-on each row is the people in it, and the eight sum to 78.
+is exhaustive and a row per person would be 87 near-identical lines. The count
+on each row is the people in it, and the eight sum to 87.
 
 **What the shape shows.** Continuity is concentrated in one link. The 2014 → 2019
-transition carries 50 of the 78 careers, and 2011 → 2014 carries 31. Then it
+transition carries 51 of the 87 careers, and 2011 → 2014 carries 37. Then it
 stops: only 10 careers reach 2023 at all, and half of those skip a chamber to get
 there. The 2021 dissolution and the move to single-member districts did not
 thin the returning class so much as change who it was — after 2023 the modal

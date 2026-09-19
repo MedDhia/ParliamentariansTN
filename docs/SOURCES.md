@@ -164,8 +164,8 @@ members renders as a card whose data attributes carry the whole priority layer:
 
 **Bloc switching.** Roughly 29 monthly captures survive from January 2015 to May
 2019. Diffing consecutive captures reconstructs bloc membership as dated spells,
-making this **the one chamber for which switching is directly observable**: 108
-of 246 members changed bloc. The recovered sequences track the real history —
+making this **the one chamber for which switching is directly observable**: 107
+of 245 members changed bloc. The recovered sequences track the real history —
 members leaving Nidaa Tounes for الكتلة الحرّة in early 2016 and then for the
 Machrouu Tounes bloc in December 2016, and the National Coalition forming in
 2017.
@@ -198,8 +198,8 @@ seats.
 - **Age is published without a birth date and is not converted.** Even with a
   known capture date it would only fix the birth year to within a year, so the
   raw age and observation date are preserved in the mandate note instead.
-- The roster is a snapshot series, so the 246 people recorded include the 217
-  elected plus 29 who entered later; members absent from the final usable
+- The roster is a snapshot series, so the 245 people recorded include the 217
+  elected plus 28 who entered later; members absent from the final usable
   capture have `exit_mode = unknown` rather than an invented departure reason.
 - **Committee spells are coarser than bloc spells.** Twenty-five committees
   times every monthly capture would be seven hundred fetches for resolution the
