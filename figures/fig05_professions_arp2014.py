@@ -1,6 +1,6 @@
 """Figure 5 — What the 2014–2019 deputies did before parliament.
 
-Occupation is recorded for 223 of the 246 members of the 2014 chamber, which is
+Occupation is recorded for 223 of the 245 members of the 2014 chamber, which is
 the only near-complete occupational profile in the dataset. (The 2011 chamber has
 narrative biographies but a coded profession for only 29 members; the sitting
 chamber publishes almost none.)

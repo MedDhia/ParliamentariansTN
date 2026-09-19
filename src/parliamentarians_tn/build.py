@@ -14,19 +14,22 @@ recorded per link in ``person_xref``, and every cross-source merge is written to
 ``data/processed/_match_review.csv`` for human audit.
 
 Matching is deliberately conservative. Two records merge only when their
-normalised Arabic name keys agree, and where both sources supply a Latin name
-those must agree too. Tunisian naming makes homonyms common, so a name match
-inside a single chamber is never treated as the same person: two members of one
-assembly with the same name are two people until a human says otherwise.
+normalised Arabic name keys agree. Tunisian naming makes homonyms common, so a
+name match inside a single chamber is never treated as the same person: two
+members of one assembly with the same name are two people until a human says
+otherwise, and so are two names more than forty years apart.
 
-That conservatism is one-sided, and the cost is measured rather than assumed.
-Requiring the romanisations to agree guards against a false merge but causes a
-false split whenever two sources transliterate one name differently, which for
-Tunisian Arabic is often. Every such refusal is now written to
-``data/processed/_latin_veto_report.csv`` whether or not it was acted on, and
-``--relax-latin-veto`` accepts the merge on an exact Arabic-key match alone.
-The flag is a prototype and defaults to off: turning it on reassigns
-``person_id`` values, which every figure and derived table is keyed on.
+The Arabic key decides it; the romanisations do not get a veto. Requiring those
+to agree as well was the rule here until the eleven records it held apart were
+read individually and every one turned out to be the same person twice —
+*Khmais* and *Khemais Ksila*, *Monia Ibrahim* and *Monia Brahim*, *Fadhel Ouej*
+and *Fadhel Elouej*. French transliteration of Tunisian Arabic is not
+standardised and the two civic monitors romanise independently, so the rule
+fired precisely where the Arabic evidence was strongest. Every such case is
+still written to ``data/processed/_latin_veto_report.csv``, because a merge
+made over a disagreeing spelling is the weakest one here and should stay
+auditable, and ``--strict-latin-match`` restores the old behaviour so its cost
+stays measurable (``examples/latin_veto_impact.py`` reports it).
 """
 
 from __future__ import annotations
@@ -97,10 +100,11 @@ def _priority(source_id: str) -> int:
 
 
 class Builder:
-    def __init__(self, *, relax_latin_veto: bool = False) -> None:
-        # Prototype switch for the Latin-spelling veto in ``resolve_person``.
-        # Off by default because turning it on reassigns person_id values, and
-        # every figure and derived table is keyed on those.
+    def __init__(self, *, relax_latin_veto: bool = True) -> None:
+        # Whether an exact Arabic-key match is enough on its own, or the two
+        # romanisations must agree as well. On by default: every one of the
+        # eleven records the strict rule held apart was the same person twice.
+        # ``--strict-latin-match`` restores the old behaviour for comparison.
         self.relax_latin_veto = relax_latin_veto
         self.assemblies = {r["assembly_id"]: r for r in read_table("assemblies", REFERENCE)}
         self.governorates = list(read_table("governorates", REFERENCE))
@@ -946,7 +950,7 @@ class Builder:
                 f"{len(self.latin_vetoes) - held} merged)")
 
 
-def build(*, relax_latin_veto: bool = False, write: bool = True) -> Builder:
+def build(*, relax_latin_veto: bool = True, write: bool = True) -> Builder:
     docs = all_staging()
     if not docs:
         raise SystemExit(
@@ -977,17 +981,17 @@ def build(*, relax_latin_veto: bool = False, write: bool = True) -> Builder:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument(
-        "--relax-latin-veto",
+        "--strict-latin-match",
         action="store_true",
-        default=os.environ.get("TNP_RELAX_LATIN_VETO") == "1",
-        help="merge two records whose normalised Arabic names agree exactly "
-             "even where their romanisations disagree. PROTOTYPE: this "
-             "reassigns person_id values, so the figures and any saved "
-             "analysis keyed on them must be rebuilt together. Default off; "
-             "set TNP_RELAX_LATIN_VETO=1 to default it on.",
+        default=os.environ.get("TNP_STRICT_LATIN_MATCH") == "1",
+        help="refuse to merge two records whose romanisations disagree, even "
+             "where their normalised Arabic names are identical. This was the "
+             "default until the eleven records it held apart were checked and "
+             "found to be the same person twice. Kept so the cost of the rule "
+             "stays measurable; set TNP_STRICT_LATIN_MATCH=1 to default it on.",
     )
     args = ap.parse_args()
-    b = build(relax_latin_veto=args.relax_latin_veto)
+    b = build(relax_latin_veto=not args.strict_latin_match)
     for rejected in b.rejected_merges:
         log(f"  name-only merge refused: {rejected['assembly_a']} and "
             f"{rejected['assembly_b']} are {rejected['years_apart']} years apart")

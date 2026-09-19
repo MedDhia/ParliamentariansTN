@@ -26,8 +26,8 @@ it as a coarser instrument.
 **What survives the caveat is the finding the panel exists for.** Bloc
 assortativity is −0.015: committee assignment does not track bloc lines, the same
 negative result as 2011 (−0.03), 2019 (−0.04) and 2023 (−0.07). And it survives
-in the hardest case — the chamber whose governing coalition fragmented, where 108
-of 246 members changed bloc mid-term. If committee seats were being traded along
+in the hardest case — the chamber whose governing coalition fragmented, where 107
+of 245 members changed bloc mid-term. If committee seats were being traded along
 bloc lines anywhere in this dataset, this is the chamber where it would show.
 
 **The shape differs from the other three in a way worth naming.** Radius is the

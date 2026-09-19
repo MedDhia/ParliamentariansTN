@@ -1,8 +1,8 @@
 """Figure 13 — Who moved where: bloc-to-bloc transitions, 2014–2019 chamber.
 
-108 of the 238 members whose bloc history is recorded changed bloc at least once.
+107 of the 237 members whose bloc history is recorded changed bloc at least once.
 This is where they went: rows are the bloc left, columns the bloc joined, cells
-the number of moves. The denominator is 238 rather than the chamber's 246
+the number of moves. The denominator is 237 rather than the chamber's 245
 mandates because eight members appear in no capture's bloc list at all.
 
 Form: a matrix heatmap with counts in every cell. A chord or Sankey diagram is

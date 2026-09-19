@@ -61,7 +61,7 @@ Archive captures, which turn bloc membership into dated spells.
 | --- | --- | --- |
 | 11 | Bloc composition, month by month | Nidaa Tounes enters with 86 seats and bleeds out; the winning party is not the largest bloc by the end. |
 | 12 | Effective number of blocs | Fragmentation rises from 3.6 to 5.3, all of it from Nidaa Tounes splitting. |
-| 13 | Bloc-to-bloc moves | 108 of the 238 members with a recorded bloc history moved. Nidaa's members disperse rather than relocating together. |
+| 13 | Bloc-to-bloc moves | 107 of the 237 members with a recorded bloc history moved. Nidaa's members disperse rather than relocating together. |
 
 **Networks**
 

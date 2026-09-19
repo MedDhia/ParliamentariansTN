@@ -73,7 +73,10 @@ def main() -> None:
     ax.legend(loc="upper right")
     S.titles(
         ax,
-        "883 of 968 parliamentarians sit in one chamber only",
+        # Computed, not written in: this headline moved silently the last time
+        # the matcher changed, and a caption that restates the plot is the
+        # easiest thing in the repo to leave stale.
+        f"{all_counts.get(1, 0)} of {sum(a)} parliamentarians sit in one chamber only",
         "Log scale: most members sit once, so a linear axis would flatten the tail into "
         "nothing.\nCounts are of mandates recorded HERE — the twelve chambers of 1959–2011 "
         "have no roster, so anyone whose\nearlier service falls in that gap is undercounted.",

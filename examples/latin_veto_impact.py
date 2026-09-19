@@ -1,30 +1,32 @@
-"""What does the Latin-spelling veto cost the dataset?
+"""How much does the Latin-spelling rule move the dataset?
 
-`build.py` merges two records only when their normalised Arabic names agree,
-and — where both sources supply a romanisation — only when those agree too.
-The second requirement is a guard against a false merge. This script measures
-what it does instead, by building the dataset twice in one process, once with
-the veto in force and once with `--relax-latin-veto`, and diffing the results.
+`build.py` merges two records when their normalised Arabic names agree.
+Requiring the romanisations to agree as well was the rule here until the eleven
+records it held apart were read individually and every one proved to be the
+same person twice. This script builds the dataset both ways in one process —
+the current default, and `--strict-latin-match` — and diffs them, so the size
+of that correction stays checkable instead of being taken on trust.
 
     python examples/latin_veto_impact.py
 
-**Why the veto misfires.** French transliteration of Tunisian Arabic is not
+**Why the old rule misfired.** French transliteration of Tunisian Arabic is not
 standardised, and the two civic monitors this dataset draws on romanise
 independently. *Khmais* and *Khemais*, *Iyed* and *Iyad*, *Ibrahim* and
 *Brahim*, *Ouej* and *Elouej* are one name each; the Arabic strings behind them
-are byte-identical after normalisation. So the guard fires precisely where the
-Arabic evidence is strongest, and splits one deputy into two people.
+are byte-identical after normalisation. So the guard fired precisely where the
+Arabic evidence was strongest, and split one deputy into two people.
 
-**Why that is not a cosmetic problem.** A split person cannot be observed
+**Why that was not a cosmetic problem.** A split person cannot be observed
 returning to parliament, so every re-election, every career length and every
-elite-circulation measure is biased downward — and the dataset still looks well
-formed, which is what makes the error dangerous rather than merely wrong.
+elite-circulation measure was biased downward — and the dataset still looked
+well formed, which is what made the error dangerous rather than merely wrong.
 
-**What this does not settle.** The script shows the veto is costing real
-merges; it does not prove every relaxed merge is correct. Each one is a claim
-about identity that a birth date would settle and a name cannot, and only 16%
-of persons carry one. Read `data/processed/_latin_veto_report.csv` and judge the
-eleven individually before treating the relaxed build as the better one.
+**What this does not settle.** The script shows the rule was costing real
+merges; it cannot prove each merge is correct. Every one is a claim about
+identity that a birth date would settle and a name cannot, and only 158 of 957
+persons carry one. The eleven are listed individually in
+`data/processed/_latin_veto_report.csv`; that file, not this summary, is where
+a disputed case gets settled.
 """
 
 from __future__ import annotations
@@ -67,13 +69,13 @@ def main() -> None:
     relaxed_builder = build(relax_latin_veto=True, write=False)
     relaxed = profile(relaxed_builder)
 
-    print("\nthe eleven refusals, as the builder sees them")
+    print("\nthe eleven merges the old rule refused")
     print("-" * 78)
     for veto in relaxed_builder.latin_vetoes:
         print(f"  {veto['kept_name_lat']:<20} = {veto['incoming_name_lat']:<20} "
               f"{veto['kept_assembly_id']} / {veto['incoming_assembly_id']}")
 
-    print("\neffect of relaxing the veto")
+    print("\nstrict Latin matching (old) -> Arabic key decides (current)")
     print("-" * 78)
     for label, key in (("persons", "persons"), ("mandate rows", "mandates"),
                        ("people in >1 chamber", "multi_chamber")):
@@ -88,9 +90,9 @@ def main() -> None:
               f"  ->  {r1}/{n1} ({r1 / n1 * 100:.0f}%)")
 
     gained = relaxed["multi_chamber"] - held["multi_chamber"]
-    print(f"\nThe veto is suppressing {gained} multi-chamber careers, "
+    print(f"\nThe old rule suppressed {gained} multi-chamber careers, "
           f"{gained / relaxed['multi_chamber'] * 100:.0f}% of the "
-          f"{relaxed['multi_chamber']} the relaxed build finds.")
+          f"{relaxed['multi_chamber']} the current build finds.")
 
 
 if __name__ == "__main__":

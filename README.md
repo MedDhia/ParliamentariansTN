@@ -3,8 +3,8 @@
 A relational dataset of Tunisian parliamentarians from the 1956 Constituent
 Assembly to the sitting chamber, built for social science and network analysis.
 
-The dataset covers **nineteen chamber-terms across seventy years**, **856
-individual parliamentarians**, and **959 mandates**, with committee memberships,
+The dataset covers **nineteen chamber-terms across seventy years**, **957
+individual parliamentarians**, and **1,071 mandates**, with committee memberships,
 parliamentary blocs, constituencies, biographical attributes, extra-parliamentary
 careers, behavioural indicators, and the 2011-2014 chamber's complete roll-call
 record — assembled from the chamber's own database, both of Al Bawsala's
@@ -88,17 +88,17 @@ Twenty-two tables in `data/processed`, all UTF-8 CSV with a header row.
 | Table | Rows | Unit |
 | --- | --- | --- |
 | `assemblies` | 19 | one chamber-term, 1956–present |
-| `persons` | 856 | one parliamentarian |
-| `mandates` | 959 | one person × one chamber × one spell of service |
-| `constituencies` | 260 | one constituency × one chamber |
+| `persons` | 957 | one parliamentarian |
+| `mandates` | 1,071 | one person × one chamber × one spell of service |
+| `constituencies` | 286 | one constituency × one chamber |
 | `governorates` | 25 | 24 governorates + out-of-country |
 | `parties` | 70 | political parties, with succession links |
 | `party_affiliations` | 217 | dated party membership |
 | `blocs` | 40 | parliamentary bloc × chamber |
 | `bloc_memberships` | 1,116 | dated bloc membership |
-| `committees` | 54 | committee × chamber |
-| `committee_memberships` | 1,129 | dated committee membership with role |
-| `offices` | 60 | speaker, vice-speaker, bureau tenures |
+| `committees` | 85 | committee × chamber |
+| `committee_memberships` | 2,206 | dated committee membership with role |
+| `offices` | 99 | speaker, vice-speaker, bureau tenures |
 | `careers` | 171 | extra-parliamentary roles |
 | `participation` | 583 | attendance, voting, written questions |
 | `votes` | 1,724 | one recorded division (NCA-2011) |
@@ -106,9 +106,9 @@ Twenty-two tables in `data/processed`, all UTF-8 CSV with a header row.
 | `party_switches` | 105 | party of election vs party at end of term |
 | `amendments` | 251 | constitutional amendment tabled in 2011–2014 |
 | `amendment_sponsorships` | 3,646 | one member × one amendment they tabled |
-| `person_xref` | 950 | crosswalk to every upstream identifier |
-| `sources` | 6 | source register with access conditions |
-| `provenance` | 5,039 | which source supplied which field of which record |
+| `person_xref` | 1,063 | crosswalk to every upstream identifier |
+| `sources` | 7 | source register with access conditions |
+| `provenance` | 5,375 | which source supplied which field of which record |
 
 Plus ten network files in `data/networks` — node attributes, two bipartite
 incidence lists, six one-mode projections, and a weighted vote-agreement layer
@@ -153,7 +153,7 @@ only.
 | NA-1959 → COD-2009 (12 chambers) | 1959–2011 | 90–214 | 1–3 each | frame only |
 | ADV-2005 | 2005–2011 | 112 | 113 | partial |
 | NCA-2011 | 2011–2014 | 217 | 217 | full |
-| ARP-2014 | 2014–2019 | 217 | 246 | full |
+| ARP-2014 | 2014–2019 | 217 | 245 | full |
 | ARP-2019 | 2019–2021 | 217 | 216 | full |
 | ARP-2023 | 2023– | 161 | 155 | full |
 | CNRD-2023 | 2024– | 77 | 0 | frame only |
@@ -330,21 +330,21 @@ away.
   hand-coding rather than a finished career history. The `shared_organisation`
   network layer inherits that uncertainty.
 - **Cross-source person matches are recorded, not assumed.** Every match is
-  listed with its method in `data/processed/_match_review.csv` for audit — 95
-  matches over 81 people, of whom 14 were matched to more than one source.
+  listed with its method in `data/processed/_match_review.csv` for audit — 106
+  matches over 90 people, of whom 16 were matched to more than one source.
   Matching never collapses two members of the same chamber on a name alone,
   because Tunisian homonyms are common.
-- **That conservatism has a measured cost, and it runs the other way.**
-  Requiring two sources' romanisations to agree splits eleven people who are
-  almost certainly one each — *Khmais* and *Khemais Ksila*, *Monia Ibrahim* and
-  *Monia Brahim* — on an exact Arabic-key match. All eleven are listed in
-  `data/processed/_latin_veto_report.csv`. `--relax-latin-veto` accepts them,
-  and `examples/latin_veto_impact.py` shows the default build is therefore
-  missing a tenth of all multi-chamber careers (85 rather than 94). The flag is
-  off by default because it reassigns `person_id` values; the shipped tables are
-  the conservative build, so **treat re-election and career-length figures as
-  lower bounds.**
-- **Bloc switching is measured for two chambers only.** ARP-2014 — 108 of the 238
+- **The Arabic key decides a match; the romanisations do not get a veto.**
+  Requiring two sources' romanisations to agree as well was the rule here until
+  the eleven records it held apart were read individually and every one proved
+  to be the same person twice — *Khmais* and *Khemais Ksila*, *Monia Ibrahim*
+  and *Monia Brahim*. Merging them is what puts 94 people in more than one
+  chamber rather than 85. Every case is still listed in
+  `data/processed/_latin_veto_report.csv`, since a merge over a disagreeing
+  spelling is the weakest one here, and `--strict-latin-match` rebuilds the old
+  way so the size of the correction stays checkable
+  (`examples/latin_veto_impact.py`).
+- **Bloc switching is measured for two chambers only.** ARP-2014 — 107 of the 237
   members with a recorded bloc history changed bloc, reconstructed by diffing
   monthly web captures, so boundaries are bracketed not exact — and ARP-2023,
   where 29 of 155 changed bloc from dates the chamber publishes (44 have more
