@@ -144,8 +144,15 @@ presence, for these families, is a one-shot event.
 The post-1956 placebo cannot be tested against this roster: 16 surnames over
 0.047% of the register predict **0.35** holders in a chamber of 742, so the
 zero observed there is the expected outcome under any hypothesis rather than a
-clean null. The parliamentary result rests on the decline above and on the
-turnover measure, not on a placebo.
+clean null.
+
+The control can be, and it is the more informative test. The 11,456 equally
+rare surnames the genealogies never recorded hold **63 of the 968
+parliamentarians, a ratio of 1.3× [1.0–1.6]** — barely above parity. Against
+that the chamber's 3.4× is a factor of 2.6, so the parliamentary advantage is
+real and is about a quarter of the cabinet's twelvefold gap over the same
+control. Parliament is the weakest of the elite rosters in the build, not a
+null one.
 
 Full results, figures and limitations: `docs/FINDINGS-persistence.md` in
 EliteNetworksTN.
