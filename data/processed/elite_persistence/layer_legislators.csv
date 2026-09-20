@@ -1,0 +1,1073 @@
+layer,person_id,name_raw,script,surname_candidates,spine_candidates,period,subgroup,assembly_id,coverage_status,entry_mode,gender
+legislators,TNP-00677,عبد اللّه الكعبي,ar,الكعبي,KB,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00678,عبد الله القلال,ar,القلال,KL,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00679,عبد الله الزرامي,ar,الزرامي,ZRM,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00680,عبد الحميد الباش,ar,الباش,BS,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00681,عبد اللطيف عبد المؤمن,ar,عبد المؤمن|المؤمن,BDMN|MN,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00682,عبد اللطيف العكريمي,ar,العكريمي,KRM,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00683,عبد اللطيف لزرق,ar,لزرق,LZRK,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00684,عبد المجيد ملاسي,ar,ملاسي,MLS,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00685,عبد الوهاب الباهي,ar,الباهي,BH,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00686,عبد الوهاب المديني,ar,المديني,MDN,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00687,عبد الواحد الطرابلسي,ar,الطرابلسي,TRBLS,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00688,عبد الناصر البوهالي,ar,البوهالي,BHL,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00689,عبد النور الجليدي,ar,الجليدي,JLD,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00690,عبد الستار قريسة,ar,قريسة,KRS,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00691,عادل بوصرصار,ar,بوصرصار,BSRSR,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00692,أحمد بن سالم,ar,بن سالم|سالم,BNSLM|SLM,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00693,أحمد الخزري,ar,الخزري,XZR,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00694,علي الحليوي,ar,الحليوي,HL,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00695,عمر عبد الباري,ar,عبد الباري|الباري,BDBR|BR,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00696,عمر القصري,ar,القصري,KSR,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00697,بنعيسى المغربي,ar,المغربي,MVRB,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00698,الشاذلي القليبي,ar,القليبي,KLB,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00699,شاذلية عثمان,ar,عثمان,TMN,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00700,الشادلي العياري,ar,العياري,R,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00701,الشريف لبيض,ar,لبيض,LBD,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00702,دخلية شلبي,ar,شلبي,SLB,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00703,العيد الطرابلسي,ar,الطرابلسي,TRBLS,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00704,إلياس قضومي,ar,قضومي,KDM,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00705,آمنة صولة,ar,صولة,SL,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00706,آسيا الدخيلي,ar,الدخيلي,DXL,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00707,فتحية المغربي,ar,المغربي,MVRB,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00708,فيصل التريكي,ar,التريكي,TRK,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00709,فؤاد الحوات,ar,الحوات,HT,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00710,غلام دباش,ar,دباش,DBS,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00711,الهادي بكوش,ar,بكوش,BKS,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00712,الهادي بدري,ar,بدري,BDR,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00713,الهادي مهني,ar,مهني,MHN,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00714,الحبيب عمار,ar,عمار,MR,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00715,الحبيب مستوري,ar,مستوري,MSTR,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00716,حمدان الرحوي,ar,الرحوي,RH,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00717,حياة العواني,ar,العواني,N,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00718,عماد الدين شاكر,ar,شاكر,SKR,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00719,اسماعيل حوّش,ar,حوش,HS,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00720,جلال مكادة,ar,مكادة,MKD,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00721,جمال الدين خماخم,ar,خماخم,XMXM,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00722,الجيلاني الرزقي,ar,الرزقي,RZK,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00723,جوزيف روجي بسموث,ar,بسموث,BSMT,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00724,كمال العيادي,ar,العيادي,D,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00725,كريم داود,ar,داود,D,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00726,ليلى المبروك,ar,المبروك,MBRK,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00727,مبروك البحري,ar,البحري,BHR,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00728,محرزية المعروفي,ar,المعروفي,MRF,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00729,مريم عقيلي,ar,عقيلي,KL,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00730,المكي العلوي,ar,العلوي,L,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00731,مسعود شوشان,ar,شوشان,SN,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00732,ميلود بن الهذيلي الزائري,ar,الزائري,ZR,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00733,محمد علي بن علية,ar,بن علية|علية,BNL|L,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00734,محمد العموص,ar,العموص,MS,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00735,محمد عزيز ميلاد,ar,ميلاد,MLD,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00736,محمد الباجي بن مامي,ar,بن مامي|مامي,BM|M,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00737,محمد بشير خلف اللّه,ar,خلف الله,XLFL,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00738,محمد بن سدرين,ar,بن سدرين|سدرين,BNSDRN|SDRN,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00739,محمد برهان صفية,ar,صفية,SF,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00740,محمد شندول,ar,شندول,SNDL,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00741,محمد المستيري,ar,المستيري,MSTR,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00742,محمد فتحي ملوكة,ar,ملوكة,MLK,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00743,محمد حرمل,ar,حرمل,HRML,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00744,محمد حسين فنطر,ar,فنطر,FNTR,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00745,محمد حميدات,ar,حميدات,HMDT,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00746,محمد جلال الرويسي,ar,الرويسي,RS,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00747,محمد الأحيول,ar,الأحيول,HL,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00748,محمد الليني,ar,الليني,LN,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00749,محمد المنصف بن مصباح,ar,بن مصباح|مصباح,BMSBH|MSBH,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00750,محمد منصف الشابي,ar,الشابي,SB,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00751,محمد المنصر الرويسي,ar,الرويسي,RS,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00752,محمد مواعدة,ar,مواعدة,MD,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00753,محمد نجيب حمادي,ar,حمادي,HMD,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00754,محمد الصادق قراجة,ar,قراجة,KRJ,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00755,محمد الصحراوي,ar,الصحراوي,SHR,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00756,محمد السلاوتي,ar,السلاوتي,SLT,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00757,محمد الطاهر الخميري,ar,الخميري,XMR,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00758,محي الدين الخلفاوي,ar,الخلفاوي,XLF,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00759,منصف بركوس,ar,بركوس,BRKS,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00760,منصف الماطري,ar,الماطري,MTR,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00761,منذر ثابت,ar,ثابت,TBT,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00762,المنجي المحواشي,ar,المحواشي,MHS,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00763,المنجي الشريف,ar,الشريف,SRF,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00764,منجية النفزي,ar,النفزي,NFZ,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00765,منية السنوسي,ar,السنوسي,SNS,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00766,منير المؤخر,ar,المؤخر,MXR,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00767,مصطفى بوعزيز,ar,بوعزيز,BZ,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00768,نعيمة خياش,ar,خياش,XS,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00769,نزيهة زروق,ar,زروق,ZRK,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00770,عثمان رياحي,ar,رياحي,RH,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00771,رشيد بن منصور السلامي,ar,السلامي,SLM,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00772,رشيد صفر,ar,صفر,SFR,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00773,روضة العلويني,ar,العلويني,LN,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00774,رياض الزغل,ar,الزغل,ZVL,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00775,رضا الفقير بن بلقاسم,ar,بن بلقاسم|بلقاسم,BMBLKSM|BLKSM,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00776,رضا الملولي,ar,الملولي,ML,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00777,ريم السالمي رويس,ar,رويس,RS,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00778,الصادق بن جمعة,ar,بن جمعة|جمعة,BNJM|JM,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00779,الصحبي البصلي,ar,البصلي,BSL,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00780,صالح بن الحاج حسين,ar,بن حسين|حسين,BNHSN|HSN,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00781,سالم بن عمر,ar,بن عمر|عمر,BMR|MR,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00782,سمير المغراوي,ar,المغراوي,MVR,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00783,صلاح الدين شعبان,ar,شعبان,SBN,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00784,سعاد الأمين,ar,الأمين,MN,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00785,الطيب بوعجينة,ar,بوعجينة,BJN,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00786,الطيب السحباني,ar,السحباني,SHBN,ben_ali,,ADV-2005,partial,appointed,
+legislators,TNP-00787,يحي رحّال,ar,رحال,RHL,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00788,يونس المناعي,ar,المناعي,MN,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00789,يوسف الكشوطي,ar,الكشوطي,KST,ben_ali,,ADV-2005,partial,elected,
+legislators,TNP-00569,المنجي سليم,ar,سليم,SLM,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00570,ألبير بسيس,ar,بسيس,BS,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00571,أحمد المستيري,ar,المستيري,MSTR,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00572,الطاهر بن عمار,ar,بن عمار|عمار,BMR|MR,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00573,العزيز الجلولي,ar,الجلولي,JL,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00574,محمود بن عز الدين,ar,بن عز الدين|عز الدين,BNZDN|ZDN,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00575,الهادي نويرة,ar,نويرة,NR,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00576,مصطفى الوالي,ar,الوالي,L,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00577,حمزة ستا,ar,ستا,ST,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00578,محمد الحبيب,ar,الحبيب,HB,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00579,حبيب تليبة,ar,تليبة,TLB,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00580,أحمد بن حميدة,ar,بن حميدة|حميدة,BNHMD|HMD,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00581,الجلولي فارس,ar,فارس,FRS,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00582,عبد الرحمان مجول,ar,مجول,MJL,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00583,أحمد بن عبد الكريم,ar,بن عبد الكريم|عبد الكريم|الكريم,BMBDKRM|BDKRM|KRM,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00584,عبد العزيز نوري,ar,نوري,NR,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00585,طاهر دباية,ar,دباية,DB,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00586,مصطفى الفيلالي,ar,الفيلالي,FL,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00587,محمد شكرون,ar,شكرون,SKRN,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00588,صلاح كشريد,ar,كشريد,KSRD,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00589,عبد السلام عاشور,ar,عاشور,SR,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00590,محمد فالح جهيناوي,ar,جهيناوي,JHN,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00591,حسن ساسي,ar,ساسي,S,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00592,عز الدين عباسي,ar,عباسي,BS,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00593,الشيخ علي بنعيسى بوحجر,ar,بوحجر,BHJR,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00594,العربي عبروق,ar,عبروق,BRK,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00595,محمد كرمة,ar,كرمة,KRM,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00596,صالح بالعيش,ar,بالعيش,BLS,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00597,محمد المصمودي,ar,المصمودي,MSMD,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00598,محمد قاسم,ar,قاسم,KSM,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00599,محمد صفر,ar,صفر,SFR,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00600,فرج جمعة,ar,جمعة,JM,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00601,محمد الجدي,ar,الجدي,JD,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00602,صادق بن يحمد,ar,بن يحمد|يحمد,BNHMD|HMD,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00603,عبد الحميد برغاوي,ar,برغاوي,BRV,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00604,محمد حمزة,ar,حمزة,HMZ,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00605,محمد شنيق,ar,شنيق,SNK,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00606,عبد الرحمان عبد النبي,ar,عبد النبي|النبي,BDMB|MB,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00607,أحمد الغرياني,ar,الغرياني,VRN,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00608,سليمان الزواري,ar,الزواري,ZR,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00609,الحبيب بورقيبة,ar,بورقيبة,BRKB,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00610,الهادي بوسلامة,ar,بوسلامة,BSLM,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00611,العجمي سليم,ar,سليم,SLM,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00612,الطيب المهيري,ar,المهيري,MHR,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00613,الهادي الغلوصي,ar,الغلوصي,VLS,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00614,مختار عزيز,ar,عزيز,Z,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00615,الصادق بوصفارة,ar,بوصفارة,BSFR,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00616,بشير بلاغة,ar,بلاغة,BLV,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00617,محمد زهوية,ar,زهوية,ZH,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00618,محمد بدرة,ar,بدرة,BDR,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00619,أحمد بن صالح,ar,بن صالح|صالح,BNSLH|SLH,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00620,عبد الرحمان بوعجاجة,ar,بوعجاجة,BJ,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00621,محمود الخياري,ar,الخياري,XR,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00622,نصر مرزوقي,ar,مرزوقي,MRZK,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00623,محمد الراي,ar,الراي,R,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00624,يوسف لبوز,ar,لبوز,LBZ,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00625,نصر بن جعفر,ar,بن جعفر|جعفر,BNJFR|JFR,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00626,الفرجاني بالحاج عمار,ar,عمار,MR,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00627,أحمد علولو,ar,علولو,L,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00628,الحبيب عاشور,ar,عاشور,SR,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00629,حسن شفرود,ar,شفرود,SFRD,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00630,محمد مكني,ar,مكني,MKN,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00631,مفتاح سميري,ar,سميري,SMR,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00632,أحمد دريرة,ar,دريرة,DR,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00633,محمود الغول,ar,الغول,VL,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00634,طاهر عبد الكافي,ar,عبد الكافي|الكافي,BDKF|KF,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00635,أحمد التليلي,ar,التليلي,TL,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00636,حسين بن صالح,ar,بن صالح|صالح,BNSLH|SLH,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00637,حسين بوزيان,ar,بوزيان,BZN,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00638,محمد الأمين الشابي,ar,الشابي,SB,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00639,حسونة بن طاهر,ar,بن طاهر|طاهر,BNTHR|THR,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00640,قلعي رشدي,ar,رشدي,RSD,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00641,الشادلي باش تبجي,ar,باش تبجي|تبجي,BSTBJ|TBJ,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00642,فتحي زهير,ar,زهير,ZHR,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00643,محمد كباني,ar,كباني,KBN,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00644,طاهر بوريال,ar,بوريال,BRL,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00645,صالح قلعاوي,ar,قلعاوي,KL,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00646,الصادق المقدم,ar,المقدم,MKDM,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00647,علي الزلاوي,ar,الزلاوي,ZL,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00648,شريف مراد,ar,مراد,MRD,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00649,شادلي رحيم,ar,رحيم,RHM,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00650,عبد الله فرحات,ar,فرحات,FRHT,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00651,جلول بن شريفة,ar,بن شريفة|شريفة,BNSRF|SRF,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00652,محمد رمضان,ar,رمضان,RMDN,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00653,محمد بن للونة,ar,بن للونة|للونة,BNLN|LN,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00654,علي البلهوان,ar,البلهوان,BLHN,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00655,الحبيب الشطي,ar,الشطي,ST,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00656,عمار بالحاج عثمان,ar,عثمان,TMN,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00657,أحمد بالأمين,ar,بالأمين,BLMN,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00658,الباهي الأدغم,ar,الأدغم,DVM,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00659,محمد الشاذلي النيفر,ar,النيفر,NFR,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00660,محمود الماطري,ar,الماطري,MTR,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00661,عمر الرياحي,ar,الرياحي,RH,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00662,أندريه بروش,ar,بروش,BRS,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00663,الطيب السحباني,ar,السحباني,SHBN,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00664,محمد لصفر جراد,ar,جراد,JRD,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00665,عزوز الرباعي,ar,الرباعي,RB,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00666,محمود زرزاري,ar,زرزاري,ZRZR,protectorate_transition,Front National,ANC-1956,full,elected,
+legislators,TNP-00667,الطيب الميلادي,ar,الميلادي,MLD,protectorate_transition,Front National,ANC-1956,full,elected_byelection,
+legislators,TNP-00668,توفيق بن براهيم,ar,بن براهيم|براهيم,BMBRHM|BRHM,protectorate_transition,Front National,ANC-1956,full,elected_byelection,
+legislators,TNP-00669,الرشيد إدريس,ar,إدريس,DRS,protectorate_transition,Front National,ANC-1956,full,elected_byelection,
+legislators,TNP-00670,أحمد عمارة,ar,عمارة,MR,protectorate_transition,Front National,ANC-1956,full,elected_byelection,
+legislators,TNP-00671,محمد النفطي,ar,النفطي,NFT,protectorate_transition,Front National,ANC-1956,full,elected_byelection,
+legislators,TNP-00672,البحري بربوش,ar,بربوش,BRBS,protectorate_transition,Front National,ANC-1956,full,elected_byelection,
+legislators,TNP-00673,صادق غرمازي,ar,غرمازي,VRMZ,protectorate_transition,Front National,ANC-1956,full,elected_byelection,
+legislators,TNP-00674,صادق خلف الله,ar,خلف الله,XLFL,protectorate_transition,Front National,ANC-1956,full,elected_byelection,
+legislators,TNP-00675,أحمد السنوسي,ar,السنوسي,SNS,protectorate_transition,Front National,ANC-1956,full,elected_byelection,
+legislators,TNP-00676,محمد عجيلي,ar,عجيلي,JL,protectorate_transition,Front National,ANC-1956,full,elected_byelection,
+legislators,TNP-00058,فاطمة المسدي,ar,المسدي,MSD,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00065,عماد أولاد جبريل,ar,أولاد جبريل|جبريل,LDJBRL|JBRL,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00111,رياض جعيدان,ar,جعيدان,JDN,second_republic,قائمة نداء التونسيين بالخارج,ARP-2014,full,elected,male
+legislators,TNP-00115,رضا الدلاعي,ar,الدلاعي,DL,second_republic,حركة الشعب,ARP-2014,full,elected,male
+legislators,TNP-00145,الناصر الشنوفي,ar,الشنوفي,SNF,second_republic,حزب المبادرة,ARP-2014,full,elected,male
+legislators,TNP-00163,عدنان حاجي,ar,حاجي,HJ,second_republic,القائمة المستقلة رد الإعتبار,ARP-2014,full,elected,male
+legislators,TNP-00174,عامر العريض,ar,العريض,RD,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00178,أروى بن عباس,ar,بن عباس|عباس,BMBS|BS,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00183,البشير الخليفي,ar,الخليفي,XLF,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00191,آمنة بن حميد,ar,بن حميد|حميد,BNHMD|HMD,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00199,فتحي العيادي,ar,العيادي,D,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00203,فيصل تبيني,ar,تبيني,TBN,second_republic,حزب صوت الفلاحين,ARP-2014,full,elected,male
+legislators,TNP-00204,فريدة عبيدي,ar,عبيدي,BD,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00208,حافظ الزواري,ar,الزواري,ZR,second_republic,آفاق تونس,ARP-2014,full,elected,male
+legislators,TNP-00212,حسونه ناصفي,ar,ناصفي,NSF,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00217,حياة عمري,ar,عمري,MR,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00221,هاجر بوزمي,ar,بوزمي,BZM,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00227,ابتهاج بن هلال,ar,بن هلال|هلال,BNHL|HL,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00228,عماد الخميري,ar,الخميري,XMR,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00235,جميلة دبش,ar,دبش,DBS,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00236,جميلة الجويني,ar,الجويني,JN,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00247,لطيفة الحباشي,ar,الحباشي,HBS,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00251,لطفي علي,ar,علي,L,second_republic,حزب المبادرة,ARP-2014,full,elected,male
+legislators,TNP-00254,محبوبة بن ضيف الله,ar,بن ضيف الله|ضيف الله,BNDFL|DFL,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00255,ماهر المذيوب,ar,المذيوب,MDB,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00262,مروان فلفال,ar,فلفال,FLFL,second_republic,حركة نداء تونس,ARP-2014,full,replacement_list,male
+legislators,TNP-00264,مهدي بن غربية,ar,بن غربية|غربية,BNVRB|VRB,second_republic,التحالف الديمقراطي,ARP-2014,full,elected,male
+legislators,TNP-00267,معز بلحاج رحومة,ar,بلحاج رحومة|رحومة,BLHJRHM|RHM,second_republic,حركة النهضة,ARP-2014,full,replacement_list,male
+legislators,TNP-00276,محمد كمال حمزاوي,ar,حمزاوي,HMZ,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00285,محمد زريق,ar,زريق,ZRK,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00289,منجي الرحوي,ar,الرحوي,RH,second_republic,الجبهة الشعبية,ARP-2014,full,elected,male
+legislators,TNP-00295,مصطفى بن أحمد,ar,بن أحمد|أحمد,BNHMD|HMD,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00299,نوفل الجمالي,ar,الجمالي,JML,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00301,ناجي الجمل,ar,الجمل,JML,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00303,نسرين العماري,ar,العماري,MR,second_republic,حركة نداء تونس,ARP-2014,full,replacement_list,female
+legislators,TNP-00305,نعمان العش,ar,العش,S,second_republic,التيار الديمقراطي,ARP-2014,full,elected,male
+legislators,TNP-00309,نور الدين البحيري,ar,البحيري,BHR,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00319,رضا شرف الدين,ar,شرف الدين,SRFDN,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00324,الصحبي عتيق,ar,عتيق,TK,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00328,سالم لبيض,ar,لبيض,LBD,second_republic,حركة الشعب,ARP-2014,full,elected,male
+legislators,TNP-00331,سماح دمق,ar,دمق,DMK,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00332,سامية عبو,ar,عبو,B,second_republic,التيار الديمقراطي,ARP-2014,full,elected,female
+legislators,TNP-00333,سمير ديلو,ar,ديلو,DL,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00340,السيدة الونيسي,ar,الونيسي,NS,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00345,سفيان طوبال,ar,طوبال,TBL,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00350,طارق فتيتي,ar,فتيتي,FT,second_republic,الإتحاد الوطني الحر,ARP-2014,full,elected,male
+legislators,TNP-00354,وفاء عطية,ar,عطية,T,second_republic,حركة النهضة,ARP-2014,full,replacement_list,female
+legislators,TNP-00355,وليد الجلاد,ar,الجلاد,JLD,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00357,يمينة الزغلامي,ar,الزغلامي,ZVLM,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00358,ياسين العياري,ar,العياري,R,second_republic,مستقل,ARP-2014,full,replacement_list,male
+legislators,TNP-00361,زينب براهمي,ar,براهمي,BRHM,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00364,زياد العذاري,ar,العذاري,DR,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00365,زهير المغزاوي,ar,المغزاوي,MVZ,second_republic,حركة الشعب,ARP-2014,full,elected,male
+legislators,TNP-00369,أحمد المشرقي,ar,المشرقي,MSRK,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00375,أسامة الصغير,ar,الصغير,SVR,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00383,الحبيب خضر,ar,خضر,XDR,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00394,الهادي بن ابراهم,ar,بن ابراهم|ابراهم,BMBRHM|BRHM,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00401,إيمان بن محمد,ar,بن محمد|محمد,BMHMD|MHMD,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00404,بسمة الجبالي,ar,الجبالي,JBL,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00422,دليلة الببة,ar,الببة,B,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00429,ريم ثايري,ar,ثايري,TR,second_republic,تيار المحبة,ARP-2014,full,elected,female
+legislators,TNP-00430,ريم محجوب,ar,محجوب,MHJB,second_republic,آفاق تونس,ARP-2014,full,replacement_list,female
+legislators,TNP-00445,سناء مرسني,ar,مرسني,MRSN,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00468,عبد العزيز القطي,ar,القطي,KT,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00492,كلثوم بدر الدين,ar,بدر الدين,BDRDN,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00498,مبروك الحريزي,ar,الحريزي,HRZ,second_republic,المؤتمر من أجل الجمهورية,ARP-2014,full,elected,male
+legislators,TNP-00500,محرزية العبيدي,ar,العبيدي,BD,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00523,محمود قويعة,ar,قويعة,K,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00543,نعمان الفهري,ar,الفهري,FHR,second_republic,آفاق تونس,ARP-2014,full,elected,male
+legislators,TNP-00544,نور الدين المرابطي,ar,المرابطي,MRBT,second_republic,الإتحاد الوطني الحر,ARP-2014,full,elected,male
+legislators,TNP-00548,هالة الحامي,ar,الحامي,HM,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00553,سلاف القسنطيني,ar,القسنطيني,KSNTN,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00790,عبادة الكافي,ar,الكافي,KF,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00791,عبد الفتاح مورو,ar,مورو,MR,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00792,عبد القادر بنضيف الله,ar,بنضيف الله,BNDFL,second_republic,الإتحاد الوطني الحر,ARP-2014,full,elected,male
+legislators,TNP-00793,عبد اللطيف المكّي,ar,المكي,MK,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00794,عبد المؤمن بلعانس,ar,بلعانس,BLNS,second_republic,الجبهة الشعبية,ARP-2014,full,elected,male
+legislators,TNP-00795,عبد الوهاب الورفلي,ar,الورفلي,RFL,second_republic,الحزب الجمهوري,ARP-2014,full,replacement_list,male
+legislators,TNP-00796,عبد الناصر شويخ,ar,شويخ,SX,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00797,عبد الرؤوف الشابي,ar,الشابي,SB,second_republic,الإتحاد الوطني الحر,ARP-2014,full,elected,male
+legislators,TNP-00798,عبد الرؤوف الشريف,ar,الشريف,SRF,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00799,عبد الرؤوف الماي,ar,الماي,M,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00800,عبد الرزاق شريط,ar,شريط,SRT,second_republic,القائمة المستقلة لمجد الجريد,ARP-2014,full,elected,male
+legislators,TNP-00801,عبير عبدلي,ar,عبدلي,BDL,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00802,أحمد عماري,ar,عماري,MR,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00803,أحمد السعيدي,ar,السعيدي,SD,second_republic,حزب المبادرة,ARP-2014,full,elected,male
+legislators,TNP-00804,أحمد الصديق,ar,الصديق,SDK,second_republic,الجبهة الشعبية,ARP-2014,full,elected,male
+legislators,TNP-00805,علي بالاخوة,ar,بالاخوة,BLX,second_republic,الإتحاد الوطني الحر,ARP-2014,full,elected,male
+legislators,TNP-00806,علي بن سالم,ar,بن سالم|سالم,BNSLM|SLM,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00807,علي بنور,ar,بنور,BNR,second_republic,آفاق تونس,ARP-2014,full,elected,male
+legislators,TNP-00808,علي العريض,ar,العريض,RD,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00809,أمل سويد,ar,سويد,SD,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00810,أميرة زوكاري,ar,زوكاري,ZKR,second_republic,حركة نداء تونس,ARP-2014,full,replacement_list,female
+legislators,TNP-00811,عمار عمروسيه,ar,عمروسيه,MRS,second_republic,الجبهة الشعبية,ARP-2014,full,elected,male
+legislators,TNP-00812,اسماء بو الهناء,ar,بو الهناء|الهناء,BHN|HN,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00813,أيمن علوي,ar,علوي,L,second_republic,الجبهة الشعبية,ARP-2014,full,elected,male
+legislators,TNP-00814,بدر الدين عبدالكافي,ar,عبدالكافي,BDLKF,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00815,البشير بن عمر,ar,بن عمر|عمر,BMR|MR,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00816,البشير اللزام,ar,اللزام,LZM,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00817,بلقاسم دخيلي,ar,دخيلي,DXL,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00818,بشرى بلحاج حميدة,ar,بلحاج حميدة|حميدة,BLHJHMD|HMD,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00819,بثينة بن يغلان,ar,بن يغلان|يغلان,BNVLN|VLN,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00820,ابراهيم ناصف,ar,ناصف,NSF,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00821,شفيق العيادي,ar,العيادي,D,second_republic,الجبهة الشعبية,ARP-2014,full,elected,male
+legislators,TNP-00822,شهيدة فرج,ar,فرج,FRJ,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00823,شاكر عيادي,ar,عيادي,D,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00824,شكيب باني,ar,باني,BN,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00825,درة يعقوبي,ar,يعقوبي,KB,second_republic,الإتحاد الوطني الحر,ARP-2014,full,elected,female
+legislators,TNP-00826,الخنساء بن حراث,ar,بن حراث|حراث,BNHRT|HRT,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00827,فوزية بن فضة,ar,بن فضة|فضة,BNFD|FD,second_republic,الإتحاد الوطني الحر,ARP-2014,full,elected,female
+legislators,TNP-00828,فاتن  الوسلاتي,ar,الوسلاتي,SLT,second_republic,الحزب الجمهوري,ARP-2014,full,replacement_list,female
+legislators,TNP-00829,فتحي شامخي,ar,شامخي,SMX,second_republic,الجبهة الشعبية,ARP-2014,full,elected,male
+legislators,TNP-00830,فيصل خليفة,ar,خليفة,XLF,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00831,غازي الشواشي,ar,الشواشي,S,second_republic,التيار الديمقراطي,ARP-2014,full,elected,male
+legislators,TNP-00832,هاجر تريكي,ar,تريكي,TRK,second_republic,حركة النهضة,ARP-2014,full,replacement_list,female
+legislators,TNP-00833,حمدي قزقز,ar,قزقز,KZKZ,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00834,حاتم الفرجاني,ar,الفرجاني,FRJN,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00835,حياة كبير,ar,كبير,KBR,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00836,هيكل بلقاسم,ar,بلقاسم,BLKSM,second_republic,الجبهة الشعبية,ARP-2014,full,elected,male
+legislators,TNP-00837,الهادي صولة,ar,صولة,SL,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00838,هاجر بالشيخ أحمد,ar,أحمد,HMD,second_republic,آفاق تونس,ARP-2014,full,replacement_list,female
+legislators,TNP-00839,هاجر العروسي,ar,العروسي,RS,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00840,هالة عمران,ar,عمران,MRN,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00841,حمد الخصخوصي,ar,الخصخوصي,XSXS,second_republic,حركة الديمقراطيين الإجتماعيين,ARP-2014,full,elected,male
+legislators,TNP-00842,الحسين جزيري,ar,جزيري,JZR,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00843,هدى سليم,ar,سليم,SLM,second_republic,حركة نداء تونس,ARP-2014,full,replacement_list,female
+legislators,TNP-00844,هدى تقية,ar,تقية,TK,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00845,حسام بونني,ar,بونني,BN,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00846,حسن العماري,ar,العماري,MR,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00847,الحسين اليحياوي,ar,اليحياوي,H,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00848,ابراهيم بن سعيد,ar,بن سعيد|سعيد,BNSD|SD,second_republic,المؤتمر من أجل الجمهورية,ARP-2014,full,elected,male
+legislators,TNP-00849,ابتسام جبابلي,ar,جبابلي,JBL,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00850,إكرام مولاهي,ar,مولاهي,MLH,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00851,عماد الدائمي,ar,الدائمي,DM,second_republic,المؤتمر من أجل الجمهورية,ARP-2014,full,elected,male
+legislators,TNP-00852,اسماعيل بن محمود,ar,بن محمود|محمود,BMHMD|MHMD,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00853,عصام الماطوسي,ar,الماطوسي,MTS,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00854,إياد الدهماني,ar,الدهماني,DHMN,second_republic,الحزب الجمهوري,ARP-2014,full,elected,male
+legislators,TNP-00855,جيهان عويشي,ar,عويشي,S,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00856,جيهان عبادي,ar,عبادي,BD,second_republic,حركة نداء تونس,ARP-2014,full,replacement_list,female
+legislators,TNP-00857,الجيلاني الهمامي,ar,الهمامي,HM,second_republic,الجبهة الشعبية,ARP-2014,full,elected,male
+legislators,TNP-00858,كمال ذوادي,ar,ذوادي,D,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00859,كمال هراغي,ar,هراغي,HRV,second_republic,الإتحاد الوطني الحر,ARP-2014,full,elected,male
+legislators,TNP-00860,كريم الهلالي,ar,الهلالي,HL,second_republic,آفاق تونس,ARP-2014,full,elected,male
+legislators,TNP-00861,كريمة  التقاز,ar,التقاز,TKZ,second_republic,حركة النهضة,ARP-2014,full,replacement_list,female
+legislators,TNP-00862,خالد شوكات,ar,شوكات,SKT,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00863,خولة بن عائشة,ar,بن عائشة|عائشة,BNS|S,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00864,خميس قسيلة,ar,قسيلة,KSL,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00865,العجمي الوريمي,ar,الوريمي,RM,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00866,لخضر بالهوشات,ar,بالهوشات,BLHST,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00867,لمياء  الدريدي,ar,الدريدي,DRD,second_republic,التحالف الديمقراطي,ARP-2014,full,replacement_list,female
+legislators,TNP-00868,لمياء الغربي,ar,الغربي,VRB,second_republic,حركة نداء تونس,ARP-2014,full,replacement_list,female
+legislators,TNP-00869,لمياء المليح,ar,المليح,MLH,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00870,ليلى الشتاوي بوقطف,ar,بوقطف,BKTF,second_republic,حركة نداء تونس,ARP-2014,full,replacement_list,female
+legislators,TNP-00871,ليلى بوقطف,ar,بوقطف,BKTF,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00872,ليلى الحمروني,ar,الحمروني,HMRN,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00873,ليلى الوسلاتي,ar,الوسلاتي,SLT,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00874,ليلى أولاد علي,ar,أولاد علي|علي,LDL|L,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00875,ليلى الزحاف,ar,الزحاف,ZHF,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00876,ليليا يونس كسيبي,ar,كسيبي,KSB,second_republic,آفاق تونس,ARP-2014,full,replacement_list,female
+legislators,TNP-00877,لطفي النابلي,ar,النابلي,MBL,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00878,محمود قاهري,ar,قاهري,KHR,second_republic,الإتحاد الوطني الحر,ARP-2014,full,elected,male
+legislators,TNP-00879,مروى بوعزي,ar,بوعزي,BZ,second_republic,حركة نداء تونس,ARP-2014,full,replacement_list,female
+legislators,TNP-00880,مروان فلفال,ar,فلفال,FLFL,second_republic,حركة نداء تونس,ARP-2014,full,replacement_list,male
+legislators,TNP-00881,مباركة عوائنية,ar,عوائنية,N,second_republic,الجبهة الشعبية,ARP-2014,full,elected,female
+legislators,TNP-00882,مريم بوجبل,ar,بوجبل,BJBL,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00883,محمد عبد اللاوي,ar,عبد اللاوي|اللاوي,BDL|L,second_republic,حركة نداء تونس,ARP-2014,full,replacement_list,male
+legislators,TNP-00884,محمد علي البدوي,ar,البدوي,BD,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00885,محمد الأمين كحلول,ar,كحلول,KHL,second_republic,الإتحاد الوطني الحر,ARP-2014,full,elected,male
+legislators,TNP-00886,محمد أنور العذار,ar,العذار,DR,second_republic,آفاق تونس,ARP-2014,full,elected,male
+legislators,TNP-00887,محمد بن سالم,ar,بن سالم|سالم,BNSLM|SLM,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00888,محمد بنصوف,ar,بنصوف,BNSF,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00889,محمد حامدي,ar,حامدي,HMD,second_republic,تيار المحبة,ARP-2014,full,elected,male
+legislators,TNP-00890,محمد الناصر,ar,الناصر,NSR,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00891,محمد الناصر جبيرة,ar,جبيرة,JBR,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00892,محمد الفاضل بن عمران,ar,بن عمران|عمران,BMRN|MRN,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00893,محمد الفريخة,ar,الفريخة,FRX,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00894,محمد غنام,ar,غنام,VM,second_republic,آفاق تونس,ARP-2014,full,elected,male
+legislators,TNP-00895,محمد الهادي قديش,ar,قديش,KDS,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00896,محمد جلال غديرة,ar,غديرة,VDR,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00897,محمد كمال بسباس,ar,بسباس,BSBS,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00898,محمد الأخضر العجيلي,ar,العجيلي,JL,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00899,محمد الأزهر عكرمي,ar,عكرمي,KRM,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00900,محمد المحجوب,ar,المحجوب,MHJB,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00901,محمد المحسن سوداني,ar,سوداني,SDN,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00902,محمد نجيب ترجمان,ar,ترجمان,TRJMN,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00903,محمد الراشدي,ar,الراشدي,RSD,second_republic,حركة نداء تونس,ARP-2014,full,replacement_list,male
+legislators,TNP-00904,محمد الراشدي بوقرة,ar,بوقرة,BKR,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00905,محمد رمزي خميس,ar,خميس,XMS,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00906,محمد سعيدان,ar,سعيدان,SDN,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00907,محمد سيدهم,ar,سيدهم,SDHM,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00908,محمد الطرودي,ar,الطرودي,TRD,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00909,محسن حسن,ar,حسن,HSN,second_republic,الإتحاد الوطني الحر,ARP-2014,full,elected,male
+legislators,TNP-00910,المنصف السلامي,ar,السلامي,SLM,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00911,المنذر بلحاج علي,ar,بلحاج علي|علي,BLHJL|L,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00912,المنجي حرباوي,ar,حرباوي,HRB,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00913,منية ابراهيم,ar,ابراهيم,BRHM,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00914,منير الحمدي,ar,الحمدي,HMD,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00915,مراد حمايدي,ar,حمايدي,HMD,second_republic,الجبهة الشعبية,ARP-2014,full,elected,male
+legislators,TNP-00916,النذير بن عمو,ar,بن عمو|عمو,BM|M,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00917,نادية زنڨر,ar,زنڨر,ZNKR,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00918,ناجية بن عبد الحفيظ,ar,بن عبد الحفيظ|عبد الحفيظ|الحفيظ,BMBDHFZ|BDHFZ|HFZ,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00919,نجلاء سعداوي,ar,سعداوي,SD,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00920,نوال طياش,ar,طياش,TS,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00921,نزار عمامي,ar,عمامي,M,second_republic,الجبهة الشعبية,ARP-2014,full,elected,male
+legislators,TNP-00922,نورة العامري,ar,العامري,MR,second_republic,حركة نداء تونس,ARP-2014,full,replacement_list,female
+legislators,TNP-00923,نور الدين بن عاشور,ar,بن عاشور|عاشور,BNSR|SR,second_republic,الإتحاد الوطني الحر,ARP-2014,full,elected,male
+legislators,TNP-00924,نزهة بياوي,ar,بياوي,B,second_republic,الجبهة الوطنية للإنقاذ,ARP-2014,full,replacement_list,female
+legislators,TNP-00925,ألفة الجويني,ar,الجويني,JN,second_republic,الإتحاد الوطني الحر,ARP-2014,full,replacement_list,female
+legislators,TNP-00926,ألفة السكري,ar,السكري,SKR,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00927,أنس الحطاب,ar,الحطاب,HTB,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00928,أسامة علية الصغير,ar,الصغير,SVR,second_republic,حركة النهضة,ARP-2014,full,replacement_list,male
+legislators,TNP-00929,رابحة بن حسين,ar,بن حسين|حسين,BNHSN|HSN,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00930,راضيه التومي,ar,التومي,TM,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00931,رمزي بن فرج,ar,بن فرج|فرج,BNFRJ|FRJ,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00932,رياض المؤخر,ar,المؤخر,MXR,second_republic,آفاق تونس,ARP-2014,full,elected,male
+legislators,TNP-00933,رضا الزغندي,ar,الزغندي,ZVND,second_republic,الإتحاد الوطني الحر,ARP-2014,full,elected,male
+legislators,TNP-00934,صبري الدخيل,ar,الدخيل,DXL,second_republic,المؤتمر من أجل الجمهورية,ARP-2014,full,elected,male
+legislators,TNP-00935,صبرين الغبنتني,ar,الغبنتني,VBNTN,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00936,صافية خلفي,ar,خلفي,XLF,second_republic,حركة النهضة,ARP-2014,full,elected,female
+legislators,TNP-00937,الصحبي بن فرج,ar,بن فرج|فرج,BNFRJ|FRJ,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00938,سعيد العايدي,ar,العايدي,D,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00939,صـلاح البرقاوي,ar,البرقاوي,BRK,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00940,سالم حامدي,ar,حامدي,HMD,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00941,سلمى اللومي,ar,اللومي,LM,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00942,سماح بوحوال,ar,بوحوال,BHL,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00943,سامي الفطناسي,ar,الفطناسي,FTNS,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00944,سناء الصالحي,ar,الصالحي,SLH,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00945,سليم بسباس,ar,بسباس,BSBS,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00946,سعاد البيولي,ar,البيولي,BL,second_republic,الجبهة الشعبية,ARP-2014,full,elected,female
+legislators,TNP-00947,سعاد الزوالي,ar,الزوالي,ZL,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00948,سهيل العلويني,ar,العلويني,LN,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00949,الطاهر فضيل,ar,فضيل,FDL,second_republic,الإتحاد الوطني الحر,ARP-2014,full,elected,male
+legislators,TNP-00950,الطاهر بطيخ,ar,بطيخ,BTX,second_republic,حركة نداء تونس,ARP-2014,full,replacement_list,male
+legislators,TNP-00951,الطيب المدني,ar,المدني,MDN,second_republic,حركة نداء تونس,ARP-2014,full,elected,male
+legislators,TNP-00952,توفيق الجملي,ar,الجملي,JML,second_republic,الإتحاد الوطني الحر,ARP-2014,full,elected,male
+legislators,TNP-00953,توفيق والي,ar,والي,L,second_republic,حركة نداء تونس,ARP-2014,full,replacement_list,male
+legislators,TNP-00954,طارق براق,ar,براق,BRK,second_republic,الجبهة الشعبية,ARP-2014,full,elected,male
+legislators,TNP-00955,تهامي عبدولي,ar,عبدولي,BDL,second_republic,الجبهة الوطنية للإنقاذ,ARP-2014,full,elected,male
+legislators,TNP-00956,وفاء مخلوف,ar,مخلوف,MXLF,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00957,الوليد البناني,ar,البناني,BN,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00958,ياسين ابراهيم,ar,ابراهيم,BRHM,second_republic,آفاق تونس,ARP-2014,full,elected,male
+legislators,TNP-00959,يوسف الجويني,ar,الجويني,JN,second_republic,الإتحاد الوطني الحر,ARP-2014,full,elected,male
+legislators,TNP-00960,زياد الأخضر,ar,الأخضر,XDR,second_republic,الجبهة الشعبية,ARP-2014,full,elected,male
+legislators,TNP-00961,الزهرة ادريس,ar,ادريس,DRS,second_republic,حركة نداء تونس,ARP-2014,full,elected,female
+legislators,TNP-00962,الزهير الرجبي,ar,الرجبي,RJB,second_republic,حركة النهضة,ARP-2014,full,replacement_list,male
+legislators,TNP-00963,الزهير الرجبي,ar,الرجبي,RJB,second_republic,حركة النهضة,ARP-2014,full,elected,male
+legislators,TNP-00065,عماد أولاد جبريل,ar,أولاد جبريل|جبريل,LDJBRL|JBRL,second_republic,حزب قلب تونس,ARP-2019,full,elected,male
+legislators,TNP-00080,عبد الرزاق عويدات,ar,عويدات,DT,second_republic,حركة الشعب,ARP-2019,full,elected,male
+legislators,TNP-00105,سامي بن عبد العالي,ar,بن عبد العالي|عبد العالي|العالي,BMBDL|BDL|L,second_republic,القائمة المستقلة كلنا توانسة,ARP-2019,full,elected,male
+legislators,TNP-00115,رضا الدلاعي,ar,الدلاعي,DL,second_republic,حركة الشعب,ARP-2019,full,elected,male
+legislators,TNP-00134,بدر الدين القمودي,ar,القمودي,KMD,second_republic,حركة الشعب,ARP-2019,full,elected,male
+legislators,TNP-00156,عبد الله حريزي,ar,حريزي,HRZ,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00157,عبد الحميد المرزوقي,ar,المرزوقي,MRZK,second_republic,حزب قلب تونس,ARP-2019,full,elected,male
+legislators,TNP-00158,عبد اللطيف علوي,ar,علوي,L,second_republic,إئتلاف الكرامة,ARP-2019,full,elected,male
+legislators,TNP-00159,عبد المجيد عمار,ar,عمار,MR,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00160,عبد الرزاق الحسني,ar,الحسني,HSN,second_republic,الحزب الدستوري الحر,ARP-2019,full,elected,male
+legislators,TNP-00161,عبد السلام بن عمارة,ar,بن عمارة|عمارة,BMR|MR,second_republic,حركة الشعب,ARP-2019,full,elected,male
+legislators,TNP-00162,عبير موسي,ar,موسي,MS,second_republic,الحزب الدستوري الحر,ARP-2019,full,elected,female
+legislators,TNP-00163,عدنان حاجي,ar,حاجي,HJ,second_republic,الإتحاد الديمقراطي الإجتماعي,ARP-2019,full,elected,male
+legislators,TNP-00164,عدنان بن ابراهيم,ar,بن ابراهيم|ابراهيم,BMBRHM|BRHM,second_republic,حزب الاتحاد الشعبي الجمهوري,ARP-2019,full,elected,male
+legislators,TNP-00165,أحمد بلقاسم,ar,بلقاسم,BLKSM,second_republic,القائمة المستقلة الشباب المستقل,ARP-2019,full,elected,male
+legislators,TNP-00166,أحمد بن عياد,ar,بن عياد|عياد,BND|D,second_republic,حزب الرحمة,ARP-2019,full,elected,male
+legislators,TNP-00167,أحمد موحه,ar,موحه,MH,second_republic,إئتلاف الكرامة,ARP-2019,full,elected,male
+legislators,TNP-00168,أحمد الصغير,ar,الصغير,SVR,second_republic,الحزب الدستوري الحر,ARP-2019,full,elected,male
+legislators,TNP-00169,علي بنعون,ar,بنعون,BN,second_republic,حركة الشعب,ARP-2019,full,elected,male
+legislators,TNP-00170,علي الهرماسي,ar,الهرماسي,HRMS,second_republic,حزب نداء تونس,ARP-2019,full,elected,male
+legislators,TNP-00171,علي الطياشي,ar,الطياشي,TS,second_republic,الحزب الدستوري الحر,ARP-2019,full,elected,male
+legislators,TNP-00172,أمل السعيدي,ar,السعيدي,SD,second_republic,حزب التيار الديمقراطي,ARP-2019,full,elected,female
+legislators,TNP-00173,آمال الورتتاني,ar,الورتتاني,RTN,second_republic,حزب قلب تونس,ARP-2019,full,elected,female
+legislators,TNP-00174,عامر العريض,ar,العريض,RD,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00175,أمين الميساوي,ar,الميساوي,MS,second_republic,إئتلاف الكرامة,ARP-2019,full,elected,male
+legislators,TNP-00176,أميرة شرف الدين,ar,شرف الدين,SRFDN,second_republic,حزب قلب تونس,ARP-2019,full,elected,female
+legislators,TNP-00177,أنور بن الشاهد,ar,بن الشاهد|الشاهد,BNSHD|SHD,second_republic,حزب التيار الديمقراطي,ARP-2019,full,elected,male
+legislators,TNP-00178,أروى بن عباس,ar,بن عباس|عباس,BMBS|BS,second_republic,حركة النهضة,ARP-2019,full,elected,female
+legislators,TNP-00179,عواطف فتيريش,ar,فتيريش,FTRS,second_republic,إئتلاف الكرامة,ARP-2019,full,elected,female
+legislators,TNP-00180,عواطف قريش عبيد,ar,عبيد,BD,second_republic,الحزب الدستوري الحر,ARP-2019,full,elected,female
+legislators,TNP-00181,العياشي زمال,ar,زمال,ZML,second_republic,حركة تحيا تونس,ARP-2019,full,elected,male
+legislators,TNP-00182,آية الله هيشري,ar,هيشري,HSR,second_republic,حزب الاتحاد الشعبي الجمهوري,ARP-2019,full,elected,male
+legislators,TNP-00183,البشير الخليفي,ar,الخليفي,XLF,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00184,بشر الشابي,ar,الشابي,SB,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00185,بلقاسم الدراجي,ar,الدراجي,DRJ,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00186,بلقاسم حسن,ar,حسن,HSN,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00187,شادية الحفصوني,ar,الحفصوني,HFSN,second_republic,حزب قلب تونس,ARP-2019,full,elected,female
+legislators,TNP-00188,شيراز الشابي,ar,الشابي,SB,second_republic,حزب قلب تونس,ARP-2019,full,elected,female
+legislators,TNP-00189,شكري بلحاج عمارة,ar,بلحاج عمارة|عمارة,BLHJMR|MR,second_republic,القائمة المستقلة الخير,ARP-2019,full,elected,male
+legislators,TNP-00190,شكري الذويبي,ar,الذويبي,DB,second_republic,القائمة المستقلة المواطنة والتنمية,ARP-2019,full,elected,male
+legislators,TNP-00191,آمنة بن حميد,ar,بن حميد|حميد,BNHMD|HMD,second_republic,حركة النهضة,ARP-2019,full,elected,female
+legislators,TNP-00192,عزالدين الفرجاني,ar,الفرجاني,FRJN,second_republic,إئتلاف الكرامة,ARP-2019,full,elected,male
+legislators,TNP-00193,الفاضل الوج,ar,الوج,J,second_republic,الحزب الدستوري الحر,ARP-2019,full,elected,male
+legislators,TNP-00194,فائزة بوهلال,ar,بوهلال,BHL,second_republic,حركة النهضة,ARP-2019,full,elected,female
+legislators,TNP-00195,فاكر الشويخي,ar,الشويخي,SX,second_republic,إئتلاف الكرامة,ARP-2019,full,elected,male
+legislators,TNP-00196,فخر الدين شبشوب,ar,شبشوب,SBSB,second_republic,حزب نداء تونس,ARP-2019,full,elected,male
+legislators,TNP-00197,فارس بلال,ar,بلال,BL,second_republic,حزب قلب تونس,ARP-2019,full,elected,male
+legislators,TNP-00198,فرحات الراجحي,ar,الراجحي,RJH,second_republic,حزب التيار الديمقراطي,ARP-2019,full,elected,male
+legislators,TNP-00199,فتحي العيادي,ar,العيادي,D,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00200,فتحي بلقاسم,ar,بلقاسم,BLKSM,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00201,فيصل دربال,ar,دربال,DRBL,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00202,فيصل الطاهري,ar,الطاهري,THR,second_republic,حزب البديل التونسي,ARP-2019,full,elected,male
+legislators,TNP-00203,فيصل تبيني,ar,تبيني,TBN,second_republic,صوت الفلاحين,ARP-2019,full,elected,male
+legislators,TNP-00204,فريدة عبيدي,ar,عبيدي,BD,second_republic,حركة النهضة,ARP-2019,full,elected,female
+legislators,TNP-00205,فؤاد ثامر,ar,ثامر,TMR,second_republic,حزب قلب تونس,ARP-2019,full,elected,male
+legislators,TNP-00206,غازي القروي,ar,القروي,KR,second_republic,حزب قلب تونس,ARP-2019,full,elected,male
+legislators,TNP-00207,حبيب بن سيدهم,ar,بن سيدهم|سيدهم,BNSDHM|SDHM,second_republic,إئتلاف الكرامة,ARP-2019,full,elected,male
+legislators,TNP-00208,حافظ الزواري,ar,الزواري,ZR,second_republic,حزب البديل التونسي,ARP-2019,full,elected,male
+legislators,TNP-00209,هاجر النيفر,ar,النيفر,NFR,second_republic,الحزب الدستوري الحر,ARP-2019,full,elected,female
+legislators,TNP-00210,حليمة همامي,ar,همامي,HM,second_republic,إئتلاف الكرامة,ARP-2019,full,elected,female
+legislators,TNP-00211,حسان بن الحاج إبراهيم,ar,بن إبراهيم|إبراهيم,BMBRHM|BRHM,second_republic,حزب قلب تونس,ARP-2019,full,elected,male
+legislators,TNP-00212,حسونه ناصفي,ar,ناصفي,NSF,second_republic,حركة مشروع تونس,ARP-2019,full,elected,male
+legislators,TNP-00213,حاتم البوبكري,ar,البوبكري,BKR,second_republic,حركة الشعب,ARP-2019,full,elected,male
+legislators,TNP-00214,حاتم القروي,ar,القروي,KR,second_republic,حزب التيار الديمقراطي,ARP-2019,full,elected,male
+legislators,TNP-00215,حاتم المانسي,ar,المانسي,MNS,second_republic,القائمة المستقلة سليانة في عينينا,ARP-2019,full,elected,male
+legislators,TNP-00216,حاتم المليكي,ar,المليكي,MLK,second_republic,حزب قلب تونس,ARP-2019,full,elected,male
+legislators,TNP-00217,حياة عمري,ar,عمري,MR,second_republic,حركة النهضة,ARP-2019,full,elected,female
+legislators,TNP-00218,هيكل مكي,ar,مكي,MK,second_republic,حركة الشعب,ARP-2019,full,elected,male
+legislators,TNP-00219,هيثم براهم,ar,براهم,BRHM,second_republic,حزب آفاق تونس,ARP-2019,full,elected,male
+legislators,TNP-00220,الهادي الماكني,ar,الماكني,MKN,second_republic,حركة تحيا تونس,ARP-2019,full,elected,male
+legislators,TNP-00221,هاجر بوزمي,ar,بوزمي,BZM,second_republic,حركة النهضة,ARP-2019,full,elected,female
+legislators,TNP-00222,هاجر البوهلالي,ar,البوهلالي,BHL,second_republic,القائمة المستقلة الوفاء بالعهد,ARP-2019,full,elected,female
+legislators,TNP-00223,هشام عجبوني,ar,عجبوني,JBN,second_republic,حزب التيار الديمقراطي,ARP-2019,full,elected,male
+legislators,TNP-00224,هشام بن أحمد,ar,بن أحمد|أحمد,BNHMD|HMD,second_republic,حركة تحيا تونس,ARP-2019,full,elected,male
+legislators,TNP-00225,حسام موسى,ar,موسى,MS,second_republic,حركة الشعب,ARP-2019,full,elected,male
+legislators,TNP-00226,حسين جنيح,ar,جنيح,JNH,second_republic,حركة تحيا تونس,ARP-2019,full,elected,male
+legislators,TNP-00227,ابتهاج بن هلال,ar,بن هلال|هلال,BNHL|HL,second_republic,حزب قلب تونس,ARP-2019,full,elected,female
+legislators,TNP-00228,عماد الخميري,ar,الخميري,XMR,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00229,إيمان بالطيب,ar,بالطيب,BLTB,second_republic,قائمة أمل وعمل المستقلة,ARP-2019,full,elected,female
+legislators,TNP-00230,عصام برقوقي,ar,برقوقي,BRK,second_republic,تيار المحبة,ARP-2019,full,elected,male
+legislators,TNP-00231,عياض علاق,ar,علاق,LK,second_republic,الحزب الدستوري الحر,ARP-2019,full,elected,male
+legislators,TNP-00232,عياض اللومي,ar,اللومي,LM,second_republic,حزب قلب تونس,ARP-2019,full,elected,male
+legislators,TNP-00233,جلال الزياتي,ar,الزياتي,ZT,second_republic,حزب البديل التونسي,ARP-2019,full,elected,male
+legislators,TNP-00234,جمالي بوضوافي,ar,بوضوافي,BDF,second_republic,حزب الاتحاد الشعبي الجمهوري,ARP-2019,full,elected,male
+legislators,TNP-00235,جميلة دبش,ar,دبش,DBS,second_republic,حركة النهضة,ARP-2019,full,elected,female
+legislators,TNP-00236,جميلة الجويني,ar,الجويني,JN,second_republic,حركة النهضة,ARP-2019,full,elected,female
+legislators,TNP-00237,جوهر المغيربي,ar,المغيربي,MVRB,second_republic,حزب قلب تونس,ARP-2019,full,elected,male
+legislators,TNP-00238,الجديدي السبوعي,ar,السبوعي,SB,second_republic,حزب قلب تونس,ARP-2019,full,elected,male
+legislators,TNP-00239,كمال العوادي,ar,العوادي,D,second_republic,حركة تحيا تونس,ARP-2019,full,elected,male
+legislators,TNP-00240,كمال الحبيب فراج,ar,فراج,FRJ,second_republic,حركة الشعب,ARP-2019,full,elected,male
+legislators,TNP-00241,كنزة عجالة,ar,عجالة,JL,second_republic,حركة النهضة,ARP-2019,full,elected,female
+legislators,TNP-00242,خالد الكريشي,ar,الكريشي,KRS,second_republic,حركة الشعب,ARP-2019,full,elected,male
+legislators,TNP-00243,خالد قسومة,ar,قسومة,KSM,second_republic,حزب قلب تونس,ARP-2019,full,elected,male
+legislators,TNP-00244,خير الدين الزاهي,ar,الزاهي,ZH,second_republic,القائمة المستقلة بذل وعطاء,ARP-2019,full,elected,male
+legislators,TNP-00245,لمياء جعيدان,ar,جعيدان,JDN,second_republic,الحزب الدستوري الحر,ARP-2019,full,elected,female
+legislators,TNP-00246,لسعد حجلاوي,ar,حجلاوي,HJL,second_republic,حزب التيار الديمقراطي,ARP-2019,full,elected,male
+legislators,TNP-00247,لطيفة الحباشي,ar,الحباشي,HBS,second_republic,حركة النهضة,ARP-2019,full,elected,female
+legislators,TNP-00248,لزهر الشملي,ar,الشملي,SML,second_republic,حزب التيار الديمقراطي,ARP-2019,full,elected,male
+legislators,TNP-00249,ليلى حداد,ar,حداد,HD,second_republic,حركة الشعب,ARP-2019,full,elected,female
+legislators,TNP-00250,ليليا بالليل,ar,بالليل,BL,second_republic,حزب قلب تونس,ARP-2019,full,elected,female
+legislators,TNP-00251,لطفي علي,ar,علي,L,second_republic,حركة تحيا تونس,ARP-2019,full,elected,male
+legislators,TNP-00252,لطفي العيادي,ar,العيادي,D,second_republic,حركة الشعب,ARP-2019,full,elected,male
+legislators,TNP-00253,المبروك كرشيد,ar,كرشيد,KRSD,second_republic,حركة تحيا تونس,ARP-2019,full,elected,male
+legislators,TNP-00254,محبوبة بن ضيف الله,ar,بن ضيف الله|ضيف الله,BNDFL|DFL,second_republic,حركة النهضة,ARP-2019,full,elected,female
+legislators,TNP-00255,ماهر المذيوب,ar,المذيوب,MDB,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00256,ماهر زيد,ar,زيد,ZD,second_republic,إئتلاف الكرامة,ARP-2019,full,elected,male
+legislators,TNP-00257,مجدي بوذينة,ar,بوذينة,BDN,second_republic,الحزب الدستوري الحر,ARP-2019,full,elected,male
+legislators,TNP-00258,مجدي الكرباعي,ar,الكرباعي,KRB,second_republic,حزب التيار الديمقراطي,ARP-2019,full,elected,male
+legislators,TNP-00259,مريم بن بلقاسم,ar,بن بلقاسم|بلقاسم,BMBLKSM|BLKSM,second_republic,حركة النهضة,ARP-2019,full,elected,female
+legislators,TNP-00260,مريم اللغماني,ar,اللغماني,LVMN,second_republic,حزب قلب تونس,ARP-2019,full,elected,female
+legislators,TNP-00261,مريم السعيدي,ar,السعيدي,SD,second_republic,حزب قلب تونس,ARP-2019,full,elected,female
+legislators,TNP-00262,مروان فلفال,ar,فلفال,FLFL,second_republic,حركة تحيا تونس,ARP-2019,full,elected,male
+legislators,TNP-00263,مروى بن تمروت,ar,بن تمروت|تمروت,BNTMRT|TMRT,second_republic,حركة النهضة,ARP-2019,full,elected,female
+legislators,TNP-00264,مهدي بن غربية,ar,بن غربية|غربية,BNVRB|VRB,second_republic,حركة تحيا تونس,ARP-2019,full,elected,male
+legislators,TNP-00265,مكي زغدود,ar,زغدود,ZVD,second_republic,حركة تحيا تونس,ARP-2019,full,elected,male
+legislators,TNP-00266,ميلاد بن الدالي,ar,بن الدالي|الدالي,BNDL|DL,second_republic,إئتلاف الكرامة,ARP-2019,full,elected,male
+legislators,TNP-00267,معز بلحاج رحومة,ar,بلحاج رحومة|رحومة,BLHJRHM|RHM,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00268,محمد العفاس,ar,العفاس,FS,second_republic,إئتلاف الكرامة,ARP-2019,full,elected,male
+legislators,TNP-00269,محمد أحمد الدلهومي,ar,الدلهومي,DLHM,second_republic,حزب قلب تونس,ARP-2019,full,elected,male
+legislators,TNP-00270,محمد عمار,ar,عمار,MR,second_republic,حزب التيار الديمقراطي,ARP-2019,full,elected,male
+legislators,TNP-00271,محمد بونني,ar,بونني,BN,second_republic,حزب التيار الديمقراطي,ARP-2019,full,elected,male
+legislators,TNP-00272,محمد ضياء الدين بن عمر,ar,بن عمر|عمر,BMR|MR,second_republic,حزب التيار الديمقراطي,ARP-2019,full,elected,male
+legislators,TNP-00273,محمد الفاتح الخليفي,ar,الخليفي,XLF,second_republic,إئتلاف الكرامة,ARP-2019,full,elected,male
+legislators,TNP-00274,محمد القوماني,ar,القوماني,KMN,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00275,محمد الحصايري,ar,الحصايري,HSR,second_republic,حزب قلب تونس,ARP-2019,full,elected,male
+legislators,TNP-00276,محمد كمال حمزاوي,ar,حمزاوي,HMZ,second_republic,حركة تحيا تونس,ARP-2019,full,elected,male
+legislators,TNP-00277,محمد كريم كريفة,ar,كريفة,KRF,second_republic,الحزب الدستوري الحر,ARP-2019,full,elected,male
+legislators,TNP-00278,محمد لزهر الرمة,ar,الرمة,RM,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00279,محمد مراد الحمزاوي,ar,الحمزاوي,HMZ,second_republic,حزب قلب تونس,ARP-2019,full,elected,male
+legislators,TNP-00280,محمد الناصر بوسن,ar,بوسن,BSN,second_republic,إئتلاف الكرامة,ARP-2019,full,elected,male
+legislators,TNP-00281,محمد الصادق قحبيش,ar,قحبيش,KHBS,second_republic,حزب آفاق تونس,ARP-2019,full,elected,male
+legislators,TNP-00282,محمد صالح اللطيفي,ar,اللطيفي,LTF,second_republic,الحزب الإشتراكي الدستوري,ARP-2019,full,elected,male
+legislators,TNP-00283,محمد السخيري,ar,السخيري,SXR,second_republic,حزب قلب تونس,ARP-2019,full,elected,male
+legislators,TNP-00284,محمد الزعبي,ar,الزعبي,ZB,second_republic,القائمة المستقلة الامتياز,ARP-2019,full,elected,male
+legislators,TNP-00285,محمد زريق,ar,زريق,ZRK,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00286,محسن العرفاوي,ar,العرفاوي,RF,second_republic,حركة الشعب,ARP-2019,full,elected,male
+legislators,TNP-00287,منصف بوغطاس,ar,بوغطاس,BVTS,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00288,منذر بن عطية,ar,بن عطية|عطية,BNT|T,second_republic,إئتلاف الكرامة,ARP-2019,full,elected,male
+legislators,TNP-00289,منجي الرحوي,ar,الرحوي,RH,second_republic,حزب الجبهة الشعبية,ARP-2019,full,elected,male
+legislators,TNP-00290,منجيّة البوغانمي,ar,البوغانمي,BVM,second_republic,حزب قلب تونس,ARP-2019,full,elected,female
+legislators,TNP-00291,معاذ بن ضياف,ar,بن ضياف|ضياف,BNDF|DF,second_republic,حزب الرحمة,ARP-2019,full,elected,male
+legislators,TNP-00292,منير بلطي حمدي,ar,حمدي,HMD,second_republic,حزب قلب تونس,ARP-2019,full,elected,male
+legislators,TNP-00293,منيرة العياري,ar,العياري,R,second_republic,حزب التيار الديمقراطي,ARP-2019,full,elected,female
+legislators,TNP-00294,موسى بن أحمد,ar,بن أحمد|أحمد,BNHMD|HMD,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00295,مصطفى بن أحمد,ar,بن أحمد|أحمد,BNHMD|HMD,second_republic,حركة تحيا تونس,ARP-2019,full,elected,male
+legislators,TNP-00296,مصطفى الغربي,ar,الغربي,VRB,second_republic,الحزب الدستوري الحر,ARP-2019,full,elected,male
+legislators,TNP-00297,نبيل حجي,ar,حجي,HJ,second_republic,حزب التيار الديمقراطي,ARP-2019,full,elected,male
+legislators,TNP-00298,نعيمة المنصوري,ar,المنصوري,MNSR,second_republic,حزب قلب تونس,ARP-2019,full,elected,female
+legislators,TNP-00299,نوفل الجمالي,ar,الجمالي,JML,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00300,ناجي الجراحي,ar,الجراحي,JRH,second_republic,الحزب الدستوري الحر,ARP-2019,full,elected,male
+legislators,TNP-00301,ناجي الجمل,ar,الجمل,JML,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00302,نجم الدين بن سالم,ar,بن سالم|سالم,BNSLM|SLM,second_republic,حزب التيار الديمقراطي,ARP-2019,full,elected,male
+legislators,TNP-00303,نسرين العماري,ar,العماري,MR,second_republic,حركة مشروع تونس,ARP-2019,full,elected,female
+legislators,TNP-00304,نضال سعودي,ar,سعودي,SD,second_republic,إئتلاف الكرامة,ARP-2019,full,elected,male
+legislators,TNP-00305,نعمان العش,ar,العش,S,second_republic,حزب التيار الديمقراطي,ARP-2019,full,elected,male
+legislators,TNP-00306,نهى عيساوي,ar,عيساوي,S,second_republic,حزب قلب تونس,ARP-2019,full,elected,female
+legislators,TNP-00307,نهى الجلابي,ar,الجلابي,JLB,second_republic,حزب نداء تونس,ARP-2019,full,elected,female
+legislators,TNP-00308,نور الدين العرباوي,ar,العرباوي,RB,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00309,نور الدين البحيري,ar,البحيري,BHR,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00310,نسيبة بن علي,ar,بن علي|علي,BNL|L,second_republic,حركة النهضة,ARP-2019,full,elected,female
+legislators,TNP-00311,ألفة التراس,ar,التراس,TRS,second_republic,عيش تونسي,ARP-2019,full,elected,female
+legislators,TNP-00312,عمر الغريبي,ar,الغريبي,VRB,second_republic,إئتلاف الكرامة,ARP-2019,full,elected,male
+legislators,TNP-00313,أسامة الخليفي,ar,الخليفي,XLF,second_republic,حزب قلب تونس,ARP-2019,full,elected,male
+legislators,TNP-00314,أسامة علية الصغير,ar,الصغير,SVR,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00315,رباب بن لطيف,ar,بن لطيف|لطيف,BNLTF|LTF,second_republic,حركة النهضة,ARP-2019,full,elected,female
+legislators,TNP-00316,راشد الغنوشي,ar,الغنوشي,VNS,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00317,راشد الخياري,ar,الخياري,XR,second_republic,إئتلاف الكرامة,ARP-2019,full,elected,male
+legislators,TNP-00318,رفيق عمارة,ar,عمارة,MR,second_republic,حزب قلب تونس,ARP-2019,full,elected,male
+legislators,TNP-00319,رضا شرف الدين,ar,شرف الدين,SRFDN,second_republic,حزب قلب تونس,ARP-2019,full,elected,male
+legislators,TNP-00320,رضا الجوادي,ar,الجوادي,JD,second_republic,إئتلاف الكرامة,ARP-2019,full,elected,male
+legislators,TNP-00321,رضا الزغمي,ar,الزغمي,ZVM,second_republic,حزب التيار الديمقراطي,ARP-2019,full,elected,male
+legislators,TNP-00322,صفاء الغريبي,ar,الغريبي,VRB,second_republic,حزب قلب تونس,ARP-2019,full,elected,female
+legislators,TNP-00323,الصافي سعيد,ar,سعيد,SD,second_republic,القائمة المستقلة نحن هنا,ARP-2019,full,elected,male
+legislators,TNP-00324,الصحبي عتيق,ar,عتيق,TK,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00325,الصحبي صمارة,ar,صمارة,SMR,second_republic,القائمة المستقلة الرابطة الخضراء,ARP-2019,full,elected,male
+legislators,TNP-00326,سعيد الجزيري,ar,الجزيري,JZR,second_republic,حزب الرحمة,ARP-2019,full,elected,male
+legislators,TNP-00327,سالم قطاطة,ar,قطاطة,KT,second_republic,حزب التيار الديمقراطي,ARP-2019,full,elected,male
+legislators,TNP-00328,سالم لبيض,ar,لبيض,LBD,second_republic,حركة الشعب,ARP-2019,full,elected,male
+legislators,TNP-00329,سلمى معالج,ar,معالج,MLJ,second_republic,حزب التيار الديمقراطي,ARP-2019,full,elected,female
+legislators,TNP-00330,سلوى بن عيشة,ar,بن عيشة|عيشة,BNS|S,second_republic,حزب الرحمة,ARP-2019,full,elected,female
+legislators,TNP-00331,سماح دمق,ar,دمق,DMK,second_republic,حزب قلب تونس,ARP-2019,full,elected,female
+legislators,TNP-00332,سامية عبو,ar,عبو,B,second_republic,حزب التيار الديمقراطي,ARP-2019,full,elected,female
+legislators,TNP-00333,سمير ديلو,ar,ديلو,DL,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00334,سميرة بعيزيق,ar,بعيزيق,BZK,second_republic,حزب قلب تونس,ARP-2019,full,elected,female
+legislators,TNP-00335,سميرة الشواشي,ar,الشواشي,S,second_republic,حزب قلب تونس,ARP-2019,full,elected,female
+legislators,TNP-00336,سميرة حميدة,ar,حميدة,HMD,second_republic,حركة النهضة,ARP-2019,full,elected,female
+legislators,TNP-00337,سميرة السايحي,ar,السايحي,SH,second_republic,الحزب الدستوري الحر,ARP-2019,full,elected,female
+legislators,TNP-00338,سميرة سميعي,ar,سميعي,SM,second_republic,حركة النهضة,ARP-2019,full,elected,female
+legislators,TNP-00339,السيد فرجاني,ar,فرجاني,FRJN,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00340,السيدة الونيسي,ar,الونيسي,NS,second_republic,حركة النهضة,ARP-2019,full,elected,female
+legislators,TNP-00341,سيف الدين المرغني,ar,المرغني,MRVN,second_republic,حزب قلب تونس,ARP-2019,full,elected,male
+legislators,TNP-00342,سيف الدين مخلوف,ar,مخلوف,MXLF,second_republic,إئتلاف الكرامة,ARP-2019,full,elected,male
+legislators,TNP-00343,سهام الشريقي,ar,الشريقي,SRK,second_republic,حزب قلب تونس,ARP-2019,full,elected,female
+legislators,TNP-00344,سفيان المخلوفي,ar,المخلوفي,MXLF,second_republic,حزب التيار الديمقراطي,ARP-2019,full,elected,male
+legislators,TNP-00345,سفيان طوبال,ar,طوبال,TBL,second_republic,حزب قلب تونس,ARP-2019,full,elected,male
+legislators,TNP-00346,سنية الخشين,ar,الخشين,XSN,second_republic,حركة تحيا تونس,ARP-2019,full,elected,female
+legislators,TNP-00347,صهيب الوذان,ar,الوذان,DN,second_republic,حركة مشروع تونس,ARP-2019,full,elected,male
+legislators,TNP-00348,سهير العسكري,ar,العسكري,SKR,second_republic,حزب قلب تونس,ARP-2019,full,elected,female
+legislators,TNP-00349,طارق براهمي,ar,براهمي,BRHM,second_republic,حركة مشروع تونس,ARP-2019,full,elected,male
+legislators,TNP-00350,طارق فتيتي,ar,فتيتي,FT,second_republic,القائمة المستقلة الرجوع الي الأصل,ARP-2019,full,elected,male
+legislators,TNP-00351,توفيق الزايري,ar,الزايري,ZR,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00352,ثامر سعد,ar,سعد,SD,second_republic,الحزب الدستوري الحر,ARP-2019,full,elected,male
+legislators,TNP-00353,التومي الحمروني,ar,الحمروني,HMRN,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00354,وفاء عطية,ar,عطية,T,second_republic,حركة النهضة,ARP-2019,full,elected,female
+legislators,TNP-00355,وليد الجلاد,ar,الجلاد,JLD,second_republic,حركة تحيا تونس,ARP-2019,full,elected,male
+legislators,TNP-00356,وسام الشعري,ar,الشعري,SR,second_republic,الحزب الدستوري الحر,ARP-2019,full,elected,male
+legislators,TNP-00357,يمينة الزغلامي,ar,الزغلامي,ZVLM,second_republic,حركة النهضة,ARP-2019,full,elected,female
+legislators,TNP-00358,ياسين العياري,ar,العياري,R,second_republic,قائمة أمل وعمل المستقلة,ARP-2019,full,elected,male
+legislators,TNP-00359,يسري الدالي,ar,الدالي,DL,second_republic,إئتلاف الكرامة,ARP-2019,full,elected,male
+legislators,TNP-00360,زينب السفاري,ar,السفاري,SFR,second_republic,الحزب الدستوري الحر,ARP-2019,full,elected,female
+legislators,TNP-00361,زينب براهمي,ar,براهمي,BRHM,second_republic,حركة النهضة,ARP-2019,full,elected,female
+legislators,TNP-00362,زياد الغناي,ar,الغناي,VN,second_republic,حزب التيار الديمقراطي,ARP-2019,full,elected,male
+legislators,TNP-00363,زياد الهاشمي,ar,الهاشمي,HSM,second_republic,إئتلاف الكرامة,ARP-2019,full,elected,male
+legislators,TNP-00364,زياد العذاري,ar,العذاري,DR,second_republic,حركة النهضة,ARP-2019,full,elected,male
+legislators,TNP-00365,زهير المغزاوي,ar,المغزاوي,MVZ,second_republic,حركة الشعب,ARP-2019,full,elected,male
+legislators,TNP-00366,زهير مخلوف,ar,مخلوف,MXLF,second_republic,حزب قلب تونس,ARP-2019,full,elected,male
+legislators,TNP-00001,يوسف الطرشون,ar,الطرشون,TRSN,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00002,يوسف التومي,ar,التومي,TM,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00003,يسري البواب,ar,البواب,B,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00004,ياسين مامي,ar,مامي,M,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00005,ياسر قراري,ar,قراري,KR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00006,وليد حاجي,ar,حاجي,HJ,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00007,هشام حسني,ar,حسني,HSN,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00008,هالة جاب الله,ar,جاب الله,JBL,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00009,نورة الشبراك,ar,الشبراك,SBRK,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00010,نور الهدى سبائطي,ar,سبائطي,SBT,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00011,نزار الصديق,ar,الصديق,SDK,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00012,نجيب عكرمي,ar,عكرمي,KRM,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00013,نجلاء اللحياني,ar,اللحياني,LHN,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00014,نبيه ثابت,ar,ثابت,TBT,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00015,نبيل حامدي,ar,حامدي,HMD,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00016,مهى عامر,ar,عامر,MR,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00017,منير الكموني,ar,الكموني,KMN,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00018,منصف المعلول,ar,المعلول,ML,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00019,منال بديدة,ar,بديدة,BD,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00020,مليك كمون,ar,كمون,KMN,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00021,معز بن يوسف,ar,بن يوسف|يوسف,BNSF|SF,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00022,معز برك الله,ar,برك الله,BRKL,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00023,معز الرياحي,ar,الرياحي,RH,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00024,مصطفى بوبكري,ar,بوبكري,BKR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00025,مسعود قريرة,ar,قريرة,KR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00026,مريم الشريف,ar,الشريف,SRF,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00027,مراد الخزامي,ar,الخزامي,XZM,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00028,مختار عيفاوي,ar,عيفاوي,F,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00029,محمود شلغاف,ar,شلغاف,SLVF,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00030,محمود العامري,ar,العامري,MR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00031,محمد ماجدي,ar,ماجدي,MJD,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00032,محمد علي فنيرة,ar,فنيرة,FNR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00033,محمد علي,ar,علي,L,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00034,محمد ضو,ar,ضو,D,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00035,محمد شعباني,ar,شعباني,SBN,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00036,محمد زياد الماهر,ar,الماهر,MHR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00037,محمد بن سعيد,ar,بن سعيد|سعيد,BNSD|SD,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00038,محمد بن حسين,ar,بن حسين|حسين,BNHSN|HSN,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00039,محمد أمين مباركي,ar,مباركي,MBRK,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00040,محمد امين الورغي,ar,الورغي,RV,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00041,محمد اليحياوي,ar,اليحياوي,H,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00042,محمد الهادي العلاني,ar,العلاني,LN,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00043,محمد أحمد,ar,أحمد,HMD,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00044,محسن هرمي,ar,هرمي,HRM,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00045,ماهر بوبكر الحضري,ar,الحضري,HDR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00046,ماهر الكتاري,ar,الكتاري,KTR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00047,ماجدة الورغي,ar,الورغي,RV,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00048,لطفي الهمامي,ar,الهمامي,HM,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00049,لطفي السعداوي,ar,السعداوي,SD,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00050,كمال كرعاني,ar,كرعاني,KRN,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00051,كمال فراح,ar,فراح,FRH,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00052,فيصل الصغير,ar,الصغير,SVR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00053,فوزي دعاس,ar,دعاس,DS,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00054,فخري عبد الخالق,ar,عبد الخالق|الخالق,BDXLK|XLK,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00055,فخر الدين فضلون,ar,فضلون,FDLN,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00056,فتحي رجب,ar,رجب,RJB,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00057,فتحي المشرقي,ar,المشرقي,MSRK,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00058,فاطمة المسدي,ar,المسدي,MSD,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00059,فاتن النصيبي,ar,النصيبي,NSB,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00060,غسان يامون,ar,يامون,MN,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00061,عواطف الشنيتي,ar,الشنيتي,SNT,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00062,عمر بن عمر,ar,بن عمر|عمر,BMR|MR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00063,عمر برهومي,ar,برهومي,BRHM,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00064,عمار عيدودي,ar,عيدودي,D,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00065,عماد أولاد جبريل,ar,أولاد جبريل|جبريل,LDJBRL|JBRL,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00066,عماد الدين سديري,ar,سديري,SDR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00067,علي زغدود,ar,زغدود,ZVD,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00068,علي بوزوزية,ar,بوزوزية,BZ,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00069,عصام شوشان,ar,شوشان,SN,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00070,عصام البحري الجابري,ar,الجابري,JBR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00071,عزيز بن الاخضر,ar,بن الاخضر|الاخضر,BNXDR|XDR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00072,عزالدين التايب,ar,التايب,TB,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00073,عدنان العلوش,ar,العلوش,LS,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00074,عبد القادر عمار,ar,عمار,MR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00075,عبد القادر بن زينب,ar,بن زينب|زينب,BNZMB|ZMB,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00076,عبد العزيز شعباني,ar,شعباني,SBN,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00077,عبد السلام الدحماني,ar,الدحماني,DHMN,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00078,عبد السلام الحمروني,ar,الحمروني,HMRN,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00079,عبد الستار الزارعي,ar,الزارعي,ZR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00080,عبد الرزاق عويدات,ar,عويدات,DT,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00081,عبد الحليم بوسمة,ar,بوسمة,BSM,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00082,عبد الحافظ الوحيشي,ar,الوحيشي,HS,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00083,عبد الجليل الهاني,ar,الهاني,HN,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00084,عادل ضياف,ar,ضياف,DF,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00085,عادل البوسالمي,ar,البوسالمي,BSLM,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00086,ظافر الصغيري,ar,الصغيري,SVR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00087,طارق مهدي,ar,مهدي,MHD,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00088,طارق الربعي,ar,الربعي,RB,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00089,ضحى السالمي,ar,السالمي,SLM,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00090,صلاح الفرشيشي,ar,الفرشيشي,FRS,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00091,صالح مباركي,ar,مباركي,MBRK,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00092,صالح الصيادي,ar,الصيادي,SD,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00093,صالح السالمي,ar,السالمي,SLM,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00094,صابر المصمودي,ar,المصمودي,MSMD,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00095,صابر الجلاصي,ar,الجلاصي,JLS,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00096,شكري بن البحري,ar,بن البحري|البحري,BMBHR|BHR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00097,شفيق عزالدين الزعفوري,ar,الزعفوري,ZFR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00098,سيرين بوصندل,ar,بوصندل,BSNDL,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00099,سيرين المرابط,ar,المرابط,MRBT,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00100,سوسن مبروك,ar,مبروك,MBRK,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00101,سنية بن مبروك,ar,بن مبروك|مبروك,BMBRK|MBRK,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00102,سفيان بن حليمة,ar,بن حليمة|حليمة,BNHLM|HLM,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00103,سامي طوجاني,ar,طوجاني,TJN,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00104,سامي رايس,ar,رايس,RS,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00105,سامي بن عبد العالي,ar,بن عبد العالي|عبد العالي|العالي,BMBDL|BDL|L,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00106,سامي السيد,ar,السيد,SD,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00107,سامي الحاج عمر,ar,عمر,MR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00108,زينة جيب الله,ar,جيب الله,JBL,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00109,ريم المعشاوي,ar,المعشاوي,MS,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00110,ريم الصغير,ar,الصغير,SVR,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00111,رياض جعيدان,ar,جعيدان,JDN,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00112,رياض بلال,ar,بلال,BL,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00113,رؤوف الفقيري,ar,الفقيري,FKR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00114,رمزي الشتوي,ar,الشتوي,ST,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00115,رضا الدلاعي,ar,الدلاعي,DL,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00116,رشدي الرويسي,ar,الرويسي,RS,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00117,خالد حكيم مبروكي,ar,مبروكي,MBRK,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00118,حمزة بضيافي,ar,بضيافي,BDF,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00119,حمدي بن عبد العالي,ar,بن عبد العالي|عبد العالي|العالي,BMBDL|BDL|L,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00120,حمدي بن صالح,ar,بن صالح|صالح,BNSLH|SLH,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00121,حمادي غيلاني,ar,غيلاني,VLN,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00122,حسن جربوعي,ar,جربوعي,JRB,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00123,حسن بوسامة,ar,بوسامة,BSM,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00124,حسن بن علي,ar,بن علي|علي,BNL|L,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00125,حسام محجوب,ar,محجوب,MHJB,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00126,حاتم لباوي,ar,لباوي,LB,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00127,حاتم الهواوي,ar,الهواوي,H,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00128,جلال خدمي,ar,خدمي,XDM,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00129,ثامر المزهود,ar,المزهود,MZHD,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00130,ثابت العابد,ar,العابد,BD,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00131,بوبكر بن يحي,ar,بن يحي|يحي,BNH|H,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00132,بلال ابن المشري,ar,ابن المشري|المشري,BMSR|MSR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00133,بسمة الهمامي,ar,الهمامي,HM,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00134,بدر الدين القمودي,ar,القمودي,KMD,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00135,بثينة الغانمي,ar,الغانمي,VM,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00136,باديس بالحاج علي,ar,علي,L,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00137,أيمن نقرة,ar,نقرة,NKR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00138,أيمن بن صالح,ar,بن صالح|صالح,BNSLH|SLH,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00139,أيمن المرعوي,ar,المرعوي,MR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00140,أيمن البوغديري,ar,البوغديري,BVDR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00141,أنور المرزوقي,ar,المرزوقي,MRZK,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00142,آمال المؤدب,ar,المؤدب,MDB,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00143,الياس بوكوشة,ar,بوكوشة,BKS,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00144,النوري جريدي,ar,جريدي,JRD,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00145,الناصر الشنوفي,ar,الشنوفي,SNF,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00146,المختار عبد المولى,ar,عبد المولى,BDML,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00147,ألفة المرواني,ar,المرواني,MRN,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00148,الفاضل بن تركية,ar,بن تركية|تركية,BNTRK|TRK,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00149,الطيب الطالبي,ar,الطالبي,TLB,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00150,الطاهر بن منصور,ar,بن منصور|منصور,BMNSR|MNSR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00151,أسماء الدرويش,ar,الدرويش,DRS,third_republic,,ARP-2023,full,elected,female
+legislators,TNP-00152,أحمد سعيداني,ar,سعيداني,SDN,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00153,أحمد بنور,ar,بنور,BNR,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00154,إبراهيم حسين,ar,حسين,HSN,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00155,إبراهيم بودربالة,ar,بودربالة,BDRBL,third_republic,,ARP-2023,full,elected,male
+legislators,TNP-00964,محمود المسعدي,ar,المسعدي,MSD,bourguiba,,COD-1981,frame_only,unknown,
+legislators,TNP-00772,رشيد صفر,ar,صفر,SFR,bourguiba,,COD-1986,frame_only,unknown,
+legislators,TNP-00964,محمود المسعدي,ar,المسعدي,MSD,bourguiba,,COD-1986,frame_only,unknown,
+legislators,TNP-00965,صلاح الدين بالي,ar,بالي,BL,bourguiba,,COD-1986,frame_only,unknown,
+legislators,TNP-00965,صلاح الدين بالي,ar,بالي,BL,ben_ali,,COD-1989,frame_only,unknown,
+legislators,TNP-00966,الباجي قائد السبسي,ar,السبسي,SBS,ben_ali,,COD-1989,frame_only,unknown,
+legislators,TNP-00967,الحبيب بولعراس,ar,بولعراس,BLRS,ben_ali,,COD-1989,frame_only,unknown,
+legislators,TNP-00967,الحبيب بولعراس,ar,بولعراس,BLRS,ben_ali,,COD-1994,frame_only,unknown,
+legislators,TNP-00968,فؤاد المبزع,ar,المبزع,MBZ,ben_ali,,COD-1994,frame_only,unknown,
+legislators,TNP-00968,فؤاد المبزع,ar,المبزع,MBZ,ben_ali,,COD-1999,frame_only,unknown,
+legislators,TNP-00968,فؤاد المبزع,ar,المبزع,MBZ,ben_ali,,COD-2004,frame_only,unknown,
+legislators,TNP-00968,فؤاد المبزع,ar,المبزع,MBZ,ben_ali,,COD-2009,frame_only,unknown,
+legislators,TNP-00581,الجلولي فارس,ar,فارس,FRS,bourguiba,,NA-1959,frame_only,unknown,
+legislators,TNP-00646,الصادق المقدم,ar,المقدم,MKDM,bourguiba,,NA-1964,frame_only,unknown,
+legislators,TNP-00646,الصادق المقدم,ar,المقدم,MKDM,bourguiba,,NA-1969,frame_only,unknown,
+legislators,TNP-00646,الصادق المقدم,ar,المقدم,MKDM,bourguiba,,NA-1974,frame_only,unknown,
+legislators,TNP-00646,الصادق المقدم,ar,المقدم,MKDM,bourguiba,,NA-1979,frame_only,unknown,
+legislators,TNP-00007,هشام حسني,ar,حسني,HSN,transition,Parti de la lutte progressiste,NCA-2011,full,elected,male
+legislators,TNP-00141,أنور المرزوقي,ar,المرزوقي,MRZK,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,male
+legislators,TNP-00174,عامر العريض,ar,العريض,RD,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00199,فتحي العيادي,ar,العيادي,D,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00247,لطيفة الحباشي,ar,الحباشي,HBS,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00264,مهدي بن غربية,ar,بن غربية|غربية,BNVRB|VRB,transition,Parti démocratique progressiste,NCA-2011,full,elected,male
+legislators,TNP-00267,معز بلحاج رحومة,ar,بلحاج رحومة|رحومة,BLHJRHM|RHM,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00277,محمد كريم كريفة,ar,كريفة,KRF,transition,L'Initiative,NCA-2011,full,elected,male
+legislators,TNP-00285,محمد زريق,ar,زريق,ZRK,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00289,منجي الرحوي,ar,الرحوي,RH,transition,Mouvement des patriotes démocrates,NCA-2011,full,elected,male
+legislators,TNP-00301,ناجي الجمل,ar,الجمل,JML,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00324,الصحبي عتيق,ar,عتيق,TK,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00332,سامية عبو,ar,عبو,B,transition,Congrès pour la république,NCA-2011,full,elected,female
+legislators,TNP-00357,يمينة الزغلامي,ar,الزغلامي,ZVLM,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00364,زياد العذاري,ar,العذاري,DR,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00367,إبراهيم الحامدي,ar,الحامدي,HMD,transition,Parti de la nation culturel et unioniste,NCA-2011,full,elected,male
+legislators,TNP-00368,إبراهيم قصاص,ar,قصاص,KS,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,male
+legislators,TNP-00369,أحمد المشرقي,ar,المشرقي,MSRK,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00370,أحمد السافي,ar,السافي,SF,transition,Parti communiste des ouvriers de Tunisie,NCA-2011,full,elected,male
+legislators,TNP-00371,أحمد السميعي,ar,السميعي,SM,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00372,أحمد إبراهيم,ar,إبراهيم,BRHM,transition,Pôle démocratique moderniste,NCA-2011,full,elected,male
+legislators,TNP-00373,أحمد نجيب الشابي,ar,الشابي,SB,transition,Parti démocratique progressiste,NCA-2011,full,elected,male
+legislators,TNP-00374,أزاد بادي,ar,بادي,BD,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00375,أسامة الصغير,ar,الصغير,SVR,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00376,اسكندر بوعلاقي,ar,بوعلاقي,BLK,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,male
+legislators,TNP-00377,آسيا النفاتي,ar,النفاتي,NFT,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00378,إقبال المصدع,ar,المصدع,MSD,transition,Congrès pour la république,NCA-2011,full,elected,female
+legislators,TNP-00379,الأزهر الشملي,ar,الشملي,SML,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00380,البشير شمام,ar,شمام,SM,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00381,الجديدي السبوعي,ar,السبوعي,SB,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,male
+legislators,TNP-00382,الحبيب اللوز,ar,اللوز,LZ,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00383,الحبيب خضر,ar,خضر,XDR,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00384,الحسني بدري,ar,بدري,BDR,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,male
+legislators,TNP-00385,زهرة صميدة,ar,صميدة,SMD,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00386,الصادق شورو,ar,شورو,SR,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00387,الطاهر هميلة,ar,هميلة,HML,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00388,العربي عبيد,ar,عبيد,BD,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00389,الفرجاني الدغمان,ar,الدغمان,DVMN,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00390,المنصف شارني,ar,شارني,SRN,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,male
+legislators,TNP-00391,المولدي الرياحي,ar,الرياحي,RH,transition,Forum démocratique pour le travail et les libertés,NCA-2011,full,elected,male
+legislators,TNP-00392,الناصر إبراهمي,ar,إبراهمي,BRHM,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00393,النفطي المحظي,ar,المحظي,MHZ,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00394,الهادي بن ابراهم,ar,بن ابراهم|ابراهم,BMBRHM|BRHM,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00395,الهادي الشاوش,ar,الشاوش,S,transition,L'Initiative,NCA-2011,full,elected,male
+legislators,TNP-00396,الوليد بناني,ar,بناني,BN,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00397,آمال عزوز,ar,عزوز,Z,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00398,آمال غويل,ar,غويل,VL,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00399,أميرة مرزوق,ar,مرزوق,MRZK,transition,L'Initiative,NCA-2011,full,elected,female
+legislators,TNP-00400,إياد الدهماني,ar,الدهماني,DHMN,transition,Parti démocratique progressiste,NCA-2011,full,elected,unknown
+legislators,TNP-00401,إيمان بن محمد,ar,بن محمد|محمد,BMHMD|MHMD,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00402,أيمن الزواغي,ar,الزواغي,ZV,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,male
+legislators,TNP-00403,بدر الدين عبد الكافي,ar,عبد الكافي|الكافي,BDKF|KF,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00404,بسمة الجبالي,ar,الجبالي,JBL,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00405,بشير اللزام,ar,اللزام,LZM,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00406,بية جوادي,ar,جوادي,JD,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00407,جلال فرحات,ar,فرحات,FRHT,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,male
+legislators,TNP-00408,جلال بوزيد,ar,بوزيد,BZD,transition,Forum démocratique pour le travail et les libertés,NCA-2011,full,elected,male
+legislators,TNP-00409,جمال القرقوري,ar,القرقوري,KRKR,transition,Forum démocratique pour le travail et les libertés,NCA-2011,full,elected,male
+legislators,TNP-00410,جمال طوير,ar,طوير,TR,transition,Forum démocratique pour le travail et les libertés,NCA-2011,full,elected,male
+legislators,TNP-00411,جوهرة التيس,ar,التيس,TS,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00412,حاتم الكلاعي,ar,الكلاعي,KL,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,male
+legislators,TNP-00413,حافظ إبراهيم الأسود,ar,الأسود,SD,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00414,حبيبة التريكي,ar,التريكي,TRK,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00415,حسن رضواني,ar,رضواني,RDN,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,male
+legislators,TNP-00416,حسناء مرسيط,ar,مرسيط,MRST,transition,Congrès pour la république,NCA-2011,full,elected,female
+legislators,TNP-00417,حطاب بركاتي,ar,بركاتي,BRKT,transition,Parti communiste des ouvriers de Tunisie,NCA-2011,full,elected,male
+legislators,TNP-00418,حليمة القني,ar,القني,KN,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00419,حنان ساسي,ar,ساسي,S,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,female
+legislators,TNP-00420,خميس قسيلة,ar,قسيلة,KSL,transition,Forum démocratique pour le travail et les libertés,NCA-2011,full,elected,male
+legislators,TNP-00421,خيرة صغيري,ar,صغيري,SVR,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00422,دليلة الببة,ar,الببة,B,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00423,دليلة بوعين,ar,بوعين,BN,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00424,رابح الخرايفي,ar,الخرايفي,XRF,transition,Parti démocratique progressiste,NCA-2011,full,elected,male
+legislators,TNP-00425,ربيع العابدي,ar,العابدي,BD,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00426,ربيعة نجلاوي,ar,نجلاوي,NJL,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,female
+legislators,TNP-00427,رفيق التليلي,ar,التليلي,TL,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00428,رمضان دغماني,ar,دغماني,DVMN,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,male
+legislators,TNP-00429,ريم ثايري,ar,ثايري,TR,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,female
+legislators,TNP-00430,ريم محجوب,ar,محجوب,MHJB,transition,Afek Tounes,NCA-2011,full,elected,female
+legislators,TNP-00431,زياد الدولاتي,ar,الدولاتي,DLT,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00432,سامية الفرشيشي,ar,الفرشيشي,FRS,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00433,سعاد عبد الرحيم,ar,عبد الرحيم|الرحيم,BDRHM|RHM,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00434,سعد بوعيش,ar,بوعيش,BS,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,male
+legislators,TNP-00435,سعيد خرشوفي,ar,خرشوفي,XRSF,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,male
+legislators,TNP-00436,سلمى بكار,ar,بكار,BKR,transition,Pôle démocratique moderniste,NCA-2011,full,elected,female
+legislators,TNP-00437,سلمى صرصوط,ar,صرصوط,SRST,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00438,سلمى هادية مبروك,ar,مبروك,MBRK,transition,Forum démocratique pour le travail et les libertés,NCA-2011,full,elected,female
+legislators,TNP-00439,سليم بن حميدان,ar,بن حميدان|حميدان,BNHMDN|HMDN,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00440,سليم بن عبد السلام,ar,بن عبد السلام|عبد السلام|السلام,BMBDSLM|BDSLM|SLM,transition,Forum démocratique pour le travail et les libertés,NCA-2011,full,elected,unknown
+legislators,TNP-00441,سليمان هلال,ar,هلال,HL,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00442,سمير بن عمر,ar,بن عمر|عمر,BMR|MR,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00443,سمير بالطيب,ar,بالطيب,BLTB,transition,Pôle démocratique moderniste,NCA-2011,full,elected,male
+legislators,TNP-00444,سميرة مرعي,ar,مرعي,MR,transition,Afek Tounes,NCA-2011,full,elected,female
+legislators,TNP-00445,سناء مرسني,ar,مرسني,MRSN,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00446,سناء الحداد,ar,الحداد,HD,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00447,سنية تومية,ar,تومية,TM,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00448,شكري يعيش,ar,يعيش,S,transition,Afek Tounes,NCA-2011,full,elected,unknown
+legislators,TNP-00449,شكري القسطلّي,ar,القسطلي,KSTL,transition,Parti démocratique progressiste,NCA-2011,full,elected,male
+legislators,TNP-00450,شكري العرفاوي,ar,العرفاوي,RF,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,male
+legislators,TNP-00451,صالح شعيب,ar,شعيب,SB,transition,Forum démocratique pour le travail et les libertés,NCA-2011,full,elected,male
+legislators,TNP-00452,صالحة بن عائشة,ar,بن عائشة|عائشة,BNS|S,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00453,صلاح الدين الزحاف,ar,الزحاف,ZHF,transition,Voix de l'indépendant,NCA-2011,full,elected,male
+legislators,TNP-00454,صلاح الدين لهيبة,ar,لهيبة,LHB,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00455,ضمير المناعي,ar,المناعي,MN,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00456,طارق العبيدي,ar,العبيدي,BD,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00457,طارق بوعزيز,ar,بوعزيز,BZ,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,male
+legislators,TNP-00458,عادل بن عطية,ar,بن عطية|عطية,BNT|T,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00459,عائشة الذوادي,ar,الذوادي,D,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00460,عبد الباسط بن الشيخ,ar,بن الشيخ|الشيخ,BNSX|SX,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00461,عبد الحليم زواري,ar,زواري,ZR,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00462,عبد الرحمان الأدغم,ar,الأدغم,DVM,transition,Forum démocratique pour le travail et les libertés,NCA-2011,full,elected,male
+legislators,TNP-00463,عبد الرزاق خلولي,ar,خلولي,XL,transition,Parti néo-destour,NCA-2011,full,elected,male
+legislators,TNP-00464,عبد الرؤوف العيادي,ar,العيادي,D,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00465,عبد الستار الضيفي,ar,الضيفي,DF,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,male
+legislators,TNP-00466,عبد السلام شعبان,ar,شعبان,SBN,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00467,عبد العزيز شعبان,ar,شعبان,SBN,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00468,عبد العزيز القطي,ar,القطي,KT,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00469,عبد القادر بن خميس,ar,بن خميس|خميس,BNXMS|XMS,transition,Forum démocratique pour le travail et les libertés,NCA-2011,full,elected,male
+legislators,TNP-00470,عبد القادر القادري,ar,القادري,KDR,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00471,عبد المجيد النجار,ar,النجار,NJR,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00472,عبد الوهاب معطر,ar,معطر,MTR,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00473,عصام الشابي,ar,الشابي,SB,transition,Parti démocratique progressiste,NCA-2011,full,elected,male
+legislators,TNP-00474,علي بالشريفة,ar,بالشريفة,BLSRF,transition,Forum démocratique pour le travail et les libertés,NCA-2011,full,elected,male
+legislators,TNP-00475,علي فارس,ar,فارس,FRS,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00476,علي حويجي,ar,حويجي,HJ,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,male
+legislators,TNP-00477,عماد الحمامي,ar,الحمامي,HM,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00478,عمر الشتوي,ar,الشتوي,ST,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00479,فاضل الوج,ar,الوج,J,transition,L'Initiative,NCA-2011,full,elected,male
+legislators,TNP-00480,فاطمة الغربي,ar,الغربي,VRB,transition,Forum démocratique pour le travail et les libertés,NCA-2011,full,elected,female
+legislators,TNP-00481,فايزة كدوسي,ar,كدوسي,KDS,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,female
+legislators,TNP-00482,فتحي اللطيف,ar,اللطيف,LTF,transition,Parti communiste des ouvriers de Tunisie,NCA-2011,full,elected,male
+legislators,TNP-00483,فرح النصيبي,ar,النصيبي,NSB,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00484,فريدة عبيدي,ar,عبيدي,BD,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00485,فطوم الأسود,ar,الأسود,SD,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00486,فطومة عطية,ar,عطية,T,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00487,فؤاد ثامر,ar,ثامر,TMR,transition,Pour un front national Tunisien,NCA-2011,full,elected,male
+legislators,TNP-00488,فيصل جدلاوي,ar,جدلاوي,JDL,transition,La justice,NCA-2011,full,elected,male
+legislators,TNP-00489,قيس مختار,ar,مختار,MXTR,transition,Parti démocratique progressiste,NCA-2011,full,elected,male
+legislators,TNP-00490,كريم بوعبدلي,ar,بوعبدلي,BDL,transition,Parti libéral maghrébin,NCA-2011,full,elected,male
+legislators,TNP-00491,كريمة سويد,ar,سويد,SD,transition,Forum démocratique pour le travail et les libertés,NCA-2011,full,elected,female
+legislators,TNP-00492,كلثوم بدر الدين,ar,بدر الدين,BDRDN,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00493,كمال السعداوي,ar,السعداوي,SD,transition,Mouvement des démocrates socialistes,NCA-2011,full,elected,male
+legislators,TNP-00494,كمال عمّار,ar,عمار,MR,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00495,كمال بن عمارة,ar,بن عمارة|عمارة,BMR|MR,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00496,كوثر الأدغم,ar,الأدغم,DVM,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00497,لبنى الجريبي,ar,الجريبي,JRB,transition,Forum démocratique pour le travail et les libertés,NCA-2011,full,elected,female
+legislators,TNP-00498,مبروك الحريزي,ar,الحريزي,HRZ,transition,La fidélité,NCA-2011,full,elected,male
+legislators,TNP-00499,مبروكة مبارك,ar,مبارك,MBRK,transition,Congrès pour la république,NCA-2011,full,elected,female
+legislators,TNP-00500,محرزية العبيدي,ar,العبيدي,BD,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00501,محسن الكعبي,ar,الكعبي,KB,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00502,محمد الحبيب هرقام,ar,هرقام,HRKM,transition,Forum démocratique pour le travail et les libertés,NCA-2011,full,elected,male
+legislators,TNP-00503,محمد الصالح شعيرات,ar,شعيرات,SRT,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,male
+legislators,TNP-00504,محمد الطاهر إيلاهي,ar,إيلاهي,LH,transition,L'indépendant,NCA-2011,full,elected,male
+legislators,TNP-00505,محمد الطاهر تليلي,ar,تليلي,TL,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00506,محمد العربي فاضل موسى,ar,موسى,MS,transition,Pôle démocratique moderniste,NCA-2011,full,elected,male
+legislators,TNP-00507,محمد الكراي الجربي,ar,الجربي,JRB,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00508,المنصف شيخ روحه,ar,شيخ روحه|روحه,SXRH|RH,transition,Parti démocratique progressiste,NCA-2011,full,elected,male
+legislators,TNP-00509,محمد الناجي غرسلي,ar,غرسلي,VRSL,transition,Parti démocratique progressiste,NCA-2011,full,elected,male
+legislators,TNP-00510,محمد سعيدي,ar,سعيدي,SD,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00511,محمد بن المبروك الحامدي,ar,الحامدي,HMD,transition,Parti démocratique progressiste,NCA-2011,full,elected,male
+legislators,TNP-00512,محمود الماي,ar,الماي,M,transition,Parti démocratique progressiste,NCA-2011,full,elected,male
+legislators,TNP-00513,محمد الصغير,ar,الصغير,SVR,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00514,محمد قحبيش,ar,قحبيش,KHBS,transition,Parti démocratique progressiste,NCA-2011,full,elected,male
+legislators,TNP-00515,محمد كحيلة,ar,كحيلة,KHL,transition,Parti démocratique progressiste,NCA-2011,full,elected,male
+legislators,TNP-00516,محمد بن يوسف الحامدي,ar,الحامدي,HMD,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,male
+legislators,TNP-00517,محمد شفيق زرقين,ar,زرقين,ZRKN,transition,La fidélité aux martyrs,NCA-2011,full,elected,male
+legislators,TNP-00518,محمد عبد المنعم كرير,ar,كرير,KR,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,unknown
+legislators,TNP-00519,محمد علي نصري,ar,نصري,NSR,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00520,محمد لطفي بن مصباح,ar,بن مصباح|مصباح,BMSBH|MSBH,transition,Parti de la justice et l'égalité,NCA-2011,full,elected,male
+legislators,TNP-00521,محمد نجيب الحسني,ar,الحسني,HSN,transition,L'espoir,NCA-2011,full,elected,male
+legislators,TNP-00522,محمد نزار قاسم,ar,قاسم,KSM,transition,Parti républicain pour la liberté et la justice,NCA-2011,full,elected,male
+legislators,TNP-00523,محمود قويعة,ar,قويعة,K,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00524,محمود البارودي,ar,البارودي,BRD,transition,Parti démocratique progressiste,NCA-2011,full,elected,male
+legislators,TNP-00525,مراد العمدوني,ar,العمدوني,MDN,transition,Mouvement du peuple,NCA-2011,full,elected,male
+legislators,TNP-00526,مصطفى بن جعفر,ar,بن جعفر|جعفر,BNJFR|JFR,transition,Forum démocratique pour le travail et les libertés,NCA-2011,full,elected,male
+legislators,TNP-00527,معز كمون,ar,كمون,KMN,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,male
+legislators,TNP-00528,مفيدة مرزوقي,ar,مرزوقي,MRZK,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00529,منى بن نصر,ar,بن نصر|نصر,BNSR|NSR,transition,L'Initiative,NCA-2011,full,elected,female
+legislators,TNP-00530,منية إبراهيم,ar,إبراهيم,BRHM,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00531,منية القصري,ar,القصري,KSR,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00532,منير بن هنية,ar,بن هنية|هنية,BNHN|HN,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00533,منيرة عمري,ar,عمري,MR,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00534,مولدي الزيدي,ar,الزيدي,ZD,transition,"Pétition populaire pour la liberté, la justice et le développement",NCA-2011,full,elected,male
+legislators,TNP-00535,مية الجريبي,ar,الجريبي,JRB,transition,Parti démocratique progressiste,NCA-2011,full,elected,female
+legislators,TNP-00536,نادية شعبان,ar,شعبان,SBN,transition,Pôle démocratique moderniste,NCA-2011,full,elected,female
+legislators,TNP-00537,نبيلة العسكري السنوسي,ar,السنوسي,SNS,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00538,نبيهة ترجمان,ar,ترجمان,TRJMN,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00539,نجلاء بوريال,ar,بوريال,BRL,transition,Parti démocratique progressiste,NCA-2011,full,elected,female
+legislators,TNP-00540,نجيب مراد,ar,مراد,MRD,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00541,نجيبة بريول,ar,بريول,BRL,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00542,نزار مخلوفي,ar,مخلوفي,MXLF,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00543,نعمان الفهري,ar,الفهري,FHR,transition,Afek Tounes,NCA-2011,full,elected,male
+legislators,TNP-00544,نور الدين المرابطي,ar,المرابطي,MRBT,transition,l'Union Patriotique Libre,NCA-2011,full,elected,male
+legislators,TNP-00545,نوفل الغريبي,ar,الغريبي,VRB,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00546,هاجر منيفي,ar,منيفي,MNF,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00547,هاجر عزيز,ar,عزيز,Z,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00548,هالة الحامي,ar,الحامي,HM,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00549,هشام بن جامع,ar,بن جامع|جامع,BNJM|JM,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00550,هيثم بلقاسم,ar,بلقاسم,BLKSM,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00551,وسام ياسين,ar,ياسين,SN,transition,La lutte socialiste,NCA-2011,full,elected,male
+legislators,TNP-00552,كمال بن رمضان,ar,بن رمضان|رمضان,BNRMDN|RMDN,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00553,سلاف القسنطيني,ar,القسنطيني,KSNTN,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00554,سهير الدردوري,ar,الدردوري,DRDR,transition,Congrès pour la république,NCA-2011,full,elected,female
+legislators,TNP-00555,مختار لموشي,ar,لموشي,LMS,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00556,حبيب بريبش,ar,بريبش,BRBS,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00557,بشير النفزي,ar,النفزي,NFZ,transition,Congrès pour la république,NCA-2011,full,elected,male
+legislators,TNP-00558,نورة بن حسن,ar,بن حسن|حسن,BNHSN|HSN,transition,Congrès pour la république,NCA-2011,full,elected,female
+legislators,TNP-00559,جمال بوعجاجة,ar,بوعجاجة,BJ,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00560,فرج بن عمر,ar,بن عمر|عمر,BMR|MR,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00561,خليد بلحاج,ar,بلحاج,BLHJ,transition,Mouvement Nahdha,NCA-2011,full,elected,male
+legislators,TNP-00562,نفيسة المرزوقي,ar,المرزوقي,MRZK,transition,Forum démocratique pour le travail et les libertés,NCA-2011,full,elected,female
+legislators,TNP-00563,وردة التركي,ar,التركي,TRK,transition,Mouvement Nahdha,NCA-2011,full,elected,female
+legislators,TNP-00564,محمد منذر بن رحال,ar,بن رحال|رحال,BNRHL|RHL,transition,Forum démocratique pour le travail et les libertés,NCA-2011,full,elected,male
+legislators,TNP-00565,منال القادري,ar,القادري,KDR,transition,Mouvement des démocrates socialistes,NCA-2011,full,elected,female
+legislators,TNP-00566,فاضل الصغراوي,ar,الصغراوي,SVR,transition,Mouvement du peuple,NCA-2011,full,elected,male
+legislators,TNP-00567,منية بن نصر العيادي,ar,العيادي,D,transition,Forum démocratique pour le travail et les libertés,NCA-2011,full,elected,female
+legislators,TNP-00568,سلمى نزيه الزنايدي,ar,الزنايدي,ZND,transition,Forum démocratique pour le travail et les libertés,NCA-2011,full,elected,female
