@@ -99,13 +99,27 @@ EliteNetworksTN maps it onto its five shared periods.
 ## What the comparison found
 
 Parliament is where the displacement of the old notability is most complete.
-196 surnames the genealogies place in Tunisia before independence are **3.4
-times** more common among these 968 people than in the 2024 electoral register
-(24 holders, 95% CI 2.3–5.0) — and the chamber sheds them faster than any other
-institution measured.
+**196 surnames the genealogies place in Tunisia before independence** — under
+the Husaynid beylik to 1881 or under the colonial administration from 1881 to
+1956, merged into one treatment — are **3.4 times** more common among these
+968 people than in the 2024 electoral register (24 holders, 95% CI 2.3–5.0),
+and the chamber sheds them faster than any other institution measured.
 
-Converting the ratio into the group's implied mean status, in standard
-deviations, and fitting the decay the surname-mobility literature models gives
+### In the contemporary window
+
+Restricted to **2011–2023**, with each member counted once, 742 people sat and
+12 carried such a surname. A bearer is **2.2 times more likely** (95% CI
+1.3–3.9, p = 0.02) to be a member of parliament than someone who is not —
+16.8 per 100,000 bearers against 7.6 per 100,000 of everyone else.
+
+That is the **smallest multiplier of any position in the build**, and the gap
+widens once the ratio is converted into the units that compare across
+institutions of different selectivity. The chamber's implied status gap is
+**+0.20 SD**, against +0.48 for the cabinet, +0.46 for a listed board and
++0.55 for a co-shareholder of a listed company — less than half of any of
+them.
+
+### Over the whole span
 
 | | 1956 + 1959–87 | ADV-2005 | 2011–21 chambers | ARP-2023 |
 |---:|---:|---:|---:|---:|
@@ -124,6 +138,14 @@ period's chamber, **none** returns in the next — 0 of 7, 0 of 5, 0 of 8 — wh
 redrawing from the same pool would have returned a few. Listed boards re-select
 the same houses at 2.4–2.6× chance and the cabinet at 2.0–6.9×. Parliamentary
 presence, for these families, is a one-shot event.
+
+### The caveat that matters most for these rows
+
+The post-1956 placebo cannot be tested against this roster: 16 surnames over
+0.047% of the register predict **0.35** holders in a chamber of 742, so the
+zero observed there is the expected outcome under any hypothesis rather than a
+clean null. The parliamentary result rests on the decline above and on the
+turnover measure, not on a placebo.
 
 Full results, figures and limitations: `docs/FINDINGS-persistence.md` in
 EliteNetworksTN.
