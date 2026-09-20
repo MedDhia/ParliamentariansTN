@@ -99,24 +99,30 @@ EliteNetworksTN maps it onto its five shared periods.
 ## What the comparison found
 
 Parliament is where the displacement of the old notability is most complete.
-250 surnames the genealogies record, rare enough that a surname tags a lineage,
-are **3.1 times** more common among the 968 people here than in the electoral
-register (26 holders, 95% CI 2.1–4.4) — and the chamber is shedding them faster
-than any other institution measured:
+196 surnames the genealogies place in Tunisia before independence are **3.4
+times** more common among these 968 people than in the 2024 electoral register
+(24 holders, 95% CI 2.3–5.0) — and the chamber sheds them faster than any other
+institution measured.
 
-| 1956 + 1959–87 | ADV-2005 | 2011–21 chambers | ARP-2023 |
-|---:|---:|---:|---:|
-| **7.2×** (7/111) | 4.9× (5/117) | 2.3× (12/597) | **1.5×** (2/155) |
+Converting the ratio into the group's implied mean status, in standard
+deviations, and fitting the decay the surname-mobility literature models gives
 
-That is a half-life of **26 years** and a per-generation persistence rate of
-**b = 0.31**, the lowest in the build; by the 2023 chamber the interval no
-longer excludes parity. The cabinet over a comparable span halves every 40
-years, and the listed-company boards do not decay at all.
+| | 1956 + 1959–87 | ADV-2005 | 2011–21 chambers | ARP-2023 |
+|---:|---:|---:|---:|---:|
+| ratio | 8.6× | 5.8× | 2.3× | 1.8× |
+| implied status gap | **0.56 SD** | 0.43 SD | 0.21 SD | **0.13 SD** |
+
+an intergenerational correlation of **b = 0.50 (0.34–0.71)** per 30-year
+generation. The cabinet over a comparable span comes out at 0.79 — the rate
+Clark finds almost everywhere — and the public administration at 0.69. **The
+chamber is the one institution in the build where the old notability regresses
+to the population substantially faster than that benchmark.** Elected office
+does not transmit.
 
 A second measure is sharper still. Of the notable surnames sitting in one
-period's chamber, **none** returns in the next — 0 of 7, 0 of 5, 0 of 9 — where
+period's chamber, **none** returns in the next — 0 of 7, 0 of 5, 0 of 8 — where
 redrawing from the same pool would have returned a few. Listed boards re-select
-the same houses at 2.6–2.8× chance and the cabinet at 2.1–8.2×. Parliamentary
+the same houses at 2.4–2.6× chance and the cabinet at 2.0–6.9×. Parliamentary
 presence, for these families, is a one-shot event.
 
 Full results, figures and limitations: `docs/FINDINGS-persistence.md` in
