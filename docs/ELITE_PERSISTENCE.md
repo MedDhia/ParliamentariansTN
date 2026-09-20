@@ -98,12 +98,26 @@ EliteNetworksTN maps it onto its five shared periods.
 
 ## What the comparison found
 
-Thirteen rare pre-protectorate notable surnames are **7.4 times** more common
-among the 968 people here than in the electoral register (95% CI 2.9–18.9, four
-holders), and the temporal pattern is the sharp one in the build: the
-constituent assembly of 1956 was at **32×**, the chambers elected after 2011 at
-**6.0×**, and the 2023 chamber at zero. Parliament is where the displacement of
-the old notability is most complete.
+Parliament is where the displacement of the old notability is most complete.
+250 surnames the genealogies record, rare enough that a surname tags a lineage,
+are **3.1 times** more common among the 968 people here than in the electoral
+register (26 holders, 95% CI 2.1–4.4) — and the chamber is shedding them faster
+than any other institution measured:
+
+| 1956 + 1959–87 | ADV-2005 | 2011–21 chambers | ARP-2023 |
+|---:|---:|---:|---:|
+| **7.2×** (7/111) | 4.9× (5/117) | 2.3× (12/597) | **1.5×** (2/155) |
+
+That is a half-life of **26 years** and a per-generation persistence rate of
+**b = 0.31**, the lowest in the build; by the 2023 chamber the interval no
+longer excludes parity. The cabinet over a comparable span halves every 40
+years, and the listed-company boards do not decay at all.
+
+A second measure is sharper still. Of the notable surnames sitting in one
+period's chamber, **none** returns in the next — 0 of 7, 0 of 5, 0 of 9 — where
+redrawing from the same pool would have returned a few. Listed boards re-select
+the same houses at 2.6–2.8× chance and the cabinet at 2.1–8.2×. Parliamentary
+presence, for these families, is a one-shot event.
 
 Full results, figures and limitations: `docs/FINDINGS-persistence.md` in
 EliteNetworksTN.
