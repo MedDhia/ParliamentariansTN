@@ -21,8 +21,8 @@ Writes two files to `data/processed/elite_persistence/`:
 ## What this layer can and cannot carry
 
 Read [`COVERAGE.md`](COVERAGE.md) first. The chambers are covered very
-unevenly and the unevenness is not random: **it is the single-party era that is
-missing.** Six chamber-terms have a roster and thirteen do not.
+unevenly and the unevenness is not random: it is the single-party era that is
+missing. Six chamber-terms have a roster and thirteen do not.
 
 | chamber | members | period | coverage |
 |---|---:|---|---|
@@ -79,14 +79,14 @@ electoral list exists only where the mandate came from a list election — which
 the 2023 chamber, elected on individual candidacies, has none of. 850 of the
 968 members (88%) carry at least one.
 
-**No Tunisian party membership roll is public**, so nothing in this file speaks
+No Tunisian party membership roll is public, so nothing in this file speaks
 to party membership at large. It is the same people as `layer_legislators.csv`,
 cut by the party they sat for.
 
 ## Schema
 
 Shared with ElectionsTN and GovMembersTN. Surnames are written as
-**candidates**, longest first, rather than resolved, because only the register
+candidates, longest first, rather than resolved, because only the register
 can say whether `بن سالم` is a family in its own right or a patronymic, and
 this repository does not hold the register.
 
@@ -99,23 +99,22 @@ EliteNetworksTN maps it onto its five shared periods.
 ## What the comparison found
 
 Parliament is where the displacement of the old notability is most complete.
-**196 surnames the genealogies place in Tunisia before independence** — under
-the Husaynid beylik to 1881 or under the colonial administration from 1881 to
-1956, merged into one treatment — are **3.4 times** more common among these
+The 196 surnames the genealogies place in Tunisia before independence in 1956
+are 3.4 times more common among these
 968 people than in the 2024 electoral register (24 holders, 95% CI 2.3–5.0),
 and the chamber sheds them faster than any other institution measured.
 
 ### In the contemporary window
 
-Restricted to **2011–2023**, with each member counted once, 742 people sat and
-12 carried such a surname. A bearer is **2.2 times more likely** (95% CI
+Restricted to 2011–2023, with each member counted once, 742 people sat and
+12 carried such a surname. A bearer is 2.2 times more likely (95% CI
 1.3–3.9, p = 0.02) to be a member of parliament than someone who is not —
 16.8 per 100,000 bearers against 7.6 per 100,000 of everyone else.
 
-That is the **smallest multiplier of any position in the build**, and the gap
+That is the smallest multiplier of any position in the build, and the gap
 widens once the ratio is converted into the units that compare across
 institutions of different selectivity. The chamber's implied status gap is
-**+0.20 SD**, against +0.48 for the cabinet, +0.46 for a listed board and
++0.20 SD, against +0.48 for the cabinet, +0.46 for a listed board and
 +0.55 for a co-shareholder of a listed company — less than half of any of
 them.
 
@@ -124,17 +123,17 @@ them.
 | | 1956 + 1959–87 | ADV-2005 | 2011–21 chambers | ARP-2023 |
 |---:|---:|---:|---:|---:|
 | ratio | 8.6× | 5.8× | 2.3× | 1.8× |
-| implied status gap | **0.56 SD** | 0.43 SD | 0.21 SD | **0.13 SD** |
+| implied status gap | 0.56 SD | 0.43 SD | 0.21 SD | 0.13 SD |
 
-an intergenerational correlation of **b = 0.50 (0.34–0.71)** per 30-year
+an intergenerational correlation of b = 0.50 (0.34–0.71) per 30-year
 generation. The cabinet over a comparable span comes out at 0.79 — the rate
-Clark finds almost everywhere — and the public administration at 0.69. **The
+Clark finds almost everywhere — and the public administration at 0.69. The
 chamber is the one institution in the build where the old notability regresses
-to the population substantially faster than that benchmark.** Elected office
+to the population substantially faster than that benchmark. Elected office
 does not transmit.
 
 A second measure is sharper still. Of the notable surnames sitting in one
-period's chamber, **none** returns in the next — 0 of 7, 0 of 5, 0 of 8 — where
+period's chamber, none returns in the next — 0 of 7, 0 of 5, 0 of 8 — where
 redrawing from the same pool would have returned a few. Listed boards re-select
 the same houses at 2.4–2.6× chance and the cabinet at 2.0–6.9×. Parliamentary
 presence, for these families, is a one-shot event.
@@ -142,13 +141,13 @@ presence, for these families, is a one-shot event.
 ### The caveat that matters most for these rows
 
 The post-1956 placebo cannot be tested against this roster: 16 surnames over
-0.047% of the register predict **0.35** holders in a chamber of 742, so the
+0.047% of the register predict 0.35 holders in a chamber of 742, so the
 zero observed there is the expected outcome under any hypothesis rather than a
 clean null.
 
 The control can be, and it is the more informative test. The 11,456 equally
-rare surnames the genealogies never recorded hold **63 of the 968
-parliamentarians, a ratio of 1.3× [1.0–1.6]** — barely above parity. Against
+rare surnames the genealogies never recorded hold 63 of the 968
+parliamentarians, a ratio of 1.3× [1.0–1.6] — barely above parity. Against
 that the chamber's 3.4× is a factor of 2.6, so the parliamentary advantage is
 real and is about a quarter of the cabinet's twelvefold gap over the same
 control. Parliament is the weakest of the elite rosters in the build, not a
