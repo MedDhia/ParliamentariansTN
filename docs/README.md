@@ -7,6 +7,7 @@ should never be hand-edited; four are written.
 | --- | --- | --- |
 | [FINDINGS.md](FINDINGS.md) | What does this dataset show? Every result, with the number and the file to verify it in. | written |
 | [COVERAGE.md](COVERAGE.md) | Which chambers can I actually use, and how complete is each attribute? | **generated** |
+| [ELITE_PERSISTENCE.md](ELITE_PERSISTENCE.md) | Are the surnames of the old notability over-represented in the chamber? | written |
 | [CODEBOOK.md](CODEBOOK.md) | What does this column mean, what values may it take, how often is it filled? | **generated** |
 | [SOURCES.md](SOURCES.md) | Where did this come from, how reliable is it, and what does it get wrong? | written |
 | [NETWORK_GUIDE.md](NETWORK_GUIDE.md) | What does each network layer mean, and what are its traps? | written |

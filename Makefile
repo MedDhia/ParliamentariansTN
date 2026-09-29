@@ -73,3 +73,7 @@ figures:
 clean-cache:
 	find data/raw -mindepth 1 -maxdepth 1 -type d -exec rm -rf {} +
 	@echo "cached upstream pages removed; staging documents kept"
+
+.PHONY: elite-persistence
+elite-persistence:  ## export the parliamentarians as surnames, for the EliteNetworksTN comparison
+	PYTHONPATH=src $(PY) -m parliamentarians_tn.elite_persistence
