@@ -31,8 +31,13 @@ Which name is read
 `persons.csv` gives a split `family_name_ar` for only 154 of the 968, and a
 full `name_ar` for all of them, so the surname is found by reading the full
 name -- last token plus whatever particles bind onto it. `surname_spine.py`
-does that, and it is the same file, byte for byte, that ElectionsTN uses on the
-register and GovMembersTN on the ministers.
+does that, with the same rules ElectionsTN uses on the register and GovMembersTN
+on the ministers.
+
+The Assembly's site names every member in Latin letters as well, and that is
+written out too, in `names_bilingual.csv`: EliteNetworksTN's Arabic-Latin
+surname crosswalk learns from it how Tunisian surnames are spelled in Latin,
+and is tested on it.
 
 What is written
 ---------------
@@ -66,10 +71,10 @@ import sys
 from pathlib import Path
 
 try:
-    from .surname_spine import is_arabic, family_candidates, spine
+    from .surname_spine import is_arabic, family_candidates
 except ImportError:                                      # run as a bare script
     sys.path.insert(0, str(Path(__file__).resolve().parent))
-    from surname_spine import is_arabic, family_candidates, spine
+    from surname_spine import is_arabic, family_candidates
 
 ROOT = Path(__file__).resolve().parents[2]
 PROCESSED = ROOT / "data" / "processed"
@@ -85,13 +90,13 @@ PARTY_AFFILIATIONS = PROCESSED / "party_affiliations.csv"
 
 LAYER_FIELDS = [
     "layer", "person_id", "name_raw", "script",
-    "surname_candidates", "spine_candidates", "period", "subgroup",
+    "surname_candidates", "period", "subgroup",
     "assembly_id", "coverage_status", "entry_mode", "gender",
 ]
 
 PARTY_FIELDS = [
     "layer", "person_id", "name_raw", "script",
-    "surname_candidates", "spine_candidates", "period", "subgroup",
+    "surname_candidates", "period", "subgroup",
     "party_id", "party_name", "evidence",
 ]
 
@@ -106,7 +111,6 @@ def _surname_columns(name: str) -> dict:
     return {
         "script": "ar" if is_arabic(name) else "lat",
         "surname_candidates": "|".join(cands),
-        "spine_candidates": "|".join(spine(c) for c in cands),
     }
 
 
@@ -223,6 +227,13 @@ def main() -> int:
         _read(BLOC_MEMBERSHIPS), _read(PARTY_AFFILIATIONS))
     _write(OUT / "layer_party_affiliations.csv", PARTY_FIELDS, affiliations)
 
+    # Each member's name in both scripts, and nothing else about them.
+    bilingual = [{"person_id": pid, "name_ar": p["name_ar"], "name_lat": p["name_lat"],
+                  "family_name_lat": p["family_name_lat"]}
+                 for pid, p in sorted(persons.items()) if p["name_ar"] and p["name_lat"]]
+    _write(OUT / "names_bilingual.csv",
+           ["person_id", "name_ar", "name_lat", "family_name_lat"], bilingual)
+
     people = {r["person_id"] for r in legislators}
     print(f"wrote {(OUT / 'layer_legislators.csv').relative_to(ROOT)}")
     print(f"  {len(legislators):,} member-chamber rows over {len(people):,} people")
@@ -239,6 +250,8 @@ def main() -> int:
           f"people ({len(party_people) / len(people):.0%} of those who sat)")
     ev = collections.Counter(e for r in affiliations for e in r["evidence"].split("|"))
     print(f"  evidence: {dict(ev)}")
+    print(f"\nwrote {(OUT / 'names_bilingual.csv').relative_to(ROOT)}: "
+          f"{len(bilingual):,} members named in both scripts")
     return 0
 
 
